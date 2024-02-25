@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { NgFor } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { SimuladosRoutingModule } from './simulados.route';
 import { HomeComponent } from './pages/home/home.component';
@@ -11,6 +12,12 @@ import { QuestionsContainerComponent } from './componentes/questions-container/q
 import { QuestionCardComponent } from './componentes/question-card/question-card.component';
 import { ListSimuladosComponent} from './componentes/list-simulados/list-simulados.component';
 import { QueryQuestionsService } from './utils/query-questions.service';
+import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
+
+import { MultipleQuestionComponent } from './componentes/questoes/multiple-question/multiple-question.component';
+import { OptionsQuestionComponent } from './componentes/questoes/options-question/options-question.component';
+import { SelectQuestionComponent } from './componentes/questoes/select-question/select-question.component';
+import { TrueFalseQuestionComponent } from './componentes/questoes/true-false-question/true-false-question.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +25,20 @@ import { QueryQuestionsService } from './utils/query-questions.service';
     ExamComponent,
     QuestionsContainerComponent,
     ListSimuladosComponent,
-    QuestionCardComponent
+    QuestionCardComponent,
+    MultipleQuestionComponent,
+    OptionsQuestionComponent,
+    SelectQuestionComponent,
+    TrueFalseQuestionComponent,
+    DinamicLoaderDirective
   ],
   imports: [
     CommonModule,
     SimuladosRoutingModule,
     RouterLink,
     NgFor,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     QueryQuestionsService

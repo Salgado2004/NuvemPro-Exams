@@ -1,0 +1,48 @@
+.option{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px;
+    width: 75%;
+}
+
+.option p{
+    margin: 0;
+}
+
+.option div{
+    display: flex;
+    align-items: center;
+}
+
+.option div div{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.option label{
+    padding: 2px 6px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+input[type="radio"]:checked + .showAnswer.correct{
+    background-color: #a5eea0;
+}
+
+input[type="radio"]:checked + .showAnswer.incorrect{
+    background-color: #be2929;
+    color: #f9f9f9;
+}
+
+.verifyAnswer{
+    border: none;
+    outline: none;
+    background-color: #d9d9d9;
+    padding: 4px;
+    margin: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
