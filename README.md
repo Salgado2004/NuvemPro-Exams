@@ -1,5 +1,5 @@
 # CertCloud Exams
-Frontend do projeto CertCloud Exams, uma plataforma para auxiliar no estudo e conquista de certificações das principais plataformas de nuvem (Azure, AWS, GCP), disponibilizando simulados das provas.
+Um projeto para auxiliar no estudo e conquista de certificações das principais plataformas de nuvem (Azure, AWS, GCP), disponibilizando simulados das provas.
 
 ## Tecnologias utilizadas
 
