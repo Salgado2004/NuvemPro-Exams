@@ -8,8 +8,8 @@ Esse projeto foi desenvolvido com:
 - _[Node](https://nodejs.org/en) versão 18.14.0_
 
 ## Contribuidores
-<a href="https://github.com/Salgado2004/CertCloud-Exams-Front/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Salgado2004/CertCloud-Exams-Front" />
+<a href="https://github.com/Salgado2004/CertCloud-Exams/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Salgado2004/CertCloud-Exams" />
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
