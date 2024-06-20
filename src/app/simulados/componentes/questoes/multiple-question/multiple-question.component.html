@@ -2,5 +2,5 @@
     <input type="checkbox" [id]="id+i" [name]="id" [value]="option" [(ngModel)]="answers[i]" [disabled]="!active">
     <label [for]="id+i" [id]="'label'+i+id">{{ option }}</label>
 </div>
-<button (click)="nextQuestion()" class="next">Próxima questão</button>
+<button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
 <button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>

@@ -11,6 +11,6 @@
         </div>
     </div>
 </div>
-<button (click)="nextQuestion()" class="next">Próxima questão</button>
+<button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
 <button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
 

@@ -2,6 +2,6 @@
 <select [disabled]="!active" [(ngModel)]="answer" [ngClass]="classes">
     <option *ngFor="let option of options" [value]="option">{{ option }}</option>
 </select>
-<button (click)="nextQuestion()" class="next">Próxima questão</button>
+<button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
 <button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
 

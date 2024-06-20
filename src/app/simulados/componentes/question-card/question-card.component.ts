@@ -7,6 +7,7 @@ import { SelectQuestionComponent } from '../questoes/select-question/select-ques
 import { TrueFalseQuestionComponent } from '../questoes/true-false-question/true-false-question.component';
 import { QuestionStructure } from '../../utils/question-structure';
 import { ActivatedRoute } from '@angular/router';
+import { SimuladoEventsService } from '../../utils/simulado-events.service';
 
 @Component({
   selector: 'app-question-card',
@@ -19,12 +20,16 @@ export class QuestionCardComponent {
   @Input() questionIndex: number;
   questionType: string;
   totalQuestions: string;
+  questionInstance: any;
 
   constructor(private activatedRoute : ActivatedRoute) { }
 
+  ngOnInit(){
+    this.totalQuestions = this.activatedRoute.snapshot.paramMap.get("questions");
+  }
+
   ngAfterViewInit() {
     this.loadQuestionComponent();
-    this.totalQuestions = this.activatedRoute.snapshot.paramMap.get("questions");
   }
 
   loadQuestionComponent() {
@@ -40,10 +45,15 @@ export class QuestionCardComponent {
     const questionComponentType = questionComponentMap[this.questionType];
 
     const viewContainerRef = this.dynamicHost.view;
-    const componentRef = viewContainerRef.createComponent<QuestionStructure>(questionComponentType);
-    componentRef.instance.id = "question"+this.questionIndex;
-    componentRef.instance.body = this.questionData.body;
-    componentRef.instance.options = this.questionData.options;
-    componentRef.instance.correct = this.questionData.correct;
+    this.questionInstance = viewContainerRef.createComponent<QuestionStructure>(questionComponentType);
+    this.questionInstance.instance.id = "question"+this.questionIndex;
+    this.questionInstance.instance.body = this.questionData.body;
+    this.questionInstance.instance.options = this.questionData.options;
+    this.questionInstance.instance.correct = this.questionData.correct;
+    this.questionInstance.instance.showNext = (this.questionIndex < Number.parseInt(this.totalQuestions));
+  }
+
+  finishExam(){
+    SimuladoEventsService.get('endExam').emit(this.questionInstance.instance.score());
   }
 }

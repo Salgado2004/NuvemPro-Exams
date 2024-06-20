@@ -14,7 +14,10 @@ export class QuestionsContainerComponent {
   @Input() exam: string;
   questionNumber: string;
   questions = [];
+  totalScore:number = 0;
+  finalScore:number;
   current = 0;
+  finish:boolean = false;
 
   constructor(private query: QueryQuestionsService, private activatedRoute : ActivatedRoute) { }
 
@@ -25,14 +28,21 @@ export class QuestionsContainerComponent {
       .subscribe((data: any) => {
         this.questions = data;
         this.questionCard.questionData = this.questions[this.current];
-        this.questionCard.questionIndex = this.current;
+        this.questionCard.questionIndex = this.current+1;
       });
 
-      SimuladoEventsService.get('nextQuestion').subscribe( any => {
+      SimuladoEventsService.get('nextQuestion').subscribe( score => {
+        this.totalScore += score;
         this.current += 1;
         this.questionCard.questionData = this.questions[this.current];
-        this.questionCard.questionIndex = this.current;
+        this.questionCard.questionIndex = this.current+1;
         this.questionCard.loadQuestionComponent();
+      });
+
+      SimuladoEventsService.get('endExam').subscribe( score => {
+        this.totalScore += score;
+        this.finalScore = Math.round((this.totalScore / this.questions.length) * 100);
+        this.finish = true;
       });
   }
 

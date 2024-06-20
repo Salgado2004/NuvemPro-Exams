@@ -7,9 +7,26 @@
     box-shadow: 2px 2px 5px #ddeefd;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #index{
     padding: 6px 8px;
     background-color: #dbf5e9;
     color: #21c177;
     border-radius: 10px;
+}
+
+#endExam{
+    font-family: 'Inter', sans-serif;
+    background-color: #e35b59;
+    color: #fff;
+    border: 1px solid #e35b59;
+    padding: 12px 16px;
+    margin-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
 }

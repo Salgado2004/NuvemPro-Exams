@@ -14,6 +14,7 @@ export class OptionsQuestionComponent implements QuestionStructure{
   options: string[];
   correct: string[];
   answer: string;
+  showNext: boolean;
   classes: { [key: string]: boolean };
   active: boolean = true;
 
@@ -29,8 +30,12 @@ export class OptionsQuestionComponent implements QuestionStructure{
     }
     this.active = false;
   }
+
+  score(){
+    return this.answer == this.correct[0] ? 1 : 0;
+  }
   
   nextQuestion():void{
-    SimuladoEventsService.get('nextQuestion').emit();
+    SimuladoEventsService.get('nextQuestion').emit(this.score());
   }
 }

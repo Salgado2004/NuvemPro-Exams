@@ -14,6 +14,7 @@ export class MultipleQuestionComponent implements QuestionStructure {
   options: string[];
   correct: string[];
   answers: string[] = [];
+  showNext: boolean;
   active: boolean = true;
 
   verifyAnswer() {
@@ -28,8 +29,18 @@ export class MultipleQuestionComponent implements QuestionStructure {
     }
     this.active = false;
   }
+
+  score(){
+    let total=0;
+    this.answers.forEach((ans, index) => {
+      if(ans){
+        total += this.correct.includes(this.options[index]) ? 1 : 0;
+      }
+    });
+    return total/this.correct.length;
+  }
   
   nextQuestion():void{
-    SimuladoEventsService.get('nextQuestion').emit();
+    SimuladoEventsService.get('nextQuestion').emit(this.score());
   }
 }

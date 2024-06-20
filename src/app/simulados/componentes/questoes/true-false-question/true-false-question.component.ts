@@ -14,6 +14,7 @@ export class TrueFalseQuestionComponent implements QuestionStructure{
   options: string[];
   correct: string[];
   answers: string[] = [];
+  showNext: boolean;
   active: boolean = true;
 
   verifyAnswer() {
@@ -31,7 +32,15 @@ export class TrueFalseQuestionComponent implements QuestionStructure{
     this.active = false;
   }
 
+  score(){
+    let total=0;
+    this.answers.forEach((ans, index) => {
+      total += ans == this.correct[index] ? 1 : 0;
+    });
+    return total/this.correct.length;
+  }
+
   nextQuestion():void{
-    SimuladoEventsService.get('nextQuestion').emit();
+    SimuladoEventsService.get('nextQuestion').emit(this.score());
   }
 }

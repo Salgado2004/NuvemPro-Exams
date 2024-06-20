@@ -3,5 +3,7 @@ export interface QuestionStructure {
     header: string,
     body: string | null,
     options: string[],
-    correct: string[]
+    correct: string[],
+    showNext: boolean
+    score():number;
 }
