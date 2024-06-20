@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { QuestionsContainerComponent } from '../../componentes/questions-container/questions-container.component';
 
 @Component({
   selector: 'app-exam',
@@ -9,6 +8,7 @@ import { QuestionsContainerComponent } from '../../componentes/questions-contain
 })
 export class ExamComponent {
   exam: string;
+  questions: string;
 
   constructor(private activatedRoute : ActivatedRoute) { }
 
