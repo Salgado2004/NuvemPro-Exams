@@ -3,13 +3,14 @@
     <div>
         <div>
             <input type="radio" [id]="i+'vdd'" value="true" [(ngModel)]="answers[i]" [name]="id+i" [disabled]="!active">
-            <label [for]="i+'vdd'" [class]="'opt'+i">Verdadeiro</label>
+            <label [for]="i+'vdd'" [class]="id+'opt'+i">Verdadeiro</label>
         </div>
         <div>
             <input type="radio" [id]="i+'falso'" value="false" [(ngModel)]="answers[i]" [name]="id+i" [disabled]="!active">
-            <label [for]="i+'falso'" [class]="'opt'+i">Falso</label>
+            <label [for]="i+'falso'" [class]="id+'opt'+i">Falso</label>
         </div>
     </div>
 </div>
+<button (click)="nextQuestion()" class="next">Próxima questão</button>
 <button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
 

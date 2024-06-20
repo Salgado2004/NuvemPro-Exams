@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { QuestionStructure } from '../../../utils/question-structure';
+import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 
 @Component({
   selector: 'app-select-question',
   templateUrl: './select-question.component.html',
-  styleUrl: './select-question.component.css'
+  styleUrls: ['./select-question.component.css', '../questao.css']
 })
 export class SelectQuestionComponent implements QuestionStructure{
   id: string;
@@ -12,4 +13,20 @@ export class SelectQuestionComponent implements QuestionStructure{
   body: string;
   options: string[];
   correct: string[];
+  answer: string;
+  classes: { [key: string]: boolean };
+  active: boolean = true;
+
+  verifyAnswer() {
+    if(this.answer == this.correct[0]){
+      this.classes = {'showAnswer': true, 'correct': true};
+    } else{
+      this.classes = {'showAnswer': true, 'incorrect': true};
+    }
+    this.active = false;
+  }
+
+  nextQuestion():void{
+    SimuladoEventsService.get('nextQuestion').emit();
+  }
 }

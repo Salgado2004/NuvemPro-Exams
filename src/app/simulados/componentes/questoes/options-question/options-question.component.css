@@ -16,13 +16,3 @@ input[type="radio"]:checked + .showAnswer.incorrect{
     background-color: #be2929;
     color: #f9f9f9;
 }
-
-.verifyAnswer{
-    border: none;
-    outline: none;
-    background-color: #d9d9d9;
-    padding: 4px;
-    margin: 6px;
-    border-radius: 10px;
-    cursor: pointer;
-}

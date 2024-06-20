@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { QuestionStructure } from '../../../utils/question-structure';
+import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 
 @Component({
   selector: 'app-true-false-question',
   templateUrl: './true-false-question.component.html',
-  styleUrl: './true-false-question.component.css'
+  styleUrls: ['./true-false-question.component.css', '../questao.css']
 })
 export class TrueFalseQuestionComponent implements QuestionStructure{
   id: string;
@@ -18,11 +19,19 @@ export class TrueFalseQuestionComponent implements QuestionStructure{
   verifyAnswer() {
     for (let i = 0; i < this.options.length; i++) {
       if (this.answers[i] == this.correct[i]) {
-        document.querySelector(`.opt${i}`).classList.add('correct', 'showAnswer');
+        document.querySelectorAll(`.${this.id}opt${i}`).forEach(element => {
+          element.classList.add('correct', 'showAnswer');
+        });
       } else{
-        document.querySelector(`.opt${i}`).classList.add('incorrect', 'showAnswer');
+        document.querySelectorAll(`.${this.id}opt${i}`).forEach(element => {
+          element.classList.add('incorrect', 'showAnswer');
+        });
       }
     }
     this.active = false;
+  }
+
+  nextQuestion():void{
+    SimuladoEventsService.get('nextQuestion').emit();
   }
 }

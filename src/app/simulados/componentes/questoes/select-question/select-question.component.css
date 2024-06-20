@@ -1,0 +1,19 @@
+select{
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+select option{
+    font-family: 'Inter', sans-serif;
+    padding: 2px;
+}
+
+.showAnswer.correct{
+    background-color: #a5eea0;
+}
+
+.showAnswer.incorrect{
+    background-color: #be2929;
+    color: #f9f9f9;
+}

@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { QuestionStructure } from '../../../utils/question-structure';
+import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 
 @Component({
   selector: 'app-options-question',
   templateUrl: './options-question.component.html',
-  styleUrl: './options-question.component.css'
+  styleUrls: ['./options-question.component.css', '../questao.css']
 })
 export class OptionsQuestionComponent implements QuestionStructure{
   id: string;
@@ -27,5 +28,9 @@ export class OptionsQuestionComponent implements QuestionStructure{
       this.classes = {'showAnswer': true, 'incorrect': true};
     }
     this.active = false;
+  }
+  
+  nextQuestion():void{
+    SimuladoEventsService.get('nextQuestion').emit();
   }
 }

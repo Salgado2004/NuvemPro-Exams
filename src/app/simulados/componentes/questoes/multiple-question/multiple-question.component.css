@@ -1,0 +1,8 @@
+input[type="checkbox"]:checked + .showAnswer.correct{
+    background-color: #a5eea0;
+}
+
+input[type="checkbox"]:checked + .showAnswer.incorrect{
+    background-color: #be2929;
+    color: #f9f9f9;
+}
