@@ -2,7 +2,7 @@
     <p>Selecione um simulado para começar: </p>
     <ul>
         <li *ngFor="let simulado of simulados">
-            <a [routerLink]="['/simulados/teste/', simulado.name, 10]">{{ simulado.name }}</a>
+            <a [routerLink]="['/simulados/exam/', simulado.name, 10]">{{ simulado.name }}</a>
         </li>
     </ul>
 </section>

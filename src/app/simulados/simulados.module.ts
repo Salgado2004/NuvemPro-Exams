@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { SimuladosRoutingModule } from './simulados.route';
 import { HomeComponent } from './pages/home/home.component';
 import { ExamComponent } from './pages/exam/exam.component';
+import { HeaderComponent } from './componentes/header/header.component';
 import { QuestionsContainerComponent } from './componentes/questions-container/questions-container.component';
 import { QuestionCardComponent } from './componentes/question-card/question-card.component';
 import { ListSimuladosComponent} from './componentes/list-simulados/list-simulados.component';
@@ -24,6 +25,7 @@ import { QueryExamsService } from './utils/query-exams.service';
   declarations: [
     HomeComponent,
     ExamComponent,
+    HeaderComponent,
     QuestionsContainerComponent,
     ListSimuladosComponent,
     QuestionCardComponent,

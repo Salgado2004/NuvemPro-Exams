@@ -6,7 +6,7 @@ import { ExamComponent } from './pages/exam/exam.component';
 export const routes: Routes = [
         {path: '', redirectTo: 'home', pathMatch: 'full'},
         {path: 'home' , component: HomeComponent},
-        {path: 'teste/:exam/:questions', component: ExamComponent}
+        {path: 'exam/:exam/:questions', component: ExamComponent}
 ];
 
 @NgModule({

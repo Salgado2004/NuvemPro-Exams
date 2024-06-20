@@ -6,3 +6,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main{
+    background-color: #eef8ff;
+    padding: 24px;
+}
+
+main h2{
+    margin-left: 12px;
+}
