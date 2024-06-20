@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { QueryExamsService } from '../../utils/query-exams.service';
 
 @Component({
   selector: 'app-list-simulados',
@@ -6,10 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './list-simulados.component.css'
 })
 export class ListSimuladosComponent {
-  simulados = [
-    {"nome": "DP900"},
-    {"nome": "AZ900"}
-  ];
+  simulados:any;
 
-  constructor() { }
+  constructor(private query: QueryExamsService) { }
+
+  ngOnInit() {
+    this.query.getAvailableExams()
+      .subscribe((data: any) => {
+        this.simulados = data;
+      });
+  }
 }

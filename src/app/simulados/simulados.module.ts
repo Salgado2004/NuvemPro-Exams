@@ -18,6 +18,7 @@ import { MultipleQuestionComponent } from './componentes/questoes/multiple-quest
 import { OptionsQuestionComponent } from './componentes/questoes/options-question/options-question.component';
 import { SelectQuestionComponent } from './componentes/questoes/select-question/select-question.component';
 import { TrueFalseQuestionComponent } from './componentes/questoes/true-false-question/true-false-question.component';
+import { QueryExamsService } from './utils/query-exams.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { TrueFalseQuestionComponent } from './componentes/questoes/true-false-qu
     FormsModule
   ],
   providers: [
-    QueryQuestionsService
+    QueryQuestionsService,
+    QueryExamsService
   ]
 })
 export class SimuladosModule { }
