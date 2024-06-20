@@ -9,7 +9,7 @@ export class QueryQuestionsService {
 
   constructor(private httpClient: HttpClient ) { }
 
-  getQuestions(exam: string) {
-    return this.httpClient.get(this.endpoint + exam);
+  getQuestions(exam: string, questions: number) {
+    return this.httpClient.get(this.endpoint + exam+'/'+questions);
   }
 }
