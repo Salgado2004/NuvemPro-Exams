@@ -1,3 +1,4 @@
+<p>{{ body }}</p>
 <div class="option" *ngFor="let option of options; let i = index">
     <input type="radio" [id]="id+i" [name]="id" [value]="option" [(ngModel)]="answer" [disabled]="!active">
     <label [for]="id+i" [ngClass]="classes">{{ option }}</label>

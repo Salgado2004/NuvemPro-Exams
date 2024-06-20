@@ -2,7 +2,7 @@
     display: block;
     margin: 8px;
     padding: 15px;
-    background-color: #fff;
+    background-color: #fdffff;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #ddeefd;
 }
@@ -11,6 +11,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.header{
+    margin: 8px;
+    margin-left: 0;
+    text-align: justify;
 }
 
 #index{

@@ -1,18 +1,8 @@
-.option{
-    cursor: pointer;
-}
-
-.option label{
-    padding: 2px 6px;
-    margin: 2px;
-    border-radius: 10px;
-}
-
 input[type="radio"]:checked + .showAnswer.correct{
-    background-color: #a5eea0;
+    background-color: #dbf5e9;
 }
 
 input[type="radio"]:checked + .showAnswer.incorrect{
-    background-color: #be2929;
+    background-color: #e35b59;
     color: #f9f9f9;
 }
