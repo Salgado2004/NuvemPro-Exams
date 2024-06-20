@@ -1,0 +1,15 @@
+{
+  "id": "026",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Qual suposição do modelo de regressão linear múltipla deve ser atendida para evitar previsões enganosas?",
+  "options": [
+    "Os recursos dependem uns do outros",
+    "Os recursos são independentes uns dos outros",
+    "Os rótulos dependem uns dos outros",
+    "Os rótulos são independentes uns dos outros"
+  ],
+  "correct": [
+    "Os recursos são independentes uns dos outros"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "015",
+  "exam": "IA900",
+  "type": "options",
+  "header": "De acordo com o NIST AI Risk Management Framework, qual é o primeiro estágio a ser considerado ao desenvolver uma solução de IA generativa responsável?",
+  "options": [
+    "Identifique os possíveis danos",
+    "Meça a presença de possíveis danos",
+    "Mitigue os possíveis danos",
+    "Opere a solução"
+  ],
+  "correct": [
+    "Identifique os possíveis danos"
+  ]
+}

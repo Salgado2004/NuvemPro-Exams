@@ -1,0 +1,15 @@
+{
+  "id": "042",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Qual técnica de IA (inteligência artificial) deve ser usada para extrair o nome de um repositório de uma fotografia exibindo a frente da loja?",
+  "options": [
+    "Classificação de imagem",
+    "NLP (Processamento de linguagem natural)",
+    "OCR (Reconhecimento óptico de caracteres)",
+    "Segmentação semântica"
+  ],
+  "correct": [
+    "OCR (Reconhecimento óptico de caracteres)"
+  ]
+}

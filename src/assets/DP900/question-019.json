@@ -1,0 +1,15 @@
+{
+  "id": "019",
+  "exam": "DP900",
+  "type": "options",
+  "header": "_________ é um objeto associado a uma tabela que classifica as linhas de dados da tabela de acordo com seus valores-chave. Selecione a opção correta para preencher o espaço em branco",
+  "options": [
+    "Um índice",
+    "Uma chave estrangeira",
+    "Um procedimento armazenado",
+    "Uma exibição"
+  ],
+  "correct": [
+    "Um índice"
+  ]
+}

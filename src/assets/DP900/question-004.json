@@ -1,0 +1,17 @@
+{
+  "id": "004",
+  "exam": "DP900",
+  "type": "multiple",
+  "header": "Quais são as diferentes opções de implantação disponíveis para o Banco de Dados do Azure para PostgreSQL? Selecione três opções corretas",
+  "options": [
+    "Azure Database for PostgreSQL Single Server",
+    "Azure Database for PostgreSQL Flexible Server",
+    "Azure Cosmos DB for PostgreSQL",
+    "Azure Database for PostgreSQL Multiple Server"
+  ],
+  "correct": [
+    "Azure Database for PostgreSQL Single Server",
+    "Azure Database for PostgreSQL Flexible Server",
+    "Azure Cosmos DB for PostgreSQL"
+  ]
+}

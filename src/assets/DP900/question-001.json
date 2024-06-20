@@ -1,0 +1,15 @@
+{
+  "id": "001",
+  "exam": "DP900",
+  "type": "options",
+  "header": "Você precisa recomendar um serviço de armazenamento de dados que atenda aos seguintes requisitos: Acesso nativo à API SQL e Índices configuráveis. O que você deve recomendar?",
+  "options": [
+    "Azure Cosmos DB",
+    "Azure Blob Storage",
+    "Arquivos do Azure",
+    "Tabelas do Azure"
+  ],
+  "correct": [
+    "Azure Cosmos DB"
+  ]
+}

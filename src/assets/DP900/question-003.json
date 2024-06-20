@@ -1,0 +1,14 @@
+{
+  "id": "003",
+  "exam": "DP900",
+  "type": "options",
+  "header": "Qual das tarefas a seguir é a função de um administrador de banco de dados? Selecione a opção correta",
+  "options": [
+    "Identificar problemas de qualidade de dados",
+    "Fazer backups e restaurar bancos de dados",
+    "Criação de dashboards e relatórios"
+  ],
+  "correct": [
+    "Fazer backups e restaurar bancos de dados"
+  ]
+}

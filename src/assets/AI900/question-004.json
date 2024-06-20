@@ -1,0 +1,15 @@
+{
+  "id": "004",
+  "exam": "IA900",
+  "type": "options",
+  "header": "O que permite identificar diferentes tipos de fraturas ósseas em imagens de raios-X?",
+  "options": [
+    "IA (inteligência artificial de conversa)",
+    "Detecção facial",
+    "Classificação de imagem",
+    "Detecção de objeto"
+  ],
+  "correct": [
+    "Classificação de imagem"
+  ]
+}

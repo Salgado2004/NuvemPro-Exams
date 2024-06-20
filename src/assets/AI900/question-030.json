@@ -1,0 +1,18 @@
+{
+  "id": "030",
+  "exam": "IA900",
+  "type": "multiple",
+  "header": "Quais são os três módulos de transformação de dados no designer do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
+  "options": [
+    "Limpar dados ausentes",
+    "Modelo avaliar modelo",
+    "Normalizar dados",
+    "Projetar colunas no conjunto de dados",
+    "Treinar clustering"
+  ],
+  "correct": [
+    "Limpar dados ausentes",
+    "Normalizar dados",
+    "Projetar colunas no conjunto de dados"
+  ]
+}

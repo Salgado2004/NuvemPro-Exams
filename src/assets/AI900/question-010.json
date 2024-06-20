@@ -1,0 +1,15 @@
+{
+  "id": "010",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Qual serviço você pode usar para treinar um modelo de classificação de imagem?",
+  "options": [
+    "Visão de IA do Azure",
+    "Visão Personalizada de IA do Azure",
+    "Detecção Facial de IA do Azure",
+    "Linguagem de IA do Azure"
+  ],
+  "correct": [
+    "Visão Personalizada de IA do Azure"
+  ]
+}

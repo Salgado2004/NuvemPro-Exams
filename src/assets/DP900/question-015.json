@@ -1,0 +1,15 @@
+{
+  "id": "015",
+  "exam": "DP900",
+  "type": "select",
+  "header": "_______ é um exemplo de dados semiestruturados. Selecione a opção correta para preencher o espaço em branco",
+  "options": [
+    "Um arquivo de vídeo",
+    "Um arquivo JSON",
+    "Uma tabela relacional em um banco de dados",
+    "Um arquivo de áudio"
+  ],
+  "correct": [
+    "Um arquivo JSON"
+  ]
+}

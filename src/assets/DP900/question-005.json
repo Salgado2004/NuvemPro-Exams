@@ -1,0 +1,18 @@
+{
+  "id": "005",
+  "exam": "DP900",
+  "type": "multiple",
+  "header": "Como um banco de dados relacional reforça a integridade dos dados? Selecione todas as opções corretas",
+  "options": [
+    "Impede que registros sejam inseridos se os registros nos quais eles dependem não existirem",
+    "Garante que cada coluna siga o tipo de dados de sua definição de esquema",
+    "Impede que registros sejam excluídos se outros registros dependerem deles",
+    "Impede valores nulos em colunas que não permitem valores nulos"
+  ],
+  "correct": [
+    "Impede que registros sejam inseridos se os registros nos quais eles dependem não existirem",
+    "Garante que cada coluna siga o tipo de dados de sua definição de esquema",
+    "Impede que registros sejam excluídos se outros registros dependerem deles",
+    "Impede valores nulos em colunas que não permitem valores nulos"
+  ]
+}

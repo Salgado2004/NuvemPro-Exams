@@ -1,0 +1,15 @@
+{
+  "id": "039",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Qual princípio da IA (inteligência artificial) responsável garante que um sistema de IA atenda a quaisquer padrões legais e éticos que ele deve cumprir?",
+  "options": [
+    "Responsabilidade",
+    "Justiça",
+    "Inclusão",
+    "Privacidade e segurança"
+  ],
+  "correct": [
+    "Responsabilidade"
+  ]
+}

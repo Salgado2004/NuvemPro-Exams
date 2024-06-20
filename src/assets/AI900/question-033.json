@@ -1,0 +1,16 @@
+{
+  "id": "033",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Você está explorando soluções para melhorar o serviço de pesquisa e indexação de documentos para funcionários.",
+  "body": "Você precisa de uma solução de pesquisa de IA (inteligência artificial) que inclua a pesquisa de texto em vários tipos de documentos, como imagens. Qual tipo de carga de trabalho de IA é esse?",
+  "options": [
+    "Segmentação semântica",
+    "Pesquisa visual computacional",
+    "IA de conversa",
+    "Mineração de dados"
+  ],
+  "correct": [
+    "Mineração de dados"
+  ]
+}

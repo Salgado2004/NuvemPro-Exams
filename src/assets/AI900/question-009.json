@@ -1,0 +1,15 @@
+{
+  "id": "009",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Ao usar a API de Detecção Facial do serviço de Detecção Facial da IA do Azure, qual recurso ajuda a identificar se um rosto humano usa óculos ou acessórios para a cabeça?",
+  "options": [
+    "Atributos de detecção facial",
+    "ID do rosto",
+    "Pontos de referência do rosto",
+    "Retângulo facial"
+  ],
+  "correct": [
+    "Atributos de detecção facial"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "008",
+  "exam": "IA900",
+  "type": "multiple",
+  "header": "Quais os dois modelos do serviço de IA do Azure para Informação de Documentos que incluem a identificação de campos de dados comuns como parte de seus recursos de extração de dados? Cada resposta correta apresenta uma solução completa.",
+  "options": [
+    "Modelo de cartão de visita",
+    "Modelo de documento geral",
+    "Modelo de fatura",
+    "Modelo de layout",
+    "Modelo de leitura"
+  ],
+  "correct": [
+    "Modelo de cartão de visita",
+    "Modelo de fatura"
+  ]
+}

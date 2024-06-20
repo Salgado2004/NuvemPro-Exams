@@ -1,0 +1,16 @@
+{
+  "id": "019",
+  "exam": "IA900",
+  "type": "select",
+  "header": "Selecione a resposta que conclui corretamente a frase.",
+  "body": "____________ pode pesquisar, classificar e comparar fontes de texto quanto à similaridade.",
+  "options": [
+    "Aterramento de dados",
+    "Incorporações",
+    "Aprendizado de máquina",
+    "Mensagens do sistema"
+  ],
+  "correct": [
+    "Incorporações"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "018",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Você planeja desenvolver uma solução de processamento de imagem que usará DALL-E como modelo de IA generativa.",
+  "body": "Qual recurso NÃO é compatível com o modelo DALL-E?",
+  "options": [
+    "Descrição da imagem",
+    "Edição de imagem",
+    "Geração de imagem",
+    "Variações de imagem"
+  ],
+  "correct": [
+    "Descrição da imagem"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "001",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Qual técnica de IA (inteligência artificial) serve como base para soluções modernas de classificação de imagem?",
+  "options": [
+    "Segmentação semântica",
+    "Aprendizado profundo",
+    "Regressão linear",
+    "Regressão linear múltipla"
+  ],
+  "correct": [
+    "Aprendizado profundo"
+  ]
+}

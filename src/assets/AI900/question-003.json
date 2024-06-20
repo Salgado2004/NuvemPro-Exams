@@ -1,0 +1,17 @@
+{
+  "id": "003",
+  "exam": "IA900",
+  "type": "multiple",
+  "header": "Quais são os dois modelos de domínio especializados que dão suporte à Visão de IA do Azure ao categorizar uma imagem? Cada resposta correta apresenta uma solução completa.",
+  "options": [
+    "Celebridades",
+    "Tipos de imagem",
+    "Pontos de referência",
+    "People",
+    "People_group"
+  ],
+  "correct": [
+    "Celebridades",
+    "Pontos de referência"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "041",
+  "exam": "IA900",
+  "type": "select",
+  "header": "Selecione a resposta que conclui corretamente a frase.",
+  "body": "___________ são plug-ins para fornecer aos usuários finais a capacidade de obter ajuda com tarefas comuns de um modelo de IA generativo.",
+  "options": [
+    "Copilotos",
+    "Soluções de reconhecimento vocal",
+    "Modelos de respostas às perguntas",
+    "Serviços de API RESTful"
+  ],
+  "correct": [
+    "Copilotos"
+  ]
+}

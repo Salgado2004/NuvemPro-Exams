@@ -1,0 +1,18 @@
+{
+  "id": "029",
+  "exam": "IA900",
+  "type": "multiple",
+  "header": "Quais três modelos de machine learning supervisionados você pode treinar usando o machine learning automatizado (ML automatizado) no estúdio do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
+  "options": [
+    "Classificação",
+    "Clustering",
+    "Pipeline de inferência",
+    "Regressão",
+    "Previsão de série temporal"
+  ],
+  "correct": [
+    "Classificação",
+    "Regressão",
+    "Previsão de série temporal"
+  ]
+}

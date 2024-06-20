@@ -1,0 +1,17 @@
+{
+  "id": "006",
+  "exam": "IA900",
+  "type": "multiple",
+  "header": "Quais dois modelos de domínio especializados têm suporte usando o serviço de Visão de IA do Azure? Cada resposta correta apresenta uma solução completa.",
+  "options": [
+    "Animais",
+    "Celebridades",
+    "Carros",
+    "Plantas",
+    "Pontos de referência"
+  ],
+  "correct": [
+    "Celebridades",
+    "Pontos de referência"
+  ]
+}

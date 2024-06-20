@@ -1,0 +1,16 @@
+{
+  "id": "028",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Você precisa usar o designer do Azure Machine Learning para implantar um serviço preditivo de um modelo recém-treinado.",
+  "body": "O que você deve fazer primeiro no designer do Machine Learning?",
+  "options": [
+    "Adicionar um conjunto de dados",
+    "Adicionar módulos de treinamento",
+    "Criar uma pipeline de inferência",
+    "Criar um cluster de inferência"
+  ],
+  "correct": [
+    "Criar uma pipeline de inferência"
+  ]
+}

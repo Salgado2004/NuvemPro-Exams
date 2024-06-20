@@ -1,0 +1,14 @@
+{
+  "id": "020",
+  "exam": "DP900",
+  "type": "options",
+  "header": "Qual implantação requer menos alterações ao migrar uma solução local existente do SQL Server? Selecione a opção correta",
+  "options": [
+    "Instância Gerenciada do Banco de Dados SQL do Azure",
+    "Banco de Dados SQL do Azure (banco de dados único)",
+    "Banco de Dados SQL do Azure (pool elástico)"
+  ],
+  "correct": [
+    "Instância Gerenciada do Banco de Dados SQL do Azure"
+  ]
+}

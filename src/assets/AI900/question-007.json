@@ -1,0 +1,15 @@
+{
+  "id": "007",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Qual informação adicional está incluída em cada frase retornada por uma tarefa de descrição de imagem do serviço de Visão de IA do Azure?",
+  "options": [
+    "Coordenadas de caixa delimitadora",
+    "Pontuação de confiança",
+    "Endpoint",
+    "Chave"
+  ],
+  "correct": [
+    "Pontuação de confiança"
+  ]
+}

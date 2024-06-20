@@ -1,0 +1,17 @@
+{
+  "id": "032",
+  "exam": "IA900",
+  "type": "multiple",
+  "header": "Quais dois cenários de carga de trabalho de IA (inteligência artificial) são exemplos de NLP (processamento de linguagem natural)? Cada resposta correta apresenta uma solução completa.",
+  "options": [
+    "Extraindo texto manuscrito de imagens online",
+    "Gerando marcas e descrições para imagens",
+    "Monitorando o tráfego de rede para picos repentinos",
+    "Executando a análise de sentimento em dados de mídia social",
+    "Traduzindo texto entre diferentes idiomas de revisões de produto"
+  ],
+  "correct": [
+    "Executando a análise de sentimento em dados de mídia social",
+    "Traduzindo texto entre diferentes idiomas de revisões de produto"
+  ]
+}

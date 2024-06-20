@@ -1,0 +1,18 @@
+{
+  "id": "045",
+  "exam": "IA900",
+  "type": "multiple",
+  "header": "Quais três partes do processo de aprendizado de máquina a Visão de IA do Azure elimina a necessidade? Cada resposta correta apresenta uma parte da solução.",
+  "options": [
+    "Provisionamento de recursos do Azure",
+    "Escolha do modelo",
+    "Avaliação do modelo",
+    "Inferência",
+    "Treinamento do modelo"
+  ],
+  "correct": [
+    "Escolha do modelo",
+    "Avaliação do modelo",
+    "Treinamento do modelo"
+  ]
+}

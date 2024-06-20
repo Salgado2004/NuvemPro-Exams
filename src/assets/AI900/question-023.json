@@ -1,0 +1,16 @@
+{
+  "id": "023",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Uma empresa implanta uma campanha de marketing online em plataformas de mídia social para um novo lançamento de produto. A empresa quer usar o aprendizado de máquina para medir o sentimento dos usuários na plataforma Twitter que fizeram postagens em resposta à campanha.",
+  "body": "Que tipo de aprendizado de máquina é esse?",
+  "options": [
+    "Classificação",
+    "Clustering",
+    "Transformação de dados",
+    "Regressão"
+  ],
+  "correct": [
+    "Classificação"
+  ]
+}

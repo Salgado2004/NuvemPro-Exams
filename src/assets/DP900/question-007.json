@@ -1,0 +1,16 @@
+{
+  "id": "007",
+  "exam": "DP900",
+  "type": "truefalse",
+  "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+  "options": [
+    "O banco de dados SQL do Azure inclui um serviço de backup gerenciado",
+    "O banco de dados SQL do Azure possui alta disponibilidade integrada",
+    "O banco de dados SQL do Azure pode usar o Azure Defender"
+  ],
+  "correct": [
+    "true",
+    "true",
+    "true"
+  ]
+}

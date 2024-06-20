@@ -1,0 +1,16 @@
+{
+  "id": "024",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Um varejista quer agrupar compradores online que têm atributos semelhantes para permitir que sua equipe de marketing crie campanhas de marketing direcionadas para lançamentos de novos produtos.",
+  "body": "Que tipo de aprendizado de máquina é esse?",
+  "options": [
+    "Classificação",
+    "Clustering",
+    "Classificação multiclasse",
+    "Regressão"
+  ],
+  "correct": [
+    "Clustering"
+  ]
+}

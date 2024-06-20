@@ -1,0 +1,17 @@
+[
+  {
+    "name": "AZ900",
+    "full-name": "Azure Fundamentals",
+    "numeroQuestoes": 0
+  },
+  {
+    "name": "DP900",
+    "full-name": "Azure Data Fundamentals",
+    "numeroQuestoes": 20
+  },
+  {
+    "name": "AI900",
+    "full-name": "Azure AI Fundamentals",
+    "numeroQuestoes": 50
+  }
+]

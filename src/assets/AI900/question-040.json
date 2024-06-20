@@ -1,0 +1,16 @@
+{
+  "id": "040",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Uma empresa está atualmente desenvolvendo veículos agrícolas sem motorista para ajudar na colheita. Os veículos serão implantados ao lado de pessoas que trabalham nos campos de corte e, como tal, a empresa precisará realizar testes robustos.",
+  "body": "Qual princípio da IA (inteligência artificial) responsável é mais importante nesse caso?",
+  "options": [
+    "Responsabilidade",
+    "Justiça",
+    "Confiabilidade",
+    "Privacidade e segurança"
+  ],
+  "correct": [
+    "Confiabilidade"
+  ]
+}

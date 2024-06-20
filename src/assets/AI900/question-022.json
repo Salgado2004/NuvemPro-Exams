@@ -1,0 +1,15 @@
+{
+  "id": "022",
+  "exam": "IA900",
+  "type": "options",
+  "header": "Prever chuvas para uma localização geográfica específica é um exemplo de qual tipo de aprendizado de máquina?",
+  "options": [
+    "Classificação",
+    "Clustering",
+    "Featurization",
+    "Regressão"
+  ],
+  "correct": [
+    "Regressão"
+  ]
+}
