@@ -1,0 +1,16 @@
+{
+    "id": "055",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Uma empresa decide usar um chatbot para auxiliar os clientes em seu site.",
+    "body": "Que tipo de carga de trabalho de IA deve ser utilizada para reconhecer quando um consumidor está chateado com base nas respostas do chatbot?",
+    "options": [
+      "Reconhecimento óptico de caracteres (OCR)",
+      "Classificação",
+      "Detecção de anomalia",
+      "Processamento de linguagem natural"
+    ],
+    "correct": [
+      "Processamento de linguagem natural"
+    ]
+  }

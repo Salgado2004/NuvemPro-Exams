@@ -1,0 +1,16 @@
+{
+    "id": "081",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "Garantir que as variáveis numéricas nos dados de treinamento estejam em uma escala semelhante é um exemplo de _____________.",
+    "options": [
+      "Ingestão de dados.",
+      "Engenharia de recursos.",
+      "Seleção de recursos.",
+      "Treinamento de modelo."
+    ],
+    "correct": [
+      "Seleção de recursos."
+    ]
+  }

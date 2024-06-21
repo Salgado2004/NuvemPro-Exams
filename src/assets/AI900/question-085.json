@@ -1,0 +1,16 @@
+{
+    "id": "085",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você precisa prever a população animal de uma área.",
+    "body": "Qual tipo de Azure Machine Learning você deve usar?",
+    "options": [
+      "Classificação",
+      "Regressão",
+      "Clustering",
+      "Featurization"
+    ],
+    "correct": [
+      "Regressão"
+    ]
+  }

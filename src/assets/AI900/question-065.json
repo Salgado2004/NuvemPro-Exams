@@ -1,0 +1,16 @@
+{
+    "id": "065",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "Ao desenvolver um sistema de IA para carros autônomos, o Princípio de ________________ da Microsoft para IA responsável devem ser aplicado para garantir a operação consistente do sistema durante circunstâncias inesperadas.",
+    "options": [
+      "Inclusão",
+      "Confiabilidade e segurança",
+      "Justiça",
+      "Responsabilidade"
+    ],
+    "correct": [
+      "Confiabilidade e segurança"
+    ]
+  }

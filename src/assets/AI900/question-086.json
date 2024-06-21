@@ -1,0 +1,16 @@
+{
+    "id": "086",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são as duas linguagens que você pode usar para escrever código personalizado para o designer do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Python",
+      "R",
+      "C#",
+      "Scala"
+    ],
+    "correct": [
+      "Python",
+      "R"
+    ]
+  }

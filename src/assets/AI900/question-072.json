@@ -1,0 +1,17 @@
+{
+    "id": "072",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Você está construindo um aplicativo baseado em IA. Você precisa garantir que o aplicativo use os princípios de IA responsável.",
+    "body": "Quais são os dois princípios que você deve seguir? Cada resposta correta apresenta parte da solução.",
+    "options": [
+      "Implementar uma metodologia ágil de desenvolvimento de software",
+      "Implementar um processo de validação de modelo de IA como parte do processo de revisão de software",
+      "Estabelecer um comitê de governança de risco que inclua membros da equipe jurídica, membros da equipe de gestão de risco e um responsável pela privacidade",
+      "Impedir a divulgação do uso de algoritmos baseados em IA para tomada de decisão automatizada"
+    ],
+    "correct": [
+      "Implementar um processo de validação de modelo de IA como parte do processo de revisão de software",
+      "Estabelecer um comitê de governança de risco que inclua membros da equipe jurídica, membros da equipe de gestão de risco e um responsável pela privacidade"
+    ]
+  }

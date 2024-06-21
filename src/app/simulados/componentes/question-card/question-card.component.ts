@@ -32,7 +32,9 @@ export class QuestionCardComponent {
 
   loadQuestionComponent() {
     this.questionType = this.questionData.type;
-    this.questionData.options = this.questionData.options.sort(() => Math.random() - 0.5);
+    if(this.questionType != "truefalse"){
+      this.questionData.options = this.questionData.options.sort(() => Math.random() - Math.random());
+    }
     this.dynamicHost.view.clear();
 
     const questionComponentMap = {

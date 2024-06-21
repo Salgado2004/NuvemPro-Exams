@@ -1,0 +1,16 @@
+{
+    "id": "052",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Em qual dos cenários a seguir a tecnologia de reconhecimento de fala é usada de forma adequada? (Escolha 2)",
+    "options": [
+      "Fornecimento de legendas ocultas para vídeos gravados ou ao vivo.",
+      "Um sistema automotivo que lê mensagens de texto em voz alta.",
+      "Criar uma transcrição de uma chamada telefônica ou reunião.",
+      "Criação de um sistema automatizado de endereço público para uma estação de trem."
+    ],
+    "correct": [
+      "Fornecimento de legendas ocultas para vídeos gravados ou ao vivo.",
+      "Criar uma transcrição de uma chamada telefônica ou reunião."
+    ]
+  }

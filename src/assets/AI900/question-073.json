@@ -1,0 +1,16 @@
+{
+    "id": "073",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "De acordo com o Princípio de _____________ da Microsoft, Os sistemas de IA NÃO devem refletir preconceitos dos conjuntos de dados usado para treinar os sistemas.",
+    "options": [
+      "Responsabilidade",
+      "Justiça",
+      "Inclusão",
+      "Transparência"
+    ],
+    "correct": [
+      "Justiça"
+    ]
+  }

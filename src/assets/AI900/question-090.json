@@ -1,0 +1,17 @@
+{
+    "id": "090",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "O serviço Face poderá ser utilizado para realizar reconhecimento facial de funcionários",
+      "O serviço Face será mais preciso se você fornecer mais fotos de amostra de cada funcionário de ângulos diferentes.",
+      "Se um funcionário estiver usando óculos escuros, o serviço Face sempre deixará de reconhecer o funcionário."
+    ],
+    "correct": [
+      "true",
+      "true",
+      "false"
+    ]
+  }

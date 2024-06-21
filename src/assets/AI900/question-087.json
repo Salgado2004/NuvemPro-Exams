@@ -1,0 +1,17 @@
+{
+    "id": "087",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Para um modelo de regressão, os rótulos devem ser numéricos.",
+      "Para um modelo de clustering, rótulos devem ser usados.",
+      "Para um modelo de classificação, os rótulos devem ser numéricos."
+    ],
+    "correct": [
+      "true",
+      "false",
+      "false"
+    ]
+  }
