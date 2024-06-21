@@ -28,7 +28,7 @@ jobs:
         run: npm install -g @angular/cli
 
       - name: Build the Angular app
-        run: ng build --prod --base-href "certcloud.azurewebsites.net/"
+        run: ng build --base-href "certcloud.azurewebsites.net/"
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
