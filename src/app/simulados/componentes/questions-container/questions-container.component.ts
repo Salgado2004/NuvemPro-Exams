@@ -2,7 +2,8 @@ import { Component, Input, ViewChild } from '@angular/core';
 import { QueryQuestionsService } from '../../utils/query-questions.service';
 import { SimuladoEventsService } from '../../utils/simulado-events.service';
 import { QuestionCardComponent } from '../question-card/question-card.component';
-import { ActivatedRoute } from '@angular/router';
+import { Simulado } from '../../utils/simulado';
+import { QuestionInterface } from '../../utils/question-interface';
 
 @Component({
   selector: 'app-questions-container',
@@ -11,32 +12,32 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class QuestionsContainerComponent {
   @ViewChild(QuestionCardComponent) questionCard: QuestionCardComponent;
-  @Input() exam: string;
-  questionNumber: string;
-  questions = [];
+  @Input() exam: Simulado;
+  @Input() questionNumber: number;
+  questions: number[];
+  questionData: QuestionInterface;
   totalScore:number = 0;
   finalScore:number;
   current = 0;
   finish:boolean = false;
 
-  constructor(private query: QueryQuestionsService, private activatedRoute : ActivatedRoute) { }
-
+  constructor(private query: QueryQuestionsService) { }
   ngOnInit() {
-    this.questionNumber = this.activatedRoute.snapshot.paramMap.get("questions");
-
-    this.query.getQuestions(this.exam, Number.parseInt(this.questionNumber))
-      .subscribe((data: any) => {
-        this.questions = data;
-        this.questionCard.questionData = this.questions[this.current];
-        this.questionCard.questionIndex = this.current+1;
-      });
+    this.generateQuestions();
+    this.loadQuestion().then((data:QuestionInterface) => {
+      this.questionData = data;
+      this.questionCard.setQuestionData(this.questionData);
+    });
 
       SimuladoEventsService.get('nextQuestion').subscribe( score => {
         this.totalScore += score;
         this.current += 1;
-        this.questionCard.questionData = this.questions[this.current];
-        this.questionCard.questionIndex = this.current+1;
-        this.questionCard.loadQuestionComponent();
+        if(this.current < this.questions.length){
+          this.loadQuestion().then((data:QuestionInterface) => {
+            this.questionData = data;
+            this.questionCard.setQuestionData(this.questionData);
+          });
+        }
       });
 
       SimuladoEventsService.get('endExam').subscribe( score => {
@@ -44,6 +45,23 @@ export class QuestionsContainerComponent {
         this.finalScore = Math.round((this.totalScore / this.questions.length) * 100);
         this.finish = true;
       });
+  }
+
+  generateQuestions(){
+    this.questions = [];
+    while(this.questions.length < this.questionNumber){
+      let q = Math.floor(Math.random() * this.exam.numeroQuestoes) + 1;
+      if(this.questions.indexOf(q) === -1) this.questions.push(q);
+    }
+  }
+
+  async loadQuestion(){
+    try{
+      let question = await this.query.getQuestion(this.exam.name, this.questions[this.current].toString());
+      return question;
+    } catch(error){
+      console.error("Erro ao carregar a questão:", error);
+    }
   }
 
 }

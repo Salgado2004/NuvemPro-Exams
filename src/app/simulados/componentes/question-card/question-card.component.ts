@@ -6,7 +6,6 @@ import { OptionsQuestionComponent } from '../questoes/options-question/options-q
 import { SelectQuestionComponent } from '../questoes/select-question/select-question.component';
 import { TrueFalseQuestionComponent } from '../questoes/true-false-question/true-false-question.component';
 import { QuestionStructure } from '../../utils/question-structure';
-import { ActivatedRoute } from '@angular/router';
 import { SimuladoEventsService } from '../../utils/simulado-events.service';
 
 @Component({
@@ -18,22 +17,22 @@ export class QuestionCardComponent {
   @ViewChild(DinamicLoaderDirective) private dynamicHost!: DinamicLoaderDirective; 
   @Input() questionData: QuestionInterface;
   @Input() questionIndex: number;
+  @Input() totalQuestions: string;
   questionType: string;
-  totalQuestions: string;
   questionInstance: any;
-
-  constructor(private activatedRoute : ActivatedRoute) { }
-
-  ngOnInit(){
-    this.totalQuestions = this.activatedRoute.snapshot.paramMap.get("questions");
-  }
 
   ngAfterViewInit() {
     this.loadQuestionComponent();
   }
 
+  public setQuestionData(data: QuestionInterface){
+    this.questionData = data;
+    this.loadQuestionComponent();
+  }
+
   loadQuestionComponent() {
     this.questionType = this.questionData.type;
+    this.questionData.options = this.questionData.options.sort(() => Math.random() - 0.5);
     this.dynamicHost.view.clear();
 
     const questionComponentMap = {
