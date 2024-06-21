@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { QueryExamsService } from '../../utils/query-exams.service';
+import { Simulado } from '../../utils/simulado';
 
 @Component({
   selector: 'app-exam',
@@ -7,12 +9,16 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './exam.component.css'
 })
 export class ExamComponent {
-  exam: string;
+  examName: string;
+  exam: Simulado;
   questions: string;
 
-  constructor(private activatedRoute : ActivatedRoute) { }
+  constructor(private activatedRoute : ActivatedRoute, private query: QueryExamsService) { }
 
   ngOnInit() {
-    this.exam = this.activatedRoute.snapshot.paramMap.get("exam");
+    this.examName = this.activatedRoute.snapshot.paramMap.get("exam");
+    this.query.getExam(this.examName).then((data:Simulado) => {
+      this.exam = data;
+    });
   }
 }

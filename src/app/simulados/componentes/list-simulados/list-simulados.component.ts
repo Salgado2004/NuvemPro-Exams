@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { QueryExamsService } from '../../utils/query-exams.service';
+import { Simulado } from '../../utils/simulado';
 
 @Component({
   selector: 'app-list-simulados',
@@ -7,14 +8,13 @@ import { QueryExamsService } from '../../utils/query-exams.service';
   styleUrl: './list-simulados.component.css'
 })
 export class ListSimuladosComponent {
-  simulados:any;
+  public simulados: Simulado[];
 
   constructor(private query: QueryExamsService) { }
 
   ngOnInit() {
-    this.query.getAvailableExams()
-      .subscribe((data: any) => {
-        this.simulados = data;
-      });
+    this.query.getAvailableExams().then((data:Simulado[]) => {
+      this.simulados = data;
+    });
   }
 }
