@@ -6,6 +6,7 @@ import { QuestionInterface } from './question-interface';
   providedIn: 'root'
 })
 export class QueryQuestionsService {
+  private root: string = 'https://raw.githubusercontent.com/Salgado2004/CertCloud-Exams/master/content/';
   question: QuestionInterface;
 
   constructor(private httpClient: HttpClient ) { }
@@ -23,7 +24,7 @@ export class QueryQuestionsService {
 
   async getQuestion(exam: string, index: string) {
     try{
-      let pathname = 'assets/' + exam + '/question-' + this.formatQuestionIndex(index) + '.json';
+      let pathname = this.root + exam + '/question-' + this.formatQuestionIndex(index) + '.json';
       const data: any = await this.loadQuestionFile(pathname).toPromise();
       this.question = data;
       return this.question;

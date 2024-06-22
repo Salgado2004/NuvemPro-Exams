@@ -6,7 +6,7 @@ import { Simulado } from './simulado';
   providedIn: 'root'
 })
 export class QueryExamsService {
-  private pathname = 'assets/exams.json';
+  private pathname = 'https://raw.githubusercontent.com/Salgado2004/CertCloud-Exams/master/content/exams.json';
   private simulados: Simulado[];
 
   constructor(private httpClient: HttpClient ) { }
