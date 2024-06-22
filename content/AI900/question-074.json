@@ -1,0 +1,16 @@
+{
+    "id": "074",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "Os valores de dados que influenciam a previsão de um modelo são chamados ______________.",
+    "options": [
+      "Variáveis dependentes",
+      "Recursos",
+      "Rótulos",
+      "Identificadores"
+    ],
+    "correct": [
+      "Recursos"
+    ]
+  }

@@ -1,0 +1,17 @@
+{
+    "id": "088",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Ao criar um modelo de detecção de objetos no serviço Visão Personalizada, você deve escolher um tipo de classificação Multilabel ou Multiclass.",
+      "Você pode criar um modelo de detecção de objetos no serviço Visão Personalizada para localizar o local do conteúdo em uma imagem.",
+      "Ao criar um modelo de detecção de objetos no serviço Visão Personalizada, você pode selecionar um conjunto de domínios predefinidos."
+    ],
+    "correct": [
+      "false",
+      "true",
+      "true"
+    ]
+  }

@@ -1,0 +1,17 @@
+{
+    "id": "083",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Você treina um modelo de regressão usando dados não rotulados.",
+      "A técnica de classificação é usada para prever dados numéricos sequenciais ao longo do tempo.",
+      "Agrupar itens por suas características comuns é um exemplo de clustering."
+    ],
+    "correct": [
+      "false",
+      "false",
+      "true"
+    ]
+  }

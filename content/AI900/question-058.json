@@ -1,0 +1,15 @@
+{
+    "id": "058",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Qual das seguintes afirmações sobre o designer do Azure Machine Learning é verdadeira? (Escolha 2)",
+    "options": [
+      "Permite que você salve seu trabalho na forma de um rascunho de pipeline.",
+      "Permite incluir funções C# personalizadas",
+      "Permite criar, testar e implantar modelos de aprendizado de máquina usando uma tela visual de arrastar e soltar."
+    ],
+    "correct": [
+      "Permite que você salve seu trabalho na forma de um rascunho de pipeline.",
+      "Permite criar, testar e implantar modelos de aprendizado de máquina usando uma tela visual de arrastar e soltar."
+    ]
+  }

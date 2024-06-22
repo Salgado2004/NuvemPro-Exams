@@ -1,0 +1,15 @@
+{
+    "id": "059",
+    "exam": "IA900",
+    "type": "options",
+    "header": "No progresso do aprendizado de máquina, qual é o método de divisão de dados para treinamento e avaliação?",
+    "options": [
+      "Divida os dados em colunas para treinamento e avaliação aleatoriamente.",
+      "Os recursos podem ser usados para treinamento e os rótulos podem ser usados para avaliação.",
+      "Os rótulos podem ser usados para treinamento e os recursos podem ser usados para avaliação.",
+      "Divida aleatoriamente os dados em linhas para treinamento e linhas para avaliação."
+    ],
+    "correct": [
+      "Divida aleatoriamente os dados em linhas para treinamento e linhas para avaliação."
+    ]
+  }

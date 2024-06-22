@@ -1,0 +1,20 @@
+{
+    "id": "068",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são três princípios orientadores da Microsoft para uma IA responsável? Cada resposta correta apresenta uma solução completa.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Conhecimento",
+      "Determinação",
+      "Inclusão",
+      "Justiça",
+      "Teimosia",
+      "Confiabilidade e segurança"
+    ],
+    "correct": [
+      "Inclusão",
+      "Justiça",
+      "Confiabilidade e segurança"
+    ]
+  }

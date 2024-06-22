@@ -1,0 +1,19 @@
+{
+    "id": "077",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "O aprendizado de máquina automatizado é o processo de automatizar as tarefas iterativas e demoradas do desenvolvimento do modelo de aprendizado de máquina",
+      "O aprendizado de máquina automatizado pode inferir automaticamente os dados de treinamento do caso de uso fornecido.",
+      "O aprendizado de máquina automatizado funciona executando várias iterações de treinamento que são pontuadas e classificadas pelas métricas que você especifica.",
+      "O aprendizado de máquina automatizado permite que você especifique um conjunto de dados e entende automaticamente qual rótulo prever."
+    ],
+    "correct": [
+      "true",
+      "false",
+      "true",
+      "false"
+    ]
+  }

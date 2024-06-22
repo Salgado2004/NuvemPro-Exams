@@ -1,0 +1,16 @@
+{
+    "id": "067",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Selecione a resposta que completa corretamente a frase.",
+    "body": "__________________ é usado para extrair datas, quantidades e locais do texto.",
+    "options": [
+      "Extração de frase-chave",
+      "Detecção de idioma",
+      "Reconhecimento de Entidade Nomeada (NER)",
+      "Análise de sentimentos"
+    ],
+    "correct": [
+      "Reconhecimento de Entidade Nomeada (NER)"
+    ]
+  }

@@ -1,0 +1,16 @@
+{
+    "id": "060",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais das opções a seguir são características comuns de cargas de trabalho de IA?",
+    "options": [
+      "Processamento mínimo de dados.",
+      "Grandes conjuntos de dados.",
+      "Tarefas simples e repetitivas.",
+      "Altos requisitos computacionais."
+    ],
+    "correct": [
+      "Grandes conjuntos de dados.",
+      "Altos requisitos computacionais."
+    ]
+  }

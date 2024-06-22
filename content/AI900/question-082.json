@@ -1,0 +1,16 @@
+{
+    "id": "082",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "Atribuir classes a imagens antes de treinar um modelo de classificação é um exemplo de _____________.",
+    "options": [
+      "Avaliação.",
+      "Engenharia de recursos",
+      "Ajuste de hiperparâmetros.",
+      "Rotulagem."
+    ],
+    "correct": [
+      "Rotulagem."
+    ]
+  }

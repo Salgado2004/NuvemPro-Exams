@@ -1,0 +1,15 @@
+{
+    "id": "051",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Que capacidade permite que um computador detecte automaticamente erros ou atividades incomuns em um sistema?",
+    "options": [
+      "IA de conversa",
+      "Visão Computacional",
+      "NLP (Processamento de Linguagem Natural)",
+      "Detecção de anomalias"
+    ],
+    "correct": [
+      "Detecção de anomalias"
+    ]
+  }

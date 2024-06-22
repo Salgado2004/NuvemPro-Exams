@@ -1,0 +1,16 @@
+{
+    "id": "076",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você tem um conjunto de dados que contém informações sobre viagens de táxi ocorridas durante um determinado período. Você precisa treinar um modelo para prever a tarifa de uma viagem de táxi.",
+    "body": "O que você deve usar como recurso?",
+    "options": [
+      "O número de viagens de táxi no conjunto de dados",
+      "A distância percorrida em viagens individuais de táxi",
+      "A tarifa de viagens individuais de táxi",
+      "O ID de viagem de viagens individuais de táxi"
+    ],
+    "correct": [
+      "A distância percorrida em viagens individuais de táxi"
+    ]
+  }

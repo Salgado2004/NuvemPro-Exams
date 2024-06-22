@@ -1,0 +1,17 @@
+{
+    "id": "071",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Fornecer uma explicação sobre o resultado de um pedido de empréstimo de crédito é um exemplo do princípio de transparência da Microsoft para IA responsável.",
+      "Um bot de triagem que prioriza sinistros de seguros com base em lesões é um exemplo do princípio de confiabilidade e segurança da Microsoft para IA responsável.",
+      "Uma solução de IA que oferece preços diferentes para diferentes territórios de vendas é um exemplo do princípio de inclusão da Microsoft para IA responsável"
+    ],
+    "correct": [
+      "true",
+      "false",
+      "false"
+    ]
+  }
