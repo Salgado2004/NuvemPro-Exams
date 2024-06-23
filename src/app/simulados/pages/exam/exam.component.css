@@ -15,3 +15,9 @@ main{
 main h2{
     margin-left: 12px;
 }
+
+@media (max-width: 920px) {
+    main{
+        padding: 12px;
+    }
+}
