@@ -1,0 +1,52 @@
+:host{
+    display: block;
+    box-sizing: border-box;
+    width: 20%;
+    border: 2px solid #319bf5;
+    background-color: #18202f;
+    border-radius: 16px;
+    padding: 12px;
+    margin: 12px;
+}
+
+p{
+    color: #fff;
+    font-size: 12pt;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div span{
+    color: #fff;
+    font-size: 10pt;
+}
+
+input{
+    padding: 4px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 60%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a span{
+    display: block;
+    width: 100%;
+    padding: 4px;
+    margin-top: 6px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #319bf5;
+    border-radius: 10px;
+}

@@ -1,0 +1,9 @@
+<p>{{ exam.fullname }}</p>
+<div>
+    <span>Questões: </span>
+    <input type="number" max="{{ exam.numeroQuestoes }}" min="0" 
+       [(ngModel)]="questions" (change)="validateQuestions()">
+</div>
+<a [routerLink]="['/simulados/exam/', exam.name, questions]">
+    <span>Praticar</span>
+</a>
