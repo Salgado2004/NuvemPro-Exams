@@ -1,8 +1,6 @@
 <section>
     <p>Selecione um simulado para começar: </p>
-    <ul>
-        <li *ngFor="let simulado of simulados">
-            <a [routerLink]="['/simulados/exam/', simulado.name, 10]">{{ simulado.name }}</a>
-        </li>
-    </ul>
+    <div class="simulados">
+        <app-exam-card *ngFor="let simulado of simulados" [exam]="simulado"></app-exam-card>
+    </div>  
 </section>

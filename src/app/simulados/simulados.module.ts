@@ -9,6 +9,7 @@ import { SimuladosRoutingModule } from './simulados.route';
 import { HomeComponent } from './pages/home/home.component';
 import { ExamComponent } from './pages/exam/exam.component';
 import { HeaderComponent } from './componentes/header/header.component';
+import { ExamCardComponent } from './componentes/exam-card/exam-card.component';
 import { QuestionsContainerComponent } from './componentes/questions-container/questions-container.component';
 import { QuestionCardComponent } from './componentes/question-card/question-card.component';
 import { ListSimuladosComponent} from './componentes/list-simulados/list-simulados.component';
@@ -26,6 +27,7 @@ import { QueryExamsService } from './utils/query-exams.service';
     HomeComponent,
     ExamComponent,
     HeaderComponent,
+    ExamCardComponent,
     QuestionsContainerComponent,
     ListSimuladosComponent,
     QuestionCardComponent,

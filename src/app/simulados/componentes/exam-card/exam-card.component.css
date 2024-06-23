@@ -1,0 +1,70 @@
+:host{
+    display: block;
+    box-sizing: border-box;
+    width: 20%;
+    border: 2px solid #319bf5;
+    background-color: #18202f;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 12px;
+}
+
+p{
+    color: #fff;
+    font-size: 12pt;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div span{
+    color: #fff;
+    font-size: 10pt;
+}
+
+input{
+    padding: 4px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 60%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a span{
+    display: block;
+    width: 100%;
+    padding: 4px;
+    margin-top: 8px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #319bf5;
+    border-radius: 10px;
+}
+
+@media (max-width: 920px) {
+    :host{
+        width: 40%;
+    }
+}
+
+@media (max-width: 590px) {
+    :host{
+        width: 75%;
+    }
+}
+
+@media (max-width: 450px) {
+    :host{
+        width: 100%;
+    }
+}
