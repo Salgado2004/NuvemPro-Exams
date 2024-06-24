@@ -9,11 +9,13 @@ import { Simulado } from '../../utils/simulado';
 })
 export class ListSimuladosComponent {
   public simulados: Simulado[];
+  loading: boolean = true;
 
   constructor(private query: QueryExamsService) { }
 
   ngOnInit() {
     this.query.getAvailableExams().then((data:Simulado[]) => {
+      this.loading = false;
       this.simulados = data;
       console.log(this.simulados);
     });

@@ -14,6 +14,7 @@ import { QuestionsContainerComponent } from './componentes/questions-container/q
 import { QuestionCardComponent } from './componentes/question-card/question-card.component';
 import { ListSimuladosComponent} from './componentes/list-simulados/list-simulados.component';
 import { QueryQuestionsService } from './utils/query-questions.service';
+import { LoaderComponent } from './componentes/loader/loader.component';
 import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
 
 import { MultipleQuestionComponent } from './componentes/questoes/multiple-question/multiple-question.component';
@@ -43,7 +44,8 @@ import { QueryExamsService } from './utils/query-exams.service';
     RouterLink,
     NgFor,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    LoaderComponent
   ],
   providers: [
     QueryQuestionsService,

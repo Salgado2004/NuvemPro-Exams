@@ -14,6 +14,7 @@ export class QuestionsContainerComponent {
   @ViewChild(QuestionCardComponent) questionCard: QuestionCardComponent;
   @Input() exam: Simulado;
   @Input() questionNumber: number;
+  loading:boolean = true;
   questions: number[];
   questionData: QuestionInterface;
   totalScore:number = 0;
@@ -25,15 +26,18 @@ export class QuestionsContainerComponent {
   ngOnInit() {
     this.generateQuestions();
     this.loadQuestion().then((data:QuestionInterface) => {
+      this.loading = false;
       this.questionData = data;
       this.questionCard.setQuestionData(this.questionData);
     });
 
       SimuladoEventsService.get('nextQuestion').subscribe( score => {
+        this.loading = true;
         this.totalScore += score;
         this.current += 1;
         if(this.current < this.questions.length){
           this.loadQuestion().then((data:QuestionInterface) => {
+            this.loading = false;
             this.questionData = data;
             this.questionCard.setQuestionData(this.questionData);
           });

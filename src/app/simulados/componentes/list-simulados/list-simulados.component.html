@@ -1,5 +1,6 @@
 <section>
     <p>Selecione um simulado para começar: </p>
+    <app-loader *ngIf="loading"></app-loader>
     <div class="simulados">
         <app-exam-card *ngFor="let simulado of simulados" [exam]="simulado"></app-exam-card>
     </div>  
