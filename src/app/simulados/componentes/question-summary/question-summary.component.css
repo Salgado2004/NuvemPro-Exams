@@ -1,0 +1,27 @@
+details{
+    display: block;
+    margin: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1.0s ease-in-out;
+}
+
+.correct{
+    background-color: #dbf5e9;
+    border: 1px solid #21c177;
+}
+
+.incorrect{
+    background-color: #f8d7da;
+    border: 1px solid #e35b59;
+}
+
+ul{
+    margin: 8px;
+    padding-left: 24px;
+}
+
+.result{
+    margin: 6px;
+}

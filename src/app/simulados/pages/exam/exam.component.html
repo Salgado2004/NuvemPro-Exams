@@ -3,6 +3,11 @@
     <app-header></app-header>
 </header>
 <main>
-    <h2>Simulado {{ exam.fullname }}</h2>
+    <div class="top-section">
+        <h2>Simulado {{ exam.fullname }}</h2>
+        <a routerLink="/">
+            <span>Voltar</span>
+        </a>
+    </div>
     <app-questions-container [exam]="exam" [questionNumber]="questionNumber"></app-questions-container>
 </main>

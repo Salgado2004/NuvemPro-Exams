@@ -1,2 +1,3 @@
-<app-question-card  *ngIf="!finish"  [questionData]="questionData" [questionIndex]="current+1" [totalQuestions]="questionNumber"></app-question-card>
-<span *ngIf="finish">Nota final {{ finalScore }}%</span>
+<app-loader *ngIf="loading"></app-loader>
+<app-question-card  *ngIf="!finish && !loading"  [questionData]="questionData" [questionIndex]="current+1" [totalQuestions]="questionNumber"></app-question-card>
+<app-exam-summary *ngIf="finish" [summary]="summary"></app-exam-summary>

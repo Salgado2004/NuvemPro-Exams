@@ -48,6 +48,7 @@ export class QuestionCardComponent {
     const viewContainerRef = this.dynamicHost.view;
     this.questionInstance = viewContainerRef.createComponent<QuestionStructure>(questionComponentType);
     this.questionInstance.instance.id = "question"+this.questionIndex;
+    this.questionInstance.instance.header = this.questionData.header;
     this.questionInstance.instance.body = this.questionData.body;
     this.questionInstance.instance.options = this.questionData.options;
     this.questionInstance.instance.correct = this.questionData.correct;
@@ -55,6 +56,6 @@ export class QuestionCardComponent {
   }
 
   finishExam(){
-    SimuladoEventsService.get('endExam').emit(this.questionInstance.instance.score());
+    SimuladoEventsService.get('endExam').emit(this.questionInstance.instance.getSummary());
   }
 }
