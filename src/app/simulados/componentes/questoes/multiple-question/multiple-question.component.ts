@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { QuestionStructure } from '../../../utils/question-structure';
 import { SimuladoEventsService } from '../../../utils/simulado-events.service';
+import { QuestionSummary } from '../../../utils/question-summary';
 
 @Component({
   selector: 'app-multiple-question',
@@ -16,6 +17,7 @@ export class MultipleQuestionComponent implements QuestionStructure {
   answers: string[] = [];
   showNext: boolean;
   active: boolean = true;
+  summary: QuestionSummary = new Object() as QuestionSummary;
 
   verifyAnswer() {
     for (let i = 0; i < this.options.length; i++){
@@ -39,8 +41,18 @@ export class MultipleQuestionComponent implements QuestionStructure {
     });
     return total/this.correct.length;
   }
+
+  getSummary(){
+    this.summary.header = this.header;
+    this.summary.body = this.body;
+    this.summary.correct = this.correct;
+    this.summary.answer = this.options.filter((opt, index) => this.answers[index]);
+    this.summary.score = this.score();
+    this.summary.right = this.score() == 1;
+    return this.summary;
+  }
   
   nextQuestion():void{
-    SimuladoEventsService.get('nextQuestion').emit(this.score());
+    SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
   }
 }

@@ -4,6 +4,7 @@ import { SimuladoEventsService } from '../../utils/simulado-events.service';
 import { QuestionCardComponent } from '../question-card/question-card.component';
 import { Simulado } from '../../utils/simulado';
 import { QuestionInterface } from '../../utils/question-interface';
+import { QuestionSummary } from '../../utils/question-summary';
 
 @Component({
   selector: 'app-questions-container',
@@ -16,9 +17,8 @@ export class QuestionsContainerComponent {
   @Input() questionNumber: number;
   loading:boolean = true;
   questions: number[];
+  summary: QuestionSummary[] = [];
   questionData: QuestionInterface;
-  totalScore:number = 0;
-  finalScore:number;
   current = 0;
   finish:boolean = false;
 
@@ -31,9 +31,9 @@ export class QuestionsContainerComponent {
       this.questionCard.setQuestionData(this.questionData);
     });
 
-      SimuladoEventsService.get('nextQuestion').subscribe( score => {
+      SimuladoEventsService.get('nextQuestion').subscribe( (summary:QuestionSummary) => {
         this.loading = true;
-        this.totalScore += score;
+        this.summary.push(summary);
         this.current += 1;
         if(this.current < this.questions.length){
           this.loadQuestion().then((data:QuestionInterface) => {
@@ -44,9 +44,8 @@ export class QuestionsContainerComponent {
         }
       });
 
-      SimuladoEventsService.get('endExam').subscribe( score => {
-        this.totalScore += score;
-        this.finalScore = Math.round((this.totalScore / this.questions.length) * 100);
+      SimuladoEventsService.get('endExam').subscribe( (summary:QuestionSummary) => {
+        this.summary.push(summary);
         this.finish = true;
       });
   }

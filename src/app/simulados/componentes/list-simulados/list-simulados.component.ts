@@ -17,7 +17,6 @@ export class ListSimuladosComponent {
     this.query.getAvailableExams().then((data:Simulado[]) => {
       this.loading = false;
       this.simulados = data;
-      console.log(this.simulados);
     });
   }
 }

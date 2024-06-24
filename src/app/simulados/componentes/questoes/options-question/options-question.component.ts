@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { QuestionStructure } from '../../../utils/question-structure';
 import { SimuladoEventsService } from '../../../utils/simulado-events.service';
+import { QuestionSummary } from '../../../utils/question-summary';
 
 @Component({
   selector: 'app-options-question',
@@ -17,6 +18,7 @@ export class OptionsQuestionComponent implements QuestionStructure{
   showNext: boolean;
   classes: { [key: string]: boolean };
   active: boolean = true;
+  summary: QuestionSummary = new Object() as QuestionSummary;
 
   constructor(){
     this.classes = {};
@@ -34,8 +36,18 @@ export class OptionsQuestionComponent implements QuestionStructure{
   score(){
     return this.answer == this.correct[0] ? 1 : 0;
   }
+
+  getSummary(){
+    this.summary.header = this.header;
+    this.summary.body = this.body;
+    this.summary.correct = this.correct;
+    this.summary.answer = this.answer;
+    this.summary.score = this.score();
+    this.summary.right = this.score() == 1;
+    return this.summary;
+  }
   
   nextQuestion():void{
-    SimuladoEventsService.get('nextQuestion').emit(this.score());
+    SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
   }
 }

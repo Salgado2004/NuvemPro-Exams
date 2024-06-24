@@ -1,0 +1,5 @@
+<h2 id="finalScore">Nota final: {{ finalScore }}%</h2>
+<div>
+    <h4>Perguntas</h4>
+    <app-question-summary *ngFor="let question of summary" [summary]="question"></app-question-summary>
+</div>

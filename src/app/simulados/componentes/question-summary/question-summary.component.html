@@ -1,0 +1,10 @@
+<details [ngClass]="classes">
+    <summary>{{ summary.header }}</summary>
+    <ul *ngIf="summary.options != null">
+        <li *ngFor="let option of summary.options">{{ option }}</li>
+    </ul>
+    <div class="result">
+        <p><b>Resposta correta: </b>{{ summary.correct | summary }}</p>
+        <p><b>Sua resposta: </b>{{ summary.answer | summary }}</p>
+    </div>
+</details>

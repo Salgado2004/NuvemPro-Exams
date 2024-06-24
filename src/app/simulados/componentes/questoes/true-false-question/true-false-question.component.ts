@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { QuestionStructure } from '../../../utils/question-structure';
 import { SimuladoEventsService } from '../../../utils/simulado-events.service';
+import { QuestionSummary } from '../../../utils/question-summary';
 
 @Component({
   selector: 'app-true-false-question',
@@ -16,6 +17,7 @@ export class TrueFalseQuestionComponent implements QuestionStructure{
   answers: string[] = [];
   showNext: boolean;
   active: boolean = true;
+  summary: QuestionSummary = new Object() as QuestionSummary;
 
   verifyAnswer() {
     for (let i = 0; i < this.options.length; i++) {
@@ -40,7 +42,18 @@ export class TrueFalseQuestionComponent implements QuestionStructure{
     return total/this.correct.length;
   }
 
+  getSummary(){
+    this.summary.header = this.header;
+    this.summary.body = this.body;
+    this.summary.options = this.options;
+    this.summary.correct = this.correct;
+    this.summary.answer = this.answers;
+    this.summary.score = this.score();
+    this.summary.right = this.score() == 1;
+    return this.summary;
+  }
+
   nextQuestion():void{
-    SimuladoEventsService.get('nextQuestion').emit(this.score());
+    SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
   }
 }
