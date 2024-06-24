@@ -9,6 +9,23 @@
     margin: 12px;
 }
 
+picture{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20vh;
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+img{
+    height: 100%;
+    width: auto;
+}
+
 p{
     color: #fff;
     font-size: 12pt;

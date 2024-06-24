@@ -2,16 +2,19 @@
   {
     "name": "AZ900",
     "fullname": "Azure Fundamentals",
-    "numeroQuestoes": 1
+    "numeroQuestoes": 1,
+    "image": "assets/badges/AZ900-badge.png"
   },
   {
     "name": "DP900",
     "fullname": "Azure Data Fundamentals",
-    "numeroQuestoes": 20
+    "numeroQuestoes": 20,
+    "image": "assets/badges/DP900-badge.png"
   },
   {
     "name": "AI900",
     "fullname": "Azure AI Fundamentals",
-    "numeroQuestoes": 90
+    "numeroQuestoes": 90,
+    "image": "assets/badges/AI900-badge.png"
   }
 ]

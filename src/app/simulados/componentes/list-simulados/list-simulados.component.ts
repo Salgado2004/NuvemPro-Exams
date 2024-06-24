@@ -15,6 +15,7 @@ export class ListSimuladosComponent {
   ngOnInit() {
     this.query.getAvailableExams().then((data:Simulado[]) => {
       this.simulados = data;
+      console.log(this.simulados);
     });
   }
 }
