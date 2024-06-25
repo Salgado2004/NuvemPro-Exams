@@ -1,0 +1,17 @@
+[
+  {
+    "id": "001",
+    "exam": "AZ900",
+    "type": "options",
+    "header": "Qual é a vantagem da computação em nuvem em comparação com implantações locais?",
+    "options": [
+      "Você pode dimensionar mais rapidamente",
+      "Você pode trabalhar em várias estações de trabalho",
+      "Você tem acesso total em caso de interrupção da internet",
+      "Você tem suas CPUs"
+    ],
+    "correct": [
+      "Você pode dimensionar mais rapidamente"
+    ]
+  }
+]

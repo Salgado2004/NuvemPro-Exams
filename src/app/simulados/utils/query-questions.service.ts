@@ -8,7 +8,7 @@ import { environment } from '../../../environments/environment';
 })
 export class QueryQuestionsService {
   private root: string = environment.endpoint;
-  question: QuestionInterface;
+  questions: QuestionInterface[];
 
   constructor(private httpClient: HttpClient ) { }
 
@@ -16,21 +16,14 @@ export class QueryQuestionsService {
     return this.httpClient.get(pathname);
   }
 
-  private formatQuestionIndex(index: string){
-    while(index.length < 3){
-      index = '0' + index;
-    }
-    return index;
-  }
-
-  async getQuestion(exam: string, index: string) {
+  async getQuestions(exam: string) {
     try{
-      let pathname = this.root + exam + '/question-' + this.formatQuestionIndex(index) + '.json';
+      let pathname = this.root + exam + '/questions.json';
       const data: any = await this.loadQuestionFile(pathname).toPromise();
-      this.question = data;
-      return this.question;
+      this.questions = data;
+      return this.questions;
     }catch(error){
-      console.error("Erro ao carregar os exames:", error);
+      console.error("Erro ao carregar as questões:", error);
     }
   }
 }

@@ -1,0 +1,311 @@
+[
+  {
+    "id": "001",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Você precisa recomendar um serviço de armazenamento de dados que atenda aos seguintes requisitos: Acesso nativo à API SQL e Índices configuráveis. O que você deve recomendar?",
+    "options": [
+      "Azure Cosmos DB",
+      "Azure Blob Storage",
+      "Arquivos do Azure",
+      "Tabelas do Azure"
+    ],
+    "correct": [
+      "Azure Cosmos DB"
+    ]
+  },
+  {
+    "id": "002",
+    "exam": "DP900",
+    "type": "multiple",
+    "header": "Quais objetos podem ser adicionados a um painel do Microsoft Power BI? Selecione todas as opções corretas",
+    "options": [
+      "Um dataflow",
+      "Uma página de relatório",
+      "Uma visualização de um relatório",
+      "Uma imagem",
+      "Um texto",
+      "Um slide do Microsoft Powerpoint"
+    ],
+    "correct": [
+      "Uma página de relatório",
+      "Uma visualização de um relatório",
+      "Uma imagem",
+      "Um texto"
+    ]
+  },
+  {
+    "id": "003",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Qual das tarefas a seguir é a função de um administrador de banco de dados? Selecione a opção correta",
+    "options": [
+      "Identificar problemas de qualidade de dados",
+      "Fazer backups e restaurar bancos de dados",
+      "Criação de dashboards e relatórios"
+    ],
+    "correct": [
+      "Fazer backups e restaurar bancos de dados"
+    ]
+  },
+  {
+    "id": "004",
+    "exam": "DP900",
+    "type": "multiple",
+    "header": "Quais são as diferentes opções de implantação disponíveis para o Banco de Dados do Azure para PostgreSQL? Selecione três opções corretas",
+    "options": [
+      "Azure Database for PostgreSQL Single Server",
+      "Azure Database for PostgreSQL Flexible Server",
+      "Azure Cosmos DB for PostgreSQL",
+      "Azure Database for PostgreSQL Multiple Server"
+    ],
+    "correct": [
+      "Azure Database for PostgreSQL Single Server",
+      "Azure Database for PostgreSQL Flexible Server",
+      "Azure Cosmos DB for PostgreSQL"
+    ]
+  },
+  {
+    "id": "005",
+    "exam": "DP900",
+    "type": "multiple",
+    "header": "Como um banco de dados relacional reforça a integridade dos dados? Selecione todas as opções corretas",
+    "options": [
+      "Impede que registros sejam inseridos se os registros nos quais eles dependem não existirem",
+      "Garante que cada coluna siga o tipo de dados de sua definição de esquema",
+      "Impede que registros sejam excluídos se outros registros dependerem deles",
+      "Impede valores nulos em colunas que não permitem valores nulos"
+    ],
+    "correct": [
+      "Impede que registros sejam inseridos se os registros nos quais eles dependem não existirem",
+      "Garante que cada coluna siga o tipo de dados de sua definição de esquema",
+      "Impede que registros sejam excluídos se outros registros dependerem deles",
+      "Impede valores nulos em colunas que não permitem valores nulos"
+    ]
+  },
+  {
+    "id": "006",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Qual afirmação é um exemplo de linguagem de manipulação de dados (DML)? Selecione a opção correta",
+    "options": [
+      "REVOKE",
+      "GRANT",
+      "DISABLE",
+      "INSERT"
+    ],
+    "correct": [
+      "INSERT"
+    ]
+  },
+  {
+    "id": "007",
+    "exam": "DP900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "options": [
+      "O banco de dados SQL do Azure inclui um serviço de backup gerenciado",
+      "O banco de dados SQL do Azure possui alta disponibilidade integrada",
+      "O banco de dados SQL do Azure pode usar o Azure Defender"
+    ],
+    "correct": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": "008",
+    "exam": "DP900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "options": [
+      "O armazenamento de tabelas do Azure oferece suporte a várias réplicas de leitura",
+      "O armazenamento de tabelas do Azure oferece suporte a várias regiões de gravação"
+    ],
+    "correct": [
+      "true",
+      "false"
+    ]
+  },
+  {
+    "id": "009",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Durante qual etapa do ETL uma coluna de dados é modificada para corresponder ao formato esperado do destino? Por exemplo, alterando o campo de data de “31 de janeiro de 2023” para “31/01/2023”. Selecione a opção correta",
+    "options": [
+      "Transformação",
+      "Extração",
+      "Carregamento"
+    ],
+    "correct": [
+      "Transformação"
+    ]
+  },
+  {
+    "id": "010",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Qual afirmação é um exemplo de linguagem de manipulação de dados (DML)? Selecione a opção correta",
+    "options": [
+      "REVOKE",
+      "GRANT",
+      "DISABLE",
+      "UPDATE"
+    ],
+    "correct": [
+      "UPDATE"
+    ]
+  },
+  {
+    "id": "011",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Qual dos seguintes serviços de banco de dados do Azure garante 100% de compatibilidade com o SQL Server em execução no seu ambiente on-premise? Selecione a opção correta",
+    "options": [
+      "Instância gerenciada de SQL",
+      "SQL Server em uma máquina virtual",
+      "Azure SQL Database",
+      "Pool de SQL sem servidor"
+    ],
+    "correct": [
+      "SQL Server em uma máquina virtual"
+    ]
+  },
+  {
+    "id": "012",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Um bloco de código executado em um banco de dados é denominado ________. Selecione a opção correta para preencher o espaço em branco",
+    "options": [
+      "Um procedimento armazenado",
+      "Um índice",
+      "Uma exibição",
+      "Uma tabela"
+    ],
+    "correct": [
+      "Um procedimento armazenado"
+    ]
+  },
+  {
+    "id": "013",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Ao usar uma instância gerenciada do Banco de Dados SQL do Azure, qual é a maneira mais simples de implementar backups? Selecione a opção correta",
+    "options": [
+      "Os backups são realizados automaticamente",
+      "Configuração manual do servidor SQL",
+      "Crie uma tarefa agendada para fazer backup"
+    ],
+    "correct": [
+      "Os backups são realizados automaticamente"
+    ]
+  },
+  {
+    "id": "014",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Qual das seguintes afirmações é verdadeira sobre o Banco de Dados SQL do Azure? Selecione a opção correta",
+    "options": [
+      "A maioria das tarefas de manutenção de banco de dados são automatizadas",
+      "Você deve adquirir uma licença do SQL Server",
+      "Ele suporta apenas um banco de dados"
+    ],
+    "correct": [
+      "A maioria das tarefas de manutenção de banco de dados são automatizadas"
+    ]
+  },
+  {
+    "id": "015",
+    "exam": "DP900",
+    "type": "select",
+    "header": "_______ é um exemplo de dados semiestruturados. Selecione a opção correta para preencher o espaço em branco",
+    "options": [
+      "Um arquivo de vídeo",
+      "Um arquivo JSON",
+      "Uma tabela relacional em um banco de dados",
+      "Um arquivo de áudio"
+    ],
+    "correct": [
+      "Um arquivo JSON"
+    ]
+  },
+  {
+    "id": "016",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Você tem um pool SQL no Azure Synapse Analytics que só é usado ativamente todas as noites durante oito horas. Você precisa minimizar o custo do pool SQL durante os tempos de inatividade. A solução deve garantir que os dados permaneçam intactos. O que você deve fazer no pool SQL?",
+    "options": [
+      "Pausar o pool",
+      "Deletar o pool",
+      "Criar um ponto de restauração definido pelo usuário",
+      "Reduza as unidades de data warehouse (DWUs)"
+    ],
+    "correct": [
+      "Pausar o pool"
+    ]
+  },
+  {
+    "id": "017",
+    "exam": "DP900",
+    "type": "multiple",
+    "header": "CRUD são as quatro funções básicas do armazenamento persistente. Selecione todas as operações CRUD corretas",
+    "options": [
+      "Criar",
+      "Ler",
+      "Deletar",
+      "Atualizar",
+      "Remover"
+    ],
+    "correct": [
+      "Criar",
+      "Ler",
+      "Deletar",
+      "Atualizar"
+    ]
+  },
+  {
+    "id": "018",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Qual configuração só pode ser definida durante a criação de uma conta do Azure Cosmos DB? Selecione a opção correta",
+    "options": [
+      "Geo-redundância",
+      "API",
+      "Escrita em multi regiões",
+      "Conta de produção ou não-produção"
+    ],
+    "correct": [
+      "API"
+    ]
+  },
+  {
+    "id": "019",
+    "exam": "DP900",
+    "type": "options",
+    "header": "_________ é um objeto associado a uma tabela que classifica as linhas de dados da tabela de acordo com seus valores-chave. Selecione a opção correta para preencher o espaço em branco",
+    "options": [
+      "Um índice",
+      "Uma chave estrangeira",
+      "Um procedimento armazenado",
+      "Uma exibição"
+    ],
+    "correct": [
+      "Um índice"
+    ]
+  },
+  {
+    "id": "020",
+    "exam": "DP900",
+    "type": "options",
+    "header": "Qual implantação requer menos alterações ao migrar uma solução local existente do SQL Server? Selecione a opção correta",
+    "options": [
+      "Instância Gerenciada do Banco de Dados SQL do Azure",
+      "Banco de Dados SQL do Azure (banco de dados único)",
+      "Banco de Dados SQL do Azure (pool elástico)"
+    ],
+    "correct": [
+      "Instância Gerenciada do Banco de Dados SQL do Azure"
+    ]
+  }
+]

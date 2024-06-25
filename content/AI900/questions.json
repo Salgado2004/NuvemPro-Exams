@@ -1,0 +1,1446 @@
+[
+  {
+    "id": "001",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual técnica de IA (inteligência artificial) serve como base para soluções modernas de classificação de imagem?",
+    "options": [
+      "Segmentação semântica",
+      "Aprendizado profundo",
+      "Regressão linear",
+      "Regressão linear múltipla"
+    ],
+    "correct": [
+      "Aprendizado profundo"
+    ]
+  },
+  {
+    "id": "002",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual solução de visão computacional fornece a capacidade de identificar a idade de uma pessoa com base em uma fotografia?",
+    "options": [
+      "Detecção facial",
+      "Classificação de imagem",
+      "Detecção de objeto",
+      "Segmentação semântica"
+    ],
+    "correct": [
+      "Detecção facial"
+    ]
+  },
+  {
+    "id": "003",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são os dois modelos de domínio especializados que dão suporte à Visão de IA do Azure ao categorizar uma imagem? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Celebridades",
+      "Tipos de imagem",
+      "Pontos de referência",
+      "People",
+      "People_group"
+    ],
+    "correct": [
+      "Celebridades",
+      "Pontos de referência"
+    ]
+  },
+  {
+    "id": "004",
+    "exam": "IA900",
+    "type": "options",
+    "header": "O que permite identificar diferentes tipos de fraturas ósseas em imagens de raios-X?",
+    "options": [
+      "IA (inteligência artificial de conversa)",
+      "Detecção facial",
+      "Classificação de imagem",
+      "Detecção de objeto"
+    ],
+    "correct": [
+      "Classificação de imagem"
+    ]
+  },
+  {
+    "id": "005",
+    "exam": "IA900",
+    "type": "options",
+    "header": "O que permite identificar diferentes tipos de veículos em imagens de monitoramento de tráfego?",
+    "options": [
+      "Classificação de imagem",
+      "Regressão linear",
+      "Detecção de objeto",
+      "OCR (reconhecimento óptico de caracteres)"
+    ],
+    "correct": [
+      "Detecção de objeto"
+    ]
+  },
+  {
+    "id": "006",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais dois modelos de domínio especializados têm suporte usando o serviço de Visão de IA do Azure? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Animais",
+      "Celebridades",
+      "Carros",
+      "Plantas",
+      "Pontos de referência"
+    ],
+    "correct": [
+      "Celebridades",
+      "Pontos de referência"
+    ]
+  },
+  {
+    "id": "007",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual informação adicional está incluída em cada frase retornada por uma tarefa de descrição de imagem do serviço de Visão de IA do Azure?",
+    "options": [
+      "Coordenadas de caixa delimitadora",
+      "Pontuação de confiança",
+      "Endpoint",
+      "Chave"
+    ],
+    "correct": [
+      "Pontuação de confiança"
+    ]
+  },
+  {
+    "id": "008",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais os dois modelos do serviço de IA do Azure para Informação de Documentos que incluem a identificação de campos de dados comuns como parte de seus recursos de extração de dados? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Modelo de cartão de visita",
+      "Modelo de documento geral",
+      "Modelo de fatura",
+      "Modelo de layout",
+      "Modelo de leitura"
+    ],
+    "correct": [
+      "Modelo de cartão de visita",
+      "Modelo de fatura"
+    ]
+  },
+  {
+    "id": "009",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Ao usar a API de Detecção Facial do serviço de Detecção Facial da IA do Azure, qual recurso ajuda a identificar se um rosto humano usa óculos ou acessórios para a cabeça?",
+    "options": [
+      "Atributos de detecção facial",
+      "ID do rosto",
+      "Pontos de referência do rosto",
+      "Retângulo facial"
+    ],
+    "correct": [
+      "Atributos de detecção facial"
+    ]
+  },
+  {
+    "id": "010",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual serviço você pode usar para treinar um modelo de classificação de imagem?",
+    "options": [
+      "Visão de IA do Azure",
+      "Visão Personalizada de IA do Azure",
+      "Detecção Facial de IA do Azure",
+      "Linguagem de IA do Azure"
+    ],
+    "correct": [
+      "Visão Personalizada de IA do Azure"
+    ]
+  },
+  {
+    "id": "011",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais três fontes podem ser usadas para gerar perguntas e respostas para uma base de dados de conhecimento? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Uma página Web",
+      "Um arquivo de áudio",
+      "Um documento de perguntas frequentes existente",
+      "Um arquivo de imagem",
+      "Dados inseridos manualmente"
+    ],
+    "correct": [
+      "Uma página Web",
+      "Um documento de perguntas frequentes existente",
+      "Dados inseridos manualmente"
+    ]
+  },
+  {
+    "id": "012",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Em qual camada você pode aplicar filtros de conteúdo para suprimir prompts e respostas para uma solução de IA generativa responsável?",
+    "options": [
+      "Metaprompt e aterramento",
+      "Modelo",
+      "Sistema de segurança",
+      "Experiência do usuário"
+    ],
+    "correct": [
+      "Sistema de segurança"
+    ]
+  },
+  {
+    "id": "013",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Selecione a resposta que conclui corretamente a frase.",
+    "body": "___________ pode retornar respostas, como linguagem natural, imagens ou código, com base na entrada de linguagem natural.",
+    "options": [
+      "Pesquisa visual computacional",
+      "Aprendizado",
+      "IA generativa",
+      "Aprendizado de máquina",
+      "Aprendizado de reforço"
+    ],
+    "correct": [
+      "IA generativa"
+    ]
+  },
+  {
+    "id": "014",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Selecione a resposta que conclui corretamente a frase.",
+    "body": "____________ pode ser usado para identificar restrições e estilos para as respostas de um modelo de IA generativa.",
+    "options": [
+      "Aterramento de dados",
+      "Incorporações",
+      "Mensagens do sistema",
+      "Geração de tokens"
+    ],
+    "correct": [
+      "Mensagens do sistema"
+    ]
+  },
+  {
+    "id": "015",
+    "exam": "IA900",
+    "type": "options",
+    "header": "De acordo com o NIST AI Risk Management Framework, qual é o primeiro estágio a ser considerado ao desenvolver uma solução de IA generativa responsável?",
+    "options": [
+      "Identifique os possíveis danos",
+      "Meça a presença de possíveis danos",
+      "Mitigue os possíveis danos",
+      "Opere a solução"
+    ],
+    "correct": [
+      "Identifique os possíveis danos"
+    ]
+  },
+  {
+    "id": "016",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são os dois recursos que são exemplos de um modelo GPT? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Criar linguagem natural",
+      "Detectar dialetos específicos de um idioma",
+      "Gerar legendas ocultas em tempo real a partir de um vídeo",
+      "Sintetizar a fala",
+      "Entender linguagem natural"
+    ],
+    "correct": [
+      "Criar linguagem natural",
+      "Entender linguagem natural"
+    ]
+  },
+  {
+    "id": "017",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são os três recursos que são exemplos de recursos de geração de imagem para um modelo de IA generativa? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Animação de imagens estáticas",
+      "Criação de variações de uma imagem",
+      "Edição de uma imagem",
+      "Extração de valores RGB de uma imagem",
+      "Criação de uma nova imagem"
+    ],
+    "correct": [
+      "Criação de variações de uma imagem",
+      "Edição de uma imagem",
+      "Criação de uma nova imagem"
+    ]
+  },
+  {
+    "id": "018",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você planeja desenvolver uma solução de processamento de imagem que usará DALL-E como modelo de IA generativa.",
+    "body": "Qual recurso NÃO é compatível com o modelo DALL-E?",
+    "options": [
+      "Descrição da imagem",
+      "Edição de imagem",
+      "Geração de imagem",
+      "Variações de imagem"
+    ],
+    "correct": [
+      "Descrição da imagem"
+    ]
+  },
+  {
+    "id": "019",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Selecione a resposta que conclui corretamente a frase.",
+    "body": "____________ pode pesquisar, classificar e comparar fontes de texto quanto à similaridade.",
+    "options": [
+      "Aterramento de dados",
+      "Incorporações",
+      "Aprendizado de máquina",
+      "Mensagens do sistema"
+    ],
+    "correct": [
+      "Incorporações"
+    ]
+  },
+  {
+    "id": "020",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você precisa identificar valores numéricos que representam a probabilidade de humanos desenvolverem diabetes com base na idade e no percentual de gordura corporal.",
+    "body": "Qual tipo de modelo de machine learning você deve usar?",
+    "options": [
+      "Clustering hierárquico",
+      "Regressão logística",
+      "Regressão linear",
+      "Regressão linear múltipla"
+    ],
+    "correct": [
+      "Regressão logística"
+    ]
+  },
+  {
+    "id": "021",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual tipo de algoritmo de aprendizado de máquina prevê um rótulo numérico associado a um item com base nos recursos desse item?",
+    "options": [
+      "Classificação",
+      "Clustering",
+      "Regressão",
+      "Não supervisionado"
+    ],
+    "correct": [
+      "Regressão"
+    ]
+  },
+  {
+    "id": "022",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Prever chuvas para uma localização geográfica específica é um exemplo de qual tipo de aprendizado de máquina?",
+    "options": [
+      "Classificação",
+      "Clustering",
+      "Featurization",
+      "Regressão"
+    ],
+    "correct": [
+      "Regressão"
+    ]
+  },
+  {
+    "id": "023",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Uma empresa implanta uma campanha de marketing online em plataformas de mídia social para um novo lançamento de produto. A empresa quer usar o aprendizado de máquina para medir o sentimento dos usuários na plataforma Twitter que fizeram postagens em resposta à campanha.",
+    "body": "Que tipo de aprendizado de máquina é esse?",
+    "options": [
+      "Classificação",
+      "Clustering",
+      "Transformação de dados",
+      "Regressão"
+    ],
+    "correct": [
+      "Classificação"
+    ]
+  },
+  {
+    "id": "024",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Um varejista quer agrupar compradores online que têm atributos semelhantes para permitir que sua equipe de marketing crie campanhas de marketing direcionadas para lançamentos de novos produtos.",
+    "body": "Que tipo de aprendizado de máquina é esse?",
+    "options": [
+      "Classificação",
+      "Clustering",
+      "Classificação multiclasse",
+      "Regressão"
+    ],
+    "correct": [
+      "Clustering"
+    ]
+  },
+  {
+    "id": "025",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você planeja usar o aprendizado de máquina para prever a probabilidade de humanos desenvolverem diabetes com base em sua idade e percentual de gordura corporal.",
+    "body": "O que o modelo deve incluir?",
+    "options": [
+      "Três características",
+      "Três rótulos",
+      "Duas características e um rótulo",
+      "Dois rótulos e uma característica"
+    ],
+    "correct": [
+      "Duas características e um rótulo"
+    ]
+  },
+  {
+    "id": "026",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual suposição do modelo de regressão linear múltipla deve ser atendida para evitar previsões enganosas?",
+    "options": [
+      "Os recursos dependem uns do outros",
+      "Os recursos são independentes uns dos outros",
+      "Os rótulos dependem uns dos outros",
+      "Os rótulos são independentes uns dos outros"
+    ],
+    "correct": [
+      "Os recursos são independentes uns dos outros"
+    ]
+  },
+  {
+    "id": "027",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Em um algoritmo de aprendizado de máquina de regressão, quais são as características dos recursos e rótulos em um conjunto de dados de validação?",
+    "options": [
+      "Valores de rótulo e recursos conhecidos",
+      "Valores de recurso conhecidos e valores de rótulo desconhecidos",
+      "Valores de rótulo e recursos desconhecidos",
+      "Valores de recurso desconhecidos e valores de rótulo conhecidos"
+    ],
+    "correct": [
+      "Valores de rótulo e recursos conhecidos"
+    ]
+  },
+  {
+    "id": "028",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você precisa usar o designer do Azure Machine Learning para implantar um serviço preditivo de um modelo recém-treinado.",
+    "body": "O que você deve fazer primeiro no designer do Machine Learning?",
+    "options": [
+      "Adicionar um conjunto de dados",
+      "Adicionar módulos de treinamento",
+      "Criar uma pipeline de inferência",
+      "Criar um cluster de inferência"
+    ],
+    "correct": [
+      "Criar uma pipeline de inferência"
+    ]
+  },
+  {
+    "id": "029",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais três modelos de machine learning supervisionados você pode treinar usando o machine learning automatizado (ML automatizado) no estúdio do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Classificação",
+      "Clustering",
+      "Pipeline de inferência",
+      "Regressão",
+      "Previsão de série temporal"
+    ],
+    "correct": [
+      "Classificação",
+      "Regressão",
+      "Previsão de série temporal"
+    ]
+  },
+  {
+    "id": "030",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são os três módulos de transformação de dados no designer do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Limpar dados ausentes",
+      "Modelo avaliar modelo",
+      "Normalizar dados",
+      "Projetar colunas no conjunto de dados",
+      "Treinar clustering"
+    ],
+    "correct": [
+      "Limpar dados ausentes",
+      "Normalizar dados",
+      "Projetar colunas no conjunto de dados"
+    ]
+  },
+  {
+    "id": "031",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual carga de trabalho de NLP (processamento de linguagem natural) é usada para gerar texto de legenda oculta para apresentações ao vivo?",
+    "options": [
+      "Fala de IA do Azure",
+      "CLU (Compreensão de linguagem coloquial)",
+      "Modelos de respostas às perguntas",
+      "Análise de texto"
+    ],
+    "correct": [
+      "Fala de IA do Azure"
+    ]
+  },
+  {
+    "id": "032",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais dois cenários de carga de trabalho de IA (inteligência artificial) são exemplos de NLP (processamento de linguagem natural)? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Extraindo texto manuscrito de imagens online",
+      "Gerando marcas e descrições para imagens",
+      "Monitorando o tráfego de rede para picos repentinos",
+      "Executando a análise de sentimento em dados de mídia social",
+      "Traduzindo texto entre diferentes idiomas de revisões de produto"
+    ],
+    "correct": [
+      "Executando a análise de sentimento em dados de mídia social",
+      "Traduzindo texto entre diferentes idiomas de revisões de produto"
+    ]
+  },
+  {
+    "id": "033",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você está explorando soluções para melhorar o serviço de pesquisa e indexação de documentos para funcionários.",
+    "body": "Você precisa de uma solução de pesquisa de IA (inteligência artificial) que inclua a pesquisa de texto em vários tipos de documentos, como imagens. Qual tipo de carga de trabalho de IA é esse?",
+    "options": [
+      "Segmentação semântica",
+      "Pesquisa visual computacional",
+      "IA de conversa",
+      "Mineração de dados"
+    ],
+    "correct": [
+      "Mineração de dados"
+    ]
+  },
+  {
+    "id": "034",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual princípio da IA (inteligência artificial) responsável envolve avaliar e atenuar o viés introduzido pelos recursos de um modelo?",
+    "options": [
+      "Responsabilidade",
+      "Justiça",
+      "Privacidade",
+      "Transparência"
+    ],
+    "correct": [
+      "Justiça"
+    ]
+  },
+  {
+    "id": "035",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual princípio da IA (inteligência artificial) responsável define o quadro de princípios de governança e organização que atendem aos padrões éticos e legais das soluções de IA?",
+    "options": [
+      "Responsabilidade",
+      "Justiça",
+      "Inclusão",
+      "Transparência"
+    ],
+    "correct": [
+      "Responsabilidade"
+    ]
+  },
+  {
+    "id": "036",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual princípio da IA (inteligência artificial) responsável desempenha o papel principal ao implementar uma solução de IA que atenda às qualificações para aprovações de empréstimos empresariais?",
+    "options": [
+      "Responsabilidade",
+      "Justiça",
+      "Inclusão",
+      "Segurança"
+    ],
+    "correct": [
+      "Justiça"
+    ]
+  },
+  {
+    "id": "037",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual princípio da IA (inteligência artificial) responsável é aplicado no design de um sistema de IA para garantir que os usuários entendam as restrições e as limitações da IA?",
+    "options": [
+      "Justiça",
+      "Inclusão",
+      "Privacidade e segurança",
+      "Transparência"
+    ],
+    "correct": [
+      "Transparência"
+    ]
+  },
+  {
+    "id": "038",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Um banco está desenvolvendo um novo sistema de IA (inteligência artificial) para apoiar o processo de aceitação ou rejeição de pedidos hipotecários.",
+    "body": "Como parte do princípio responsável da imparcialidade da IA, quais duas questões NÃO devem ser consideradas para evitar a tomada de decisões tendenciosa? Cada resposta correta apresenta uma parte da solução.",
+    "options": [
+      "Utilização de crédito",
+      "Salário atual",
+      "Etnia",
+      "Gênero",
+      "Histórico de pagamento"
+    ],
+    "correct": [
+      "Etnia",
+      "Gênero"
+    ]
+  },
+  {
+    "id": "039",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual princípio da IA (inteligência artificial) responsável garante que um sistema de IA atenda a quaisquer padrões legais e éticos que ele deve cumprir?",
+    "options": [
+      "Responsabilidade",
+      "Justiça",
+      "Inclusão",
+      "Privacidade e segurança"
+    ],
+    "correct": [
+      "Responsabilidade"
+    ]
+  },
+  {
+    "id": "040",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Uma empresa está atualmente desenvolvendo veículos agrícolas sem motorista para ajudar na colheita. Os veículos serão implantados ao lado de pessoas que trabalham nos campos de corte e, como tal, a empresa precisará realizar testes robustos.",
+    "body": "Qual princípio da IA (inteligência artificial) responsável é mais importante nesse caso?",
+    "options": [
+      "Responsabilidade",
+      "Justiça",
+      "Confiabilidade",
+      "Privacidade e segurança"
+    ],
+    "correct": [
+      "Confiabilidade"
+    ]
+  },
+  {
+    "id": "041",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Selecione a resposta que conclui corretamente a frase.",
+    "body": "___________ são plug-ins para fornecer aos usuários finais a capacidade de obter ajuda com tarefas comuns de um modelo de IA generativo.",
+    "options": [
+      "Copilotos",
+      "Soluções de reconhecimento vocal",
+      "Modelos de respostas às perguntas",
+      "Serviços de API RESTful"
+    ],
+    "correct": [
+      "Copilotos"
+    ]
+  },
+  {
+    "id": "042",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual técnica de IA (inteligência artificial) deve ser usada para extrair o nome de um repositório de uma fotografia exibindo a frente da loja?",
+    "options": [
+      "Classificação de imagem",
+      "NLP (Processamento de linguagem natural)",
+      "OCR (Reconhecimento óptico de caracteres)",
+      "Segmentação semântica"
+    ],
+    "correct": [
+      "OCR (Reconhecimento óptico de caracteres)"
+    ]
+  },
+  {
+    "id": "043",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual serviço de pesquisa visual computacional fornece coordenadas delimitadoras como parte de sua saída?",
+    "options": [
+      "Análise de imagem",
+      "Classificação de imagem",
+      "Detecção de objeto",
+      "Segmentação semântica"
+    ],
+    "correct": [
+      "Detecção de objeto"
+    ]
+  },
+  {
+    "id": "044",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual recurso da pesquisa visual computacional envolve associar uma imagem a metadados que resumem os atributos da imagem?",
+    "options": [
+      "Categorizar",
+      "Organização de conteúdo",
+      "Detectar tipos de imagem",
+      "Marcação"
+    ],
+    "correct": [
+      "Marcação"
+    ]
+  },
+  {
+    "id": "045",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais três partes do processo de aprendizado de máquina a Visão de IA do Azure elimina a necessidade? Cada resposta correta apresenta uma parte da solução.",
+    "options": [
+      "Provisionamento de recursos do Azure",
+      "Escolha do modelo",
+      "Avaliação do modelo",
+      "Inferência",
+      "Treinamento do modelo"
+    ],
+    "correct": [
+      "Escolha do modelo",
+      "Avaliação do modelo",
+      "Treinamento do modelo"
+    ]
+  },
+  {
+    "id": "046",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais os dois modelos predefinidos permitem que você use o serviço de IA do Azure para Informação de Documentos para verificar informações de passaportes internacionais e contas de vendas? Cada resposta correta apresenta uma parte da solução.",
+    "options": [
+      "Modelo de cartão de visita",
+      "Modelo de documento de identificação",
+      "Modelo de fatura",
+      "Modelo de linguagem",
+      "Modelo de recibo"
+    ],
+    "correct": [
+      "Modelo de documento de identificação",
+      "Modelo de fatura"
+    ]
+  },
+  {
+    "id": "047",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual tipo de serviço fornece uma plataforma para IA (inteligência artificial de conversa)?",
+    "options": [
+      "Serviço de Bot da IA do Azure",
+      "IA do Azure para Informação de Documentos",
+      "Visão de IA do Azure",
+      "Tradutor de IA do Azure"
+    ],
+    "correct": [
+      "Serviço de Bot da IA do Azure"
+    ]
+  },
+  {
+    "id": "048",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual cenário de carga de trabalho de IA (inteligência artificial) é um exemplo de NLP (processamento de linguagem natural)?",
+    "options": [
+      "Extrair frases-chave de um relatório de insights de negócios",
+      "Identificar objetos em imagens",
+      "Monitorar aumentos repentinos na quantidade de tentativas de entrada com falha",
+      "Prever se os clientes provavelmente comprarão um produto com base em compras anteriores"
+    ],
+    "correct": [
+      "Extrair frases-chave de um relatório de insights de negócios"
+    ]
+  },
+  {
+    "id": "049",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são os dois recursos de carga de trabalho de IA (inteligência artificial) que fazem parte do serviço de Visão de IA do Azure? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Reconhecimento de entidade",
+      "Extração de frases-chave",
+      "OCR (Reconhecimento óptico de caracteres)",
+      "Análise de sentimento",
+      "Análise espacial"
+    ],
+    "correct": [
+      "OCR (Reconhecimento óptico de caracteres)",
+      "Análise espacial"
+    ]
+  },
+  {
+    "id": "050",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Em um algoritmo de aprendizado de máquina de regressão, como os recursos e rótulos são tratados em um conjunto de dados de validação?",
+    "options": [
+      "Os recursos são comparados aos valores de recurso em um conjunto de dados de treinamento",
+      "Os recursos são usados para gerar previsões para o rótulo, que é comparado aos valores reais do rótulo",
+      "Os rótulos são comparados aos valores de rótulo em um conjunto de dados de treinamento",
+      "O rótulo é usado para gerar previsões para recursos, que são comparados aos valores reais do recurso"
+    ],
+    "correct": [
+      "Os recursos são usados para gerar previsões para o rótulo, que é comparado aos valores reais do rótulo"
+    ]
+  },
+  {
+    "id": "051",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Que capacidade permite que um computador detecte automaticamente erros ou atividades incomuns em um sistema?",
+    "options": [
+      "IA de conversa",
+      "Visão Computacional",
+      "NLP (Processamento de Linguagem Natural)",
+      "Detecção de anomalias"
+    ],
+    "correct": [
+      "Detecção de anomalias"
+    ]
+  },
+  {
+    "id": "052",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Em qual dos cenários a seguir a tecnologia de reconhecimento de fala é usada de forma adequada? (Escolha 2)",
+    "options": [
+      "Fornecimento de legendas ocultas para vídeos gravados ou ao vivo.",
+      "Um sistema automotivo que lê mensagens de texto em voz alta.",
+      "Criar uma transcrição de uma chamada telefônica ou reunião.",
+      "Criação de um sistema automatizado de endereço público para uma estação de trem."
+    ],
+    "correct": [
+      "Fornecimento de legendas ocultas para vídeos gravados ou ao vivo.",
+      "Criar uma transcrição de uma chamada telefônica ou reunião."
+    ]
+  },
+  {
+    "id": "053",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Uma empresa precisa fazer uma declaração oficial entregue à mídia, que deve estar disponível em vários idiomas.",
+    "body": "Qual serviço é mais adequado para esta tarefa?",
+    "options": [
+      "Criador de perguntas e respostas",
+      "Reconhecimento de fala",
+      "Análise de texto",
+      "Tradutor de texto"
+    ],
+    "correct": [
+      "Tradutor de texto"
+    ]
+  },
+  {
+    "id": "054",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são os três tipos essenciais de dados necessários para treinar um modelo de compreensão linguística?",
+    "options": [
+      "Assuntos",
+      "Intenções",
+      "Entidades",
+      "Enunciados"
+    ],
+    "correct": [
+      "Intenções",
+      "Entidades",
+      "Enunciados"
+    ]
+  },
+  {
+    "id": "055",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Uma empresa decide usar um chatbot para auxiliar os clientes em seu site.",
+    "body": "Que tipo de carga de trabalho de IA deve ser utilizada para reconhecer quando um consumidor está chateado com base nas respostas do chatbot?",
+    "options": [
+      "Reconhecimento óptico de caracteres (OCR)",
+      "Classificação",
+      "Detecção de anomalia",
+      "Processamento de linguagem natural"
+    ],
+    "correct": [
+      "Processamento de linguagem natural"
+    ]
+  },
+  {
+    "id": "056",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual arquitetura os modelos de linguagem de ponta de hoje usam principalmente para tarefas de NLP?",
+    "options": [
+      "Transformadores",
+      "Rede Neural Recorrente (RNN)",
+      "Rede Neural Convolucional (CNN)",
+      "Árvores de decisão"
+    ],
+    "correct": [
+      "Transformadores"
+    ]
+  },
+  {
+    "id": "057",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual dos seguintes recursos é característico de soluções generativas de IA?",
+    "options": [
+      "Geração de conteúdo novo com base em padrões aprendidos",
+      "Execução de fluxos de trabalho predefinidos em um ambiente de software",
+      "Programação explícita para executar tarefas",
+      "Processamento de transações em um sistema de banco de dados"
+    ],
+    "correct": [
+      "Geração de conteúdo novo com base em padrões aprendidos"
+    ]
+  },
+  {
+    "id": "058",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Qual das seguintes afirmações sobre o designer do Azure Machine Learning é verdadeira? (Escolha 2)",
+    "options": [
+      "Permite que você salve seu trabalho na forma de um rascunho de pipeline.",
+      "Permite incluir funções C# personalizadas",
+      "Permite criar, testar e implantar modelos de aprendizado de máquina usando uma tela visual de arrastar e soltar."
+    ],
+    "correct": [
+      "Permite que você salve seu trabalho na forma de um rascunho de pipeline.",
+      "Permite criar, testar e implantar modelos de aprendizado de máquina usando uma tela visual de arrastar e soltar."
+    ]
+  },
+  {
+    "id": "059",
+    "exam": "IA900",
+    "type": "options",
+    "header": "No progresso do aprendizado de máquina, qual é o método de divisão de dados para treinamento e avaliação?",
+    "options": [
+      "Divida os dados em colunas para treinamento e avaliação aleatoriamente.",
+      "Os recursos podem ser usados para treinamento e os rótulos podem ser usados para avaliação.",
+      "Os rótulos podem ser usados para treinamento e os recursos podem ser usados para avaliação.",
+      "Divida aleatoriamente os dados em linhas para treinamento e linhas para avaliação."
+    ],
+    "correct": [
+      "Divida aleatoriamente os dados em linhas para treinamento e linhas para avaliação."
+    ]
+  },
+  {
+    "id": "060",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais das opções a seguir são características comuns de cargas de trabalho de IA?",
+    "options": [
+      "Processamento mínimo de dados.",
+      "Grandes conjuntos de dados.",
+      "Tarefas simples e repetitivas.",
+      "Altos requisitos computacionais."
+    ],
+    "correct": [
+      "Grandes conjuntos de dados.",
+      "Altos requisitos computacionais."
+    ]
+  },
+  {
+    "id": "061",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Uma empresa emprega uma equipe de agentes de atendimento ao cliente para fornecer suporte por telefone e e-mail aos clientes. A empresa desenvolve um bot de webchat para fornecer respostas automatizadas a dúvidas comuns dos clientes.",
+    "body": "Qual benefício comercial a empresa deve esperar como resultado da criação da solução de webchat bot?",
+    "options": [
+      "Aumento de vendas",
+      "Uma carga de trabalho reduzida para os agentes de atendimento ao cliente",
+      "Maior confiabilidade do produto",
+      "Aumento de reclamações dos clientes"
+    ],
+    "correct": [
+      "Uma carga de trabalho reduzida para os agentes de atendimento ao cliente"
+    ]
+  },
+  {
+    "id": "062",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você cria um modelo de aprendizado de máquina usando a interface do usuário (UI) de aprendizado de máquina automatizado.",
+    "body": "Você precisa garantir que o modelo atenda ao princípio de transparência da Microsoft para IA responsável. O que você deve fazer?",
+    "options": [
+      "Defina o tipo de validação como Automático.",
+      "Ative \"Explicar o melhor modelo\".",
+      "Defina a métrica primária como precisão.",
+      "Defina o máximo de iterações simultâneas como 0."
+    ],
+    "correct": [
+      "Ative \"Explicar o melhor modelo\"."
+    ]
+  },
+  {
+    "id": "063",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "A previsão dos preços da habitação com base em dados históricos é um exemplo de detecção de anomalia",
+      "Identificar logins suspeitos procurando desvios dos padrões usuais é um exemplo de detecção de anomalias.",
+      "Prever se um paciente desenvolverá diabetes com base no histórico médico do paciente é um exemplo de detecção de anomalias"
+    ],
+    "correct": [
+      "false",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "id": "064",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "O tratamento de valores incomuns ou ausentes fornecidos a um sistema AI é uma consideração do Princípio de ________________ da Microsoft para IA responsável",
+    "options": [
+      "Inclusão",
+      "Privacidade e segurança",
+      "Confiabilidade e segurança",
+      "Transparência"
+    ],
+    "correct": [
+      "Confiabilidade e segurança"
+    ]
+  },
+  {
+    "id": "065",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "Ao desenvolver um sistema de IA para carros autônomos, o Princípio de ________________ da Microsoft para IA responsável devem ser aplicado para garantir a operação consistente do sistema durante circunstâncias inesperadas.",
+    "options": [
+      "Inclusão",
+      "Confiabilidade e segurança",
+      "Justiça",
+      "Responsabilidade"
+    ],
+    "correct": [
+      "Confiabilidade e segurança"
+    ]
+  },
+  {
+    "id": "066",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você está construindo um sistema de IA.",
+    "body": "Qual tarefa você deve incluir para garantir que o serviço atenda ao princípio de transparência da Microsoft para IA responsável?",
+    "options": [
+      "Certificar que todos os recursos visuais tenham um texto associado que possa ser lido por um leitor de tela.",
+      "Habilitar o escalonamento automático para garantir que um serviço seja dimensionado com base na demanda.",
+      "Fornecer documentação para ajudar os desenvolvedores a depurar o código.",
+      "Garantir que o conjunto de dados de treinamento seja representativo da população."
+    ],
+    "correct": [
+      "Fornecer documentação para ajudar os desenvolvedores a depurar o código."
+    ]
+  },
+  {
+    "id": "067",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Selecione a resposta que completa corretamente a frase.",
+    "body": "__________________ é usado para extrair datas, quantidades e locais do texto.",
+    "options": [
+      "Extração de frase-chave",
+      "Detecção de idioma",
+      "Reconhecimento de Entidade Nomeada (NER)",
+      "Análise de sentimentos"
+    ],
+    "correct": [
+      "Reconhecimento de Entidade Nomeada (NER)"
+    ]
+  },
+  {
+    "id": "068",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são três princípios orientadores da Microsoft para uma IA responsável? Cada resposta correta apresenta uma solução completa.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Conhecimento",
+      "Determinação",
+      "Inclusão",
+      "Justiça",
+      "Teimosia",
+      "Confiabilidade e segurança"
+    ],
+    "correct": [
+      "Inclusão",
+      "Justiça",
+      "Confiabilidade e segurança"
+    ]
+  },
+  {
+    "id": "069",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "___________ é usado para gerar recursos adicionais.",
+    "options": [
+      "Engenharia de recursos",
+      "Seleção de recursos",
+      "Avaliação do modelo",
+      "Treinamento de modelo"
+    ],
+    "correct": [
+      "Engenharia de recursos"
+    ]
+  },
+  {
+    "id": "070",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você organiza um evento de caridade que envolve a postagem de fotos de pessoas usando óculos escuros no Twitter. Você precisa garantir que retweetará apenas fotos que atendam aos seguintes requisitos:",
+    "body": "[Incluir uma ou mais faces; Conter pelo menos uma pessoa usando óculos escuros ] O que você deve usar para analisar as Imagens?",
+    "options": [
+      "A operação Verificar no serviço Face",
+      "A operação Detectar no serviço Face",
+      "A operação Descrever Imagem no serviço Visão Computacional",
+      "A operação Analisar Imagem no serviço Visão Computacional"
+    ],
+    "correct": [
+      "A operação Detectar no serviço Face"
+    ]
+  },
+  {
+    "id": "071",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Fornecer uma explicação sobre o resultado de um pedido de empréstimo de crédito é um exemplo do princípio de transparência da Microsoft para IA responsável.",
+      "Um bot de triagem que prioriza sinistros de seguros com base em lesões é um exemplo do princípio de confiabilidade e segurança da Microsoft para IA responsável.",
+      "Uma solução de IA que oferece preços diferentes para diferentes territórios de vendas é um exemplo do princípio de inclusão da Microsoft para IA responsável"
+    ],
+    "correct": [
+      "true",
+      "false",
+      "false"
+    ]
+  },
+  {
+    "id": "072",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Você está construindo um aplicativo baseado em IA. Você precisa garantir que o aplicativo use os princípios de IA responsável.",
+    "body": "Quais são os dois princípios que você deve seguir? Cada resposta correta apresenta parte da solução.",
+    "options": [
+      "Implementar uma metodologia ágil de desenvolvimento de software",
+      "Implementar um processo de validação de modelo de IA como parte do processo de revisão de software",
+      "Estabelecer um comitê de governança de risco que inclua membros da equipe jurídica, membros da equipe de gestão de risco e um responsável pela privacidade",
+      "Impedir a divulgação do uso de algoritmos baseados em IA para tomada de decisão automatizada"
+    ],
+    "correct": [
+      "Implementar um processo de validação de modelo de IA como parte do processo de revisão de software",
+      "Estabelecer um comitê de governança de risco que inclua membros da equipe jurídica, membros da equipe de gestão de risco e um responsável pela privacidade"
+    ]
+  },
+  {
+    "id": "073",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "De acordo com o Princípio de _____________ da Microsoft, Os sistemas de IA NÃO devem refletir preconceitos dos conjuntos de dados usado para treinar os sistemas.",
+    "options": [
+      "Responsabilidade",
+      "Justiça",
+      "Inclusão",
+      "Transparência"
+    ],
+    "correct": [
+      "Justiça"
+    ]
+  },
+  {
+    "id": "074",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "Os valores de dados que influenciam a previsão de um modelo são chamados ______________.",
+    "options": [
+      "Variáveis dependentes",
+      "Recursos",
+      "Rótulos",
+      "Identificadores"
+    ],
+    "correct": [
+      "Recursos"
+    ]
+  },
+  {
+    "id": "075",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Que tipo de aprendizado de máquina você deve usar para prever o número de cartões-presente que serão vendidos no próximo mês?",
+    "options": [
+      "Regressão",
+      "Classificação",
+      "Clustering",
+      "Previsão de série temporal"
+    ],
+    "correct": [
+      "Regressão"
+    ]
+  },
+  {
+    "id": "076",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você tem um conjunto de dados que contém informações sobre viagens de táxi ocorridas durante um determinado período. Você precisa treinar um modelo para prever a tarifa de uma viagem de táxi.",
+    "body": "O que você deve usar como recurso?",
+    "options": [
+      "O número de viagens de táxi no conjunto de dados",
+      "A distância percorrida em viagens individuais de táxi",
+      "A tarifa de viagens individuais de táxi",
+      "O ID de viagem de viagens individuais de táxi"
+    ],
+    "correct": [
+      "A distância percorrida em viagens individuais de táxi"
+    ]
+  },
+  {
+    "id": "077",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "O aprendizado de máquina automatizado é o processo de automatizar as tarefas iterativas e demoradas do desenvolvimento do modelo de aprendizado de máquina",
+      "O aprendizado de máquina automatizado pode inferir automaticamente os dados de treinamento do caso de uso fornecido.",
+      "O aprendizado de máquina automatizado funciona executando várias iterações de treinamento que são pontuadas e classificadas pelas métricas que você especifica.",
+      "O aprendizado de máquina automatizado permite que você especifique um conjunto de dados e entende automaticamente qual rótulo prever."
+    ],
+    "correct": [
+      "true",
+      "false",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "id": "078",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "Um sistema bancário que prevê se um empréstimo será reembolsado é um exemplo de _____________.",
+    "options": [
+      "Classificação",
+      "Regressão",
+      "Clustering"
+    ],
+    "correct": [
+      "Classificação"
+    ]
+  },
+  {
+    "id": "079",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Rotulagem é o processo de marcar dados de treinamento com valores conhecidos.",
+      "Você deve avaliar um modelo usando os mesmos dados usados para treinar o modelo.",
+      "A precisão é sempre a principal métrica usada para medir o desempenho de um modelo."
+    ],
+    "correct": [
+      "true",
+      "false",
+      "false"
+    ]
+  },
+  {
+    "id": "080",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Qual serviço você deve usar para extrair texto, pares chave/valor e dados de tabela automaticamente de documentos digitalizados?",
+    "options": [
+      "Informação de documentos",
+      "Análise de texto",
+      "Compreensão da linguagem",
+      "Visão Personalizada de IA do Azure"
+    ],
+    "correct": [
+      "Informação de documentos"
+    ]
+  },
+  {
+    "id": "081",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "Garantir que as variáveis numéricas nos dados de treinamento estejam em uma escala semelhante é um exemplo de _____________.",
+    "options": [
+      "Ingestão de dados.",
+      "Engenharia de recursos.",
+      "Seleção de recursos.",
+      "Treinamento de modelo."
+    ],
+    "correct": [
+      "Seleção de recursos."
+    ]
+  },
+  {
+    "id": "082",
+    "exam": "IA900",
+    "type": "select",
+    "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
+    "body": "Atribuir classes a imagens antes de treinar um modelo de classificação é um exemplo de _____________.",
+    "options": [
+      "Avaliação.",
+      "Engenharia de recursos",
+      "Ajuste de hiperparâmetros.",
+      "Rotulagem."
+    ],
+    "correct": [
+      "Rotulagem."
+    ]
+  },
+  {
+    "id": "083",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Você treina um modelo de regressão usando dados não rotulados.",
+      "A técnica de classificação é usada para prever dados numéricos sequenciais ao longo do tempo.",
+      "Agrupar itens por suas características comuns é um exemplo de clustering."
+    ],
+    "correct": [
+      "false",
+      "false",
+      "true"
+    ]
+  },
+  {
+    "id": "084",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são as duas ações executadas durante a fase de ingestão de dados e preparação de dados de um processo Azure Machine Learning? Cada resposta correta apresenta parte da solução.",
+    "options": [
+      "Calcular a precisão do modelo.",
+      "Pontuar os dados de teste usando o modelo.",
+      "Combinar vários conjuntos de dados.",
+      "Usar o modelo para previsões em tempo real.",
+      "Remover registros que possuem valores ausentes."
+    ],
+    "correct": [
+      "Combinar vários conjuntos de dados.",
+      "Remover registros que possuem valores ausentes."
+    ]
+  },
+  {
+    "id": "085",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você precisa prever a população animal de uma área.",
+    "body": "Qual tipo de Azure Machine Learning você deve usar?",
+    "options": [
+      "Classificação",
+      "Regressão",
+      "Clustering",
+      "Featurization"
+    ],
+    "correct": [
+      "Regressão"
+    ]
+  },
+  {
+    "id": "086",
+    "exam": "IA900",
+    "type": "multiple",
+    "header": "Quais são as duas linguagens que você pode usar para escrever código personalizado para o designer do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Python",
+      "R",
+      "C#",
+      "Scala"
+    ],
+    "correct": [
+      "Python",
+      "R"
+    ]
+  },
+  {
+    "id": "087",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Para um modelo de regressão, os rótulos devem ser numéricos.",
+      "Para um modelo de clustering, rótulos devem ser usados.",
+      "Para um modelo de classificação, os rótulos devem ser numéricos."
+    ],
+    "correct": [
+      "true",
+      "false",
+      "false"
+    ]
+  },
+  {
+    "id": "088",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Ao criar um modelo de detecção de objetos no serviço Visão Personalizada, você deve escolher um tipo de classificação Multilabel ou Multiclass.",
+      "Você pode criar um modelo de detecção de objetos no serviço Visão Personalizada para localizar o local do conteúdo em uma imagem.",
+      "Ao criar um modelo de detecção de objetos no serviço Visão Personalizada, você pode selecionar um conjunto de domínios predefinidos."
+    ],
+    "correct": [
+      "false",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": "089",
+    "exam": "IA900",
+    "type": "options",
+    "header": "Você precisa desenvolver um aplicativo móvel para que os funcionários possam digitalizar e armazenar suas despesas durante a viagem.",
+    "body": "Qual serviço de Visão computacional você deve usar?",
+    "options": [
+      "Segmentação semântica",
+      "Classificação de imagem",
+      "OCR (Reconhecimento óptico de caracteres)",
+      "Detecção de objetos"
+    ],
+    "correct": [
+      "OCR (Reconhecimento óptico de caracteres)"
+    ]
+  },
+  {
+    "id": "090",
+    "exam": "IA900",
+    "type": "truefalse",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "O serviço Face poderá ser utilizado para realizar reconhecimento facial de funcionários",
+      "O serviço Face será mais preciso se você fornecer mais fotos de amostra de cada funcionário de ângulos diferentes.",
+      "Se um funcionário estiver usando óculos escuros, o serviço Face sempre deixará de reconhecer o funcionário."
+    ],
+    "correct": [
+      "true",
+      "true",
+      "false"
+    ]
+  }
+]
