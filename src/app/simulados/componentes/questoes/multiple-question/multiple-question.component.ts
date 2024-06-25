@@ -37,9 +37,11 @@ export class MultipleQuestionComponent implements QuestionStructure {
     this.answers.forEach((ans, index) => {
       if(ans){
         total += this.correct.includes(this.options[index]) ? 1 : 0;
+      } else{
+        total += !this.correct.includes(this.options[index]) ? 1 : 0;
       }
     });
-    return total/this.correct.length;
+    return total/this.options.length;
   }
 
   getSummary(){
