@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { QuestionInterface } from './question-interface';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QueryQuestionsService {
-  private root: string = 'https://raw.githubusercontent.com/Salgado2004/CertCloud-Exams/master/content/';
+  private root: string = environment.endpoint;
   question: QuestionInterface;
 
   constructor(private httpClient: HttpClient ) { }
