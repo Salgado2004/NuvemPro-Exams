@@ -10,8 +10,10 @@ const server = http.createServer((req, res) => {
       res.writeHead(404, { 'Content-type': 'text/plain' })
       res.end(error.message);
     } else {
-      res.writeHead(200, { 'Content-Type': 'application/json' })
-      res.end(content)
+      setTimeout(() => {
+        res.writeHead(200, { 'Content-Type': 'application/json' })
+        res.end(content)
+      }, 500);
     }
   })
 });
