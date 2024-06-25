@@ -9,7 +9,10 @@
     "name": "DP900",
     "fullname": "Azure Data Fundamentals",
     "numeroQuestoes": 20,
-    "image": "assets/badges/DP900-badge.png"
+    "image": "assets/badges/DP900-badge.png",
+    "categories":[
+      "blablabla"
+    ]
   },
   {
     "name": "AI900",

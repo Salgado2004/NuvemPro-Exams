@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Simulado } from './simulado';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QueryExamsService {
-  private pathname = 'https://raw.githubusercontent.com/Salgado2004/CertCloud-Exams/master/content/exams.json';
+  private pathname = environment.endpoint + 'exams.json';
   private simulados: Simulado[];
 
   constructor(private httpClient: HttpClient ) { }

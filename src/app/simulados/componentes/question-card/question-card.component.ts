@@ -17,7 +17,7 @@ export class QuestionCardComponent {
   @ViewChild(DinamicLoaderDirective) private dynamicHost!: DinamicLoaderDirective; 
   @Input() questionData: QuestionInterface;
   @Input() questionIndex: number;
-  @Input() totalQuestions: string;
+  @Input() totalQuestions: number;
   questionType: string;
   questionInstance: any;
 
@@ -52,7 +52,7 @@ export class QuestionCardComponent {
     this.questionInstance.instance.body = this.questionData.body;
     this.questionInstance.instance.options = this.questionData.options;
     this.questionInstance.instance.correct = this.questionData.correct;
-    this.questionInstance.instance.showNext = (this.questionIndex < Number.parseInt(this.totalQuestions));
+    this.questionInstance.instance.showNext = (this.questionIndex < this.totalQuestions);
   }
 
   finishExam(){

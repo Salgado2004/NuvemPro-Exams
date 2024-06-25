@@ -16,7 +16,7 @@ export class QuestionsContainerComponent {
   @Input() exam: Simulado;
   @Input() questionNumber: number;
   loading:boolean = true;
-  questions: number[];
+  questions: QuestionInterface[];
   summary: QuestionSummary[] = [];
   questionData: QuestionInterface;
   current = 0;
@@ -24,47 +24,42 @@ export class QuestionsContainerComponent {
 
   constructor(private query: QueryQuestionsService) { }
   ngOnInit() {
-    this.generateQuestions();
-    this.loadQuestion().then((data:QuestionInterface) => {
-      this.loading = false;
-      this.questionData = data;
-      this.questionCard.setQuestionData(this.questionData);
+    this.generateQuestions().then(() => {
+        this.loading = false;
+        this.getQuestion();
     });
 
-      SimuladoEventsService.get('nextQuestion').subscribe( (summary:QuestionSummary) => {
-        this.loading = true;
-        this.summary.push(summary);
-        this.current += 1;
-        if(this.current < this.questions.length){
-          this.loadQuestion().then((data:QuestionInterface) => {
-            this.loading = false;
-            this.questionData = data;
-            this.questionCard.setQuestionData(this.questionData);
-          });
-        }
-      });
+    SimuladoEventsService.get('nextQuestion').subscribe( (summary:QuestionSummary) => {
+      this.summary.push(summary);
+      this.current += 1;
+      this.getQuestion();
+    });
 
-      SimuladoEventsService.get('endExam').subscribe( (summary:QuestionSummary) => {
-        this.summary.push(summary);
-        this.finish = true;
-      });
+    SimuladoEventsService.get('endExam').subscribe( (summary:QuestionSummary) => {
+      this.summary.push(summary);
+      this.finish = true;
+    });
   }
 
-  generateQuestions(){
+  async generateQuestions(){
     this.questions = [];
-    while(this.questions.length < this.questionNumber){
-      let q = Math.floor(Math.random() * this.exam.numeroQuestoes) + 1;
-      if(this.questions.indexOf(q) === -1) this.questions.push(q);
+    try{
+      let data = await this.query.getQuestions(this.exam.name);
+      while(this.questions.length < this.questionNumber){
+        let q = Math.floor(Math.random() * this.exam.numeroQuestoes);
+        if(!this.questions.includes(data[q])){
+          this.questions.push(data[q]);
+        }
+      }
+    } catch(error){
+      console.error("Erro ao carregar as questões: ", error);
     }
   }
 
-  async loadQuestion(){
-    try{
-      let question = await this.query.getQuestion(this.exam.name, this.questions[this.current].toString());
-      return question;
-    } catch(error){
-      console.error("Erro ao carregar a questão:", error);
-    }
+  getQuestion(){
+    this.questionData = this.questions[this.current];
+    this.questionCard.questionIndex = this.current+1;
+    this.questionCard.setQuestionData(this.questionData);
   }
 
 }

@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { QuestionInterface } from './question-interface';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QueryQuestionsService {
-  private root: string = 'https://raw.githubusercontent.com/Salgado2004/CertCloud-Exams/master/content/';
-  question: QuestionInterface;
+  private root: string = environment.endpoint;
+  questions: QuestionInterface[];
 
   constructor(private httpClient: HttpClient ) { }
 
@@ -15,21 +16,14 @@ export class QueryQuestionsService {
     return this.httpClient.get(pathname);
   }
 
-  private formatQuestionIndex(index: string){
-    while(index.length < 3){
-      index = '0' + index;
-    }
-    return index;
-  }
-
-  async getQuestion(exam: string, index: string) {
+  async getQuestions(exam: string) {
     try{
-      let pathname = this.root + exam + '/question-' + this.formatQuestionIndex(index) + '.json';
+      let pathname = this.root + exam + '/questions.json';
       const data: any = await this.loadQuestionFile(pathname).toPromise();
-      this.question = data;
-      return this.question;
+      this.questions = data;
+      return this.questions;
     }catch(error){
-      console.error("Erro ao carregar os exames:", error);
+      console.error("Erro ao carregar as questões:", error);
     }
   }
 }
