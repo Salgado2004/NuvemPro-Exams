@@ -1,5 +1,8 @@
 <h2 id="finalScore">Nota final: {{ finalScore }}%</h2>
 <div>
     <h4>Perguntas</h4>
-    <app-question-summary *ngFor="let question of summary" [summary]="question"></app-question-summary>
+    <ng-container *ngFor="let domain of exam.domains; let i = index">
+        <h5>{{ domain.name }}</h5>
+        <app-question-summary *ngFor="let question of summaryByDomain[i]" [summary]="question"></app-question-summary>
+    </ng-container>
 </div>

@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { QuestionStructure } from '../../../utils/question-structure';
 import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 import { QuestionSummary } from '../../../utils/question-summary';
+import { QuestionInterface } from '../../../utils/question-interface';
 
 @Component({
   selector: 'app-options-question',
@@ -12,6 +13,7 @@ export class OptionsQuestionComponent implements QuestionStructure{
   id: string;
   header: string;
   body: string;
+  domain: string;
   options: string[];
   correct: string[];
   answer: string;
@@ -22,6 +24,16 @@ export class OptionsQuestionComponent implements QuestionStructure{
 
   constructor(){
     this.classes = {};
+  }
+
+  build(data: QuestionInterface, index: number, next: boolean): void {
+    this.id = "question"+index;
+    this.header = data.header;
+    this.body = data.body;
+    this.domain = data.domain;
+    this.options = data.options;
+    this.correct = data.correct;
+    this.showNext = next;
   }
 
   verifyAnswer() {
@@ -40,6 +52,7 @@ export class OptionsQuestionComponent implements QuestionStructure{
   getSummary(){
     this.summary.header = this.header;
     this.summary.body = this.body;
+    this.summary.domain = this.domain;
     this.summary.correct = this.correct;
     this.summary.answer = this.answer;
     this.summary.score = this.score();
