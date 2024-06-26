@@ -1,8 +1,18 @@
-<h2 id="finalScore">Nota final: {{ finalScore }}%</h2>
+<h2 id="finalScore">Nota final: {{ generalScore }}%</h2>
+<div>
+  <h4>Domínios avaliados</h4>
+  <app-domain-summary *ngFor="let domain of exam.domains; let i = index"
+                      [domain]="domain.name" [percentual]="percentual(i)"></app-domain-summary>
+</div>
 <div>
     <h4>Perguntas</h4>
     <ng-container *ngFor="let domain of exam.domains; let i = index">
-        <h5>{{ domain.name }}</h5>
-        <app-question-summary *ngFor="let question of summaryByDomain[i]" [summary]="question"></app-question-summary>
+        <mat-expansion-panel class="domain">
+          <mat-expansion-panel-header>
+            <mat-panel-title><b>{{ domain.name }}</b></mat-panel-title>
+            <mat-panel-description>{{ scoreByDomain[i] }}/{{ summaryByDomain[i].length }}</mat-panel-description>
+          </mat-expansion-panel-header>
+          <app-question-summary *ngFor="let question of summaryByDomain[i]" [summary]="question"></app-question-summary>
+        </mat-expansion-panel>
     </ng-container>
 </div>

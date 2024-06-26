@@ -10,17 +10,25 @@ import { Simulado } from '../../utils/simulado';
 export class ExamSummaryComponent {
   @Input() summary: QuestionSummary[];
   @Input() exam: Simulado;
+  generalScore: number;
   summaryByDomain: any[] = [];
-  finalScore: number;
+  scoreByDomain: number[]=[];
 
   ngOnInit() {
     this.calculateFinalScore();
-    this.exam.domains.forEach((domain) => {
+    this.exam.domains.forEach((domain, index) => {
       this.summaryByDomain.push(this.summary.filter((a) => a.domain == domain.name));
+      this.scoreByDomain.push(this.summaryByDomain[index].reduce((total, domain) => total + (domain.right ? 1 : 0), 0));
     });
   }
 
   calculateFinalScore(){
-    this.finalScore = Math.round((this.summary.reduce((acc, summary) => acc + summary.score, 0) / this.summary.length) * 100);
+    this.generalScore = Math.round((this.summary.reduce((total, summary) => total + summary.score, 0) / this.summary.length) * 100);
+  }
+
+  percentual(index: number){
+    const domain = this.summaryByDomain[index];
+    let percentual = Math.round((domain.reduce((total, summary) => total + summary.score, 0) / domain.length) * 100);
+    return !Number.isNaN(percentual) ? percentual : 0;
   }
 }

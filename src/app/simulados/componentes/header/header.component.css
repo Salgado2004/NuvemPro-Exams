@@ -2,11 +2,11 @@
     background-color: #080e19;
     display: block;
     box-sizing: border-box;
-    padding: 16px;
 }
 
 h1{
     color: #fdffff;
     font-weight: 400;
     font-size: 21pt;
+    padding: 16px;
 }
