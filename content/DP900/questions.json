@@ -3,6 +3,7 @@
     "id": "001",
     "exam": "DP900",
     "type": "options",
+    "domain": "Descrever considerações para trabalhar com os dados não relacionais no Azure",
     "header": "Você precisa recomendar um serviço de armazenamento de dados que atenda aos seguintes requisitos: Acesso nativo à API SQL e Índices configuráveis. O que você deve recomendar?",
     "options": [
       "Azure Cosmos DB",
@@ -18,6 +19,7 @@
     "id": "002",
     "exam": "DP900",
     "type": "multiple",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
     "header": "Quais objetos podem ser adicionados a um painel do Microsoft Power BI? Selecione todas as opções corretas",
     "options": [
       "Um dataflow",
@@ -38,6 +40,7 @@
     "id": "003",
     "exam": "DP900",
     "type": "options",
+    "domain": "Descrever os principais conceitos de dados",
     "header": "Qual das tarefas a seguir é a função de um administrador de banco de dados? Selecione a opção correta",
     "options": [
       "Identificar problemas de qualidade de dados",
@@ -52,6 +55,7 @@
     "id": "004",
     "exam": "DP900",
     "type": "multiple",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Quais são as diferentes opções de implantação disponíveis para o Banco de Dados do Azure para PostgreSQL? Selecione três opções corretas",
     "options": [
       "Azure Database for PostgreSQL Single Server",
@@ -69,6 +73,7 @@
     "id": "005",
     "exam": "DP900",
     "type": "multiple",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Como um banco de dados relacional reforça a integridade dos dados? Selecione todas as opções corretas",
     "options": [
       "Impede que registros sejam inseridos se os registros nos quais eles dependem não existirem",
@@ -87,6 +92,7 @@
     "id": "006",
     "exam": "DP900",
     "type": "options",
+    "domain":"Identificar considerações sobre dados relacionais no Azure",
     "header": "Qual afirmação é um exemplo de linguagem de manipulação de dados (DML)? Selecione a opção correta",
     "options": [
       "REVOKE",
@@ -102,6 +108,7 @@
     "id": "007",
     "exam": "DP900",
     "type": "truefalse",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
     "options": [
       "O banco de dados SQL do Azure inclui um serviço de backup gerenciado",
@@ -118,6 +125,7 @@
     "id": "008",
     "exam": "DP900",
     "type": "truefalse",
+    "domain": "Descrever considerações para trabalhar com os dados não relacionais no Azure",
     "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
     "options": [
       "O armazenamento de tabelas do Azure oferece suporte a várias réplicas de leitura",
@@ -132,6 +140,7 @@
     "id": "009",
     "exam": "DP900",
     "type": "options",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
     "header": "Durante qual etapa do ETL uma coluna de dados é modificada para corresponder ao formato esperado do destino? Por exemplo, alterando o campo de data de “31 de janeiro de 2023” para “31/01/2023”. Selecione a opção correta",
     "options": [
       "Transformação",
@@ -146,6 +155,7 @@
     "id": "010",
     "exam": "DP900",
     "type": "options",
+    "domain":"Identificar considerações sobre dados relacionais no Azure",
     "header": "Qual afirmação é um exemplo de linguagem de manipulação de dados (DML)? Selecione a opção correta",
     "options": [
       "REVOKE",
@@ -161,6 +171,7 @@
     "id": "011",
     "exam": "DP900",
     "type": "options",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Qual dos seguintes serviços de banco de dados do Azure garante 100% de compatibilidade com o SQL Server em execução no seu ambiente on-premise? Selecione a opção correta",
     "options": [
       "Instância gerenciada de SQL",
@@ -176,6 +187,7 @@
     "id": "012",
     "exam": "DP900",
     "type": "options",
+    "domain":"Identificar considerações sobre dados relacionais no Azure",
     "header": "Um bloco de código executado em um banco de dados é denominado ________. Selecione a opção correta para preencher o espaço em branco",
     "options": [
       "Um procedimento armazenado",
@@ -191,6 +203,7 @@
     "id": "013",
     "exam": "DP900",
     "type": "options",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Ao usar uma instância gerenciada do Banco de Dados SQL do Azure, qual é a maneira mais simples de implementar backups? Selecione a opção correta",
     "options": [
       "Os backups são realizados automaticamente",
@@ -205,6 +218,7 @@
     "id": "014",
     "exam": "DP900",
     "type": "options",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Qual das seguintes afirmações é verdadeira sobre o Banco de Dados SQL do Azure? Selecione a opção correta",
     "options": [
       "A maioria das tarefas de manutenção de banco de dados são automatizadas",
@@ -219,6 +233,7 @@
     "id": "015",
     "exam": "DP900",
     "type": "select",
+    "domain": "Descrever os principais conceitos de dados",
     "header": "_______ é um exemplo de dados semiestruturados. Selecione a opção correta para preencher o espaço em branco",
     "options": [
       "Um arquivo de vídeo",
@@ -234,6 +249,7 @@
     "id": "016",
     "exam": "DP900",
     "type": "options",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
     "header": "Você tem um pool SQL no Azure Synapse Analytics que só é usado ativamente todas as noites durante oito horas. Você precisa minimizar o custo do pool SQL durante os tempos de inatividade. A solução deve garantir que os dados permaneçam intactos. O que você deve fazer no pool SQL?",
     "options": [
       "Pausar o pool",
@@ -249,6 +265,7 @@
     "id": "017",
     "exam": "DP900",
     "type": "multiple",
+    "domain": "Descrever os principais conceitos de dados",
     "header": "CRUD são as quatro funções básicas do armazenamento persistente. Selecione todas as operações CRUD corretas",
     "options": [
       "Criar",
@@ -268,6 +285,7 @@
     "id": "018",
     "exam": "DP900",
     "type": "options",
+    "domain": "Descrever considerações para trabalhar com os dados não relacionais no Azure",
     "header": "Qual configuração só pode ser definida durante a criação de uma conta do Azure Cosmos DB? Selecione a opção correta",
     "options": [
       "Geo-redundância",
@@ -283,6 +301,7 @@
     "id": "019",
     "exam": "DP900",
     "type": "options",
+    "domain":"Identificar considerações sobre dados relacionais no Azure",
     "header": "_________ é um objeto associado a uma tabela que classifica as linhas de dados da tabela de acordo com seus valores-chave. Selecione a opção correta para preencher o espaço em branco",
     "options": [
       "Um índice",
@@ -298,6 +317,7 @@
     "id": "020",
     "exam": "DP900",
     "type": "options",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Qual implantação requer menos alterações ao migrar uma solução local existente do SQL Server? Selecione a opção correta",
     "options": [
       "Instância Gerenciada do Banco de Dados SQL do Azure",
@@ -306,6 +326,280 @@
     ],
     "correct": [
       "Instância Gerenciada do Banco de Dados SQL do Azure"
+    ]
+  },
+  {
+    "id": "021",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever considerações para trabalhar com os dados não relacionais no Azure",
+    "header": "_______ é um produto do Banco de Dados do Azure, projetado para lidar com dados não relacionais, como dados JSON. Selecione a opção correta para preencher o espaço em branco",
+    "options": [
+      "SQL Server em uma máquina virtual",
+      "Azure Cosmos DB",
+      "Azure Blob Storage",
+      "Azure SQL Database"
+    ],
+    "correct": [
+      "Azure Cosmos DB"
+    ]
+  },
+  {
+    "id": "022",
+    "exam": "DP900",
+    "type": "multiple",
+    "domain":"Identificar considerações sobre dados relacionais no Azure",
+    "header": "Quais das alternativas a seguir são características comuns de um data warehouse? Selecione duas opções corretas",
+    "options": [
+      "Banco de dados otimizado para leitura por ser desnormalizado",
+      "Suporta grandes quantidades de dados",
+      "Banco de dados otimizado para escrita",
+      "Precisa de um pré-processamento significativo dos dados antes que possa usá-los para reportar"
+    ],
+    "correct": [
+      "Banco de dados otimizado para leitura por ser desnormalizado",
+      "Suporta grandes quantidades de dados"
+    ]
+  },
+  {
+    "id": "023",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
+    "header": "Qual componente do Azure Data Factory inicia a execução de um pipeline? Selecione a opção correta",
+    "options": [
+      "Um gatilho",
+      "Um controle de fluxo",
+      "Uma atividade",
+      "Um parâmetro"
+    ],
+    "correct": [
+      "Um gatilho"
+    ]
+  },
+  {
+    "id": "024",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
+    "header": "Há um sensor de temperatura em uma fábrica que precisa enviar dados de temperatura continuamente ao sistema para serem processados posteriormente em tempo real. Qual das opções a seguir categoriza melhor os dados?",
+    "options": [
+      "Dados de fluxo",
+      "Dados em lote",
+      "Dados criptografados",
+      "Dados semiestruturados"
+    ],
+    "correct": [
+      "Dados de fluxo"
+    ]
+  },
+  {
+    "id": "025",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
+    "header": "A criptografia transparente de dados (TDE) criptografa ________. Selecione a opção correta para preencher o espaço em branco",
+    "options": [
+      "O banco de dados para proteger os dados em repouso",
+      "O servidor para proteger os dados em repouso",
+      "As queries e seus resultados para proteger os dados em movimento",
+      "A coluna para proteger os dados em repouso e em movimento"
+    ],
+    "correct": [
+      "O banco de dados para proteger os dados em repouso"
+    ]
+  },
+  {
+    "id": "026",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
+    "header": "Sua empresa possui uma solução de relatórios que possui relatórios paginados. Os relatórios consultam um modelo dimensional em um data warehouse. Que tipo de processamento a solução de relatórios usa?",
+    "options": [
+      "OLAP (Online Analytical Processing)",
+      "OLTP (Online Transaction Processing)",
+      "Processamento de fluxos",
+      "Processamento em lotes"
+    ],
+    "correct": [
+      "OLAP (Online Analytical Processing)"
+    ]
+  },
+  {
+    "id": "027",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever considerações para trabalhar com os dados não relacionais no Azure",
+    "header": "_______ é a maneira mais barata de armazenar dados no Azure. Selecione a opção correta para preencher o espaço em branco",
+    "options": [
+      "Tabelas do Azure",
+      "Azure Cosmos DB",
+      "Azure SQL Database",
+      "Azure Blob Storage"
+    ],
+    "correct": [
+      "Azure Blob Storage"
+    ]
+  },
+  {
+    "id": "028",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
+    "header": "Você precisa coletar dados de telemetria em tempo real de um aplicativo móvel. Que tipo de carga de trabalho descreve esse cenário?",
+    "options": [
+      "Processamento de fluxos",
+      "Processamento em lotes",
+      "OLTP (Online Transaction Processing)",
+      "MPP (Massivelly Parallel Processing)"
+    ],
+    "correct": [
+      "Processamento de fluxos"
+    ]
+  },
+  {
+    "id": "029",
+    "exam": "DP900",
+    "type": "options",
+    "domain":"Identificar considerações sobre dados relacionais no Azure",
+    "header": "Que tipo de banco de dados é o Banco de Dados do Azure para PostgreSQL? Selecione a opção correta",
+    "options": [
+      "Plataforma como serviço (PaaS)",
+      "Infraestrutura como serviço (IaaS)",
+      "Software como serviço (SaaS)",
+      "Função como serviço (FaaS)"
+    ],
+    "correct": [
+      "Plataforma como serviço (PaaS)"
+    ]
+  },
+  {
+    "id": "030",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever os principais conceitos de dados",
+    "header": "Qual é a principal diferença entre um data lake e um data warehouse? Selecione a opção correta",
+    "options": [
+      "Um data lake contém dados brutos, mas um data warehouse contém informações estruturadas",
+      "Um data lake contém informações estruturadas, mas um data warehouse contém dados empresariais brutos",
+      "Os dados armazenados no data lake são dinâmicos, mas as informações armazenadas no data warehouse são estáticas"
+    ],
+    "correct": [
+      "Um data lake contém dados brutos, mas um data warehouse contém informações estruturadas"
+    ]
+  },
+  {
+    "id": "031",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
+    "header": "Qual serviço no Azure pode ser usado para processar dados em tempo real com três componentes: entrada, consulta e saída? Selecione a opção correta",
+    "options": [
+      "Stream Analytics Job",
+      "Event Hub",
+      "Synapse Analytics",
+      "IoT Hub",
+      "Azure Databricks"
+    ],
+    "correct": [
+      "Stream Analytics Job"
+    ]
+  },
+  {
+    "id": "032",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever os principais conceitos de dados",
+    "header": "Para configurar uma conta de armazenamento do Azure para dar suporte à segurança no nível da pasta e à manipulação de diretório atômico, você precisa ________. Selecione a opção correta para preencher o espaço em branco",
+    "options": [
+      "Habilitar um namespace hierárquico",
+      "Definir desempenho como premium",
+      "Definir tipo da conta como blob storage",
+      "Definir replicação de dados como RA-RGS"
+    ],
+    "correct": [
+      "Habilitar um namespace hierárquico"
+    ]
+  },
+  {
+    "id": "033",
+    "exam": "DP900",
+    "type": "options",
+    "domain":"Identificar considerações sobre dados relacionais no Azure",
+    "header": "Qual afirmação é um exemplo de linguagem de definição de dados (DDL)? Selecione a opção correta",
+    "options": [
+      "SELECT",
+      "JOIN",
+      "MERGE",
+      "CREATE"
+    ],
+    "correct": [
+      "CREATE"
+    ]
+  },
+  {
+    "id": "034",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
+    "header": "O Azure Data Factory dá suporte a um gatilho agendado para um horário predeterminado, mas que pode fingir que está em execução em outro horário. Por exemplo, um trabalho é executado todos os dias ao meio-dia, mas processa apenas os dados recebidos até a meia-noite da noite passada. Que é o nome desse tipo de gatilho?",
+    "options": [
+      "Tumbling window trigger",
+      "Scheduled trigger",
+      "Manual trigger",
+      "Time-series interval"
+    ],
+    "correct": [
+      "Tumbling window trigger"
+    ]
+  },
+  {
+    "id": "035",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever considerações para trabalhar com os dados não relacionais no Azure",
+    "header": "Você tem um aplicativo personalizado que usa o SDK do Azure para acessar o CosmosDB. Você está recebendo um erro de autenticação ao fazer isso e percebe que não passou nenhum tipo de credencial para ele. Que tipo de credencial o Cosmos DB espera para conceder acesso a você?",
+    "options": [
+      "Chave de acesso",
+      "Certificado de cliente",
+      "Login e senha",
+      "Login anônimo"
+    ],
+    "correct": [
+      "Chave de acesso"
+    ]
+  },
+  {
+    "id": "036",
+    "exam": "DP900",
+    "type": "options",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
+    "header": "PolyBase é usado ________. Selecione a opção correta para preencher o espaço em branco",
+    "options": [
+      "Para consultar dados de fontes de dados externas para Azure Synapse Analytics",
+      "Para ingerir dados de streaming usando Azure Databricks",
+      "Para orquestrar atividades no Azure Data Factory"
+    ],
+    "correct": [
+      "Para consultar dados de fontes de dados externas para Azure Synapse Analytics"
+    ]
+  },
+  {
+    "id": "037",
+    "exam": "DP900",
+    "type": "multiple",
+    "domain": "Descrever uma carga de trabalho de análise no Azure",
+    "header": "Quais são os serviços do Azure que podem ser usados para processar os dados? Selecione duas opções corretas",
+    "options": [
+      "Synapse Analytics",
+      "Analytics Job",
+      "Azure Blob Storage",
+      "Event Hub",
+      "IoT Hub"
+    ],
+    "correct": [
+      "Synapse Analytics",
+      "Analytics Job"
     ]
   }
 ]

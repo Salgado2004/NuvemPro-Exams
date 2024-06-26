@@ -3,6 +3,7 @@
     "id": "001",
     "exam": "AZ900",
     "type": "options",
+    "domain":"Descrever os conceitos da nuvem",
     "header": "Qual é a vantagem da computação em nuvem em comparação com implantações locais?",
     "options": [
       "Você pode dimensionar mais rapidamente",

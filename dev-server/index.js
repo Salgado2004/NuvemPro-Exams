@@ -3,7 +3,6 @@ const fs = require('fs');
 
 const server = http.createServer((req, res) => {
   let file = "content"+req.url;
-  console.log(file);
   res.setHeader('Access-Control-Allow-Origin', '*');
   fs.readFile(file, (error, content) => {
     if (error) {

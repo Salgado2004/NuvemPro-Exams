@@ -14,6 +14,7 @@ import { ExamComponent } from './pages/exam/exam.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { ExamCardComponent } from './componentes/exam-card/exam-card.component';
 import { ExamSummaryComponent } from './componentes/exam-summary/exam-summary.component';
+import { DomainSummaryComponent } from './componentes/domain-summary/domain-summary.component';
 import { ListSimuladosComponent} from './componentes/list-simulados/list-simulados.component';
 import { QuestionsContainerComponent } from './componentes/questions-container/questions-container.component';
 import { QuestionCardComponent } from './componentes/question-card/question-card.component';
@@ -28,6 +29,8 @@ import { LoaderComponent } from './componentes/loader/loader.component';
 import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
 import { SummaryPipe } from './utils/summary.pipe';
 
+import {MatExpansionModule} from '@angular/material/expansion';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -36,6 +39,7 @@ import { SummaryPipe } from './utils/summary.pipe';
     ExamCardComponent,
     ExamSummaryComponent,
     QuestionsContainerComponent,
+    DomainSummaryComponent,
     ListSimuladosComponent,
     QuestionCardComponent,
     QuestionSummaryComponent,
@@ -53,7 +57,8 @@ import { SummaryPipe } from './utils/summary.pipe';
     HttpClientModule,
     FormsModule,
     SummaryPipe,
-    LoaderComponent
+    LoaderComponent,
+    MatExpansionModule
   ],
   providers: [
     QueryQuestionsService,

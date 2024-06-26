@@ -47,12 +47,8 @@ export class QuestionCardComponent {
 
     const viewContainerRef = this.dynamicHost.view;
     this.questionInstance = viewContainerRef.createComponent<QuestionStructure>(questionComponentType);
-    this.questionInstance.instance.id = "question"+this.questionIndex;
-    this.questionInstance.instance.header = this.questionData.header;
-    this.questionInstance.instance.body = this.questionData.body;
-    this.questionInstance.instance.options = this.questionData.options;
-    this.questionInstance.instance.correct = this.questionData.correct;
-    this.questionInstance.instance.showNext = (this.questionIndex < this.totalQuestions);
+    const component: QuestionStructure = this.questionInstance.instance;
+    component.build(this.questionData, this.questionIndex, (this.questionIndex < this.totalQuestions));
   }
 
   finishExam(){

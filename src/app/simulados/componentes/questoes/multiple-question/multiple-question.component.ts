@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { QuestionStructure } from '../../../utils/question-structure';
 import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 import { QuestionSummary } from '../../../utils/question-summary';
+import { QuestionInterface } from '../../../utils/question-interface';
 
 @Component({
   selector: 'app-multiple-question',
@@ -12,12 +13,23 @@ export class MultipleQuestionComponent implements QuestionStructure {
   id: string;
   header: string;
   body: string;
+  domain: string;
   options: string[];
   correct: string[];
   answers: string[] = [];
   showNext: boolean;
   active: boolean = true;
   summary: QuestionSummary = new Object() as QuestionSummary;
+
+  build(data: QuestionInterface, index: number, next: boolean): void {
+    this.id = "question"+index;
+    this.header = data.header;
+    this.body = data.body;
+    this.domain = data.domain;
+    this.options = data.options;
+    this.correct = data.correct;
+    this.showNext = next;
+  }
 
   verifyAnswer() {
     for (let i = 0; i < this.options.length; i++){
@@ -34,11 +46,11 @@ export class MultipleQuestionComponent implements QuestionStructure {
 
   score(){
     let total=0;
-    this.answers.forEach((ans, index) => {
-      if(ans){
-        total += this.correct.includes(this.options[index]) ? 1 : 0;
+    this.options.forEach((opt, index) => {
+      if(this.answers[index]){
+        total += this.correct.includes(opt) ? 1 : 0;
       } else{
-        total += !this.correct.includes(this.options[index]) ? 1 : 0;
+        total += !this.correct.includes(opt) ? 1 : 0;
       }
     });
     return total/this.options.length;
@@ -47,6 +59,7 @@ export class MultipleQuestionComponent implements QuestionStructure {
   getSummary(){
     this.summary.header = this.header;
     this.summary.body = this.body;
+    this.summary.domain = this.domain;
     this.summary.correct = this.correct;
     this.summary.answer = this.options.filter((opt, index) => this.answers[index]);
     this.summary.score = this.score();

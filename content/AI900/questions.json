@@ -3,6 +3,7 @@
     "id": "001",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Qual técnica de IA (inteligência artificial) serve como base para soluções modernas de classificação de imagem?",
     "options": [
       "Segmentação semântica",
@@ -18,6 +19,7 @@
     "id": "002",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Qual solução de visão computacional fornece a capacidade de identificar a idade de uma pessoa com base em uma fotografia?",
     "options": [
       "Detecção facial",
@@ -33,6 +35,7 @@
     "id": "003",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Quais são os dois modelos de domínio especializados que dão suporte à Visão de IA do Azure ao categorizar uma imagem? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Celebridades",
@@ -50,6 +53,7 @@
     "id": "004",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "O que permite identificar diferentes tipos de fraturas ósseas em imagens de raios-X?",
     "options": [
       "IA (inteligência artificial de conversa)",
@@ -65,6 +69,7 @@
     "id": "005",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "O que permite identificar diferentes tipos de veículos em imagens de monitoramento de tráfego?",
     "options": [
       "Classificação de imagem",
@@ -80,6 +85,7 @@
     "id": "006",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Quais dois modelos de domínio especializados têm suporte usando o serviço de Visão de IA do Azure? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Animais",
@@ -97,6 +103,7 @@
     "id": "007",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Qual informação adicional está incluída em cada frase retornada por uma tarefa de descrição de imagem do serviço de Visão de IA do Azure?",
     "options": [
       "Coordenadas de caixa delimitadora",
@@ -112,6 +119,7 @@
     "id": "008",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Quais os dois modelos do serviço de IA do Azure para Informação de Documentos que incluem a identificação de campos de dados comuns como parte de seus recursos de extração de dados? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Modelo de cartão de visita",
@@ -129,6 +137,7 @@
     "id": "009",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Ao usar a API de Detecção Facial do serviço de Detecção Facial da IA do Azure, qual recurso ajuda a identificar se um rosto humano usa óculos ou acessórios para a cabeça?",
     "options": [
       "Atributos de detecção facial",
@@ -144,6 +153,7 @@
     "id": "010",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Qual serviço você pode usar para treinar um modelo de classificação de imagem?",
     "options": [
       "Visão de IA do Azure",
@@ -159,6 +169,7 @@
     "id": "011",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Quais três fontes podem ser usadas para gerar perguntas e respostas para uma base de dados de conhecimento? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Uma página Web",
@@ -177,6 +188,7 @@
     "id": "012",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos de cargas de trabalho de IA gerativa no Azure",
     "header": "Em qual camada você pode aplicar filtros de conteúdo para suprimir prompts e respostas para uma solução de IA generativa responsável?",
     "options": [
       "Metaprompt e aterramento",
@@ -192,6 +204,7 @@
     "id": "013",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Selecione a resposta que conclui corretamente a frase.",
     "body": "___________ pode retornar respostas, como linguagem natural, imagens ou código, com base na entrada de linguagem natural.",
     "options": [
@@ -209,6 +222,7 @@
     "id": "014",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever os recursos de cargas de trabalho de IA gerativa no Azure",
     "header": "Selecione a resposta que conclui corretamente a frase.",
     "body": "____________ pode ser usado para identificar restrições e estilos para as respostas de um modelo de IA generativa.",
     "options": [
@@ -225,6 +239,7 @@
     "id": "015",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos de cargas de trabalho de IA gerativa no Azure",
     "header": "De acordo com o NIST AI Risk Management Framework, qual é o primeiro estágio a ser considerado ao desenvolver uma solução de IA generativa responsável?",
     "options": [
       "Identifique os possíveis danos",
@@ -240,6 +255,7 @@
     "id": "016",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os recursos de cargas de trabalho de IA gerativa no Azure",
     "header": "Quais são os dois recursos que são exemplos de um modelo GPT? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Criar linguagem natural",
@@ -257,6 +273,7 @@
     "id": "017",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os recursos de cargas de trabalho de IA gerativa no Azure",
     "header": "Quais são os três recursos que são exemplos de recursos de geração de imagem para um modelo de IA generativa? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Animação de imagens estáticas",
@@ -275,6 +292,7 @@
     "id": "018",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos de cargas de trabalho de IA gerativa no Azure",
     "header": "Você planeja desenvolver uma solução de processamento de imagem que usará DALL-E como modelo de IA generativa.",
     "body": "Qual recurso NÃO é compatível com o modelo DALL-E?",
     "options": [
@@ -291,6 +309,7 @@
     "id": "019",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure",
     "header": "Selecione a resposta que conclui corretamente a frase.",
     "body": "____________ pode pesquisar, classificar e comparar fontes de texto quanto à similaridade.",
     "options": [
@@ -307,6 +326,7 @@
     "id": "020",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Você precisa identificar valores numéricos que representam a probabilidade de humanos desenvolverem diabetes com base na idade e no percentual de gordura corporal.",
     "body": "Qual tipo de modelo de machine learning você deve usar?",
     "options": [
@@ -323,6 +343,7 @@
     "id": "021",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Qual tipo de algoritmo de aprendizado de máquina prevê um rótulo numérico associado a um item com base nos recursos desse item?",
     "options": [
       "Classificação",
@@ -338,6 +359,7 @@
     "id": "022",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Prever chuvas para uma localização geográfica específica é um exemplo de qual tipo de aprendizado de máquina?",
     "options": [
       "Classificação",
@@ -353,6 +375,7 @@
     "id": "023",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Uma empresa implanta uma campanha de marketing online em plataformas de mídia social para um novo lançamento de produto. A empresa quer usar o aprendizado de máquina para medir o sentimento dos usuários na plataforma Twitter que fizeram postagens em resposta à campanha.",
     "body": "Que tipo de aprendizado de máquina é esse?",
     "options": [
@@ -369,6 +392,7 @@
     "id": "024",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Um varejista quer agrupar compradores online que têm atributos semelhantes para permitir que sua equipe de marketing crie campanhas de marketing direcionadas para lançamentos de novos produtos.",
     "body": "Que tipo de aprendizado de máquina é esse?",
     "options": [
@@ -385,6 +409,7 @@
     "id": "025",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Você planeja usar o aprendizado de máquina para prever a probabilidade de humanos desenvolverem diabetes com base em sua idade e percentual de gordura corporal.",
     "body": "O que o modelo deve incluir?",
     "options": [
@@ -401,6 +426,7 @@
     "id": "026",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Qual suposição do modelo de regressão linear múltipla deve ser atendida para evitar previsões enganosas?",
     "options": [
       "Os recursos dependem uns do outros",
@@ -416,6 +442,7 @@
     "id": "027",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Em um algoritmo de aprendizado de máquina de regressão, quais são as características dos recursos e rótulos em um conjunto de dados de validação?",
     "options": [
       "Valores de rótulo e recursos conhecidos",
@@ -431,6 +458,7 @@
     "id": "028",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Você precisa usar o designer do Azure Machine Learning para implantar um serviço preditivo de um modelo recém-treinado.",
     "body": "O que você deve fazer primeiro no designer do Machine Learning?",
     "options": [
@@ -447,6 +475,7 @@
     "id": "029",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Quais três modelos de machine learning supervisionados você pode treinar usando o machine learning automatizado (ML automatizado) no estúdio do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Classificação",
@@ -465,6 +494,7 @@
     "id": "030",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Quais são os três módulos de transformação de dados no designer do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Limpar dados ausentes",
@@ -483,6 +513,7 @@
     "id": "031",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure",
     "header": "Qual carga de trabalho de NLP (processamento de linguagem natural) é usada para gerar texto de legenda oculta para apresentações ao vivo?",
     "options": [
       "Fala de IA do Azure",
@@ -498,6 +529,7 @@
     "id": "032",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure",
     "header": "Quais dois cenários de carga de trabalho de IA (inteligência artificial) são exemplos de NLP (processamento de linguagem natural)? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Extraindo texto manuscrito de imagens online",
@@ -515,6 +547,7 @@
     "id": "033",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Você está explorando soluções para melhorar o serviço de pesquisa e indexação de documentos para funcionários.",
     "body": "Você precisa de uma solução de pesquisa de IA (inteligência artificial) que inclua a pesquisa de texto em vários tipos de documentos, como imagens. Qual tipo de carga de trabalho de IA é esse?",
     "options": [
@@ -531,6 +564,7 @@
     "id": "034",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Qual princípio da IA (inteligência artificial) responsável envolve avaliar e atenuar o viés introduzido pelos recursos de um modelo?",
     "options": [
       "Responsabilidade",
@@ -546,6 +580,7 @@
     "id": "035",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Qual princípio da IA (inteligência artificial) responsável define o quadro de princípios de governança e organização que atendem aos padrões éticos e legais das soluções de IA?",
     "options": [
       "Responsabilidade",
@@ -561,6 +596,7 @@
     "id": "036",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Qual princípio da IA (inteligência artificial) responsável desempenha o papel principal ao implementar uma solução de IA que atenda às qualificações para aprovações de empréstimos empresariais?",
     "options": [
       "Responsabilidade",
@@ -576,6 +612,7 @@
     "id": "037",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Qual princípio da IA (inteligência artificial) responsável é aplicado no design de um sistema de IA para garantir que os usuários entendam as restrições e as limitações da IA?",
     "options": [
       "Justiça",
@@ -591,6 +628,7 @@
     "id": "038",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Um banco está desenvolvendo um novo sistema de IA (inteligência artificial) para apoiar o processo de aceitação ou rejeição de pedidos hipotecários.",
     "body": "Como parte do princípio responsável da imparcialidade da IA, quais duas questões NÃO devem ser consideradas para evitar a tomada de decisões tendenciosa? Cada resposta correta apresenta uma parte da solução.",
     "options": [
@@ -609,6 +647,7 @@
     "id": "039",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Qual princípio da IA (inteligência artificial) responsável garante que um sistema de IA atenda a quaisquer padrões legais e éticos que ele deve cumprir?",
     "options": [
       "Responsabilidade",
@@ -624,6 +663,7 @@
     "id": "040",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Uma empresa está atualmente desenvolvendo veículos agrícolas sem motorista para ajudar na colheita. Os veículos serão implantados ao lado de pessoas que trabalham nos campos de corte e, como tal, a empresa precisará realizar testes robustos.",
     "body": "Qual princípio da IA (inteligência artificial) responsável é mais importante nesse caso?",
     "options": [
@@ -640,6 +680,7 @@
     "id": "041",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever os recursos de cargas de trabalho de IA gerativa no Azure",
     "header": "Selecione a resposta que conclui corretamente a frase.",
     "body": "___________ são plug-ins para fornecer aos usuários finais a capacidade de obter ajuda com tarefas comuns de um modelo de IA generativo.",
     "options": [
@@ -656,6 +697,7 @@
     "id": "042",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Qual técnica de IA (inteligência artificial) deve ser usada para extrair o nome de um repositório de uma fotografia exibindo a frente da loja?",
     "options": [
       "Classificação de imagem",
@@ -671,6 +713,7 @@
     "id": "043",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Qual serviço de pesquisa visual computacional fornece coordenadas delimitadoras como parte de sua saída?",
     "options": [
       "Análise de imagem",
@@ -686,6 +729,7 @@
     "id": "044",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Qual recurso da pesquisa visual computacional envolve associar uma imagem a metadados que resumem os atributos da imagem?",
     "options": [
       "Categorizar",
@@ -701,6 +745,7 @@
     "id": "045",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Quais três partes do processo de aprendizado de máquina a Visão de IA do Azure elimina a necessidade? Cada resposta correta apresenta uma parte da solução.",
     "options": [
       "Provisionamento de recursos do Azure",
@@ -719,6 +764,7 @@
     "id": "046",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Quais os dois modelos predefinidos permitem que você use o serviço de IA do Azure para Informação de Documentos para verificar informações de passaportes internacionais e contas de vendas? Cada resposta correta apresenta uma parte da solução.",
     "options": [
       "Modelo de cartão de visita",
@@ -736,6 +782,7 @@
     "id": "047",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Qual tipo de serviço fornece uma plataforma para IA (inteligência artificial de conversa)?",
     "options": [
       "Serviço de Bot da IA do Azure",
@@ -751,6 +798,7 @@
     "id": "048",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure",
     "header": "Qual cenário de carga de trabalho de IA (inteligência artificial) é um exemplo de NLP (processamento de linguagem natural)?",
     "options": [
       "Extrair frases-chave de um relatório de insights de negócios",
@@ -766,6 +814,7 @@
     "id": "049",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Quais são os dois recursos de carga de trabalho de IA (inteligência artificial) que fazem parte do serviço de Visão de IA do Azure? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Reconhecimento de entidade",
@@ -783,6 +832,7 @@
     "id": "050",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Em um algoritmo de aprendizado de máquina de regressão, como os recursos e rótulos são tratados em um conjunto de dados de validação?",
     "options": [
       "Os recursos são comparados aos valores de recurso em um conjunto de dados de treinamento",
@@ -798,6 +848,7 @@
     "id": "051",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Que capacidade permite que um computador detecte automaticamente erros ou atividades incomuns em um sistema?",
     "options": [
       "IA de conversa",
@@ -813,6 +864,7 @@
     "id": "052",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure",
     "header": "Em qual dos cenários a seguir a tecnologia de reconhecimento de fala é usada de forma adequada? (Escolha 2)",
     "options": [
       "Fornecimento de legendas ocultas para vídeos gravados ou ao vivo.",
@@ -829,6 +881,7 @@
     "id": "053",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure",
     "header": "Uma empresa precisa fazer uma declaração oficial entregue à mídia, que deve estar disponível em vários idiomas.",
     "body": "Qual serviço é mais adequado para esta tarefa?",
     "options": [
@@ -845,6 +898,7 @@
     "id": "054",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure",
     "header": "Quais são os três tipos essenciais de dados necessários para treinar um modelo de compreensão linguística?",
     "options": [
       "Assuntos",
@@ -862,6 +916,7 @@
     "id": "055",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Uma empresa decide usar um chatbot para auxiliar os clientes em seu site.",
     "body": "Que tipo de carga de trabalho de IA deve ser utilizada para reconhecer quando um consumidor está chateado com base nas respostas do chatbot?",
     "options": [
@@ -878,6 +933,7 @@
     "id": "056",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure",
     "header": "Qual arquitetura os modelos de linguagem de ponta de hoje usam principalmente para tarefas de NLP?",
     "options": [
       "Transformadores",
@@ -893,6 +949,7 @@
     "id": "057",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos de cargas de trabalho de IA gerativa no Azure",
     "header": "Qual dos seguintes recursos é característico de soluções generativas de IA?",
     "options": [
       "Geração de conteúdo novo com base em padrões aprendidos",
@@ -908,6 +965,7 @@
     "id": "058",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Qual das seguintes afirmações sobre o designer do Azure Machine Learning é verdadeira? (Escolha 2)",
     "options": [
       "Permite que você salve seu trabalho na forma de um rascunho de pipeline.",
@@ -923,6 +981,7 @@
     "id": "059",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "No progresso do aprendizado de máquina, qual é o método de divisão de dados para treinamento e avaliação?",
     "options": [
       "Divida os dados em colunas para treinamento e avaliação aleatoriamente.",
@@ -938,6 +997,7 @@
     "id": "060",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Quais das opções a seguir são características comuns de cargas de trabalho de IA?",
     "options": [
       "Processamento mínimo de dados.",
@@ -954,6 +1014,7 @@
     "id": "061",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Uma empresa emprega uma equipe de agentes de atendimento ao cliente para fornecer suporte por telefone e e-mail aos clientes. A empresa desenvolve um bot de webchat para fornecer respostas automatizadas a dúvidas comuns dos clientes.",
     "body": "Qual benefício comercial a empresa deve esperar como resultado da criação da solução de webchat bot?",
     "options": [
@@ -970,6 +1031,7 @@
     "id": "062",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Você cria um modelo de aprendizado de máquina usando a interface do usuário (UI) de aprendizado de máquina automatizado.",
     "body": "Você precisa garantir que o modelo atenda ao princípio de transparência da Microsoft para IA responsável. O que você deve fazer?",
     "options": [
@@ -986,6 +1048,7 @@
     "id": "063",
     "exam": "IA900",
     "type": "truefalse",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
     "body": "NOTA: Cada seleção correta vale um ponto.",
     "options": [
@@ -1003,6 +1066,7 @@
     "id": "064",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
     "body": "O tratamento de valores incomuns ou ausentes fornecidos a um sistema AI é uma consideração do Princípio de ________________ da Microsoft para IA responsável",
     "options": [
@@ -1019,6 +1083,7 @@
     "id": "065",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
     "body": "Ao desenvolver um sistema de IA para carros autônomos, o Princípio de ________________ da Microsoft para IA responsável devem ser aplicado para garantir a operação consistente do sistema durante circunstâncias inesperadas.",
     "options": [
@@ -1035,6 +1100,7 @@
     "id": "066",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Você está construindo um sistema de IA.",
     "body": "Qual tarefa você deve incluir para garantir que o serviço atenda ao princípio de transparência da Microsoft para IA responsável?",
     "options": [
@@ -1051,6 +1117,7 @@
     "id": "067",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure",
     "header": "Selecione a resposta que completa corretamente a frase.",
     "body": "__________________ é usado para extrair datas, quantidades e locais do texto.",
     "options": [
@@ -1067,6 +1134,7 @@
     "id": "068",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Quais são três princípios orientadores da Microsoft para uma IA responsável? Cada resposta correta apresenta uma solução completa.",
     "body": "NOTA: Cada seleção correta vale um ponto.",
     "options": [
@@ -1087,6 +1155,7 @@
     "id": "069",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
     "body": "___________ é usado para gerar recursos adicionais.",
     "options": [
@@ -1103,6 +1172,7 @@
     "id": "070",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Você organiza um evento de caridade que envolve a postagem de fotos de pessoas usando óculos escuros no Twitter. Você precisa garantir que retweetará apenas fotos que atendam aos seguintes requisitos:",
     "body": "[Incluir uma ou mais faces; Conter pelo menos uma pessoa usando óculos escuros ] O que você deve usar para analisar as Imagens?",
     "options": [
@@ -1119,6 +1189,7 @@
     "id": "071",
     "exam": "IA900",
     "type": "truefalse",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
     "body": "NOTA: Cada seleção correta vale um ponto.",
     "options": [
@@ -1136,6 +1207,7 @@
     "id": "072",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Você está construindo um aplicativo baseado em IA. Você precisa garantir que o aplicativo use os princípios de IA responsável.",
     "body": "Quais são os dois princípios que você deve seguir? Cada resposta correta apresenta parte da solução.",
     "options": [
@@ -1153,6 +1225,7 @@
     "id": "073",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
     "body": "De acordo com o Princípio de _____________ da Microsoft, Os sistemas de IA NÃO devem refletir preconceitos dos conjuntos de dados usado para treinar os sistemas.",
     "options": [
@@ -1169,6 +1242,7 @@
     "id": "074",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
     "body": "Os valores de dados que influenciam a previsão de um modelo são chamados ______________.",
     "options": [
@@ -1185,6 +1259,7 @@
     "id": "075",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Que tipo de aprendizado de máquina você deve usar para prever o número de cartões-presente que serão vendidos no próximo mês?",
     "options": [
       "Regressão",
@@ -1200,6 +1275,7 @@
     "id": "076",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Você tem um conjunto de dados que contém informações sobre viagens de táxi ocorridas durante um determinado período. Você precisa treinar um modelo para prever a tarifa de uma viagem de táxi.",
     "body": "O que você deve usar como recurso?",
     "options": [
@@ -1216,6 +1292,7 @@
     "id": "077",
     "exam": "IA900",
     "type": "truefalse",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
     "body": "NOTA: Cada seleção correta vale um ponto.",
     "options": [
@@ -1235,6 +1312,7 @@
     "id": "078",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
     "body": "Um sistema bancário que prevê se um empréstimo será reembolsado é um exemplo de _____________.",
     "options": [
@@ -1250,6 +1328,7 @@
     "id": "079",
     "exam": "IA900",
     "type": "truefalse",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
     "body": "NOTA: Cada seleção correta vale um ponto.",
     "options": [
@@ -1267,6 +1346,7 @@
     "id": "080",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
     "header": "Qual serviço você deve usar para extrair texto, pares chave/valor e dados de tabela automaticamente de documentos digitalizados?",
     "options": [
       "Informação de documentos",
@@ -1282,6 +1362,7 @@
     "id": "081",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
     "body": "Garantir que as variáveis numéricas nos dados de treinamento estejam em uma escala semelhante é um exemplo de _____________.",
     "options": [
@@ -1298,6 +1379,7 @@
     "id": "082",
     "exam": "IA900",
     "type": "select",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Para completar a frase, selecione a opção apropriada na área de resposta.",
     "body": "Atribuir classes a imagens antes de treinar um modelo de classificação é um exemplo de _____________.",
     "options": [
@@ -1314,6 +1396,7 @@
     "id": "083",
     "exam": "IA900",
     "type": "truefalse",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
     "body": "NOTA: Cada seleção correta vale um ponto.",
     "options": [
@@ -1331,6 +1414,7 @@
     "id": "084",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Quais são as duas ações executadas durante a fase de ingestão de dados e preparação de dados de um processo Azure Machine Learning? Cada resposta correta apresenta parte da solução.",
     "options": [
       "Calcular a precisão do modelo.",
@@ -1348,6 +1432,7 @@
     "id": "085",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Você precisa prever a população animal de uma área.",
     "body": "Qual tipo de Azure Machine Learning você deve usar?",
     "options": [
@@ -1364,6 +1449,7 @@
     "id": "086",
     "exam": "IA900",
     "type": "multiple",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Quais são as duas linguagens que você pode usar para escrever código personalizado para o designer do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Python",
@@ -1380,6 +1466,7 @@
     "id": "087",
     "exam": "IA900",
     "type": "truefalse",
+    "domain": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
     "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
     "body": "NOTA: Cada seleção correta vale um ponto.",
     "options": [
@@ -1397,6 +1484,7 @@
     "id": "088",
     "exam": "IA900",
     "type": "truefalse",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
     "body": "NOTA: Cada seleção correta vale um ponto.",
     "options": [
@@ -1414,6 +1502,7 @@
     "id": "089",
     "exam": "IA900",
     "type": "options",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Você precisa desenvolver um aplicativo móvel para que os funcionários possam digitalizar e armazenar suas despesas durante a viagem.",
     "body": "Qual serviço de Visão computacional você deve usar?",
     "options": [
@@ -1430,6 +1519,7 @@
     "id": "090",
     "exam": "IA900",
     "type": "truefalse",
+    "domain": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
     "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
     "body": "NOTA: Cada seleção correta vale um ponto.",
     "options": [
