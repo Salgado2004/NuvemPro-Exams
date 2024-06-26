@@ -5,7 +5,6 @@ import { QuestionCardComponent } from '../question-card/question-card.component'
 import { Simulado } from '../../utils/simulado';
 import { QuestionInterface } from '../../utils/question-interface';
 import { QuestionSummary } from '../../utils/question-summary';
-import { Domain } from '../../utils/domain';
 
 @Component({
   selector: 'app-questions-container',
@@ -78,12 +77,6 @@ export class QuestionsContainerComponent {
       return {"value":value, "max": true};
     } else{
       return {"value":value, "max": false};
-    }
-  }
-
-  private setQuestion(data: QuestionInterface, domain: string){
-    if(!this.questions.includes(data)){
-      this.questions.push(data);
     }
   }
 
