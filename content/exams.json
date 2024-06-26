@@ -3,21 +3,36 @@
     "name": "AZ900",
     "fullname": "Azure Fundamentals",
     "numeroQuestoes": 1,
-    "image": "assets/badges/AZ900-badge.png"
+    "image": "assets/badges/AZ900-badge.png",
+    "domains":[
+      {"name":"Descrever os conceitos da nuvem", "min": 25, "max": 30},
+      {"name":"Descrever a arquitetura e os serviços do Azure", "min": 35, "max": 40},
+      {"name":"Descrever o gerenciamento e a governança do Azure", "min": 30, "max": 35}
+    ]
   },
   {
     "name": "DP900",
     "fullname": "Azure Data Fundamentals",
-    "numeroQuestoes": 20,
+    "numeroQuestoes": 37,
     "image": "assets/badges/DP900-badge.png",
-    "categories":[
-      "blablabla"
+    "domains": [
+      {"name":"Descrever os principais conceitos de dados", "min": 25, "max": 30},
+      {"name":"Identificar considerações sobre dados relacionais no Azure", "min": 20, "max": 25},
+      {"name":"Descrever considerações para trabalhar com os dados não relacionais no Azure", "min": 15, "max": 20},
+      {"name":"Descrever uma carga de trabalho de análise no Azure", "min":25, "max": 30}
     ]
   },
   {
     "name": "AI900",
     "fullname": "Azure AI Fundamentals",
     "numeroQuestoes": 90,
-    "image": "assets/badges/AI900-badge.png"
+    "image": "assets/badges/AI900-badge.png",
+    "domains": [
+      {"name":"Descrever as cargas de trabalho e considerações sobre Inteligência Artificial", "min": 15, "max": 20},
+      {"name":"Descrever os princípios fundamentais do aprendizado de máquina no Azure", "min": 20, "max": 25},
+      {"name":"Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure", "min": 15, "max": 20},
+      {"name":"Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure", "min": 15, "max": 20},
+      {"name":"Descrever os recursos de cargas de trabalho de IA gerativa no Azure", "min": 15, "max": 20}
+    ]
   }
 ]
