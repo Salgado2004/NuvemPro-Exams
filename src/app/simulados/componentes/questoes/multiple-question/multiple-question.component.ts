@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { QuestionStructure } from '../../../utils/question-structure';
 import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 import { QuestionSummary } from '../../../utils/question-summary';
@@ -16,10 +17,22 @@ export class MultipleQuestionComponent implements QuestionStructure {
   domain: string;
   options: string[];
   correct: string[];
-  answers: string[] = [];
+  answers: FormGroup;
   showNext: boolean;
   active: boolean = true;
+  alert:boolean = true;
   summary: QuestionSummary = new Object() as QuestionSummary;
+
+  ngOnInit(){
+    this.answers = new FormGroup({});
+    this.options.forEach((opt, index) => {
+      this.answers.addControl('answer'+index, new FormControl({value: false, disabled: !this.active}));
+    });
+
+    this.answers.valueChanges.subscribe(() => {
+      this.validate();
+    });
+  }
 
   build(data: QuestionInterface, index: number, next: boolean): void {
     this.id = "question"+index;
@@ -31,23 +44,19 @@ export class MultipleQuestionComponent implements QuestionStructure {
     this.showNext = next;
   }
 
-  verifyAnswer() {
-    for (let i = 0; i < this.options.length; i++){
-      if(this.answers[i]){
-        if(this.correct.includes(this.options[i])){
-          document.querySelector(`#label${i}${this.id}`).classList.add('correct', 'showAnswer');
-        } else{
-          document.querySelector(`#label${i}${this.id}`).classList.add('incorrect', 'showAnswer');
-        }
-      }
-    }
-    this.active = false;
+  getAnswers(){
+    const answers = [];
+    this.options.forEach((opt, index) => {
+      answers.push(this.answers.get('answer'+index)?.value);
+      this.answers.get('answer'+index)?.disable();
+    });
+    return answers;
   }
-
+  
   score(){
     let total=0;
     this.options.forEach((opt, index) => {
-      if(this.answers[index]){
+      if(this.getAnswers()[index]){
         total += this.correct.includes(opt) ? 1 : 0;
       } else{
         total += !this.correct.includes(opt) ? 1 : 0;
@@ -55,16 +64,37 @@ export class MultipleQuestionComponent implements QuestionStructure {
     });
     return total/this.options.length;
   }
-
+  
   getSummary(){
     this.summary.header = this.header;
     this.summary.body = this.body;
     this.summary.domain = this.domain;
     this.summary.correct = this.correct;
-    this.summary.answer = this.options.filter((opt, index) => this.answers[index]);
+    this.summary.answer = this.options.filter((opt, index) => this.getAnswers()[index]);
     this.summary.score = this.score();
     this.summary.right = this.score() == 1;
     return this.summary;
+  }
+
+  validate(){
+    this.options.forEach((opt, index) => {
+      if(this.answers.get('answer'+index)?.value){
+        this.alert = false;
+      }
+    });
+  }
+  
+  verifyAnswer() {
+    for (let i = 0; i < this.options.length; i++){
+      if(this.getAnswers()[i]){
+        if(this.correct.includes(this.options[i])){
+          document.querySelector(`#checkbox${i}`).classList.add('correct', 'showAnswer');
+        } else{
+          document.querySelector(`#checkbox${i}`).classList.add('incorrect', 'showAnswer');
+        }
+      }
+    }
+    this.active = false;
   }
   
   nextQuestion():void{

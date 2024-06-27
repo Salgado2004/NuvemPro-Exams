@@ -1,8 +1,0 @@
-input[type="radio"]:checked + .showAnswer.correct{
-    background-color: #dbf5e9;
-}
-
-input[type="radio"]:checked + .showAnswer.incorrect{
-    background-color: #e35b59;
-    color: #f9f9f9;
-}

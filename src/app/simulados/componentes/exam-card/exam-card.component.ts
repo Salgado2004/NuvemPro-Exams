@@ -15,7 +15,7 @@ export class ExamCardComponent {
   }
 
   validateQuestions() {
-    if (this.questions < 0){
+    if (this.questions <= 0 || this.questions == null){
       this.questions = 1;
     } else if (this.questions > this.exam.numeroQuestoes){
       this.questions = this.exam.numeroQuestoes;

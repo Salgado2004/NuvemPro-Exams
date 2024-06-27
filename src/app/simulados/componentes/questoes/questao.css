@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-.option, select{
+.option{
     display: flex;
     align-items: center;
     margin: 12px;
     cursor: pointer;
     outline: none;
+    border-radius: 15px;
 }
 
 .option label{
@@ -39,4 +40,14 @@
 
 .verifyAnswer:hover{
     background-color: #eef8ff;
+}
+
+.showAnswer.correct{
+    background-color: #dbf5e9;
+    border: 1px solid #21c177;
+}
+
+.showAnswer.incorrect{
+    background-color: #f8d7da;
+    border: 1px solid #e35b59;
 }

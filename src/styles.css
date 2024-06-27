@@ -6,6 +6,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --mdc-form-field-label-text-size: 12pt;
+    --mdc-form-field-label-text-line-height: normal;
+    --mdc-form-field-label-text-tracking: normal;
+    --mdc-form-field-label-text-color: #000;
+    --mdc-radio-selected-focus-icon-color: #319bf5;
+    --mdc-radio-selected-hover-icon-color: #319bf5;
+    --mdc-radio-selected-icon-color: #319bf5;
+    --mdc-radio-selected-pressed-icon-color: #319bf5;
+    --mat-radio-checked-ripple-color: #319bf5;
+    --mdc-radio-selected-focus-icon-color: #319bf5;
+    --mdc-radio-selected-hover-icon-color: #319bf5;
+    --mdc-radio-selected-icon-color: #319bf5;
+    --mdc-radio-selected-pressed-icon-color: #319bf5;
+    --mdc-checkbox-selected-focus-icon-color: #319bf5;
+    --mdc-checkbox-selected-hover-icon-color: #319bf5;
+    --mdc-checkbox-selected-icon-color: #319bf5;
+    --mdc-checkbox-selected-pressed-icon-color: #319bf5;
+    --mdc-checkbox-selected-focus-state-layer-color: #319bf5;
+    --mdc-checkbox-selected-hover-state-layer-color: #319bf5;
+    --mdc-checkbox-selected-pressed-state-layer-color: #319bf5;
 }
 
 body{

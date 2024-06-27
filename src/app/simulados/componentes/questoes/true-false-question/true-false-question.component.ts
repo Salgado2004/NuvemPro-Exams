@@ -19,6 +19,7 @@ export class TrueFalseQuestionComponent implements QuestionStructure{
   answers: string[] = [];
   showNext: boolean;
   active: boolean = true;
+  alert:boolean = true;
   summary: QuestionSummary = new Object() as QuestionSummary;
 
   build(data: QuestionInterface, index: number, next: boolean): void {
@@ -30,22 +31,7 @@ export class TrueFalseQuestionComponent implements QuestionStructure{
     this.correct = data.correct;
     this.showNext = next;
   }
-
-  verifyAnswer() {
-    for (let i = 0; i < this.options.length; i++) {
-      if (this.answers[i] == this.correct[i]) {
-        document.querySelectorAll(`.${this.id}opt${i}`).forEach(element => {
-          element.classList.add('correct', 'showAnswer');
-        });
-      } else{
-        document.querySelectorAll(`.${this.id}opt${i}`).forEach(element => {
-          element.classList.add('incorrect', 'showAnswer');
-        });
-      }
-    }
-    this.active = false;
-  }
-
+  
   score(){
     let total=0;
     this.answers.forEach((ans, index) => {
@@ -66,7 +52,28 @@ export class TrueFalseQuestionComponent implements QuestionStructure{
     return this.summary;
   }
 
+  validate(){
+    return this.answers.length == this.correct.length;
+  }
+  
+  verifyAnswer() {
+    if(this.validate()){
+      this.alert = false;
+      for (let i = 0; i < this.options.length; i++) {
+        if (this.answers[i] == this.correct[i]) {
+          document.querySelector(`#${this.answers[i]}${i}`).classList.add('correct', 'showAnswer');
+        } else{
+          document.querySelector(`#${this.answers[i]}${i}`).classList.add('incorrect', 'showAnswer');
+        }
+      }
+      this.active = false;
+    }
+  }
+
   nextQuestion():void{
-    SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
+    if(this.validate()){
+      this.alert = false;
+      SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
+    }
   }
 }
