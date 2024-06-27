@@ -1,7 +1,8 @@
 <p>{{ body }}</p>
-<div class="option" *ngFor="let option of options; let i = index">
-    <input type="checkbox" [id]="id+i" [name]="id" [value]="option" [(ngModel)]="answers[i]" [disabled]="!active">
-    <label [for]="id+i" [id]="'label'+i+id">{{ option }}</label>
-</div>
-<button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
-<button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
+<form [formGroup]="answers" #tooltip="matTooltip" matTooltip="Selecione pelo menos uma resposta" [matTooltipDisabled]="!alert">
+    <div class="option" [id]="'checkbox'+i" *ngFor="let option of options; let i = index">
+        <mat-checkbox [formControlName]="'answer'+i">{{ option }}</mat-checkbox>
+    </div>
+    <button *ngIf="showNext" (click)="nextQuestion()" class="next" [disabled]="alert">Próxima questão</button>
+    <button (click)="verifyAnswer()" class="verifyAnswer" [disabled]="alert">Verificar resposta</button>
+</form>

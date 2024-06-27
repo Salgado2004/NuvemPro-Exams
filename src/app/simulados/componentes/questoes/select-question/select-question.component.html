@@ -1,7 +1,14 @@
 <p>{{ body }}</p>
-<select [disabled]="!active" [(ngModel)]="answer" [ngClass]="classes">
-    <option *ngFor="let option of options" [value]="option">{{ option }}</option>
-</select>
-<button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
-<button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
+<section #tooltip="matTooltip" matTooltip="Selecione uma resposta" [matTooltipDisabled]="!alert">
+    <mat-form-field class="option">
+        <mat-label>Selecione uma opção</mat-label>
+        <mat-select [(ngModel)]="answer" [disabled]="!active">
+            @for (option of options; track option) {
+                <mat-option [value]="option">{{ option }}</mat-option>
+            }
+        </mat-select>
+    </mat-form-field>
+    <button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
+    <button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
+</section>
 

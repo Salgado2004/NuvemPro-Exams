@@ -21,3 +21,14 @@ h4{
     margin: 12px;
     border-radius: 10px;
 }
+
+@media (max-width: 740px){
+    .mat-expansion-panel-header{
+        padding: 0 8px;
+    }
+    
+    .mat-expansion-panel-header-title, .mat-expansion-panel-header-description{
+        flex-basis: auto;
+        flex-grow: 0;
+    }  
+}

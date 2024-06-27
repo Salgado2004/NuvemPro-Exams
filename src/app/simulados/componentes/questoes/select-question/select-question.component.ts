@@ -18,8 +18,8 @@ export class SelectQuestionComponent implements QuestionStructure{
   correct: string[];
   answer: string;
   showNext: boolean;
-  classes: { [key: string]: boolean };
   active: boolean = true;
+  alert: boolean = true;
   summary: QuestionSummary = new Object() as QuestionSummary;
 
   build(data: QuestionInterface, index: number, next: boolean): void {
@@ -31,20 +31,11 @@ export class SelectQuestionComponent implements QuestionStructure{
     this.correct = data.correct;
     this.showNext = next;
   }
-
-  verifyAnswer() {
-    if(this.answer == this.correct[0]){
-      this.classes = {'showAnswer': true, 'correct': true};
-    } else{
-      this.classes = {'showAnswer': true, 'incorrect': true};
-    }
-    this.active = false;
-  }
-
+  
   score(){
     return this.answer == this.correct[0] ? 1 : 0;
   }
-
+  
   getSummary(){
     this.summary.header = this.header;
     this.summary.body = this.body;
@@ -56,7 +47,26 @@ export class SelectQuestionComponent implements QuestionStructure{
     return this.summary;
   }
 
+  validate(){
+    return this.answer != undefined;
+  }
+
+  verifyAnswer() {
+    if(this.validate()){
+      this.alert = false;
+      if(this.answer == this.correct[0]){
+        document.querySelector(".option div").setAttribute('style', 'border: 2px solid #21c177');
+      } else{
+        document.querySelector(".option div").setAttribute('style', 'border: 2px solid #e35b59;');
+      }
+      this.active = false;
+    }
+  }
+
   nextQuestion():void{
-    SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
+    if(this.validate()){
+      this.alert = false;
+      SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
+    }
   }
 }

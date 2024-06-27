@@ -1,7 +1,9 @@
 <p>{{ body }}</p>
-<div class="option" *ngFor="let option of options; let i = index">
-    <input type="radio" [id]="id+i" [name]="id" [value]="option" [(ngModel)]="answer" [disabled]="!active">
-    <label [for]="id+i" [ngClass]="classes">{{ option }}</label>
-</div>
-<button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
-<button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
+<section #tooltip="matTooltip" matTooltip="Selecione uma resposta" [matTooltipDisabled]="!alert">
+    <mat-radio-group [disabled]="!active" [(ngModel)]="answer">
+        <mat-radio-button *ngFor="let option of options; let i = index" [value]="i" 
+        class="option" [id]="'radio'+i">{{ option }}</mat-radio-button>
+    </mat-radio-group>
+    <button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
+    <button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
+</section>

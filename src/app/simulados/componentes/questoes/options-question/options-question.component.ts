@@ -16,15 +16,11 @@ export class OptionsQuestionComponent implements QuestionStructure{
   domain: string;
   options: string[];
   correct: string[];
-  answer: string;
+  answer: number;
   showNext: boolean;
-  classes: { [key: string]: boolean };
   active: boolean = true;
+  alert:boolean = true;
   summary: QuestionSummary = new Object() as QuestionSummary;
-
-  constructor(){
-    this.classes = {};
-  }
 
   build(data: QuestionInterface, index: number, next: boolean): void {
     this.id = "question"+index;
@@ -35,32 +31,43 @@ export class OptionsQuestionComponent implements QuestionStructure{
     this.correct = data.correct;
     this.showNext = next;
   }
-
-  verifyAnswer() {
-    if(this.answer == this.correct[0]){
-      this.classes = {'showAnswer': true, 'correct': true};
-    } else{
-      this.classes = {'showAnswer': true, 'incorrect': true};
-    }
-    this.active = false;
-  }
-
+  
   score(){
-    return this.answer == this.correct[0] ? 1 : 0;
+    return this.options[this.answer] == this.correct[0] ? 1 : 0;
   }
-
+  
   getSummary(){
     this.summary.header = this.header;
     this.summary.body = this.body;
     this.summary.domain = this.domain;
     this.summary.correct = this.correct;
-    this.summary.answer = this.answer;
+    this.summary.answer = this.options[this.answer];
     this.summary.score = this.score();
     this.summary.right = this.score() == 1;
     return this.summary;
   }
+
+  validate(){
+    return document.querySelector('input[type="radio"]:checked') != null;
+  }
+  
+  verifyAnswer() {
+    if(this.validate()){
+      this.alert = false;
+      let input = document.querySelector(`#radio${this.answer}`);
+      input.classList.add('showAnswer');
+      if(this.options[this.answer] == this.correct[0]){
+        input.classList.add('correct');
+      } else{
+        input.classList.add('incorrect');
+      }
+      this.active = false;
+    }
+  }
   
   nextQuestion():void{
-    SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
+    if(this.validate()){
+      SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
+    }
   }
 }

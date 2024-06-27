@@ -1,9 +1,7 @@
 .option{
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 12px;
     width: 75%;
 }
 
@@ -16,27 +14,25 @@
     align-items: center;
 }
 
-.option div div{
+.option div .answer{
     display: flex;
     align-items: center;
     margin-left: 8px;
 }
 
-.option div div input{
-    margin-bottom: 0;
+.option div .answer .alt{
+    padding-right: 8px;
+    border-radius: 15px;
 }
 
-.option label{
-    padding: 2px 6px;
-    margin: 2px;
-    border-radius: 10px;
-}
+@media (max-width: 740px){
+    .option{
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-input[type="radio"]:checked + .showAnswer.correct{
-    background-color: #dbf5e9;
-}
-
-input[type="radio"]:checked + .showAnswer.incorrect{
-    background-color: #e35b59;
-    color: #f9f9f9;
+    .option p{
+        text-align: justify;
+    }
 }

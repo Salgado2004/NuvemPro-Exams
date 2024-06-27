@@ -1,17 +1,15 @@
 <p>{{ body }}</p>
-<div class="option" *ngFor="let option of options; let i = index">
-    <p>{{ option }}</p>
-    <div>
+<section #tooltip="matTooltip" matTooltip="Selecione uma resposta para cada afirmação" [matTooltipDisabled]="!alert">
+    <div class="option" *ngFor="let option of options; let i = index">
+        <p>{{ option }}</p>
         <div>
-            <input type="radio" [id]="i+'vdd'" value="true" [(ngModel)]="answers[i]" [name]="id+i" [disabled]="!active">
-            <label [for]="i+'vdd'" [class]="id+'opt'+i">Verdadeiro</label>
-        </div>
-        <div>
-            <input type="radio" [id]="i+'falso'" value="false" [(ngModel)]="answers[i]" [name]="id+i" [disabled]="!active">
-            <label [for]="i+'falso'" [class]="id+'opt'+i">Falso</label>
+            <mat-radio-group [disabled]="!active" [(ngModel)]="answers[i]" class="answer">
+                <mat-radio-button value="true" [id]="'true'+i" class="alt">Verdadeiro</mat-radio-button>
+                <mat-radio-button value="false" [id]="'false'+i" class="alt">Falso</mat-radio-button>
+            </mat-radio-group>
         </div>
     </div>
-</div>
-<button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
-<button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
+    <button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
+    <button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
+</section>
 
