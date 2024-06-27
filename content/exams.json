@@ -2,7 +2,7 @@
   {
     "name": "AZ900",
     "fullname": "Azure Fundamentals",
-    "numeroQuestoes": 1,
+    "numeroQuestoes": 4,
     "image": "assets/badges/AZ900-badge.png",
     "domains":[
       {"name":"Descrever os conceitos da nuvem", "min": 25, "max": 30},

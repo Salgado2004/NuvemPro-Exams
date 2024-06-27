@@ -14,5 +14,57 @@
     "correct": [
       "Você pode dimensionar mais rapidamente"
     ]
+  },
+  {
+    "id": "002",
+    "exam": "AZ900",
+    "type": "multiple",
+    "domain":"Descrever a arquitetura e os serviços do Azure",
+    "header": "Quais dois recursos do Azure podem usar as zonas de disponibilidade? Cada resposta correta apresenta uma solução completa.",
+    "options": [
+      "Bancos de Dados SQL do Azure",
+      "Máquinas Virtuais do Azure",
+      "Assinatures do Azure",
+      "Grupos de Recursos do Azure"
+    ],
+    "correct": [
+      "Máquinas Virtuais do Azure",
+      "Bancos de Dados SQL do Azure"
+    ]
+  },
+  {
+    "id": "003",
+    "exam": "AZ900",
+    "type": "truefalse",
+    "domain": "Descrever os conceitos da nuvem",
+    "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+    "body": "NOTA: Cada seleção correta vale um ponto.",
+    "options": [
+      "Uma solução de plataforma como serviço (PaaS) que hospeda aplicativos web no Azure fornece controle total dos sistemas operacionais que hospedam aplicativos",
+      "Uma solução de plataforma como serviço (PaaS) que hospeda aplicativos Web no Azure oferece a capacidade de dimensionar a plataforma automaticamente",
+      "Uma solução de plataforma como serviço (PaaS) que hospeda aplicativos Web no Azure fornece soluções profissionais serviços de desenvolvimento para adicionar continuamente recursos a aplicativos personalizados"
+    ],
+    "correct": [
+      "false",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": "004",
+    "exam": "AZ900",
+    "type": "select",
+    "domain": "Descrever os conceitos da nuvem",
+    "header": "Selecione a resposta que conclui corretamente a frase.",
+    "body": "Quando você está implementando uma solução de Software como Serviço (SaaS), você é responsável por _______________",
+    "options": [
+      "Configurar a alta disponibilidade.",
+      "Definir regras de escalabilidade.",
+      "Instalar a solução SaaS.",
+      "Configurar a solução SaaS."
+    ],
+    "correct": [
+      "Configurar a solução SaaS."
+    ]
   }
 ]
