@@ -1,3 +1,5 @@
+> See also: [Portuguese 🇧🇷](/translations/CONTRIBUTING_PT.md)
+
 # Contribuiting
 > The easiest way to contribute is by [opening an issue](https://github.com/Salgado2004/CertCloud-Exams/issues/new/choose). No contribution is too small - we encourage you to report any typos/bugs, unclear questions or feature requests.
 
@@ -27,6 +29,8 @@
 The questions are stored in the [content/](https://github.com/Salgado2004/CertCloud-Exams/tree/master/content) folder of the repo in JSON format.
 
 Each exam has its own questions.json file. To add a new question, go to the exam file and create a new JSON object in the end of the array, following the format:
+
+The _only attribute that can be **null** is the body_. All of the others have to be informed.
 
 #### Single option question
 ```
@@ -113,4 +117,3 @@ Each exam has its own questions.json file. To add a new question, go to the exam
     ]
   }
 ```
-The _only attribute that can be **null** is the body_. All of the others have to be informed.
