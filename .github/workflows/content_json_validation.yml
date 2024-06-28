@@ -2,8 +2,7 @@ name: Content JSON Validation
 
 on:
   pull_request:
-    branches:
-    - 'master'
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
@@ -15,18 +14,18 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Test load jsons
-      run: cat schemas/exams.squema.json
+      run: cat schemas/exams_squema.json
 
     - name: validate exams
       uses: ammarlakis/action-ajv@master
       with:
-        schema: schemas/exams.squema.json
+        schema: schemas/exams_squema.json
         data: content/exams.json
         allErrors: true
 
     - name: validate questions
       uses: ammarlakis/action-ajv@master
       with:
-        schema: schemas/questions.squema.json
+        schema: schemas/questions_squema.json
         data: content/**.json !exams.json
         allErrors: true 
