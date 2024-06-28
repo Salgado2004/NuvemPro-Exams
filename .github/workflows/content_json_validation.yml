@@ -13,19 +13,22 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Show me schemas directory
+      run: ls .github/schemas
+
     - name: Test load jsons
-      run: cat schemas/exams_schema.json
+      run: cat .github/schemas/exams_schema.json
 
     - name: validate exams
       uses: ammarlakis/action-ajv@master
       with:
-        schema: schemas/exams_schema.json
+        schema: .github/schemas/exams_schema.json
         data: content/exams.json
         allErrors: true
 
     - name: validate questions
       uses: ammarlakis/action-ajv@master
       with:
-        schema: schemas/questions_schema.json
+        schema: .github/schemas/questions_schema.json
         data: content/**.json !exams.json
         allErrors: true 
