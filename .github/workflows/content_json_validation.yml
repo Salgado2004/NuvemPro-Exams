@@ -1,0 +1,29 @@
+name: Content JSON Validation
+
+on:
+  pull_request:
+    types: [opened, reopened]
+  paths:
+      - '**.json'
+
+jobs:
+  validate-config:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: validate exams
+      uses: ammarlakis/action-ajv@master
+      with:
+        schema: schemas/exams.squema.json
+        data: content/exams.json
+        allErrors: true
+
+    - name: validate questions
+      uses: ammarlakis/action-ajv@master
+      with:
+        schema: schemas/questions.squema.json
+        data: content/**.json !exams.json
+        allErrors: true 
