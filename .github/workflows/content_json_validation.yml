@@ -3,9 +3,10 @@ name: Content JSON Validation
 on:
   pull_request:
     branches:
-      - 'master'
+    - 'master'
     paths:
-      - '**.json'
+    - '**.json'
+  workflow_dispatch:
 
 jobs:
   validate-config:
