@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  validate-config:
+  validate-jsons:
     runs-on: ubuntu-latest
     
     steps:
@@ -14,18 +14,18 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Test load jsons
-      run: cat schemas/exams_squema.json
+      run: cat schemas/exams_schema.json
 
     - name: validate exams
       uses: ammarlakis/action-ajv@master
       with:
-        schema: schemas/exams_squema.json
+        schema: schemas/exams_schema.json
         data: content/exams.json
         allErrors: true
 
     - name: validate questions
       uses: ammarlakis/action-ajv@master
       with:
-        schema: schemas/questions_squema.json
+        schema: schemas/questions_schema.json
         data: content/**.json !exams.json
         allErrors: true 
