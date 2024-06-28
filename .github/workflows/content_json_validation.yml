@@ -2,9 +2,10 @@ name: Content JSON Validation
 
 on:
   pull_request:
-    types: [opened, reopened]
+    branches:
+      - 'master'
     paths:
-        - '**.json'
+      - '**.json'
 
 jobs:
   validate-config:
