@@ -17,18 +17,18 @@ jobs:
       run: ls .github/schemas
 
     - name: Test load jsons
-      run: cat .github/schemas/exams_schema.json
+      run: cat .github/schemas/exams.schema.json
 
     - name: validate exams
       uses: ammarlakis/action-ajv@master
       with:
-        schema: .github/schemas/exams_schema.json
+        schema: .github/schemas/exams.schema.json
         data: content/exams.json
         allErrors: true
 
     - name: validate questions
       uses: ammarlakis/action-ajv@master
       with:
-        schema: .github/schemas/questions_schema.json
+        schema: .github/schemas/questions.schema.json
         data: content/**.json !exams.json
         allErrors: true 
