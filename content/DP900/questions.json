@@ -92,7 +92,7 @@
     "id": "006",
     "exam": "DP900",
     "type": "options",
-    "domain":"Identificar considerações sobre dados relacionais no Azure",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Qual afirmação é um exemplo de linguagem de manipulação de dados (DML)? Selecione a opção correta",
     "options": [
       "REVOKE",
@@ -155,7 +155,7 @@
     "id": "010",
     "exam": "DP900",
     "type": "options",
-    "domain":"Identificar considerações sobre dados relacionais no Azure",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Qual afirmação é um exemplo de linguagem de manipulação de dados (DML)? Selecione a opção correta",
     "options": [
       "REVOKE",
@@ -187,7 +187,7 @@
     "id": "012",
     "exam": "DP900",
     "type": "options",
-    "domain":"Identificar considerações sobre dados relacionais no Azure",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Um bloco de código executado em um banco de dados é denominado ________. Selecione a opção correta para preencher o espaço em branco",
     "options": [
       "Um procedimento armazenado",
@@ -301,7 +301,7 @@
     "id": "019",
     "exam": "DP900",
     "type": "options",
-    "domain":"Identificar considerações sobre dados relacionais no Azure",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "_________ é um objeto associado a uma tabela que classifica as linhas de dados da tabela de acordo com seus valores-chave. Selecione a opção correta para preencher o espaço em branco",
     "options": [
       "Um índice",
@@ -348,7 +348,7 @@
     "id": "022",
     "exam": "DP900",
     "type": "multiple",
-    "domain":"Identificar considerações sobre dados relacionais no Azure",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Quais das alternativas a seguir são características comuns de um data warehouse? Selecione duas opções corretas",
     "options": [
       "Banco de dados otimizado para leitura por ser desnormalizado",
@@ -461,7 +461,7 @@
     "id": "029",
     "exam": "DP900",
     "type": "options",
-    "domain":"Identificar considerações sobre dados relacionais no Azure",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Que tipo de banco de dados é o Banco de Dados do Azure para PostgreSQL? Selecione a opção correta",
     "options": [
       "Plataforma como serviço (PaaS)",
@@ -525,7 +525,7 @@
     "id": "033",
     "exam": "DP900",
     "type": "options",
-    "domain":"Identificar considerações sobre dados relacionais no Azure",
+    "domain": "Identificar considerações sobre dados relacionais no Azure",
     "header": "Qual afirmação é um exemplo de linguagem de definição de dados (DDL)? Selecione a opção correta",
     "options": [
       "SELECT",
