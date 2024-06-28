@@ -34,5 +34,17 @@
       {"name":"Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure", "min": 15, "max": 20},
       {"name":"Descrever os recursos de cargas de trabalho de IA gerativa no Azure", "min": 15, "max": 20}
     ]
+  },
+  {
+    "name": "SC900",
+    "fullname": "Security, Compliance, and Identity Fundamentals",
+    "numeroQuestoes": 129,
+    "image": "assets/badges/SC900-badge.png",
+    "domains": [
+      {"name":"Descrever os conceitos de segurança, conformidade e identidade", "min": 10, "max": 15},
+      {"name":"Descrever os recursos do Microsoft Entra", "min": 25, "max": 30},
+      {"name":"Descrever os recursos das soluções de segurança da Microsoft", "min": 35, "max": 40},
+      {"name":"Descrever os recursos das soluções de conformidade da Microsoft", "min": 20, "max": 25}
+    ]
   }
 ]

@@ -1,0 +1,2361 @@
+[
+    {
+        "id": "001",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Todas as edições de licença do Microsoft Entra (Azure AD) incluem os mesmos recursos",
+            "Você pode gerenciar um locatário do Microsoft Entra (Azure AD) usando o portal do Azure ",
+            "Você deve implantar máquinas virtuais do Azure para hospedar um locatário do Microsoft Entra (Azure AD)"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "002",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "A aplicação de atualizações do sistema aumenta a pontuação segura de uma organização no Microsoft Defender for Cloud",
+            "A pontuação segura no Microsoft Defender for Cloud pode avaliar recursos em várias assinaturas do Azure",
+            "Habilitar a autenticação multifator (MFA) aumenta a pontuação segura de uma organização no Microsoft Defender for Cloud"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "003",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual pontuação mede o progresso de uma organização na conclusão de ações que ajudam a reduzir os riscos associados à proteção de dados e aos padrões regulatórios?",
+        "options": [
+            "Pontuação Segura da Microsoft",
+            "Pontuação de produtividade",
+            "Pontuação segura na Central de Segurança do Azure",
+            "Pontuação de conformidade"
+        ],
+        "correct": [
+            "Pontuação de conformidade"
+        ]
+    },
+    {
+        "id": "004",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "O que você usa para fornecer integração em tempo real entre o Azure Sentinel e outra fonte de segurança?",
+        "options": [
+            "Conexão Microsoft Entra",
+            "Um espaço de trabalho do Log Analytics",
+            "Proteção de Informações do Azure",
+            "Um conector"
+        ],
+        "correct": [
+            "Um conector"
+        ]
+    },
+    {
+        "id": "005",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual portal da Microsoft fornece informações sobre como os serviços em nuvem da Microsoft estão em conformidade com padrões regulatórios, como a Organização Internacional de Padronização (ISO)?",
+        "options": [
+            "O centro de administração do Microsoft Endpoint Manager",
+            "Gerenciamento de custos + cobrança do Azure",
+            "Portal de confiança de serviços da Microsoft",
+            "O centro de administração do Microsoft Entra"
+        ],
+        "correct": [
+            "Portal de confiança de serviços da Microsoft"
+        ]
+    },
+    {
+        "id": "006",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "options",
+        "header": "No modelo de responsabilidade compartilhada para uma implantação do Azure, o que a Microsoft é a única responsável pelo gerenciamento?",
+        "options": [
+            "O gerenciamento de dispositivos móveis",
+            "As permissões para os dados do usuário armazenados no Azure",
+            "A criação e gerenciamento de contas de usuário",
+            "O gerenciamento do hardware físico"
+        ],
+        "correct": [
+            "O gerenciamento do hardware físico"
+        ]
+    },
+    {
+        "id": "007",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Verificar explicitamente é um dos princípios orientadores da Confiança Zero",
+            "Suponha que a violação seja um dos princípios orientadores da Confiança Zero",
+            "O modelo de segurança Zero Trust pressupõe que um firewall protege a rede interna contra ameaças externas"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "008",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O controle é um princípio fundamental de privacidade da Microsoft",
+            "Transparência é um princípio fundamental de privacidade da Microsoft",
+            "A responsabilidade compartilhada é um princípio fundamental de privacidade da Microsoft"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "009",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Assinar digitalmente um documento requer uma chave privada",
+            "A verificação da autenticidade de um documento assinado digitalmente requer a chave pública do signatário",
+            "A verificação da autenticidade de um documento assinado digitalmente requer a chave privada do signatário"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "010",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "multiple",
+        "header": "No Microsoft Cloud Adoption Framework for Azure, quais são as duas fases abordadas antes da fase Pronto? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Um plano",
+            "Gerenciar",
+            "Adotar",
+            "Governar",
+            "Definir Estratégia"
+        ],
+        "correct": [
+            "Um plano",
+            "Definir Estratégia"
+        ]
+    },
+    {
+        "id": "011",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "No software como serviço (SaaS), a aplicação de service packs ao aplicativo é responsabilidade da organização",
+            "Na infraestrutura como serviço (IaaS), o gerenciamento da rede física é de responsabilidade do provedor de nuvem",
+            "Em todos os tipos de implementação na nuvem Azure, a gestão da segurança das informações e dos dados é da responsabilidade da organização"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "012",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Microsoft Entra Connect pode ser usado para implementar a identidade híbrida",
+            "A identidade híbrida requer a implementação de dois locatários do Microsoft 365",
+            "A autenticação da identidade híbrida requer a sincronização dos Serviços de Domínio Active Directory (AD DS) e do Microsoft Entra (Azure AD)"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "013",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "options",
+        "header": "Qual é um exemplo de criptografia em repouso?",
+        "options": [
+            "Criptografando comunicações usando uma VPN site a site",
+            "Criptografando um disco de máquina virtual",
+            "Acessar um site usando uma conexão HTTPS criptografada",
+            "Enviando um e-mail criptografado"
+        ],
+        "correct": [
+            "Criptografando um disco de máquina virtual"
+        ]
+    },
+    {
+        "id": "014",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "multiple",
+        "header": "Quais são as três afirmações que descrevem com precisão os princípios orientadores da Zero Trust? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Defina o perímetro por localizações físicas.",
+            "Usar a identidade como limite de segurança primário.",
+            "Sempre verifique explicitamente as permissões de um usuário.",
+            "Sempre presuma que o sistema do usuário pode ser violado.",
+            "Use a rede como limite de segurança principal."
+        ],
+        "correct": [
+            "Usar a identidade como limite de segurança primário.",
+            "Sempre verifique explicitamente as permissões de um usuário.",
+            "Sempre presuma que o sistema do usuário pode ser violado."
+        ]
+    },
+    {
+        "id": "015",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Qual serviço você deve usar para visualizar sua pontuação segura do Azure? Para responder, selecione o serviço apropriado na área de resposta.",
+        "options": [
+            "Alerts",
+            "Application Insights",
+            "Subscriptions",
+            "Policy",
+            "Azure Ad Connect Health",
+            "Microsoft Defender",
+            "Advisor",
+            "Monitor"
+        ],
+        "correct": [
+            "Microsoft Defender"
+        ]
+    },
+    {
+        "id": "016",
+        "exam": "SC900",
+        "domain": "",
+        "type": "truefalse",
+        "header": "Você está avaliando a pontuação de conformidade no Compliance Manager. Combine as subcategorias de ações de pontuação de conformidade com as ações apropriadas. Para responder, arraste a subcategoria de ação apropriada da coluna à esquerda para sua ação à direita. Cada subcategoria de ação pode ser usada uma vez, mais de uma vez ou nunca ser usada.",
+        "body": "NOTA: Cada correspondência correta vale um ponto.",
+        "options": [
+            "Criptografar dados em repouso",
+            "Realize uma auditoria de acesso ao sistema",
+            "Faça alterações na configuração em resposta a um incidente de segurança"
+        ],
+        "correct": [
+            "Preventiva",
+            "Detetive",
+            "Corretivas"
+        ]
+    },
+    {
+        "id": "017",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Habilitar a autenticação multifator (MFA) aumenta o Microsoft Secure Score",
+            "Uma pontuação de segurança da Microsoft mais alta significa um nível de risco identificado mais baixo no locatário do Microsoft 365",
+            "O Microsoft Secure Score mede o progresso na conclusão de ações com base em controles que incluem regulamentações e padrões importantes para proteção e governança de dados"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "018",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "O que você pode usar para fornecer a um usuário uma janela de duas horas para concluir uma tarefa administrativa no Azure?",
+        "options": [
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra (Azure AD)",
+            "Autenticação Multifator do Azure (MFA)",
+            "Proteção de Identidade do Microsoft Entra (Azure AD)",
+            "políticas de acesso condicional"
+        ],
+        "correct": [
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra (Azure AD)"
+        ]
+    },
+    {
+        "id": "019",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "Num modelo de identidade híbrido, o que pode usar para sincronizar identidades entre os Serviços de Domínio do Active Directory (AD DS) e o Microsoft Entra (Azure AD)?",
+        "options": [
+            "Serviços de Federação do Active Directory (AD FS)",
+            "Microsoft Sentinela",
+            "Conexão Microsoft Entra",
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra"
+        ],
+        "correct": [
+            "Conexão Microsoft Entra"
+        ]
+    },
+    {
+        "id": "020",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Você pode criar funções personalizadas no Microsoft Entra (Azure AD)",
+            "A administração global é uma função no Microsoft Entra (Azure AD)",
+            "Um usuário do Microsoft Entra (Azure AD) pode receber apenas uma função"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "021",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Microsoft Entra (Azure AD) é implantado em um ambiente local",
+            "O Microsoft Entra (Azure AD) é fornecido como parte de uma assinatura do Microsoft 365",
+            "O Microsoft Entra (Azure AD) é um serviço de gerenciamento de identidade e acesso"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "022",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "Qual é a finalidade da proteção de senha do Microsoft Entra (Azure AD)?",
+        "options": [
+            "Para controlar a frequência com que os usuários devem alterar suas senhas",
+            "Para identificar dispositivos nos quais os usuários podem fazer login sem usar autenticação multifator (MFA)",
+            "Criptografar uma senha usando padrões de criptografia reconhecidos globalmente",
+            "Para evitar que os usuários usem palavras específicas em suas senhas"
+        ],
+        "correct": [
+            "Para evitar que os usuários usem palavras específicas em suas senhas"
+        ]
+    },
+    {
+        "id": "023",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "Qual recurso do Microsoft Entra (Azure AD) você pode usar para avaliar a associação ao grupo e remover automaticamente os usuários que não exigem mais a associação a um grupo?",
+        "options": [
+            "Acessar avaliações",
+            "Identidades gerenciadas",
+            "Políticas de acesso condicional",
+            "Proteção de Identidade do Microsoft Entra"
+        ],
+        "correct": [
+            "Acessar avaliações"
+        ]
+    },
+    {
+        "id": "024",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "As políticas de acesso condicional podem usar o estado dos dispositivos como um sinal",
+            "As políticas de acesso condicional se aplicam antes que a autenticação do primeiro fator seja concluída ",
+            "As políticas de acesso condicional podem acionar a autenticação multifator (MFA) se um usuário tentar acessar um aplicativo específico"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "025",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "Qual recurso do Microsoft Entra (Azure AD) você pode usar para fornecer acesso just-in-time (JIT) para gerenciar recursos do Azure?",
+        "options": [
+            "Políticas de acesso condicional",
+            "Proteção de Identidade do Microsoft Entra",
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra",
+            "Políticas de método de autenticação"
+        ],
+        "correct": [
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra"
+        ]
+    },
+    {
+        "id": "026",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "multiple",
+        "header": "Quais são os três métodos de autenticação que podem ser usados pela Autenticação Multifator do Azure (MFA)? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Mensagem de texto (SMS)",
+            "Aplicativo Microsoft Authenticator",
+            "Verificação de e-mail",
+            "Telefonema",
+            "Pergunta de segurança"
+        ],
+        "correct": [
+            "Mensagem de texto (SMS)",
+            "Aplicativo Microsoft Authenticator",
+            "Verificação de e-mail"
+        ]
+    },
+    {
+        "id": "027",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "options",
+        "header": "Qual recurso do Microsoft 365 você pode usar para restringir a comunicação e o compartilhamento de informações entre membros de dois departamentos da sua organização?",
+        "options": [
+            "Políticas de rótulo de confidencialidade",
+            "Cofre do cliente",
+            "Barreiras de informação",
+            "Gerenciamento de acesso privilegiado (PAM)"
+        ],
+        "correct": [
+            "Barreiras de informação"
+        ]
+    },
+    {
+        "id": "028",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "As políticas de acesso condicional sempre impõem o uso da autenticação multifator (MFA)",
+            "Políticas de acesso condicional podem ser usadas para bloquear o acesso a um aplicativo com base na localização do usuário",
+            "As políticas de acesso condicional afetam apenas os usuários que possuem dispositivos ingressados no Microsoft Entra (Azure AD)"
+        ],
+        "correct": [
+            "false ",
+            "true",
+            "false "
+        ]
+    },
+    {
+        "id": "029",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Políticas de acesso condicional podem ser aplicadas a administradores globais",
+            "As políticas de acesso condicional são avaliadas antes de um usuário ser autenticado",
+            "As políticas de acesso condicional podem usar uma plataforma de dispositivo, como Android ou IOS, como sinal"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "030",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "multiple",
+        "header": "Quais são os três métodos de autenticação suportados pelo Windows Hello para Empresas? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Impressão digital",
+            "Reconhecimento facial",
+            "PIN",
+            "Verificação de e-mail",
+            "Pergunta de segurança"
+        ],
+        "correct": [
+            "Impressão digital",
+            "Reconhecimento facial",
+            "PIN"
+        ]
+    },
+    {
+        "id": "031",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "Você tem uma assinatura do Azure. Você precisa implementar a ativação de função baseada em aprovação e com prazo determinado. O que você deve usar?",
+        "options": [
+            "Windows Hello para Empresas",
+            "Proteção de Identidade do Microsoft Entra (Azure AD)",
+            "Revisões de acesso no Microsoft Entra (Azure AD)",
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra (Azure AD)"
+        ],
+        "correct": [
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra (Azure AD)"
+        ]
+    },
+    {
+        "id": "032",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Os administradores globais estão isentos de políticas de acesso condicional",
+            "Uma política de acesso condicional pode adicionar usuários às funções do Microsoft Entra (Azure AD)",
+            "Políticas de acesso condicional podem forçar o uso de autenticação multifator (MFA) para acessar aplicativos em nuvem"
+        ],
+        "correct": [
+            "false",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "033",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "multiple",
+        "header": "Quando os padrões de segurança são habilitados para um locatário do Microsoft Entra (Azure AD), quais são os dois requisitos impostos? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Todos os usuários devem se autenticar em um dispositivo registrado.",
+            "Os administradores devem sempre usar a Autenticação Multifator do Azure (MFA).",
+            "O registro do Azure Multi-Factor Authentication (MFA) é necessário para todos os usuários.",
+            "Todos os usuários devem se autenticar usando login sem senha.",
+            "Todos os usuários devem se autenticar usando o Windows Hello."
+        ],
+        "correct": [
+            "Os administradores devem sempre usar a Autenticação Multifator do Azure (MFA).",
+            "O registro do Azure Multi-Factor Authentication (MFA) é necessário para todos os usuários."
+        ]
+    },
+    {
+        "id": "034",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "Que tipo de identidade é criada quando você registra um aplicativo no Microsoft Entra (Azure AD)?",
+        "options": [
+            "Uma conta de usuário",
+            "Uma identidade gerenciada atribuída pelo usuário",
+            "Uma identidade gerenciada atribuída pelo sistema",
+            "Um diretor de serviço (ou entidade de serviço - depende da forma de traduzir)"
+        ],
+        "correct": [
+            "Um diretor de serviço (ou entidade de serviço - depende da forma de traduzir)"
+        ]
+    },
+    {
+        "id": "035",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "multiple",
+        "header": "Quais são as três tarefas que podem ser executadas usando a Proteção de Identidade do Microsoft Entra (Azure AD)? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Configure o acesso externo para organizações parceiras.",
+            "Exportar detecção de risco para utilitários de terceiros.",
+            "Automatizar a detecção e correção de riscos baseados em identidade.",
+            "Investigue os riscos relacionados à autenticação do usuário.",
+            "Crie e atribua automaticamente rótulos de confidencialidade aos dados."
+        ],
+        "correct": [
+            "Exportar detecção de risco para utilitários de terceiros.",
+            "Automatizar a detecção e correção de riscos baseados em identidade.",
+            "Investigue os riscos relacionados à autenticação do usuário."
+        ]
+    },
+    {
+        "id": "036",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Windows Hello para empresas pode usar o aplicativo Microsoft Authenticator como método de autenticação",
+            "O Windows Hello para empresas pode usar um código PIN como método de autenticação",
+            "As informações de autenticação do Windows Hello para empresas são sincronizadas em todos os dispositivos registrados por um usuário"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "037",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "multiple",
+        "header": "Quais são os dois recursos do Microsoft Defender para Endpoint? Cada seleção correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Investigação e remediação automatizadas",
+            "Criptografia de transporte",
+            "Detecção de Shadow IT",
+            "Redução da superfície de ataque"
+        ],
+        "correct": [
+            "Investigação e remediação automatizadas",
+            "Redução da superfície de ataque"
+        ]
+    },
+    {
+        "id": "038",
+        "exam": "SC900",
+        "domain": "",
+        "type": "truefalse",
+        "header": "Combine o serviço de rede do Azure com a descrição apropriada. Para responder, arraste o serviço apropriado da coluna à esquerda até sua descrição à direita. Cada serviço pode ser usado uma vez, mais de uma vez ou nunca ser usado.",
+        "body": "NOTA: Cada correspondência correta vale um ponto.",
+        "options": [
+            "Fornece serviços de tradução de endereços de rede (NAT)",
+            "Fornece conectividade de Área de Trabalho Remota segura e perfeita para máquinas virtuais do Azure",
+            "Fornece filtragem de tráfego que pode ser aplicada a interfaces de rede específicas em uma rede virtual",
+            "É uma solução de gerenciamento de eventos e informações de segurança nativa da nuvem (SIEM) e resposta automatizada de orquestração de segurança (SOAR) usada para fornecer uma solução única para detecção de alertas, visibilidade de ameaças, exploração proativa e resposta a ameaças."
+        ],
+        "correct": [
+            "Firewall do Azure",
+            "Azure Bastion",
+            "Grupo de segurança de rede (NSG)",
+            "Azure Sentinel (ou Microsoft Sentinel)"
+        ]
+    },
+    {
+        "id": "039",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Azure Defender pode detectar vulnerabilidades e ameaças ao armazenamento do Azure",
+            "O Cloud Security Posture Management (CSPM) está disponível para todas as assinaturas do Azure",
+            "A Central de Segurança do Azure pode avaliar a segurança das cargas de trabalho implantadas no Azure ou no local (on-premises)"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "040",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Grupos de segurança de rede (NSG) podem negar tráfego de entrada da Internet",
+            "Grupos de segurança de rede (NSG) podem negar tráfego de saída da Internet",
+            "Grupos de segurança de rede (NSG) podem filtrar o tráfego com base em endereço IP, protocolo e porta"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "041",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Microsoft Intune pode ser usado para gerenciar dispositivos Android",
+            "O Microsoft Intune pode ser usado para provisionar assinaturas do Azure",
+            "O Microsoft Intune pode ser usado para gerenciar dispositivos pessoais e de propriedade da organização"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "042",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Você pode criar um Azure Bastion por rede virtual",
+            "O Azure Bastion fornece conexões de usuário seguras usando RDP",
+            "O Azure Bastion fornece uma conexão segura a uma máquina virtual do Azure usando o portal do Azure"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "043",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Qual recurso do Microsoft Defender para Endpoint fornece a primeira linha de defesa contra ameaças cibernéticas, reduzindo a superfície de ataque?",
+        "options": [
+            "Correção automatizada",
+            "Investigação automatizada",
+            "Caça avançada",
+            "Proteção de rede"
+        ],
+        "correct": [
+            "Proteção de rede"
+        ]
+    },
+    {
+        "id": "044",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "multiple",
+        "header": "Quais são os dois tipos de recursos que podem ser protegidos usando o Firewall do Azure? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Máquinas virtuais do Azure",
+            "Usuários do Microsoft Entra (Azure AD)",
+            "Caixas de entrada do Microsoft Exchange Online",
+            "Redes virtuais do Azure",
+            "Sites do Microsoft SharePoint Online"
+        ],
+        "correct": [
+            "Máquinas virtuais do Azure",
+            "Redes virtuais do Azure"
+        ]
+    },
+    {
+        "id": "045",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "options",
+        "header": "Você planeja implementar uma estratégia de segurança e colocar diversas camadas de defesa em uma infraestrutura de rede. Qual metodologia de segurança isso representa?",
+        "options": [
+            "Modelagem de ameaças",
+            "Identidade como perímetro de segurança",
+            "Defesa em profundidade",
+            "O modelo de responsabilidade compartilhada"
+        ],
+        "correct": [
+            "Defesa em profundidade"
+        ]
+    },
+    {
+        "id": "046",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Microsoft Defender for Endpoint pode proteger dispositivos Android",
+            "O Microsoft Defender for Endpoint pode proteger máquinas virtuais do Azure que executam o Windows 10",
+            "O Microsoft Defender for Endpoint pode proteger sites e conteúdo do Microsoft SharePoint Online contra vírus"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "047",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "O que você pode usar para verificar anexos de e-mail e encaminhá-los aos destinatários somente se os anexos estiverem livres de malware?",
+        "options": [
+            "Microsoft Defender para Office 365",
+            "Antivírus Microsoft Defender",
+            "Microsoft Defender para Identidade",
+            "Microsoft Defender para Ponto de Extremidade"
+        ],
+        "correct": [
+            "Microsoft Defender para Office 365"
+        ]
+    },
+    {
+        "id": "048",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Qual recurso fornece a capacidade estendida de detecção e resposta (XDR) do Azure Sentinel?",
+        "options": [
+            "Integração com o centro de conformidade do Microsoft 365",
+            "Apoio à caça a ameaças",
+            "Integração com Microsoft 365 Defender",
+            "Suporte para pastas de trabalho do Azure Monitor"
+        ],
+        "correct": [
+            "Integração com Microsoft 365 Defender"
+        ]
+    },
+    {
+        "id": "049",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "O que você pode usar para fornecer detecção de ameaças para a Instância Gerenciada de SQL do Azure?",
+        "options": [
+            "Pontuação Segura da Microsoft",
+            "Grupos de segurança de aplicativos",
+            "Microsoft Defender para Nuvem",
+            "Azure Bastion"
+        ],
+        "correct": [
+            "Microsoft Defender para Nuvem"
+        ]
+    },
+    {
+        "id": "050",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Microsoft Secure Score na central de segurança do Microsoft 365 pode fornecer recomendações para o Microsoft Cloud App Security",
+            "No portal Microsoft 365 Defender, você pode ver como sua pontuação segura da Microsoft se compara à pontuação de organizações como a sua",
+            "O Microsoft Secure Score no portal Microsoft 365 Defender fornece pontos se você abordar a ação de melhoria usando um aplicativo ou software de terceiros"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "051",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "Qual recurso do Microsoft Entra (Azure AD) você pode usar para restringir o acesso de dispositivos gerenciados pelo Microsoft Intune aos recursos corporativos?",
+        "options": [
+            "Grupos de segurança de rede (NSGs)",
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra",
+            "Políticas de acesso condicional",
+            "Bloqueios de recursos"
+        ],
+        "correct": [
+            "Políticas de acesso condicional"
+        ]
+    },
+    {
+        "id": "052",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "O que você deve usar no portal Microsoft 365 Defender para visualizar tendências de segurança e acompanhar o status de proteção das identidades?",
+        "options": [
+            "Simulador de ataque",
+            "Relatórios",
+            "Caça",
+            "Incidentes"
+        ],
+        "correct": [
+            "Relatórios"
+        ]
+    },
+    {
+        "id": "053",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Você tem uma assinatura do Microsoft 365 E3. Você planeja auditar a atividade do usuário usando o log de auditoria unificado e a Auditoria Básica. Por quanto tempo os registros de auditoria serão retidos?",
+        "options": [
+            "15 dias",
+            "30 dias",
+            "90 dias",
+            "180 dias"
+        ],
+        "correct": [
+            "180 dias"
+        ]
+    },
+    {
+        "id": "054",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "A que tipo de recurso o Azure Bastion pode fornecer acesso seguro?",
+        "options": [
+            "Arquivos do Azure",
+            "Instâncias Gerenciadas SQL do Azure",
+            "Máquinas virtuais do Azure",
+            "Serviço de Aplicativo do Azure"
+        ],
+        "correct": [
+            "Máquinas virtuais do Azure"
+        ]
+    },
+    {
+        "id": "055",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "multiple",
+        "header": "Quais são os três usos do Microsoft Cloud App Security? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Descobrir e controlar o uso de shadow IT",
+            "Para fornecer conexões seguras às máquinas virtuais do Azure",
+            "Para proteger informações confidenciais hospedadas em qualquer lugar da nuvem",
+            "Para fornecer autenticação de passagem para aplicativos locais",
+            "Para evitar vazamentos de dados para aplicativos não conformes e limitar o acesso a dados regulamentados"
+        ],
+        "correct": [
+            "Descobrir e controlar o uso de shadow IT",
+            "Para proteger informações confidenciais hospedadas em qualquer lugar da nuvem",
+            "Para evitar vazamentos de dados para aplicativos não conformes e limitar o acesso a dados regulamentados"
+        ]
+    },
+    {
+        "id": "056",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Você precisa se conectar a uma máquina virtual do Azure usando o Azure Bastion. O que você deve usar?",
+        "options": [
+            "Comunicação remota do PowerShell",
+            "O portal do Azure",
+            "O cliente de Conexão de Área de Trabalho Remota",
+            "Um cliente SSH"
+        ],
+        "correct": [
+            "O portal do Azure"
+        ]
+    },
+    {
+        "id": "057",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Qual serviço inclui o recurso de treinamento de simulação de ataque?",
+        "options": [
+            "Microsoft Defender para aplicativos em nuvem",
+            "Microsoft Defender para Identidade",
+            "Microsoft Defender para SQL",
+            "Microsoft Defender para Office 365"
+        ],
+        "correct": [
+            "Microsoft Defender para Office 365"
+        ]
+    },
+    {
+        "id": "058",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Que tipo de alerta você pode gerenciar no portal Microsoft 365 Defender?",
+        "options": [
+            "Microsoft Defender para armazenamento",
+            "Microsoft Defender para SQL",
+            "Microsoft Defender para Ponto de Extremidade",
+            "Microsoft Defender para IoT"
+        ],
+        "correct": [
+            "Microsoft Defender para Ponto de Extremidade"
+        ]
+    },
+    {
+        "id": "059",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Os conectores de dados do Microsoft Sentinel suportam apenas serviços Microsoft",
+            "Você pode usar pastas de trabalho do Azure Monitor para monitorar dados coletados pelo Microsoft Sentinel",
+            "A caça oferece a capacidade de identificar ameaças à segurança antes que um alerta seja acionado"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "060",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "multiple",
+        "header": "A quais dois recursos do Azure um NSG (grupo de segurança de rede) pode ser associado? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Uma sub-rede de rede virtual",
+            "Uma interface de rede",
+            "Um grupo de recursos",
+            "Uma rede virtual",
+            "Um aplicativo Web do Serviço de Aplicativo do Azure"
+        ],
+        "correct": [
+            "Uma sub-rede de rede virtual",
+            "Uma interface de rede"
+        ]
+    },
+    {
+        "id": "061",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual é um caso de uso para implementar políticas de barreira de informações no Microsoft 365?",
+        "options": [
+            "Para restringir o acesso não autenticado ao Microsoft 365",
+            "Para restringir bate-papos do Microsoft Teams entre determinados grupos dentro de uma organização",
+            "Para restringir o email do Microsoft Exchange Online entre determinados grupos dentro de uma organização",
+            "Para restringir o compartilhamento de dados a destinatários de e-mail externos"
+        ],
+        "correct": [
+            "Para restringir bate-papos do Microsoft Teams entre determinados grupos dentro de uma organização"
+        ]
+    },
+    {
+        "id": "062",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "O que você pode usar para implantar recursos do Azure em várias assinaturas de maneira consistente?",
+        "options": [
+            "Microsoft Defender para Nuvem",
+            "Blueprints do Azure",
+            "Microsoft Sentinela",
+            "Política do Azure"
+        ],
+        "correct": [
+            "Blueprints do Azure"
+        ]
+    },
+    {
+        "id": "063",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Com a Auditoria Avançada no Microsoft 365 (ou Microsoft Purview Audit), você pode identificar quando os itens de email foram acessados",
+            "A Auditoria Avançada no Microsoft 365 (ou Microsoft Purview Audit) dá suporte ao mesmo período de retenção de logs de auditoria que a auditoria principal",
+            "A Auditoria Avançada no Microsoft 365 (ou Microsoft Purview Audit) aloca largura de banda dedicada ao cliente para acessar dados de auditoria"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "064",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "A Proteção de Identidade do Microsoft Entra (Azure AD) pode adicionar usuários a grupos com base no nível de risco do usuário",
+            "A Proteção de Identidade do Microsoft Entra (Azure AD) pode detectar se as credenciais do usuário vazaram para o público",
+            "A Proteção de Identidade do Microsoft Entra (Azure AD) pode ser usada para invocar a Autenticação Multifator com base no nível de risco de um usuário"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "065",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual recurso do centro de conformidade do Microsoft 365 você pode usar para identificar todos os documentos em um site do Microsoft SharePoint Online que contenha uma palavra-chave específica?",
+        "options": [
+            "Auditoria",
+            "Gerente de Conformidade",
+            "Pesquisa de conteúdo",
+            "Alertas"
+        ],
+        "correct": [
+            "Pesquisa de conteúdo"
+        ]
+    },
+    {
+        "id": "066",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual recurso do Microsoft 365 você pode usar para impedir que os usuários enviem mensagens de email que contenham listas de clientes e seus números de cartão de crédito associados?",
+        "options": [
+            "Políticas de retenção",
+            "Políticas de prevenção contra perda de dados (DLP)",
+            "Políticas de acesso condicional",
+            "Barreiras de informação"
+        ],
+        "correct": [
+            "Políticas de prevenção contra perda de dados (DLP)"
+        ]
+    },
+    {
+        "id": "067",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Em um fluxo de trabalho Core eDiscovery, o que você deve fazer antes de pesquisar conteúdo?",
+        "options": [
+            "Crie uma retenção de eDiscovery.",
+            "Execute a análise expressa.",
+            "Configurar a detecção de privilégios advogado-cliente.",
+            "Exportar e baixar resultados."
+        ],
+        "correct": [
+            "Crie uma retenção de eDiscovery."
+        ]
+    },
+    {
+        "id": "068",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual portal da Microsoft fornece informações sobre como a Microsoft gerencia privacidade, conformidade e segurança?",
+        "options": [
+            "Portal de confiança de serviços da Microsoft",
+            "Gerente de Conformidade",
+            "Centro de conformidade do Microsoft 365",
+            "Suporte da Microsoft"
+        ],
+        "correct": [
+            "Portal de confiança de serviços da Microsoft"
+        ]
+    },
+    {
+        "id": "069",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "O que você pode proteger usando a solução de proteção de informações no centro de conformidade do Microsoft 365?",
+        "options": [
+            "Computadores contra explorações de dia zero",
+            "Usuários de tentativas de phishing",
+            "Arquivos de malware e vírus",
+            "Dados confidenciais sejam expostos a usuários não autorizados"
+        ],
+        "correct": [
+            "Dados confidenciais sejam expostos a usuários não autorizados"
+        ]
+    },
+    {
+        "id": "070",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "O que você pode especificar nos rótulos de confidencialidade do Microsoft 365?",
+        "options": [
+            "Por quanto tempo os arquivos devem ser preservados",
+            "Quando arquivar uma mensagem de e-mail",
+            "Qual marca d'água adicionar aos arquivos",
+            "Onde armazenar arquivos"
+        ],
+        "correct": [
+            "Qual marca d'água adicionar aos arquivos"
+        ]
+    },
+    {
+        "id": "071",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Você pode usar a Auditoria Avançada no Microsoft 365 para visualizar detalhes de cobrança",
+            "Você pode usar a Auditoria Avançada no Microsoft 365 para exibir o conteúdo de uma mensagem de email",
+            "Você pode usar a Auditoria Avançada no Microsoft 365 para identificar quando um usuário usa a barra de pesquisa no Outlook na Web para pesquisar itens em uma caixa de correio"
+        ],
+        "correct": [
+            "false",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "072",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Você pode adicionar um bloqueio de recursos a uma assinatura do Azure",
+            "Você pode adicionar apenas um bloqueio de recursos a um recurso do Azure",
+            "Você pode excluir um grupo de recursos que contém recursos que possuem bloqueio de recursos"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "false"
+        ]
+    },
+    {
+        "id": "073",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Os usuários podem aplicar rótulos de confidencialidade manualmente",
+            "Vários rótulos de confidencialidade podem ser aplicados ao mesmo arquivo",
+            "Um rótulo de confidencialidade pode aplicar uma marca d'água a um documento do Microsoft Word"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "074",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "multiple",
+        "header": "Quais são as duas tarefas que você pode implementar usando políticas de prevenção contra perda de dados (DLP) no Microsoft 365? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Exiba dicas de política para usuários que estão prestes a violar as políticas da sua organização.",
+            "Habilite a criptografia de disco em endpoints.",
+            "Proteja documentos no Microsoft OneDrive que contenham informações confidenciais.",
+            "Aplicar linhas de base de segurança aos dispositivos."
+        ],
+        "correct": [
+            "Exiba dicas de política para usuários que estão prestes a violar as políticas da sua organização.",
+            "Proteja documentos no Microsoft OneDrive que contenham informações confidenciais."
+        ]
+    },
+    {
+        "id": "075",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Etiquetas de confidencialidade podem ser usadas para criptografar documentos",
+            "Etiquetas de confidencialidade podem adicionar cabeçalhos e rodapés aos documentos",
+            "Os rótulos de confidencialidade podem aplicar marcas d'água em e-mails"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "076",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual recurso de conformidade do Microsoft 365 você pode usar para criptografar conteúdo automaticamente com base em condições específicas?",
+        "options": [
+            "Pesquisa de conteúdo",
+            "Rótulos de sensibilidade",
+            "Políticas de retenção",
+            "Descoberta eletrônica"
+        ],
+        "correct": [
+            "Rótulos de sensibilidade"
+        ]
+    },
+    {
+        "id": "077",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Compliance Manager rastreia apenas controles gerenciados pelo cliente",
+            "O Compliance Manager fornece modelos predefinidos para a criação de avaliações",
+            "O Compliance Manager pode ajudá-lo a avaliar se os dados estão em conformidade com padrões específicos de proteção de dados"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "078",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Você pode usar a solução de gerenciamento de risco interno para detectar golpes de phishing",
+            "Você pode acessar a solução de gerenciamento de riscos internos no centro de conformidade do Microsoft 365",
+            "Você pode usar a solução de gerenciamento de risco interno para detectar vazamentos de dados por funcionários insatisfeitos"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "079",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "As Políticas do Azure dão suporte à remediação automática",
+            "As Políticas do Azure podem ser usadas para garantir que os novos recursos cumpram os padrões corporativos",
+            "A avaliação de conformidade na Política Azure ocorre apenas quando um recurso alvo é criado ou modificado"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "080",
+        "exam": "SC900",
+        "domain": "",
+        "type": "truefalse",
+        "header": "Combine a etapa do fluxo de trabalho de gerenciamento de riscos internos do Microsoft 365 com a tarefa apropriada. Para responder, arraste a etapa apropriada da coluna à esquerda para sua tarefa à direita. Cada etapa pode ser usada uma vez, mais de uma vez ou nunca ser usada.",
+        "body": "NOTA: Cada correspondência correta vale um ponto.",
+        "options": [
+            "Revise e filtre alertas",
+            "Criar casos no painel Caso",
+            "Envie um lembrete das políticas corporativas aos usuários"
+        ],
+        "correct": [
+            "Triagem",
+            "Investigar",
+            "Ação"
+        ]
+    },
+    {
+        "id": "081",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "multiple",
+        "header": "Quais são os dois cartões disponíveis no portal Microsoft 365 Defender? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Dispositivos em risco",
+            "Pontuação de Conformidade",
+            "Saúde do Serviço",
+            "Gerenciamento de usuários",
+            "Usuários em risco"
+        ],
+        "correct": [
+            "Dispositivos em risco",
+            "Usuários em risco"
+        ]
+    },
+    {
+        "id": "082",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "O que você deve usar para garantir que os membros de um grupo do Microsoft Entra usem a autenticação multifator (MFA) ao entrar?",
+        "options": [
+            "Controle de acesso baseado em função do Azure (Azure RBAC)",
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra (Azure AD)",
+            "Proteção de Identidade do Microsoft Entra (Azure AD)",
+            "Uma política de acesso condicional"
+        ],
+        "correct": [
+            "Uma política de acesso condicional"
+        ]
+    },
+    {
+        "id": "083",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "A Proteção de Identidade do Microsoft Entra (Azure AD) gera detecções de risco assim que um usuário é autenticado",
+            "A Proteção de Identidade do Microsoft Entra (Azure AD) atribui um nível de risco Baixo, Médio ou Alto a cada evento de risco",
+            "Um risco de utilizador na Proteção de Identidade do Microsoft Entra (Azure AD) representa a probabilidade de uma determinada identidade ou conta estar comprometida"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "084",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Você precisa manter uma cópia de todos os arquivos em um site do Microsoft SharePoint por um ano, mesmo que os usuários excluam os arquivos do site.O que você deve aplicar ao site?",
+        "options": [
+            "Uma política de retenção",
+            "Uma política de risco interno",
+            "Uma política de prevenção contra perda de dados (DLP)",
+            "Uma política de rótulo de confidencialidade"
+        ],
+        "correct": [
+            "Uma política de retenção"
+        ]
+    },
+    {
+        "id": "085",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Você precisa criar uma política de prevenção contra perda de dados (DLP). O que você deve usar?",
+        "options": [
+            "Centro de Conformidade do Microsoft 365 (ou Portal de Conformidade do Microsoft Purview)",
+            "O centro de administração do Microsoft Endpoint Manager",
+            "O centro de administração do Microsoft 365",
+            "O portal do Microsoft 365 Defender"
+        ],
+        "correct": [
+            "Centro de Conformidade do Microsoft 365 (ou Portal de Conformidade do Microsoft Purview)"
+        ]
+    },
+    {
+        "id": "086",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "O que é uma avaliação no Compliance Manager?",
+        "options": [
+            "Uma iniciativa política que inclui múltiplas políticas.",
+            "Um dicionário de palavras que não são permitidas nos documentos da empresa.",
+            "Um agrupamento de controles de uma regulamentação, norma ou política específica.",
+            "Orientações recomendadas para ajudar as organizações a se alinharem com seus padrões corporativos."
+        ],
+        "correct": [
+            "Um agrupamento de controles de uma regulamentação, norma ou política específica."
+        ]
+    },
+    {
+        "id": "087",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "O que você pode usar para visualizar o Microsoft Secure Score for Devices?",
+        "options": [
+            "Microsoft Defender para aplicativos em nuvem",
+            "Microsoft Defender para Ponto de Extremidade",
+            "Microsoft Defender para Identidade",
+            "Microsoft Defender para Office 365"
+        ],
+        "correct": [
+            "Microsoft Defender para Ponto de Extremidade"
+        ]
+    },
+    {
+        "id": "088",
+        "exam": "SC900",
+        "domain": "",
+        "type": "truefalse",
+        "header": "Combine o recurso Microsoft Defender para Office 365 com a descrição correta. Para responder, arraste o recurso apropriado da coluna à esquerda para sua descrição à direita. Cada recurso pode ser usado uma vez, mais de uma vez ou nunca ser usado.",
+        "body": "NOTA: Cada correspondência correta vale um ponto.",
+        "options": [
+            "Fornece inteligência sobre questões predominantes de segurança cibernética",
+            "Fornece relatórios em tempo real para identificar e analisar ameaças recentes",
+            "Detecta tentativas de personificação"
+        ],
+        "correct": [
+            "Rastreadores de ameaças",
+            "Explorador de ameaças",
+            "Proteção antiphishing"
+        ]
+    },
+    {
+        "id": "089",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Cada regra de grupo de segurança de rede (NSG) deve ter um nome exclusivo",
+            "As regras padrão do grupo de segurança de rede (NSG) podem ser excluídas",
+            "As regras do grupo de segurança de rede (NSG) podem ser configuradas para verificar os tipos de protocolo de rede TCP, UDP ou ICMP"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "090",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "options",
+        "header": "Quais são as responsabilidades dos clientes ao avaliar a segurança em um modelo de serviços em nuvem de software como serviço (SaaS)?",
+        "options": [
+            "sistemas operacionais",
+            "Controles de rede",
+            "Aplicações",
+            "Contas e identidades"
+        ],
+        "correct": [
+            "Contas e identidades"
+        ]
+    },
+    {
+        "id": "091",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "O que o Acesso Condicional avalia usando a Proteção de Identidade do Microsoft Entra (Azure AD)?",
+        "options": [
+            "Ações do usuário",
+            "Associação ao grupo",
+            "Conformidade do dispositivo",
+            "Risco do usuário"
+        ],
+        "correct": [
+            "Risco do usuário"
+        ]
+    },
+    {
+        "id": "092",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "options",
+        "header": "Qual declaração representa um princípio de privacidade da Microsoft?",
+        "options": [
+            "A Microsoft gerencia as configurações de privacidade de seus clientes.",
+            "A Microsoft respeita as leis de privacidade locais aplicáveis aos seus clientes.",
+            "A Microsoft usa email hospedado de clientes e dados de bate-papo para publicidade direcionada.",
+            "A Microsoft não coleta dados de clientes."
+        ],
+        "correct": [
+            "A Microsoft respeita as leis de privacidade locais aplicáveis aos seus clientes."
+        ]
+    },
+    {
+        "id": "093",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual recurso de conformidade você deve usar para identificar documentos que são currículos de funcionários?",
+        "options": [
+            "Classificadores pré-treinados",
+            "Explorador de atividades",
+            "Descoberta eletrônica",
+            "Explorador de conteúdo"
+        ],
+        "correct": [
+            "Classificadores pré-treinados"
+        ]
+    },
+    {
+        "id": "094",
+        "exam": "SC900",
+        "domain": "",
+        "type": "truefalse",
+        "header": "Combine os pilares do Zero Trust com os requisitos apropriados. Para responder, arraste o pilar apropriado da coluna à esquerda para o seu requisito à direita. Cada pilar pode ser usado uma vez, mais de uma vez ou nunca ser usado.",
+        "body": "NOTA: Cada correspondência correta vale um ponto.",
+        "options": [
+            "Deve ser segmentado",
+            "Deve ser verificado usando autenticação forte",
+            "Deve ser classificado, rotulado e criptografado com base em seus atributos"
+        ],
+        "correct": [
+            "Redes",
+            "Identidades",
+            "Dados"
+        ]
+    },
+    {
+        "id": "095",
+        "exam": "SC900",
+        "domain": "",
+        "type": "truefalse",
+        "header": "Corresponda os tipos de ações de pontuação de conformidade às tarefas apropriadas. Para responder, arraste o tipo de ação apropriado da coluna à esquerda para sua tarefa à direita. Cada tipo pode ser usado uma vez, mais de uma vez ou nunca.",
+        "body": "NOTA: Cada correspondência correta vale um ponto.",
+        "options": [
+            "Use criptografia para proteger dados em repouso",
+            "Monitorar ativamente os sistemas para identificar irregularidades que possam representar riscos"
+        ],
+        "correct": [
+            "Preventivo",
+            "Detetive"
+        ]
+    },
+    {
+        "id": "096",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "options",
+        "header": "Qual pilar da identidade está relacionado ao rastreamento dos recursos acessados por um usuário?",
+        "options": [
+            "Autorização",
+            "Auditoria",
+            "Administração",
+            "Autenticação"
+        ],
+        "correct": [
+            "Auditoria"
+        ]
+    },
+    {
+        "id": "097",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "O que pode ser criado nos Serviços de Domínio Active Directory (AD DS)?",
+        "options": [
+            "Aplicativos de linha de negócios (LOB) que exigem autenticação moderna",
+            "Contas de computador",
+            "Aplicativos de software como serviço (SaaS) que exigem autenticação moderna",
+            "Dispositivos móveis"
+        ],
+        "correct": [
+            "Contas de computador"
+        ]
+    },
+    {
+        "id": "098",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "A autorização é usada para identificar o nível de acesso a um recurso",
+            "Autorização é provar que os usuários são quem dizem ser",
+            "A autorização identifica se você pode ler e gravar em um arquivo"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "099",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "Qual é a função dos controles de sessão de acesso condicional?",
+        "options": [
+            "Impor a conformidade do dispositivo",
+            "Impor a conformidade do aplicativo cliente",
+            "Permitir experiências limitadas, como bloquear o download de informações confidenciais",
+            "Solicitar autenticação multifator (MFA)"
+        ],
+        "correct": [
+            "Permitir experiências limitadas, como bloquear o download de informações confidenciais"
+        ]
+    },
+    {
+        "id": "100",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "A Proteção de Identidade do Microsoft Entra pode adicionar usuários a grupos com base no nível de risco de um usuário",
+            "A Proteção de Identidade do Microsoft Entra pode detectar se as credenciais do usuário vazaram para o público",
+            "A Proteção de Identidade do Microsoft Entra pode ser usada para invocar a Autenticação Multifator com base no nível de risco de um usuário"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "101",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "O que você pode usar para garantir que todos os usuários de um grupo específico usem a autenticação multifator (MFA) para assinar no Microsoft Entra (Azure AD)?",
+        "options": [
+            "Política Azure",
+            "Uma política de conformidade de comunicação",
+            "Uma política de acesso condicional",
+            "Uma política de risco do usuário"
+        ],
+        "correct": [
+            "Uma política de conformidade de comunicação"
+        ]
+    },
+    {
+        "id": "102",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Você pode criar uma identidade híbrida em um Active Directory local que sincroniza com o Microsoft Entra",
+            "As contas de usuário criadas no Microsoft Entra são sincronizadas automaticamente com um Active Directory local",
+            "Ao utilizar um modelo híbrido, a autenticação pode ser feita pelo Microsoft Entra ou por outro fornecedor de identidade"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "103",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "multiple",
+        "header": "Quais são os três métodos de autenticação que os usuários do Microsoft Entra podem usar para redefinir sua senha? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Notificação de aplicativo móvel",
+            "Mensagem de texto para um telefone",
+            "Questões de segurança",
+            "Certificado",
+            "Senha da imagem"
+        ],
+        "correct": [
+            "Notificação de aplicativo móvel",
+            "Mensagem de texto para um telefone",
+            "Questões de segurança"
+        ]
+    },
+    {
+        "id": "104",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Microsoft Entra B2C permite que usuários externos entrem usando suas identidades de conta social ou empresarial preferidas",
+            "Os utilizadores externos do Microsoft Entra B2C são geridos no mesmo diretório que os utilizadores da organização Microsoft Entra",
+            "A marca personalizada pode ser aplicada à autenticação Microsoft Entra B2C"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "105",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Os tokens de software são um exemplo de autenticação sem senha",
+            "Windows Hello é um exemplo de autenticação sem senha",
+            "As chaves de segurança FIDO2 são um exemplo de autenticação sem senha"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "106",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Qual recurso de segurança está disponível no modo gratuito do Microsoft Defender for Cloud?",
+        "options": [
+            "Alertas de proteção contra ameaças",
+            "Acesso de VM just-in-time (JIT) a máquinas virtuais do Azure",
+            "Verificação de vulnerabilidades de máquinas virtuais",
+            "Pontuação de segurança"
+        ],
+        "correct": [
+            "Pontuação de segurança"
+        ]
+    },
+    {
+        "id": "107",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "A prevenção contra perda de dados do Microsoft 365 Endpoint (Endpoint DLP) pode ser usada em quais sistemas operacionais?",
+        "options": [
+            "Somente Windows 10 e mais recente",
+            "Windows 10 e mais recente e apenas Android",
+            "Windows 10 e mais recente e apenas iOS",
+            "Windows 10 e mais recente, Android e iOS"
+        ],
+        "correct": [
+            "Somente Windows 10 e mais recente"
+        ]
+    },
+    {
+        "id": "108",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Microsoft Defender for Cloud pode detectar vulnerabilidades e ameaças para o armazenamento do Azure",
+            "O Cloud Security Posture Management (CSPM) está disponível para todas as assinaturas do Azure",
+            "O Microsoft Defender for Cloud pode avaliar a segurança das cargas de trabalho implantadas no Azure ou no local"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "109",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Qual é o número máximo de recursos que o Azure DDoS Protection Standard pode proteger sem custos adicionais?",
+        "options": [
+            "50",
+            "100",
+            "500",
+            "1000"
+        ],
+        "correct": [
+            "100"
+        ]
+    },
+    {
+        "id": "110",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "multiple",
+        "header": "Quais são os dois motivos para implantar várias redes virtuais em vez de usar apenas uma rede virtual? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Para atender às políticas de governança",
+            "Para conectar vários tipos de recursos",
+            "Separar os recursos para orçamento",
+            "Isolar os recursos"
+        ],
+        "correct": [
+            "Para atender às políticas de governança",
+            "Isolar os recursos"
+        ]
+    },
+    {
+        "id": "111",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Você tem uma assinatura do Azure que contém vários recursos. Você precisa avaliar a conformidade e impor padrões para os recursos existentes. O que você deve usar?",
+        "options": [
+            "Azure Blueprints",
+            "O serviço Detector de Anomalias",
+            "Microsoft Sentinela",
+            "Política Azure"
+        ],
+        "correct": [
+            "Política Azure"
+        ]
+    },
+    {
+        "id": "112",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Qual métrica do Microsoft Defender para Nuvem exibe a integridade geral da segurança de uma assinatura do Azure?",
+        "options": [
+            "Pontuação de segurança",
+            "Saúde dos recursos",
+            "Controles concluídos",
+            "O status das recomendações"
+        ],
+        "correct": [
+            "Pontuação de segurança"
+        ]
+    },
+    {
+        "id": "113",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Você pode usar barreiras de informação com o Microsoft Exchange",
+            "Você pode usar barreiras de informação com o Microsoft SharePoint",
+            "Você pode usar barreiras de informação com o Microsoft Teams"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "114",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Você precisa garantir a repetibilidade ao criar novos recursos em uma assinatura do Azure. O que você deve usar?",
+        "options": [
+            "Microsoft Sentinela",
+            "Política Azure",
+            "Lote Azure",
+            "Azure Blueprints"
+        ],
+        "correct": [
+            "Azure Blueprints"
+        ]
+    },
+    {
+        "id": "115",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual é a característica de um rótulo de confidencialidade no Microsoft 365?",
+        "options": [
+            "Criptografado",
+            "Restrito a categorias predefinidas",
+            "Persistente"
+        ],
+        "correct": [
+            "Persistente"
+        ]
+    },
+    {
+        "id": "116",
+        "exam": "SC900",
+        "domain": "",
+        "type": "truefalse",
+        "header": "Corresponda a etapa do fluxo de trabalho do Microsoft Purview Insider Risk Management à tarefa apropriada. Para responder, arraste a tarefa apropriada. passe da coluna à esquerda para sua tarefa à direita. Cada etapa pode ser usada uma vez, mais de uma vez ou nunca.",
+        "body": "NOTA: Cada correspondência correta vale um ponto.",
+        "options": [
+            "Revise e filtre alertas",
+            "Criar casos no painel Caso",
+            "Envie um lembrete das políticas corporativas aos usuários"
+        ],
+        "correct": [
+            "Triagem",
+            "Investigue",
+            "Ação"
+        ]
+    },
+    {
+        "id": "117",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Microsoft Purview fornece classificação de dados confidenciais",
+            "Microsoft Sentinel é uma solução de gerenciamento do ciclo de vida de dados",
+            "O Microsoft Purview só pode descobrir dados armazenados no Azure"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "false"
+        ]
+    },
+    {
+        "id": "118",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "A criptografia assimétrica usa uma chave pública e um par de chaves privadas",
+            "A criptografia simétrica usa uma chave pública e um par de chaves privadas",
+            "Você pode usar a descriptografia para recuperar o conteúdo original de um hash de conteúdo"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "false"
+        ]
+    },
+    {
+        "id": "119",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "No software como serviço (SaaS), a aplicação de atualizações de aplicativos é de responsabilidade da organização",
+            "Na infraestrutura como serviço (IaaS), o gerenciamento da rede física é de responsabilidade do provedor de nuvem",
+            "Em todos os tipos de implementação na nuvem Azure, a gestão da segurança das informações e dos dados é da responsabilidade da organização"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "120",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "O que você deve usar para associar a mesma identidade a mais de uma máquina virtual do Azure?",
+        "options": [
+            "Uma conta de usuário do Microsoft Entra",
+            "Uma identidade gerenciada atribuída pelo usuário",
+            "Uma identidade gerenciada atribuída pelo sistema",
+            "Um grupo de segurança do Microsoft Entra"
+        ],
+        "correct": [
+            "Uma identidade gerenciada atribuída pelo usuário"
+        ]
+    },
+    {
+        "id": "121",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Os padrões de segurança exigem uma licença Microsoft Entra Premium",
+            "Os padrões de segurança podem ser habilitados para um único usuário do Microsoft Entra",
+            "Quando os padrões de segurança estão habilitados, todos os administradores devem usar a autenticação multifator (MFA)"
+        ],
+        "correct": [
+            "false",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "122",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "multiple",
+        "header": "Quais são as três formas de verificação que podem ser usadas com a Autenticação Multifator (MFA) do Microsoft Entra? Cada resposta correta apresenta uma solução completa.",
+        "body": "NOTA: Cada resposta correta vale um ponto.",
+        "options": [
+            "Questões de segurança",
+            "O aplicativo Microsoft Authenticator",
+            "Mensagens SMS",
+            "Um cartão inteligente",
+            "Windows Hello para empresas"
+        ],
+        "correct": [
+            "O aplicativo Microsoft Authenticator",
+            "Mensagens SMS",
+            "Windows Hello para empresas"
+        ]
+    },
+    {
+        "id": "123",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Um endereço de e-mail externo pode ser usado para autenticar a redefinição de senha de autoatendimento (SSPR)",
+            "Uma notificação para o Microsoft Authenticator pode ser usada para autenticar a redefinição de senha de autoatendimento (SSPR)",
+            "Para realizar a redefinição de senha de autoatendimento (SSPR), um usuário já deve estar conectado em um ambiente autenticado no Microsoft Entra"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "124",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "A prevenção contra perda de dados do Microsoft 365 Endpoint (Endpoint DLP) pode ser usada em quais sistemas operacionais?",
+        "options": [
+            "Somente Windows 10 e mais recente",
+            "Windows 10 e mais recente e apenas Android",
+            "Windows 10 e mais recente e somente macOS",
+            "Windows 10 e mais recente, Android e macOS"
+        ],
+        "correct": [
+            "Windows 10 e mais recente e somente macOS"
+        ]
+    },
+    {
+        "id": "125",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "Você tem uma assinatura do Azure que contém um espaço de trabalho do Log Analytics. Você precisa integrar o Microsoft Sentinel. O que você deve fazer primeiro?",
+        "options": [
+            "Crie uma consulta de caça.",
+            "Correlacione alertas em incidentes.",
+            "Conecte-se às suas fontes de segurança.",
+            "Crie uma regra de detecção personalizada."
+        ],
+        "correct": [
+            "Conecte-se às suas fontes de segurança."
+        ]
+    },
+    {
+        "id": "126",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Azure DDoS Protection Standard protege contra ataques man-in-the-middle (MITM)",
+            "O Azure DDoS Protection Standard é habilitado por padrão em uma assinatura do Azure",
+            "O Azure DDoS Protection Standard protege contra ataques de protocolo"
+        ],
+        "correct": [
+            "false",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "127",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Você pode usar as barreiras de informações do Microsoft Purview para detectar mensagens que contenham linguagem inadequada",
+            "Você pode usar o Microsoft Purview Communication Compliance para verificar arquivos armazenados no Microsoft SharePoint Online",
+            "Você pode usar o Microsoft Purview Communication Compliance para verificar emails internos e externos no Microsoft Exchange Online"
+        ],
+        "correct": [
+            "false",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "128",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "options",
+        "header": "Você está avaliando o uso de modelos de nuvem de infraestrutura como serviço (IaaS), plataforma como serviço (PaaS) e software como serviço (SaaS).  Você planeja gerenciar apenas os dados, contas e dispositivos de usuário de um aplicativo baseado em nuvem. Qual modelo de nuvem você usará?",
+        "options": [
+            "SaaS",
+            "PaaS",
+            "IaaS"
+        ],
+        "correct": [
+            "SaaS"
+        ]
+    },
+    {
+        "id": "129",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "A identidade do dispositivo pode ser armazenada no Microsoft Entra",
+            "Uma única identidade gerida atribuída pelo sistema pode ser usada por vários recursos do Azure ",
+            "Se eliminar um recurso Azure que tenha uma identidade gerida atribuída pelo utilizador, a identidade gerida será eliminada automaticamente"
+        ],
+        "correct": [
+            "true",
+            "false",
+            "false"
+        ]
+    },
+    {
+        "id": "130",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual pontuação mede o progresso de uma organização na conclusão de ações que ajudam a reduzir os riscos associados à proteção de dados e aos padrões regulatórios?",
+        "options": [
+            "Pontuação de adoção",
+            "Pontuação Segura da Microsoft",
+            "Pontuação segura no Microsoft Defender for Cloud",
+            "Pontuação de conformidade"
+        ],
+        "correct": [
+            "Pontuação de conformidade"
+        ]
+    },
+    {
+        "id": "131",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "GitHub é um provedor de identidade baseado em nuvem",
+            "A Federação fornece logon único (SSO) com vários provedores de serviços",
+            "Um provedor de identidade central gerencia todos os serviços de autenticação modernos, como autenticação, autorização e auditoria"
+        ],
+        "correct": [
+            "true",
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "132",
+        "exam": "SC900",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "options",
+        "header": "Você precisa identificar quais modelos de serviço em nuvem atribuem maior responsabilidade ao cliente em um modelo de responsabilidade compartilhada. Em que ordem você deve listar os modelos de serviço, da maior para a menor responsabilidade do cliente? Para responder, mova todos os modelos da lista de modelos para a área de resposta e organize-os na ordem correta.",
+        "options": [
+            "Datacenter local (on-premises), Infraestrutura como serviço (IaaS), Plataforma como serviço (PaaS), Software como serviço (SaaS)",
+            "Software como serviço (SaaS), Datacenter local (on-premises), Infraestrutura como serviço (IaaS), Plataforma como serviço (PaaS)",
+            "Software como serviço (SaaS), Plataforma como serviço (PaaS), Infraestrutura como serviço (IaaS), Datacenter local (on-premises)",
+            "Infraestrutura como serviço (IaaS), Plataforma como serviço (PaaS), Software como serviço (SaaS), Datacenter local (on-premises), "
+        ],
+        "correct": [
+            "Datacenter local (on-premises), Infraestrutura como serviço (IaaS), Plataforma como serviço (PaaS), Software como serviço (SaaS)"
+        ]
+    },
+    {
+        "id": "133",
+        "exam": "SC900",
+        "domain": "Descrever os recursos do Microsoft Entra",
+        "type": "options",
+        "header": "Você tem uma assinatura do Azure. Você precisa implementar a ativação de função com base em aprovação e com prazo determinado. O que você deve usar?",
+        "options": [
+            "Acessar avaliações no Microsoft Entra",
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra",
+            "Proteção de identidade do Microsoft Entra",
+            "Acesso condicional no Microsoft Entra"
+        ],
+        "correct": [
+            "Gerenciamento de Identidade Privilegiada (PIM) do Microsoft Entra"
+        ]
+    },
+    {
+        "id": "134",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "options",
+        "header": "O que você deve usar no portal Microsoft 365 Defender para visualizar tendências de segurança e acompanhar o status de proteção das identidades?",
+        "options": [
+            "Relatórios",
+            "Incidentes",
+            "Caçando",
+            "Pontuação segura"
+        ],
+        "correct": [
+            "Relatórios"
+        ]
+    },
+    {
+        "id": "135",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "O Microsoft Sentinel usa aplicativos lógicos para identificar anomalias em recursos",
+            "O Microsoft Sentinel usa pastas de trabalho para correlacionar alertas em incidentes",
+            "As ferramentas de pesquisa e consulta de busca do Microsoft Sentinel são baseadas na estrutura MITRE ATT&CK"
+        ],
+        "correct": [
+            "false",
+            "false",
+            "true"
+        ]
+    },
+    {
+        "id": "136",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "truefalse",
+        "header": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. ",
+        "body": "NOTA: Cada seleção correta vale um ponto.",
+        "options": [
+            "Você pode restringir a comunicação entre usuários no Exchange Online usando Barreiras de Informações",
+            "Você pode restringir o acesso a um site do SharePoint Online usando Barreiras de Informações",
+            "Você pode impedir o compartilhamento de um arquivo com outro usuário no Microsoft Teams usando Barreiras de Informações"
+        ],
+        "correct": [
+            "false",
+            "true",
+            "true"
+        ]
+    },
+    {
+        "id": "137",
+        "exam": "SC900",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "options",
+        "header": "Qual portal contém o catálogo de soluções?",
+        "options": [
+            "Portal de conformidade do Microsoft Purview",
+            "Portal do Microsoft 365 Defender",
+            "Centro de administração do Microsoft 365",
+            "Centro de administração do Microsoft 365 Apps"
+        ],
+        "correct": [
+            "Portal de conformidade do Microsoft Purview"
+        ]
+    }
+]
