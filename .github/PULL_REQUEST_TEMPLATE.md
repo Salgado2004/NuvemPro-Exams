@@ -1,11 +1,17 @@
 # New Pull Request
 > Provide a general summary of your changes
 
+- [ ] Bug fixing
+- [ ] New features
+- [ ] New questions/exams
+- [ ] Updating questions/exams
+
 ## What did you do?
 > Describe your changes
 
 ## Issue ticket number (if exists)
 > Reference to open issue
+- 
 
 ## Checklist:
 
