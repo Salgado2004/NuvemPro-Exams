@@ -46,6 +46,5 @@
       {"name":"Descrever os recursos das soluções de segurança da Microsoft", "min": 35, "max": 40},
       {"name":"Descrever os recursos das soluções de conformidade da Microsoft", "min": 20, "max": 25}
     ]
-  },
-  {}
+  }
 ]
