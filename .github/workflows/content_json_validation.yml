@@ -3,12 +3,10 @@ name: Content JSON Validation
 on:
   pull_request:
     branches: [ master ]
-    types: [opened, reopened]
-    paths:
-        - '**.json'
+  workflow_dispatch:
 
 jobs:
-  validate-config:
+  validate-jsons:
     runs-on: ubuntu-latest
     
     steps:
@@ -18,13 +16,13 @@ jobs:
     - name: validate exams
       uses: ammarlakis/action-ajv@master
       with:
-        schema: schemas/exams.squema.json
+        schema: .github/schemas/exams.schema.json
         data: content/exams.json
         allErrors: true
 
     - name: validate questions
       uses: ammarlakis/action-ajv@master
       with:
-        schema: schemas/questions.squema.json
-        data: content/**.json !exams.json
+        schema: .github/schemas/questions.schema.json
+        data: content/*/*.json
         allErrors: true 
