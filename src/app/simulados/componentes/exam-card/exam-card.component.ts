@@ -11,14 +11,14 @@ export class ExamCardComponent {
   questions: number;
 
   ngOnInit(){
-    this.questions = this.exam.numeroQuestoes; 
+    this.questions = this.exam.questions; 
   }
 
   validateQuestions() {
     if (this.questions <= 0 || this.questions == null){
       this.questions = 1;
-    } else if (this.questions > this.exam.numeroQuestoes){
-      this.questions = this.exam.numeroQuestoes;
+    } else if (this.questions > this.exam.questions){
+      this.questions = this.exam.questions;
     }
   }
 

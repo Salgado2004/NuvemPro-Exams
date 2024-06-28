@@ -20,8 +20,8 @@ export class ExamComponent {
     this.questionNumber = Number.parseInt(this.activatedRoute.snapshot.paramMap.get("questions"));
     this.query.getExam(this.examName).then((data:Simulado) => {
       this.exam = data;
-      if(this.questionNumber > this.exam.numeroQuestoes){
-        this.questionNumber = this.exam.numeroQuestoes;
+      if(this.questionNumber > this.exam.questions){
+        this.questionNumber = this.exam.questions;
       }
       if (this.questionNumber < 1){
         this.questionNumber = 1;
