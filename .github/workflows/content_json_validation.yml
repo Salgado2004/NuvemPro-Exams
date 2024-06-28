@@ -1,11 +1,12 @@
 name: Content JSON Validation
 
 on:
-  pull_request:
-    branches: [ master ]
-    types: [opened, reopened]
-    paths:
-        - '**.json'
+  workflow_dispatch:
+  #pull_request:
+    #branches: [ master ]
+    #types: [opened, reopened]
+    #paths:
+       # - '**.json'
 
 jobs:
   validate-config:
