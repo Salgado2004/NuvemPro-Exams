@@ -1,13 +1,15 @@
+> See also: [Portuguese 🇧🇷](/translations/README_PT.md)
+
 # CertCloud Exams
-Um projeto para auxiliar no estudo e conquista de certificações das principais plataformas de nuvem (Azure, AWS, GCP), disponibilizando simulados das provas.
+A project to assist in the study and achievement of certifications from popular cloud platforms (Azure, AWS, GCP), providing practice exams.
 
-## Tecnologias utilizadas
+## Technologies used
 
-Esse projeto foi desenvolvido com:
+This project was developed with:
 - _[Angular CLI](https://github.com/angular/angular-cli) versão 17.1.3_
 - _[Node](https://nodejs.org/en) versão 20.11.0_
 
-## Contribuidores
+## Contributors
 <a href="https://github.com/Salgado2004/CertCloud-Exams/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Salgado2004/CertCloud-Exams" />
 </a>
