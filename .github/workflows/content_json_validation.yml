@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Test load jsons
-      run: cat content/exams.json
+      run: cat schemas/exams.squema.json
 
     - name: validate exams
       uses: ammarlakis/action-ajv@master
