@@ -4,8 +4,6 @@ on:
   pull_request:
     branches:
     - 'master'
-    paths:
-    - '**.json'
   workflow_dispatch:
 
 jobs:
@@ -15,6 +13,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+
+    - name: Test load jsons
+      run: cat content/exams.json
 
     - name: validate exams
       uses: ammarlakis/action-ajv@master
