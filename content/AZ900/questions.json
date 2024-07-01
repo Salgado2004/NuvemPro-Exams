@@ -66,5 +66,21 @@
     "correct": [
       "Configurar a solução SaaS."
     ]
+  },
+  {
+      "id": "005",
+      "exam": "AZ900",
+      "domain": "Descrever os conceitos da nuvem",
+      "type": "dragdrop",
+      "header": "Qual solução de implantação em nuvem é usada para máquinas virtuais do Azure e bancos de dados SQL do Azure? Para responder, arraste e solte as opções apropriadas na área de resposta.",
+      "body": "NOTA: Cada correspondência correta vale um ponto.",
+      "options": [
+          "Máquinas Virtuais do Azure",
+          "Bancos de Dados SQL do Azure"
+      ],
+      "correct": [
+          "Infraestrutura como Serviço (IaaS)",
+          "Plataforma como Serviço (PaaS)"
+      ]
   }
 ]

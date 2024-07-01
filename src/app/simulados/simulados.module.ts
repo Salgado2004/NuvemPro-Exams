@@ -24,6 +24,7 @@ import { MultipleQuestionComponent } from './componentes/questoes/multiple-quest
 import { OptionsQuestionComponent } from './componentes/questoes/options-question/options-question.component';
 import { SelectQuestionComponent } from './componentes/questoes/select-question/select-question.component';
 import { TrueFalseQuestionComponent } from './componentes/questoes/true-false-question/true-false-question.component';
+import { DragDropQuestionComponent } from './componentes/questoes/drag-drop-question/drag-drop-question.component';
 
 import { LoaderComponent } from './componentes/loader/loader.component';
 import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
@@ -51,6 +52,7 @@ import { MatSelectModule } from '@angular/material/select';
     OptionsQuestionComponent,
     SelectQuestionComponent,
     TrueFalseQuestionComponent,
+    DragDropQuestionComponent,
     DinamicLoaderDirective
   ],
   imports: [

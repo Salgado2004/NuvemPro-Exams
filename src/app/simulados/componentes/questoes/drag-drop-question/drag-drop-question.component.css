@@ -1,0 +1,66 @@
+.drag-drop-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resources{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 35%;
+    padding: 8px;
+}
+
+.resource{
+    display: inline;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #83878b;
+    padding: 8px 12px;
+    background-color: var(--mdc-filled-text-field-container-color);
+    font-size: 11pt;
+    cursor: grab;
+    z-index: 1;
+    position: relative;
+}
+
+.answer-area{
+    width: 65%;
+    padding: 8px;
+}
+
+.answer-area h5{
+    color: #83878b;
+}
+
+.option{
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.option > div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid #83878b;
+    margin-left: 8px;
+    width: 60%;
+    min-height: 35px;
+}
+
+.disabled{
+    background-color: transparent;
+    color: #83878b;
+}
+
+@media (max-width: 760px) {
+    .resources{
+        width: 100%;
+    }
+
+    .answer-area{
+        width: 100%;
+    }
+    
+}
+
