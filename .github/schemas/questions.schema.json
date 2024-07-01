@@ -11,7 +11,7 @@
                 "type": "string"
             },
             "type": {
-                "enum": ["options","multiple","truefalse", "select"]
+                "enum": ["options","multiple","truefalse", "select", "dragdrop"]
             },
             "domain": {
                 "type": "string",
