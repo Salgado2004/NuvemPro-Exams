@@ -267,8 +267,8 @@
     {
         "id": "016",
         "exam": "SC900",
-        "domain": "",
-        "type": "truefalse",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "dragdrop",
         "header": "Você está avaliando a pontuação de conformidade no Compliance Manager. Combine as subcategorias de ações de pontuação de conformidade com as ações apropriadas. Para responder, arraste a subcategoria de ação apropriada da coluna à esquerda para sua ação à direita. Cada subcategoria de ação pode ser usada uma vez, mais de uma vez ou nunca ser usada.",
         "body": "NOTA: Cada correspondência correta vale um ponto.",
         "options": [
@@ -654,8 +654,8 @@
     {
         "id": "038",
         "exam": "SC900",
-        "domain": "",
-        "type": "truefalse",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "dragdrop",
         "header": "Combine o serviço de rede do Azure com a descrição apropriada. Para responder, arraste o serviço apropriado da coluna à esquerda até sua descrição à direita. Cada serviço pode ser usado uma vez, mais de uma vez ou nunca ser usado.",
         "body": "NOTA: Cada correspondência correta vale um ponto.",
         "options": [
@@ -1374,8 +1374,8 @@
     {
         "id": "080",
         "exam": "SC900",
-        "domain": "",
-        "type": "truefalse",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "dragdrop",
         "header": "Combine a etapa do fluxo de trabalho de gerenciamento de riscos internos do Microsoft 365 com a tarefa apropriada. Para responder, arraste a etapa apropriada da coluna à esquerda para sua tarefa à direita. Cada etapa pode ser usada uma vez, mais de uma vez ou nunca ser usada.",
         "body": "NOTA: Cada correspondência correta vale um ponto.",
         "options": [
@@ -1509,8 +1509,8 @@
     {
         "id": "088",
         "exam": "SC900",
-        "domain": "",
-        "type": "truefalse",
+        "domain": "Descrever os recursos das soluções de segurança da Microsoft",
+        "type": "dragdrop",
         "header": "Combine o recurso Microsoft Defender para Office 365 com a descrição correta. Para responder, arraste o recurso apropriado da coluna à esquerda para sua descrição à direita. Cada recurso pode ser usado uma vez, mais de uma vez ou nunca ser usado.",
         "body": "NOTA: Cada correspondência correta vale um ponto.",
         "options": [
@@ -1609,8 +1609,8 @@
     {
         "id": "094",
         "exam": "SC900",
-        "domain": "",
-        "type": "truefalse",
+        "domain": "Descrever os conceitos de segurança, conformidade e identidade",
+        "type": "dragdrop",
         "header": "Combine os pilares do Zero Trust com os requisitos apropriados. Para responder, arraste o pilar apropriado da coluna à esquerda para o seu requisito à direita. Cada pilar pode ser usado uma vez, mais de uma vez ou nunca ser usado.",
         "body": "NOTA: Cada correspondência correta vale um ponto.",
         "options": [
@@ -1627,8 +1627,8 @@
     {
         "id": "095",
         "exam": "SC900",
-        "domain": "",
-        "type": "truefalse",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "dragdrop",
         "header": "Corresponda os tipos de ações de pontuação de conformidade às tarefas apropriadas. Para responder, arraste o tipo de ação apropriado da coluna à esquerda para sua tarefa à direita. Cada tipo pode ser usado uma vez, mais de uma vez ou nunca.",
         "body": "NOTA: Cada correspondência correta vale um ponto.",
         "options": [
@@ -1982,8 +1982,8 @@
     {
         "id": "116",
         "exam": "SC900",
-        "domain": "",
-        "type": "truefalse",
+        "domain": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "type": "dragdrop",
         "header": "Corresponda a etapa do fluxo de trabalho do Microsoft Purview Insider Risk Management à tarefa apropriada. Para responder, arraste a tarefa apropriada. passe da coluna à esquerda para sua tarefa à direita. Cada etapa pode ser usada uma vez, mais de uma vez ou nunca.",
         "body": "NOTA: Cada correspondência correta vale um ponto.",
         "options": [

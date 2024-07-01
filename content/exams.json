@@ -2,7 +2,7 @@
   {
     "name": "AZ900",
     "fullname": "Azure Fundamentals",
-    "questions": 4,
+    "questions": 5,
     "image": "assets/badges/AZ900-badge.png",
     "domains":[
       {"name":"Descrever os conceitos da nuvem", "min": 25, "max": 30},
@@ -38,7 +38,7 @@
   {
     "name": "SC900",
     "fullname": "Security, Compliance, and Identity Fundamentals",
-    "questions": 129,
+    "questions": 137,
     "image": "assets/badges/SC900-badge.png",
     "domains": [
       {"name":"Descrever os conceitos de segurança, conformidade e identidade", "min": 10, "max": 15},

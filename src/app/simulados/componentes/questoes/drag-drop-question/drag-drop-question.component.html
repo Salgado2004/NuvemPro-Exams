@@ -1,0 +1,20 @@
+<p>{{ body }}</p>
+<section #tooltip="matTooltip" matTooltip="Faça as correspondências" [matTooltipDisabled]="!alert">
+    <div class="drag-drop-container">
+        <div class="resources" (drop)="drop($event)" (dragover)="allowDrop($event)">
+            <div *ngFor="let resource of correct; let i = index" [id]="'ans-'+i" class="resource" [draggable]="active"
+                (dragstart)="drag($event)">{{ resource }}</div>
+        </div>
+        <div class="answer-area">
+            <h5>Área de resposta:</h5>
+            @for (option of options; track option; let id = $index) {
+            <div class="option">
+                <p>{{ option }}</p>
+                <div (drop)="drop($event)" (dragover)="allowDrop($event)" [ariaLabel]="id"></div>
+            </div>
+            }
+        </div>
+    </div>
+    <button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
+    <button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
+</section>

@@ -5,6 +5,7 @@ import { MultipleQuestionComponent } from '../questoes/multiple-question/multipl
 import { OptionsQuestionComponent } from '../questoes/options-question/options-question.component';
 import { SelectQuestionComponent } from '../questoes/select-question/select-question.component';
 import { TrueFalseQuestionComponent } from '../questoes/true-false-question/true-false-question.component';
+import { DragDropQuestionComponent } from '../questoes/drag-drop-question/drag-drop-question.component';
 import { QuestionStructure } from '../../utils/question-structure';
 import { SimuladoEventsService } from '../../utils/simulado-events.service';
 
@@ -32,7 +33,7 @@ export class QuestionCardComponent {
 
   loadQuestionComponent() {
     this.questionType = this.questionData.type;
-    if(this.questionType != "truefalse"){
+    if(this.questionType != "truefalse" && this.questionType != "dragdrop"){
       this.questionData.options = this.questionData.options.sort(() => Math.random() - Math.random());
     }
     this.dynamicHost.view.clear();
@@ -42,6 +43,7 @@ export class QuestionCardComponent {
       'options': OptionsQuestionComponent,
       'select': SelectQuestionComponent,
       'truefalse': TrueFalseQuestionComponent,
+      'dragdrop': DragDropQuestionComponent
     };
     const questionComponentType = questionComponentMap[this.questionType];
 
