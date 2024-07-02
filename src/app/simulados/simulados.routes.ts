@@ -4,7 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ExamComponent } from './pages/exam/exam.component';
 
 export const routes: Routes = [
-        {path: '', redirectTo: 'home', pathMatch: 'full'},
+        {path: '', redirectTo: '/simulados/home', pathMatch: 'full'},
         {path: 'home' , component: HomeComponent},
         {path: 'exam/:exam/:questions', component: ExamComponent}
 ];

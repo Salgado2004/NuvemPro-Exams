@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 import { NgFor } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
-import { SimuladosRoutingModule } from './simulados.route';
+import { SimuladosRoutingModule } from './simulados.routes';
 
 import { QueryQuestionsService } from './utils/query-questions.service';
 import { QueryExamsService } from './utils/query-exams.service';
