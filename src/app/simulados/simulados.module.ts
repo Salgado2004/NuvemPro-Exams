@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterModule  } from '@angular/router';
 import { NgFor } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
@@ -61,6 +61,7 @@ import { MatSelectModule } from '@angular/material/select';
     CommonModule,
     SimuladosRoutingModule,
     RouterLink,
+    RouterModule,
     NgFor,
     HttpClientModule,
     FormsModule,
