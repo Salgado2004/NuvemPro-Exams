@@ -1,48 +1,39 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterModule  } from '@angular/router';
-import { NgFor } from '@angular/common';
+import { RouterLink, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 import { SimuladosRoutingModule } from './simulados.routes';
 
-import { QueryQuestionsService } from './utils/query-questions.service';
-import { QueryExamsService } from './utils/query-exams.service';
-
+/* Componentes */
 import { HomeComponent } from './pages/home/home.component';
 import { ExamComponent } from './pages/exam/exam.component';
-import { HeaderComponent } from './componentes/header/header.component';
-import { SidenavComponent } from './componentes/sidenav/sidenav.component';
-import { ExamCardComponent } from './componentes/exam-card/exam-card.component';
-import { ExamSummaryComponent } from './componentes/exam-summary/exam-summary.component';
-import { DomainSummaryComponent } from './componentes/domain-summary/domain-summary.component';
-import { ListSimuladosComponent} from './componentes/list-simulados/list-simulados.component';
-import { QuestionsContainerComponent } from './componentes/questions-container/questions-container.component';
-import { QuestionCardComponent } from './componentes/question-card/question-card.component';
-import { QuestionSummaryComponent } from './componentes/question-summary/question-summary.component';
+import { ExamCardComponent } from './components/exam-card/exam-card.component';
+import { ExamSummaryComponent } from './components/exam-summary/exam-summary.component';
+import { DomainSummaryComponent } from './components/domain-summary/domain-summary.component';
+import { ListSimuladosComponent } from './components/list-simulados/list-simulados.component';
+import { QuestionsContainerComponent } from './components/questions-container/questions-container.component';
+import { QuestionCardComponent } from './components/question-card/question-card.component';
+import { QuestionSummaryComponent } from './components/question-summary/question-summary.component';
 
-import { MultipleQuestionComponent } from './componentes/questoes/multiple-question/multiple-question.component';
-import { OptionsQuestionComponent } from './componentes/questoes/options-question/options-question.component';
-import { SelectQuestionComponent } from './componentes/questoes/select-question/select-question.component';
-import { TrueFalseQuestionComponent } from './componentes/questoes/true-false-question/true-false-question.component';
-import { DragDropQuestionComponent } from './componentes/questoes/drag-drop-question/drag-drop-question.component';
+/* Questões */
+import { SelectQuestionComponent } from './components/questoes/select-question/select-question.component';
+import { OptionsQuestionComponent } from './components/questoes/options-question/options-question.component';
+import { MultipleQuestionComponent } from './components/questoes/multiple-question/multiple-question.component';
+import { DragDropQuestionComponent } from './components/questoes/drag-drop-question/drag-drop-question.component';
+import { TrueFalseQuestionComponent } from './components/questoes/true-false-question/true-false-question.component';
 
-import { LoaderComponent } from './componentes/loader/loader.component';
-import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
+/* Utils */
 import { SummaryPipe } from './utils/summary.pipe';
-
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatRadioModule } from '@angular/material/radio';
-import { MatSelectModule } from '@angular/material/select';
+import { QueryExamsService } from './utils/query-exams.service';
+import { QueryQuestionsService } from './utils/query-questions.service';
+import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
 
 @NgModule({
   declarations: [
     HomeComponent,
     ExamComponent,
-    HeaderComponent,
-    SidenavComponent,
     ExamCardComponent,
     ExamSummaryComponent,
     QuestionsContainerComponent,
@@ -59,20 +50,14 @@ import { MatSelectModule } from '@angular/material/select';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     SimuladosRoutingModule,
     RouterLink,
     RouterModule,
-    NgFor,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    SummaryPipe,
-    LoaderComponent,
-    MatExpansionModule,
-    MatTooltipModule,
-    MatCheckboxModule,
-    MatRadioModule,
-    MatSelectModule
+    SummaryPipe
   ],
   providers: [
     QueryQuestionsService,
