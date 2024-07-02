@@ -1,0 +1,112 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  background-color: #18202f;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  border-bottom: 2px solid #319bf5;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+.menu{
+  display: none;
+  height: auto;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  outline: none;
+  float: right;
+}
+
+.menu img{
+  width: 36px;
+}
+
+.menu:hover {
+  background-color: #555;
+}
+
+.contribute {
+  background-color: #2f3643;
+  color: #fff;
+  padding: 16px 20px;
+  margin: 6px;
+  border-radius: 10px;
+}
+
+.contribute a {
+  display: flex;
+  align-items: center;
+  color: #319bf5;
+  text-decoration: none;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.contribute a img{
+  max-height: 20px;
+  margin: 4px;
+}
+
+.contribute a:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  :host {
+    width: 100%;
+  }
+
+  .contribute {
+    position: absolute;
+    top: 25%;
+    width: 75%;
+    box-shadow: 2px 2px 5px #319bf5;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .sidebar {
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
