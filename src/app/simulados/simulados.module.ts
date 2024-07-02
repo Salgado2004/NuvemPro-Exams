@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 import { NgFor } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
-import { SimuladosRoutingModule } from './simulados.route';
+import { SimuladosRoutingModule } from './simulados.routes';
 
 import { QueryQuestionsService } from './utils/query-questions.service';
 import { QueryExamsService } from './utils/query-exams.service';
@@ -12,6 +12,7 @@ import { QueryExamsService } from './utils/query-exams.service';
 import { HomeComponent } from './pages/home/home.component';
 import { ExamComponent } from './pages/exam/exam.component';
 import { HeaderComponent } from './componentes/header/header.component';
+import { SidenavComponent } from './componentes/sidenav/sidenav.component';
 import { ExamCardComponent } from './componentes/exam-card/exam-card.component';
 import { ExamSummaryComponent } from './componentes/exam-summary/exam-summary.component';
 import { DomainSummaryComponent } from './componentes/domain-summary/domain-summary.component';
@@ -41,6 +42,7 @@ import { MatSelectModule } from '@angular/material/select';
     HomeComponent,
     ExamComponent,
     HeaderComponent,
+    SidenavComponent,
     ExamCardComponent,
     ExamSummaryComponent,
     QuestionsContainerComponent,
