@@ -6,3 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+}

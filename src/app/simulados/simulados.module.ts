@@ -12,6 +12,7 @@ import { QueryExamsService } from './utils/query-exams.service';
 import { HomeComponent } from './pages/home/home.component';
 import { ExamComponent } from './pages/exam/exam.component';
 import { HeaderComponent } from './componentes/header/header.component';
+import { SidenavComponent } from './componentes/sidenav/sidenav.component';
 import { ExamCardComponent } from './componentes/exam-card/exam-card.component';
 import { ExamSummaryComponent } from './componentes/exam-summary/exam-summary.component';
 import { DomainSummaryComponent } from './componentes/domain-summary/domain-summary.component';
@@ -41,6 +42,7 @@ import { MatSelectModule } from '@angular/material/select';
     HomeComponent,
     ExamComponent,
     HeaderComponent,
+    SidenavComponent,
     ExamCardComponent,
     ExamSummaryComponent,
     QuestionsContainerComponent,

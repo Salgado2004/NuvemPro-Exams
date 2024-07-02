@@ -1,17 +1,23 @@
 :host{
+    width: 80%;
+    max-height: 90vh;
     display: block;
     box-sizing: border-box;
-    padding: 12px;
+    overflow-y: scroll;
 }
 
 .simulados{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 @media (max-width: 590px) {
+    :host{
+        width: 100%;
+    }
+
     .simulados{
-        justify-content: center;
+        padding: 12px;
     }
 }
