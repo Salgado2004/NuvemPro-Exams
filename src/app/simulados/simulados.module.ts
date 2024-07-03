@@ -1,21 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterLink, RouterModule } from '@angular/router';
 import { SimuladosRoutingModule } from './simulados.routes';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-/* Componentes */
+/* Páginas */
 import { HomeComponent } from './pages/home/home.component';
 import { ExamComponent } from './pages/exam/exam.component';
+
+/* Componentes */
 import { ExamCardComponent } from './components/exam-card/exam-card.component';
 import { ExamSummaryComponent } from './components/exam-summary/exam-summary.component';
+import { QuestionCardComponent } from './components/question-card/question-card.component';
 import { DomainSummaryComponent } from './components/domain-summary/domain-summary.component';
 import { ListSimuladosComponent } from './components/list-simulados/list-simulados.component';
-import { QuestionsContainerComponent } from './components/questions-container/questions-container.component';
-import { QuestionCardComponent } from './components/question-card/question-card.component';
 import { QuestionSummaryComponent } from './components/question-summary/question-summary.component';
+import { QuestionsContainerComponent } from './components/questions-container/questions-container.component';
 
 /* Questões */
 import { SelectQuestionComponent } from './components/questoes/select-question/select-question.component';

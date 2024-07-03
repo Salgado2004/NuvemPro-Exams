@@ -24,6 +24,11 @@
     position: relative;
 }
 
+.focused{
+    border: 2px solid #319bf5;
+    color: #83878b;
+}
+
 .answer-area{
     width: 65%;
     padding: 8px;

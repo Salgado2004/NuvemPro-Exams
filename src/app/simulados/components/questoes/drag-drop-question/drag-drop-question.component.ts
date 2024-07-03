@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { QuestionSummary } from '../../../utils/question-summary';
 import { QuestionStructure } from '../../../utils/question-structure';
 import { QuestionInterface } from '../../../utils/question-interface';
-import { QuestionSummary } from '../../../utils/question-summary';
 import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 
 @Component({
@@ -18,10 +18,12 @@ export class DragDropQuestionComponent implements QuestionStructure {
   correct: string[];
   answers: string[] = [];
   showNext: boolean;
+  dataTransfer: string;
   active: boolean = true;
   alert: boolean = true;
   summary: QuestionSummary = new Object() as QuestionSummary;
 
+  /* Builds the question data */
   build(data: QuestionInterface, index: number, next: boolean): void {
     this.id = "question" + index;
     this.header = data.header;
@@ -36,24 +38,35 @@ export class DragDropQuestionComponent implements QuestionStructure {
     ev.preventDefault();
   }
 
-  drag(ev: any): void {
-    if (this.active) ev.dataTransfer.setData("id", ev.target.id);
+  /* Set the selected element's id in the data transfer attribute. */
+  setData(ev: any): void {
+    if (this.active && this.dataTransfer == null) {
+      this.dataTransfer = ev.target.id;
+      ev.target.classList.add("focused");
+    }
   }
 
-  drop(ev: any): void {
+  /* Use the data transfer attribute to append the element as a child in the target */
+  appendChild(ev: any): void {
     ev.preventDefault();
-    const data = "#" + ev.dataTransfer.getData("id");
-    const resource = document.querySelector(data);
-    const target = ev.target.getAttribute("aria-label");
-    ev.target.appendChild(resource);
-    this.answers[target] = resource.textContent;
+    if (this.dataTransfer != null) {
+      const data = "#" + this.dataTransfer;
+      const resource = document.querySelector(data);
+      const target = ev.target.getAttribute("aria-label");
+      ev.target.appendChild(resource);
+      resource.classList.remove("focused");
+      this.answers[target] = resource.textContent;
+      this.dataTransfer = null;
+    }
   }
 
+  /* Check if all the options were answered */
   validate(): boolean {
     return this.answers.length == this.correct.length;
   }
 
-  getSummary(){
+  /* Create the summary of the question */
+  getSummary() {
     this.summary.header = this.header;
     this.summary.body = this.body;
     this.summary.domain = this.domain;
@@ -64,6 +77,7 @@ export class DragDropQuestionComponent implements QuestionStructure {
     return this.summary;
   }
 
+  /* Verify if the answers are correct and show in screen */
   verifyAnswer(): void {
     if (this.validate()) {
       this.active = false;
@@ -81,16 +95,18 @@ export class DragDropQuestionComponent implements QuestionStructure {
     }
   }
 
+  /* Calculate the score of the question */
   score(): number {
     let score = 0;
     this.correct.forEach((option, index) => {
       if (option == this.answers[index]) score++;
     });
-    return score/this.correct.length;
+    return score / this.correct.length;
   }
 
-  nextQuestion():void{
-    if(this.validate()){
+  /* Go to the next question */
+  nextQuestion(): void {
+    if (this.validate()) {
       SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
     }
   }
