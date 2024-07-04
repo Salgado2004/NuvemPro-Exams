@@ -1,14 +1,15 @@
+import { lastValueFrom } from 'rxjs';
+import { Simulado } from './simulado';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Simulado } from './simulado';
 import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QueryExamsService {
-  private pathname = environment.endpoint + 'exams.json';
   private simulados: Simulado[];
+  private pathname = environment.endpoint + 'exams.json';
 
   constructor(private httpClient: HttpClient ) { }
 
@@ -18,7 +19,7 @@ export class QueryExamsService {
 
   async getAvailableExams(){
     try{
-      const data: any = await this.loadExamFile().toPromise();
+      const data: any = await lastValueFrom(this.loadExamFile());
       this.simulados = data;
       return this.simulados;
     }catch(error){
@@ -28,7 +29,7 @@ export class QueryExamsService {
 
   async getExam(examName:string){
     try{
-      const data: any = await this.loadExamFile().toPromise();
+      const data: any = await lastValueFrom(this.loadExamFile());
       this.simulados = data;
       for (const exam of this.simulados) {
         if (exam.name == examName) {

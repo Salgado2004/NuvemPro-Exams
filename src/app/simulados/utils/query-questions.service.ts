@@ -1,3 +1,4 @@
+import { lastValueFrom } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { QuestionInterface } from './question-interface';
@@ -7,8 +8,8 @@ import { environment } from '../../../environments/environment';
   providedIn: 'root'
 })
 export class QueryQuestionsService {
+  private questions: QuestionInterface[];
   private root: string = environment.endpoint;
-  questions: QuestionInterface[];
 
   constructor(private httpClient: HttpClient ) { }
 
@@ -19,7 +20,7 @@ export class QueryQuestionsService {
   async getQuestions(exam: string) {
     try{
       let pathname = this.root + exam + '/questions.json';
-      const data: any = await this.loadQuestionFile(pathname).toPromise();
+      const data: any = await lastValueFrom(this.loadQuestionFile(pathname));
       this.questions = data;
       return this.questions;
     }catch(error){

@@ -4,9 +4,9 @@
     display: flex;
     align-items: center;
     margin: 12px;
-    cursor: pointer;
     outline: none;
     border-radius: 15px;
+    user-select: none;
 }
 
 .option label{

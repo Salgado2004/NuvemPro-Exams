@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+}
+
+section{
+    width: 80%;
+    height: 90vh;
+    padding: 24px;
+    overflow-y: scroll;
+}
+
+section h1{
+    margin-bottom: 24px;
+    margin-left: 12px;
+    font-size: 28pt;
+    color: #319bf5;
+}
+
+section h2{
+    margin: 12px;
+    color: #319bf5;
+}
+
+section p{
+    text-align: justify;
+    margin: 12px;
+    width: 75%;
+    color: #2f3643;
+}
+
+section p a{
+    color: #319bf5;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+section p a:hover{
+    text-decoration: underline;
+}
+
+.swiper {
+    margin-left: 12px;
+    width: 75%;
+    border: 1px solid #83878b9c;
+    box-shadow: 2px 2px 5px #2f3643;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+@media (max-width: 700px){
+    section{
+        width: 100%;
+    }
+
+    section h1{
+        font-size: 24pt;
+    }
+
+    section p{
+        width: 90%;
+    }
+
+    .swiper {
+        margin-left: 6px;
+        width: 95%;
+    }
+}
