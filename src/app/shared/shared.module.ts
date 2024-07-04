@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 /* Páginas */
+import { HomeComponent } from './pages/home/home.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 /* Angular material */
@@ -21,7 +22,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
   declarations: [
     HeaderComponent,
     SidenavComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
