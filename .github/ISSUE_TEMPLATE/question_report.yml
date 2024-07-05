@@ -1,0 +1,35 @@
+name: Question Report
+title: Report - <Short description>
+description: "Report of question content (invalid, incorrect, etc.)"
+labels: ["question", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Thanks for taking the time to fill out this question report!"
+  - type: input
+    attributes:
+      label: Question Reference
+      description: Paste the copied reference of the question
+      placeholder: Question reference
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: "Why you're filling this report?"
+      description: Select one or more
+      options:
+        - label: The question is incorrect
+        - label: The question is outdated
+        - label: The question is not part of the exam content
+        - label: Technical problems
+        - label: Other
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "If you checked Technical problems and/or Other, please explain:"
+  - type: textarea
+    attributes:
+      label: "(Optional) How would you improve this question?"
+    
+    
