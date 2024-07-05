@@ -1,8 +1,9 @@
 <nav>
     <span id="index">Questão {{ questionIndex }} de {{ totalQuestions }}</span>
-    <button id="endExam" (click)="finishExam()">Finalizar Simulado</button>
+    <div>
+        <button mat-icon-button (click)="reportQuestion()"><mat-icon>report</mat-icon></button>
+        <button id="endExam" (click)="finishExam()">Finalizar Simulado</button>
+    </div>
 </nav>
 <p class="header">{{ questionData.header }}</p>
 <ng-template appDinamicLoader></ng-template>
-
-

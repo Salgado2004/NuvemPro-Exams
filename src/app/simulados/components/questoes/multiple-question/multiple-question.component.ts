@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { QuestionStructure } from '../../../utils/question-structure';
-import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 import { QuestionSummary } from '../../../utils/question-summary';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { QuestionStructure } from '../../../utils/question-structure';
 import { QuestionInterface } from '../../../utils/question-interface';
+import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 
 @Component({
   selector: 'app-multiple-question',
   templateUrl: './multiple-question.component.html',
-  styleUrls: ['./multiple-question.component.css', '../questao.css']
+  styleUrls: ['./multiple-question.component.css', '../questao.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MultipleQuestionComponent implements QuestionStructure {
   id: string;
@@ -23,6 +24,7 @@ export class MultipleQuestionComponent implements QuestionStructure {
   alert:boolean = true;
   summary: QuestionSummary = new Object() as QuestionSummary;
 
+  /* Initializes the formGroup */
   ngOnInit(){
     this.answers = new FormGroup({});
     this.options.forEach((opt, index) => {
@@ -34,6 +36,7 @@ export class MultipleQuestionComponent implements QuestionStructure {
     });
   }
 
+  /* Acts as the constructor of the component, setting the question structure attributes */
   build(data: QuestionInterface, index: number, next: boolean): void {
     this.id = "question"+index;
     this.header = data.header;
@@ -44,6 +47,7 @@ export class MultipleQuestionComponent implements QuestionStructure {
     this.showNext = next;
   }
 
+  /* Iterates the answers formGroup and create a string array with the checked options */
   getAnswers(){
     const answers = [];
     this.options.forEach((opt, index) => {
@@ -53,6 +57,7 @@ export class MultipleQuestionComponent implements QuestionStructure {
     return answers;
   }
   
+  /* Calculates the score of the question */
   score(){
     let total=0;
     this.options.forEach((opt, index) => {
@@ -65,7 +70,8 @@ export class MultipleQuestionComponent implements QuestionStructure {
     return total/this.options.length;
   }
   
-  getSummary(){
+  /* Builds the question summary */
+  getSummary(): QuestionSummary{
     this.summary.header = this.header;
     this.summary.body = this.body;
     this.summary.domain = this.domain;
@@ -76,6 +82,7 @@ export class MultipleQuestionComponent implements QuestionStructure {
     return this.summary;
   }
 
+  /* Validates if all the options were answered */
   validate(){
     this.options.forEach((opt, index) => {
       if(this.answers.get('answer'+index)?.value){
@@ -84,6 +91,7 @@ export class MultipleQuestionComponent implements QuestionStructure {
     });
   }
   
+  /* Verify if the answers are correct and show in screen */
   verifyAnswer() {
     for (let i = 0; i < this.options.length; i++){
       if(this.getAnswers()[i]){
@@ -97,6 +105,7 @@ export class MultipleQuestionComponent implements QuestionStructure {
     this.active = false;
   }
   
+  /* Go to the next question */
   nextQuestion():void{
     SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
   }

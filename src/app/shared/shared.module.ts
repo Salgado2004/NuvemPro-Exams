@@ -6,14 +6,18 @@ import { RouterModule } from '@angular/router';
 import { LoaderComponent } from './components/loader/loader.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { ReportDialogComponent } from './components/report-dialog/report-dialog.component';
 
 /* Páginas */
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 /* Angular material */
+import { MatIconModule } from '@angular/material/icon';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -23,7 +27,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     HeaderComponent,
     SidenavComponent,
     NotFoundPageComponent,
-    HomeComponent
+    HomeComponent,
+    ReportDialogComponent
   ],
   imports: [
     CommonModule,
@@ -33,7 +38,10 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatTooltipModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatIconModule
   ],
   exports: [
     HeaderComponent,
@@ -43,7 +51,10 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatTooltipModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatIconModule
   ]
 })
 export class SharedModule { }

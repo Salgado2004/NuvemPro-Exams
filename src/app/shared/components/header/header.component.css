@@ -1,13 +1,20 @@
 :host{
     background-color: #080e19;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     box-sizing: border-box;
     max-height: 10vh;
 }
 
 h1{
     color: #fdffff;
-    font-weight: 400;
-    font-size: 21pt;
-    padding: 16px;
+    font-weight: 500;
+    font-size: 22pt;
+    margin: 6px;
+}
+
+img{
+    margin: 12px;
+    height: 8vh;
 }
