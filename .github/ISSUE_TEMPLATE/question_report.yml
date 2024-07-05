@@ -1,5 +1,4 @@
 name: Question Report
-about: Report of question content (invalid, incorrect, etc.)
 title: Report - <Short description>
 labels: ["question", "good first issue"]
 body:
