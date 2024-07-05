@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "simuladosAzure": {
+    "nuvemProExams": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -27,6 +27,7 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/swiper/swiper-bundle.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -71,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "simuladosAzure:build:production"
+              "buildTarget": "nuvemProExams:build:production"
             },
             "development": {
-              "buildTarget": "simuladosAzure:build:development"
+              "buildTarget": "nuvemProExams:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "simuladosAzure:build"
+            "buildTarget": "nuvemProExams:build"
           }
         },
         "test": {
