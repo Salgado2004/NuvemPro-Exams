@@ -1,4 +1,4 @@
-:host{
+:host {
     display: block;
     margin: 8px;
     padding: 15px;
@@ -7,27 +7,32 @@
     box-shadow: 2px 2px 5px #ddeefd;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 8px;
 }
 
-.header{
+nav div{
+    display: flex;
+    align-items: center;
+}
+
+.header {
     margin: 8px;
     margin-left: 0;
     text-align: justify;
 }
 
-#index{
+#index {
     padding: 6px 8px;
     background-color: #dbf5e9;
     color: #21c177;
     border-radius: 10px;
 }
 
-#endExam{
+#endExam {
     font-family: 'Inter', sans-serif;
     background-color: #e35b59;
     color: #fff;
@@ -36,4 +41,8 @@ nav{
     margin-left: 15px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.mat-icon{
+    color: #83878b;
 }
