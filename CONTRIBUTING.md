@@ -1,7 +1,7 @@
 > See also: [Portuguese 🇧🇷](/translations/CONTRIBUTING_PT.md)
 
 # Contribuiting
-> The easiest way to contribute is by [opening an issue](https://github.com/Salgado2004/CertCloud-Exams/issues/new/choose). No contribution is too small - we encourage you to report any typos/bugs, unclear questions or feature requests.
+> The easiest way to contribute is by [opening an issue](https://github.com/Salgado2004/NuvemPro-Exams/issues/new/choose). No contribution is too small - we encourage you to report any typos/bugs, unclear questions or feature requests.
 
 - [Setting up the project](#setting-up-the-project)
   - [Local setup](#local-setup)
@@ -16,7 +16,7 @@
 
 ### Local setup
 
-- [Fork](https://github.com/Salgado2004/CertCloud-Exams/fork) the repository
+- [Fork](https://github.com/Salgado2004/NuvemPro-Exams/fork) the repository
 - Install the project dependencies `npm install`
 - Install angular cli `npm install -g @angular/cli`
 - In the project root, run the Angular project `ng serve --open`
@@ -26,7 +26,7 @@
 
 ### Adding new question
 
-The questions are stored in the [content/](https://github.com/Salgado2004/CertCloud-Exams/tree/master/content) folder of the repo in JSON format.
+The questions are stored in the [content/](https://github.com/Salgado2004/NuvemPro-Exams/tree/master/content) folder of the repo in JSON format.
 
 Each exam has its own questions.json file. To add a new question, go to the exam file and create a new JSON object in the end of the array, following the format:
 
