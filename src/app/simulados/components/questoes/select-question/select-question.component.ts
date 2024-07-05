@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-import { QuestionStructure } from '../../../utils/question-structure';
-import { SimuladoEventsService } from '../../../utils/simulado-events.service';
+import { Component, ChangeDetectionStrategy} from '@angular/core';
 import { QuestionSummary } from '../../../utils/question-summary';
+import { QuestionStructure } from '../../../utils/question-structure';
 import { QuestionInterface } from '../../../utils/question-interface';
+import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 
 @Component({
   selector: 'app-select-question',
   templateUrl: './select-question.component.html',
-  styleUrls: ['./select-question.component.css', '../questao.css']
+  styleUrls: ['./select-question.component.css', '../questao.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SelectQuestionComponent implements QuestionStructure{
   id: string;
@@ -22,6 +23,7 @@ export class SelectQuestionComponent implements QuestionStructure{
   alert: boolean = true;
   summary: QuestionSummary = new Object() as QuestionSummary;
 
+  /* Acts as the constructor of the component, setting the question structure attributes */
   build(data: QuestionInterface, index: number, next: boolean): void {
     this.id = "question"+index;
     this.header = data.header;
@@ -32,11 +34,13 @@ export class SelectQuestionComponent implements QuestionStructure{
     this.showNext = next;
   }
   
+  /* Calculates the score of the question */
   score(){
     return this.answer == this.correct[0] ? 1 : 0;
   }
   
-  getSummary(){
+  /* Builds the question summary */
+  getSummary(): QuestionSummary{
     this.summary.header = this.header;
     this.summary.body = this.body;
     this.summary.domain = this.domain;
@@ -47,10 +51,12 @@ export class SelectQuestionComponent implements QuestionStructure{
     return this.summary;
   }
 
+  /* Validates if all the options were answered */
   validate(){
     return this.answer != undefined;
   }
 
+  /* Verify if the answers are correct and show in screen */
   verifyAnswer() {
     if(this.validate()){
       this.alert = false;
@@ -63,6 +69,7 @@ export class SelectQuestionComponent implements QuestionStructure{
     }
   }
 
+  /* Go to the next question */
   nextQuestion():void{
     if(this.validate()){
       this.alert = false;

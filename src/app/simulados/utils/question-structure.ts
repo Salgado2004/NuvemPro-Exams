@@ -1,3 +1,4 @@
+import { QuestionSummary } from "./question-summary";
 import { QuestionInterface } from "./question-interface";
 
 export interface QuestionStructure {
@@ -10,5 +11,6 @@ export interface QuestionStructure {
     showNext: boolean,
     verifyAnswer(): void,
     score():number;
+    getSummary(): QuestionSummary;
     build(data: QuestionInterface, index: number, next: boolean):void;
 }

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import { QuestionSummary } from '../../../utils/question-summary';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { QuestionStructure } from '../../../utils/question-structure';
 import { QuestionInterface } from '../../../utils/question-interface';
 import { SimuladoEventsService } from '../../../utils/simulado-events.service';
@@ -7,7 +7,8 @@ import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 @Component({
   selector: 'app-drag-drop-question',
   templateUrl: './drag-drop-question.component.html',
-  styleUrls: ['./drag-drop-question.component.css', '../questao.css']
+  styleUrls: ['./drag-drop-question.component.css', '../questao.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DragDropQuestionComponent implements QuestionStructure {
   id: string;
@@ -23,7 +24,7 @@ export class DragDropQuestionComponent implements QuestionStructure {
   alert: boolean = true;
   summary: QuestionSummary = new Object() as QuestionSummary;
 
-  /* Builds the question data */
+  /* Acts as the constructor of the component, setting the question structure attributes */
   build(data: QuestionInterface, index: number, next: boolean): void {
     this.id = "question" + index;
     this.header = data.header;
@@ -60,13 +61,13 @@ export class DragDropQuestionComponent implements QuestionStructure {
     }
   }
 
-  /* Check if all the options were answered */
+  /* Validates if all the options were answered */
   validate(): boolean {
     return this.answers.length == this.correct.length;
   }
 
   /* Create the summary of the question */
-  getSummary() {
+  getSummary(): QuestionSummary {
     this.summary.header = this.header;
     this.summary.body = this.body;
     this.summary.domain = this.domain;
@@ -95,7 +96,7 @@ export class DragDropQuestionComponent implements QuestionStructure {
     }
   }
 
-  /* Calculate the score of the question */
+  /* Calculates the score of the question */
   score(): number {
     let score = 0;
     this.correct.forEach((option, index) => {

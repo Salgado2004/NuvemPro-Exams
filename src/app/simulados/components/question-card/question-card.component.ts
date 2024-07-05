@@ -20,7 +20,9 @@ export class QuestionCardComponent {
   @Input() questionIndex: number;
   @Input() totalQuestions: number;
   questionType: string;
-  questionInstance: any;
+  questionInstance: QuestionStructure;
+  readonly dialog = inject(MatDialog);
+
 
   ngAfterViewInit() {
     this.loadQuestionComponent();
@@ -48,12 +50,11 @@ export class QuestionCardComponent {
     const questionComponentType = questionComponentMap[this.questionType];
 
     const viewContainerRef = this.dynamicHost.view;
-    this.questionInstance = viewContainerRef.createComponent<QuestionStructure>(questionComponentType);
-    const component: QuestionStructure = this.questionInstance.instance;
-    component.build(this.questionData, this.questionIndex, (this.questionIndex < this.totalQuestions));
+    this.questionInstance = viewContainerRef.createComponent<QuestionStructure>(questionComponentType).instance;
+    this.questionInstance.build(this.questionData, this.questionIndex, (this.questionIndex < this.totalQuestions));
   }
 
   finishExam(){
-    SimuladoEventsService.get('endExam').emit(this.questionInstance.instance.getSummary());
+    SimuladoEventsService.get('endExam').emit(this.questionInstance.getSummary());
   }
 }
