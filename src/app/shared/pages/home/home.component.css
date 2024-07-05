@@ -52,8 +52,8 @@ section p a:hover{
 .swiper {
     margin-left: 12px;
     width: 75%;
-    border: 1px solid #83878b9c;
-    box-shadow: 2px 2px 5px #2f3643;
+    border: 8px solid #fff;
+    box-shadow: 1px 1px 5px #2f3643;
   }
 
   .swiper-slide {
