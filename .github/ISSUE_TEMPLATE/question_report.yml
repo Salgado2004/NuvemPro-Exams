@@ -1,5 +1,6 @@
 name: Question Report
 title: Report - <Short description>
+description: "Report of question content (invalid, incorrect, etc.)"
 labels: ["question", "good first issue"]
 body:
   - type: markdown
