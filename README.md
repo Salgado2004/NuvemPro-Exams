@@ -1,5 +1,7 @@
 > See also: [Portuguese 🇧🇷](/translations/README_PT.md)
 
+<img src="src/assets/icons/logo.svg" width="50" height="50"/>
+
 # NuvemPro Exams
 A project to assist in the study and achievement of certifications from popular cloud platforms (Azure, AWS, GCP), providing practice exams.
 

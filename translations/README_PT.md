@@ -1,3 +1,5 @@
+<img src="../src/assets/icons/logo.svg" width="50" height="50"/>
+
 # NuvemPro Exams
 Um projeto para auxiliar no estudo e conquista de certificações das principais plataformas de nuvem (Azure, AWS, GCP), disponibilizando simulados das provas.
 
