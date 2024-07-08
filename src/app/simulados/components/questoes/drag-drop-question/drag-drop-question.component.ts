@@ -51,13 +51,17 @@ export class DragDropQuestionComponent implements QuestionStructure {
   appendChild(ev: any): void {
     ev.preventDefault();
     if (this.dataTransfer != null) {
-      const data = "#" + this.dataTransfer;
-      const resource = document.querySelector(data);
-      const target = ev.target.getAttribute("aria-label");
-      ev.target.appendChild(resource);
-      resource.classList.remove("focused");
-      this.answers[target] = resource.textContent;
-      this.dataTransfer = null;
+      try{
+        const data = "#" + this.dataTransfer;
+        const resource = document.querySelector(data);
+        const target = ev.target.getAttribute("aria-label");
+        ev.target.appendChild(resource);
+        resource.classList.remove("focused");
+        this.answers[target] = resource.textContent;
+        this.dataTransfer = null;
+      } catch(err){
+        /* Avoids DOMException */
+      }
     }
   }
 
