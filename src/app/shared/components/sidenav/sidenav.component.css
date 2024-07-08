@@ -28,16 +28,12 @@
 
 .menu{
   display: none;
-  height: auto;
-  padding: 4px;
+  padding: 16px;
+  color: #fff;
   background: transparent;
   border: none;
   outline: none;
   float: right;
-}
-
-.menu img{
-  width: 36px;
 }
 
 .menu:hover {
@@ -73,13 +69,6 @@
 @media screen and (max-width: 800px) {
   :host {
     width: 100%;
-  }
-
-  .contribute {
-    position: absolute;
-    top: 25%;
-    width: 75%;
-    box-shadow: 2px 2px 5px #319bf5;
   }
 
   .menu{

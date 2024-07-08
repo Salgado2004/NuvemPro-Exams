@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ContributingComponent } from '../contributing/contributing.component';
 
 @Component({
   selector: 'app-sidenav',
@@ -6,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './sidenav.component.css'
 })
 export class SidenavComponent {
+  readonly dialog = inject(MatDialog);
 
   ngOnInit() {
     let path = window.location.pathname.split("/")[1];
@@ -13,7 +16,6 @@ export class SidenavComponent {
   }
 
   showContribute(){
-    let contribute = document.querySelector(".contribute");
-    contribute.classList.toggle("hide");
+    this.dialog.open(ContributingComponent);
   }
 }
