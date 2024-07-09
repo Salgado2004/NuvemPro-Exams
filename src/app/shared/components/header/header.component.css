@@ -7,6 +7,12 @@
     max-height: 10vh;
 }
 
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 h1{
     color: #fdffff;
     font-weight: 500;
