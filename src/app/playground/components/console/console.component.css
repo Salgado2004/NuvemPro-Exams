@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    border-radius: 10px;
+    height: 50vh;
+    box-shadow: 1px 5px 15px #0c0c0c;
+    background-color: #0c0c0c;
+}
+
+nav{
+    padding-left: 8px;
+    background-color: #333333;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #484848;
+    border-bottom: none;
+}
+
+.tab{
+    padding: 8px;
+    font-size: 10pt;
+    margin-top: 8px;
+    color: #cccccc;
+    display: inline-block;
+    background-color: #0c0c0c;
+    border-radius: 10px 10px 0 0;
+    font-family: "Source Code Pro", monospace;
+}
+
+.console{
+    padding: 8px;
+    display: flex;
+    color: #cccccc;
+    overflow-y: scroll;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+    font-family: "Source Code Pro", monospace;
+}
+
+.console::-webkit-scrollbar{
+    width: 7px;
+}
+.console::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.console::-webkit-scrollbar-thumb{
+    background-color: #cccccc;
+    border-radius: 20px;
+}
+
+.output pre{
+    font-size: 11pt;
+    color: #cccccc;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family: "Source Code Pro", monospace;
+}
+
+.hotarea{
+    display: flex;
+    align-items: center;
+}
+
+.input{
+    margin: 4px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    color: #f9f1a5;
+    vertical-align: text-top;
+    background-color: #0c0c0c;
+    font-family: "Source Code Pro", monospace;
+}
+
+.pointer{
+    font-size: 11pt;
+    color: #00ff00;
+    margin-right: 4px;
+    user-select: none;
+}
+
+.input::selection, .output p::selection{
+    background-color: #868686;
+}
