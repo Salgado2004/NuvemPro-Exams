@@ -112,6 +112,7 @@ nav{
     color: #00ff00;
     margin-right: 4px;
     user-select: none;
+    font-family: "Source Code Pro", monospace;
 }
 
 .input::selection, .output p::selection{
