@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Execution } from '../../utils/execution';
+import { MatDialog } from '@angular/material/dialog';
 import { ApiPlaygroundService } from '../../utils/api-playground.service';
+import { HelpDialogComponent } from '../help-dialog/help-dialog.component';
 
 @Component({
   selector: 'app-console',
@@ -11,6 +13,7 @@ export class ConsoleComponent {
   consoleOutput: Element;
   userPointer: Element;
   lastElement: Node;
+  readonly dialog = inject(MatDialog);
 
   constructor(private api: ApiPlaygroundService) { }
 
@@ -18,6 +21,10 @@ export class ConsoleComponent {
     this.focusInput();
     this.userPointer = document.querySelector(".pointer");
     this.consoleOutput = document.querySelector(".output");
+  }
+
+  help(): void{
+    this.dialog.open(HelpDialogComponent);
   }
 
   /* Focus the console input */

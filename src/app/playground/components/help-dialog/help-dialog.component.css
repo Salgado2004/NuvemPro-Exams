@@ -1,0 +1,14 @@
+p{
+    text-align: justify;
+    margin-top: 8px;
+}
+
+a{
+    color: #319bf5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover{
+    text-decoration: underline;
+}

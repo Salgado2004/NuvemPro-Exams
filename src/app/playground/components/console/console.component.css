@@ -1,17 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+:host{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    max-width: 80vw;
+}
+
+header{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+header h1{
+    color: #319bf5;
+}
+
+header button{
+    color: #83878b;
+}
 
 main{
     display: flex;
+    width: 95%;
+    margin-top: 8px;
     flex-direction: column;
-    margin: 60px;
     border-radius: 10px;
-    height: 50vh;
+    height: 80%;
     box-shadow: 1px 5px 15px #0c0c0c;
     background-color: #0c0c0c;
+    margin-bottom: 16px;
 }
 
 nav{
+    display: flex;
     padding-left: 8px;
     background-color: #333333;
     border-radius: 10px 10px 0 0;
@@ -24,9 +49,15 @@ nav{
     font-size: 10pt;
     margin-top: 8px;
     color: #cccccc;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #0c0c0c;
     border-radius: 10px 10px 0 0;
+}
+
+.tab p{
+    margin-left: 6px;
     font-family: "Source Code Pro", monospace;
 }
 
@@ -61,16 +92,17 @@ nav{
 
 .hotarea{
     display: flex;
+    flex-grow: 1;
     align-items: center;
 }
 
 .input{
+    display: inline-block;
     margin: 4px;
     flex-grow: 1;
     border: none;
     outline: none;
     color: #f9f1a5;
-    vertical-align: text-top;
     background-color: #0c0c0c;
     font-family: "Source Code Pro", monospace;
 }
@@ -84,4 +116,10 @@ nav{
 
 .input::selection, .output p::selection{
     background-color: #868686;
+}
+
+@media (max-width: 800px){
+    :host{
+        max-width: 100vw;
+    }
 }
