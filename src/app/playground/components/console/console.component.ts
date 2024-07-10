@@ -1,5 +1,7 @@
+import { catchError, of } from 'rxjs';
 import { Component, inject } from '@angular/core';
 import { Execution } from '../../utils/execution';
+import { HttpResponse } from '@angular/common/http';
 import { MatDialog } from '@angular/material/dialog';
 import { ApiPlaygroundService } from '../../utils/api-playground.service';
 import { HelpDialogComponent } from '../help-dialog/help-dialog.component';
@@ -23,7 +25,7 @@ export class ConsoleComponent {
     this.consoleOutput = document.querySelector(".output");
   }
 
-  help(): void{
+  help(): void {
     this.dialog.open(HelpDialogComponent);
   }
 
@@ -91,11 +93,21 @@ export class ConsoleComponent {
 
   /* Execute the command via API and write the output */
   executeCommand(data: string): void {
-    this.api.executeCommand(data).subscribe((execution: Execution) => {
+    this.api.executeCommand(data).pipe(
+      catchError(error => {
+        /* Handling error messages */
+        return of({
+          body: (error.status === 0) ? { error: "Falha na comunicação com a API" } : error.error,
+          status: error.status
+        });
+      })
+    ).subscribe((response: HttpResponse<Execution>) => {
+      /* Write API response on console */
+      const execution: Execution = response.body;
       this.writeOutput(JSON.stringify(execution, this.replacer, 2), false);
 
       /* Sintax highlighting error messages */
-      if (execution.error !== null) {
+      if (response.status >= 400 || response.status === 0) {
         let output = this.consoleOutput.lastChild as HTMLElement;
         output.style.color = "#e35b59"
       }

@@ -8,7 +8,7 @@ export class ApiPlaygroundService {
 
   constructor(private httpClient: HttpClient) { }
 
-  executeCommand(command: string){
-    return this.httpClient.post("http://localhost:8080/api/cliplayground", command);
+  executeCommand(command: string) {
+    return this.httpClient.post("http://localhost:8080/api/cliplayground", command, { observe: 'response' });
   }
 }
