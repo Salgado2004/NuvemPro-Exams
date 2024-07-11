@@ -4,8 +4,8 @@ import { SharedModule } from '../shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CliComponent } from './pages/cli/cli.component';
 import { PlaygroundRoutingModule } from './playground.routes';
-import { ConsoleComponent } from './components/console/console.component';
 import { ApiPlaygroundService } from './utils/api-playground.service';
+import { ConsoleComponent } from './components/console/console.component';
 import { HelpDialogComponent } from './components/help-dialog/help-dialog.component';
 
 @NgModule({
