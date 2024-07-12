@@ -92,26 +92,32 @@ export class ConsoleComponent {
   }
 
   /* Execute the command via API and write the output */
-  executeCommand(data: string): void {
-    this.api.executeCommand(data).pipe(
-      catchError(error => {
-        /* Handling error messages */
-        return of({
-          body: (error.status === 0) ? { error: "Falha na comunicação com a API" } : error.error,
-          status: error.status
-        });
-      })
-    ).subscribe((response: HttpResponse<Execution>) => {
-      /* Write API response on console */
-      const execution: Execution = response.body;
-      this.writeOutput(JSON.stringify(execution, this.replacer, 2), false);
+  async executeCommand(data: string) {
+    try {
+      const response = await this.api.executeCommand(data);
+      
+      response.pipe(
+        catchError(error => {
+          /* Handling error messages */
+          return of({
+            body: (error.status === 0) ? { error: "Falha na comunicação com a API" } : error.error,
+            status: error.status
+          });
+        })
+      ).subscribe((response: HttpResponse<Execution>) => {
+        /* Write API response on console */
+        const execution: Execution = response.body;
+        this.writeOutput(JSON.stringify(execution, this.replacer, 2), false);
 
-      /* Sintax highlighting error messages */
-      if (response.status >= 400 || response.status === 0) {
-        let output = this.consoleOutput.lastChild as HTMLElement;
-        output.style.color = "#e35b59"
-      }
-    });
+        /* Sintax highlighting error messages */
+        if (response.status >= 400 || response.status === 0) {
+          let output = this.consoleOutput.lastChild as HTMLElement;
+          output.style.color = "#e35b59"
+        }
+      });
+    } catch (error) {
+      console.error("Erro ao executar o comando:", error);
+    }
   }
 
   /* Handle user input */
