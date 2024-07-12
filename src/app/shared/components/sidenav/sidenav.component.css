@@ -28,16 +28,12 @@
 
 .menu{
   display: none;
-  height: auto;
-  padding: 4px;
+  padding: 16px;
+  color: #fff;
   background: transparent;
   border: none;
   outline: none;
   float: right;
-}
-
-.menu img{
-  width: 36px;
 }
 
 .menu:hover {
@@ -46,40 +42,15 @@
 
 .contribute {
   background-color: #2f3643;
-  color: #fff;
-  padding: 16px 20px;
+  width: 90%;
+  padding: 12px;
   margin: 6px;
   border-radius: 10px;
-}
-
-.contribute a {
-  display: flex;
-  align-items: center;
-  color: #319bf5;
-  text-decoration: none;
-  font-size: 10pt;
-  font-weight: bold;
-}
-
-.contribute a img{
-  max-height: 20px;
-  margin: 4px;
-}
-
-.contribute a:hover{
-  text-decoration: underline;
 }
 
 @media screen and (max-width: 800px) {
   :host {
     width: 100%;
-  }
-
-  .contribute {
-    position: absolute;
-    top: 25%;
-    width: 75%;
-    box-shadow: 2px 2px 5px #319bf5;
   }
 
   .menu{
@@ -101,12 +72,5 @@
 
   div.content {
     margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
   }
 }

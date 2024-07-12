@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { LoaderComponent } from './components/loader/loader.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { ContributingComponent } from './components/contributing/contributing.component';
 import { ReportDialogComponent } from './components/report-dialog/report-dialog.component';
 
 /* Páginas */
@@ -28,7 +29,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     SidenavComponent,
     NotFoundPageComponent,
     HomeComponent,
-    ReportDialogComponent
+    ReportDialogComponent,
+    ContributingComponent
   ],
   imports: [
     CommonModule,

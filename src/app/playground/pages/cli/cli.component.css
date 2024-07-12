@@ -1,0 +1,8 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+app-console{
+    flex-grow: 1;
+}

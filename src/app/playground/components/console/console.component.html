@@ -1,0 +1,28 @@
+<header>
+    <h1>CLI Playground</h1>
+    <div>
+        <button mat-icon-button #tooltip="matTooltip" matTooltip="Limpar"
+            (click)="clearOutput()"><mat-icon>delete_sweep</mat-icon>
+        </button>
+        <button mat-icon-button #tooltip="matTooltip" matTooltip="Ajuda"
+            (click)="help()"><mat-icon>help</mat-icon>
+        </button>
+    </div>
+</header>
+<main>
+    <nav>
+        <div class="tab">
+            <mat-icon>terminal</mat-icon>
+            <p>Azure CLI</p>
+        </div>
+    </nav>
+    <section class="console">
+        <div class="output">
+            <pre>Teste o playground do Azure CLI</pre>
+        </div>
+        <div class="hotarea">
+            <span class="pointer">user [ ~ ]$</span>
+            <input type="text" class="input" (keydown.enter)="send($event)">
+        </div>
+    </section>
+</main>

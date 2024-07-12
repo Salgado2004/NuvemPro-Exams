@@ -1,8 +1,5 @@
-import { QuestionSummary } from '../../../utils/question-summary';
+import { QuestionStructure } from '../question-structure';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { QuestionStructure } from '../../../utils/question-structure';
-import { QuestionInterface } from '../../../utils/question-interface';
-import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 
 @Component({
   selector: 'app-drag-drop-question',
@@ -10,30 +7,11 @@ import { SimuladoEventsService } from '../../../utils/simulado-events.service';
   styleUrls: ['./drag-drop-question.component.css', '../questao.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class DragDropQuestionComponent implements QuestionStructure {
-  id: string;
-  header: string;
-  body: string | null;
-  domain: string;
-  options: string[];
-  correct: string[];
+export class DragDropQuestionComponent extends QuestionStructure {
   answers: string[] = [];
-  showNext: boolean;
   dataTransfer: string;
   active: boolean = true;
   alert: boolean = true;
-  summary: QuestionSummary = new Object() as QuestionSummary;
-
-  /* Acts as the constructor of the component, setting the question structure attributes */
-  build(data: QuestionInterface, index: number, next: boolean): void {
-    this.id = "question" + index;
-    this.header = data.header;
-    this.body = data.body;
-    this.domain = data.domain;
-    this.options = data.options;
-    this.correct = data.correct;
-    this.showNext = next;
-  }
 
   allowDrop(ev: any): void {
     ev.preventDefault();
@@ -51,13 +29,17 @@ export class DragDropQuestionComponent implements QuestionStructure {
   appendChild(ev: any): void {
     ev.preventDefault();
     if (this.dataTransfer != null) {
-      const data = "#" + this.dataTransfer;
-      const resource = document.querySelector(data);
-      const target = ev.target.getAttribute("aria-label");
-      ev.target.appendChild(resource);
-      resource.classList.remove("focused");
-      this.answers[target] = resource.textContent;
-      this.dataTransfer = null;
+      try{
+        const data = "#" + this.dataTransfer;
+        const resource = document.querySelector(data);
+        const target = ev.target.getAttribute("aria-label");
+        ev.target.appendChild(resource);
+        resource.classList.remove("focused");
+        this.answers[target] = resource.textContent;
+        this.dataTransfer = null;
+      } catch(err){
+        /* Avoids DOMException */
+      }
     }
   }
 
@@ -66,16 +48,8 @@ export class DragDropQuestionComponent implements QuestionStructure {
     return this.answers.length == this.correct.length;
   }
 
-  /* Create the summary of the question */
-  getSummary(): QuestionSummary {
-    this.summary.header = this.header;
-    this.summary.body = this.body;
-    this.summary.domain = this.domain;
-    this.summary.correct = this.correct;
-    this.summary.answer = this.answers;
-    this.summary.score = this.score();
-    this.summary.right = this.score() == 1;
-    return this.summary;
+  getAnswers(): string[]{
+    return this.answers;
   }
 
   /* Verify if the answers are correct and show in screen */
@@ -103,12 +77,5 @@ export class DragDropQuestionComponent implements QuestionStructure {
       if (option == this.answers[index]) score++;
     });
     return score / this.correct.length;
-  }
-
-  /* Go to the next question */
-  nextQuestion(): void {
-    if (this.validate()) {
-      SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
-    }
   }
 }
