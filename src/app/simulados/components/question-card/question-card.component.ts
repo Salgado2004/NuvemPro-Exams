@@ -1,6 +1,6 @@
 import { ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { QuestionStructure } from '../../utils/question-structure';
+import { QuestionStructure } from '../questoes/question-structure'
 import { QuestionInterface } from '../../utils/question-interface';
 import { Component, Input, ViewChild, inject } from '@angular/core';
 import { SimuladoEventsService } from '../../utils/simulado-events.service';

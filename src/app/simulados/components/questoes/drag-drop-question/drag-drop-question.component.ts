@@ -1,8 +1,6 @@
+import { QuestionStructure } from '../question-structure';
 import { QuestionSummary } from '../../../utils/question-summary';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { QuestionStructure } from '../../../utils/question-structure';
-import { QuestionInterface } from '../../../utils/question-interface';
-import { SimuladoEventsService } from '../../../utils/simulado-events.service';
 
 @Component({
   selector: 'app-drag-drop-question',
@@ -10,30 +8,12 @@ import { SimuladoEventsService } from '../../../utils/simulado-events.service';
   styleUrls: ['./drag-drop-question.component.css', '../questao.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class DragDropQuestionComponent implements QuestionStructure {
-  id: string;
-  header: string;
-  body: string | null;
-  domain: string;
-  options: string[];
-  correct: string[];
+export class DragDropQuestionComponent extends QuestionStructure {
   answers: string[] = [];
-  showNext: boolean;
   dataTransfer: string;
   active: boolean = true;
   alert: boolean = true;
   summary: QuestionSummary = new Object() as QuestionSummary;
-
-  /* Acts as the constructor of the component, setting the question structure attributes */
-  build(data: QuestionInterface, index: number, next: boolean): void {
-    this.id = "question" + index;
-    this.header = data.header;
-    this.body = data.body;
-    this.domain = data.domain;
-    this.options = data.options;
-    this.correct = data.correct;
-    this.showNext = next;
-  }
 
   allowDrop(ev: any): void {
     ev.preventDefault();
@@ -107,12 +87,5 @@ export class DragDropQuestionComponent implements QuestionStructure {
       if (option == this.answers[index]) score++;
     });
     return score / this.correct.length;
-  }
-
-  /* Go to the next question */
-  nextQuestion(): void {
-    if (this.validate()) {
-      SimuladoEventsService.get('nextQuestion').emit(this.getSummary());
-    }
   }
 }

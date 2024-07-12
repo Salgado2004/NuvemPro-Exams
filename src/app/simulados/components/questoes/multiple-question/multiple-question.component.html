@@ -3,6 +3,6 @@
     <div class="option" [id]="'checkbox'+i" *ngFor="let option of options; let i = index">
         <mat-checkbox [formControlName]="'answer'+i">{{ option }}</mat-checkbox>
     </div>
-    <button *ngIf="showNext" (click)="nextQuestion()" class="next" [disabled]="alert">Próxima questão</button>
-    <button (click)="verifyAnswer()" class="verifyAnswer" [disabled]="alert">Verificar resposta</button>
+    <button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>
+    <button (click)="verifyAnswer()" class="verifyAnswer">Verificar resposta</button>
 </form>
