@@ -1,5 +1,4 @@
 import { QuestionStructure } from '../question-structure';
-import { QuestionSummary } from '../../../utils/question-summary';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
@@ -12,7 +11,6 @@ export class TrueFalseQuestionComponent extends QuestionStructure{
   answers: string[] = [];
   active: boolean = true;
   alert:boolean = true;
-  summary: QuestionSummary = new Object() as QuestionSummary;
   
   /* Calculates the score of the question */
   score(){
@@ -24,17 +22,8 @@ export class TrueFalseQuestionComponent extends QuestionStructure{
     return total/this.correct.length;
   }
 
-  /* Builds the question summary */
-  getSummary(): QuestionSummary{
-    this.summary.header = this.header;
-    this.summary.body = this.body;
-    this.summary.domain = this.domain;
-    this.summary.options = this.options;
-    this.summary.correct = this.correct;
-    this.summary.answer = this.answers;
-    this.summary.score = this.score();
-    this.summary.right = this.score() == 1;
-    return this.summary;
+  getAnswers(): string[]{
+    return this.answers;
   }
 
   /* Validates if all the options were answered */

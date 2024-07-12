@@ -1,6 +1,5 @@
 import { QuestionStructure } from '../question-structure';
 import { Component, ChangeDetectionStrategy} from '@angular/core';
-import { QuestionSummary } from '../../../utils/question-summary';
 
 @Component({
   selector: 'app-select-question',
@@ -12,23 +11,14 @@ export class SelectQuestionComponent extends QuestionStructure{
   answer: string;
   active: boolean = true;
   alert: boolean = true;
-  summary: QuestionSummary = new Object() as QuestionSummary;
   
   /* Calculates the score of the question */
   score(){
     return this.answer == this.correct[0] ? 1 : 0;
   }
-  
-  /* Builds the question summary */
-  getSummary(): QuestionSummary{
-    this.summary.header = this.header;
-    this.summary.body = this.body;
-    this.summary.domain = this.domain;
-    this.summary.correct = this.correct;
-    this.summary.answer = this.answer;
-    this.summary.score = this.score();
-    this.summary.right = this.score() == 1;
-    return this.summary;
+
+  getAnswers(): string{
+    return this.answer;
   }
 
   /* Validates if all the options were answered */

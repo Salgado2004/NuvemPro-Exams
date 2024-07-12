@@ -1,5 +1,4 @@
 import { QuestionStructure } from '../question-structure';
-import { QuestionSummary } from '../../../utils/question-summary';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
@@ -13,7 +12,6 @@ export class DragDropQuestionComponent extends QuestionStructure {
   dataTransfer: string;
   active: boolean = true;
   alert: boolean = true;
-  summary: QuestionSummary = new Object() as QuestionSummary;
 
   allowDrop(ev: any): void {
     ev.preventDefault();
@@ -50,16 +48,8 @@ export class DragDropQuestionComponent extends QuestionStructure {
     return this.answers.length == this.correct.length;
   }
 
-  /* Create the summary of the question */
-  getSummary(): QuestionSummary {
-    this.summary.header = this.header;
-    this.summary.body = this.body;
-    this.summary.domain = this.domain;
-    this.summary.correct = this.correct;
-    this.summary.answer = this.answers;
-    this.summary.score = this.score();
-    this.summary.right = this.score() == 1;
-    return this.summary;
+  getAnswers(): string[]{
+    return this.answers;
   }
 
   /* Verify if the answers are correct and show in screen */

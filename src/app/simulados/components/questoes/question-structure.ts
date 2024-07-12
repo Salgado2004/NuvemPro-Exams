@@ -15,7 +15,12 @@ export abstract class QuestionStructure {
     abstract verifyAnswer(): void;
     abstract validate(): boolean;
     abstract score(): number;
-    abstract getSummary(): QuestionSummary;
+    abstract getAnswers(): any;
+  
+    /* Builds the question summary */
+    getSummary(): QuestionSummary{
+      return new QuestionSummary(this);
+    }
     
     /* Acts as the constructor of the component, setting the question structure attributes */
     build(data: QuestionInterface, index: number, next: boolean): void {
