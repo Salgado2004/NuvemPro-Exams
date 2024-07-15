@@ -1,0 +1,36 @@
+[
+    {
+        "id": "001",
+        "exam": "AZ204",
+        "domain": "Implementar a segurança do Azure",
+        "type": "options",
+        "header": "Você gerencia um aplicativo Web do Serviço de Aplicativo do Azure chamado app1. O App1 está registrado como um aplicativo do Microsoft Entra ID. É necessário garantir que as informações do usuário conectado no Microsoft Entra ID possam ser recuperadas pelo app1 ao utilizar o Microsoft Graph.",
+        "body": "O que você deve configurar?",
+        "options": [
+            "appRoles",
+            "Permissões do aplicativo",
+            "Permissões delegadas",
+            "GroupMembershipClaims"
+        ],
+        "correct": [
+            "Permissões delegadas"
+        ]
+    },
+    {
+        "id": "002",
+        "exam": "AZ204",
+        "domain": "Implementar a segurança do Azure",
+        "type": "options",
+        "header": "Você gerencia um aplicativo Web do Serviço de Aplicativo do Azure chamado app1. O App1 é registrado como um aplicativo multilocatário em um locatário do Microsoft Entra ID denominado tenant1.",
+        "body": "Você precisa conceder ao app1 a permissão para acessar a API do Microsoft Graph no tenant1. Qual entidade de serviço você deve usar?",
+        "options": [
+            "Herdada",
+            "Identidade gerenciada atribuída pelo sistema",
+            "Aplicativo",
+            "Identidade gerenciada atribuída pelo usuário"
+        ],
+        "correct": [
+            "Aplicativo"
+        ]
+    }
+]

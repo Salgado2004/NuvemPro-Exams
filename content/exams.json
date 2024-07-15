@@ -46,5 +46,18 @@
       {"name":"Descrever os recursos das soluções de segurança da Microsoft", "min": 35, "max": 40},
       {"name":"Descrever os recursos das soluções de conformidade da Microsoft", "min": 20, "max": 25}
     ]
+  },
+  {
+    "name": "AZ204",
+    "fullname": "Azure Developer Associate",
+    "questions": 2,
+    "image": "assets/badges/AZ204-badge.png",
+    "domains": [
+      {"name": "Desenvolver soluções de computação do Azure", "min": 25, "max": 30},
+      {"name": "Desenvolver para armazenamento do Azure", "min": 15, "max": 20},
+      {"name": "Implementar a segurança do Azure", "min": 15, "max": 20},
+      {"name": "Monitorar, solucionar problemas e otimizar soluções do Azure", "min": 10, "max": 15},
+      {"name": "Conectar e consumir serviços do Azure e serviços de terceiros", "min": 20, "max": 25}
+    ]
   }
 ]
