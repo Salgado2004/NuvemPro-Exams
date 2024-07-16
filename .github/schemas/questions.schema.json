@@ -21,6 +21,9 @@
                 "type": "string",
                 "minLength": 1
             },
+            "code": {
+                "type": "string"
+            },
             "body": {
                 "type": "string"
             },
