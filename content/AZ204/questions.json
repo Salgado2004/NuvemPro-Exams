@@ -32,5 +32,24 @@
         "correct": [
             "Aplicativo"
         ]
+    },
+    {
+        "id": "003",
+        "exam": "AZ204",
+        "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+        "type": "multiple",
+        "header": "Você desenvolve o código a seguir para ler todos os eventos publicados para a primeira partição nos Hubs de Eventos do Azure.",
+        "code": "question-003.md",
+        "body": "Você precisa concluir o código. Quais são as duas ações que você deve executar? Cada resposta correta apresenta uma parte da solução.",
+        "options": [
+            "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Earliest;",
+            "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).First();",
+            "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Latest;",
+            "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).Last();"
+        ],
+        "correct": [
+            "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Earliest;",
+            "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).First();"
+        ]
     }
 ]
