@@ -1,3 +1,6 @@
+@if(data.code != null){
+    <codeblock [path]="data.exam+'/code/'+data.code"></codeblock>
+ }
 <p>{{ data.body }}</p>
 <section #tooltip="matTooltip" matTooltip="Selecione uma resposta" [matTooltipDisabled]="!alert">
     <mat-form-field class="option">
