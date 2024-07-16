@@ -14,11 +14,11 @@ export class OptionsQuestionComponent extends QuestionStructure{
   
   /* Calculates the score of the question */
   score(){
-    return this.options[this.answer] == this.correct[0] ? 1 : 0;
+    return this.data.options[this.answer] == this.data.correct[0] ? 1 : 0;
   }
 
   getAnswers(): string{
-    return this.options[this.answer];
+    return this.data.options[this.answer];
   }
 
   /* Validates if all the options were answered */
@@ -32,7 +32,7 @@ export class OptionsQuestionComponent extends QuestionStructure{
       this.alert = false;
       let input = document.querySelector(`#radio${this.answer}`);
       input.classList.add('showAnswer');
-      if(this.options[this.answer] == this.correct[0]){
+      if(this.data.options[this.answer] == this.data.correct[0]){
         input.classList.add('correct');
       } else{
         input.classList.add('incorrect');

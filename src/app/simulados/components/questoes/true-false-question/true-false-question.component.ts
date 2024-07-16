@@ -16,10 +16,10 @@ export class TrueFalseQuestionComponent extends QuestionStructure{
   score(){
     let total=0;
     this.answers.forEach((ans, index) => {
-      total += ans == this.correct[index] ? 1 : 0;
+      total += ans == this.data.correct[index] ? 1 : 0;
     });
     /* Always returns a value between 0 and 1 */
-    return total/this.correct.length;
+    return total/this.data.correct.length;
   }
 
   getAnswers(): string[]{
@@ -28,15 +28,15 @@ export class TrueFalseQuestionComponent extends QuestionStructure{
 
   /* Validates if all the options were answered */
   validate(){
-    return this.answers.length == this.correct.length;
+    return this.answers.length == this.data.correct.length;
   }
   
   /* Verify if the answers are correct and show in screen */
   verifyAnswer() {
     if(this.validate()){
       this.alert = false;
-      for (let i = 0; i < this.options.length; i++) {
-        if (this.answers[i] == this.correct[i]) {
+      for (let i = 0; i < this.data.options.length; i++) {
+        if (this.answers[i] == this.data.correct[i]) {
           document.querySelector(`#${this.answers[i]}${i}`).classList.add('correct', 'showAnswer');
         } else{
           document.querySelector(`#${this.answers[i]}${i}`).classList.add('incorrect', 'showAnswer');

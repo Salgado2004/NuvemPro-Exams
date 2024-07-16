@@ -4,6 +4,7 @@ export interface QuestionInterface {
     type: string,
     domain: string,
     header: string,
+    code: string | null,
     body: string | null,
     options: string[],
     correct: string[]

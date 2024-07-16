@@ -1,9 +1,9 @@
-<p>{{ body }}</p>
+<p>{{ data.body }}</p>
 <section #tooltip="matTooltip" matTooltip="Selecione uma resposta" [matTooltipDisabled]="!alert">
     <mat-form-field class="option">
         <mat-label>Selecione uma opção</mat-label>
         <mat-select [(ngModel)]="answer" [disabled]="!active">
-            @for (option of options; track option) {
+            @for (option of data.options; track option) {
                 <mat-option [value]="option">{{ option }}</mat-option>
             }
         </mat-select>

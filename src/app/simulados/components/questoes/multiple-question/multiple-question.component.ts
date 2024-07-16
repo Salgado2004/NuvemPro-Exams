@@ -16,7 +16,7 @@ export class MultipleQuestionComponent extends QuestionStructure {
   /* Initializes the formGroup */
   ngOnInit() {
     this.answers = new FormGroup({});
-    this.options.forEach((opt, index) => {
+    this.data.options.forEach((opt, index) => {
       this.answers.addControl('answer' + index, new FormControl({ value: false, disabled: !this.active }));
     });
   }
@@ -24,29 +24,29 @@ export class MultipleQuestionComponent extends QuestionStructure {
   /* Iterates the answers formGroup and create a string array with the checked options */
   getAnswers(): string[]{
     const answers = [];
-    this.options.forEach((opt, index) => {
+    this.data.options.forEach((opt, index) => {
       answers.push(this.answers.get('answer' + index)?.value);
       this.answers.get('answer' + index)?.disable();
     });
-    return this.options.filter((opt, index) => answers[index]);;
+    return this.data.options.filter((opt, index) => answers[index]);;
   }
 
   /* Calculates the score of the question */
   score() {
     let total = 0;
-    this.options.forEach((opt, index) => {
+    this.data.options.forEach((opt, index) => {
       if (this.answers.get('answer' + index)?.value) {
-        total += this.correct.includes(opt) ? 1 : 0;
+        total += this.data.correct.includes(opt) ? 1 : 0;
       } else {
-        total += !this.correct.includes(opt) ? 1 : 0;
+        total += !this.data.correct.includes(opt) ? 1 : 0;
       }
     });
-    return total / this.options.length;
+    return total / this.data.options.length;
   }
 
   /* Validates if all the options were answered */
   validate(): boolean {
-    for(let i = 0; i < this.options.length; i++) {
+    for(let i = 0; i < this.data.options.length; i++) {
       if (this.answers.get('answer' + i)?.value) {
         return true;
       }
@@ -58,9 +58,9 @@ export class MultipleQuestionComponent extends QuestionStructure {
   verifyAnswer() {
     if (this.validate()) {
       this.alert = false;
-      for (let i = 0; i < this.options.length; i++) {
+      for (let i = 0; i < this.data.options.length; i++) {
         if (this.answers.get('answer' + i)?.value) {
-          if (this.correct.includes(this.options[i])) {
+          if (this.data.correct.includes(this.data.options[i])) {
             document.querySelector(`#checkbox${i}`).classList.add('correct', 'showAnswer');
           } else {
             document.querySelector(`#checkbox${i}`).classList.add('incorrect', 'showAnswer');

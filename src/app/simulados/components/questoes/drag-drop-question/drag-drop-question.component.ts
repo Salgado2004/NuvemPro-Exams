@@ -45,7 +45,7 @@ export class DragDropQuestionComponent extends QuestionStructure {
 
   /* Validates if all the options were answered */
   validate(): boolean {
-    return this.answers.length == this.correct.length;
+    return this.answers.length == this.data.correct.length;
   }
 
   getAnswers(): string[]{
@@ -58,7 +58,7 @@ export class DragDropQuestionComponent extends QuestionStructure {
       this.active = false;
       const resources = document.querySelectorAll(".resource");
       const targets = document.querySelectorAll(".option");
-      this.correct.forEach((option, index) => {
+      this.data.correct.forEach((option, index) => {
         resources[index].classList.add("disabled");
         targets[index].classList.add("showAnswer");
         if (option == this.answers[index]) {
@@ -73,9 +73,9 @@ export class DragDropQuestionComponent extends QuestionStructure {
   /* Calculates the score of the question */
   score(): number {
     let score = 0;
-    this.correct.forEach((option, index) => {
+    this.data.correct.forEach((option, index) => {
       if (option == this.answers[index]) score++;
     });
-    return score / this.correct.length;
+    return score / this.data.correct.length;
   }
 }

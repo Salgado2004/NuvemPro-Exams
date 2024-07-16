@@ -1,6 +1,7 @@
-<p>{{ body }}</p>
+
+<p>{{ data.body }}</p>
 <form [formGroup]="answers" #tooltip="matTooltip" matTooltip="Selecione pelo menos uma resposta" [matTooltipDisabled]="!alert">
-    <div class="option" [id]="'checkbox'+i" *ngFor="let option of options; let i = index">
+    <div class="option" [id]="'checkbox'+i" *ngFor="let option of data.options; let i = index">
         <mat-checkbox [formControlName]="'answer'+i">{{ option }}</mat-checkbox>
     </div>
     <button *ngIf="showNext" (click)="nextQuestion()" class="next">Próxima questão</button>

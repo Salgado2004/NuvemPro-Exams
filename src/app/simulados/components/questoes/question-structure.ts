@@ -5,11 +5,7 @@ import { SimuladoEventsService } from '../../utils/simulado-events.service';
 
 export abstract class QuestionStructure {
     id: string;
-    header: string;
-    body: string | null;
-    domain: string;
-    options: string[];
-    correct: string[];
+    data: QuestionInterface;
     showNext: boolean;
 
     abstract verifyAnswer(): void;
@@ -25,12 +21,8 @@ export abstract class QuestionStructure {
     /* Acts as the constructor of the component, setting the question structure attributes */
     build(data: QuestionInterface, index: number, next: boolean): void {
         this.id = "question" + index;
-        this.header = data.header;
-        this.body = data.body;
-        this.domain = data.domain;
-        this.options = data.options;
-        this.correct = data.correct;
         this.showNext = next;
+        this.data = data;
     }
 
     /* Go to the next question */
