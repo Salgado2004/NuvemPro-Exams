@@ -1,4 +1,6 @@
-
+@if(data.code != null){
+    <codeblock [path]="data.exam+'/code/'+data.code"></codeblock>
+ }
 <p>{{ data.body }}</p>
 <form [formGroup]="answers" #tooltip="matTooltip" matTooltip="Selecione pelo menos uma resposta" [matTooltipDisabled]="!alert">
     <div class="option" [id]="'checkbox'+i" *ngFor="let option of data.options; let i = index">

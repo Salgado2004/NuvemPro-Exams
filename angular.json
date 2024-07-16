@@ -16,6 +16,9 @@
             "outputPath": "dist/simulados-azure",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "allowedCommonJsDependencies": [
+              "highlight.js"
+            ],
             "polyfills": [
               "zone.js"
             ],
