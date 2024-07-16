@@ -4,10 +4,22 @@
     "fullname": "Azure Fundamentals",
     "questions": 5,
     "image": "assets/badges/AZ900-badge.png",
-    "domains":[
-      {"name":"Descrever os conceitos da nuvem", "min": 25, "max": 30},
-      {"name":"Descrever a arquitetura e os serviços do Azure", "min": 35, "max": 40},
-      {"name":"Descrever o gerenciamento e a governança do Azure", "min": 30, "max": 35}
+    "domains": [
+      {
+        "name": "Descrever os conceitos da nuvem",
+        "min": 25,
+        "max": 30
+      },
+      {
+        "name": "Descrever a arquitetura e os serviços do Azure",
+        "min": 35,
+        "max": 40
+      },
+      {
+        "name": "Descrever o gerenciamento e a governança do Azure",
+        "min": 30,
+        "max": 35
+      }
     ]
   },
   {
@@ -16,10 +28,26 @@
     "questions": 37,
     "image": "assets/badges/DP900-badge.png",
     "domains": [
-      {"name":"Descrever os principais conceitos de dados", "min": 25, "max": 30},
-      {"name":"Identificar considerações sobre dados relacionais no Azure", "min": 20, "max": 25},
-      {"name":"Descrever considerações para trabalhar com os dados não relacionais no Azure", "min": 15, "max": 20},
-      {"name":"Descrever uma carga de trabalho de análise no Azure", "min":25, "max": 30}
+      {
+        "name": "Descrever os principais conceitos de dados",
+        "min": 25,
+        "max": 30
+      },
+      {
+        "name": "Identificar considerações sobre dados relacionais no Azure",
+        "min": 20,
+        "max": 25
+      },
+      {
+        "name": "Descrever considerações para trabalhar com os dados não relacionais no Azure",
+        "min": 15,
+        "max": 20
+      },
+      {
+        "name": "Descrever uma carga de trabalho de análise no Azure",
+        "min": 25,
+        "max": 30
+      }
     ]
   },
   {
@@ -28,11 +56,31 @@
     "questions": 90,
     "image": "assets/badges/AI900-badge.png",
     "domains": [
-      {"name":"Descrever as cargas de trabalho e considerações sobre Inteligência Artificial", "min": 15, "max": 20},
-      {"name":"Descrever os princípios fundamentais do aprendizado de máquina no Azure", "min": 20, "max": 25},
-      {"name":"Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure", "min": 15, "max": 20},
-      {"name":"Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure", "min": 15, "max": 20},
-      {"name":"Descrever os recursos de cargas de trabalho de IA gerativa no Azure", "min": 15, "max": 20}
+      {
+        "name": "Descrever as cargas de trabalho e considerações sobre Inteligência Artificial",
+        "min": 15,
+        "max": 20
+      },
+      {
+        "name": "Descrever os princípios fundamentais do aprendizado de máquina no Azure",
+        "min": 20,
+        "max": 25
+      },
+      {
+        "name": "Descrever os recursos das cargas de trabalho de pesquisa visual computacional no Azure",
+        "min": 15,
+        "max": 20
+      },
+      {
+        "name": "Descrever os recursos das cargas de trabalho de Processamento de Linguagem Natural (PLN) no Azure",
+        "min": 15,
+        "max": 20
+      },
+      {
+        "name": "Descrever os recursos de cargas de trabalho de IA gerativa no Azure",
+        "min": 15,
+        "max": 20
+      }
     ]
   },
   {
@@ -41,10 +89,26 @@
     "questions": 137,
     "image": "assets/badges/SC900-badge.png",
     "domains": [
-      {"name":"Descrever os conceitos de segurança, conformidade e identidade", "min": 10, "max": 15},
-      {"name":"Descrever os recursos do Microsoft Entra", "min": 25, "max": 30},
-      {"name":"Descrever os recursos das soluções de segurança da Microsoft", "min": 35, "max": 40},
-      {"name":"Descrever os recursos das soluções de conformidade da Microsoft", "min": 20, "max": 25}
+      {
+        "name": "Descrever os conceitos de segurança, conformidade e identidade",
+        "min": 10,
+        "max": 15
+      },
+      {
+        "name": "Descrever os recursos do Microsoft Entra",
+        "min": 25,
+        "max": 30
+      },
+      {
+        "name": "Descrever os recursos das soluções de segurança da Microsoft",
+        "min": 35,
+        "max": 40
+      },
+      {
+        "name": "Descrever os recursos das soluções de conformidade da Microsoft",
+        "min": 20,
+        "max": 25
+      }
     ]
   },
   {
@@ -53,11 +117,31 @@
     "questions": 2,
     "image": "assets/badges/AZ204-badge.png",
     "domains": [
-      {"name": "Desenvolver soluções de computação do Azure", "min": 25, "max": 30},
-      {"name": "Desenvolver para armazenamento do Azure", "min": 15, "max": 20},
-      {"name": "Implementar a segurança do Azure", "min": 15, "max": 20},
-      {"name": "Monitorar, solucionar problemas e otimizar soluções do Azure", "min": 10, "max": 15},
-      {"name": "Conectar e consumir serviços do Azure e serviços de terceiros", "min": 20, "max": 25}
+      {
+        "name": "Desenvolver soluções de computação do Azure",
+        "min": 25,
+        "max": 30
+      },
+      {
+        "name": "Desenvolver para armazenamento do Azure",
+        "min": 15,
+        "max": 20
+      },
+      {
+        "name": "Implementar a segurança do Azure",
+        "min": 15,
+        "max": 20
+      },
+      {
+        "name": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+        "min": 10,
+        "max": 15
+      },
+      {
+        "name": "Conectar e consumir serviços do Azure e serviços de terceiros",
+        "min": 20,
+        "max": 25
+      }
     ]
   }
 ]
