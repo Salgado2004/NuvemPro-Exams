@@ -11,6 +11,10 @@ This project was developed with:
 - _[Angular CLI](https://github.com/angular/angular-cli) versão 17.1.3_
 - _[Node](https://nodejs.org/en) versão 20.11.0_
 
+## Contribute to the project
+
+If you would like to contribute to the project, see [how to contribute](https://github.com/Salgado2004/NuvemPro-Exams/blob/master/CONTRIBUTING.md) here.
+
 ## Contributors
 <a href="https://github.com/Salgado2004/NuvemPro-Exams/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Salgado2004/NuvemPro-Exams" />
