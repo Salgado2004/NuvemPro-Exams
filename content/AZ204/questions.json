@@ -1,55 +1,127 @@
 [
-    {
-        "id": "001",
-        "exam": "AZ204",
-        "domain": "Implementar a segurança do Azure",
-        "type": "options",
-        "header": "Você gerencia um aplicativo Web do Serviço de Aplicativo do Azure chamado app1. O App1 está registrado como um aplicativo do Microsoft Entra ID. É necessário garantir que as informações do usuário conectado no Microsoft Entra ID possam ser recuperadas pelo app1 ao utilizar o Microsoft Graph.",
-        "body": "O que você deve configurar?",
-        "options": [
-            "appRoles",
-            "Permissões do aplicativo",
-            "Permissões delegadas",
-            "GroupMembershipClaims"
-        ],
-        "correct": [
-            "Permissões delegadas"
-        ]
-    },
-    {
-        "id": "002",
-        "exam": "AZ204",
-        "domain": "Implementar a segurança do Azure",
-        "type": "options",
-        "header": "Você gerencia um aplicativo Web do Serviço de Aplicativo do Azure chamado app1. O App1 é registrado como um aplicativo multilocatário em um locatário do Microsoft Entra ID denominado tenant1.",
-        "body": "Você precisa conceder ao app1 a permissão para acessar a API do Microsoft Graph no tenant1. Qual entidade de serviço você deve usar?",
-        "options": [
-            "Herdada",
-            "Identidade gerenciada atribuída pelo sistema",
-            "Aplicativo",
-            "Identidade gerenciada atribuída pelo usuário"
-        ],
-        "correct": [
-            "Aplicativo"
-        ]
-    },
-    {
-        "id": "003",
-        "exam": "AZ204",
-        "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
-        "type": "multiple",
-        "header": "Você desenvolve o código a seguir para ler todos os eventos publicados para a primeira partição nos Hubs de Eventos do Azure.",
-        "code": "question-003.md",
-        "body": "Você precisa concluir o código. Quais são as duas ações que você deve executar? Cada resposta correta apresenta uma parte da solução.",
-        "options": [
-            "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Earliest;",
-            "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).First();",
-            "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Latest;",
-            "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).Last();"
-        ],
-        "correct": [
-            "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Earliest;",
-            "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).First();"
-        ]
-    }
+  {
+    "id": "001",
+    "exam": "AZ204",
+    "domain": "Implementar a segurança do Azure",
+    "type": "options",
+    "header": "Você gerencia um aplicativo Web do Serviço de Aplicativo do Azure chamado app1. O App1 está registrado como um aplicativo do Microsoft Entra ID. É necessário garantir que as informações do usuário conectado no Microsoft Entra ID possam ser recuperadas pelo app1 ao utilizar o Microsoft Graph.",
+    "body": "O que você deve configurar?",
+    "options": [
+      "appRoles",
+      "Permissões do aplicativo",
+      "Permissões delegadas",
+      "GroupMembershipClaims"
+    ],
+    "correct": [
+      "Permissões delegadas"
+    ]
+  },
+  {
+    "id": "002",
+    "exam": "AZ204",
+    "domain": "Implementar a segurança do Azure",
+    "type": "options",
+    "header": "Você gerencia um aplicativo Web do Serviço de Aplicativo do Azure chamado app1. O App1 é registrado como um aplicativo multilocatário em um locatário do Microsoft Entra ID denominado tenant1.",
+    "body": "Você precisa conceder ao app1 a permissão para acessar a API do Microsoft Graph no tenant1. Qual entidade de serviço você deve usar?",
+    "options": [
+      "Herdada",
+      "Identidade gerenciada atribuída pelo sistema",
+      "Aplicativo",
+      "Identidade gerenciada atribuída pelo usuário"
+    ],
+    "correct": [
+      "Aplicativo"
+    ]
+  },
+  {
+    "id": "003",
+    "exam": "AZ204",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "type": "multiple",
+    "header": "Você desenvolve o código a seguir para ler todos os eventos publicados para a primeira partição nos Hubs de Eventos do Azure.",
+    "code": "question-003.md",
+    "body": "Você precisa concluir o código. Quais são as duas ações que você deve executar? Cada resposta correta apresenta uma parte da solução.",
+    "options": [
+      "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Earliest;",
+      "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).First();",
+      "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Latest;",
+      "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).Last();"
+    ],
+    "correct": [
+      "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Earliest;",
+      "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).First();"
+    ]
+  },
+  {
+    "id": "004",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está configurando um aplicativo Web que fornece streaming de vídeo aos usuários. O aplicativo faz uso de CI/CD. Você precisa garantir que o aplicativo esteja altamente disponível e que a experiência de streaming dos usuários seja constante. Você também deseja configurar o aplicativo para armazenar dados em uma localização geográfica mais próxima do usuário.",
+    "options": [
+      "Você inclui o uso de uma CDN (rede de distribuição de conteúdo) do Azure em seu design.",
+      "Você inclui o uso do Cache Redis do Azure em seu design.",
+      "Você inclui o uso de uma rede de área de armazenamento (SAN) em seu projeto."
+    ],
+    "correct": [
+      "true",
+      "false",
+      "false"
+    ],
+    "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  },
+  {
+    "id": "005",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você desenvolve um aplicativo Web em um plano de serviço de aplicativo de nível D1. Você percebe que o tempo de carregamento da página aumenta durante períodos de pico de tráfego.",
+    "options": [
+      "Habilitar o escalonamento automático no aplicativo Web.",
+      "Mudar para o plano de nível Premium App Service.",
+      "Mudar para o plano de nível Standard App Service.",
+      "Mudar para o plano de consumo dos Serviços de Aplicativos do Azure."
+    ],
+    "correct": [
+      "Mudar para o plano de nível Standard App Service."
+    ],
+    "body": "Você deseja implementar o escalonamento automático quando a carga da CPU estiver acima de 80%. Sua solução deve minimizar custos. O que você deve fazer primeiro?"
+  },
+  {
+    "id": "006",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você é um desenvolvedor em sua empresa e precisa atualizar as definições de um aplicativo lógico existente.",
+    "options": [
+      "O Pacote de Integração Empresarial (EIP)",
+      "A Visualização do código do Aplicativo Lógico",
+      "As Conexões de API",
+      "O Designer de Aplicativos Lógicos"
+    ],
+    "correct": [
+      "A Visualização do código do Aplicativo Lógico"
+    ],
+    "body": "O que você deve usar?"
+  },
+  {
+    "id": "007",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo uma solução para uma API pública. O back-end da API está hospedado em uma instância do Serviço de Aplicativo do Azure. Você implementou um serviço RESTful para o back-end da API e deve configurar a autenticação de back-end para a instância de serviço do API Management.",
+    "options": [
+      "Configurar credenciais básicas de gateway para o recurso Azure.",
+      "Configurar credenciais de gateway de certificado de cliente para o endpoint HTTP(s).",
+      "Configurar credenciais de gateway básicas para o endpoint HTTP(s).",
+      "Configurar credenciais de gateway de certificado de cliente para o recurso do Azure."
+    ],
+    "correct": [
+      "false",
+      "true",
+      "true",
+      "false"
+    ],
+    "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  }
 ]
