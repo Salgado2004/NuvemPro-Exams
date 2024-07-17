@@ -1,12 +1,13 @@
 .option{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 75%;
+    gap: 16px;
 }
 
 .option p{
     margin: 0;
+    width: 65%;
+    word-break: keep-all;
 }
 
 .option div{
