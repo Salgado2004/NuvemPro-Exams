@@ -123,5 +123,23 @@
       "false"
     ],
     "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  },
+  {
+    "id": "008",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você cria a política de retenção a seguir.",
+    "options": [
+      "\"tierToCool\": { \"daysAfterModificationGreaterThan\": 90 }",
+      "\"tierToCool\": { \"daysAfterCreationGreaterThan\": 90 }",
+      "\"tierToArchive\": { \"daysAfterModificationGreaterThan\": 90 }",
+      "\"tierToArchive\": { \"daysAfterCreationGreaterThan\": 90 }"
+    ],
+    "correct": [
+      "\"tierToCool\": { \"daysAfterModificationGreaterThan\": 90 }"
+    ],
+    "body": "Você precisará fazer a transição de blobs na camada de acesso frequente para uma camada online se os blobs não tiverem sido modificados em mais de 90 dias. Qual segmento de código você deve adicionar à linha 14?",
+    "code": "question-008.md"
   }
 ]
