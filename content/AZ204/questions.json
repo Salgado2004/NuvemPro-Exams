@@ -386,7 +386,7 @@
       "-IdentityType $UserAssigned"
     ],
     "correct": [
-      "-IdentityType: $SystemAssigned"
+      "-IdentityType $SystemAssigned"
     ],
     "body": "Update-AzVM -ResourceGroupName \"ContosoRG\" -VM $vm _____________________."
   }
