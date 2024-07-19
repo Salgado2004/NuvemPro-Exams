@@ -43,6 +43,10 @@
     padding: 0 8px;
 }
 
+.option p{
+    word-break: keep-all;
+}
+
 .option > div{
     display: flex;
     flex-direction: column;

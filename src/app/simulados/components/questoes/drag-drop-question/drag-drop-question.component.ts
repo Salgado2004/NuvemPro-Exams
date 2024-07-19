@@ -8,10 +8,17 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DragDropQuestionComponent extends QuestionStructure {
+  shuffledResources: string[];
   answers: string[] = [];
   dataTransfer: string;
   active: boolean = true;
   alert: boolean = true;
+
+  /* Randomize draggable resources */
+  ngOnInit(){
+    this.shuffledResources = [...this.data.correct];
+    this.shuffledResources.sort(() => Math.random() - 0.5);
+  }
 
   allowDrop(ev: any): void {
     ev.preventDefault();

@@ -6,7 +6,7 @@
     <div class="drag-drop-container">
         <div class="resources" (drop)="appendChild($event)" (click)="appendChild($event)"
             (dragover)="allowDrop($event)">
-            <div *ngFor="let resource of data.correct; let i = index" [id]="'ans-'+i" class="resource" [draggable]="active"
+            <div *ngFor="let resource of shuffledResources; let i = index" [id]="'ans-'+i" class="resource" [draggable]="active"
                 (dragstart)="setData($event)" (click)="setData($event)">{{ resource }}</div>
         </div>
         <div class="answer-area">
