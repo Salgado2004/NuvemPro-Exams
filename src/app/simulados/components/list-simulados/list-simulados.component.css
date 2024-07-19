@@ -9,6 +9,7 @@
 .simulados{
     display: flex;
     flex-wrap: wrap;
+    gap: 8px 0px;
     justify-content: space-evenly;
 }
 

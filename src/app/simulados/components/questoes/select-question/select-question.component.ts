@@ -14,7 +14,7 @@ export class SelectQuestionComponent extends QuestionStructure{
   
   /* Calculates the score of the question */
   score(){
-    return this.answer == this.correct[0] ? 1 : 0;
+    return this.answer == this.data.correct[0] ? 1 : 0;
   }
 
   getAnswers(): string{
@@ -30,7 +30,7 @@ export class SelectQuestionComponent extends QuestionStructure{
   verifyAnswer() {
     if(this.validate()){
       this.alert = false;
-      if(this.answer == this.correct[0]){
+      if(this.answer == this.data.correct[0]){
         document.querySelector(".option div").setAttribute('style', 'border: 2px solid #21c177');
       } else{
         document.querySelector(".option div").setAttribute('style', 'border: 2px solid #e35b59;');

@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HighlightModule } from 'ngx-highlightjs';
 import { SharedModule } from '../shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterLink, RouterModule } from '@angular/router';
 import { SimuladosRoutingModule } from './simulados.routes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 
 /* Páginas */
 import { HomeComponent } from './pages/home/home.component';
@@ -12,6 +14,7 @@ import { ExamComponent } from './pages/exam/exam.component';
 
 /* Componentes */
 import { ExamCardComponent } from './components/exam-card/exam-card.component';
+import { CodeblockComponent } from './components/codeblock/codeblock.component';
 import { ExamSummaryComponent } from './components/exam-summary/exam-summary.component';
 import { QuestionCardComponent } from './components/question-card/question-card.component';
 import { DomainSummaryComponent } from './components/domain-summary/domain-summary.component';
@@ -28,6 +31,7 @@ import { TrueFalseQuestionComponent } from './components/questoes/true-false-que
 
 /* Utils */
 import { SummaryPipe } from './utils/summary.pipe';
+import { QueryCodeService } from './utils/query-code.service';
 import { QueryExamsService } from './utils/query-exams.service';
 import { QueryQuestionsService } from './utils/query-questions.service';
 import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
@@ -38,17 +42,18 @@ import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
     ExamComponent,
     ExamCardComponent,
     ExamSummaryComponent,
-    QuestionsContainerComponent,
     DomainSummaryComponent,
     ListSimuladosComponent,
     QuestionCardComponent,
     QuestionSummaryComponent,
+    QuestionsContainerComponent,
     MultipleQuestionComponent,
     OptionsQuestionComponent,
     SelectQuestionComponent,
     TrueFalseQuestionComponent,
     DragDropQuestionComponent,
-    DinamicLoaderDirective
+    DinamicLoaderDirective,
+    CodeblockComponent
   ],
   imports: [
     CommonModule,
@@ -59,11 +64,14 @@ import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    HighlightModule,
+    HighlightLineNumbers,
     SummaryPipe
   ],
   providers: [
     QueryQuestionsService,
-    QueryExamsService
+    QueryExamsService,
+    QueryCodeService
   ]
 })
 export class SimuladosModule { }

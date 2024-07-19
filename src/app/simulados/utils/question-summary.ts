@@ -11,11 +11,11 @@ export class QuestionSummary {
     answer: string | string[];
 
     constructor(question: QuestionStructure){
-        this.header = question.header;
-        this.body = question.body;
-        this.domain = question.domain;
-        this.correct = question.correct;
-        this.options = question.options;
+        this.header = question.data.header;
+        this.body = question.data.body;
+        this.domain = question.data.domain;
+        this.correct = question.data.correct;
+        this.options = question.data.options;
         this.score = question.score();
         this.right = this.score == 1;
         this.answer = question.getAnswers();

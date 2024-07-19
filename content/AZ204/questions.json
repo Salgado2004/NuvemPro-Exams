@@ -1,0 +1,393 @@
+[
+  {
+    "id": "001",
+    "exam": "AZ204",
+    "domain": "Implementar a segurança do Azure",
+    "type": "options",
+    "header": "Você gerencia um aplicativo Web do Serviço de Aplicativo do Azure chamado app1. O App1 está registrado como um aplicativo do Microsoft Entra ID. É necessário garantir que as informações do usuário conectado no Microsoft Entra ID possam ser recuperadas pelo app1 ao utilizar o Microsoft Graph.",
+    "body": "O que você deve configurar?",
+    "options": [
+      "appRoles",
+      "Permissões do aplicativo",
+      "Permissões delegadas",
+      "GroupMembershipClaims"
+    ],
+    "correct": [
+      "Permissões delegadas"
+    ]
+  },
+  {
+    "id": "002",
+    "exam": "AZ204",
+    "domain": "Implementar a segurança do Azure",
+    "type": "options",
+    "header": "Você gerencia um aplicativo Web do Serviço de Aplicativo do Azure chamado app1. O App1 é registrado como um aplicativo multilocatário em um locatário do Microsoft Entra ID denominado tenant1.",
+    "body": "Você precisa conceder ao app1 a permissão para acessar a API do Microsoft Graph no tenant1. Qual entidade de serviço você deve usar?",
+    "options": [
+      "Herdada",
+      "Identidade gerenciada atribuída pelo sistema",
+      "Aplicativo",
+      "Identidade gerenciada atribuída pelo usuário"
+    ],
+    "correct": [
+      "Aplicativo"
+    ]
+  },
+  {
+    "id": "003",
+    "exam": "AZ204",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "type": "multiple",
+    "header": "Você desenvolve o código a seguir para ler todos os eventos publicados para a primeira partição nos Hubs de Eventos do Azure.",
+    "code": "question-003.md",
+    "body": "Você precisa concluir o código. Quais são as duas ações que você deve executar? Cada resposta correta apresenta uma parte da solução.",
+    "options": [
+      "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Earliest;",
+      "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).First();",
+      "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Latest;",
+      "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).Last();"
+    ],
+    "correct": [
+      "Insira o seguinte segmento de código na linha 6: EventPosition startingPosition = EventPosition.Earliest;",
+      "Insira o seguinte segmento de código na linha 7: string partitionId = (await consumer.GetPartitionIdsAsync()).First();"
+    ]
+  },
+  {
+    "id": "004",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está configurando um aplicativo Web que fornece streaming de vídeo aos usuários. O aplicativo faz uso de CI/CD. Você precisa garantir que o aplicativo esteja altamente disponível e que a experiência de streaming dos usuários seja constante. Você também deseja configurar o aplicativo para armazenar dados em uma localização geográfica mais próxima do usuário.",
+    "options": [
+      "Você inclui o uso de uma CDN (rede de distribuição de conteúdo) do Azure em seu design.",
+      "Você inclui o uso do Cache Redis do Azure em seu design.",
+      "Você inclui o uso de uma rede de área de armazenamento (SAN) em seu projeto."
+    ],
+    "correct": [
+      "true",
+      "false",
+      "false"
+    ],
+    "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  },
+  {
+    "id": "005",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você desenvolve um aplicativo Web em um plano de serviço de aplicativo de nível D1. Você percebe que o tempo de carregamento da página aumenta durante períodos de pico de tráfego.",
+    "options": [
+      "Habilitar o escalonamento automático no aplicativo Web.",
+      "Mudar para o plano de nível Premium App Service.",
+      "Mudar para o plano de nível Standard App Service.",
+      "Mudar para o plano de consumo dos Serviços de Aplicativos do Azure."
+    ],
+    "correct": [
+      "Mudar para o plano de nível Standard App Service."
+    ],
+    "body": "Você deseja implementar o escalonamento automático quando a carga da CPU estiver acima de 80%. Sua solução deve minimizar custos. O que você deve fazer primeiro?"
+  },
+  {
+    "id": "006",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você é um desenvolvedor em sua empresa e precisa atualizar as definições de um aplicativo lógico existente.",
+    "options": [
+      "O Pacote de Integração Empresarial (EIP)",
+      "A Visualização do código do Aplicativo Lógico",
+      "As Conexões de API",
+      "O Designer de Aplicativos Lógicos"
+    ],
+    "correct": [
+      "A Visualização do código do Aplicativo Lógico"
+    ],
+    "body": "O que você deve usar?"
+  },
+  {
+    "id": "007",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo uma solução para uma API pública. O back-end da API está hospedado em uma instância do Serviço de Aplicativo do Azure. Você implementou um serviço RESTful para o back-end da API e deve configurar a autenticação de back-end para a instância de serviço do API Management.",
+    "options": [
+      "Configurar credenciais básicas de gateway para o recurso Azure.",
+      "Configurar credenciais de gateway de certificado de cliente para o endpoint HTTP(s).",
+      "Configurar credenciais de gateway básicas para o endpoint HTTP(s).",
+      "Configurar credenciais de gateway de certificado de cliente para o recurso do Azure."
+    ],
+    "correct": [
+      "false",
+      "true",
+      "true",
+      "false"
+    ],
+    "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  },
+  {
+    "id": "008",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você cria a política de retenção a seguir.",
+    "options": [
+      "\"tierToCool\": { \"daysAfterModificationGreaterThan\": 90 }",
+      "\"tierToCool\": { \"daysAfterCreationGreaterThan\": 90 }",
+      "\"tierToArchive\": { \"daysAfterModificationGreaterThan\": 90 }",
+      "\"tierToArchive\": { \"daysAfterCreationGreaterThan\": 90 }"
+    ],
+    "correct": [
+      "\"tierToCool\": { \"daysAfterModificationGreaterThan\": 90 }"
+    ],
+    "body": "Você precisará fazer a transição de blobs na camada de acesso frequente para uma camada online se os blobs não tiverem sido modificados em mais de 90 dias. Qual segmento de código você deve adicionar à linha 14?",
+    "code": "question-008.md"
+  },
+  {
+    "id": "009",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está criando uma conta do Azure Cosmos DB que faz uso da API para NoSQL. Novos dados serão adicionados à conta todos os dias por uma aplicação web. Você precisa garantir que uma notificação por email seja enviada quando a informação é recebida de dispositivos IoT, e o custo da solução seja o menor possível.",
+    "options": [
+      "Usar um conector do Azure Cosmos DB",
+      "Usar uma associação do SendGrid",
+      "Usar uma ação do SendGrid",
+      "Usar o Plano de Consumo"
+    ],
+    "correct": [
+      "Usar uma associação do SendGrid",
+      "Usar o Plano de Consumo"
+    ],
+    "body": "Você decide usar o Azure Functions. Quais configurações a seguir você precisa fazer na sua função?"
+  },
+  {
+    "id": "010",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Essa questão pede que você avalie a sentença entre conchetes e determine se está correta. Caso não esteja, selecione a alternativa que corrige a sentença.",
+    "options": [
+      "Nenhuma mudança é necessária",
+      "Mongorestore",
+      "Azure Storage Explorer",
+      "AzCopy"
+    ],
+    "correct": [
+      "Mongorestore"
+    ],
+    "body": "Sua empresa tem uma implantação local do MongoDB e uma conta do Azure Cosmos DB que faz uso da API do MongoDB. Você precisa elaborar uma estratégia para migrar o MongoDB para a conta do Azure Cosmos DB. Você inclui a ferramenta [Data Management Gateway] em sua estratégia de migração."
+  },
+  {
+    "id": "011",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "A sua empresa tem um cluster Azure Kubernetes Service (AKS) que você gerencia a partir de um dispositivo ingressado no Azure AD. Os desenvolvedores criaram um aplicativo chamado MyApp. MyApp foi empacotado em uma imagem de contêiner. Você precisa implantar o arquivo de Manifest YAML para o aplicativo.",
+    "options": [
+      "Você instala o Azure CLI no dispositivo e executa o comando 'kubectl apply f myapp.yaml'",
+      "Você instala um docker client no dispositivo e executa o comando 'docker run -it microsoft/azure-cli:0.10.17'"
+    ],
+    "correct": [
+      "true",
+      "false"
+    ],
+    "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  },
+  {
+    "id": "012",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você desenvolve uma função do Azure que se conecta a um banco de dados SQL e é instrumentada usando o Application Insights. Você precisa exibir o texto completo da consulta SQL ao inspecionar a guia Dependência no Application Insights.",
+    "options": [
+      "\"enableDependencyTracking\": true",
+      "\"enablePerformanceCountersCollection\": true",
+      "\"dependencyTrackingOptions\": { \"enableSqlCommandTextInstrumentation\": true },",
+      "\"logLevel\": { \"default\": \"Verbose\" }"
+    ],
+    "correct": [
+      "\"enableDependencyTracking\": true",
+      "\"dependencyTrackingOptions\": { \"enableSqlCommandTextInstrumentation\": true },"
+    ],
+    "body": "Quais são as duas configurações no arquivo host.json que você deve usar? Cada resposta correta apresenta uma parte da solução."
+  },
+  {
+    "id": "013",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você tem uma instância do Application Insights chamada insight1 e precisa configurar um aplicativo Web para enviar dados de telemetria para o insight1.",
+    "options": [
+      "Alertas",
+      "Mapa do aplicativo",
+      "Chave de instrumentação",
+      "Análise de uso"
+    ],
+    "correct": [
+      "Chave de instrumentação"
+    ],
+    "body": "Qual parâmetro do Application Insights você deve usar?"
+  },
+  {
+    "id": "014",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você gerencia um banco de dados do Azure Cosmos DB chamado database1 e precisa ler itens do banco de dados sem nenhuma garantia de ordenação e garantir a maior disponibilidade.",
+    "options": [
+      "Forte",
+      "Desatualização limitada",
+      "Sessão",
+      "Eventual"
+    ],
+    "correct": [
+      "Eventual"
+    ],
+    "body": "Qual nível de consistência você deve usar?"
+  },
+  {
+    "id": "015",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você gerencia um contêiner do Azure Cosmos DB chamado container1 e precisa usar o método ReadItemAsync para ler um item do serviço do Azure Cosmos.",
+    "options": [
+      "consistency level",
+      "eTag",
+      "partitionKey",
+      "sessionToken",
+      "itemId"
+    ],
+    "correct": [
+      "partitionKey",
+      "itemId"
+    ],
+    "body": "Quais dois parâmetros você precisa fornecer? Cada resposta correta apresenta uma parte da solução."
+  },
+  {
+    "id": "016",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você tem uma política de ciclo de vida de Armazenamento do Microsoft Azure para blobs de blocos. Você precisa criar uma regra de filtro prefixoMatch que conterá uma matriz de cadeias de caracteres para que os prefixos sejam correspondidos.",
+    "options": [
+      "Uma marca de índice de blob de blocos",
+      "Um nome de blob de blocos",
+      "Um nome de contêiner",
+      "Um nome da conta de armazenamento"
+    ],
+    "correct": [
+      "Um nome de contêiner"
+    ],
+    "body": "Qual deve ser o primeiro elemento da cadeia de caracteres de prefixo?"
+  },
+  {
+    "id": "017",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Uma empresa implementa uma conta do Azure Cosmos DB de várias regiões. Você precisa configurar o nível de consistência padrão para a conta. O nível de consistência deve garantir que as operações de atualização feitas como um lote dentro de uma transação estejam sempre visíveis juntas.",
+    "options": [
+      "Prefixo consistente",
+      "Desatualização limitada",
+      "Sessão",
+      "Eventual"
+    ],
+    "correct": [
+      "Prefixo consistente"
+    ],
+    "body": "Qual nível de consistência você deve usar?"
+  },
+  {
+    "id": "018",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está planejando hospedar um site estático em uma conta de Armazenamento do Microsoft Azure. O site deve estar acessível somente por meio de HTTPS usando um nome de domínio personalizado. Você habilita o recurso de hospedagem de site estático. Defina a página padrão como index.html e a página de erro como error.html.",
+    "options": [
+      "Defina o nível de acesso do contêiner de hospedagem da Web como público",
+      "Adicione o domínio personalizado em rede na conta de Armazenamento do Azure",
+      "Integre o site estático à CDN do Azure",
+      "Cria um contêiner chamado $web",
+      "Carregue os arquivos index.html e error.html no contêiner de hospedagem da Web"
+    ],
+    "correct": [
+      "Integre o site estático à CDN do Azure",
+      "Carregue os arquivos index.html e error.html no contêiner de hospedagem da Web"
+    ],
+    "body": "Quais duas ações você deve executar em seguida? Cada resposta correta apresenta uma parte da solução."
+  },
+  {
+    "id": "019",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo uma aplicativo do Azure Functions usando o Visual Studio. O aplicativo processará pedidos inseridos por um aplicativo Web do Azure. O aplicativo Web coloca as informações do pedido no Armazenamento de Fila do Azure.",
+    "options": [
+      "O código irá mostrar logs do horário em que o pedido foi processado da fila",
+      "Quando a função ProcessOrders falha, a função irá tentar novamente até 5 vezes para um mesmo pedido, incluindo a primeira tentativa",
+      "Quando tem multiplos pedidos na fila, um lote de pedidos será recuperado da fila e a função ProcessOrders irá executar multiplas instâncias concorrentes para processar os pedidos",
+      "A função ProcessOrders envia os pedidos para uma tabela Orders no Armazenamento de Tabelas do Azure"
+    ],
+    "correct": [
+      "false",
+      "true",
+      "true",
+      "true"
+    ],
+    "body": "Você precisa revisar o código do aplicativo do Azure Function acima. Cada seleção correta vale um ponto",
+    "code": "question-019.md"
+  },
+  {
+    "id": "020",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está desenvolvendo uma solução para um hospital com os seguinte casos de uso: 1) O status mais recente dos detalhes de um paciente deve ser recuperado mesmo quando múltiplos usuários em diferentes locais atualizaram o registro do paciente. 2) Os dados de monitoramento de saúde de um paciente recuperados devem ser a versão mais recente ou uma antes dela. 3) Depois que um paciente recebe alta e todas as cobranças foram avaliadas, o registro de faturamento do paciente contém as cobranças finais. Você provisiona um banco de dados CosmosDB com a API NoSql e define o nível de consistência padrão da conta como Forte.",
+    "options": [
+      "Retorna o status mais recente do paciente",
+      "Returna os dados de monitoramento de saúde no máximo uma versão anterior",
+      "Depois que um paciente recebe alta e todas as cobranças foram avaliadas, o registro de faturamento do paciente contém as cobranças finais"
+    ],
+    "correct": [
+      "Forte",
+      "Desatualização limitada",
+      "Eventual"
+    ],
+    "body": "Você precisa minimizar a latência e qualquer impacto na disponibilidade da solução. Você deve substituir o nível de consistência padrão no nível de consulta para atender às garantias de consistência necessárias para os cenários. Quais níveis de consistência você deve implementar?"
+  },
+  {
+    "id": "021",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está configurando um ambiente de desenvolvimento para sua equipe. Você implanta a imagem mais recente do Visual Studio do Azure Marketplace em sua assinatura do Azure. O ambiente de desenvolvimento requer vários kits de desenvolvimento de software (SDKs) e componentes de terceiros para dar suporte ao desenvolvimento de aplicativos em toda a organização. Você instala e personaliza a máquina virtual (VM) implantada para sua equipe de desenvolvimento.",
+    "options": [
+      "Armazenamento de blobs do Azure",
+      "Armazenamento Data Lake do Azure",
+      "Amazenamento de arquivos do Azure",
+      "Armazenamento de tabelas do Azure"
+    ],
+    "correct": [
+      "Armazenamento de blobs do Azure"
+    ],
+    "body": "A VM personalizada deve ser salva para permitir o provisionamento de um novo ambiente de desenvolvimento de membro da equipe. Qual serviço você deve usar para armazenar as imagens da VM para provisionamento futuro."
+  },
+  {
+    "id": "022",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um aplicativo que precisa de acesso a uma VM (máquina virtual) do Azure. O ciclo de vida de acesso do aplicativo deve estar associado à instância de serviço da VM. Você precisa habilitar a identidade gerenciada para a VM. Como você deve concluir o segmento do PowerShell? Para responder, selecione as opções apropriadas na área de resposta.",
+    "options": [
+      "-AssignIdentity $SystemAssigned",
+      "-AssignIdentity $UserAssigned",
+      "-IdentityType $SystemAssigned",
+      "-IdentityType $UserAssigned"
+    ],
+    "correct": [
+      "-IdentityType: $SystemAssigned"
+    ],
+    "body": "Update-AzVM -ResourceGroupName \"ContosoRG\" -VM $vm _____________________."
+  }
+]

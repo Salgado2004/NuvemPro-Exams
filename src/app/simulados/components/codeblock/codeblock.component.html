@@ -1,0 +1,7 @@
+@if(pending){
+    <app-loader></app-loader>
+} @else{
+    <pre>
+        <code [highlightAuto]="code" class="code" [languages]="languages"></code>
+    </pre>
+}

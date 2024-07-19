@@ -7,6 +7,9 @@
     outline: none;
     border-radius: 15px;
     user-select: none;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 .option label{
