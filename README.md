@@ -1,9 +1,13 @@
 > See also: [Portuguese 🇧🇷](/translations/README_PT.md)
 
-<img src="src/assets/icons/logo.svg" width="50" height="50"/>
+# NuvemPro Exams <img src="src/assets/icons/logo.svg" width="50" height="50"/>
 
-# NuvemPro Exams
-A project to assist in the study and achievement of certifications from popular cloud platforms (Azure, AWS, GCP), providing practice exams.
+**Study for Cloud certifications**
+
+NuvemPro Exams is an open-source project that aims to help students prepare for Cloud Computing certifications on different platforms.
+
+## Practice exams
+The [practice exams](https://nuvemproexams.azurewebsites.net/simulados) are simulations that have questions in different formats for you to test your knowledge.
 
 ## Technologies used
 

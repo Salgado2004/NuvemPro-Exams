@@ -1,7 +1,13 @@
-<img src="../src/assets/icons/logo.svg" width="50" height="50"/>
 
-# NuvemPro Exams
-Um projeto para auxiliar no estudo e conquista de certificações das principais plataformas de nuvem (Azure, AWS, GCP), disponibilizando simulados das provas.
+
+# NuvemPro Exams <img src="../src/assets/icons/logo.svg" width="50" height="50"/>
+
+**Estude para certificações de Cloud**
+
+O NuvemPro Exams é um projeto open-source que visa ajudar estudantes a se prepararem para certificações de Cloud Computing de diversas plataformas.
+
+## Exames práticos
+Os [exames práticos](https://nuvemproexams.azurewebsites.net/simulados) são simulados que possuem questões de diferentes formatos para você testar seus conhecimentos.
 
 ## Tecnologias utilizadas
 
