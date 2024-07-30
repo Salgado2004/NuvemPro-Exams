@@ -13,10 +13,12 @@ export const appConfig: ApplicationConfig = {
       coreLibraryLoader: () => import('highlight.js/lib/core'),
       languages: {
         csharp: () => import('highlight.js/lib/languages/csharp'),
+        java: () => import('highlight.js/lib/languages/java'),
         python: () => import('highlight.js/lib/languages/python'),
         javascript: () => import('highlight.js/lib/languages/javascript'),
-        bash: () => import('highlight.js/lib/languages/bash'),
-        json: () => import('highlight.js/lib/languages/json')
+        xml: () => import('highlight.js/lib/languages/xml'),
+        json: () => import('highlight.js/lib/languages/json'),
+        bash: () => import('highlight.js/lib/languages/bash')
       }
     })
   ]
