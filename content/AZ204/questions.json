@@ -146,7 +146,7 @@
     "id": "009",
     "exam": "AZ204",
     "type": "multiple",
-    "domain": "Desenvolver para armazenamento do Azure",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
     "header": "Você está criando uma conta do Azure Cosmos DB que faz uso da API para NoSQL. Novos dados serão adicionados à conta todos os dias por uma aplicação web. Você precisa garantir que uma notificação por email seja enviada quando a informação é recebida de dispositivos IoT, e o custo da solução seja o menor possível.",
     "options": [
       "Usar um conector do Azure Cosmos DB",
@@ -197,7 +197,7 @@
     "id": "012",
     "exam": "AZ204",
     "type": "multiple",
-    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
     "header": "Você desenvolve uma função do Azure que se conecta a um banco de dados SQL e é instrumentada usando o Application Insights. Você precisa exibir o texto completo da consulta SQL ao inspecionar a guia Dependência no Application Insights.",
     "options": [
       "\"enableDependencyTracking\": true",
@@ -215,7 +215,7 @@
     "id": "013",
     "exam": "AZ204",
     "type": "options",
-    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
     "header": "Você tem uma instância do Application Insights chamada insight1 e precisa configurar um aplicativo Web para enviar dados de telemetria para o insight1.",
     "options": [
       "Alertas",
@@ -321,7 +321,7 @@
     "id": "019",
     "exam": "AZ204",
     "type": "truefalse",
-    "domain": "Desenvolver soluções de computação do Azure",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
     "header": "Você está desenvolvendo uma aplicativo do Azure Functions usando o Visual Studio. O aplicativo processará pedidos inseridos por um aplicativo Web do Azure. O aplicativo Web coloca as informações do pedido no Armazenamento de Fila do Azure.",
     "options": [
       "O código irá mostrar logs do horário em que o pedido foi processado da fila",
@@ -360,7 +360,7 @@
     "id": "021",
     "exam": "AZ204",
     "type": "select",
-    "domain": "Desenvolver soluções de computação do Azure",
+    "domain": "Desenvolver para armazenamento do Azure",
     "header": "Você está configurando um ambiente de desenvolvimento para sua equipe. Você implanta a imagem mais recente do Visual Studio do Azure Marketplace em sua assinatura do Azure. O ambiente de desenvolvimento requer vários kits de desenvolvimento de software (SDKs) e componentes de terceiros para dar suporte ao desenvolvimento de aplicativos em toda a organização. Você instala e personaliza a máquina virtual (VM) implantada para sua equipe de desenvolvimento.",
     "options": [
       "Armazenamento de blobs do Azure",
@@ -377,7 +377,7 @@
     "id": "022",
     "exam": "AZ204",
     "type": "select",
-    "domain": "Desenvolver soluções de computação do Azure",
+    "domain": "Implementar a segurança do Azure",
     "header": "Você está desenvolvendo um aplicativo que precisa de acesso a uma VM (máquina virtual) do Azure. O ciclo de vida de acesso do aplicativo deve estar associado à instância de serviço da VM. Você precisa habilitar a identidade gerenciada para a VM. Como você deve concluir o segmento do PowerShell? Para responder, selecione as opções apropriadas na área de resposta.",
     "options": [
       "-AssignIdentity $SystemAssigned",
@@ -389,5 +389,406 @@
       "-IdentityType $SystemAssigned"
     ],
     "body": "Update-AzVM -ResourceGroupName \"ContosoRG\" -VM $vm _____________________."
+  },
+  {
+    "id": "023",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Uma empresa usa Instâncias de Contêiner do Azure para um aplicativo e você precisa garantir que os contêineres sejam reiniciados quando o processo terminar com um código de saída diferente de zero. O que você deve fazer?",
+    "options": [
+      "Definir uma política de reinicialização de contêiner de `Always`",
+      "Executar os contêineres usando uma identidade gerenciada",
+      "Definir uma política de reinicialização de contêiner de `Never`",
+      "Executar um contêiner de inicialização"
+    ],
+    "correct": [
+      "Definir uma política de reinicialização de contêiner de `Always`"
+    ]
+  },
+  {
+    "id": "024",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você planeja desenvolver um aplicativo Web do Serviço de Aplicativo do Azure chamado app1 usando um contêiner personalizado do Windows.",
+    "options": [
+      "WEBSITE_LOAD_CERTIFICATES",
+      "WEBSITE_ROOT_CERT_PATH",
+      "WEBSITE_CORS_ALLOWED_ORIGINS",
+      "WEBSITE_AUTH_TOKEN_CONTAINER_SASURL"
+    ],
+    "correct": [
+      "WEBSITE_LOAD_CERTIFICATES"
+    ],
+    "body": "Você precisa carregar um certificado TLS/SSL no código do aplicativo. Qual configuração de aplicativo você deve configurar?"
+  },
+  {
+    "id": "025",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você cria um aplicativo Web do Azure localment, que consiste em um pacote ZIP. Você precisa implantar o aplicativo usando a CLI do Azure.",
+    "options": [
+      "Execute 'az webapp deploy' especificando '--clean true'",
+      "Execute 'az webapp deploy' especificando '--restart true'",
+      "Execute 'az webapp deploy' em um slot de preparo com a troca automática habilitada",
+      "Execute 'az webapp deploy' usando um valor alto para o parâmetro '--timeout'"
+    ],
+    "correct": [
+      "Execute 'az webapp deploy' em um slot de preparo com a troca automática habilitada"
+    ],
+    "body": "A implantação deve reduzir a probabilidade de arquivos bloqueados. O que você deve fazer?"
+  },
+  {
+    "id": "026",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você gerencia os slots de implantação de preparo e produção de um aplicativo Web do Serviço de Aplicativo do Azure chamado app1.",
+    "options": [
+      "Centro de implantação",
+      "Configuração do slot de implantação",
+      "Identidade gerenciada",
+      "Escalar verticalmente"
+    ],
+    "correct": [
+      "Configuração do slot de implantação"
+    ],
+    "body": "Você precisa garantir que uma cadeia de conexão não seja trocada quando a troca for executada. Qual configuração você deve usar?"
+  },
+  {
+    "id": "027",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você gerencia uma implantação de várias instâncias de um aplicativo Web do Serviço de Aplicativo do Azure chamado app1. Você precisa garantir que um aplicativo cliente seja roteado para a mesma instância durante a vida útil da sessão.",
+    "options": [
+      "WebSocket",
+      "Sempre",
+      "Versão HTTP",
+      "Afinidade ARR"
+    ],
+    "correct": [
+      "Afinidade ARR"
+    ],
+    "body": "Qual configuração de plataforma você deve usar?"
+  },
+  {
+    "id": "028",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você planeja criar um aplicativo do Azure Functions baseado em script em C#.",
+    "options": [
+      "Criar um arquivo function.json para cada função.",
+      "Criar um arquivo host.json para o aplicativo do Azure Functions.",
+      "Decorar métodos de cada função com atributos C#.",
+      "Decorar parâmetros de cada função com atributos C#."
+    ],
+    "correct": [
+      "Criar um arquivo function.json para cada função."
+    ],
+    "body": "Você precisa configurar o gatilho e as associações para as funções do aplicativo do Azure Functions. O que você deve fazer?"
+  },
+  {
+    "id": "029",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Um grupo de contêineres nas Instâncias de Contêiner do Azure tem vários contêineres, que devem ser reiniciados quando o processo executado no grupo for encerrado por um erro.",
+    "options": [
+      "az container restart \\ --name mycontainer \\ --resource-group myResourceGroup \\ --no-wait",
+      "az container create \\ --resource-group myResourceGroup \\ --name mycontainer \\ --image mycontainerimage \\ --restart-policy Always",
+      "az container create \\ --resource-group myResourceGroup \\ --name mycontainer \\ --image mycontainerimage \\ --restart-policy Never",
+      "az container create \\ --resource-group myResourceGroup \\ --name mycontainer \\ --image mycontainerimage \\ --restart-policy OnFailure"
+    ],
+    "correct": [
+      "az container create \\ --resource-group myResourceGroup \\ --name mycontainer \\ --image mycontainerimage \\ --restart-policy OnFailure"
+    ],
+    "body": "Você precisa definir uma política de reinicialização para o grupo de contêineres. Qual comando da CLI do Azure você deve usar?"
+  },
+  {
+    "id": "030",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você desenvolve um aplicativo que será acessado por um fornecedor. Ele requer uma Assinatura de Acesso Compartilhado (SAS)  para acessar os serviços do Azure na assinatura de sua empresa.",
+    "options": [
+      "Sempre usar HTTPS",
+      "Conceder permissão a vários recursos",
+      "Usar os logs do Azure Monitor e do Armazenamento do Microsoft Azure para monitorar o aplicativo",
+      "Definir uma política de acesso armazenada para uma SAS de serviço",
+      "Definir um longo tempo de expiração"
+    ],
+    "correct": [
+      "Sempre usar HTTPS",
+      "Usar os logs do Azure Monitor e do Armazenamento do Microsoft Azure para monitorar o aplicativo",
+      "Definir uma política de acesso armazenada para uma SAS de serviço"
+    ],
+    "body": "Você precisa proteger o SAS. Quais são as ações que você deve executar? Cada resposta apresenta uma solução completa."
+  },
+  {
+    "id": "031",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você planeja gerar um token de Assinatura de Acesso Compartilhado (SAS) para acesso de leitura a um blob em uma conta de armazenamento.",
+    "options": [
+      "Chave de conta primária",
+      "Chave de conta secundária",
+      "Credenciais do Microsoft Entra ID atribuídas à função de Colaborador",
+      "Credenciais do Microsoft Entra ID atribuídas à função de Leitor"
+    ],
+    "correct": [
+      "Credenciais do Microsoft Entra ID atribuídas à função de Colaborador"
+    ],
+    "body": "Você precisa proteger o token de ser comprometido. O que você deve usar?"
+  },
+  {
+    "id": "032",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você precisa gerar um token de Assinatura de Acesso Compartilhado que conceda permissão de leitura a um contêiner de blob.",
+    "options": [
+      "Resource = \"c\"",
+      "Resource = \"b\"",
+      "BlobContainerSasPermissions.Create",
+      "BlobContainerSasPermissions.Read"
+    ],
+    "correct": [
+      "Resource = \"c\"",
+      "BlobContainerSasPermissions.Read"
+    ],
+    "body": "O que você deve usar para completar os espaços que faltam no segmento de código?",
+    "code": "question-032.md"
+  },
+  {
+    "id": "033",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você tem um aplicativo que grava dados no Azure Cosmos DB e precisa configurar o nível de consistência.",
+    "options": [
+      "Sessão",
+      "Eventual",
+      "Desatualização limitada",
+      "Forte"
+    ],
+    "correct": [
+      "Sessão"
+    ],
+    "body": "O Aplicativo deve oferecer prefixo consistente e leituras monotônicas. Qual nível de consistência você deve usar?"
+  },
+  {
+    "id": "034",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você tem dois hosts Hyper-V chamados Host1 e Host2. O Host1 tem uma máquina virtual do Azure chamada VM1 que foi implantada usando um template personalizado do Azure Resource Manager.",
+    "options": [
+      "Na folha Gerenciamento de atualizações, clique em Habilitar.",
+      "Na folha Visão geral, mova a VM1 para uma assinatura diferente.",
+      "Na folha Reimplantar, clique em Reimplantar.",
+      "Na folha Perfil, modifique o local de uso."
+    ],
+    "correct": [
+      "Na folha Reimplantar, clique em Reimplantar."
+    ],
+    "body": "O que você deve fazer para mover a VM1 para o Host2?"
+  },
+  {
+    "id": "035",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você baixou um modelo do Azure Resource Manager para implantar diversas máquinas virtuais. O modelo é baseado em uma máquina virtual atual, mas deve ser adaptado para referenciar uma senha administrativa. Você precisa ter certeza de que a senha não está armazenada em texto simples e está se preparando para criar os componentes necessários para atingir seu objetivo.",
+    "options": [
+      "Um Azure Key Vault",
+      "Uma conta de Armazenamento do Azure",
+      "Uma proteção de identidade do Microsoft Entra ID",
+      "Uma política de acesso",
+      "Uma política do Azure",
+      "Uma política de backup"
+    ],
+    "correct": [
+      "Um Azure Key Vault",
+      "Uma política de acesso"
+    ],
+    "body": "Quais das opções a seguir você deve criar para atingir seu objetivo?"
+  },
+  {
+    "id": "036",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Sua companhia tem um aplicativo Web chamado WebApp1. Você usa o WebJobs SDK para projetar uma tarefa em segundo plano do Serviço de Aplicativo acionada que invoca automaticamente uma função no código sempre que novos dados são recebidos em uma fila.",
+    "options": [
+      "Aplicativos Lógicos",
+      "WebJobs",
+      "Flow",
+      "Functions"
+    ],
+    "correct": [
+      "WebJobs"
+    ],
+    "body": "Você está se preparando para configurar o serviço que processa os dados da fila. Qual dos seguintes é o serviço que você deve usar?"
+  },
+  {
+    "id": "037",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Sua companhia tem uma assinatura do Azure. Você precisa implantar um número de máquinas virtuais do Azure para a assinatura usando templates do Azure Resource Manager. As máquinas virtuais estarão incluídas em um único conjunto de disponibilidade.",
+    "options": [
+      "30",
+      "20",
+      "40",
+      "10"
+    ],
+    "correct": [
+      "20"
+    ],
+    "body": "Você precisa garantir que os templates ARM permitam que o máximo de máquinas virtuais possível permaneçam acessíveis no caso de um evento de falha ou manutenção. Qual valor você deve configurar na propriedade platformUpdateDomainCount?"
+  },
+  {
+    "id": "038",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um aplicativo Web de e-Commerce e deseja usar um Azure Key Vault para assegurar que os acessos ao aplicativo Web de e-Commerce sejam protegidos usando a autenticação do Serviço de Aplicativo do Azure e o Microsoft Entra ID.",
+    "options": [
+      "Executar o comando 'az keyvault secret'",
+      "Habilitar o Azure AD Connect",
+      "Habilitar uma Identidade de Serviço Gerenciada",
+      "Criar uma entidade de serviço do Azure AD"
+    ],
+    "correct": [
+      "Habilitar uma Identidade de Serviço Gerenciada"
+    ],
+    "body": "O que você deve fazer no aplicativo Web de e-Commerce?"
+  },
+  {
+    "id": "039",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Esta questão requer que você avalie o texto entre colchetes para determinar se está correto. Se a afirmação estiver correta, selecione 'Nenhuma alteração é necessária.' Se a afirmação estiver incorreta, selecione a opção de resposta que torna a afirmação correta.",
+    "options": [
+      "Nenhuma alteração é necessária.",
+      "Um segredo",
+      "Um login hint",
+      "Um ID de cliente"
+    ],
+    "correct": [
+      "Nenhuma alteração é necessária."
+    ],
+    "body": "Seu locatário do Azure Active Directory Azure (Azure AD) tem uma assinatura do Azure vinculada a ele. Seu desenvolvedor criou um aplicativo móvel que obtém tokens de acesso do Azure AD usando o tipo de concessão implícita OAuth 2. O aplicativo móvel deve estar registrado no Azure AD. Você precisa de [um URI de redirecionamento] do desenvolvedor para fins de registro."
+  },
+  {
+    "id": "040",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está criando um Azure Key Vault usando o PowerShell. Objetos deletados do key vault devem ser mantidos por um período de 90 dias.",
+    "options": [
+      "EnabledForDeployment",
+      "EnablePurgeProtection",
+      "EnabledForTemplateDeployment",
+      "EnableSoftDelete"
+    ],
+    "correct": [
+      "EnablePurgeProtection",
+      "EnableSoftDelete"
+    ],
+    "body": "Quais dos seguintes parâmetros você deve usar em conjunto para atingir esse objetivo? (Selecione dois)"
+  },
+  {
+    "id": "041",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "A assinatura do Azure da sua empresa inclui um espaço de trabalho do Azure Log Analytics. Sua empresa tem cem servidores locais que executam o Windows Server 2012 R2 ou o Windows Server 2016 e estão vinculados ao espaço de trabalho do Azure Log Analytics, que está configurado para recolher contadores de desempenho associados à segurança destes servidores ligados. Você deve configurar alertas com base nas informações coletadas pelo espaço de trabalho do Azure Log Analytics.",
+    "options": [
+      "O tipo de sinal do registro de atividades.",
+      "O tipo de sinal do Log do Aplicativo.",
+      "O tipo de sinal de métricas.",
+      "O tipo de sinal do log de auditoria."
+    ],
+    "correct": [
+      "O tipo de sinal de métricas."
+    ],
+    "body": "Você deve garantir que as regras de alerta permitam dimensões e que o tempo de criação de alerta seja reduzido ao mínimo. Além disso, uma única notificação de alerta deve ser criada quando o alerta for criado e quando o alerta for resolvido. Você precisa usar o tipo de sinal necessário ao criar as regras de alerta. Qual das alternativas a seguir é a opção que você deve usar?"
+  },
+  {
+    "id": "042",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você está desenvolvendo uma aplicação MVC em .NET Core que permite consumidores buscarem acomodações para feriados de provedores independentes. Você quer implementar a Pesquisa do Azure para permitir que a aplicação pesquise pelo índice usando vários critérios para localizar documentos relacionados com as acomodações.",
+    "options": [
+      "Configurar a propriedade SearchMode da classe SearchParameter",
+      "Configurar a propriedade QueryType da classe SearchParameter",
+      "Configurar a propriedade Facets da classe SearchParameter",
+      "Configurar a propriedade Filter da classe SearchParameter"
+    ],
+    "correct": [
+      "Configurar a propriedade QueryType da classe SearchParameter"
+    ],
+    "body": "Você quer que a aplicação permita aos consumidores pesquisar pelo índice usando RegEx. O que você deve fazer?"
+  },
+  {
+    "id": "043",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você está desenvolvendo uma aplicação MVC em .NET Core que permite consumidores buscarem acomodações para feriados de provedores independentes. Você quer implementar a Pesquisa do Azure para permitir que a aplicação pesquise pelo índice usando vários critérios para localizar documentos relacionados com as acomodações.",
+    "options": [
+      "Configurar a propriedade SearchMode da classe SearchParameter",
+      "Configurar a propriedade QueryType da classe SearchParameter",
+      "Configurar a propriedade Facets da classe SearchParameter",
+      "Configurar a propriedade Filter da classe SearchParameter"
+    ],
+    "correct": [
+      "Configurar a propriedade Filter da classe SearchParameter"
+    ],
+    "body": "Você quer que o aplicativo liste acomodações para feriados que estejam dentro de uma faixa de preço específica e que estejam a uma distância específica de um aeroporto. O que você deveria fazer?"
+  },
+  {
+    "id": "044",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você é desenvolvedor de uma empresa que fornece serviço de gerenciamento de reservas na indústria do turismo e está implementando o Azure Search para as agências de turismo listadas na solução da sua empresa. Você cria o índice no Azure Search. Agora você precisa usar o Azure Search .NET SDK para importar os dados relevantes para o serviço Azure Search.",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: "
+    ],
+    "correct": [
+      "Criar um objeto SearchlndexClient para conectar-se ao índice de pesquisa.",
+      "Criar um IndexBatch que contenha o documentos que devem ser adicionados.",
+      "Chame o método Documents.Index do SearchIndexClient e passe o IndexBatch."
+    ],
+    "body": "Quais são as três ações que você deve executar em sequência? Para responder, mova as ações apropriadas da lista de ações da esquerda para a direita e organize-as na ordem correta."
+  },
+  {
+    "id": "045",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um aplicativo C++ que é compilado em um aplicativo nativo chamado process.exe. O aplicativo aceita imagens como entrada e retorna imagens em um dos seguintes formatos de imagem: GIF, PNG ou JPEG. Você deve implantar o aplicativo como uma Função do Azure.",
+    "options": [
+      "\"type\":\"http\" / \"customHandler\" / \"description\" / false",
+      "\"platform\":\"gcm\" / \"extensions\" / \"worker\" / true",
+      "\"type\":\"http\" / \"languageWorker\" / \"path\" / true",
+      "\"datatype\":\"stream\" / \"customHandler\" / \"description\" / false"
+    ],
+    "correct": [
+      "\"type\":\"http\" / \"customHandler\" / \"description\" / false"
+    ],
+    "body": "Você precisa configurar a função e hospedar os arquivos json. Como você deve preencher os arquivos json?",
+    "code": "question-045.md"
   }
 ]
