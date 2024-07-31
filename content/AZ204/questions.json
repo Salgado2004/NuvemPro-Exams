@@ -343,7 +343,12 @@
     "exam": "AZ204",
     "type": "dragdrop",
     "domain": "Desenvolver para armazenamento do Azure",
-    "header": "Você está desenvolvendo uma solução para um hospital com os seguinte casos de uso: 1) O status mais recente dos detalhes de um paciente deve ser recuperado mesmo quando múltiplos usuários em diferentes locais atualizaram o registro do paciente. 2) Os dados de monitoramento de saúde de um paciente recuperados devem ser a versão mais recente ou uma antes dela. 3) Depois que um paciente recebe alta e todas as cobranças foram avaliadas, o registro de faturamento do paciente contém as cobranças finais. Você provisiona um banco de dados CosmosDB com a API NoSql e define o nível de consistência padrão da conta como Forte.",
+    "header": "Você está desenvolvendo uma solução para um hospital e provisiona um banco de dados CosmosDB com a API NoSql e define o nível de consistência padrão da conta como Forte. A solução possui os seguinte casos de uso:",
+    "requirements": [
+      "O status mais recente dos detalhes de um paciente deve ser recuperado mesmo quando múltiplos usuários em diferentes locais atualizaram o registro do paciente.",
+      "Os dados de monitoramento de saúde de um paciente recuperados devem ser a versão mais recente ou uma antes dela.",
+      "Depois que um paciente recebe alta e todas as cobranças foram avaliadas, o registro de faturamento do paciente contém as cobranças finais."
+    ],
     "options": [
       "Retorna o status mais recente do paciente",
       "Returna os dados de monitoramento de saúde no máximo uma versão anterior",
@@ -790,5 +795,354 @@
     ],
     "body": "Você precisa configurar a função e hospedar os arquivos json. Como você deve preencher os arquivos json?",
     "code": "question-045.md"
+  },
+  {
+    "id": "046",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Uma empresa implementa uma conta do Azure Cosmos DB chamada Account1 para armazenar detalhes de produtos. Você precisa escrever uma consulta SQL parametrizada para obter itens do contêiner Produtos com base na categoria e no preço como parâmetros.",
+    "options": [
+      "SELECT * FROM Products p WHERE p.category = 'Category' AND p.price = 'Price'",
+      "SELECT * FROM Products p WHERE p.category = @Category AND p.price = @Price",
+      "SELECT * FROM Account1.Products p WHERE p.category = @Category AND p.price = @Price",
+      "SELECT * FROM Account1 a WHERE a.products.category = 'Category' AND a.products.price = 'Price'"
+    ],
+    "correct": [
+      "SELECT * FROM Products p WHERE p.category = @Category AND p.price = @Price"
+    ],
+    "body": "Qual consulta SQL você deve usar?"
+  },
+  {
+    "id": "047",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você gerencia APIs em produção usando o Gerenciamento de API do Azure e precisa remover cabeçalhos X-Powered-By e X-AspNet-Version de uma resposta.",
+    "options": [
+      "<backend> <set-header name=\"X-Powered-By\" exists-action=\"delete\"> <set-header name=\"X-AspNet-Version\" exists-action=\"delete\"> <base /> </backend> <outbound> <base /> </outbound>",
+      "<backend> <base /> </backend> <outbound> <set-header name=\"X-Powered-By\" exists-action=\"delete\"> <set-header name=\"X-AspNet-Version\" exists-action=\"delete\"> <base /> </outbound>",
+      "<backend> <set-header name=\"X-Powered-By\" exists-action=\"append\"> <set-header name=\"X-AspNet-Version\" exists-action=\"append\"> <base /> </backend> <outbound> <base /> </outbound>",
+      "<backend> <base /> </backend> <outbound> <set-header name=\"X-Powered-By\" exists-action=\"append\"> <set-header name=\"X-AspNet-Version\" exists-action=\"append\"> <base /> </outbound>"
+    ],
+    "correct": [
+      "<backend> <base /> </backend> <outbound> <set-header name=\"X-Powered-By\" exists-action=\"delete\"> <set-header name=\"X-AspNet-Version\" exists-action=\"delete\"> <base /> </outbound>"
+    ],
+    "body": "Qual segmento de código você deve adicionar para completar o bloco acima?",
+    "code": "question-047.md"
+  },
+  {
+    "id": "048",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um aplicativo .NET que inclui várias imagens de contêiner. O aplicativo será implantado nas Instâncias de Contêiner do Azure (ACI).",
+    "options": [
+      "Pods do Kubernetes",
+      "Contêineres confidenciais",
+      "Grupo de contêineres",
+      "Implantação de rede virtual"
+    ],
+    "correct": [
+      "Grupo de contêineres"
+    ],
+    "body": "Você precisa garantir que um compartilhamento de arquivos do Azure possa ser mapeado para cada contêiner do aplicativo. Qual configuração você deve usar?"
+  },
+  {
+    "id": "049",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você tem 10 aplicativos em execução no Serviço de Aplicativo do Azure e precisa garantir que os aplicativos tenham acesso aos itens armazenados na Configuração de Aplicativos do Azure usando uma configuração comum.",
+    "options": [
+      "Identidades gerenciadas atribuídas pelo sistemas",
+      "Uma identidade gerenciada atribuída pelo usuário",
+      "Uma entidade de serviço com permissões para a Configuração de Aplicativos do Azure",
+      "Credenciais do desenvolvedor no código"
+    ],
+    "correct": [
+      "Uma identidade gerenciada atribuída pelo usuário"
+    ],
+    "body": "Senhas ou chaves não devem ser usadas. Qual solução você pode usar?"
+  },
+  {
+    "id": "050",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um conjunto de templates aninhados do Azure Resource Manager para implantar recursos no Azure. Você cria um template chamado mainTemplate.json que contém referência para os seguintes templates: linkedTemplate1.json e linkedTemplate2.json. Você precisa armazenar todos esses templates no Azure. Existem os seguintes requisitos: ",
+    "requirements": [
+      "Armazenar os templates no Azure.",
+      "Permitir versionamento dos templates.",
+      "Gerenciar o acesso aos templates com RBAC.",
+      "Garantir que usuários tenham acesso de leitura aos templates.",
+      "Permitir que usuários implantem templates."
+    ],
+    "options": [
+      "blueprint artifact template create",
+      "mainTemplate.json",
+      "linkedTemplate1.json",
+      "ts create",
+      "storage account create",
+      "linkedTemplate2.json"
+    ],
+    "correct": [
+      "ts create",
+      "mainTemplate.json"
+    ],
+    "body": "Como você deve completar o comando acima?",
+    "code": "question-050.md"
+  },
+  {
+    "id": "051",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um serviço onde consumidores podem reportar notícias a partir de um browser usando o Azure Web PubSub. O serviço será implementado como um Aplicativo de Função do Azure que usa o subprotocolo WebSocket JSON para receber as notícias. Você precisa implementar as conexões para o Aplicativo de Função do Azure.",
+    "options": [
+      "user",
+      "system",
+      "message",
+      "connected",
+      "webPubSubTrigger",
+      "webPubSubConnection"
+    ],
+    "correct": [
+      "user",
+      "webPubSubTrigger"
+    ],
+    "body": "Como você deve configurar a conexão? Marque as alternativas que completam o bloco de código acima.",
+    "code": "question-051.md"
+  },
+  {
+    "id": "052",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está construindo uma aplicação de Software como serviço (SaaS) que analisa dados de DNA e é executada em uma Máquina virtual do Azure em uma zona de disponibilidade. Os dados serão armazenados em discos gerenciados ligados à VM. Você tem os seguintes requisitos:",
+    "requirements": [
+      "A aplicação deve ser capaz de rapidamente reverter os dados para uma versão anterior em caso de falha sistêmica.",
+      "A aplicação deve minimizar o impacto no caso de uma falha no datacenter do Azure."
+    ],
+    "options": [
+      "Premium SSD com redundância de armazenamento local (LRS)",
+      "Standard SSD com redundância de armazenamento de Zona (ZRS)",
+      "Premium SSD com redundância de armazenamento de Zona (ZRS)",
+      "Premium SSD com redundância de armazenamento geográfica (GRS)"
+    ],
+    "correct": [
+      "Premium SSD com redundância de armazenamento de Zona (ZRS)"
+    ],
+    "body": "Você precisa provisionar o Disco gerenciado do Azure para a VM para maximizar a performance e cumprir os requisitos. Qual tipo de disco você deve usar?"
+  },
+  {
+    "id": "053",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo uma aplicação que inclui dois contêineres do Docker. A aplicação deve cumprir os seguintes requisitos:",
+    "options": [
+      "Configurar o Ciclo de Vida como grupo de contêineres e Volume de Armazenamento como Diretório Vazio",
+      "Configurar o Ciclo de Vida como imagem de contêiner e Volume de Armazenamento como Clone de repositório Git",
+      "Configurar o Ciclo de Vida como grupo de recursos e Volume de Armazenamento como Compartilhamento de arquivos do Azure",
+      "Configurar o Ciclo de Vida como grupo de contêineres e Volume de Armazenamento como Clone de repositório Git",
+      "Configurar o Ciclo de Vida como grupo de contêineres e Volume de Armazenamento como Compartilhamento de arquivos do Azure"
+    ],
+    "correct": [
+      "Configurar o Ciclo de Vida como grupo de contêineres e Volume de Armazenamento como Clone de repositório Git"
+    ],
+    "body": "Você deve configurar as Instâncias de Contêiner do Azure para a aplicação, como deve ficar sua configuração?",
+    "requirements": [
+      "Os contêineres não devem ter permissão de administrador",
+      "Os contêineres devem ser implantados como Instâncias de Contêiner do Azure (ACI) usando um arquivo YAML",
+      "Os contêineres devem ter o ciclo de vida, recursos, rede local e volume de armazenamento compartilhados",
+      "O volume de armazenamento deve persistir durante quedas de contêiner",
+      "O volume de armazenamento deve ser reimplantado sempre que os contêineres forem parados ou reiniciados"
+    ]
+  },
+  {
+    "id": "054",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você precisa implementar o método GetCredentials da classe Processing.",
+    "options": [
+      "MSITokenProvider(\"...\", null)",
+      "tp.GetAccessTokenAsync(\"...\")",
+      "AzureServiceTokenProvider()",
+      "StringTokenProvider(\"storage\", \"msi\")",
+      "tp.GetAuthenticationHeaderAsync(CancellationToken.None)"
+    ],
+    "correct": [
+      "tp.GetAccessTokenAsync(\"...\")",
+      "AzureServiceTokenProvider()"
+    ],
+    "body": "Quais segmentos você deve adicionar para completar o código?",
+    "code": "question-054.md"
+  },
+  {
+    "id": "055",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você precisa garantir que o código atenda requisitos de recuperação de desastre.",
+    "options": [
+      "true",
+      "SingleTransferContext",
+      "ShouldTransferCallbackAsync",
+      "false",
+      "DirectoryTransferContext",
+      "ShouldOverwriteCallBackAsync"
+    ],
+    "correct": [
+      "true",
+      "SingleTransferContext",
+      "ShouldOverwriteCallBackAsync"
+    ],
+    "body": "Quais segmentos você deve adicionar para completar o código?",
+    "code": "question-055.md"
+  },
+  {
+    "id": "056",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está implementando um serviço Web ASP.NET Core que vai executar em um Aplicativo Web do Azure. O serviço web vai usar um banco de dados SQL Server on-premise para armazenamento, e também inclui um WebJob que processa atualizações nos dados. 4 clientes vão usar o serviço web.",
+    "options": [
+      "4 instâncias de VM e camada de serviço Standard",
+      "8 instâncias de VM e camada de serviço de Consumo",
+      "4 instâncias de VM e camada de serviço Isolada",
+      "8 instâncias de VM e camada de serviço Isolada",
+      "16 instâncias de VM e camada de serviço Standard"
+    ],
+    "correct": [
+      "4 instâncias de VM e camada de serviço Isolada"
+    ],
+    "body": "Como você deve configurar o Serviço de Aplicativo do Azure?",
+    "requirements": [
+      "Cada instância do WebJob processa dados para um único cliente e deve executar como uma instância Singleton",
+      "Cada implantação deve ser testada usando slots de implantação antes de acessar dados de produção",
+      "Os custos do Azure devem ser mínimos",
+      "Os recursos do Azure devem estar localizados em uma rede isolada"
+    ]
+  },
+  {
+    "id": "057",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você é um desenvolvedor de uma companhia de Software como serviço (SaaS) que usa uma Função do Azure para processar pedidos. A função atualmente é executada em um Aplicativo de Função do Azure que é disparado pelo Armazenamento de Filas do Azure. Você está se preparando para migrar a Função do Azure para o Kubernetes usando o Kubernetes-based Event Driven Autoscaling (KEDA).",
+    "options": [
+      "código da Função do Azure",
+      "Intervalo de polling",
+      "String de conexão do Armazenamento do Azure"
+    ],
+    "correct": [
+      "Deployment",
+      "ScaledObject",
+      "Secret"
+    ],
+    "body": "Você precisa configurar os Kubernetes Custom Resource Definitions (CRD) para a Função do Azure. Quais CRDs você deve configurar?"
+  },
+  {
+    "id": "058",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está criando um script do CLI do Azure que cria um Aplicativo Web do Azure e serviços relacionados do Serviço de aplicativo do Azure. O aplicativo web usa as seguintes variáveis: ",
+    "options": [
+      "(1)",
+      "(2)",
+      "(3)",
+      "(4)",
+      "(5)"
+    ],
+    "correct": [
+      "az appservice plan create",
+      "az webapp create",
+      "--plan $webappname",
+      "az webapp deployment",
+      "--repo-url $gitrepo --branch master --manual-integration"
+    ],
+    "body": "Você precisa automaticamente implantar o código do GitHub para o recém criado aplicativo web. Como você deve completar o script?",
+    "requirements": [
+      "$gitrepo = https://github.com/Salgado2004/Angular-Ecommerce-UFPR-Faz-Sistema",
+      "$webappname = ecommerceUFPRAngular"
+    ],
+    "code": "question-058.md"
+  },
+  {
+    "id": "059",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você desenvolve e implanta uma API do Serviço de Aplicativo do Azure em um slot de implantação chamado 'Desenvolvimento'. Você cria slots de implantação adicionais denominados 'Teste' e 'Produção', e também habilita a troca automática no slot de implantação de produção. Você precisa garantir que os scripts sejam executados e que os recursos estejam disponíveis antes que ocorra uma operação de troca.",
+    "options": [
+      "Habilitar a troca automática no slot de teste e depois implantar o aplicativo no slot de teste",
+      "Atualizar o arquivo web.config para incluir o elemento applicationInitialization e especificar ações de inicialização personalizadas para executar os scripts.",
+      "Desabilitar a troca automática, atualizar o aplicativo com um método 'statuscheck' para executar os scripts, reabilitar a troca automática e implantar o aplicativo no slot de produção."
+    ],
+    "correct": [
+      "false",
+      "true",
+      "false"
+    ],
+    "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  },
+  {
+    "id": "060",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você desenvolve uma oferta de software como serviço (SaaS) para gerenciar fotografias. Usuários fazem upload de fotos para um serviço web que armazena as fotos no Armazenamento de Blobs dos Azure. O tipo da conta de armazenamento é General-purpose V2. Quando as fotos são enviadas, elas devem ser processadas para produzir e salvar uma versão mobile-friendly da imagem. Esse processo de iniciar em menos de 1 minuto. Como você pode fazer isso?",
+    "options": [
+      "Usar Eventos do Armazenamento de Blobs para iniciar o processamento",
+      "Converter a conta de armazenamento do Azure para uma conta de Blobs de Blocos",
+      "Mover o processamento das imagens para um Aplicativo de Função do Azure ativado pelo upload de blobs"
+    ],
+    "correct": [
+      "false",
+      "false",
+      "true"
+    ],
+    "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  },
+  {
+    "id": "061",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um Docker/Go usando o aplicativo Web do serviço de aplicativo do Azure para contêineres. Você planeja executar o contêiner em um serviço de aplicativo no Linux e identifica uma imagem do contêiner Docker a ser usada. Nenhum dos seus grupos de recursos atuais reside em um local que suporte Linux.",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: "
+    ],
+    "correct": [
+      "az group create",
+      "az appservice plan create",
+      "az webapp create"
+    ],
+    "body": "Você deve minimizar o número de grupos de recursos necessários, precisa criar o aplicativo e realizar uma implantação inicial. Quais são os três comandos da CLI do Azure, em ordem, que você deve usar para desenvolver a solução?"
+  },
+  {
+    "id": "062",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "UFPR FAZ SISTEMA tem um aplicativo web em Angular que é executado no Docker e está sendo migrado para o Azure. O aplicativo foi mapeado para o domínio www.ecommerce.ufpr.faz.sistema.com.br. Você precisa provisionar o Serviço de Aplicativo do Azure para hospedar a imagem do docker e mapear o domínio personalizado para o plano de serviço chamado AppServiceLinuxDockerPlan.",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: ",
+      "4º: "
+    ],
+    "correct": [
+      "#/bin/bash appName=\"UFPRFazSistemaWeb$random\" \\ location=\"WestUS\" \\ dockerHubContainerPath=\"UFPR/publicweb:v1\" \\ domain=\"https://www.ecommerce.ufpr.faz.sistema.com.br\"",
+      "az webapp create --name $appName --plan AppServiceLinuxDockerPlan --resource-group ufprFazSistemaWebRG",
+      "az webapp config container set --docker-custom-image-name $dockerHubContainerPath --name $appName --resource-group ufprFazSistemaWebRG",
+      "az webapp config hostname add --webapp-name $appName --resource-group ufprFazSistemaWebRG --hostname $domain"
+    ],
+    "body": "Em qual ordem você deve executar os comandos de CLI abaixo para desenvolver a solução?"
   }
 ]
