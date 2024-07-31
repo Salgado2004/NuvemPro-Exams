@@ -4,10 +4,12 @@ const inquirer = require('inquirer');
 
 async function main() {
     try {
-        // get the available exams
-        let exams = fs.readdirSync('content');
-        exams = exams.filter(exam => fs.statSync(path.join('content', exam)).isDirectory());
-        const { exam, type, codeBlock, hasBody } = await inquirer.prompt([
+        //initializes variables
+        const examsFilePath = path.join("content", 'exams.json');
+        const examsJson = JSON.parse(fs.readFileSync(examsFilePath, 'utf8'));
+        let exams = examsJson.map(exam => exam.name);
+
+        const { exam, type } = await inquirer.prompt([
             {
                 name: 'exam',
                 message: 'What is the exam the question will be part of?',
@@ -19,6 +21,22 @@ async function main() {
                 message: 'What is the type of the question?',
                 type: 'list',
                 choices: ['options', 'multiple', 'truefalse', 'select', 'dragdrop'],
+            }
+        ]);
+
+        const availableDomains = examsJson.find(e => e.name === exam).domains.map(domain => domain.name);
+
+        const { domain, hasRequirements, codeBlock, hasBody } = await inquirer.prompt([
+            {
+                name: 'domain',
+                message: 'What is the domain of the question?',
+                type: 'list',
+                choices: availableDomains,
+            },
+            {
+                name: 'hasRequirements',
+                message: 'Will the question feature requirements?',
+                type: 'confirm',
             },
             {
                 name: 'codeBlock',
@@ -46,7 +64,7 @@ async function main() {
             id: `${questionId}`,
             exam,
             type,
-            domain: '',
+            domain: domain,
             header: '',
             options: [],
             correct: [],
@@ -55,6 +73,10 @@ async function main() {
         // Include optional fields
         if(hasBody) {
             questionTemplate.body = '';
+        }
+
+        if(hasRequirements) {
+            questionTemplate.requirements = [];
         }
 
         if(codeBlock){
@@ -68,8 +90,6 @@ async function main() {
         fs.writeFileSync(questionsFilePath, JSON.stringify(existingQuestions, null, 2));
 
         // Update the exams.json file with the new question
-        const examsFilePath = path.join("content", 'exams.json');
-        const examsJson = JSON.parse(fs.readFileSync(examsFilePath, 'utf8'));
         const examIndex = examsJson.findIndex(e => e.name === exam);
         examsJson[examIndex].questions = existingQuestions.length;
         fs.writeFileSync(examsFilePath, JSON.stringify(examsJson, null, 2));
