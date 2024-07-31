@@ -14,4 +14,8 @@
     </li>
 </ul>
 }
+@if(questionData.code != null){
+<codeblock [path]="questionData.exam+'/code/'+questionData.code"></codeblock>
+}
+<p>{{ questionData.body }}</p>
 <ng-template appDinamicLoader></ng-template>
