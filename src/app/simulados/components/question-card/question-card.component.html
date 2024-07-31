@@ -6,4 +6,12 @@
     </div>
 </nav>
 <p class="header">{{ questionData.header }}</p>
+@if(questionData.requirements != null){
+<ul>
+    <li *ngFor="let req of questionData.requirements">
+        <mat-icon matListItemIcon>task_alt</mat-icon>
+        <p>{{ req }}</p>
+    </li>
+</ul>
+}
 <ng-template appDinamicLoader></ng-template>
