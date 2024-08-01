@@ -1144,5 +1144,342 @@
       "az webapp config hostname add --webapp-name $appName --resource-group ufprFazSistemaWebRG --hostname $domain"
     ],
     "body": "Em qual ordem você deve executar os comandos de CLI abaixo para desenvolver a solução?"
+  },
+  {
+    "id": "063",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Seu time precisa implatar um contêiner usando as Instâncias de Contêiner do Azure. O contêiner precisa persistir dados via um ponto de montagem. ",
+    "options": [
+      "Armazenamento de blobs do Azure",
+      "Armazenamento de arquivos do Azure",
+      "Azure Cosmos DB",
+      "Banco de dados SQL do Azure"
+    ],
+    "correct": [
+      "Armazenamento de arquivos do Azure"
+    ],
+    "body": "Qual serviço você deve usar para montar o armazenamento no contêiner?"
+  },
+  {
+    "id": "064",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você precisa implantar um contêiner baseado em Docker em um aplicativo Web do Azure. A imagem do Docker está em um Registro de Contêiner do Azure, e todos os recursos pertencem à sua assinatura.",
+    "options": [
+      "(1)",
+      "(2)",
+      "(3)"
+    ],
+    "correct": [
+      "az appservice plan create",
+      "az webapp create",
+      "az webapp config"
+    ],
+    "body": "Como você deve completar os comandos do Azure CLI acima?",
+    "code": "question-064.md"
+  },
+  {
+    "id": "065",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Seu time precisa criar um contêiner em uma conta existente do Azure Cosmos DB. Atualmente, não existe nenhuma propriedade no conjunto de dados adequada para ser usada como chave de partição.",
+    "options": [
+      "Concatenar diferentes propriedades para criar uma chave de partição",
+      "Escolher uma propriedade que não tenha valores nulos",
+      "Usar uma propriedade de data/hora para criar uma chave de partição",
+      "Usar um número inteiro para criar uma chave de partição"
+    ],
+    "correct": [
+      "Concatenar diferentes propriedades para criar uma chave de partição",
+      "Usar uma propriedade de data/hora para criar uma chave de partição"
+    ],
+    "body": "Quais são as outras opções disponíveis para especificar as chave de partição? (Selecione todas as corretas)"
+  },
+  {
+    "id": "066",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Um membro da sua equipe executou o seguinte script do PowerShell em uma assinatura do Azure: ",
+    "options": [
+      "MongoDB",
+      "Postgrees",
+      "NoSQL",
+      "Cassandra",
+      "Gremlim"
+    ],
+    "correct": [
+      "NoSQL"
+    ],
+    "body": "Com base no código, qual é a API do Cosmos DB que será utilizada?",
+    "code": "question-066.md"
+  },
+  {
+    "id": "067",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Um membro da sua equipe executou o seguinte script do PowerShell em uma assinatura do Azure: ",
+    "options": [
+      "400",
+      "200",
+      "4000",
+      "1000",
+      "100"
+    ],
+    "correct": [
+      "400"
+    ],
+    "body": "Com base no código, quantas RUs serão provisionadas para o contêiner?",
+    "code": "question-067.md"
+  },
+  {
+    "id": "068",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Seu time precisa implantar uma aplicação Angular em um Aplicativo Web do Azure. Eles desejam coletar dados de telemetria para a aplicação.",
+    "options": [
+      "Criar um recurso do Application Insights",
+      "Criar uma Regra de Coleção de Dados",
+      "Configurar o aplicativo Web para enviar dados de telemetria para o Application Insights",
+      "Habilitar o Application Insights no aplicativo Web",
+      "Configurar uma extensão para o aplicativo Web do Azure"
+    ],
+    "correct": [
+      "Criar um recurso do Application Insights",
+      "Configurar o aplicativo Web para enviar dados de telemetria para o Application Insights",
+      "Habilitar o Application Insights no aplicativo Web"
+    ],
+    "body": "O que deve ser implementado para cumprir esse requisito? (Selecione todas as corretas)"
+  },
+  {
+    "id": "069",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Seu time tem uma aplicação Web implantada em uma Máquina Virtual do Azure. A aplicação é acessada por usuários ao redor do mundo. O time precisa garantir a disponibilidade da aplicação e monitorar a performance em intervalos regulares a partir de diferentes regiões do mundo.",
+    "options": [
+      "Habilitar a configuração de Diagnósticos para a Máquina Virtual",
+      "Configurar o Monitoramento de Aplicativos do Azure",
+      "Configurar Testes de Disponibilidade a partir de um recurso do Application Insights",
+      "Conectar a máquina virtual a um espaço de trabalho do Log Analytics",
+      "Criar uma aplicação personalizada para monitorar a performance da aplicação"
+    ],
+    "correct": [
+      "Configurar Testes de Disponibilidade a partir de um recurso do Application Insights"
+    ],
+    "body": "Qual das ações a seguir você deve executar para atender a esses requisitos com o menor esforço possível?"
+  },
+  {
+    "id": "070",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Seu time tem uma aplicação ASP.Net Core v8 que precisa utilizar o recurso de Feature Flags do Azure App Configuration.",
+    "options": [
+      "useFeatureFlags();",
+      "useAzureAppConfiguration();",
+      "addAzureAppConfiguration",
+      "AddFeatureFlags"
+    ],
+    "correct": [
+      "useFeatureFlags();",
+      "addAzureAppConfiguration"
+    ],
+    "body": "Como você deve completar a configuração do arquivo Program.cs para atender a esse requisito?",
+    "code": "question-070.md"
+  },
+  {
+    "id": "071",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Sua companhia tem uma conta de armazenamento do Azure V2 de Propósito Geral. Existem objetos armazenados na conta que estão na camada de acesso Arquivos.",
+    "options": [
+      "Entre 1 e 60 minutos",
+      "Entre 1 e 15 horas",
+      "Entre 2 e 3 dias"
+    ],
+    "correct": [
+      "Entre 1 e 15 horas"
+    ],
+    "body": "Qual opção a seguir corresponde ao tempo necessário para acessar um objeto na camada de acesso Arquivos?"
+  },
+  {
+    "id": "072",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Seu time está desenvolvendo uma aplicação SpringBoot que será implantada em um Serviço de Aplicativo do Azure. Há um requisito para garantir que um armazenamento de dados seja usado para armazenar o estado da sessão em todo o aplicativo. Além disso, as respostas HTTP completas frequentes também devem ser armazenadas no armazenamento de dados.",
+    "options": [
+      "Uma conta de Armazenamento do Azure",
+      "Cache do Azure para Redis",
+      "Azure Cosmos DB",
+      "Funções do Azure",
+      "Aplicativos Lógicos"
+    ],
+    "correct": [
+      "Cache do Azure para Redis"
+    ],
+    "body": "Qual opção a seguir pode ser usada para cumprir esse requisito?"
+  },
+  {
+    "id": "073",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Você está desenvolvendo um programa que interage com o Cache do Azure para Redis. Você precisa escrever um método que irá deletar chaves do cache.",
+    "options": [
+      "IDatabase database = redis.GetDatabase()",
+      "ICache database = redis.GetCache()",
+      "database.KeyDelete(keyName)",
+      "database.StringSet(keyName)"
+    ],
+    "correct": [
+      "IDatabase database = redis.GetDatabase()",
+      "database.KeyDelete(keyName)"
+    ],
+    "body": "Complete o bloco de código acima para cumprir esse requisito.",
+    "code": "question-073.md"
+  },
+  {
+    "id": "074",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Qual recurso do Application Insights a seguir permite que você veja a performance e quantidade de falhas da sua aplicação Web em quase tempo real?",
+    "options": [
+      "Profiler",
+      "Live Metrics Stream",
+      "Smart Detection",
+      "Snapshot Debugger"
+    ],
+    "correct": [
+      "Live Metrics Stream"
+    ]
+  },
+  {
+    "id": "075",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Sua equipe planeja fazer uso do Azure Cosmos DB. Os dados serão armazenados como pares de chave/valor.",
+    "options": [
+      "NoSQL",
+      "MongoDB",
+      "Cassandra",
+      "Tabelas"
+    ],
+    "correct": [
+      "Tabelas"
+    ],
+    "body": "Qual API do Cosmos DB você deve usar?"
+  },
+  {
+    "id": "076",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Sua equipe acabou de configurar um perfil do Azure CDN e um endpoint. A aplicação Web será usada para armazenar e retornar imagens para um usuário. Você precisa configurar o cache do Azure CDN. Abaixo segue um exemplo da URL de acesso: ",
+    "options": [
+      "Bypass cache",
+      "Override",
+      "Set if missing"
+    ],
+    "correct": [
+      "Override"
+    ],
+    "body": "O cache das imagens deve expirar depois de uma hora. O que você deve configurar como comportamento de caching?",
+    "requirements": [
+      "http://www.cloudportalhub.com/images/image1.jpg?quality=high"
+    ]
+  },
+  {
+    "id": "077",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Sua equipe acabou de configurar um perfil do Azure CDN e um endpoint. A aplicação Web será usada para armazenar e retornar imagens para um usuário. Você precisa configurar o cache do Azure CDN. Abaixo segue um exemplo da URL de acesso: ",
+    "options": [
+      "Ignore query strings",
+      "Bypass caching behavior",
+      "Cache every unique URL"
+    ],
+    "correct": [
+      "Cache every unique URL"
+    ],
+    "body": "O cache das imagens deve expirar depois de uma hora. O que você deve configurar como comportamento da string de query do cache?",
+    "requirements": [
+      "http://www.cloudportalhub.com/images/image1.jpg?quality=high"
+    ]
+  },
+  {
+    "id": "078",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Qual recurso do Application Insights a seguir permite que você substitua ou descarte completamente um item de telemetria?",
+    "options": [
+      "Funnels",
+      "Telemetry Processors",
+      "Telemetry Initializers",
+      "Distributed Tracing"
+    ],
+    "correct": [
+      "Telemetry Processors"
+    ]
+  },
+  {
+    "id": "079",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo Web que irá interagir com o armazenamento de Blobs em uma conta do Armazenamento do Azure. Você criou um objeto de aplicativo no Azure AD. A aplicação web fará uso deste objeto de aplicativo. Os usuários farão login no aplicativo por meio de suas credenciais do Azure AD. Essas credenciais serão então usadas para acessar os objetos armazenados no armazenamento de blobs. Você precisa definir a permissão e o tipo corretos quando se trata de definir a permissão da API para armazenamento de blobs para o objeto de aplicativo do Azure AD.",
+    "options": [
+      "De aplicativo",
+      "Delegado"
+    ],
+    "correct": [
+      "Delegado"
+    ],
+    "body": "Qual tipo de permissão você deve usar?"
+  },
+  {
+    "id": "080",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo Web que irá interagir com o armazenamento de Blobs em uma conta do Armazenamento do Azure. Você criou um objeto de aplicativo no Azure AD. A aplicação web fará uso deste objeto de aplicativo. Os usuários farão login no aplicativo por meio de suas credenciais do Azure AD. Essas credenciais serão então usadas para acessar os objetos armazenados no armazenamento de blobs. Você precisa definir a permissão e o tipo corretos quando se trata de definir a permissão da API para armazenamento de blobs para o objeto de aplicativo do Azure AD.",
+    "options": [
+      "user.Read",
+      "user.Write",
+      "user_impersonation"
+    ],
+    "correct": [
+      "user_impersonation"
+    ],
+    "body": "Qual permissão você deve usar?"
+  },
+  {
+    "id": "081",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Sua equipe precisa publicar um aplicativo Web em um Aplicativo Web do Azure. O aplicativo Web precisa buscar segredos de um recurso do Azure Key Vault. Você deve garantir que o aplicativo da web possa fazer isso sem a necessidade de incorporar qualquer tipo de credencial no aplicativo da web.",
+    "options": [
+      "Habilitar a vinculação SSL para o Aplicativo Web do Azure",
+      "Configurar o CORS para o aplicativo Web do Azure",
+      "Configurar uma identidade gerenciada para o aplicativo Web do Azure",
+      "Atribuir um certificado autoassinado para o aplicativo web"
+    ],
+    "correct": [
+      "Configurar uma identidade gerenciada para o aplicativo Web do Azure"
+    ],
+    "body": "Qual das opções a seguir pode ser implementada para este requisito?"
   }
 ]
