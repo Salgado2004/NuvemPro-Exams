@@ -1481,5 +1481,437 @@
       "Configurar uma identidade gerenciada para o aplicativo Web do Azure"
     ],
     "body": "Qual das opções a seguir pode ser implementada para este requisito?"
+  },
+  {
+    "id": "082",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Sua equipe precisa implantar uma Instância de Contêiner do Azure que recebe um segredo na inicialização.",
+    "options": [
+      "(1)",
+      "(2)"
+    ],
+    "correct": [
+      "--secrets",
+      "--secrets-mount-path"
+    ],
+    "body": "Como você deve completar o comando acima?",
+    "code": "question-082.md"
+  },
+  {
+    "id": "083",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está configurando um Aplicativo Web Estático do Azure e precisa garantir que todos os usuários sejam autenticados antes de acessarem a aplicação.",
+    "options": [
+      "headers",
+      "response",
+      "routes",
+      "routeTo",
+      "responseOverrides"
+    ],
+    "correct": [
+      "response",
+      "responseOverrides"
+    ],
+    "body": "Como você deve completar a configuração de roteamento acima?",
+    "code": "question-083.md"
+  },
+  {
+    "id": "084",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Sua equipe atualmente cuida de um serviço de Gerenciamento de API do Azure. Você precisa implementar caching.",
+    "options": [
+      "(1)",
+      "(2)"
+    ],
+    "correct": [
+      "cache-lookup",
+      "cache-store"
+    ],
+    "body": "Como você deve completar a política acima?",
+    "code": "question-084.md"
+  },
+  {
+    "id": "085",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Sua empresa está desenvolvendo um sistema. O sistema deve ter a capacidade de enviar dados usando uma fila de mensagens. Eles desejam utilizar um serviço do Azure que atenda os seguintes requisitos: ",
+    "options": [
+      "Armazenamento de Filas do Azure",
+      "Barramento de serviço do Azure",
+      "Grade de eventos do Azure",
+      "Hubs de eventos do Azure"
+    ],
+    "correct": [
+      "Barramento de serviço do Azure"
+    ],
+    "body": "Qual serviço do Azure você deve sugerir?",
+    "requirements": [
+      "O tamanho da fila não deve ultrapassar 80 GB",
+      "A fila deve suportar ordenação de mensagens FIFO (First-in-First-out)"
+    ]
+  },
+  {
+    "id": "086",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Sua empresa precisa desenvolver uma solução que atenda os seguintes requisitos: ",
+    "options": [
+      "Armazenamento de Filas do Azure",
+      "Barramento de serviço do Azure",
+      "Grade de eventos do Azure",
+      "Hubs de eventos do Azure"
+    ],
+    "correct": [
+      "Hubs de eventos do Azure"
+    ],
+    "body": "",
+    "requirements": [
+      "Cada dispositivo produz cerca de 1 MB de dados por dia",
+      "Os dados devem ser armazenados no Armazenamento de Blobs do Azure",
+      "Múltiplos dispositivos devem enviar dados através de um serviço do Azure",
+      "Atualmente existem cerca de 1000 dispositivos usados pelos usuários da empresa"
+    ]
+  },
+  {
+    "id": "087",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você precisa implantar uma Instância de Contêiner do Azure usando um template YAML. A instância precisa acessar segredos através de um ponto de montagem.",
+    "options": [
+      "(1)",
+      "(2)"
+    ],
+    "correct": [
+      "volumeMounts",
+      "volumes"
+    ],
+    "body": "Como você deve completar o template YAML para cumprir esse requisito?",
+    "code": "question-087.md"
+  },
+  {
+    "id": "088",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Sua equipe atualmente cuida de um serviço de Gerenciamento de API do Azure. Eles precisam configurar uma política em que uma mensagem de erro é passada para o header de resposta se uma requisição não autorizada é enviada para o serviço de API.",
+    "options": [
+      "backend / request / backend",
+      "on-error / request / on-error",
+      "outbound / context / on-error",
+      "on-error / context / on-error",
+      "backend / context / backend"
+    ],
+    "correct": [
+      "on-error / context / on-error"
+    ],
+    "body": "Qual alternativa corresponde aos trechos para completar a política acima?",
+    "code": "question-088.md"
+  },
+  {
+    "id": "089",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Qual das opções a seguir são os modos de indexação disponíveis no Azure Cosmos DB? Selecione duas respostas",
+    "options": [
+      "Nenhum",
+      "Composição",
+      "Forte",
+      "Sessão",
+      "Consistente"
+    ],
+    "correct": [
+      "Nenhum",
+      "Consistente"
+    ]
+  },
+  {
+    "id": "090",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Sua equipe atualmente cuida de uma aplicação Web implantada em um Aplicativo Web do Azure, que faz parte da camada Básica do Plano de serviço de aplicativo. Eles precisam desenvolver um script do PowerShell que possa ser usado para criar um slot de implantação chamado \"staging\" e fazer uma nova implantação do aplicativo a partir de um repositório do GitHub.",
+    "options": [
+      "Set-AzAppServicePlan / New-AzWebAppSlot / Set-AzResource",
+      "Set-AzResource / New-AzWebApp / Set-AzWepApp",
+      "New-AzAppServicePlan / New-AzWebAppSlot / Set-AzWebApp",
+      "New-AzAppServicePlan / New-AzWebAppSlot / Set-AzResource"
+    ],
+    "correct": [
+      "Set-AzAppServicePlan / New-AzWebAppSlot / Set-AzResource"
+    ],
+    "body": "Você deve completar o código PowerShell acima para atingir esse objetivo.",
+    "code": "question-090.md"
+  },
+  {
+    "id": "091",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Seu time possui uma conta do Azure Cosmos DB, que contém um contêiner chamado \"products\". Os desenvolvedores querem executar a seguinte query: ",
+    "options": [
+      "path",
+      "property",
+      "index",
+      "compositeIndexes"
+    ],
+    "correct": [
+      "path",
+      "compositeIndexes"
+    ],
+    "body": "Como você deve completar a política de indexação acima?",
+    "code": "question-091.md",
+    "requirements": [
+      "SELECT * FROM products p ORDER BY p.rating, p.code"
+    ]
+  },
+  {
+    "id": "092",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Seu time possui uma conta do Azure Cosmos DB, que contém um contêiner chamado \"products\". Eles querem adicionar um trigger que irá garantir que a propriedade \"rating\" tenha um valor default sempre que um novo item for adicionado ao contêiner.",
+    "options": [
+      "context.getRequest()",
+      "context.getResponse()",
+      "request.setBody(item)",
+      "response.setBody(item)"
+    ],
+    "correct": [
+      "context.getRequest()",
+      "request.setBody(item)"
+    ],
+    "body": "Selecione as alternativas que completam o código acima.",
+    "code": "question-092.md"
+  },
+  {
+    "id": "093",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Sua equipe está usando o Application Insights para monitorar em tempo real uma aplicação Web ASP.NET.",
+    "options": [
+      "Smart Detection",
+      "Profiler",
+      "Snapshot Debugger",
+      "Live Metrics Stream"
+    ],
+    "correct": [
+      "Snapshot Debugger"
+    ],
+    "body": "Qual dos recursos a seguir pode ser usado para recuperar o código de status e as variáveis quando uma exceção ocorrer na aplicação .NET?"
+  },
+  {
+    "id": "094",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Seu time planeja utilizar o Cache do Azure para Redis. Eles querem garantir que os dados em cache estejam disponíveis mesmo no evento de uma falha do hardware.",
+    "options": [
+      "Criar o Cache do Azure para Redis na camada Standard e habilitar Persistência de Dados",
+      "Criar o Cache do Azure para Redis na camada Premium e habilitar Persistência de Dados",
+      "Criar o Cache do Azure para Redis na camada Standard e configurar Encriptação de disco",
+      "Criar o Cache do Azure para Redis na camada Premium e configurar Encriptação de disco"
+    ],
+    "correct": [
+      "Criar o Cache do Azure para Redis na camada Premium e habilitar Persistência de Dados"
+    ],
+    "body": "O que eles devem configurar para atingir esse objetivo e garantir que os custos sejam mantidos no mínimo?"
+  },
+  {
+    "id": "095",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Sua empresa quer testar a responsividade de uma aplicação Web. A aplicação está disponível na Internet. A seguir estão os requisitos chave: ",
+    "options": [
+      "Configurar uma Função do Azure que possa rastrear a disponibilidade da aplicação",
+      "Usar o recurso de teste Multi-step Web do Application Insights",
+      "Usar o recurso de teste Standard do Application Insights",
+      "Criar outra aplicação que implemente o método TrackAvailability()"
+    ],
+    "correct": [
+      "Usar o recurso de teste Standard do Application Insights"
+    ],
+    "body": "Qual opção a seguir você deve escolher para implementar os requisitos?",
+    "requirements": [
+      "A aplicação Web deve ser testada a cada 5 minutos para saber se está executando",
+      "Alertas devem ser gerados se o site não estiver carregando corretamente",
+      "Todas as requisições de dependência feitas pela aplicação também devem ser testadas",
+      "O mínimo de esforço deve ser usado para implementar esses requisitos"
+    ]
+  },
+  {
+    "id": "096",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Seu time planeja utilizar o serviço de CDN do Azure em sua aplicação Web. Você precisa entender o fluxo de requisições que ocorre no CDN.",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: ",
+      "4º: "
+    ],
+    "correct": [
+      "O usuário faz uma requisição de um recurso. A requisição é enviada do CDN do Azure para o Ponto de presença com a melhor performance com base na localização.",
+      "O servidor de borda verifica se já possui o recurso. Se não possuir, uma requisição é feita para o servidor de origem.",
+      "O servidor de origem retorna o recurso para o servidor de borda no Ponto de presença. O recurso é adicionado ao cache e também enviado ao usuário.",
+      "As requisições subsequentes dos usuários para o mesmo Ponto de presença irão receber o recurso direto do cache."
+    ],
+    "body": "Ordene corretamente os passos do workflow de requisições."
+  },
+  {
+    "id": "097",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Você está desenvolvendo um programa que interage com o Cache do Azure para Redis e precisa decidir o tipo de dado Redis ideal para atender o seguinte requisito: ",
+    "options": [
+      "set",
+      "list",
+      "channel"
+    ],
+    "correct": [
+      "list"
+    ],
+    "body": "Qual tipo de dado você deve escolher para atender ao requisito?",
+    "requirements": [
+      "Deve poder acessar o item mais recente do cache"
+    ]
+  },
+  {
+    "id": "098",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Você está desenvolvendo um programa que interage com o Cache do Azure para Redis e precisa decidir o tipo de dado Redis ideal para atender o seguinte requisito: ",
+    "options": [
+      "set",
+      "list",
+      "channel"
+    ],
+    "correct": [
+      "channel"
+    ],
+    "body": "Qual tipo de dado você deve escolher para atender ao requisito?",
+    "requirements": [
+      "Deve suportar o sistema de mensageria Publicar/Assinar"
+    ]
+  },
+  {
+    "id": "099",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Você está desenvolvendo um programa que interage com o Cache do Azure para Redis e precisa decidir o tipo de dado Redis ideal para atender o seguinte requisito: ",
+    "options": [
+      "set",
+      "list",
+      "channel"
+    ],
+    "correct": [
+      "set"
+    ],
+    "body": "Qual tipo de dado você deve escolher para atender ao requisito?",
+    "requirements": [
+      "Deve armazenar uma coleção de itens relacionados"
+    ]
+  },
+  {
+    "id": "100",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Qual recurso do Application Insights a seguir pode ser usado para reduzir dados de telemetria enquanto preserva uma análise estatística dos dados da aplicação.",
+    "options": [
+      "Funnels",
+      "Performance",
+      "Sampling",
+      "Telemetry Initializers"
+    ],
+    "correct": [
+      "Sampling"
+    ]
+  },
+  {
+    "id": "101",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo uma aplicação Web que busca uma string de conexão em um recurso do Azure Key Vault para acessar um banco de dados SQL do Azure.",
+    "options": [
+      "SecretClient",
+      "DefaultCredential",
+      "AzureTokenCredential",
+      "DefaultAzureCredential",
+      "TokenClient"
+    ],
+    "correct": [
+      "SecretClient",
+      "DefaultAzureCredential"
+    ],
+    "body": "Você precisa completar o código acima para buscar a string de conexão.",
+    "code": "question-101.md"
+  },
+  {
+    "id": "102",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Sua equipe precisa hospedar uma aplicação em uma Máquina Virtual do Azure. A aplicação precisa acessar chaves de criptografia armazenadas em um recurso do Azure Key Vault. Você deve garantir que a aplicação possa acessar com segurança as chaves sem incluir nenhum segredo no código. Identidades relacionadas aos recursos no Microsoft Entra ID devem ser excluídas automaticamente quando os recursos associados forem excluídos.",
+    "options": [
+      "Habilitar uma Identidade gerenciada atribuída pelo sistema para a máquina virtual",
+      "Criar uma Identidade gerenciada atribuída pelo usuário para a máquina virtual",
+      "Conceder acesso ao key vault via Políticas de acesso baseadas em funções (RBAC)",
+      "Conceder acesso via o uso de segredos"
+    ],
+    "correct": [
+      "Habilitar uma Identidade gerenciada atribuída pelo sistema para a máquina virtual",
+      "Conceder acesso ao key vault via Políticas de acesso baseadas em funções (RBAC)"
+    ],
+    "body": "O que você deve implementar para cumprir esses requisitos? Selecione duas alternativas."
+  },
+  {
+    "id": "103",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Qual dos recursos a seguir pode ser usado para recuperar informações de perfil de usuário do Microsoft Entra ID?",
+    "options": [
+      "Explorador de armazenamento do Azure",
+      "API do Microsoft Graph",
+      "Azure Monitor",
+      "Azure Compliance Manager"
+    ],
+    "correct": [
+      "API do Microsoft Graph"
+    ]
+  },
+  {
+    "id": "104",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está configurando acesso baseado em função (RBAC) para uma instância do Registro de Contêineres do Azure. A função deve permitir que alguém efetue pull e push das imagens em um registro de contêineres.",
+    "options": [
+      "Dono",
+      "Contribuidor",
+      "AcrPush",
+      "AcrPull"
+    ],
+    "correct": [
+      "AcrPush"
+    ],
+    "body": "Qual das funções a seguir deve ser usada, considerando que o princípio de privilégio mínimo deve ser aplicado?"
   }
 ]
