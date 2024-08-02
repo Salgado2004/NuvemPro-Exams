@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { QueryCodeService } from '../../utils/query-code.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { QueryCodeService } from '../../utils/query-code.service';
   templateUrl: './codeblock.component.html',
   styleUrl: './codeblock.component.css'
 })
-export class CodeblockComponent {
+export class CodeblockComponent implements OnChanges {
   @Input() path: string;
   languages: string[] = ['python', 'csharp', 'javascript', 'json', 'bash'];
   pending: boolean = true;
@@ -14,7 +14,7 @@ export class CodeblockComponent {
 
   constructor(private query: QueryCodeService) { }
   
-  ngOnInit() {
+  ngOnChanges() {
     this.query.getCode(this.path).then((data) => {
       this.code = data;
       this.pending = false;

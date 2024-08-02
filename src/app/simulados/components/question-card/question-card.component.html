@@ -6,4 +6,16 @@
     </div>
 </nav>
 <p class="header">{{ questionData.header }}</p>
+@if(questionData.requirements != null){
+<ul>
+    <li *ngFor="let req of questionData.requirements">
+        <mat-icon matListItemIcon>task_alt</mat-icon>
+        <p>{{ req }}</p>
+    </li>
+</ul>
+}
+@if(questionData.code != null){
+<codeblock [path]="questionData.exam+'/code/'+questionData.code"></codeblock>
+}
+<p>{{ questionData.body }}</p>
 <ng-template appDinamicLoader></ng-template>

@@ -1,7 +1,3 @@
-@if(data.code != null){
-    <codeblock [path]="data.exam+'/code/'+data.code"></codeblock>
- }
-<p>{{ data.body }}</p>
 <section #tooltip="matTooltip" matTooltip="Selecione uma resposta para cada afirmação" [matTooltipDisabled]="!alert">
     <div class="option" *ngFor="let option of data.options; let i = index">
         <p>{{ option }}</p>

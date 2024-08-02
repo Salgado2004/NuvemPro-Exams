@@ -21,6 +21,12 @@
                 "type": "string",
                 "minLength": 1
             },
+            "requirements": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
             "code": {
                 "type": "string"
             },

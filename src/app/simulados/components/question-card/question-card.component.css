@@ -45,3 +45,20 @@ nav div{
 .mat-icon{
     color: #83878b;
 }
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 8px;
+}
+
+li {
+    display: flex;
+    gap: 6px;
+    list-style: none;
+}
+
+li .mat-icon{
+    overflow: visible;
+}

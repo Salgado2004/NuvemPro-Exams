@@ -1,0 +1,3 @@
+(1) _________________ -n "dockerplan1000" -g "web-grp" --sku B1 --is-linux
+(2) _______________ -n "dockerapp200020" -g "web-grp" --plan "dockerplan1000" --deployment-container-image-name "appregistry45545.azurecr.io/webapp:latest" --docker-registry-server-user "appregistry45545" --docker-registry-server-password "12345678"
+(3) _______________ appsettings set --resource-group "web-grp" --name "dockerapp200020" --settings WEBSITES_PORT=8080
