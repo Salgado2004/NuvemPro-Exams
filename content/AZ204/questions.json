@@ -1080,12 +1080,14 @@
     "options": [
       "Habilitar a troca automática no slot de teste e depois implantar o aplicativo no slot de teste",
       "Atualizar o arquivo web.config para incluir o elemento applicationInitialization e especificar ações de inicialização personalizadas para executar os scripts.",
-      "Desabilitar a troca automática, atualizar o aplicativo com um método 'statuscheck' para executar os scripts, reabilitar a troca automática e implantar o aplicativo no slot de produção."
+      "Desabilitar a troca automática, atualizar o aplicativo com um método 'statuscheck' para executar os scripts, reabilitar a troca automática e implantar o aplicativo no slot de produção.",
+      "Atualizar o aplicativo com um método chamado 'statuscheck' para executar os scripts, atualizar as configurações do aplicativo. Depois colocar o WEBSITE_SWAP_WARMUP_PING_PATH e WEBSITE_SWAP_WARMUP_PING_STATUSES com um caminho para o novo método e códigos de resposta apropriados."
     ],
     "correct": [
       "false",
       "true",
-      "false"
+      "false",
+      "true"
     ],
     "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
   },
@@ -1098,12 +1100,14 @@
     "options": [
       "Usar Eventos do Armazenamento de Blobs para iniciar o processamento",
       "Converter a conta de armazenamento do Azure para uma conta de Blobs de Blocos",
-      "Mover o processamento das imagens para um Aplicativo de Função do Azure ativado pelo upload de blobs"
+      "Mover o processamento das imagens para um Aplicativo de Função do Azure ativado pelo upload de blobs",
+      "Crie um aplicativo do Azure Function que use o modelo de hospedagem de Consumo e que seja acionado a partir do upload do blob."
     ],
     "correct": [
       "false",
       "false",
-      "true"
+      "true",
+      "false"
     ],
     "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
   },
@@ -1714,7 +1718,7 @@
     "id": "094",
     "exam": "AZ204",
     "type": "options",
-    "domain": "Desenvolver para armazenamento do Azure",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
     "header": "Seu time planeja utilizar o Cache do Azure para Redis. Eles querem garantir que os dados em cache estejam disponíveis mesmo no evento de uma falha do hardware.",
     "options": [
       "Criar o Cache do Azure para Redis na camada Standard e habilitar Persistência de Dados",
@@ -2353,5 +2357,198 @@
       "Usar o plano do Serviço de Aplicativo. Configurar o aplicativo de Função para usar um trigger do armazenamento de Blobs do Azure."
     ],
     "body": "Você deve configurar o aplicativo de Função. O que você deve fazer?"
+  },
+  {
+    "id": "128",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está se preparando para implantar um website no serviço de Aplicativo Web do Azure a partir de um repositório do GitHub. O website inclui conteúdo estático gerado por um script. Você planeja usar o recurso de Implantação contínua do Aplicativo Web do Azure.",
+    "options": [
+      "Adicionar o caminho para a ferramenta de geração de conteúdo estático na configuração WEBSITE_RUN_FROM_PACKAGE no arquivo host.json",
+      "Adicionar um alvo PreBuild no arquivo csproj do projeto que executa o script de geração de conteúdo",
+      "Criar um arquivo chamado run.cmd na pasta /run que chama o script que gera o conteúdo estático e implanta o website",
+      "Criar um arquivo chamado .deployment na raiz do repositório que chama o script que gera o conteúdo estático"
+    ],
+    "correct": [
+      "Adicionar um alvo PreBuild no arquivo csproj do projeto que executa o script de geração de conteúdo",
+      "Criar um arquivo chamado .deployment na raiz do repositório que chama o script que gera o conteúdo estático"
+    ],
+    "body": "Você precisa executar o script de geração do conteúdo antes do website começar a receber tráfego. Quais são as duas maneiras possíveis de atingir esse objetivo?"
+  },
+  {
+    "id": "129",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está desenvolvendo uma aplicação para usar o Armazenamento de Blobs do Azure. Você configurou o serviço para incluir um Feed de Alterações. Uma cópia da sua conta de armazenamento precisa ser criada em outra região. Os dados devem ser copiados do armazenamento atual para a nova conta de armazenamento diretamente através de servidores de armazenamento.",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: ",
+      "4º: ",
+      "5º: "
+    ],
+    "correct": [
+      "Criar um novo template de implantação",
+      "Exportar o template do Resource Manager (ARM)",
+      "Modificar o template mudando o nome da conta de armazenamento e a região",
+      "Implantar o template para criar uma nova conta de armazenamento na região escolhida",
+      "Usar o AZCopy para copiar os dados para a nova conta de armazenamento"
+    ],
+    "body": "Você precisa criar a cópia da conta de armazenamento e copiar os dados. Em que ordem você deve executar os passos a seguir?"
+  },
+  {
+    "id": "130",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está se preparando para implantar uma aplicação baseada em Máquina Virtual do Azure. As VMs que executam a aplicação possuem os seguintes requisitos: ",
+    "options": [
+      "Configuração do Firewall",
+      "Script de serviços de apoio"
+    ],
+    "correct": [
+      "Run command",
+      "Hybrid Runbook Worker"
+    ],
+    "body": "Você precisa garantir que os requisitos sejam cumpridos. Quais recursos você deve usar?",
+    "requirements": [
+      "Quando uma VM é provisionada, o firewall deve ser automaticamente configurado antes que a máquina possa acessar recursos do Azure",
+      "Serviços de apoio devem ser instalados usando um script do PowerShell guardado no Armazenamento do Azure"
+    ]
+  },
+  {
+    "id": "131",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Uma empresa está desenvolvendo um aplicativo Web em Angular. O aplicativo Web está hospedado em um repositório do GitHub localizado em https://github.com/Salgado2004/Angular-Ecommerce-UFPR-Faz-Sistema. O aplicativo Web deve ser revisado antes de ser movido para produção. Você deve implantar a release inicial do código em um slot de implantação chamado 'review'.",
+    "options": [
+      "(1)",
+      "(2)",
+      "(3)",
+      "(4)"
+    ],
+    "correct": [
+      "New-AzResourceGroup",
+      "New-AzAppServicePlan",
+      "New-AzWebApp",
+      "New-AzWebAppSlot"
+    ],
+    "body": "Você deve criar o aplicativo Web e implantar o código. Como você deve completar os comandos?",
+    "code": "question-131.md"
+  },
+  {
+    "id": "132",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Você cria o script PowerShell a seguir",
+    "options": [
+      "Um alerta de log é criado para enviar um email quando a porcentagem da CPU for mais que 60% durante 5 minutos",
+      "Um alerta de log é criado para enviar um email quando o números de 'heartbeats' da máquina virtual for menor do que 5 na última hora",
+      "Um alerta de log é agendado para rodar a cada duas horas"
+    ],
+    "correct": [
+      "false",
+      "true",
+      "false"
+    ],
+    "body": "Para cada afirmativa, marque 'verdadeiro' ou 'falso'. Cada seleção correta vale um ponto.",
+    "code": "question-132.md"
+  },
+  {
+    "id": "133",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um aplicativo de Funções do Azure. O aplicativo possui os seguintes requisitos: ",
+    "options": [
+      "Permitir aos desenvolvedores escrever funções usando a linguagem Rust",
+      "Declarativamente conectar com uma conta de Armazenamento de Blobs do Azure"
+    ],
+    "correct": [
+      "Custom handler",
+      "Trigger"
+    ],
+    "body": "Quais recursos das Funções do Azure você deve usar para cumprir cada requisito?",
+    "requirements": [
+      "Permitir aos desenvolvedores escrever funções usando a linguagem Rust",
+      "Declarativamente conectar com uma conta de Armazenamento de Blobs do Azure"
+    ]
+  },
+  {
+    "id": "134",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um aplicativo Web em ASP.NET Core. Você planeja implantar o aplicativo em um Aplicativo Web do Azure para Contêineres. O aplicativo deve armazenar dados de diagnóstico de execução, que devem persistir durante reinicializações. Você tem o seguinte código: ",
+    "options": [
+      "LOCALAPPDATA",
+      "WEBSITE_LOCALCACHE_ENABLED",
+      "DOTNET_HOSTING_OPTIMIZATION_CACHE",
+      "WEBSITES_ENABLE_APP_SERVICE_STORAGE"
+    ],
+    "correct": [
+      "WEBSITES_ENABLE_APP_SERVICE_STORAGE"
+    ],
+    "body": "Você precisa configurar a aplicação para que os dados de diagnóstico sejam armazenados corretamente. Qual configuração você deve usar?",
+    "code": "question-134.md"
+  },
+  {
+    "id": "135",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo Web protegido pelo Azure Web Application Firewall (WAF). Todo o tráfego para o aplicativo Web é roteado por meio de uma instância de Gateway de Aplicativo do Azure usada por vários aplicativos Web. O endereço do aplicativo Web é myapplicationgateway.azurewebsites.net. Todo o tráfego deve ser protegido com SSL.",
+    "options": [
+      "Nas configurações de HTTP do Gateway de Aplicativo, habilitar a configuração de serviço 'Use for App'",
+      "Converter o aplicativo Web para rodar em um Ambiente do Serviço de Aplicativo do Azure (ASE)",
+      "Adicionar certificados de autenticação para myapplicationgateway.azurewebsites.net no Gateway de Aplicativo",
+      "Nas configurações de HTTP do Gateway de Aplicativo, configure o valor da opção 'Override backend path' como myapplicationgateway22.azurewebsites.net"
+    ],
+    "correct": [
+      "Nas configurações de HTTP do Gateway de Aplicativo, habilitar a configuração de serviço 'Use for App'",
+      "Adicionar certificados de autenticação para myapplicationgateway.azurewebsites.net no Gateway de Aplicativo"
+    ],
+    "body": "Você precisa configurar o Gateway de Aplicativo para os aplicativos Web. Quais duas ações você deve executar?"
+  },
+  {
+    "id": "136",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo uma aplicação Web que roda em um Aplicativo Web do Azure. A aplicação armazena dados em um banco de dados SQL do Azure e arquivos em uma conta de armazenamento. A aplicação Web faz requisições HTTP para serviços externos como parte das operações normais. A aplicação Web está instrumentada com o Application Insights.",
+    "options": [
+      "Adicionar o ID de cliente do usuário conectado ao CorrelationContext no aplicativo da web",
+      "No SpanContext atual, definir o TraceId como o ID de cliente do usuário conectado",
+      "Definir o cabeçalho Ocp-Apim-Trace para o ID de cliente do usuário conectado",
+      "Criar um novo SpanContext com o valor TraceFlags definido como o ID de cliente para o usuário conectado"
+    ],
+    "correct": [
+      "Adicionar o ID de cliente do usuário conectado ao CorrelationContext no aplicativo da web"
+    ],
+    "body": "Você precisa garantir que o ID do cliente autenticado seja associado com todas as operações ao longo do sistema. O que você deve fazer?"
+  },
+  {
+    "id": "137",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você provisiona Máquinas virtuais (VMs) como ambientes de desenvolvimento. Uma VM não inicia. A VM está travada em um processo de atualização do Windows. Você anexa o disco do SO da VM afetada em uma VM de recuperação.",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: ",
+      "4º: "
+    ],
+    "correct": [
+      "Executar o comando: `dism /image:\\ /get=packages > c:\\temp\\Patch.txt`",
+      "Abrir o arquivo C:\\temp\\Patch.txt e localizar a atualização que está em estado pendente",
+      "Executar o comando: `dism /Image:<Discos de SO anexados>:\\ /Remove Package /PackageName:<nome do pacote para deletar>`",
+      "Desanexe o disco do So e recrie a VM"
+    ],
+    "body": "Você precisa corrigir o problema. Em qual ordem você deve executar os seguintes passos?"
   }
 ]
