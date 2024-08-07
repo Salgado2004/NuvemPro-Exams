@@ -2288,11 +2288,13 @@
     "options": [
       "Configurar o aplicativo para usar um plano de hospedagem do Serviço de Aplicativo e habilitar a propriedade Always On",
       "Passar a carga do gatilho HTTP para uma fila do Barramento de Serviço do Azure para ser processada por uma função de gatilho de fila e retorne uma resposta HTTP bem-sucedida imediata.",
+      "Atualizar a propriedade functionTimeout do arquivo host.json do projeto para 10 minutos",
       "Usar o padrão assíncrono de Funções Duráveis para processar os dados do blob"
     ],
     "correct": [
       "false",
       "true",
+      "false",
       "true"
     ],
     "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
@@ -2550,5 +2552,400 @@
       "Desanexe o disco do So e recrie a VM"
     ],
     "body": "Você precisa corrigir o problema. Em qual ordem você deve executar os seguintes passos?"
+  },
+  {
+    "id": "138",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um aplicativo de Funções do Azure. Você desenvolve um código usando uma linguagem que não é suportada na hospedagem do aplicativo de Funções do Azure. A linguagem suporta HTTP primitives. Você precisa implantar o código no ambiente de produção das Funções do Azure.",
+    "options": [
+      "Publicação de código em uma pilha de Runtime Powershell",
+      "Publicação de contêiner em uma pilha de Runtime Powershell",
+      "Publicação de código em uma pilha de Runtime Personalizada",
+      "Publicação de contêiner em uma pilha de Runtime Personalizada"
+    ],
+    "correct": [
+      "Publicação de código em uma pilha de Runtime Personalizada"
+    ],
+    "body": "Você precisa configurar o aplicativo para a implantação. Qual configuração você deve usar?"
+  },
+  {
+    "id": "139",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um aplicativo baseado em Funções Duráveis do Azure que processa uma lista de valores de entrada. A aplicação é monitorada através de uma aplicação que recupera dados JSON de um endpoint de diagnóstico da Função Azure. Durante o processamento, uma única instância de entrada inválida não causa falha na função. A entrada inválida deve estar disponível para o aplicativo de monitoramento.",
+    "options": [
+      "await context.CallEntityAsync(input[errIndex],\"error\")",
+      "context.SignalEntity(input[errIndex],\"error\")",
+      "Failed",
+      "Completed",
+      "input",
+      "output",
+      "runtimeStatus"
+    ],
+    "correct": [
+      "await context.CallEntityAsync(input[errIndex],\"error\")",
+      "Failed",
+      "input"
+    ],
+    "body": "Você deve implementar o aplicativo de Funções Duráveis e a aplicação de monitoramento. Como você deve completar os segmentos de código?",
+    "code": "question-139.md"
+  },
+  {
+    "id": "140",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo uma Função Durável do Azure para processar pedidos online. O processamento deve chamar uma API externa para buscar informações de desconto do produto.",
+    "options": [
+      "Orquestrador",
+      "Entidade",
+      "Atividade",
+      "Cliente"
+    ],
+    "correct": [
+      "Orquestrador",
+      "Atividade"
+    ],
+    "body": "Você precisa implementar a função. Quais tipos de funções duráveis você deve usar?"
+  },
+  {
+    "id": "141",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está escrevendo uma série de templates aninhados do Azure Resource Manager (ARM) para implantar múltiplos recursos do Azure. Os templates devem ser testados antes da implantação e devem seguir práticas recomandadas.",
+    "options": [
+      "Determinar se os templates seguem as práticas recomendadas",
+      "Testar e validar mudanças que os templates podem causar nos ambientes"
+    ],
+    "correct": [
+      "Azure Resource Manager test toolkit",
+      "Operação What-if"
+    ],
+    "body": "Você precisa validar e testar os templates antes da implantação. Quais ferramentas do ARM você deve usar?"
+  },
+  {
+    "id": "142",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo uma Função Durável do Azure para gerenciar empréstimos de veículos. O processo de empréstimo inclui ações que devem ser executadas em uma ordem específica. Uma das ações inclui um processo de verificação de crédito do cliente, que pode levar alguns dias para ser completa.",
+    "options": [
+      "Orquestrador",
+      "Entidade",
+      "Atividade",
+      "Cliente"
+    ],
+    "correct": [
+      "Orquestrador"
+    ],
+    "body": "Você precisa implementar a função. Qual tipo de função durável você deve usar?"
+  },
+  {
+    "id": "143",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um aplicativo de Funções do Azure. Todas as funções no aplicativo devem cumprir os seguintes requisitos: ",
+    "options": [
+      "exponentialBackoff",
+      "counterThreshold",
+      "fixedDelay",
+      "maxRetryCount",
+      "healthCheckInterval"
+    ],
+    "correct": [
+      "exponentialBackoff",
+      "maxRetryCount"
+    ],
+    "body": "Você precisa configurar o arquivo host.json. Como você deve completar o segmento de código?",
+    "requirements": [
+      "Executar até que ocorra uma execução bem sucedida ou um máximo de 10 tentativas",
+      "Garantir que exista um intervalo de no mínimo 20 segundos e no máximo 15 minutos entre as tentativas"
+    ],
+    "code": "question-143.md"
+  },
+  {
+    "id": "144",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você desenvolveu uma solução do Aplicativo Web do Azure para uma companhia de mergulho comercial. Regulamentos exigem que todos os mergulhadores preencham um formulário de saúde 15 dias depois de cada trabalho de mergulho. Você precisa configurar o aplicativo Web para que o número de instâncias aumente quando os mergulhadores estiverem preenchendo o formulário, e diminua quando eles terminarem. Você precisa configurar o autoescalonamento.",
+    "options": [
+      "Perfil de recorrência",
+      "Autoescalonamento baseado em uso de CPU",
+      "Perfil de data fixa",
+      "Autoescalonamento preditivo"
+    ],
+    "correct": [
+      "Perfil de recorrência",
+      "Autoescalonamento baseado em uso de CPU"
+    ],
+    "body": "Quais são as duas configurações possíveis de autoescalonamento para alcançar esse objetivo?"
+  },
+  {
+    "id": "145",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo um jogo online que permite que os jogadores votem na imagem que ilustra uma palavra favorita. O jogo é construído usando as Funções do Azure e usa entidades duráveis para rastrear a conta de votos. A janela de votos é de 30 segundos. Você deve minimizar a latência.",
+    "options": [
+      "CallEntityAsync",
+      "SignalEntityAsync",
+      "[DurableClient] IDurableEntityClient",
+      "[DurableClient] IDurableOrchestrationClient"
+    ],
+    "correct": [
+      "SignalEntityAsync",
+      "[DurableClient] IDurableEntityClient"
+    ],
+    "body": "Como você deve completar o código? Selecione as opções corretas.",
+    "code": "question-145.md"
+  },
+  {
+    "id": "146",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você tem um plano do Serviço de Aplicativo chamado asp1, atualmente usando a camada de preço gratuita. Você planeja usar o asp1 para implementar um aplicativo de Funções do Azure que um gatilho de filas. Sua solução deve minimizar o custo.",
+    "options": [
+      "Fazer upgrade do plano de preço para Básico e habilitar a configuração Always On",
+      "Fazer upgrade do plano de preço para Standard e habilitar a configuração Always On",
+      "Fazer upgrade do plano de preço para Básico e configurar implantação contínua",
+      "Fazer upgrade do plano de preço para Standard e configurar implantação contínua"
+    ],
+    "correct": [
+      "Fazer upgrade do plano de preço para Básico e habilitar a configuração Always On"
+    ],
+    "body": " Você precisa identificar a opção de configuração que atende aos requisitos. Qual configuração você deve usar?"
+  },
+  {
+    "id": "147",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo vários microsserviços para executarem em um aplicativo de Contêiner do Azure. Os microsserviços devem permitir acesso HTTPS usando um domínio personalizado.",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: ",
+      "4º: ",
+      "5º: "
+    ],
+    "correct": [
+      "Habilitar a opção \"Entrada HTTP\"",
+      "Adicionar o nome de domínio personalizado",
+      "Associar o certificado SSL",
+      "Adicionar o registro CNAME no DNS",
+      "Validar o nome de domínio"
+    ],
+    "body": "Você deve configurar o domínio personalizado. Em que ordem você deve performar as ações?"
+  },
+  {
+    "id": "148",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo vários microsserviços para executarem em um aplicativo de Contêiner do Azure. Entrada HTTP externa foi habilitada para os microsserviços. Eles devem ser implantados na mesma rede virtual e devem escrever logs na mesma workspace do Log Analytics.",
+    "options": [
+      "Habilitar o modo de revisão única",
+      "Usar um ambiente separado para cada contêiner",
+      "Usar uma imagem de um registro de contêiner privado única para todos os contêineres",
+      "Usar um único ambiente para todos os contêineres",
+      "Habilitar o modo de revisão múltipla"
+    ],
+    "correct": [
+      "Usar um único ambiente para todos os contêineres"
+    ],
+    "body": "O que você deve fazer?"
+  },
+  {
+    "id": "149",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo vários microsserviços para executarem em um aplicativo de Contêiner do Azure. Entrada HTTP externa foi habilitada para os microsserviços. Um microsserviço implantado deve ser atualizado para permitir que os usuários testem novos recursos. Você tem os seguintes requisitos: ",
+    "options": [
+      "URL única para usuários de teste",
+      "Ativação do microsserviço atual"
+    ],
+    "correct": [
+      "Rótulo de revisão",
+      "Modo de revisão"
+    ],
+    "body": "Você precisa configurar o aplicativo de contêiner. Quais recursos você deve configurar?",
+    "requirements": [
+      "Habilitar e manter uma única URL para o microsserviço atualizado que será disponibilizada para usuários de teste",
+      "Atualizar o microsserviço que corresponde à versão atual do microsserviço implantado"
+    ]
+  },
+  {
+    "id": "150",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você planeja desenvolver um aplicativo de Funções do Azure com um gatilho HTTP. O aplicativo deve cumprir os seguintes requisitos: ",
+    "options": [
+      "Premium",
+      "10 minutos",
+      "Consumo",
+      "230 segundos",
+      "Dedicado",
+      "Ilimitado"
+    ],
+    "correct": [
+      "Premium",
+      "230 segundos"
+    ],
+    "body": "Você deve identificar o plano de preço do aplicativo e o máximo de tempo que uma função pode levar para responder antes de um timeout.",
+    "requirements": [
+      "Autoescalonamento baseado em eventos",
+      "Habilidade de usar imagens Linux personalizadas para executar as funções"
+    ]
+  },
+  {
+    "id": "151",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você desenvolveu uma aplicação em Python para renderizar imagens. A aplicação usa recursos de GPU para otimizar o processo de renderização. Você tem os seguintes requisitos: ",
+    "options": [
+      "Instâncias de Contêiner do Azure",
+      "Aplicativos de Contêiner do Azure",
+      "Serviço de Kubernetes do Azure (AKS)",
+      "Serviço de Aplicativo do Azure"
+    ],
+    "correct": [
+      "Instâncias de Contêiner do Azure"
+    ],
+    "body": "Você precisa implantar a aplicação no Azure. Qual serviço você deve usar?",
+    "requirements": [
+      "A aplicação deve ser implantada em um contêiner Linux",
+      "O contêiner deve ser parado quando a execução terminar",
+      "A solução deve minimizar os custos"
+    ]
+  },
+  {
+    "id": "152",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você desenvolveu uma aplicação em Python para renderizar imagens. A aplicação usa recursos de GPU para otimizar o processo de renderização. Você tem os seguintes requisitos: ",
+    "options": [
+      "Política de reinício",
+      "Variáveis de ambiente",
+      "Identidade gerenciada atribuída pelo sistema",
+      "Identidade gerenciada atribuída pelo usuário"
+    ],
+    "correct": [
+      "Política de reinício"
+    ],
+    "body": "Qual configuração você deve fazer para atender ao segundo requisito?",
+    "requirements": [
+      "A aplicação deve ser implantada em um contêiner Linux",
+      "O contêiner deve ser parado quando a execução terminar",
+      "A solução deve minimizar os custos"
+    ]
+  },
+  {
+    "id": "153",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você planeja desenvolver um aplicativo de Funções do Azure com um gatilho do Armazenamento de Blobs do Azure. O aplicativo não será usado frequentemente, com uma duração limitada de execuções individuais. O aplicativo deve cumprir os seguintes requisitos: ",
+    "options": [
+      "Premium",
+      "10 minutos",
+      "Consumo",
+      "230 segundos",
+      "Dedicado",
+      "Ilimitado"
+    ],
+    "correct": [
+      "Consumo",
+      "10 minutos"
+    ],
+    "body": "Você deve identificar o plano de preço do aplicativo e o máximo de tempo que uma função pode levar para responder antes de um timeout.",
+    "requirements": [
+      "Autoescalonamento baseado em eventos",
+      "Suporte para slots de implantação",
+      "A solução deve minimizar os custos"
+    ]
+  },
+  {
+    "id": "154",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo ASP.NET Core hospedado no Serviço de Aplicativo do Azure. O aplicativo exige que as declarações personalizadas sejam retornadas do Microsoft Entra ID para autorização do usuário. As reivindicações devem ser removidas quando o registro do aplicativo for removido.",
+    "options": [
+      "Exija o escopo https://graph.microsoft.com/.default durante a autenticação.",
+      "Configure o aplicativo para usar o fluxo de código de autorização OAuth 2.0.",
+      "Implementar middleware personalizado para recuperar informações de função do Azure AD.",
+      "Adicione os grupos ao atributo groupMembershipClaims no manifesto do aplicativo.",
+      "Adicione as funções ao atributo appRoles no manifesto do aplicativo."
+    ],
+    "correct": [
+      "Adicione as funções ao atributo appRoles no manifesto do aplicativo."
+    ],
+    "body": "Você precisa incluir as declarações personalizadas no token de acesso do usuário. O que você deveria fazer?"
+  },
+  {
+    "id": "155",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo vários microsserviços para executarem em um aplicativo de Contêiner do Azure. Entrada HTTP externa foi habilitada para os microsserviços. Sua companhia exige que atualizações dos microsserviços não causem indisponibilidade do sistema.",
+    "options": [
+      "Habilitar o modo de revisão única",
+      "Usar um ambiente separado para cada contêiner",
+      "Usar uma imagem de um registro de contêiner privado única para todos os contêineres",
+      "Usar um único ambiente para todos os contêineres",
+      "Habilitar o modo de revisão múltipla"
+    ],
+    "correct": [
+      "Habilitar o modo de revisão única"
+    ],
+    "body": "Você precisa implantar uma atualizaçõa. O que você deve fazer?"
+  },
+  {
+    "id": "156",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Uma empresa usa Aplicativos de Contêiner do Azure. Um aplicativo contêiner denominado App1 reside em um grupo de recursos denominado RG1. A empresa exige testes de atualizações do App1. Você habilita vários modos de revisão no App1.",
+    "options": [
+      "container app",
+      "container connection",
+      "containerapp connection",
+      "containerapp ingress",
+      "containerapp revision"
+    ],
+    "correct": [
+      "containerapp ingress"
+    ],
+    "body": "Você precisa configurar como o tráfego é roteado para cada revisão do App1. Como você deve completar o comando do Azure CLI acima?",
+    "code": "question-156.md"
+  },
+  {
+    "id": "157",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você implanta um Aplicativo de Contêiner do Azure e desabilita a entrada HTTP no aplicativo de contêiner. Os usuários relatam que não conseguem acessar o aplicativo. Você investiga e observa que o aplicativo foi dimensionado para 0 instâncias. Você precisa resolver o problema com o aplicativo contêiner.",
+    "options": [
+      "Habilitar a entrada HTTP, criar uma regra de escalonamento HTTP e aplicar a regra ao aplicativo de contêiner",
+      "Habilitar a entrada HTTP, criar uma regra de escalonamento personalizado e aplicar a regra ao aplicativo de contêiner",
+      "Habilitar a entrada HTTP e configurar o número mínimo de réplicas com valor 1"
+    ],
+    "correct": [
+      "false",
+      "false",
+      "true"
+    ],
+    "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
   }
 ]

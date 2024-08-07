@@ -1,0 +1,1 @@
+az _______________ traffic set --name App1 --resource-group RG1 --revision-weight <REVISION_1>=80 <REVISION_2>=20
