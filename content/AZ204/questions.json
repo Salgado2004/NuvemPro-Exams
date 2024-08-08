@@ -2947,5 +2947,358 @@
       "true"
     ],
     "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  },
+  {
+    "id": "158",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está desenvolvendo uma solução que usa a biblioteca de cliente do Azure Storage para .NET. Você tem o seguinte código: ",
+    "options": [
+      "O código cria uma concessão (lease) infinita",
+      "O código na linha 5 sempre cria um novo blob",
+      "O block finally libera a concessão (lease) do blob"
+    ],
+    "correct": [
+      "true",
+      "false",
+      "true"
+    ],
+    "body": "Para cada alternativa, marque 'verdadeiro' ou 'falso'. Cada seleção correta vale um ponto.",
+    "code": "question-158.md"
+  },
+  {
+    "id": "159",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está construindo um website que usa o Armazenamento de Blobs do Azure para armazenar seus dados. Você configura o ciclo de vida do armazenamento de blobs para mover todos os blobs para a camada de arquivos depois de 30 dias. Cliente exigiram um SLA (Service Level Agreement) para visualizar dados com mais de 30 dias.",
+    "options": [
+      "Pelo menos dois dias",
+      "Entre 1 e 15 horas",
+      "Pelo menos um dia",
+      "Entre 0 e 60 minutos"
+    ],
+    "correct": [
+      "Entre 1 e 15 horas"
+    ],
+    "body": "Você precisa documentar o SLA para recuperação de dados. O que você deve incluir na documentação?"
+  },
+  {
+    "id": "160",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está desenvolvendo um sistema de compra de passagens de uma companhia aérea. A solução de armazenamento da solução deve atender aos seguintes requisitos: ",
+    "options": [
+      "Sessão",
+      "Eventual",
+      "Forte",
+      "Desatualização limitada",
+      "Prefixo consistente"
+    ],
+    "correct": [
+      "Desatualização limitada"
+    ],
+    "body": "Você precisa provisionar uma conta do Cosmos DB com a API SQL. Qual tipo de consistência você deve usar?",
+    "requirements": [
+      "Garantir pelo menos 99,99% de disponibilidade e ter baixa latência",
+      "Aceitar reservas mesmo que haja uma falha de rede ou outras falhas imprevistas",
+      "Processar requisições na ordem exata em que foram enviadas para minimizar a possibilidade de overbooking",
+      "Permitir reservas simultâneas ou fora de ordem com uma janela de tolerância de no máximo 5 segundos"
+    ],
+    "code": "question-160.md"
+  },
+  {
+    "id": "161",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está desenvolvendo um sistema de compra de passagens de uma companhia aérea. A solução de armazenamento da solução deve atender aos seguintes requisitos: ",
+    "options": [
+      "--enable-virtual-network true",
+      "--enable-automatic-failover true",
+      "--kind 'GlobalDocumentDB'",
+      "--kind 'MongoDB'"
+    ],
+    "correct": [
+      "--enable-automatic-failover true"
+    ],
+    "body": "Você precisa provisionar uma conta do Cosmos DB com a API SQL. Qual parâmetro você deve configurar para preencher o espaço (2)?",
+    "requirements": [
+      "Garantir pelo menos 99,99% de disponibilidade e ter baixa latência",
+      "Aceitar reservas mesmo que haja uma falha de rede ou outras falhas imprevistas",
+      "Processar requisições na ordem exata em que foram enviadas para minimizar a possibilidade de overbooking",
+      "Permitir reservas simultâneas ou fora de ordem com uma janela de tolerância de no máximo 5 segundos"
+    ],
+    "code": "question-160.md"
+  },
+  {
+    "id": "162",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está se preparando para implantar um website em python em um Aplicativo Web do Azure usando um contêiner. A solução vai usar múltiplos contêineres no mesmo grupo de contêineres. A instância de Registro de Contêiner do Azure chamado 'images' é um registro privado. O nome de usuário e senha é 'admin. O dockerfile que builda o contêiner está a seguir: '",
+    "options": [
+      "--sku Shared",
+      "--tags container",
+      "--sku B1 --hyper-v",
+      "--sku B1 --is-linux"
+    ],
+    "correct": [
+      "--sku B1 --is-linux"
+    ],
+    "body": "Você builda o contêiner usando o comando 'docker build -t images.azurecr.io/website:v1.0.0'. O website deve sempre executar a mesma versão, independente de builds futuras. Como você deve completar o espaço (1) do comando acima?",
+    "requirements": [
+      "FROM python:3 ADD website.py CMD [\"python\", \"website.py\"]"
+    ],
+    "code": "question-162.md"
+  },
+  {
+    "id": "163",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está se preparando para implantar um website em python em um Aplicativo Web do Azure usando um contêiner. A solução vai usar múltiplos contêineres no mesmo grupo de contêineres. A instância de Registro de Contêiner do Azure chamado 'images' é um registro privado. O nome de usuário e senha é 'admin. O dockerfile que builda o contêiner está a seguir: '",
+    "options": [
+      "--deployment-container-image-name images.azurecr.io/website:v1.0.0",
+      "--deployment-container-image-name images.azurecr.io/website:latest",
+      "--deployment-source-url images.azurecr.io/website:v1.0.0",
+      "--deployment-source-url images.azurecr.io/website:latest"
+    ],
+    "correct": [
+      "--deployment-container-image-name images.azurecr.io/website:v1.0.0"
+    ],
+    "body": "Você builda o contêiner usando o comando 'docker build -t images.azurecr.io/website:v1.0.0'. O website deve sempre executar a mesma versão, independente de builds futuras. Como você deve completar o espaço (2) do comando acima?",
+    "requirements": [
+      "FROM python:3 ADD website.py CMD [\"python\", \"website.py\"]"
+    ],
+    "code": "question-162.md"
+  },
+  {
+    "id": "164",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está se preparando para implantar um website em python em um Aplicativo Web do Azure usando um contêiner. A solução vai usar múltiplos contêineres no mesmo grupo de contêineres. A instância de Registro de Contêiner do Azure chamado 'images' é um registro privado. O nome de usuário e senha é 'admin. O dockerfile que builda o contêiner está a seguir: '",
+    "options": [
+      "set --python-version 2.7 --generic-configurations user=admin password=admin",
+      "set --python-version 3.6 --generic-configurations user=admin password=admin",
+      "container set --docker-registry-server-url https://images.azurecr.io -u admin -p admin",
+      "container set --docker-registry-server-url https://images.azurecr.io/website -u admin -p admin"
+    ],
+    "correct": [
+      "container set --docker-registry-server-url https://images.azurecr.io -u admin -p admin"
+    ],
+    "body": "Você builda o contêiner usando o comando 'docker build -t images.azurecr.io/website:v1.0.0'. O website deve sempre executar a mesma versão, independente de builds futuras. Como você deve completar o espaço (3) do comando acima?",
+    "requirements": [
+      "FROM python:3 ADD website.py CMD [\"python\", \"website.py\"]"
+    ],
+    "code": "question-162.md"
+  },
+  {
+    "id": "165",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você tem uma aplicação que usa o Armazenamento de Blobs do Azure e precisa atualizar os metadados dos blobs. Quais três métodos você pode usar para atualizar os metadados dos blobs?",
+    "options": [
+      "Metadata.Add",
+      "SetMetadataAsync",
+      "FetchAttributesAsync",
+      "UploadFileStream",
+      "SetPropertiesAsync"
+    ],
+    "correct": [
+      "Metadata.Add",
+      "SetMetadataAsync",
+      "FetchAttributesAsync"
+    ]
+  },
+  {
+    "id": "166",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você está desenvolvendo uma solução do Azure para coletar dados de dispositivos de ponto de venda (POS) de 2.000 lojas localizadas em todo o mundo. Um único dispositivo pode produzir 2 megabytes (MB) de dados a cada 24 horas. Cada local de armazenamento possui de um a cinco dispositivos que enviam dados. Você deve armazenar os dados do dispositivo no armazenamento de Blobs do Azure. Os dados do dispositivo devem ser correlacionados com base em um identificador de dispositivo. Espera-se que lojas adicionais sejam abertas no futuro. Você precisa implementar uma solução para receber os dados do dispositivo.",
+    "options": [
+      "Provisionar uma Grade de Eventos do Azure. Configure o identificador da máquina como chave de partição e habilite a captura.",
+      "Provisionar um Hub de Eventos do Azure. Configure o identificador da máquina como chave de partição e habilite a captura."
+    ],
+    "correct": [
+      "false",
+      "true"
+    ],
+    "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  },
+  {
+    "id": "167",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está mantendo uma aplicação que usa o Armazenamento de Blobs do Azure na camada de preço GPv1. A aplicação tem os seguintes requisitos: ",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: "
+    ],
+    "correct": [
+      "Atualizar a camada de preço para GPv2",
+      "Criar um novo serviço de Armazenamento de Blobs na camada de preço GPv2 e configurar a camada de acesso padrão como 'Cool'",
+      "Mover os blobs para o novo serviço de Armazenamento de Blobs"
+    ],
+    "body": "Você precisa configurar a conta para usar Gerenciamento de ciclo de vida que movem os blobs para a camada de arquivos depois de 1 anos. Em que ordem você deve executar as ações?",
+    "requirements": [
+      "Dados mais velhos que 3 meses são raramente usados",
+      "Dados mais novos que 3 meses devem estar disponíveis imediatamente",
+      "Dados mais velhos que 1 ano precisam ser armazenados, mas não precisam estar disponíveis imediatamente"
+    ]
+  },
+  {
+    "id": "168",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você desenvolve soluções no Azure. Uma aplicação .NET precisa receber uma mensagem toda vez que uma Máquina virtual do Azure termina de processar seus dados. As mensagens NÃO devem persistir depois de processadas pela aplicação.",
+    "options": [
+      "QueueClient",
+      "CloudQueueClient",
+      "TopicClient",
+      "SubscriptionClient"
+    ],
+    "correct": [
+      "QueueClient"
+    ],
+    "body": "Você precisa implementar o objeto .NET que irá receber as mensagens. Qual objeto você deve usar?"
+  },
+  {
+    "id": "169",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você desenvolve soluções no Azure. Você precisa conectar com um banco de dados NoSQL globalmente distribuído usando uma API do .NET. Você precisa criar o objeto para configurar e executar as requisições para o banco de dados. Quais segmento de código você deve escolher?",
+    "options": [
+      "new Container(EndpointUri, PrimaryKey)",
+      "new Database(EndpointUri, PrimaryKey)",
+      "new CosmosClient(EndpointUri, PrimaryKey)"
+    ],
+    "correct": [
+      "new CosmosClient(EndpointUri, PrimaryKey)"
+    ]
+  },
+  {
+    "id": "170",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você tem uma conta de armazenamento do Azure que guarda grandes volumes de dados, espalhados em diversos contêineres. Você precisa copiar todos os dados da conta de armazenamento atual para uma nova conta. O processo de cópia deve seguir os seguintes critérios: ",
+    "options": [
+      "AzCopy",
+      "Explorador de armazenamento do Azure",
+      "Portal do Azure",
+      "Biblioteca de cliente de armazenamento do .NET"
+    ],
+    "correct": [
+      "AzCopy"
+    ],
+    "body": "O que você deve usar?",
+    "requirements": [
+      "Automatizar o movimento dos dados",
+      "Minimizar a interação de usuário necessária para performar a operação",
+      "Garantir que o processo de cópia seja reversível"
+    ]
+  },
+  {
+    "id": "171",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está desenvolvendo uma nova página para um website que usa o Azure Cosmos DB para armazenar dados. Você precisa mostrar os dados na nova página em uma ordem específica. Você cria a seguinte consulta: ",
+    "options": [
+      "orderBy",
+      "sortOrder",
+      "ascending",
+      "descending",
+      "compositeIndexes"
+    ],
+    "correct": [
+      "descending",
+      "compositeIndexes"
+    ],
+    "body": "Você precisa configurar uma política do Cosmos DB para suportar a consulta. Como você deve completar a política?",
+    "requirements": [
+      "SELECT * FROM people p ORDER BY p.name, p.city DESC"
+    ],
+    "code": "question-171.md"
+  },
+  {
+    "id": "172",
+    "exam": "AZ204",
+    "type": "select",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você está construindo um sistema de monitoramento de tráfego que monitora 6 rodovias. O sistema produz relatórios baseados em análises de séries temporais para cada rodovia. Os dados dos sensores de tráfego são armazenados no Hub de Eventos do Azure e consumidos por 4 departamentos. Cada departamento tem um Aplicativo Web do Azure que mostra os relatórios e contém um WebJob que processa os dados vindos do Hub de Eventos. Todos os aplicativos web executam em planos de Serviço de Aplicativo com 3 instâncias. O throughput dos dados deve ser maximizado e a latência deve ser minimizada.",
+    "options": [
+      "3 partições e chave de partição por rodovia",
+      "6 partições e chave de partição por departamento",
+      "6 partições e chave de partição por rodovia",
+      "3 partições e chave de partição por departamento"
+    ],
+    "correct": [
+      "6 partições e chave de partição por rodovia"
+    ],
+    "body": "Você precisa configurar o hub de eventos. Quais configurações você deve usar?"
+  },
+  {
+    "id": "173",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo uma solução de microsserviços. Você planeja implantar a solução em um cluster multi-nós do Serviço de Kubernetes do Azure (AKS). Você deve implantar a solução para atender os seguintes requisitos: ",
+    "options": [
+      "Implantar a solução",
+      "Visualizar o cluster e endereço de IP externo",
+      "Implementar um único endereço IP público que é roteado para múltiplos microsserviços"
+    ],
+    "correct": [
+      "Helm",
+      "KubeCtl",
+      "Ingress controller"
+    ],
+    "body": "Quais componentes você deve usar? Arraste os componentes para a área correta.",
+    "requirements": [
+      "Habilidade de proxy reverso",
+      "Roteamento de tráfego configurável",
+      "Terminação TLS com certificado personalizado"
+    ]
+  },
+  {
+    "id": "174",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você está implementando um sistema de processamento de pedidos. A aplicação de ponto de vendas publica pedidos em tópicos do Barramento de Serviço do Azure. O sistema tem os seguintes requisitos para as assinaturas: ",
+    "options": [
+      "Assinatura 1",
+      "Assinatura 2",
+      "Assinatura 3",
+      "Assinatura 4",
+      "Assinatura 5"
+    ],
+    "correct": [
+      "Boolean Filter",
+      "Correlation Filter",
+      "SQLFilter",
+      "SQLFilter",
+      "Nenhum filtro"
+    ],
+    "body": "Você precisa implementar filtros e maximizar o throughput. Quais filtros você deve usar para cada assinatura?",
+    "requirements": [
+      "Assinatura 1: Reservada para uso futuro e não deve receber pedidos",
+      "Assinatura 2: Recebe todos os pedidos de prioridade alta e internacionais",
+      "Assinatura 3: Recebe todos os pedidos em que o país/região não é o Brasil",
+      "Assinatura 4: Recebe todos os pedidos com quantidade de itens maior que 100 unidades",
+      "Assinatura 5: É usada para fins de auditoria. A assinatura recebe todos os pedidos e tem uma ação definida para atualizar a propriedade AuditedAt."
+    ],
+    "code": "question-174.md"
   }
 ]
