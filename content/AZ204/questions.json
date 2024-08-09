@@ -503,13 +503,13 @@
     "domain": "Desenvolver soluções de computação do Azure",
     "header": "Um grupo de contêineres nas Instâncias de Contêiner do Azure tem vários contêineres, que devem ser reiniciados quando o processo executado no grupo for encerrado por um erro.",
     "options": [
-      "az container restart \\ --name mycontainer \\ --resource-group myResourceGroup \\ --no-wait",
-      "az container create \\ --resource-group myResourceGroup \\ --name mycontainer \\ --image mycontainerimage \\ --restart-policy Always",
-      "az container create \\ --resource-group myResourceGroup \\ --name mycontainer \\ --image mycontainerimage \\ --restart-policy Never",
-      "az container create \\ --resource-group myResourceGroup \\ --name mycontainer \\ --image mycontainerimage \\ --restart-policy OnFailure"
+      "az container restart --name mycontainer --resource-group myResourceGroup --no-wait",
+      "az container create --resource-group myResourceGroup --name mycontainer --image mycontainerimage --restart-policy Always",
+      "az container create --resource-group myResourceGroup --name mycontainer --image mycontainerimage --restart-policy Never",
+      "az container create --resource-group myResourceGroup --name mycontainer --image mycontainerimage --restart-policy OnFailure"
     ],
     "correct": [
-      "az container create \\ --resource-group myResourceGroup \\ --name mycontainer \\ --image mycontainerimage \\ --restart-policy OnFailure"
+      "az container create --resource-group myResourceGroup --name mycontainer --image mycontainerimage --restart-policy OnFailure"
     ],
     "body": "Você precisa definir uma política de reinicialização para o grupo de contêineres. Qual comando da CLI do Azure você deve usar?"
   },
@@ -3300,5 +3300,543 @@
       "Assinatura 5: É usada para fins de auditoria. A assinatura recebe todos os pedidos e tem uma ação definida para atualizar a propriedade AuditedAt."
     ],
     "code": "question-174.md"
+  },
+  {
+    "id": "175",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Sua empresa possui uma assinatura do Azure. Você precisa implantar várias máquinas virtuais do Azure em um único conjunto de disponibilidade usando modelos do Azure Resource Manager (ARM). Você precisa garantir que o modelo ARM permita o maior número possível de VMs permeneça acessível em caso de falha ou manutenção da estrutura.",
+    "options": [
+      "10",
+      "30",
+      "Valor mínimo",
+      "Valor máximo"
+    ],
+    "correct": [
+      "Valor máximo"
+    ],
+    "body": "Qual das opções a seguir é o valor que você deve configurar para a propriedade platformFaultDomainCount?"
+  },
+  {
+    "id": "176",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo Web para um e-Commerce e deseja usar o Key Vault do Azure para garantir que as entradas no aplicativo sejam protegidas usando a autenticação do Serviço de Aplicativo do Azure e o Microsoft Entra ID.",
+    "options": [
+      "Executar o comando 'az keyvault secret'",
+      "Habilitar o Azure AD Connect",
+      "Habilitar o Managed Service Identity (MSI)",
+      "Criar uma entidade de serviço do Azure AD"
+    ],
+    "correct": [
+      "Habilitar o Managed Service Identity (MSI)"
+    ],
+    "body": "O que você deve fazer no aplicativo Web de e-Commerce?"
+  },
+  {
+    "id": "177",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você gerencia um banco de dados SQL do Azure que permite a autenticação do Microsoft Entra. Você precisa garantir que os desenvolvedores de banco de dados possam se conectar ao banco de dados SQL por meio do Microsoft SQL Server Management Studio (SSMS). Também precisa garantir que os desenvolvedores usem sua conta local do Active Directory para autenticação.",
+    "options": [
+      "Token do Azure AD",
+      "Autenticação multifator do Azure",
+      "Autenticação integrada do Active Directory",
+      "Tokens de software OATH"
+    ],
+    "correct": [
+      "Autenticação integrada do Active Directory"
+    ],
+    "body": "Sua estratégia deve permitir que os prompts de autenticação sejam reduzidos ao mínimo. Qual das opções a seguir você deve implementar?"
+  },
+  {
+    "id": "178",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo para transferir dados entre servidores de arquivos locais e o armazenamento de Blobs do Azure. O aplicativo armazena chaves, segredos e certificados no Azure Key Vault e utiliza suas APIs. Você pretende configurar a aplicação para permitir a recuperação de uma eliminação acidental do cofre de chaves ou dos objetos do cofre de chaves durante 90 dias após a eliminação.",
+    "options": [
+      "Executar o cmdlet Add-AzKeyVaultKey",
+      "Executar o comando CLI 'az keyvault update --enable-soft-delete true --enable-purge-protection true'",
+      "Implementar endpoints de serviço de rede virtual para o Azure Key Vault",
+      "Executar o comando CLI 'az keyvault update --enable-soft-delete false'"
+    ],
+    "correct": [
+      "Executar o comando CLI 'az keyvault update --enable-soft-delete true --enable-purge-protection true'"
+    ],
+    "body": "O que você deve fazer?"
+  },
+  {
+    "id": "179",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você tem uma nova assinatura do Azure e está desenvolvendo um site interno para que os funcionários visualizem dados confidenciais. O site usa o Microsoft Entra para autenticação.",
+    "options": [
+      "Configurar o site para usar o Microsoft Entra B2C",
+      "No Microsoft Entra, criar uma nova política de acesso condicional",
+      "Atualizar para o plano premium do Microsoft Entra",
+      "No Microsoft Entra, habilitar o proxy de aplicativo",
+      "No acesso condicional do Microsoft Entra, habilitar a política de linha de base"
+    ],
+    "correct": [
+      "No Microsoft Entra, criar uma nova política de acesso condicional",
+      "Atualizar para o plano premium do Microsoft Entra"
+    ],
+    "body": "Você precisa implementar a autenticação multifator para o site. Quais são as duas ações que você deve realizar?"
+  },
+  {
+    "id": "180",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você gerencia um aplicativo de processamento de dados que recebe solicitações de um serviço do armazenamento de Filas do Azure. Você precisa gerenciar o acesso à fila e tem os seguintes requisitos: ",
+    "options": [
+      "Serviço SAS com uma política de acesso armazenada",
+      "Conta SAS",
+      "SAS de delegação de usuário",
+      "Serviço SAS com SAS ad hoc"
+    ],
+    "correct": [
+      "Serviço SAS com uma política de acesso armazenada"
+    ],
+    "body": "Qual tipo de assinatura de acesso compartilhado (SAS) você deve usar?",
+    "requirements": [
+      "Fornecer a outros aplicativos acesso à fila do Azure",
+      "Certificar-se de que pode revogar o acesso À fila sem ter que gerar novas chaves da conta de armazenamento",
+      "Especificar o acesso ao nível da fila e não ao nível da conta de armazenamento"
+    ]
+  },
+  {
+    "id": "181",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está criando um aplicativo Web que usa a plataforma de identidade da Microsoft para autenticação de usuário. Você está implementado a identificação do usuário para o aplicativo Web.",
+    "options": [
+      "Aud",
+      "Nonce",
+      "OID (Object ID)",
+      "IDP (ID Provider)"
+    ],
+    "correct": [
+      "OID (Object ID)"
+    ],
+    "body": "Você precisa recuperar uma declaração para identificar exclusivamente um usuário. Qual tipo de declaração você deve usar?"
+  },
+  {
+    "id": "182",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo Web que usa a plataforma de identidade da Microsoft para autenticar usuários e recursos. O aplicativo chama várias APIs REST. As APIs requerem um token de acesso da plataforma de identidade da Microsoft.",
+    "options": [
+      "URI/URL de redirecionamento",
+      "ID do aplicativo",
+      "Nome do aplicativo",
+      "Senha do aplicativo",
+      "Tipo de conta compatível"
+    ],
+    "correct": [
+      "URI/URL de redirecionamento",
+      "ID do aplicativo",
+      "Senha do aplicativo"
+    ],
+    "body": "Você precisa solicitar um token. Quais são as 3 propriedades que você deve usar?"
+  },
+  {
+    "id": "183",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você desenvolve e implanta um aplicativo Web no Serviço de Aplicativo do Azure. O aplicativo acessa dados em uma conta de Armazenamento do Azure. A conta contém vários contêineres com vários blobs com grandes quantidades de dados. Você implantou todos os recursos do Azure em uma única região.",
+    "options": [
+      "Iniciar um failover de conta de armazenamento",
+      "Exportar o modelo do Azure Resource Manager (ARM) da conta de armazenamento",
+      "Configurar a replicação de objetos para todos os blobs",
+      "Usar a ferramenta de CLI AzCopy",
+      "Criar uma nova conta de armazenamento na região atual"
+    ],
+    "correct": [
+      "Exportar o modelo do Azure Resource Manager (ARM) da conta de armazenamento"
+    ],
+    "body": "Você precisa mover a conta de Armazenamento do Azure para uma nova região. Você deve copiar todos os dados para a nova região. O que você deve fazer primeiro?"
+  },
+  {
+    "id": "184",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Sua organização implanta o Azure Cosmos DB. Você precisa garantir que o índice seja atualizado à medida que os itens são criados, atualizados ou excluídos.",
+    "options": [
+      "Configurar o modo de indexação como Lazy",
+      "Configurar o valor da propriedade automática da política de indexação como False",
+      "Configurar a opção EnableScanInQuery como True",
+      "Configurar o modo de indexação como Consistente"
+    ],
+    "correct": [
+      "Configurar o modo de indexação como Consistente"
+    ],
+    "body": "O que você deve fazer?"
+  },
+  {
+    "id": "185",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está atualizando um aplicativo que armazena dados no Azure Cosmos DB. O aplicativo usa vários documentos associados a um único nome de usuário e requer a capacidade de atualizar esses vários documentos em uma única operação ACID.",
+    "options": [
+      "Criar uma coleção fragmentada por nome de usuário para armazenar documentos",
+      "Configurar o Azure Cosmos DB para usar a API do Gremlin",
+      "Criar uma coleção não fragmentada para armazenar documentos",
+      "Configurar o Azure Cosmos DB para usar a API do MongoDB"
+    ],
+    "correct": [
+      "Criar uma coleção não fragmentada para armazenar documentos",
+      "Configurar o Azure Cosmos DB para usar a API do MongoDB"
+    ],
+    "body": "Você precisa configurar o Cosmos DB. Quais são as duas ações que você deve realizar?"
+  },
+  {
+    "id": "186",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você tem um aplicativo de console baseado em contêiner Linux que carrega arquivos de imagem de sites de clientes em todo o mundo. Um sistema back-end executado em máquinas virtuais do Azure processa as imagens usando a API de Blobs do Azure. Você não tem permissão para fazer alterações no aplicativo. Alguns sites de clientes possuem apenas conexões de internet por telefone.",
+    "options": [
+      "Azure BlobFuse",
+      "Armazenamento de discos do Azure",
+      "Suporte ao Sistema de Rede de Arquivos (NFS) 3.0 do Armazenamento do Azure",
+      "Armazenamento de arquivos do Azure"
+    ],
+    "correct": [
+      "Azure BlobFuse"
+    ],
+    "body": "Você precisa configurar o aplicativo para acessar as imagens. O que você deve usar?"
+  },
+  {
+    "id": "187",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo Java que usa o Apache Cassandra para armazenar dados de chave e valor. Você planeja usar um novo recurso do Azure Cosmos DB e a API Cassandra no aplicativo. Você cria um grupo do Microsoft Entra chamado Cosmos Db Creators para permitir o provisionamento de contas, bancos de dados e contêineres do Azure Cosmos DB. O grupo não deve conseguir as chaves necessárias para acesso aos dados",
+    "options": [
+      "Contribuidor da conta DocumentDB",
+      "Operador de Backup do Cosmos",
+      "Operador do Cosmos DB",
+      "Leitor da conta do Cosmos DB"
+    ],
+    "correct": [
+      "Operador do Cosmos DB"
+    ],
+    "body": "Você precisa restringir o acesso ao grupo do Microsoft Entra. QUal controle de acesso baseado em função (RBAC) você deve usar?"
+  },
+  {
+    "id": "188",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Sua empresa está desenvolvendo uma API do Azure. Você precisa implementar a autenticação da API para acessar outros recursos no Azure. Você tem os seguintes requisitos: ",
+    "options": [
+      "Básico",
+      "Anônimo",
+      "Identidade gerenciada",
+      "Certificado do cliente"
+    ],
+    "correct": [
+      "Identidade gerenciada"
+    ],
+    "body": "Qual mecanismo de autenticação você deve usar?",
+    "requirements": [
+      "Todas as chamadas de API devem ser autenticadas",
+      "Os chamadores da API não devem enviar credenciais à API"
+    ]
+  },
+  {
+    "id": "189",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você desenvolveu um aplicativo que permite aos usuários fazer upload de fotos e vídeos para o armazenamento do Azure. O aplicativo usa uma chamada de API REST de armazenamento para carregar a mídia em uma conta de armazenamento de blob chamada Account1, onde você tem dois contêineres chamados container1 e container2. O envio de vídeos ocorre de forma irregular.",
+    "options": [
+      "Copiar blobs para o container2 usando a operação Put Blob da API REST do Serviço de Blob",
+      "Criar um tópico da Grade de Eventos que use o cmdlet 'Start-AzureStorageBlobCopy'",
+      "Usar o AzCopy com a opção Snapshot para copiar blobs para o container2",
+      "Baixar o blob para uma máquina virtual e, em seguida, fazer upload do blob para o container2"
+    ],
+    "correct": [
+      "Criar um tópico da Grade de Eventos que use o cmdlet 'Start-AzureStorageBlobCopy'"
+    ],
+    "body": "Você preciaa copiar blobs específicos do container1 para o container2 quando um novo vídeo é carregado. O que você deve fazer?"
+  },
+  {
+    "id": "190",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Você está desenvolvendo um site ASP.NET Core que usa o Azure FrontDoor. O site é usado para construir conjuntos de dados meteorológicos personalizados para pesquisadores. Os conjuntos de dados são baixados como arquivos CSV. Os dados são atualizados a cada 10 horas. Arquivos específicos devem ser eliminados do cache do FrontDoor com base nos valores do Cabeçalho de Resposta.",
+    "options": [
+      "Eliminação de caminho único",
+      "Eliminação de curinga",
+      "Eliminação de domínio raiz"
+    ],
+    "correct": [],
+    "body": "Você precisa limpar ativos individuas do cache do FrontDoor. Que tipo de limpeza de cache você deve usar?"
+  },
+  {
+    "id": "191",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você é desenvolvedor de uma empresa de SaaS que oferece muitos serviços da web. Todos os serviços da empresa devem atender aos seguintes requisitos: ",
+    "options": [
+      "Jsonp",
+      "Certificado de autenticação",
+      "Cabeçalho de verificação",
+      "Validate-jwt"
+    ],
+    "correct": [
+      "Validate-jwt"
+    ],
+    "body": "Qual política de gerenciamento de API você deve implementar?",
+    "requirements": [
+      "Usar o Gerenciamento de API para acessar os serviços",
+      "Usar OpenID Connect para autenticação",
+      "Impedir o uso anônimo"
+    ]
+  },
+  {
+    "id": "192",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você desenvolve uma API REST e implementa um SAS de delegação de usuário para se comunicar com o armazenamento de Blobs do Azure. O token está comprometido e você precisa revogá-lo.",
+    "options": [
+      "Revogar a chave de delegação",
+      "Excluir a política de acesso armazenada",
+      "Gerar novamente a chave da conta",
+      "Remover a atribuição de função do princípio de segurança"
+    ],
+    "correct": [
+      "Revogar a chave de delegação",
+      "Remover a atribuição de função do princípio de segurança"
+    ],
+    "body": "Quais são as duas maneiras possíveis de atingir esse objetivo?"
+  },
+  {
+    "id": "193",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você desenvolve e implanta um aplicativo Lógico do Azure que chama um aplicativo de Funções do Azure. O aplicativo de funções inclui uma definição OpenAPI (Swagger) e usa uma conta de armazenamento de Blobs do Azure. Todos os recursos são protegidos usando o Microsoft Entra. O aplicativo lógico deve acessar com segurança a conta de armazenamento de Blobs. Os recursos do Microsoft Entra devem permanecer se o aplicativo for excluído.",
+    "options": [
+      "Criar uma função personalizada do Microsoft Entra e atribuir a função à conta de armazenamento de Blobs",
+      "Criar um Azure Key Vault e emitir um certificado de cliente",
+      "Criar uma identidade gerenciada atribuída pelo usuário e atribuir controles de acesso baseado em funções (RBAC)",
+      "Criar uma identidade gerenciada atribuída pelo sistema e emitir um certificado de cliente",
+      "Criar uma função personalizada do Microsoft Entra e atribuir controles de acesso baseado em funções (RBAC)"
+    ],
+    "correct": [
+      "Criar uma identidade gerenciada atribuída pelo usuário e atribuir controles de acesso baseado em funções (RBAC)"
+    ],
+    "body": "Você precisa proteger o aplicativo. O que você deve fazer?"
+  },
+  {
+    "id": "194",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você implanta um aplicativo Web do Serviço de Aplicativo do Azure. Você cria um registro de aplicativo no Microsoft Entra e no X (Twitter). O aplicativo deve autenticar usuários e usar SSL para todas as comunicações. O aplicativo deve usar o X como provedor de identidade.",
+    "options": [
+      "Cabeçalho do token de ID",
+      "Assinatura do token de identificação",
+      "Código de resposta HTTP",
+      "ID do locatário"
+    ],
+    "correct": [
+      "Assinatura do token de identificação"
+    ],
+    "body": "Você precisa validar a solicitação do Microsoft Entra no código do aplicativo. O que você deve validar?"
+  },
+  {
+    "id": "195",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo uma Função do Azure que chama APIs externas fornecendo um token de acesso para a API. O token de acesso é armazenado em um segredo no Azure Key Vault denominado mykeyvault.",
+    "options": [
+      "KeyVault:mykeyvault;Secret:token",
+      "App:Settings:Secret:mykeyvault:token",
+      "AZUREKVCONNSTR_https://mykeyvault.vault.azure.net/secrets/token/",
+      "@Microsoft.KeyVault(SecretUri=https://mykeyvault.vault.azure.net/secrets/token/"
+    ],
+    "correct": [
+      "@Microsoft.KeyVault(SecretUri=https://mykeyvault.vault.azure.net/secrets/token/"
+    ],
+    "body": "Você precisa garantir que a aplicação possa acessar o token. Qual valor você deve armazenar na configuração do aplicativo de Funções do Azure?"
+  },
+  {
+    "id": "196",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Uma empresa mantém vários aplicativos da web e móveis. Cada aplicativo usa provedores de identidade internos personalizados, bem como provedores de identidade social. Você precisa implementar o logon único (SSO) para todos os aplicativos.",
+    "options": [
+      "Usar o Azure Active Directory B2C (Azure AD B2C) com políticas personalizadas",
+      "Usar o Azure Active Directory B2B (Azure AD B2B) e permitir colaboração externa",
+      "Usar o Azure Active Directory B2C (Azure AD B2C) com fluxos de usuário",
+      "Usar o Azure Active Directory B2B (Azure AD B2B)."
+    ],
+    "correct": [
+      "Usar o Azure Active Directory B2B (Azure AD B2B) e permitir colaboração externa"
+    ],
+    "body": "O que você deve fazer?"
+  },
+  {
+    "id": "197",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você desenvolve um aplicativo Python para renderização de imagens que usa recursos de GPU para otimizar processos de renderização. Você implanta o aplicativo em um contêiner Linux das Instâncias de Contêiner do Azure (ACI). O aplicativo exige que um valor secreto seja passado quando o contêiner for iniciado. O valor só deve ser acessado de dentro do contêiner.",
+    "options": [
+      "Criar uma variável de ambiente e configurar a propriedade secureValue",
+      "Adicionar o valor secreto à imagem do contêiner. Usar uma identidade gerenciada",
+      "Adicionar o valor secreto ao código do aplicativo. Definir o comando de inicialização do contêiner",
+      "Adicionar o valor secreto a uma conta de armazenamento de Blobs do Azure. Gerar um token SAS",
+      "Montar um volume secreto contendo o valor secreto em um arquivo secreto"
+    ],
+    "correct": [
+      "Criar uma variável de ambiente e configurar a propriedade secureValue",
+      "Montar um volume secreto contendo o valor secreto em um arquivo secreto"
+    ],
+    "body": "Você precisa passar o valor secreto. Quais são as duas maneiras possíveis de atingir esse objetivo?"
+  },
+  {
+    "id": "198",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo Web que usa a plataforma de identidade da Microsoft para autenticação de usuários e recursos. O aplicativo Web chama várias APIs REST. Uma chamada da API REST deve ler o calendário do usuário. O aplicativo Web requer permissão para enviar um email como usuário.",
+    "options": [
+      "Locatário",
+      "Code_challenge",
+      "Estado",
+      "ID de cliente",
+      "Escopo"
+    ],
+    "correct": [
+      "Escopo"
+    ],
+    "body": "Você precisa autorizar o aplicativo web e a API. Qual parâmetro você deve usar?"
+  },
+  {
+    "id": "199",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo Java para ser implantado no Azure. O aplicativo armazena dados confidenciais no Azure Cosmos DB. Você precisa configurar o Always Encrypted para criptografar os dados confidenciais dentro do aplicativo.",
+    "options": [
+      "Criar um novo contêiner para incluir uma política de criptografia com as propriedades JSON a serem criptografadas",
+      "Criar uma chave gerenciada pelo cliente (CMK) e armazenar em uma nvoa instância do Azure Key Vault",
+      "Criar uma chave de criptografia de dados (DEK) usando o SDK do Azure Cosmos DB e armazenar achave no Azure Cosmos DB",
+      "Criar uma identidade gerenciada do Azure AS e atribuir a identidade a uma nova instância do Azure Key Vault"
+    ],
+    "correct": [
+      "Criar uma chave gerenciada pelo cliente (CMK) e armazenar em uma nvoa instância do Azure Key Vault"
+    ],
+    "body": "O que você deve fazer primeiro?"
+  },
+  {
+    "id": "200",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo que usa chaves armazenadas no Azure Key Vault. Você precisa impor um algoritmo criptográfico específico e um tamanho de chave para chaves armazenadas no cofre. O que você deve usar?",
+    "options": [
+      "Controle de versão secreto",
+      "Política do Azure",
+      "Firewall do Key Vault",
+      "Políticas de acesso"
+    ],
+    "correct": [
+      "Política do Azure"
+    ]
+  },
+  {
+    "id": "201",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você planeja implantar várias máquinas virtuais do Azure que executarão o Windows Server 2019 em um conjunto de escala de máquina virtual usando um modelo do Azure Resource Manager.",
+    "options": [
+      "O cmdlet Publish-AzVMSscConfiguration",
+      "Insights de aplicativos do Azure",
+      "Extensão de script personalizado do Azure",
+      "Um perfil de configuração de dispositivo do Microsoft Endpoint Manager"
+    ],
+    "correct": [
+      "Extensão de script personalizado do Azure"
+    ],
+    "body": "Você precisa garantir que o NGINX esteja disponível em todas as máquinas virtual após sua implantação. O que você deve usar?"
+  },
+  {
+    "id": "202",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você está criando um sistema de notificação de perigo que possui um único servidor de sinalização que aciona alertas sonoros e visuais para iniciar e parar. Você implementa o Barramento de serviço do Azure para publicar alertas. Cada controlador de alerta utiliza o Barramento de serviço para receber sinais de alerta como parte de uma transação. Os eventos de alerta devem ser registrados para fins de auditoria. Cada registro de transação deve incluir informações sobre o tipo de alerta que foi ativado.",
+    "options": [
+      "Atribuir o valor da propriedade SessionID da mensagem de perigo à propriedade ReplyToSessionId",
+      "Atribuir o valor da propriedade MessageID da mensagem de perido à proriedade DeliveryCount",
+      "Atribuir o valor da propriedade SessionID da mensagem de perigo à propriedade SequenceNumber",
+      "Atribuir o valor da propriedade MessageID da mensagem de perigo à propriedade CorrelationId",
+      "Atribuir o valor da propriedade SequenceNumber da mensagem de perigo à propriedade DeliveryCount"
+    ],
+    "correct": [
+      "Atribuir o valor da propriedade SessionID da mensagem de perigo à propriedade ReplyToSessionId",
+      "Atribuir o valor da propriedade MessageID da mensagem de perigo à propriedade CorrelationId"
+    ],
+    "body": "Você precisa implementar uma solução de auditoria de trilha de resposta. Quais são as duas ações que você deve realizar?"
+  },
+  {
+    "id": "203",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Você desenvolve e implanta um aplicativo Web ASP.NET no Serviço de Aplicativo do Azure. Você usa a telemetria do Application Insights para monitorar o aplicativo. Você deve testar o aplicativo para garantir que ele esteja disponível e responsivo em vários pontos do mundo e em intervalos regulares. Se o aplicativo não estiver respondendo, você deverá emitir um alerta à equipe de suporte.",
+    "options": [
+      "Integração",
+      "Multi-step",
+      "Ping de URL",
+      "Unidade",
+      "Carga"
+    ],
+    "correct": [
+      "Multi-step",
+      "Ping de URL"
+    ],
+    "body": "Você precisa configurar testes para o aplicativo web. Quais são os dois tipos de teste que você pode usar?"
+  },
+  {
+    "id": "204",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Monitorar, solucionar problemas e otimizar soluções do Azure",
+    "header": "Você está desenvolvendo um serviço Web ASP.NET Core Web API. O serviço utiliza o Azure Application Insights para todo o acompanhamento de telemetria e dependência. O serviço lê e grava dados em um banco de dados diferente do Microsoft SQL Server.",
+    "options": [
+      "Telemetry.Context.Cloud.RoleInstance",
+      "Telemetry.Id",
+      "Telemetry.Name",
+      "Telemetry.Context.Operation.Id",
+      "Telemetry.Context.Session.Id"
+    ],
+    "correct": [
+      "Telemetry.Id",
+      "Telemetry.Context.Operation.Id"
+    ],
+    "body": "Você precisa garantir que o rastreamento de dependência funcione para chamadas ao banco de dados de terceiros. Quais são as duas propriedades de telemetria de dependência que você deve usar?"
   }
 ]
