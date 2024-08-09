@@ -3583,7 +3583,9 @@
       "Eliminação de curinga",
       "Eliminação de domínio raiz"
     ],
-    "correct": [],
+    "correct": [
+      "Eliminação de caminho único"
+    ],
     "body": "Você precisa limpar ativos individuas do cache do FrontDoor. Que tipo de limpeza de cache você deve usar?"
   },
   {
