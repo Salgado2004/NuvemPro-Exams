@@ -1,0 +1,1 @@
+await blob.DeleteAsync(snapshotsOption: ____________________);
