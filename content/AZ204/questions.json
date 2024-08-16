@@ -4500,12 +4500,14 @@
     "options": [
       "Configurar o Aplicativo Web do Azure para que o website permita apenas requisições autenticadas e exija login com o Microsoft Entra",
       "Criar uma nova aplicação do Microsoft Entra, no manifesto da aplicação, configurar a propriedade groupMembershipClaims para 'All'. No website, usar o valor do groups claim do JWT do usuário para determinar o nível de permissão",
-      "Criar uma nova aplicação do Microsoft Entra, no manifesto da aplicação, configurar funções que correspondam aos níveis de permissão. Conceda o grupo do Microsoft Entra apropriado para cada função, no website, use o valor do roles claim do JWT do usuário para determinar o nível de permissão"
+      "Criar uma nova aplicação do Microsoft Entra, no manifesto da aplicação, configurar funções que correspondam aos níveis de permissão. Conceda o grupo do Microsoft Entra apropriado para cada função, no website, use o valor do roles claim do JWT do usuário para determinar o nível de permissão",
+      "Configurar e usar a Autenticação Integrada do Windows no site, e então consultar a API do Microsoft Graph para carregar os grupos dos quais o usuário é membro."
     ],
     "correct": [
       "false",
       "true",
-      "true"
+      "true",
+      "false"
     ],
     "body": "Você precisa configurar a autorização. Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'."
   },
@@ -4524,5 +4526,114 @@
       "Purge protection"
     ],
     "body": "Você precisa proteger o cofre de chaves e os objetos do cofre de chaves. Qual recurso do Azure Key Vault você deve usar?"
+  },
+  {
+    "id": "241",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está desenvolvendo um website para gerenciar registros médicos. O site é usado para armazenar cópias escaneadas de formulários de admissão de pacientes. Se os formulários forem baixados por terceiros, o conteúdo e os dados não devem ser comprometidos. Você precisa armazenar esses formulários de forma que esse requisito seja cumprido. O que você deve fazer?",
+    "options": [
+      "Você armazena os formulários como segredos no Azure Key Vault",
+      "Você cria um banco de dados do Cosmos DB e habilita o serviço de encriptação. Você armazena os formulários no Cosmos DB",
+      "Você cria uma chave do Azure Key Vault e usa essa chave para encriptar os formulários antes de armazená-los no Armazenamento de Blobs do Azure"
+    ],
+    "correct": [
+      "false",
+      "false",
+      "true"
+    ],
+    "body": "Marque 'verdadeiro' se as soluções apresentadas atendem o objetivo, caso contrário, marque 'falso'"
+  },
+  {
+    "id": "242",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você planeja implantar uma nova aplicação em uma máquina virtual baseada em Linux hospedada no Azure. Toda a VM deve ser criptografada em repouso usando tecnologia de criptografia padrão do setor para atender aos requisitos de segurança e conformidade organizacional. Você precisa configurar o Azure Disk Encryption para a VM.",
+    "options": [
+      "(1)",
+      "(2)",
+      "(3)",
+      "(4)"
+    ],
+    "correct": [
+      "keyvault",
+      "keyvault key",
+      "vm",
+      "vm encryption"
+    ],
+    "code": "question-242.md",
+    "body": "Como você deve completar os comandos do Azure CLI acima?"
+  },
+  {
+    "id": "243",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo. Você tem uma conta de usuário do Azure que tem acesso a duas assinaturas. Você precisa recuperar um segredo de chave de conta de armazenamento do Azure Key Vault.",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: ",
+      "4º: ",
+      "5º: ",
+      "6º: "
+    ],
+    "correct": [
+      "Get-AzSubscription",
+      "Set-AzContext -SubscriptionId $subscriptionID",
+      "Get-AzStorageAccountKey -ResourceGroupName $resGroup -Name $storAcct",
+      "$secretvalue = ConvertTo-SecureString $storAcctkey -AsPlainText -Force",
+      "Set-AzKeyVaultSecret -VaultName $vaultName -Name $secretName -SecretValue $secretvalue",
+      "Get-AzKeyVaultSecret -VaultName $vaultName"
+    ],
+    "body": "Em que ordem você deve organizar os comandos do PowerShell para desenvolver a solução? Para responder, mova todos os comandos da lista de comandos para a área de resposta e organize-os na ordem correta."
+  },
+  {
+    "id": "244",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "A Visionnaire fornece uma API aos clientes usando o Azure API Management (APIM). A API autoriza os usuários com um token JWT. Deve-se implementar o cache de resposta para o gateway APIM. O mecanismo de cache deve detectar o ID do usuário do cliente que acessa os dados de um determinado local e armazenar em cache a resposta para esse ID do usuário. Você precisa adicionar as seguintes políticas ao arquivo de políticas:",
+    "options": [
+      "Set-variable",
+      "Cache-lookup",
+      "Cache-store",
+      "Find-and-replace"
+    ],
+    "correct": [
+      "inbound",
+      "inbound",
+      "outbound",
+      "outbound"
+    ],
+    "body": "A qual seção de política você deve adicionar as políticas? Para responder, arraste as seções apropriadas para as políticas corretas.",
+    "requirements": [
+      "uma política set-variable para armazenar a identidade do usuário detectada",
+      "uma política de cache-lookup",
+      "uma política de cache-store",
+      "uma política de find-and-replace para atualizar o corpo da resposta com as informações do perfil do usuário"
+    ]
+  },
+  {
+    "id": "245",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um aplicativo hospedado no Azure que deve usar uma chave de módulo de segurança de hardware (HSM) local. A chave deve ser transferida para o Azure Key Vault existente usando o processo Traga sua própria chave (BYOK).",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: ",
+      "4º: "
+    ],
+    "correct": [
+      "Gerar um par de chaves de Key Exchange (KEK)",
+      "Recuperar a chave pública do Key Exchange (KEK)",
+      "Gerar um arquivo blob de transferência de chave usando o HSM ferramenta fornecida pelo fornecedor",
+      "Execute o comando az keyvault import"
+    ],
+    "body": "Você precisa transferir a chave com segurança para o Azure Key Vault. Em que ordem você deve executar as ações abaixo?"
   }
 ]
