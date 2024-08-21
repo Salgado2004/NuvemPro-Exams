@@ -4635,5 +4635,188 @@
       "Execute o comando az keyvault import"
     ],
     "body": "Você precisa transferir a chave com segurança para o Azure Key Vault. Em que ordem você deve executar as ações abaixo?"
+  },
+  {
+    "id": "246",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo um portal de usuário para uma companhia. Você precisa criar um relatório para o portal, que lista informações sobre funcionários que são especialistas no assunto de um tópico específico.",
+    "options": [
+      "Conectores do Microsoft Graph",
+      "API do Microsoft Graph",
+      "Microsoft Graph Data Connect"
+    ],
+    "correct": [
+      "Microsoft Graph Data Connect"
+    ],
+    "body": "Você deve garantir que os administradores tenham total controle e consentimento sobre os dados. Qual tecnologia você deve usar?"
+  },
+  {
+    "id": "247",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você é um desenvolvedor construindo um website usando o Serviço de Aplicativo do Azure. O website armazena dados de configuração na Configuração de Aplicativos do Azure. O acesso aos dados foi configurado para usar a identidade do aplicativo web para autenticação. Requisitos de segurança exigem que nenhum outro sistema de autenticação seja usado.",
+    "options": [
+      "AddAzureKeyVault",
+      "DefaultAzureCredential",
+      "ChainedTokenCredential",
+      "ManagedIdentityCredential",
+      "addAzureAppConfiguration"
+    ],
+    "correct": [
+      "addAzureAppConfiguration",
+      "ManagedIdentityCredential"
+    ],
+    "body": "Você precisa carregar os dados de configuração no aplicativo web. Como você deve completar o código?",
+    "code": "question-247.md"
+  },
+  {
+    "id": "248",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo uma aplicação Web que usa a Plataforma de Identidade da Microsoft para autenticação de usuários e recursos. O aplicativo da web chama várias APIs REST. Você está implementando vários fluxos de autenticação e autorização para o aplicativo Web.",
+    "options": [
+      "Identificar os usuários do aplicativo usando um token JWT que contém claims.",
+      "Identificar as permissões concedidas às APIs usando um token JWT que contém claims.",
+      "Fornecer ao aplicativo da web acesso de longo prazo aos recursos em nome dos usuários sem exigir interação com esses usuários",
+      "Fornecer representações XML de declarações que podem ser consumido por aplicativos que usam WS-Federation"
+    ],
+    "correct": [
+      "ID",
+      "Acesso",
+      "Refresh",
+      "SAML"
+    ],
+    "body": "Você precisa validar as declarações no token de autenticação. Qual tipo de token você deve usar para cada caso? Para responder, posicione as opções apropriadas na área de resposta."
+  },
+  {
+    "id": "249",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você precisa acessar os dados do objeto de declaração do usuário no aplicativo Web de comércio eletrônico. O que você deve fazer primeiro?",
+    "options": [
+      "Escrever um código personalizado para fazer uma chamada de API do Microsoft Graph no aplicativo Web de comércio eletrônico.",
+      "Atribuir a função RBAC de Colaborador ao aplicativo Web de comércio eletrônico usando a API de atribuição de função de criação do Resource Manager.",
+      "Atualizar o aplicativo web de comércio eletrônico para ler os valores do cabeçalho da solicitação HTTP.",
+      "Usando a CLI do Azure, habilitar o CORS (compartilhamento de recursos de origem cruzada) da API de checkout de comércio eletrônico para o aplicativo Web de comércio"
+    ],
+    "correct": [
+      "Atualizar o aplicativo web de comércio eletrônico para ler os valores do cabeçalho da solicitação HTTP."
+    ]
+  },
+  {
+    "id": "250",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você é um desenvolvedor em sua empresa e precisa editar os fluxos de trabalho de um aplicativo lógico existente.",
+    "options": [
+      "O Pacote de Integração Empresarial (EIP)",
+      "A Visualização do código do Aplicativo Lógico",
+      "As Conexões de API",
+      "O Designer de Aplicativos Lógicos"
+    ],
+    "correct": [
+      "O Designer de Aplicativos Lógicos"
+    ],
+    "body": "O que você deve usar?"
+  },
+  {
+    "id": "251",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Conectar e consumir serviços do Azure e serviços de terceiros",
+    "header": "Você precisa armazenar os contratos do usuário. Onde você deve armazenar o contrato depois de concluído?",
+    "options": [
+      "Fila de armazenamento do Azure",
+      "Hub de Eventos do Azure",
+      "Tópico do Barramento de Serviço do Azure",
+      "Tópico da Grade de Eventos do Azure"
+    ],
+    "correct": [
+      "Hub de Eventos do Azure"
+    ]
+  },
+  {
+    "id": "252",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo uma função do Azure que se conecta a uma instância do Banco de Dados SQL do Azure. A função é desencadeada por uma fila de armazenamento do Azure. Você recebe relatórios de vários System.lnvalidOperationExceptions com a seguinte mensagem: \"O tempo limite expirou. O período de tempo limite foi excedido antes de obter uma conexão do pool. Isso pode ter ocorrido porque todas as conexões em pool estavam em uso e o tamanho máximo do pool foi atingido.\"",
+    "options": [
+      "No arquivo host.json, diminua o valor da opção batchSize",
+      "Converter o gatilho no Azure Event Hub",
+      "Converter a Função Azure para o plano Premium",
+      "No arquivo function.json, altere o valor da opção de tipo para queueScaling"
+    ],
+    "correct": [
+      "No arquivo host.json, diminua o valor da opção batchSize"
+    ],
+    "body": "Você precisa evitar a exceção. O que você deveria fazer?"
+  },
+  {
+    "id": "253",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Desenvolver para armazenamento do Azure",
+    "header": "Você está desenvolvendo um aplicativo para armazenar dados críticos para os negócios no armazenamento de Blobs do Azure. O aplicativo deverá atender aos seguintes requisitos:",
+    "options": [
+      "Configurar uma política de retenção baseada em tempo para a conta de armazenamento.",
+      "Criar uma assinatura de acesso compartilhado (SAS) da conta.",
+      "Ativar o feed de alteração de blob para a conta de armazenamento.",
+      "Ativar o suporte à imutabilidade no nível da versão para a conta de armazenamento.",
+      "Ativar a restauração pontual para contêineres na conta de armazenamento."
+    ],
+    "correct": [
+      "Configurar uma política de retenção baseada em tempo para a conta de armazenamento.",
+      "Ativar o suporte à imutabilidade no nível da versão para a conta de armazenamento."
+    ],
+    "body": "Você precisa proteger os dados na conta de armazenamento de Blobs do Azure. Quais são as duas ações que você deve realizar?",
+    "requirements": [
+      "Os dados não devem ser modificados ou excluídos durante um intervalo especificado pelo usuário.",
+      "Os dados devem ser protegidos contra substituições e exclusões.",
+      "Os dados devem ser gravados uma vez e podem ser lidos várias vezes."
+    ]
+  },
+  {
+    "id": "254",
+    "exam": "AZ204",
+    "type": "options",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você cria e publica um novo aplicativo Web do Serviço de Aplicativo do Azure. A autenticação e autorização do usuário devem usar o Microsoft Entra",
+    "options": [
+      "Adicionar um provedor de identidade.",
+      "Mapear um nome DNS personalizado existente.",
+      "Criar e definir uma nova configuração de aplicativo.",
+      "Adicionar um certificado privado.",
+      "Criar e configurar uma identidade gerenciada."
+    ],
+    "correct": [
+      "Adicionar um provedor de identidade."
+    ],
+    "body": "Você precisa configurar autenticação e autorização. O que você deve fazer primeiro?"
+  },
+  {
+    "id": "255",
+    "exam": "AZ204",
+    "type": "multiple",
+    "domain": "Implementar a segurança do Azure",
+    "header": "Você está desenvolvendo uma API REST no Serviço de Aplicativo do Azure. A API deve ser chamada por outro aplicativo web do Azure e também deve recuperar e atualizar informações de perfil de usuário armazenadas no Microsoft Entra.",
+    "options": [
+      "API do Microsoft Graph",
+      "Biblioteca de Autenticação da Microsoft (MSAL)",
+      "Gerenciamento de API do Azure",
+      "Central de Segurança do Microsoft Azure",
+      "SDK do Microsoft Azure Key Vault"
+    ],
+    "correct": [
+      "API do Microsoft Graph",
+      "Biblioteca de Autenticação da Microsoft (MSAL)"
+    ],
+    "body": "Você precisa configurar a API para fazer as atualizações. Quais são as duas ferramentas que você deve usar?"
   }
 ]
