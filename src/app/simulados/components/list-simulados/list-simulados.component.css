@@ -6,6 +6,25 @@
     overflow-y: scroll;
 }
 
+nav{
+    display: flex;
+    justify-content: end;
+    padding: 8px;
+    margin: 6px;
+}
+
+nav a{
+    color: #319bf5;
+    text-decoration: underline;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+nav a:hover{
+    text-decoration: none;
+}
+
 .simulados{
     display: flex;
     flex-wrap: wrap;
