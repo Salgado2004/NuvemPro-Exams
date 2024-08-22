@@ -2268,7 +2268,7 @@
       "getContext.getResponse()",
       "if(isNaN(i)[\"tip\"] || i[\"tip\"] === null)",
       "r.setBody(i)",
-      "if (request.getValue(\"tip\") === null)",
+      "if (r.getValue(\"tip\") === null)",
       "r.setValue(i)"
     ],
     "correct": [
