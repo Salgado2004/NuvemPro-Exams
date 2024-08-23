@@ -4818,5 +4818,47 @@
       "Biblioteca de Autenticação da Microsoft (MSAL)"
     ],
     "body": "Você precisa configurar a API para fazer as atualizações. Quais são as duas ferramentas que você deve usar?"
+  },
+  {
+    "id": "256",
+    "exam": "AZ204",
+    "type": "dragdrop",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você está desenvolvendo uma aplicação para gerenciamento de conteúdo de manuais técnicos (Tipo a wikipedia). A aplicação é implantada em um Aplicativo Web Estático do Azure. Usuários autenticados conseguem ver as páginas que estão no caminho /manuais, mas somente contribuidores podem acessar a página /manuais/new.html.",
+    "options": [
+      "(1)",
+      "(2)",
+      "(3)",
+      "(4)"
+    ],
+    "correct": [
+      "/manuais/new.html",
+      "contributors",
+      "/manuais/*",
+      "authenticated"
+    ],
+    "body": "Você precisa configurar o roteamento do aplicativo. Como você deve completar a configuração? Para responder, arraste e solte as opções no local apropriado da área de resposta.",
+    "code": "question-256.md"
+  },
+  {
+    "id": "257",
+    "exam": "AZ204",
+    "type": "truefalse",
+    "domain": "Desenvolver soluções de computação do Azure",
+    "header": "Você desenvolve o seguinte arquivo de configuração para um aplicativo web estático do Azure.",
+    "options": [
+      "Usuários não autenticados são enviados para autenticar com o GitHub",
+      "Um arquivo não existente na pasta /images/ vai gerar um código de resposta 404",
+      "Requisições GET de usuários autenticados com a função authenticated são enviadas para a pasta /api",
+      "Usuários autenticados que não tem a função authenticated ou não autenticados recebem o erro 401 quando acessam a pasta /api"
+    ],
+    "correct": [
+      "false",
+      "true",
+      "true",
+      "false"
+    ],
+    "body": "Para cada alternativa, marque 'verdadeiro' ou 'falso'. Cada seleção correta vale um ponto.",
+    "code": "question-257.md"
   }
 ]
