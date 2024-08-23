@@ -3693,7 +3693,7 @@
       "Usar o Azure Active Directory B2B (Azure AD B2B)."
     ],
     "correct": [
-      "Usar o Azure Active Directory B2B (Azure AD B2B) e permitir colaboração externa"
+      "Usar o Azure Active Directory B2C (Azure AD B2C) com políticas personalizadas"
     ],
     "body": "O que você deve fazer?"
   },
