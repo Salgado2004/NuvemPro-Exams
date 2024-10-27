@@ -22,6 +22,7 @@
     "@angular/router": "^17.1.0",
     "cors": "^2.8.5",
     "inquirer": "^8.0.0",
+    "material-icons": "^1.13.12",
     "ngx-highlightjs": "^12.0.0",
     "rxjs": "~7.8.0",
     "swiper": "^11.1.4",
