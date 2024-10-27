@@ -25,6 +25,10 @@ nav a:hover{
     text-decoration: none;
 }
 
+nav .star{
+    color: #f5c319;
+}
+
 .simulados{
     display: flex;
     flex-wrap: wrap;
