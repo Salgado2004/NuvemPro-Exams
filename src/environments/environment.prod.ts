@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    endpoint: 'https://raw.githubusercontent.com/Salgado2004/NuvemPro-Exams/master/content/',
+    endpoint: 'https://salgado2004.github.io/NuvemPro-Exams/',
     api: 'https://cliplayground.azurewebsites.net/api/cliplayground'
   };
