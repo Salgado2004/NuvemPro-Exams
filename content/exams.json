@@ -143,5 +143,48 @@
         "max": 25
       }
     ]
+  },
+  {
+    "name": "GHAS",
+    "fullname": "GitHub Advanced Security",
+    "questions": 66,
+    "image": "assets/badges/GHAS-badge.png",
+    "domains": [
+      {
+        "name": "Descrever as funcionalidades de segurança e recursos do GHAS",
+        "min": 10,
+        "max": 10
+      },
+      {
+        "name": "Configurar e usar secret scanning",
+        "min": 10,
+        "max": 10
+      },
+      {
+        "name": "Configurar e usar gerenciamento de dependências",
+        "min": 15,
+        "max": 15
+      },
+      {
+        "name": "Configurar e usar code scanning",
+        "min": 15,
+        "max": 15
+      },
+      {
+        "name": "Usar code scanning com CodeQL",
+        "min": 20,
+        "max": 20
+      },
+      {
+        "name": "Descrever as boas práticas do GitHub Advanced Security",
+        "min": 20,
+        "max": 20
+      },
+      {
+        "name": "Configurar as ferramentas do GitHub Advanced Security no GitHub Enterprise",
+        "min": 10,
+        "max": 10
+      }
+    ]
   }
 ]

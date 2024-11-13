@@ -1,0 +1,1143 @@
+[
+  {
+    "id": "001",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "O que é CodeQL",
+    "options": [
+      "Uma ferramenta de análise de código",
+      "Uma linguagem de programação",
+      "Um editor de texto",
+      "Um sistema de controle de versão"
+    ],
+    "correct": [
+      "Uma ferramenta de análise de código"
+    ]
+  },
+  {
+    "id": "002",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as boas práticas do GitHub Advanced Security",
+    "header": "O que significa a expressão 'Shifting left' no contexto de Segurança?",
+    "options": [
+      "Escrever códigos em linguagens comumente usadas",
+      "Adotar práticas de segurança no início do ciclo de desenvolvimento",
+      "Incorporar práticas de segurança antes de ir para a produção",
+      "Escrever código sem se preocupar com segurança"
+    ],
+    "correct": [
+      "Adotar práticas de segurança no início do ciclo de desenvolvimento"
+    ]
+  },
+  {
+    "id": "003",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "O que são os Avisos de Segurança do GitHub?",
+    "options": [
+      "Um espaço privado onde os mantenedores do repositório podem discutir sobre vulnerabilidades e problemas de segurança",
+      "Um grupo de experts em segurança do GitHub que ajudam usuários do GitHub Enterprise com seus problemas de segurança",
+      "Uma lista de problemas de segurança que está disponível publicamente para qualquer um ver e se afastar",
+      "É um lugar para se juntar e discutir publicamente sobre problemas de segurança na comunidade open source"
+    ],
+    "correct": [
+      "Um espaço privado onde os mantenedores do repositório podem discutir sobre vulnerabilidades e problemas de segurança"
+    ]
+  },
+  {
+    "id": "004",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "Qual ferramenta do GitHub te ajuda a manter as dependências do repositório atualizadas?",
+    "options": [
+      "Avisos de segurança",
+      "CodeQL",
+      "Dependabot",
+      "GitHub Actions"
+    ],
+    "correct": [
+      "Dependabot"
+    ]
+  },
+  {
+    "id": "005",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "________________ é uma lista curada de vulnerabilidades de segurança encontradas em projetos open source",
+    "options": [
+      "CodeQL",
+      "GitHub Advisory Database",
+      "Dependabot",
+      "GitHub Security Journal"
+    ],
+    "correct": [
+      "GitHub Advisory Database"
+    ]
+  },
+  {
+    "id": "006",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "Quais desses recursos de segurança do GitHub são disponíveis GRATUITAMENTE para repositórios públicos e privados?",
+    "options": [
+      "Políticas de segurança",
+      "Secret scanning do dependabot",
+      "Secret scanning",
+      "Avisos de segurança",
+      "Code scanning",
+      "Alertas do dependabot",
+      "Version updates do dependabot",
+      "Code scanning do dependabot"
+    ],
+    "correct": [
+      "Políticas de segurança",
+      "Avisos de segurança",
+      "Alertas do dependabot",
+      "Version updates do dependabot"
+    ],
+    "body": "(Selecione 4)"
+  },
+  {
+    "id": "007",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Qual opção descreve melhor o Secret scanning?",
+    "options": [
+      "Secret scanning escaneia os repositórios por potenciais vulnerabilidades de código que podem expor segredos, como chaves privadas ou tokens",
+      "Secret scanning escaneia os repositórios por segredos expostos, como chaves privadas ou tokens",
+      "Secret scanning é uma ferramenta para gerenciar e armazenar segredos de forma segura",
+      "Secret scanning é um hook do git que escaneia os commits por segredos, como chaves privadas ou tokens, antes de realizar o push para o GitHub"
+    ],
+    "correct": [
+      "Secret scanning escaneia os repositórios por segredos expostos, como chaves privadas ou tokens"
+    ]
+  },
+  {
+    "id": "008",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Quais partes do repositório são escaneadas pelo secret scanning?",
+    "options": [
+      "Todo o histórico do git em todas as branches do repositório",
+      "Segredos dos repositórios",
+      "Segredos dos ambientes",
+      "Títulos, descrições e comentários em issues abertos e fechados",
+      "Todo o histórico do git nas branches protegidas do repositório"
+    ],
+    "correct": [
+      "Todo o histórico do git em todas as branches do repositório",
+      "Títulos, descrições e comentários em issues abertos e fechados"
+    ],
+    "body": "(Selecione 2)"
+  },
+  {
+    "id": "009",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Qual o propósito do programa de parceiros do Secret scanning?",
+    "options": [
+      "Provedores de serviço fornecem o formato dos segredos (regEx) para o GitHub, para que eles possam ser reconhecidos pelo secret scanning",
+      "O programa de parceiros permite que empresas e organizações com a licença do GitHub Advanced security usem o secret scanning em seus repositórios",
+      "Parceiros do GitHub com companhias de segurança externas que fornecem o secret scanning para repositórios do GitHub",
+      "É um programa em que profissionais de segurança registrados podem, de boa fé, reportar ao GitHub quaisquer segredos que eles encontrem em repositórios e ser pagos por isso"
+    ],
+    "correct": [
+      "Provedores de serviço fornecem o formato dos segredos (regEx) para o GitHub, para que eles possam ser reconhecidos pelo secret scanning"
+    ]
+  },
+  {
+    "id": "010",
+    "exam": "GHAS",
+    "type": "truefalse",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "Para cada uma das afirmativas a seguir, selecione Verdadeiro ou Falso",
+    "options": [
+      "Repositórios pessoais públicos, assim como repositórios de organizações públicos, podem usar secret scanning gratuitamente",
+      "O GitHub utiliza o mesmo conjunto de padrões do secret scanning para os alertas de usuário e os alertas de push protection",
+      "O Gráfico de dependências do GitHub está disponível gratuitamente para todos os repositórios",
+      "Um repositório pode utilizar o Gráfico de dependências mesmo sem ter os alertas do Dependabot habilitados"
+    ],
+    "correct": [
+      "true",
+      "false",
+      "true",
+      "true"
+    ],
+    "body": "NOTA: Cada resposta correta vale um ponto"
+  },
+  {
+    "id": "011",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Como você pode previnir commits contendo credenciais de provedores de nuvem de serem enviados para o GitHub por push?",
+    "options": [
+      "Incluir um arquivo .gitignore no seu repositório que vai ignorar os arquivos contendo segredos",
+      "Habilitar uma regra de push protection do secret scanning para seu repositório ou organização",
+      "Criar uma action do GitHub que vai escanear os commits por segredos antes do push para o GitHub",
+      "Habilitar uma regra de branch protection para seu repositório"
+    ],
+    "correct": [
+      "Habilitar uma regra de push protection do secret scanning para seu repositório ou organização"
+    ]
+  },
+  {
+    "id": "012",
+    "exam": "GHAS",
+    "type": "truefalse",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Para cada uma das afirmativas sobre o programa de parceiros do GitHub a seguir, selecione Verdadeiro ou Falso",
+    "options": [
+      "É um programa onde os provedores de serviço podem prover o GitHub com os padrões regEx dos segredos que eles utilizam, permitindo que o secret scanning os reconheça",
+      "O GitHub tem a habilidade de revogar automaticamente segredos vazados e notificar o provedor de serviço que eles foram invalidados pelo GitHub",
+      "Quando o GitHub identifica um segredo de um provedor de serviço parceiro, o provedo de serviço é notificado sobre o vazamento",
+      "O parceiro pode tomar ações corretivas ao receber a notificação do GitHub sobre o vazamento, como revogar o segredo e informar o dono sobre o segredo comprometido",
+      "Ele concede ao provedor de serviço acesso à API do GitHub scanning para escanear os repositórios do GitHub por segredos do seu formato"
+    ],
+    "correct": [
+      "true",
+      "false",
+      "true",
+      "true",
+      "false"
+    ],
+    "body": "NOTA: Cada resposta correta vale um ponto"
+  },
+  {
+    "id": "013",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Como você pode excluir arquivos ou diretórios específicos de serem escaneados pelo secret scanning?",
+    "options": [
+      "Não é possível excluir arquivos e/ou diretórios específicos de serem escaneados. Uma vez que você habilitou o secret scanning para um repositório, todos os arquivos e diretórios serão escaneados",
+      "Criando um arquivo 'secret_scanning.yml' e incluindo caminhos que não devem ser escaneados",
+      "Incluindo esses arquivos no arquivo .gitignore",
+      "Criando um arquivo 'dependabot.yml' e incluindo caminhos que não devem ser escaneados"
+    ],
+    "correct": [
+      "Criando um arquivo 'secret_scanning.yml' e incluindo caminhos que não devem ser escaneados"
+    ]
+  },
+  {
+    "id": "014",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Você incluiu alguns segredos falsos no seu código de teste e eles foram encontrados pelo secret scanning.",
+    "options": [
+      "Criando um arquivo 'secret_scanning.yml' e incluindo os caminhos onde esses segredos falsos estão declarados",
+      "Nos seus arquivos de testes, adicionando um comentário '#gh_ignore: fake secret' acima da linha onde o segredo está declarado",
+      "Fechando o alerta do secret scanning com a justificativa 'Usado em testes'",
+      "Criando um arquivo '.github/codeql.yml' e incluindo os caminhos onde esses segredos falsos estão declarados"
+    ],
+    "correct": [
+      "true",
+      "false",
+      "true",
+      "false"
+    ],
+    "body": "O que você pode fazer para dizer ao GitHub que esses são segredos falsos usados em testes e podem ser ignorados pelo secret scanning?"
+  },
+  {
+    "id": "015",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Você acidentalmente fez commit de um token de acesso pessoal (PAT) do GitHub para um repositório público.",
+    "options": [
+      "Mudar as permissões do token para Read-only",
+      "Sobrescrever o histórico do git para mascarar o token",
+      "Considerar o token comprometido e deletá-lo imediatamente",
+      "Verificar se o token é usado em alguma de suas aplicações, se for - deletá-lo"
+    ],
+    "correct": [
+      "Considerar o token comprometido e deletá-lo imediatamente"
+    ],
+    "body": "Quais ações você deve tomar para previnir a sua conta de ser comprometida?"
+  },
+  {
+    "id": "016",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Qual é o comportamento padrão quando um novo padrão de segredo é adicionado ou atualizado no programa de parceiros do secret scanning no GitHub?",
+    "options": [
+      "O GitHub escaneia o novo padrão apenas em novos commits feitos em repositórios com secret scanning habilitado. Se um segredo com aquele padrão já estava presente no repositório, ele não é detectado",
+      "O parceiro do GitHub precisa lidar com os segredos vazados historicamente e o GitHub vai apenas escanear novos commits por aquele padrão",
+      "O GitHub cria uma issue em todos os repositórios com secret scanning habilitado para que os mantenedores possam verificar se existe algum segredo com aquele padrão",
+      "O GitHub escaneia todo o histórico de conteúdo em repositórios públicos com secret scanning habilitado"
+    ],
+    "correct": [
+      "O GitHub escaneia todo o histórico de conteúdo em repositórios públicos com secret scanning habilitado"
+    ]
+  },
+  {
+    "id": "017",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Quem será notificado quando um NOVO segredo é enviado por push e detectado em um repositório?",
+    "options": [
+      "Administradores do repositório",
+      "Usuários com funções personalizadas de leitura/escrita",
+      "Todo os usuários com acesso de escrita no repositório",
+      "Donos da organização ou da enterprise, apenas se forem administradores do repositório",
+      "O autor do commit",
+      "Gerentes de segurança",
+      "Todos os donos da organização ou da enterprise"
+    ],
+    "correct": [
+      "Administradores do repositório",
+      "Gerentes de segurança",
+      "Usuários com funções personalizadas de leitura/escrita",
+      "Donos da organização ou da enterprise, apenas se forem administradores do repositório",
+      "O autor do commit"
+    ],
+    "body": "(Selecione 5)"
+  },
+  {
+    "id": "018",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Quando o GitHub executa um scan de todo código histórico em repositórios de uma enterprise, qual é o comportamento de notificação?",
+    "options": [
+      "O GitHub notifica administradores do repositório, gerentes de segurança, usuários com funções personalizadas de leitura/escrita sempre que um segredo é detectado em um repositório",
+      "O GitHub notifica os donos da enterprise e gerentes de segurança, apenas se um segredo for encontrado",
+      "O GitHub notifica os donos da enterprise e gerentes de segurança, mesmo se nenhum segredo for encontrado",
+      "O GitHub notifica os autores de commits que contém segredos expostos"
+    ],
+    "correct": [
+      "O GitHub notifica os donos da enterprise e gerentes de segurança, mesmo se nenhum segredo for encontrado",
+      "O GitHub notifica administradores do repositório, gerentes de segurança, usuários com funções personalizadas de leitura/escrita sempre que um segredo é detectado em um repositório"
+    ]
+  },
+  {
+    "id": "019",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Quais são os três diferentes conjuntos de padrões do secret scanning que o GitHub utiliza?",
+    "options": [
+      "Padrões de parceiros",
+      "Padrões de alerta de enterprise",
+      "Padrões de alertas de usuários",
+      "Padrões de alerta Open source",
+      "Padrões de push protection",
+      "Padrões de provedores de nuvem"
+    ],
+    "correct": [
+      "Padrões de parceiros",
+      "Padrões de alertas de usuários",
+      "Padrões de push protection"
+    ]
+  },
+  {
+    "id": "020",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Muitos repositórios em que você contribui não tem a opção de push protection habilitada.",
+    "options": [
+      "Fazer download do plugin web de push protection do GitHub",
+      "Não é possível, push protection deve ser habilitado no nível do repositório, organização ou enterprise",
+      "Habilitar 'push protection for yourself', nas configurações da sua conta pessoal do GitHub",
+      "Adicionar arquivos contendo segredos no .gitignore de todos os repositórios"
+    ],
+    "correct": [
+      "Habilitar 'push protection for yourself', nas configurações da sua conta pessoal do GitHub"
+    ],
+    "body": "O que você pode fazer para se proteger de acidentalmente enviar segredos para o repositório?"
+  },
+  {
+    "id": "021",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Sua companhia tem segredos internos que não devem ser enviados para os repositórios GitHub. O padrão dos segredos não é conhecido pelo GitHub e, dessa forma, não é detectado pelo secret scanning.",
+    "options": [
+      "A companhia deve se juntar ao programa de parceiros do GitHub para que o padrão de segredos seja reconhecido",
+      "Definir padrões regex para esses segredos e habilitar padrões personalizados para secret scanning na organização",
+      "Definir um workflow do GitHub Actions personalizado para os repositórios da organização que busque esses segredos",
+      "Incluir um arquivo secret_scanning.yml em todos os repositórios que irá definir os segredos personalizados para buscar"
+    ],
+    "correct": [
+      "Definir padrões regex para esses segredos e habilitar padrões personalizados para secret scanning na organização"
+    ],
+    "body": "O que as companhias podem fazer para se proteger de desenvolvedores acidentalmente enviando segredos para os repositórios no GitHub?"
+  },
+  {
+    "id": "022",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Qual informação os alertas do Dependabot fornecem?",
+    "options": [
+      "Os alertas do Dependabot dizem se o repositório usa uma versão não testada de uma dependência",
+      "Os alertas do Dependabot dizem se o repositório usa uma dependência desatualizada",
+      "Os alertas do Dependabot dizem se o repositório está sendo usado como dependência em outros repositórios",
+      "Os alertas do Dependabot dizem se o repositório usa uma dependência insegura"
+    ],
+    "correct": [
+      "Os alertas do Dependabot dizem se o repositório usa uma dependência insegura"
+    ]
+  },
+  {
+    "id": "023",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "O que é o Gráfico de Dependências do GitHub?",
+    "options": [
+      "Não existe um 'Gráfico de Dependências' no GitHub",
+      "É uma representação das dependências e dependentes de um repositório",
+      "É uma ferramenta que automaticamente propões atualizações para as dependências de um repositório",
+      "É uma lista mantida pelo GitHub de todas as vulnerabilidades conhecidas em dependências open source"
+    ],
+    "correct": [
+      "É uma representação das dependências e dependentes de um repositório"
+    ]
+  },
+  {
+    "id": "024",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Como o Gráfico de dependências do GitHub sabe quais dependências seu projeto está usando?",
+    "options": [
+      "O GitHub deriva as dependências automaticamente de arquivos manifesto presentes no repositório, como pom.xml ou package.json",
+      "O GitHub escaneia o repositório por expressões de 'import' de dependências externas",
+      "As dependências podem ser adicionadas manualmente usando a API de submissão de dependências",
+      "É necessário criar um workflow do GitHub Actions que usa a action oficial 'actions/dependency-graph' para adicionar as dependências no gráfico quando um novo commit for feito"
+    ],
+    "correct": [
+      "O GitHub deriva as dependências automaticamente de arquivos manifesto presentes no repositório, como pom.xml ou package.json",
+      "As dependências podem ser adicionadas manualmente usando a API de submissão de dependências"
+    ]
+  },
+  {
+    "id": "025",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Quando o Gráfico de dependências do seu repositório é atualizado?",
+    "options": [
+      "Quando alguém realiza um commit na branch default do repositório, apenas se o commit alterar ou adicionar conteúdo no arquivo manifesto",
+      "Sempre que alguém realiza um commit na branch default do repositório",
+      "Quando o repositório publica uma nova release",
+      "Quando o repositório publica uma nova tag do git",
+      "Sempre que alguém realiza um commit para o repositório de uma das suas dependências",
+      "Quando o workflow que usa a action 'actions/dependency-graph' do GitHub é disparado"
+    ],
+    "correct": [
+      "Sempre que alguém realiza um commit para o repositório de uma das suas dependências",
+      "Quando alguém realiza um commit na branch default do repositório, apenas se o commit alterar ou adicionar conteúdo no arquivo manifesto"
+    ]
+  },
+  {
+    "id": "026",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "É possível exportar o Gráfico de dependências no GitHub no formato _________",
+    "options": [
+      "YAML",
+      "JSON",
+      "SPDX",
+      "XML",
+      "CSV"
+    ],
+    "correct": [
+      "SPDX"
+    ]
+  },
+  {
+    "id": "027",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "_____________ é um pré-requisito para habilitar os alertas do Dependabot em um repositório",
+    "options": [
+      "Licença do GHAS",
+      "Gráfico de dependências",
+      "Dependency review",
+      "Atualizações de segurança do Dependabot",
+      "Atualizações de versão do Dependabot"
+    ],
+    "correct": [
+      "Gráfico de dependências"
+    ]
+  },
+  {
+    "id": "028",
+    "exam": "GHAS",
+    "type": "truefalse",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Para cada uma das afirmativas sobre os alertas do Dependabot a seguir, selecione Verdadeiro ou Falso",
+    "options": [
+      "Ele parcialmente se apoia no GitHub Advisory Database",
+      "Para habilitar os alertas do Dependabot, primeiro você precisa habilitar o gráfico de dependências no repositório",
+      "Os alertas do Dependabot são habilitados por padrão em todos os repositórios",
+      "Quando o GitHub identifica uma dependência vulnerável, ele gera um alerta do Dependabot e o disponibiliza na aba de Segurança do repositório",
+      "Os alertas do Dependabot são habilitados por padrão em todos os repositórios públicos",
+      "Os alertas do Dependabot dizem se o repositório usa uma dependência desatualizada"
+    ],
+    "correct": [
+      "Ele parcialmente se apoia no GitHub Advisory Database",
+      "Para habilitar os alertas do Dependabot, primeiro você precisa habilitar o gráfico de dependências no repositório",
+      "Quando o GitHub identifica uma dependência vulnerável, ele gera um alerta do Dependabot e o disponibiliza na aba de Segurança do repositório"
+    ],
+    "body": "NOTA: Cada resposta correta vale um ponto"
+  },
+  {
+    "id": "029",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "Quais são os principais benefícios da Visão Geral de segurança do GitHub?",
+    "options": [
+      "Visão centralizada dos alertas de segurança e gerenciamento de políticas em uma organização",
+      "Code review automático para todos os pushs",
+      "Detecção de ameaças em tempo real",
+      "Atualizações de dependência automáticas"
+    ],
+    "correct": [
+      "Visão centralizada dos alertas de segurança e gerenciamento de políticas em uma organização"
+    ]
+  },
+  {
+    "id": "030",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "O que os alertas do Dependabot indicam no GitHub",
+    "options": [
+      "A presença de dependências vulneráveis ou malwares no seu repositório",
+      "Dependências desatualizadas que precisam ser atualizadas",
+      "Erros em arquivos de configuração  de dependências",
+      "Conflitos entre dependências"
+    ],
+    "correct": [
+      "A presença de dependências vulneráveis ou malwares no seu repositório"
+    ]
+  },
+  {
+    "id": "031",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Qual é o propósito do code scanning no GitHub?",
+    "options": [
+      "Verificar formatação e estilos de código",
+      "Identificar vulnerabilidades e erros no código",
+      "Revisar pull requests automaticamente",
+      "Sincronizar o código com os servidores de produção"
+    ],
+    "correct": [
+      "Identificar vulnerabilidades e erros no código"
+    ]
+  },
+  {
+    "id": "032",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Configurar e usar code scanning",
+    "header": "O Code scanning está disponível para todos os repositórios, públicos e privados, do GitHub?",
+    "options": [
+      "Sim, sem requisitos adicionais",
+      "Sim, mas, para repositórios privados, é necessário ter a licença do GHAS",
+      "Não, está disponível apenas para repositórios públicos",
+      "Não, está disponível apenas para repositórios privados"
+    ],
+    "correct": [
+      "Sim, mas, para repositórios privados, é necessário ter a licença do GHAS"
+    ]
+  },
+  {
+    "id": "033",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "O que a configuração de análise default do CodeQL faz?",
+    "options": [
+      "Automaticamente escolhe uma linguagem para analisar, uma query suite para executar e os eventos que disparam o scan",
+      "Exige que o usuário especifique manualmente a linguagem e as queries para cada scan",
+      "Escaneia o código apenas uma vez por mês",
+      "Exige uma instalação separada de ferramentas de análise de terceiros"
+    ],
+    "correct": [
+      "Automaticamente escolhe uma linguagem para analisar, uma query suite para executar e os eventos que disparam o scan"
+    ]
+  },
+  {
+    "id": "034",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Qual é o objetivo principal de usar a CLI do CodeQL?",
+    "options": [
+      "Gerar um banco de dados que representa uma base de código",
+      "Gerenciar configurações e permissões de um repositório",
+      "Agendar tarefas regulares de manutenção em um repositório",
+      "Realizar merge de pull resquests automaticamente"
+    ],
+    "correct": [
+      "Gerar um banco de dados que representa uma base de código"
+    ]
+  },
+  {
+    "id": "035",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "A linguagem _________ NÃO é suportada pelo CodeQL para o code scanning",
+    "options": [
+      "JavaScript",
+      "Kotlin",
+      "Java",
+      "PHP",
+      "Python",
+      "C/C++"
+    ],
+    "correct": [
+      "PHP"
+    ]
+  },
+  {
+    "id": "036",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Como funciona a análise de código do CodeQL no GitHub?",
+    "options": [
+      "Ele gera um banco de dados do CodeQL, executa queries para identificar problemas e apresenta os resultados como alertas do code scanning",
+      "Ele usa aprendizado de máquina para prever potenciais vulnerabilidades baseadas em commits passados",
+      "Ele realiza code reviews manuais enviadas por membros da Comunidade do GitHub",
+      "Ele se baseia, apenas, em ferramentas de análise de código de terceiros"
+    ],
+    "correct": [
+      "Ele gera um banco de dados do CodeQL, executa queries para identificar problemas e apresenta os resultados como alertas do code scanning"
+    ]
+  },
+  {
+    "id": "037",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Como o CodeQL pode ser usado em um sistema de CI externo em conjunto com repositórios do GitHub?",
+    "options": [
+      "CodeQL não pode ser usado em sistemas externos. É exclusivo do GitHub Actions",
+      "Fazer upload do código fonte para o GitHub para análise e fazer download dos resultados para usar em um sistema externo",
+      "Executar o CodeQL CLI em um sistema de CI externo e fazer upload dos resultados para o GitHub",
+      "Manualmente executar o CodeQL CLI e enviar os resultados por email para os administradores do GitHub"
+    ],
+    "correct": [
+      "Executar o CodeQL CLI em um sistema de CI externo e fazer upload dos resultados para o GitHub"
+    ]
+  },
+  {
+    "id": "038",
+    "exam": "GHAS",
+    "type": "truefalse",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Para cada uma das afirmativas sobre secret scanning a seguir, selecione Verdadeiro ou Falso",
+    "options": [
+      "O secret scanning escaneia todo o histórico do Git em todas as branches do repositório",
+      "O secret scanning é uma ferramenta para armazenamento e gerenciamento seguro de segredos",
+      "O secret scanning escaneia títulos, descrições e comentários de issues históricos, abertos ou fechados",
+      "O secret scanning pode prevenir segredos conhecidos de serem enviados por push para repositórios, organizações ou enterprises"
+    ],
+    "correct": [
+      "true",
+      "false",
+      "true",
+      "true"
+    ],
+    "body": "NOTA: Cada resposta correta vale um ponto"
+  },
+  {
+    "id": "039",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "_____________ é uma action do GitHub que pode ser usada para fazer upload de arquivos SARIF de terceiros",
+    "options": [
+      "codeql-upload-sarif",
+      "codeql-action/upload-sarif",
+      "github/codeql-action",
+      "actions/upload-sarif"
+    ],
+    "correct": [
+      "codeql-action/upload-sarif"
+    ]
+  },
+  {
+    "id": "040",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Qual ferramenta pode ser usada com sistemas de CI terceiros para fazer upload dos resultados de análise de código para o GitHub?",
+    "options": [
+      "CodeQL API",
+      "CodeQL CLI",
+      "Action github/codeql-action do GitHub",
+      "GitHub CLI"
+    ],
+    "correct": [
+      "CodeQL CLI"
+    ]
+  },
+  {
+    "id": "041",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "O que é necessário par um servidor de CI fazer upload dos resultados SARIF para o GitHub?",
+    "options": [
+      "Um aplicativo do GitHub ou um token de acesso pessoal com permissão de escrita",
+      "Uma conexão direta com o GitHub Advisory Database",
+      "Acesso de administrador ao repositório do GitHub",
+      "Um plugin especial instalado no sistema de CI"
+    ],
+    "correct": [
+      "Um aplicativo do GitHub ou um token de acesso pessoal com permissão de escrita"
+    ]
+  },
+  {
+    "id": "042",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "O que acontece quando um segundo arquivo de resultados SARIF é enviado para o GitHub para um mesmo commit?",
+    "options": [
+      "Ele inclui os novos resultados ao arquivo já existente",
+      "Ele cria uma nova branch no repositório",
+      "Ele substitui o conjunto de dados original",
+      "Ele é ignorado pelo GitHub"
+    ],
+    "correct": [
+      "Ele substitui o conjunto de dados original"
+    ]
+  },
+  {
+    "id": "043",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Como usuários podem excluir diretórios específicos dos alertas do secret scanning no GitHub?",
+    "options": [
+      "Configurando um arquivo secret_scanning.yml, no diretório .github/ do repositório",
+      "Na aba de segurança do repositório, no menu 'secret scanning'",
+      "Na aba de segurança do repositório, no menu 'segurança e análise de código'",
+      "Editando o arquivo README.md do repositório"
+    ],
+    "correct": [
+      "Configurando um arquivo secret_scanning.yml, no diretório .github/ do repositório"
+    ]
+  },
+  {
+    "id": "044",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Configurar e usar secret scanning",
+    "header": "________________ é a chave que deve ser usada no arquivo 'secret_scanning.yml' para excluir diretórios dos alertas do secret scanning no GitHub",
+    "options": [
+      "paths-exclude",
+      "paths-ignore",
+      "ignore-directories",
+      "exclude-paths"
+    ],
+    "correct": [
+      "paths-ignore"
+    ]
+  },
+  {
+    "id": "045",
+    "exam": "GHAS",
+    "type": "dragdrop",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Qual é o número máximo de padrões personalizados que podem ser definidos para o secret scanning?",
+    "options": [
+      "Para repositórios",
+      "Para organizações/enterprises"
+    ],
+    "correct": [
+      "100",
+      "500"
+    ]
+  },
+  {
+    "id": "046",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "O ________________ é um recurso do GitHub que você pode usar para analisar código em um repositório para encontrar vulnerabilidades de segurança e erros no código",
+    "options": [
+      "Secret scanning",
+      "Avisos de segurança",
+      "Code scanning",
+      "Dependabot"
+    ],
+    "correct": [
+      "Code scanning"
+    ]
+  },
+  {
+    "id": "047",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "O ________________ é um recurso do GitHub que permite a você encontrar, fazer a trigem e priorizar medidas para problemas existentes e novos encontrados no seu código",
+    "options": [
+      "Avisos de segurança",
+      "Políticas de segurança",
+      "Code scanning",
+      "Dependabot"
+    ],
+    "correct": [
+      "Code scanning"
+    ]
+  },
+  {
+    "id": "048",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Como você pode habilitar o code scanning em um repositório?",
+    "options": [
+      "Vá para a aba de segurança do repositório e habilite a configuração avançada ou default do code scanning",
+      "Vá para as configurações de usuário e habilite o code scanning, você pode escolher habilitar para todos ou apenas para repositórios selecionados",
+      "Adicione um arquivo .github/codeql.yml no seu repositório",
+      "Vá para a aba de segurança do repositório e responda um questionário sobre o conteúdo do repositório. Com base nas respostas, o GitHub vai habilitar o code scanning com a configuração apropriada"
+    ],
+    "correct": [
+      "Vá para a aba de segurança do repositório e habilite a configuração avançada ou default do code scanning"
+    ]
+  },
+  {
+    "id": "049",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar code scanning",
+    "header": "Como você pode configurar seu repositório no GitHub para executar análises do code scanning em uma agenda regular?",
+    "options": [
+      "Adicionando a propriedade schedule no arquivo de configuração .github/codeql.yml",
+      "Criando um workflow do GitHub Actions com um gatilho 'schedule'. O workflow deve executar actions do github/codeql-action",
+      "Adicionando a propriedade codeql.trigger como 'schedule' nas configurações do repositório",
+      "Usando a configuração default do CodeQL",
+      "Fazendo uma solicitação ao suporte do GitHub para habilitar análise agendada no repositório"
+    ],
+    "correct": [
+      "Criando um workflow do GitHub Actions com um gatilho 'schedule'. O workflow deve executar actions do github/codeql-action",
+      "Usando a configuração default do CodeQL"
+    ]
+  },
+  {
+    "id": "050",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Uma organização recentemente começou a usar a análise do CodeQL para todos os pull requests em seus repositórios, além de executar a análise regularmente a cada 1 hora.",
+    "options": [
+      "Code scanning usa os minutos do GitHub Actions e a organização está sendo cobrada por isso",
+      "A análise do code scanning está encontrando mais problemas do que o esperado e levando mais tempo para terminar",
+      "Code scanning só pode ser executado em intervalos de 1 dia e a organização está sendo cobrada pelo uso adicional",
+      "No existe correlação entre o code scanning e as cobranças do GitHub Actions. A organização está sendo cobrada por outros workflows"
+    ],
+    "correct": [
+      "Code scanning usa os minutos do GitHub Actions e a organização está sendo cobrada por isso"
+    ],
+    "body": "Desde então, a organização está recebendo cobranças mais altas pelo GitHub Actions. Qual é a causa para isso?"
+  },
+  {
+    "id": "051",
+    "exam": "GHAS",
+    "type": "truefalse",
+    "domain": "Configurar e usar code scanning",
+    "header": "Para cada uma das afirmativas sobre code scanning a seguir, selecione Verdadeiro ou Falso",
+    "options": [
+      "Se você não quiser usar o GitHub Action, você pode executar o code scanning em um sistema de CI externo e fazer upload dos resultados para o GitHub",
+      "Code scanning ajuda a encontrar padrões de código inseguros que podem passar despercebidos em code reviews manuais",
+      "Code scanning elimina a necessida de code reviews manuais",
+      "A análise do CodeQL tem como requisito a action github/codeql-action",
+      "Code scanning pode ser integrado com uma pipeline de CI para encontrar problemas de segurança no início do processo de desenvolvimento"
+    ],
+    "correct": [
+      "true",
+      "true",
+      "false",
+      "false",
+      "true"
+    ],
+    "body": "NOTA: Cada resposta correta vale um ponto"
+  },
+  {
+    "id": "052",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Ao usar sistemas de CI terceiros para executar o code scanning, qual ferramenta do GitHub você precisa para analisar o código?",
+    "options": [
+      "Você precisa instalar a ferramenta do Code scanning do GitHub",
+      "Você precisa instalar o CodeQL CLI",
+      "Você precisa instalar o GitHub CLI",
+      "Você não precisa especificamente de uma ferramenta do GitHub, qualquer ferramenta de SAST que gere resultados no formato SARIF pode ser usada"
+    ],
+    "correct": [
+      "Você não precisa especificamente de uma ferramenta do GitHub, qualquer ferramenta de SAST que gere resultados no formato SARIF pode ser usada"
+    ]
+  },
+  {
+    "id": "053",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Ao executar a análise do CodeQL com um workflow do GitHub Actions, com qual frequência o scan pode ser disparado?",
+    "options": [
+      "Code scanning é disparado a cada push para o repositório",
+      "Code scanning pode ser disparado por diversos eventos que acontecem no repositório",
+      "Code scanning é disparado em uma agenda configurável",
+      "Code scanning é disparado em uma agenda configurável ou em pull requests"
+    ],
+    "correct": [
+      "Code scanning pode ser disparado por diversos eventos que acontecem no repositório"
+    ]
+  },
+  {
+    "id": "054",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Qual é o efeito de adicionar a chave 'paths-ignore' no workflow do code scanning?",
+    "options": [
+      "Dizer ao CodeQL para omitir todos os arquivos *.txt e *.md da análise",
+      "Evitar scans desnecessários quando arquivos que não são relevantes na análise são alterados",
+      "Previnir a análise do code scanning de executar em pull requests com alterações em arquivos com essas extensões",
+      "Validações de pull requests vão ignorar quaisquer vulnerabilidades encontradas pelo CodeQL nos arquivos *.txt e *.md"
+    ],
+    "correct": [
+      "Evitar scans desnecessários quando arquivos que não são relevantes na análise são alterados"
+    ],
+    "code": "question-054.md"
+  },
+  {
+    "id": "055",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "A análise do CodeQL suporta: ",
+    "options": [
+      "Apenas linguagens compiladas",
+      "Apenas linguagens interpretadas",
+      "Linguagens compiladas e interpretadas",
+      "Todas as linguagens de programação"
+    ],
+    "correct": [
+      "Linguagens compiladas e interpretadas"
+    ]
+  },
+  {
+    "id": "056",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Para quê servem as queries do CodeQL?",
+    "options": [
+      "As queries do CodeQL são usadas para propósitos de code review no GitHub",
+      "As queries do CodeQL analisam sua base de código e criam o banco de dados do CodeQL",
+      "As queries do CodeQL podem ser executadas em um banco de dados para identificar padrões que podem indicar erros de código ou vulnerabilidades de segurança",
+      "As queries do CodeQL são questões baseadas em texto que você pode fazer à engine do CodeQL sobre sua base de código"
+    ],
+    "correct": [
+      "As queries do CodeQL podem ser executadas em um banco de dados para identificar padrões que podem indicar erros de código ou vulnerabilidades de segurança"
+    ]
+  },
+  {
+    "id": "057",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "O que é QL?",
+    "options": [
+      "QL é uma sigla para Nível de Qualidade (Quality Level) e é uma métrica usada pelo CodeQL",
+      "QL é uma linguagem de pesquisa (query language) que sustenta o CodeQL",
+      "QL é um produto similar ao CodeQL, mas é usado para escanear documentos de texto ao invés de código",
+      "QL é um pacote do npm que é usado pelo CodeQL para escanear código"
+    ],
+    "correct": [
+      "QL é uma linguagem de pesquisa (query language) que sustenta o CodeQL"
+    ]
+  },
+  {
+    "id": "058",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "O que é uma query suite do CodeQL?",
+    "options": [
+      "Uma coleção de queries do CodeQL",
+      "Uma coleção de bancos de dados do CodeQL",
+      "Uma coleção de resultados de queires do CodeQL",
+      "Uma coleção de linguagens suportadas pelo CodeQL"
+    ],
+    "correct": [
+      "Uma coleção de queries do CodeQL"
+    ]
+  },
+  {
+    "id": "059",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Quais são os diferentes tipos de packs do CodeQL?",
+    "options": [
+      "Packs de queries",
+      "Packs de código",
+      "Packs de linguagem",
+      "Packs de bibliotecas",
+      "Packs de vulnerabilidades",
+      "Packs de modelos"
+    ],
+    "correct": [
+      "Packs de queries",
+      "Packs de bibliotecas",
+      "Packs de modelos"
+    ]
+  },
+  {
+    "id": "060",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "O que é um pack do CodeQL?",
+    "options": [
+      "É um conjunto de queries pré-compiladas junto com todas as duas dependências transitivas, como bibliotecas e modelos",
+      "É um conjunto de resultados gerados nos processo de análise do código",
+      "É uma biblioteca usada pelas queries do CodeQL",
+      "É uma coleção de queries do CodeQL"
+    ],
+    "correct": [
+      "É um conjunto de queries pré-compiladas junto com todas as duas dependências transitivas, como bibliotecas e modelos"
+    ]
+  },
+  {
+    "id": "061",
+    "exam": "GHAS",
+    "type": "dragdrop",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Organize os passos de um workflow de análise do CodeQL",
+    "options": [
+      "1º: ",
+      "2º: ",
+      "3º: "
+    ],
+    "correct": [
+      "Criar um banco de dados do CodeQL",
+      "Executar as queries do CodeQL no banco",
+      "Interpretar os resultados"
+    ]
+  },
+  {
+    "id": "062",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "O que significa Extração, no contexto de análise de código com CodeQL",
+    "options": [
+      "Extração é a ação de executar as queries do CodeQL em um banco de dados e extrair os resultados",
+      "Extração é o processo de criar queries específicas para uma base de código",
+      "Extração é o processo de criar uma representação relacional de cada arquivo fonte da base de dados",
+      "Extração é o processo de extrair dados de um banco de dados do CodeQL"
+    ],
+    "correct": [
+      "Extração é o processo de criar uma representação relacional de cada arquivo fonte da base de dados"
+    ]
+  },
+  {
+    "id": "063",
+    "exam": "GHAS",
+    "type": "truefalse",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Para cada uma das afirmativas sobre análise do CodeQL a seguir, selecione Verdadeiro ou Falso",
+    "options": [
+      "CodeQL usa um extrator diferente para cada linguagem de programação",
+      "CodeQL cria um banco de dados separado para cada linguagem de programação",
+      "CodeQL cria um único banco de dados para todas as linguagens na base de código, desde que elas sejam suportadas",
+      "O esquema do banco de dados do CodeQL é o mesmo para cada linguagem de programação"
+    ],
+    "correct": [
+      "true",
+      "true",
+      "false",
+      "false"
+    ],
+    "body": "NOTA: Cada resposta correta vale um ponto"
+  },
+  {
+    "id": "064",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Quais são as diferenças ao executar a criação do banco de dados do CodeQL para linguagens compiladas e interpretadas?",
+    "options": [
+      "Para linguagens compiladas, a extração funciona monitorando o processo de build. Toda a informação é coletada toda vez que o compilador é invocado para processar o código fonte",
+      "Para linguagens interpretadas, a extração funciona monitorando o processo de build. Toda a informação é coletada toda vez que o compilador é invocado para processar o código fonte",
+      "Para linguagens compiladas, o extrator executa direto no código fonte",
+      "Para linguagens interpretadas, o extrator executa direto no código fonte",
+      "Para linguagens compiladas, o extrator executa no arquivo executável",
+      "Para linguagens interpretadas, o extrator executa no arquivo executável"
+    ],
+    "correct": [
+      "Para linguagens compiladas, a extração funciona monitorando o processo de build. Toda a informação é coletada toda vez que o compilador é invocado para processar o código fonte",
+      "Para linguagens interpretadas, o extrator executa direto no código fonte"
+    ]
+  },
+  {
+    "id": "065",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Onde você pode consultar quando foi executada a análise do CodeQL pela última vez, usando a configuração default do code scanning?",
+    "options": [
+      "Na aba do dependabot",
+      "Nos insights do repositório",
+      "Na página de status da ferramenta code scanning",
+      "Você não consegue ver essa informação na configuração default"
+    ],
+    "correct": [
+      "Na página de status da ferramenta code scanning"
+    ]
+  },
+  {
+    "id": "066",
+    "exam": "GHAS",
+    "type": "truefalse",
+    "domain": "Configurar e usar code scanning",
+    "header": "Para cada uma das afirmativas sobre a configuração default do code scanning a seguir, selecione Verdadeiro ou Falso",
+    "options": [
+      "A configuração default vai escanear o repositório em uma agenda regular personalizada. Para configurar gatilhos para o scan, você precisa de um workflow do GitHub Actions",
+      "Você pode habilitar a configuração default para todos os repositórios elegíveis em uma organização de uma vez, nas configurações da mesma",
+      "Você pode habilitar a configuração default em qualquer repositório, independente de seu conteúdo ou linguagem",
+      "Um pré-requisito é ter GitHub Actions habilitado",
+      "Na configuração default, você não pode selecionar a query suite que será executada"
+    ],
+    "correct": [
+      "false",
+      "true",
+      "true",
+      "true",
+      "false"
+    ],
+    "body": "NOTA: Cada resposta correta vale um ponto"
+  }
+]
