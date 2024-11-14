@@ -147,7 +147,7 @@
   {
     "name": "GHAS",
     "fullname": "GitHub Advanced Security",
-    "questions": 66,
+    "questions": 107,
     "image": "assets/badges/GHAS-badge.png",
     "domains": [
       {
