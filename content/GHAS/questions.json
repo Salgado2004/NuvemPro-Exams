@@ -493,9 +493,12 @@
       "Os alertas do Dependabot dizem se o repositório usa uma dependência desatualizada"
     ],
     "correct": [
-      "Ele parcialmente se apoia no GitHub Advisory Database",
-      "Para habilitar os alertas do Dependabot, primeiro você precisa habilitar o gráfico de dependências no repositório",
-      "Quando o GitHub identifica uma dependência vulnerável, ele gera um alerta do Dependabot e o disponibiliza na aba de Segurança do repositório"
+      "true",
+      "true",
+      "false",
+      "true",
+      "false",
+      "false"
     ],
     "body": "NOTA: Cada resposta correta vale um ponto"
   },
@@ -1139,5 +1142,690 @@
       "false"
     ],
     "body": "NOTA: Cada resposta correta vale um ponto"
+  },
+  {
+    "id": "067",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar code scanning",
+    "header": "Como você pode personalizar a configuração avançada do code scanning com query suites adicionais do CodeQL?",
+    "options": [
+      "Usando a action github/codeql-customizations do GitHub",
+      "Usando um arquivo de configuração personalizado e definindo lá as queries adicionais",
+      "Usando o CodeQL CLI com um arquivo de configuração personalizado para executar a análise",
+      "Definindo as personalizações nas configurações de segurança / code scanning do repositório",
+      "Definindo as personalizações no workflow de análise do GitHub Actions como parâmetro de input da action github/codeql-action/init"
+    ],
+    "correct": [
+      "Usando um arquivo de configuração personalizado e definindo lá as queries adicionais",
+      "Definindo as personalizações no workflow de análise do GitHub Actions como parâmetro de input da action github/codeql-action/init"
+    ]
+  },
+  {
+    "id": "068",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar code scanning",
+    "header": "Ao executar a análise do CodeQL com um workflow do GitHub Actions, quais actions você deve incluir?",
+    "options": [
+      "github/codeql-action/analyze (apenas para linguagens interpretadas)",
+      "github/codeql-action/init",
+      "github/codeql-action/analyze",
+      "github/codeql-action/autobuild (apenas para linguagens compiladas)",
+      "github/codeql-action/autobuild",
+      "github/codeql-action/init (apenas para linguagens compiladas)"
+    ],
+    "correct": [
+      "github/codeql-action/init",
+      "github/codeql-action/analyze",
+      "github/codeql-action/autobuild (apenas para linguagens compiladas)"
+    ]
+  },
+  {
+    "id": "069",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Qual é o método mais simples para executar concorrentemente análises do CodeQL para cada linguagem em um repositório com múltiplas linguagens, usando o GitHub Actions",
+    "options": [
+      "Definindo paralelismo na action github/codeql-action/analyze",
+      "Criando um workflow separado para cada linguagem",
+      "Criando uma matriz de linguagem para o job e referenciando ela no parâmetro 'languages' da action github/codeql-action/init",
+      "Chamado a action github/codeql-action/analyze em steps separados para cada linguagem"
+    ],
+    "correct": [
+      "Criando uma matriz de linguagem para o job e referenciando ela no parâmetro 'languages' da action github/codeql-action/init"
+    ]
+  },
+  {
+    "id": "070",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Como você pode usar um arquivo de configuração personalizado do CodeQL em um workflow do GitHub Actions?",
+    "options": [
+      "Fazendo upload no arquivo na seção code scanning da aba de segurança do repositório",
+      "Armazenando a configuração no arquivo .github/codeql/config-config.yml. A action github/codeql-action/init vai automaticamente detectar o arquivo e usar",
+      "Explicitamente providenciando o caminho do arquivo no parâmetro 'config-file' da action github/codeql-action/init",
+      "Armazenando a configuração no arquivo .github/workflows/codeql-analysis.yml. A action github/codeql-action/init vai automaticamente detectar o arquivo e usar"
+    ],
+    "correct": [
+      "Explicitamente providenciando o caminho do arquivo no parâmetro 'config-file' da action github/codeql-action/init"
+    ]
+  },
+  {
+    "id": "071",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar code scanning",
+    "header": "Onde você pode especificar queries do CodeQL para serem executadas em um workflow do GitHub Actions?",
+    "options": [
+      "No parâmetro 'queries' da action github/codeql-action/init",
+      "Em um arquivo YAML de configuração do CodeQL",
+      "No parâmetro 'paths' da action github/codeql-action/init",
+      "Na seção code scanning da aba de segurança do repositório",
+      "No campo 'codeql' do arquivo .github/settings.yml"
+    ],
+    "correct": [
+      "No parâmetro 'queries' da action github/codeql-action/init",
+      "EM um arquivo YAML de configuração do CodeQL"
+    ]
+  },
+  {
+    "id": "072",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Qual é o propósito do parâmetro 'external-repository-token' na action github/codeql-action/init do GitHub?",
+    "options": [
+      "Ele permite o acesso a repositórios privados do GitHub que contenham arquivos de configuração, queries, ou packs necessários para a análise",
+      "Ele permite o upload de resultados de análise para repositórios privados do GitHub",
+      "Ele permite acesso a repositórios privados do GitHub que contenham código fonte para ser analisado",
+      "Ele permite o upload do banco de dados do CodeQL gerado para um repositório privado do GitHub"
+    ],
+    "correct": [
+      "Ele permite o acesso a repositórios privados do GitHub que contenham arquivos de configuração, queries, ou packs necessários para a análise"
+    ]
+  },
+  {
+    "id": "073",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Qual comando do CodeQL CLI é usado para criar um banco de dados do CodeQL?",
+    "options": [
+      "gh codeql-database create",
+      "codeql database create",
+      "ql database generate",
+      "qlcli database create"
+    ],
+    "correct": [
+      "codeql database create"
+    ]
+  },
+  {
+    "id": "074",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Qual é o propósito do comando 'codeql database analyze' do CodeQL CLI?",
+    "options": [
+      "Analisar o banco de dados do CodeQL e produzir os resultados, normalmente, na forma de avisos de segurança",
+      "Analisar o banco de dados do CodeQL e produzir os resultados, normalmente, na forma de um arquivo SARIF",
+      "Analisar o código fonte e produzir o banco de dados do CodeQL",
+      "Analisar o banco de dados do CodeQL e fazer upload dos resultados para o GitHub"
+    ],
+    "correct": [
+      "Analisar o banco de dados do CodeQL e produzir os resultados, normalmente, na forma de um arquivo SARIF"
+    ]
+  },
+  {
+    "id": "075",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Como parte de sua pipeline de CI do Jenkins, você conseguiu criar e analisar com sucesso um banco de dados do CodeQL, produzindo um arquivo SARIF.",
+    "options": [
+      "Usando o comando 'gh codeql upload-results' do GitHub CLI",
+      "Usando o comando 'codeql github upload-results' do CodeQL CLI",
+      "Usando o endpoint 'POST /repos/{owner}/{repo}/code-scanning/sarifs' da API do GitHub",
+      "Fazendo commit do arquivo SARIF no repositório do GitHub",
+      "Usando a action github/codeql-action/upload-sarif"
+    ],
+    "correct": [
+      "Usando o comando 'codeql github upload-results' do CodeQL CLI",
+      "Usando o endpoint 'POST /repos/{owner}/{repo}/code-scanning/sarifs' da API do GitHub"
+    ],
+    "body": "Como você pode fazer o upload desse arquivo SARIF para o GitHub?"
+  },
+  {
+    "id": "076",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar e usar code scanning",
+    "header": "Quais informações você pode visualizar na página de um alerta do code scanning?",
+    "options": [
+      "Highlight do código vulnerável",
+      "Branches afetadas pela vulnerabilidade",
+      "Quantas vezes a vulnerabilidade foi explorada",
+      "Desenvolvedor atribuído para a correção da vulnerabilidade",
+      "Severidade da vulnerabilidade",
+      "ID do banco de dados usado para encontrar a vulnerabilidade"
+    ],
+    "correct": [
+      "Branches afetadas pela vulnerabilidade",
+      "Highlight do código vulnerável",
+      "Severidade da vulnerabilidade"
+    ]
+  },
+  {
+    "id": "077",
+    "exam": "GHAS",
+    "type": "truefalse",
+    "domain": "Configurar e usar code scanning",
+    "header": "Para cada uma das afirmativas sobre os resultados do code scanning a seguir, selecione Verdadeiro ou Falso",
+    "options": [
+      "Você precisa de permissão de escrita para ver o sumário de todos os alertas de um repositório na aba de segurança",
+      "Você precisa de permissão de escrita para ver anotações do code scanning em pull requests",
+      "Qualquer um com permissão de leitura em um repositório pode ver alertas do code scanning na aba de segurança",
+      "Qualquer um com permissão de leitura em um repositório pode ver anotações do code scanning em pull requests",
+      "Apenas o dono do repositório pode ver alertas do code scanning na aba de segurança"
+    ],
+    "correct": [
+      "true",
+      "false",
+      "true",
+      "false",
+      "false"
+    ],
+    "body": "NOTA: Cada resposta correta vale um ponto"
+  },
+  {
+    "id": "078",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Quando uma análise do CodeQL em um workflow detecta uma nova vulnerabilidade em um pull request, onde você pode encontrar informações sobre a vulnerabilidade?",
+    "options": [
+      "Diretamente no pull request, na forma de um comentário em uma falha dos checks",
+      "Na aba de segurança do repositório",
+      "Nos logs de execução do workflow",
+      "A execução do workflow vai falhar e produzir um artefato com os resultados"
+    ],
+    "correct": [
+      "Diretamente no pull request, na forma de um comentário em uma falha dos checks"
+    ]
+  },
+  {
+    "id": "079",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar code scanning",
+    "header": "Ao visualizar um alerta do code scanning, para que serve a opção 'Show paths'?",
+    "options": [
+      "Mostrar o caminho das queries do CodeQL que foram usadas para identificar a vulnerabilidade",
+      "Mostrar recomendações de como consertar o problema",
+      "Exibir o caminho através do código que leva ao problema que gerou o alerta",
+      "Mostrar o caminho do banco de dados do CodeQL usado para identificar a vulnerabilidade"
+    ],
+    "correct": [
+      "Exibir o caminho através do código que leva ao problema que gerou o alerta"
+    ]
+  },
+  {
+    "id": "080",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Descrever as boas práticas do GitHub Advanced Security",
+    "header": "Ignorar um alerta do code scanning significa ________________________",
+    "options": [
+      "Fechar um alerta que você não acha que é necessário corrigir",
+      "Fechar um alerta após realizar a correção no código"
+    ],
+    "correct": [
+      "Fechar um alerta que você não acha que é necessário corrigir"
+    ]
+  },
+  {
+    "id": "081",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as boas práticas do GitHub Advanced Security",
+    "header": "Qual das opções NÃO é uma abordagem válida para reduzir o tempo de execução de um workflow do CodeQL?",
+    "options": [
+      "Usar runners com mais recursos de CPU/RAM",
+      "Iniciar a análise a cada evento de push",
+      "Paralelizar a análise para múltiplas linguagens",
+      "Ignorar arquivos e diretórios irrelevantes para a análise",
+      "Reduzir o número de queries executadas"
+    ],
+    "correct": [
+      "Iniciar a análise a cada evento de push"
+    ]
+  },
+  {
+    "id": "082",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Usar code scanning com CodeQL",
+    "header": "Qual a finalidade de definir uma categoria SARIF?",
+    "options": [
+      "Usar a categoria para distinguir arquivos que contém vulnerabilidades de arquivos que não contém",
+      "Usar a categoria para distinguir múltiplas análises para a mesma ferramenta ou commit, mas realizadas em diferentes linguagens ou partes do código",
+      "Usar a categoria para distinguir arquivos que foram analisados de arquivos que não foram analisados",
+      "Usar uma categoria diferente para cada arquivo que foi analisado para rastrear mais facilmente as vulnerabilidades de volta para o arquivo"
+    ],
+    "correct": [
+      "Usar a categoria para distinguir múltiplas análises para a mesma ferramenta ou commit, mas realizadas em diferentes linguagens ou partes do código"
+    ]
+  },
+  {
+    "id": "083",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Qual comentário vai acionar um comando do Dependabot para fechar um pull request com sucesso?",
+    "options": [
+      "@dependabot close",
+      "@dependabot merge",
+      "@dependabot cancel merge",
+      "@dependabot rebase"
+    ],
+    "correct": [
+      "@dependabot merge"
+    ]
+  },
+  {
+    "id": "084",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as boas práticas do GitHub Advanced Security",
+    "header": "O que significa 'CWE'?",
+    "options": [
+      "Common Weakness Enumeration",
+      "Cybersecurity Weakness Enumeration",
+      "Code Wrapping Engine",
+      "Critical Web Elements"
+    ],
+    "correct": [
+      "Common Weakness Enumeration"
+    ]
+  },
+  {
+    "id": "085",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as boas práticas do GitHub Advanced Security",
+    "header": "O que significa 'CVE'?",
+    "options": [
+      "Common Virus Elimination",
+      "Cybersecurity Verification Entity",
+      "Common Vulnerabilities and Exposures",
+      "Code Validation and Enumeration"
+    ],
+    "correct": [
+      "Common Vulnerabilities and Exposures"
+    ]
+  },
+  {
+    "id": "086",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as boas práticas do GitHub Advanced Security",
+    "header": "O que significa 'CVSS'?",
+    "options": [
+      "Code Verification Security System",
+      "Critical Vulnerability Scanning Service",
+      "Common Vulnerability Scoring System",
+      "Cybersecurity Validation Scoring Scheme"
+    ],
+    "correct": [
+      "Common Vulnerability Scoring System"
+    ]
+  },
+  {
+    "id": "087",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Você precisa do GitHub Actions habilitado para: ",
+    "options": [
+      "Usar as atualizações de segurança do Dependabot",
+      "Usar as atualizações de versão do Dependabot",
+      "Usar o Dependency Review",
+      "Todas as opções",
+      "Nenhuma das opções"
+    ],
+    "correct": [
+      "Usar o Dependency Review"
+    ]
+  },
+  {
+    "id": "088",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "A ferramenta que verifica se um pull request introduz alguma dependência com vulnerabilidades de segurança é: ",
+    "options": [
+      "Dependency review",
+      "Alertas do dependabot",
+      "Atualizações de segurança do Dependabot",
+      "Atualizações de versão do Dependabot"
+    ],
+    "correct": [
+      "Dependency review"
+    ]
+  },
+  {
+    "id": "089",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar as ferramentas do GitHub Advanced Security no GitHub Enterprise",
+    "header": "Para habilitar as Atualizações de segurança do Dependabot em todos os repositórios de uma organização, você deve: ",
+    "options": [
+      "Ir para as configurações de 'Segurança de código e análise' e habilitar as Atualizações de segurança do Dependabot para todos os repositórios de uma vez",
+      "Tornar todos os repositórios da organização privados",
+      "Executar a action actions/enable-ghas com o parâmetro 'security-updates' como true em todos os repositórios da organização",
+      "Criar um script que vai habilitar as Atualizações de segurança do Dependabot em todos os repositórios"
+    ],
+    "correct": [
+      "Ir para as configurações de 'Segurança de código e análise' e habilitar as Atualizações de segurança do Dependabot para todos os repositórios de uma vez"
+    ]
+  },
+  {
+    "id": "090",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Como você pode automaticamente ignorar alertas do Dependabot com severidade baixa?",
+    "options": [
+      "Usando as regras de auto-triagem do Dependabot",
+      "Configurando o campo 'severity' do arquivo dependabot.yml como 'high'",
+      "Removendo todas as dependências que causam alertas com severidade baixa",
+      "Configurando o campo 'dismiss-severity' do arquivo dependabot.yml como 'low'"
+    ],
+    "correct": [
+      "Usando as regras de auto-triagem do Dependabot"
+    ]
+  },
+  {
+    "id": "091",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "O que são as regras de auto-triagem do Dependabot?",
+    "options": [
+      "É um recurso que permite ao Dependabot automaticamente ignorar alertas com características determinadas pelo usuário",
+      "Regras de auto-triagem são definidas no arquivo de configuração dependabot.yml para especificar gerenciadores de pacotes a serem usados para escanear o projeto por vulnerabilidades",
+      "Regras de auto-triagem são usadas para automaticamente deletar dependências antigas do seu projeto",
+      "Regras de auto-triagem definem a frequência em que o Dependabot deve escanear o projeto por vulnerabilidades"
+    ],
+    "correct": [
+      "É um recurso que permite ao Dependabot automaticamente ignorar alertas com características determinadas pelo usuário"
+    ]
+  },
+  {
+    "id": "092",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Qual desses não é um canal suportado pelo GitHub para enviar alertas do Dependabot?",
+    "options": [
+      "App mobile do GitHub",
+      "Inbox de notificação no github.com",
+      "Chamada/SMS",
+      "GitHub CLI",
+      "Email"
+    ],
+    "correct": [
+      "Chamada/SMS"
+    ]
+  },
+  {
+    "id": "093",
+    "exam": "GHAS",
+    "type": "dragdrop",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Complete o arquivo de configuração 'dependabot.yml'",
+    "options": [
+      "(1)",
+      "(2)",
+      "(3)"
+    ],
+    "correct": [
+      "updates:",
+      "package-ecosystem: \"npm\"",
+      "directory: \"/\""
+    ],
+    "code": "question-093.md"
+  },
+  {
+    "id": "094",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar as ferramentas do GitHub Advanced Security no GitHub Enterprise",
+    "header": "Para habilitar os alertas do Dependabot em todos os repositórios de uma organização, você deve: ",
+    "options": [
+      "Tornar todos os repositórios da organização privados",
+      "Executar a action actions/enable-ghas com o parâmetro 'alerts' como true em todos os repositórios da organização",
+      "Ir para as configurações de 'Segurança de código e análise' e habilitar os alertas do Dependabot para todos os repositórios de uma vez",
+      "Criar um script que vai habilitar os alertas do Dependabot em todos os repositórios"
+    ],
+    "correct": [
+      "Ir para as configurações de 'Segurança de código e análise' e habilitar os alertas do Dependabot para todos os repositórios de uma vez"
+    ]
+  },
+  {
+    "id": "095",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Configurar as ferramentas do GitHub Advanced Security no GitHub Enterprise",
+    "header": "Qual o nível mínimo de acesso necessário para ver os alertas do Dependabot em um repositório de uma organização?",
+    "options": [
+      "Leitura",
+      "Triagem",
+      "Escrita",
+      "Manutenção",
+      "Admin"
+    ],
+    "correct": [
+      "Escrita"
+    ]
+  },
+  {
+    "id": "096",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Quem pode habilitar os alertas do Dependabot em um repositório?",
+    "options": [
+      "Apenas o dono do repositório",
+      "Donos do repositório e pessoas com acesso de administrador",
+      "Alertas do dependabot são habilitados em todos os repositórios do GitHub e não podem ser desabilitador ou habilitados por um indivíduo",
+      "Alertas do dependabot são habilitados através de uma action do GitHub, então qualquer um com acesso de escrita por habilitá-los"
+    ],
+    "correct": [
+      "Donos do repositório e pessoas com acesso de administrador"
+    ]
+  },
+  {
+    "id": "097",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "Os alertas do Dependabot são habilitados por padrão em: ",
+    "options": [
+      "Apenas em repositórios públicos",
+      "Apenas em repositórios privados",
+      "Em todos os repositórios",
+      "Os alertas do Dependabot não são habilitados por padrão"
+    ],
+    "correct": [
+      "Os alertas do Dependabot não são habilitados por padrão"
+    ]
+  },
+  {
+    "id": "098",
+    "exam": "GHAS",
+    "type": "multiple",
+    "domain": "Configurar as ferramentas do GitHub Advanced Security no GitHub Enterprise",
+    "header": "Como você pode habilitar os recursos do GitHub Advanced Security para o GitHub Enterprise Server?",
+    "options": [
+      "Solicitando um upgrade para o suporte do GitHub",
+      "Na aba de segurança do Console de gerenciamento do administrador",
+      "Conectando diretamente na instância do GitHub Enterprise Server via SSH e usando os comandos ghe-config no shell administrativo",
+      "Configurando a opção 'github.advanced_security.enabled' como true no arquivo config.yml no diretório /etc/github da instância do GitHub Enterprise Server",
+      "Configurando a opção 'github.advanced_security.enabled' como true no arquivo config.yml no repositório .github"
+    ],
+    "correct": [
+      "Na aba de segurança do Console de gerenciamento do administrador",
+      "Conectando diretamente na instância do GitHub Enterprise Server via SSH e usando os comandos ghe-config no shell administrativo"
+    ]
+  },
+  {
+    "id": "099",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar as ferramentas do GitHub Advanced Security no GitHub Enterprise",
+    "header": "Como você pode habilitar os recursos do GitHub Advanced Security para o GitHub Enterprise Cloud?",
+    "options": [
+      "Conectando diretamente na instância do GitHub Enterprise Cloud via SSH e usando os comandos ghe-config no shell administrativo",
+      "Solicitando um upgrade para o suporte do GitHub",
+      "Configurando a opção 'github.advanced_security.enabled' como true no arquivo config.yml no repositório .github",
+      "Na seção 'Segurança e análise de código' das configurações da organização"
+    ],
+    "correct": [
+      "Na seção 'Segurança e análise de código' das configurações da organização"
+    ]
+  },
+  {
+    "id": "100",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as boas práticas do GitHub Advanced Security",
+    "header": "Como um mantenedor do repositório, onde você deve colocar instruções de como reportar uma vulnerabilidade de segurança em sua base de código?",
+    "options": [
+      "No arquivo README.md",
+      "No arquivo CONTRIBUTING.md",
+      "No arquivo SECURITY.md",
+      "No arquivo CODE_OF_CONDUCT.md",
+      "No arquivo ISSUE_TEMPLATE.md"
+    ],
+    "correct": [
+      "No arquivo SECURITY.md"
+    ]
+  },
+  {
+    "id": "101",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as boas práticas do GitHub Advanced Security",
+    "header": "O que é uma política de segurança em um repositório GitHub?",
+    "options": [
+      "É uma ferramenta para automaticamente consertar vulnerabilidades no seu código",
+      "É um recurso que permite criptografar o conteúdo do repositório",
+      "É um documento que instrui os usuários em como reportar vulnerabilidades de segurança em um projeto. Normalmente, é definido no arquivo SECURITY.md do repositório",
+      "É um recurso para gerenciar os acessos e permissões dos contribuidores no repositório",
+      "É um serviço de assinatura do GitHub que fornece proteção antivírus para o seu projeto"
+    ],
+    "correct": [
+      "É um documento que instrui os usuários em como reportar vulnerabilidades de segurança em um projeto. Normalmente, é definido no arquivo SECURITY.md do repositório"
+    ]
+  },
+  {
+    "id": "102",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar as ferramentas do GitHub Advanced Security no GitHub Enterprise",
+    "header": "Como você pode configurar uma política de segurança padrão para todos os repositórios na organização 'my-org' do GitHub?",
+    "options": [
+      "Editando as políticas de segurança nas configurações de 'Segurança e análise de código' da organização",
+      "Políticas de segurança padrão só podem ser configuradas pelo suporte do GitHub",
+      "Criando um arquivo SECURITY.md no repositório my-org/.github",
+      "Criando um arquivo SECURITY.md para cada repositório da organização my-org"
+    ],
+    "correct": [
+      "Criando um arquivo SECURITY.md no repositório my-org/.github"
+    ]
+  },
+  {
+    "id": "103",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Qual endpoint da API do GitHub pode ser usado para recuperar uma lista de todos os alertas do Dependabot para uma enterprise?",
+    "options": [
+      "GET /orgs/{org}/dependabot/alerts",
+      "GET /enterprises/{enterprise}/dependabot/alerts",
+      "GET /repos/{owner}/{repo}/dependabot/alerts",
+      "GET /github/{enterprise}/dependabot/alerts"
+    ],
+    "correct": [
+      "GET /enterprises/{enterprise}/dependabot/alerts"
+    ]
+  },
+  {
+    "id": "104",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Configurar e usar secret scanning",
+    "header": "Qual endpoint da API do GitHub pode ser usado para recuperar uma lista de todos os alertas do Secret scanning para uma organização?",
+    "options": [
+      "GET /repos/{owner}/{repo}/secret-scanning/alerts",
+      "GET /enterprises/{enterprise}/secret-scanning/alerts",
+      "GET /orgs/{org}/secret-scanning/alerts",
+      "GET /github/{org}/secret-scanning/alerts"
+    ],
+    "correct": [
+      "GET /orgs/{org}/secret-scanning/alerts"
+    ]
+  },
+  {
+    "id": "105",
+    "exam": "GHAS",
+    "type": "select",
+    "domain": "Configurar e usar code scanning",
+    "header": "Qual endpoint da API do GitHub pode ser usado para recuperar uma lista de todos os alertas do Code scanning para um repositório?",
+    "options": [
+      "GET /orgs/{org}/code-scanning/alerts",
+      "GET /enterprises/{enterprise}/code-scanning/alerts",
+      "GET /repos/{owner}/{repo}/code-scanning/alerts",
+      "GET /github/{repo}/code-scanning/alerts"
+    ],
+    "correct": [
+      "GET /repos/{owner}/{repo}/code-scanning/alerts"
+    ]
+  },
+  {
+    "id": "106",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Configurar e usar gerenciamento de dependências",
+    "header": "Qual dessas afirmações melhor descreve uma dependência vulnerável?",
+    "options": [
+      "Uma dependência vulnerável é uma dependência que o projeto utiliza, que não recebe atualizações há mais de 2 anos",
+      "Uma dependência vulnerável é uma dependência que o projeto utiliza, que não é muito usada ou popular",
+      "Uma dependência vulnerável é uma dependência que o projeto utiliza, que contém falhas de segurança que podem ser potencialmente exploradas",
+      "Uma dependência vulnerável é uma dependência que o projeto utiliza, que não é verificada pelo GitHub"
+    ],
+    "correct": [
+      "Uma dependência vulnerável é uma dependência que o projeto utiliza, que contém falhas de segurança que podem ser potencialmente exploradas"
+    ]
+  },
+  {
+    "id": "107",
+    "exam": "GHAS",
+    "type": "options",
+    "domain": "Descrever as funcionalidades de segurança e recursos do GHAS",
+    "header": "O que são as Atualizações de segurança do Dependabot?",
+    "options": [
+      "São patches de atualização que o GitHub envia mensalmente ao Dependabot para melhorar sua capacidade de detectar vulnerabilidades",
+      "É um recurso do Dependabot para automaticamente criar pull requests para atualizar dependências vulneráveis em seu repositório",
+      "É um recurso do Dependabot para criar uma lista de dependências vulneráveis no seu repositório",
+      "É um recurso do Dependabot para criar alertas quando uma vulnerabilidade de segurança é detectada em uma dependência"
+    ],
+    "correct": [
+      "É um recurso do Dependabot para automaticamente criar pull requests para atualizar dependências vulneráveis em seu repositório"
+    ]
   }
 ]
