@@ -1,0 +1,103 @@
+[
+  {
+    "id": "001",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Uma empresa implantou aplicações usando instâncias do Amazon EC2, e precisa avaliar vulnerabilidades de aplicativos e identificar implantações de infraestrutura que não cumprem boas práticas.",
+    "options": [
+      "AWS Trusted Advisor",
+      "Amazon Inspector",
+      "AWS Config",
+      "Amazon GuardDuty"
+    ],
+    "correct": [
+      "Amazon Inspector"
+    ],
+    "body": "Qual serviço da AWS a empresa deve usar para atender esses requisitos?"
+  },
+  {
+    "id": "002",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Uma empresa está executando e gerenciando seu próprio ambiente Docker em instâncias do Amazon EC2. A empresa busca encontrar uma alternativa que ajude a gerenciar o tamanho dos clusters, agendamento, e manutenção do ambiente.",
+    "options": [
+      "AWS Lambda",
+      "Amazon RDS",
+      "AWS Fargate",
+      "Amazon Athena"
+    ],
+    "correct": [
+      "AWS Fargate"
+    ],
+    "body": "Qual serviço da AWS a empresa deve usar para atender esses requisitos?"
+  },
+  {
+    "id": "003",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual das alternativas a seguir corresponde a uma vantagem que os usuários experienciam ao mover cargas de trabalho on-premise para a nuvem AWS?",
+    "options": [
+      "Eliminação das despesas de executar e manter data centers",
+      "Descontos de preço que são idênticos aos descontos de provedores de hardware",
+      "Distribuição de todos os controles operacionais para a AWS",
+      "Eliminização de custos operacionais"
+    ],
+    "correct": [
+      "Eliminação das despesas de executar e manter data centers"
+    ]
+  },
+  {
+    "id": "004",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Uma plataforma de ensino online precisa executar uma aplicação durante 2 meses por ano. A aplicação será implantada em instâncias do Amazon EC2. Qualquer interrupção de serviço durante esses dois meses deve ser evitada.",
+    "options": [
+      "Instâncias reservadas",
+      "Instâncias dedicadas",
+      "Instâncias sob-demanda",
+      "Instâncias spot"
+    ],
+    "correct": [
+      "Instâncias sob-demanda"
+    ],
+    "body": "Qual opção de compra do EC2 vai atender aos requisitos de forma mais econômica?"
+  },
+  {
+    "id": "005",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Um desenvolvedor quer implantar uma aplicação rapidamente na AWS sem criar manualmente os recursos necessários",
+    "options": [
+      "Amazon EC2",
+      "AWS Elastic Beanstalk",
+      "AWS CodeBuild",
+      "Amazon Personalize"
+    ],
+    "correct": [
+      "AWS Elastic Beanstalk"
+    ],
+    "body": "Qual serviço da AWS ele pode utilizar?"
+  },
+  {
+    "id": "006",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Uma empresa de jogos online precisa escolher uma opção para executar suas instâncias do Amazon EC2 durante 1 ano. O tráfego web é consistente, e quaisquer aumentos no tráfego são previsíveis. As instâncias EC2 precisam estar online e disponíveis sem qualquer interrupção.",
+    "options": [
+      "Instâncias dedicadas",
+      "Instâncias reservadas",
+      "Instâncias sob-demanda",
+      "Instâncias spot"
+    ],
+    "correct": [
+      "Instâncias reservadas"
+    ],
+    "body": "Qual opção de compra do EC2 vai atender aos requisitos de forma mais econômica?"
+  }
+]

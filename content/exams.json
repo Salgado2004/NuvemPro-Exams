@@ -229,5 +229,33 @@
         "max": 15
       }
     ]
+  },
+  {
+    "name": "CLF-C02",
+    "fullname": "AWS Cloud Practitioner",
+    "questions": 6,
+    "image": "assets/badges/CLF-C02-badge.png",
+    "domains": [
+      {
+        "name": "Conceitos de nuvem",
+        "min": 24,
+        "max": 24
+      },
+      {
+        "name": "Segurança e conformidade",
+        "min": 30,
+        "max": 30
+      },
+      {
+        "name": "Tecnologia em Nuvem e Serviços",
+        "min": 34,
+        "max": 34
+      },
+      {
+        "name": "Preços, cobrança e suporte",
+        "min": 12,
+        "max": 12
+      }
+    ]
   }
 ]
