@@ -241,10 +241,8 @@
       "Criando um arquivo '.github/codeql.yml' e incluindo os caminhos onde esses segredos falsos estão declarados"
     ],
     "correct": [
-      "true",
-      "false",
-      "true",
-      "false"
+      "Criando um arquivo 'secret_scanning.yml' e incluindo os caminhos onde esses segredos falsos estão declarados",
+      "Fechando o alerta do secret scanning com a justificativa 'Usado em testes'"
     ],
     "body": "O que você pode fazer para dizer ao GitHub que esses são segredos falsos usados em testes e podem ser ignorados pelo secret scanning?"
   },
