@@ -7,14 +7,14 @@ async function main() {
         //initializes variables
         const examsFilePath = path.join("content", 'exams.json');
         const examsJson = JSON.parse(fs.readFileSync(examsFilePath, 'utf8'));
-        let exams = examsJson.map(exam => exam.name);
+        let examList = examsJson.map(exam => exam.fullname);
 
-        const { exam, type } = await inquirer.prompt([
+        const { examName, type } = await inquirer.prompt([
             {
-                name: 'exam',
+                name: 'examName',
                 message: 'What is the exam the question will be part of?',
                 type: 'list',
-                choices: exams,
+                choices: examList,
             },
             {
                 name: 'type',
@@ -23,6 +23,8 @@ async function main() {
                 choices: ['options', 'multiple', 'truefalse', 'select', 'dragdrop'],
             }
         ]);
+
+        let exam = examsJson.find(e => e.fullname === examName).name;
 
         const availableDomains = examsJson.find(e => e.name === exam).domains.map(domain => domain.name);
 
