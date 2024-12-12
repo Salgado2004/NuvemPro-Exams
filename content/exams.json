@@ -186,5 +186,48 @@
         "max": 10
       }
     ]
+  },
+  {
+    "name": "GHC",
+    "fullname": "GitHub Copilot",
+    "questions": 9,
+    "image": "assets/badges/GHC-badge.png",
+    "domains": [
+      {
+        "name": "IA responsável",
+        "min": 7,
+        "max": 7
+      },
+      {
+        "name": "Planos e recursos do GitHub Copilot",
+        "min": 31,
+        "max": 31
+      },
+      {
+        "name": "Como o GitHub Copilot funciona e lida com os dados",
+        "min": 15,
+        "max": 15
+      },
+      {
+        "name": "Criação de prompt e Engenharia de Prompt",
+        "min": 9,
+        "max": 9
+      },
+      {
+        "name": "Casos de uso de IA para desenvolvedores",
+        "min": 14,
+        "max": 14
+      },
+      {
+        "name": "Testes com GitHub Copilot",
+        "min": 9,
+        "max": 9
+      },
+      {
+        "name": "Fundamentos de privacidade e exclusão de contexto",
+        "min": 15,
+        "max": 15
+      }
+    ]
   }
 ]

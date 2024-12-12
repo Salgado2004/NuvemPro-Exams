@@ -1,0 +1,150 @@
+[
+  {
+    "id": "001",
+    "exam": "GHC",
+    "type": "select",
+    "domain": "Criação de prompt e Engenharia de Prompt",
+    "header": "Qual das opções a seguir NÃO é uma etapa do processamento do prompt de um usuário em uma sugestão de código do Copilot?",
+    "options": [
+      "Transmissão secura do prompt e coleta de contexto",
+      "Filtragem de conteúdo para garantir segurança",
+      "Análise estatística e reconhecimento de padrões",
+      "Análise de contexto para entender a intenção do usuário"
+    ],
+    "correct": [
+      "Análise estatística e reconhecimento de padrões"
+    ]
+  },
+  {
+    "id": "002",
+    "exam": "GHC",
+    "type": "select",
+    "domain": "Criação de prompt e Engenharia de Prompt",
+    "header": "Qual das opções a seguir NÃO é um princípio de efetividade em engenharia de prompt com o GitHub Copilot?",
+    "options": [
+      "Clareza - Focar em uma única tarefa bem definida",
+      "Verbosidade - Providenciar descrições extensas e detalhadas",
+      "Especificidade - Usar instruções claras e explícitas",
+      "Contextualização - Usar nomes de arquivos descritivos e manter arquivos relacionados abertos"
+    ],
+    "correct": [
+      "Verbosidade - Providenciar descrições extensas e detalhadas"
+    ]
+  },
+  {
+    "id": "003",
+    "exam": "GHC",
+    "type": "truefalse",
+    "domain": "Criação de prompt e Engenharia de Prompt",
+    "header": "Para cada afirmativa, assinale verdadeiro ou falso",
+    "options": [
+      "Um prompt, que é nossa resposta, é uma coleção de músicas que diz ao Copilot o que gerar",
+      "Um prompt, que é nossa requisição, é uma coleção de instruções e guias que diz ao Copilot o que gerar",
+      "Um prompt, que é nosso documento, é uma coleção de notebooks que diz ao Copilot o que gerar",
+      "Um prompt é uma série de comandos binários que controlam o comportamento do Copilot"
+    ],
+    "correct": [
+      "false",
+      "true",
+      "false",
+      "false"
+    ],
+    "body": "NOTA: Cada resposta correta vale um ponto"
+  },
+  {
+    "id": "004",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Casos de uso de IA para desenvolvedores",
+    "header": "Como você pode aceitar as soluções do Copilot?",
+    "options": [
+      "Pressionando a tecla TAB",
+      "Pressionando a tecla F1",
+      "Pressionando a tecla F4",
+      "Pressionando a tecla Enter"
+    ],
+    "correct": [
+      "Pressionando a tecla TAB"
+    ]
+  },
+  {
+    "id": "005",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Casos de uso de IA para desenvolvedores",
+    "header": "Como o Copilot usa uma base de código da organização e conhecimento interno para aumentar a produtividade e colaboração?",
+    "options": [
+      "Fornecendo sugestões de código baseado apenas em bibliotecas open-source",
+      "Gerando trechos de código aleatórios",
+      "Sugerindo código sem considerar o contexto do projeto",
+      "Adaptando sua assistência de código, respondendo perguntas, e sugerindo código alinhado com os padrões e boas práticas da organização"
+    ],
+    "correct": [
+      "Adaptando sua assistência de código, respondendo perguntas, e sugerindo código alinhado com os padrões e boas práticas da organização"
+    ]
+  },
+  {
+    "id": "006",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Criação de prompt e Engenharia de Prompt",
+    "header": "Quais são os benefícios de usar prompts implícitos com os comandos slash (/) no chat inline para corrigir problemas no código com o GitHub Copilot?",
+    "options": [
+      "Reforça convenções de nomenclatura consistentes e sintaxe simples",
+      "Ajuda a obter respostas melhores sem escrever prompts longos, simplificando as interações",
+      "Detecta vulnerabilidades de segurança em projetos do Visual Studio Code",
+      "Automaticamente refatora o código para seguir padrões de projeto"
+    ],
+    "correct": [
+      "Ajuda a obter respostas melhores sem escrever prompts longos, simplificando as interações"
+    ]
+  },
+  {
+    "id": "007",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Criação de prompt e Engenharia de Prompt",
+    "header": "Qual é uma prática recomendada para melhorar a performance do Chat do Github Copilot?",
+    "options": [
+      "Usar o Chat do Copilot como um substituto para um programador humano",
+      "Limitar os prompts a perguntas de código ou tarefas que melhorem a qualidade da saída",
+      "Ignorar a codificação segura e práticas de code review",
+      "Pedir ao Copilot para gerar uma aplicação inteira sozinho"
+    ],
+    "correct": [
+      "Limitar os prompts a perguntas de código ou tarefas que melhorem a qualidade da saída"
+    ]
+  },
+  {
+    "id": "008",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Casos de uso de IA para desenvolvedores",
+    "header": "Qual das opções a seguir é um exemplo de como o GitHub Copilot automatiza tarefas de rotina para desenvolvedores?",
+    "options": [
+      "Implantações de aplicações no ambiente de produção automaticamente",
+      "Geração de código boilerplate para funcionalidades comuns, como configurar uma API REST ou um template HTML",
+      "Gerenciar migrações e atualizações de um esquema de banco de dados automaticamente",
+      "Conduzir testes de performance e otimização de código automaticamente"
+    ],
+    "correct": [
+      "Geração de código boilerplate para funcionalidades comuns, como configurar uma API REST ou um template HTML"
+    ]
+  },
+  {
+    "id": "009",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Planos e recursos do GitHub Copilot",
+    "header": "Quais são os planos de assinatura disponíveis para o GitHub Copilot?",
+    "options": [
+        "GitHub Copilot Free, Pro e Team",
+        "GitHub Copilot Pessoal, Business e Enterprise",
+        "GitHub Copilot Iniciante, Profissional e Enterprise",
+        "GitHub Copilot Individual, Business e Enterprise"
+    ],
+    "correct": [
+        "GitHub Copilot Individual, Business e Enterprise"
+    ]
+  }
+]
