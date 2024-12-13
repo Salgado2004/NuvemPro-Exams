@@ -2,6 +2,7 @@
   {
     "name": "AZ900",
     "fullname": "Azure Fundamentals",
+    "provider": "Microsoft",
     "questions": 5,
     "image": "assets/badges/AZ900-badge.png",
     "domains": [
@@ -25,6 +26,7 @@
   {
     "name": "DP900",
     "fullname": "Azure Data Fundamentals",
+    "provider": "Microsoft",
     "questions": 37,
     "image": "assets/badges/DP900-badge.png",
     "domains": [
@@ -53,6 +55,7 @@
   {
     "name": "AI900",
     "fullname": "Azure AI Fundamentals",
+    "provider": "Microsoft",
     "questions": 90,
     "image": "assets/badges/AI900-badge.png",
     "domains": [
@@ -86,6 +89,7 @@
   {
     "name": "SC900",
     "fullname": "Security, Compliance, and Identity Fundamentals",
+    "provider": "Microsoft",
     "questions": 137,
     "image": "assets/badges/SC900-badge.png",
     "domains": [
@@ -114,6 +118,7 @@
   {
     "name": "AZ204",
     "fullname": "Azure Developer Associate",
+    "provider": "Microsoft",
     "questions": 257,
     "image": "assets/badges/AZ204-badge.png",
     "domains": [
@@ -147,6 +152,7 @@
   {
     "name": "GHAS",
     "fullname": "GitHub Advanced Security",
+    "provider": "GitHub",
     "questions": 107,
     "image": "assets/badges/GHAS-badge.png",
     "domains": [
@@ -190,6 +196,7 @@
   {
     "name": "GHC",
     "fullname": "GitHub Copilot",
+    "provider": "GitHub",
     "questions": 9,
     "image": "assets/badges/GHC-badge.png",
     "domains": [
@@ -233,7 +240,8 @@
   {
     "name": "CLF-C02",
     "fullname": "AWS Cloud Practitioner",
-    "questions": 6,
+    "provider": "AWS",
+    "questions": 7,
     "image": "assets/badges/CLF-C02-badge.png",
     "domains": [
       {
