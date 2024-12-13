@@ -9,8 +9,37 @@
 nav{
     display: flex;
     justify-content: end;
+    flex-wrap: wrap;
     padding: 8px;
     margin: 6px;
+}
+
+nav .filters{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 4px;
+    font-family: 'Inter', sans-serif;
+}
+
+nav .filters p{
+    font-weight: bold;
+}
+
+nav .filters label{
+    color: #2f3643;
+}
+
+nav .filter{
+    border: 1px solid #319bf5;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    outline: none;
+}
+
+nav .opt{
+    background: #f5f5f5;
 }
 
 nav a{

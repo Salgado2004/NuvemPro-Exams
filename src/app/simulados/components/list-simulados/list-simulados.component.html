@@ -1,10 +1,24 @@
 <section>
     <nav>
-        <a mat-button href="https://github.com/Salgado2004/NuvemPro-Exams" target="_blank">Dê uma estrela<mat-icon class="star">star</mat-icon></a>
-        <a mat-button href="https://github.com/Salgado2004/NuvemPro-Exams/blob/master/translations/CONTRIBUTING_PT.md" target="_blank">Mais perguntas <mat-icon>open_in_new</mat-icon></a>
+        <div class="filters">
+            <p>Filtros: </p>
+            @for(key of filters.keys(); track $index){
+                <div>
+                    <label for="filter_{{key}}">{{key | filterLabel }} </label>
+                    <select id="filter_{{key}}" class="filter" [title]="key" (change)="applyFilter($event)">
+                        <option class="opt">Todos</option>
+                        <option class="opt" *ngFor="let value of filters.get(key)">{{value}}</option>
+                    </select>
+                </div>
+            }
+        </div>
+        <div class="utilities">
+            <a mat-button href="https://github.com/Salgado2004/NuvemPro-Exams" target="_blank">Dê uma estrela<mat-icon class="star">star</mat-icon></a>
+            <a mat-button href="https://github.com/Salgado2004/NuvemPro-Exams/blob/master/translations/CONTRIBUTING_PT.md" target="_blank">Mais perguntas <mat-icon>open_in_new</mat-icon></a>
+        </div>
     </nav>
     <app-loader *ngIf="loading"></app-loader>
     <div class="simulados">
-        <app-exam-card *ngFor="let simulado of simulados" [exam]="simulado"></app-exam-card>
+        <app-exam-card *ngFor="let simulado of activeList" [exam]="simulado"></app-exam-card>
     </div>  
 </section>

@@ -31,6 +31,7 @@ import { TrueFalseQuestionComponent } from './components/questoes/true-false-que
 
 /* Utils */
 import { SummaryPipe } from './utils/summary.pipe';
+import { FilterLabelPipe } from './utils/filter-label.pipe';
 import { QueryCodeService } from './utils/query-code.service';
 import { QueryExamsService } from './utils/query-exams.service';
 import { QueryQuestionsService } from './utils/query-questions.service';
@@ -66,7 +67,8 @@ import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
     ReactiveFormsModule,
     HighlightModule,
     HighlightLineNumbers,
-    SummaryPipe
+    SummaryPipe,
+    FilterLabelPipe
   ],
   providers: [
     QueryQuestionsService,
