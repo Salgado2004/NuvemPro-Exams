@@ -241,7 +241,7 @@
     "name": "CLF-C02",
     "fullname": "AWS Cloud Practitioner",
     "provider": "AWS",
-    "questions": 7,
+    "questions": 14,
     "image": "assets/badges/CLF-C02-badge.png",
     "domains": [
       {
