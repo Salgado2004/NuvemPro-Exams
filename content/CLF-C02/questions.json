@@ -99,5 +99,141 @@
       "Instâncias reservadas"
     ],
     "body": "Qual opção de compra do EC2 vai atender aos requisitos de forma mais econômica?"
+  },
+  {
+    "id": "007",
+    "exam": "CLF-C02",
+    "type": "select",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Qual opção de cobrança do Amazon EC2 oferece um desconto quando o cliente se compromente a um uso por hora constante de uma família de instâncias e região, durante 1 a 3 anos?",
+    "options": [
+      "Instâncias dedicadas",
+      "Instâncias reservadas",
+      "Instâncias sob-demanda",
+      "Savings plan de instância"
+    ],
+    "correct": [
+      "Savings plan de instância"
+    ]
+  },
+  {
+    "id": "008",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "O que NÃO é autorizado pela AWS de acordo com a Política de Uso Aceitável da AWS?",
+    "options": [
+      "Desenvolver uma aplicação de jogos",
+      "Implantar um website",
+      "Realizar análise de dados em conteúdo roubado",
+      "Fazer backup dos seus dados"
+    ],
+    "correct": [
+      "Realizar análise de dados em conteúdo roubado"
+    ]
+  },
+  {
+    "id": "009",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual entidade de Infraestrutura Global é composta de um ou mais datacenters discretos com processamento, rede e conectividade redundantes, usada para implantar recursos?",
+    "options": [
+      "Localizações de borda",
+      "Zonas de disponibilidade",
+      "Regiões",
+      "Servidor de origem"
+    ],
+    "correct": [
+      "Zonas de disponibilidade"
+    ]
+  },
+  {
+    "id": "010",
+    "exam": "CLF-C02",
+    "type": "truefalse",
+    "domain": "Conceitos de nuvem",
+    "header": "Assinale como verdadeiro as alternativas que correspondem aos pontos a se considerar ao escolher uma região da AWS",
+    "options": [
+      "Conformidade com regulações governamentais",
+      "Capacidade da região",
+      "Latência para os consumidores",
+      "Preço",
+      "Permissões disponíveis para os consumidores"
+    ],
+    "correct": [
+      "true",
+      "false",
+      "true",
+      "true",
+      "false"
+    ],
+    "body": "NOTA: Cada seleção correta vale um ponto."
+  },
+  {
+    "id": "011",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Qual atividade relaciona à segurança a AWS é responsável de acordo com o modelo de responsabilidade compartilhada da AWS?",
+    "options": [
+      "Gerenciamento do ciclo de vida das credenciais do IAM",
+      "Segurança física da infraestrutura global",
+      "Criptografia de volumes do Amazon EBS",
+      "Configuração do firewall"
+    ],
+    "correct": [
+      "Segurança física da infraestrutura global"
+    ]
+  },
+  {
+    "id": "012",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual conceito de design de arquitetura cloud é suportado pela distribuição de cargas de trabalho através de várias Zonas de Disponibilidade?",
+    "options": [
+      "Implementar automação",
+      "Design para agilidade",
+      "Design para falha",
+      "Implementar elasticidade"
+    ],
+    "correct": [
+      "Design para falha"
+    ]
+  },
+  {
+    "id": "013",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual modelo de instância de computação deve ser considerado para o Custo Total de Propriedade (TCO) ao realizar uma análise de custo que permite o isolamento físico da carga de trabalho de um cliente?",
+    "options": [
+      "Instâncias reservadas",
+      "Instâncias dedicadas",
+      "Instâncias sob-demanda",
+      "Instâncias spot"
+    ],
+    "correct": [
+      "Instâncias dedicadas"
+    ]
+  },
+  {
+    "id": "014",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Quais das opções a seguir representam sugestões possíveis do AWS Trusted Advisor?",
+    "options": [
+      "Otimização de custos",
+      "Auditoria",
+      "Arquitetura serverless",
+      "Performance",
+      "Escalabilidade"
+    ],
+    "correct": [
+      "Otimização de custos",
+      "Performance"
+    ]
   }
 ]
