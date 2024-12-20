@@ -235,5 +235,316 @@
       "Otimização de custos",
       "Performance"
     ]
+  },
+  {
+    "id": "015",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Sua empresa possui uma aplicação que usa instâncias do Amazon EC2 para executar uma aplicação web voltada para os clientes e instâncias de banco de dados Amazon RDS para armazenar informações pessoais dos clientes.",
+    "options": [
+      "Colocar as instâncias do Amazon EC2 em uma sub-rede privada e as instâncias do Amazon RDS em uma sub-rede pública",
+      "Colocar as instâncias do Amazon EC2 em uma sub-rede pública e as instâncias do Amazon RDS em uma sub-rede privada",
+      "Colocar as instâncias do Amazon EC2 e do Amazon RDS em uma sub-rede privada",
+      "Colocar as instâncias do Amazon EC2 e do Amazon RDS em uma sub-rede pública"
+    ],
+    "correct": [
+      "Colocar as instâncias do Amazon EC2 em uma sub-rede pública e as instâncias do Amazon RDS em uma sub-rede privada"
+    ],
+    "body": "Como um desenvolvedor deve configurar a Virtual Private Cloud de acordo com boas práticas de segurança?"
+  },
+  {
+    "id": "016",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "De acordo com as práticas recomendadas de segurança, como uma instância do Amazon EC2 deve receber acesso a um bucket do Amazon S3?",
+    "options": [
+      "Codificando diretamente a chave secreta e a chave de acesso de um usuário do IAM no aplicativo",
+      "Armazenando a chave secreta e a chave de acesso de um usuário do IAM em um arquivo de texto na instância do EC2",
+      "Concedendo uma função para a instância do EC2 com as permissões necessárias",
+      "Modificando a política do bucket S3 para permitir acesso a qualquer um"
+    ],
+    "correct": [
+      "Concedendo uma função para a instância do EC2 com as permissões necessárias"
+    ]
+  },
+  {
+    "id": "017",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual opção a seguir é de responsabilidade do cliente ao usar o Amazon DynamoDB no Modelo de Responsabilidade Compartilhada da AWS?",
+    "options": [
+      "Segurança física do DynamoDB",
+      "Aplicação de patches no DynameDB",
+      "Acesso à tabelas do DynamoDB",
+      "Criptografia de dados em repouso no DynamoDB"
+    ],
+    "correct": [
+      "Acesso à tabelas do DynamoDB"
+    ]
+  },
+  {
+    "id": "018",
+    "exam": "CLF-C02",
+    "type": "select",
+    "domain": "Conceitos de nuvem",
+    "header": "___________________ é uma perspectiva que inclui recursos fundamentais do AWS Cloud Adoption Framework (AWS CAF)?",
+    "options": [
+      "Sustentabilidade",
+      "Eficiência de desempenho",
+      "Governança",
+      "Confiabilidade"
+    ],
+    "correct": [
+      "Governança"
+    ]
+  },
+  {
+    "id": "019",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Quais serviços ou ferramentas da AWS ajudam a identificar oportunidades de redimensionamento para instâncias do Amazon EC2?",
+    "options": [
+      "Explorador de custos da AWS",
+      "Condutor de cobrança da AWS",
+      "Amazon CodeGuru",
+      "Amazon SageMaker",
+      "Otimizador de computação da AWS"
+    ],
+    "correct": [
+      "Explorador de custos da AWS",
+      "Otimizador de computação da AWS"
+    ]
+  },
+  {
+    "id": "020",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Quais das seguintes opções são benefícios de usar o AWS Trusted Advisor?",
+    "options": [
+      "Orquestração de contêineres de alto desempenho",
+      "Criação e rotação de chaves de criptografia",
+      "Detecção de recursos subutilizados para economizar custos",
+      "Monitoramento proativo do ambiente AWS",
+      "Marcação forçada em recursos da AWS"
+    ],
+    "correct": [
+      "Detecção de recursos subutilizados para economizar custos",
+      "Monitoramento proativo do ambiente AWS"
+    ]
+  },
+  {
+    "id": "021",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual o modelo de cobrança mais comum para computação em nuvem?",
+    "options": [
+      "Descontos ao longo do tempo",
+      "Pago conforme o uso",
+      "Pago uma vez por ano",
+      "Preço fixo"
+    ],
+    "correct": [
+      "Pago conforme o uso"
+    ]
+  },
+  {
+    "id": "022",
+    "exam": "CLF-C02",
+    "type": "select",
+    "domain": "Conceitos de nuvem",
+    "header": "As regiões da AWS são compostas de 2 ou mais _________________",
+    "options": [
+      "Zonas de disponibilidade",
+      "Datacenters discretos",
+      "Localizações de borda"
+    ],
+    "correct": [
+      "Zonas de disponibilidade"
+    ]
+  },
+  {
+    "id": "023",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual dos serviços a seguir tem escopo global?",
+    "options": [
+      "Amazon EC2",
+      "IAM",
+      "AWS Lambda",
+      "AWS Rekognition"
+    ],
+    "correct": [
+      "IAM"
+    ]
+  },
+  {
+    "id": "024",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "O que define a distribuição das responsabilidades sobre a segurança na Nuvem AWS?",
+    "options": [
+      "Fundamentos de preços da AWS",
+      "Modelo de responsabilidade compartilhada da AWS",
+      "Política de uso aceitável da AWS",
+      "Console de gerenciamento da AWS"
+    ],
+    "correct": [
+      "Modelo de responsabilidade compartilhada da AWS"
+    ]
+  },
+  {
+    "id": "025",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Qual serviço ou ferramenta da AWS ajuda os usuários a visualizar, entender e gerenciar os gastos e uso de recursos ao longo do tempo?",
+    "options": [
+      "Organizações da AWS",
+      "Calculadora de preços da AWS",
+      "Explorador de custos da AWS",
+      "Catálogo de serviços da AWS"
+    ],
+    "correct": [
+      "Explorador de custos da AWS"
+    ]
+  },
+  {
+    "id": "026",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual serviço da AWS fornece a habilidade de gerenciar infraestrutura como código?",
+    "options": [
+      "AWS CodePipeline",
+      "AWS CodeDeploy",
+      "AWS Direct Connect",
+      "AWS CloudFormation"
+    ],
+    "correct": [
+      "AWS CloudFormation"
+    ]
+  },
+  {
+    "id": "027",
+    "exam": "CLF-C02",
+    "type": "select",
+    "domain": "Conceitos de nuvem",
+    "header": "Uma empresa pretende se beneficiar das vantagens da Nuvem Pública, mas gostaria de mantes ativos sensíveis em sua própria infraestrutura.",
+    "options": [
+      "Nuvem híbrida",
+      "Nuvem privada",
+      "Nuvem pública"
+    ],
+    "correct": [
+      "Nuvem híbrida"
+    ],
+    "body": "Qual modelo de implantação a empresa deve usar?"
+  },
+  {
+    "id": "028",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Quem é responsável pelo gerenciamento das configurações no modelo de responsabilidade compartilhada da AWS?",
+    "options": [
+      "É de responsabilidade apenas do consumidor",
+      "É de responsabilidade apenas da AWS",
+      "A responsabilidade é compartilhada entre o consumidor e a AWS",
+      "Não faz parte do modelo de responsabilidade compartilhada"
+    ],
+    "correct": [
+      "A responsabilidade é compartilhada entre o consumidor e a AWS"
+    ]
+  },
+  {
+    "id": "029",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual serviço ou recurso da AWS permite ao usuário estabelecer uma conexão de rede dedicada entre os data centers on-premise de uma empresa e a AWS Cloud?",
+    "options": [
+      "VPC peering",
+      "AWS VPN",
+      "AWS Direct Connect",
+      "Amazon Rota 53"
+    ],
+    "correct": [
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "id": "030",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual opção a seguir corresponde a uma localização física na infraestrutura global da AWS?",
+    "options": [
+      "AWS DataSync",
+      "Região da AWS",
+      "Amazon Connect",
+      "Organizações da AWS"
+    ],
+    "correct": [
+      "Região da AWS"
+    ]
+  },
+  {
+    "id": "031",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual é o propósito de ter um Gateway de internet em uma VPC da AWS?",
+    "options": [
+      "Criar uma conexão VPN para a VPC",
+      "Permitir comunicação entre a VPC e a internet",
+      "Impor restrições de banda ao tráfego de internet",
+      "Balancear o tráfego de internet pelas instâncias EC2"
+    ],
+    "correct": [
+      "Permitir comunicação entre a VPC e a internet"
+    ]
+  },
+  {
+    "id": "032",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Uma empresa deseja ser notificada quando o orçamento de um custo específico da AWS for atingido",
+    "options": [
+      "Amazon SQS",
+      "AWS Budgets",
+      "Explorador de custos da AWS",
+      "Amazon CloudWatch",
+      "Relatórios de Custo e Uso da AWS"
+    ],
+    "correct": [
+      "AWS Budgets",
+      "Amazon CloudWatch"
+    ],
+    "body": "Quais serviços ou ferramentas da AWS a empresa pode usar para atender esse requisito?"
+  },
+  {
+    "id": "033",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Qual serviço ou recurso da AWS fornece respostas para as perguntas mais frequentes relacionadas a segurança que a AWS recebe dos seus usuários?",
+    "options": [
+      "AWS Artifact",
+      "Amazon Connect",
+      "AWS Chatbot",
+      "AWS Knowledge Center"
+    ],
+    "correct": [
+      "AWS Knowledge Center"
+    ]
   }
 ]
