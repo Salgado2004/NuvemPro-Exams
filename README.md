@@ -20,8 +20,5 @@ This project was developed with:
 If you would like to contribute to the project, see [how to contribute](https://github.com/Salgado2004/NuvemPro-Exams/blob/master/CONTRIBUTING.md) here.
 
 ## Contributors
-<a href="https://github.com/Salgado2004/NuvemPro-Exams/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Salgado2004/NuvemPro-Exams" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
+<!-- contributors -->
+<!-- /contributors -->
