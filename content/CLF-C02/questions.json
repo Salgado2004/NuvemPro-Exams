@@ -546,5 +546,710 @@
     "correct": [
       "AWS Knowledge Center"
     ]
+  },
+  {
+    "id": "034",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Você possui uma aplicação crítica que precisa estar disponível 24/7.",
+    "options": [
+      "Implantação em múltiplas regiões",
+      "Implantação em múltiplas localizações de borda",
+      "Implantação em múltiplos data centers",
+      "Implantação em múltiplas zonas de disponibilidade"
+    ],
+    "correct": [
+      "Implantação em múltiplas regiões"
+    ],
+    "body": "Sendo assim, qual das opções de implantação abaixo você deve empregar?"
+  },
+  {
+    "id": "035",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Segurança e conformidade",
+    "header": "Quais serviços ou ferramentas da AWS podem ser usados para proteger contra ataques DDoS?",
+    "options": [
+      "AWS Shield Avançado",
+      "AWS Shield",
+      "AWS ELB",
+      "Amazon EC2"
+    ],
+    "correct": [
+      "AWS Shield Avançado",
+      "AWS Shield"
+    ]
+  },
+  {
+    "id": "036",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Conceitos de nuvem",
+    "header": "Quais das alternativas a seguir são princípios corretos para projetar sistemas baseados em nuvem?",
+    "options": [
+      "Assumir que tudo pode falhar",
+      "Utilizar o máximo de serviços possível",
+      "Construir componentes com alto acoplamento",
+      "Construir componentes com baixo acoplamento"
+    ],
+    "correct": [
+      "Assumir que tudo pode falhar",
+      "Construir componentes com baixo acoplamento"
+    ]
+  },
+  {
+    "id": "037",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Uma empresa não quer gerenciar seus bancos de dados. Qual dos serviços abaixo é um banco de dados NoSQL totalmente gerenciado fornecido pela AWS?",
+    "options": [
+      "Amazon RDS",
+      "DynamoDB",
+      "Amazon Redshift",
+      "Oracle RDS",
+      "Amazon S3"
+    ],
+    "correct": [
+      "DynamoDB"
+    ]
+  },
+  {
+    "id": "038",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual serviço ou recurso da AWS permite a distribuição do tráfego de requisições através de múltiplas instâncias EC2?",
+    "options": [
+      "AWS Elastic Beanstalk",
+      "AWS Elastic Compute Cloud",
+      "AWS Elastic Load Balancer",
+      "AWS Autoscaling"
+    ],
+    "correct": [
+      "AWS Elastic Load Balancer"
+    ]
+  },
+  {
+    "id": "039",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Qual dos benefícios abaixo é fornecido pela cobrança consolidada nas Organizações da AWS?",
+    "options": [
+      "Aumento da segurança e controle de acesso através de múltiplas contas",
+      "Processo de pagamento simplificado com uma única conta e método de pagamento",
+      "Aumento da cobertura geográfica dos serviços da AWS",
+      "Melhoria na utilização de recursos e otimização da performance"
+    ],
+    "correct": [
+      "Processo de pagamento simplificado com uma única conta e método de pagamento"
+    ]
+  },
+  {
+    "id": "040",
+    "exam": "CLF-C02",
+    "type": "select",
+    "domain": "Conceitos de nuvem",
+    "header": "A capacidade máxima de armazenamento que o Amazon Simple Storage Service (S3) suporta é ___________.",
+    "options": [
+      "de até 1 TB",
+      "de até 5 TB",
+      "de até 1 PB",
+      "virtualmente ilimitada"
+    ],
+    "correct": [
+      "virtualmente ilimitada"
+    ]
+  },
+  {
+    "id": "041",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Qual serviço ou ferramenta da AWS permite que você veja e analize os custos e uso de recursos?",
+    "options": [
+      "Marcas de Alocação de custo",
+      "Explorador de custos da AWS",
+      "Histórico de pagamentos",
+      "Cobrança consolidada da AWS"
+    ],
+    "correct": [
+      "Explorador de custos da AWS"
+    ]
+  },
+  {
+    "id": "042",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual serviço ou ferramenta da AWS permite que você hospede DNS?",
+    "options": [
+      "VPN",
+      "Amazon VPC",
+      "Route 53",
+      "AWS Direct Connect"
+    ],
+    "correct": [
+      "Route 53"
+    ]
+  },
+  {
+    "id": "043",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual serviço ou ferramenta da AWS ajuda a agregar logs da sua instância do Amazon EC2?",
+    "options": [
+      "Amazon SQS",
+      "Amazon CloudWatch",
+      "Amazon CloudTrail",
+      "Amazon S3"
+    ],
+    "correct": [
+      "Amazon CloudWatch"
+    ]
+  },
+  {
+    "id": "044",
+    "exam": "CLF-C02",
+    "type": "select",
+    "domain": "Conceitos de nuvem",
+    "header": "O serviço _____________ é uma oferta de computação sem servidor da AWS",
+    "options": [
+      "Amazon EC2",
+      "Amazon SQS",
+      "AWS Lambda",
+      "Amazon SNS"
+    ],
+    "correct": [
+      "AWS Lambda"
+    ]
+  },
+  {
+    "id": "045",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual serviço o Amazon EC2 fornece?",
+    "options": [
+      "Servidores virtuais na nuvem",
+      "Servidores físicos, gerenciados remotamente",
+      "Uma plataforma para executar código (java, python, php)",
+      "Clusters de computadores na nuvem"
+    ],
+    "correct": [
+      "Servidores virtuais na nuvem"
+    ]
+  },
+  {
+    "id": "046",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Dos mecanismos de armazenamento a seguir, qual pode ser usado para armazenar mensagens de maneira eficiente através de sistemas distribuídos?",
+    "options": [
+      "Amazon Glacier",
+      "Amazon SQS",
+      "Amazon EBS Snapshots",
+      "Amazon EBS Volumes"
+    ],
+    "correct": [
+      "Amazon SQS"
+    ]
+  },
+  {
+    "id": "047",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Ao trabalhar com instâncias EC2 sob-demanda, quais fatores influenciam no custo das instâncias?",
+    "options": [
+      "Tipo da localização",
+      "Tipo da imagem",
+      "Localização de borda",
+      "Tipo da instância",
+      "Programas instalados"
+    ],
+    "correct": [
+      "Tipo da localização",
+      "Tipo da imagem",
+      "Tipo da instância"
+    ]
+  },
+  {
+    "id": "048",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Quais serviços ou ferramentas da AWS a seguir fornecem uma conexão das suas infraestruturas on-premise para os recursos hospedados na nuvem AWS?",
+    "options": [
+      "AWS VPN",
+      "AWS VPC",
+      "AWS Subnets",
+      "AWS Direct Connect"
+    ],
+    "correct": [
+      "AWS VPN",
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "id": "049",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Para prever os custos de migrar seus recursos on-premise para a nuvem AWS, qual serviço ou ferramenta você deve usar?",
+    "options": [
+      "Amazon Inspector",
+      "Calculadora de preços da AWS",
+      "AWS Trusted Advisor",
+      "AWS WAF"
+    ],
+    "correct": [
+      "Calculadora de preços da AWS"
+    ]
+  },
+  {
+    "id": "050",
+    "exam": "CLF-C02",
+    "type": "select",
+    "domain": "Segurança e conformidade",
+    "header": "____________ é um documento JSON que fornece uma declaração formal de uma ou mais permissões?",
+    "options": [
+      "Permissão",
+      "Função",
+      "Política",
+      "Recurso"
+    ],
+    "correct": [
+      "Política"
+    ]
+  },
+  {
+    "id": "051",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Qual recurso de segurança pode ser usado em uma sub-rede VPC para proteger contra tráfego de solicitações de entrada?",
+    "options": [
+      "Amazon Inspector",
+      "Listas de controle de acesso (NACL)",
+      "Grupos de segurança",
+      "Grupos de sub-rede"
+    ],
+    "correct": [
+      "Listas de controle de acesso (NACL)"
+    ]
+  },
+  {
+    "id": "052",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "A AWS fornece uma opção de armazenamento chamada Amazon S3 Glacier",
+    "options": [
+      "Dados arquivados",
+      "Amazenamento de banco de dados ativo",
+      "Dados acessados com pouca frequência",
+      "Dados de sessão em cache"
+    ],
+    "correct": [
+      "Dados arquivados",
+      "Dados acessados com pouca frequência"
+    ],
+    "body": "Para quais casos de uso esse serviço foi projetado? (Escolha dois)"
+  },
+  {
+    "id": "053",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual dos seguintes recursos está incluído em todos os planos do AWS Support?",
+    "options": [
+      "Acesso 24 horas por dia, 7 dias por semana ao Atendimento ao Cliente",
+      "Acesso a todos os recursos do Trusted Advisor",
+      "Uma pessoa de suporte dedicada",
+      "Um gerente de contas técnicas"
+    ],
+    "correct": [
+      "Acesso 24 horas por dia, 7 dias por semana ao Atendimento ao Cliente"
+    ]
+  },
+  {
+    "id": "054",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual serviço ou ferramenta da AWS permite que você crie um data warehouse na nuvem?",
+    "options": [
+      "AWS Snowball",
+      "Amazon Redshift",
+      "AWS EMR",
+      "Gateway de armazenamento da AWS"
+    ],
+    "correct": [
+      "Amazon Redshift"
+    ]
+  },
+  {
+    "id": "055",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Qual das seguintes identidades do IAM permite que um aplicativo implantado em uma instância EC2 grave dados no S3 de maneira segura?",
+    "options": [
+      "Usuários do AWS IAM",
+      "Funções do AWS IAM",
+      "Permissões do AWS IAM",
+      "Grupos do AWS IAM"
+    ],
+    "correct": [
+      "Funções do AWS IAM"
+    ]
+  },
+  {
+    "id": "056",
+    "exam": "CLF-C02",
+    "type": "truefalse",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Sobre as afirmações em relação ao custo de instâncias sob demanda na AWS, assinale verdadeiro ou falso",
+    "options": [
+      "Você deve pagar taxas de rescisão ao interromper ou encerrar a instância",
+      "Os descontos são aplicados automaticamente com base no uso",
+      "Você deve pagar os custos iniciais para Instâncias sob demanda",
+      "Você é cobrado pela capacidade de computação por hora ou segundo (com um mínimo de 60 segundos)",
+      "As instâncias sob demanda não têm compromissos de longo prazo"
+    ],
+    "correct": [
+      "false",
+      "true",
+      "false",
+      "true",
+      "true"
+    ],
+    "body": "NOTA: Cada seleção correta vale um ponto."
+  },
+  {
+    "id": "057",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Qual serviço ou ferramenta da AWS pode ajudar você com a otimização de custos?",
+    "options": [
+      "AWS Shield",
+      "AWS Trusted Advisor",
+      "AWS WAF",
+      "Amazon Inspector"
+    ],
+    "correct": [
+      "AWS Trusted Advisor"
+    ]
+  },
+  {
+    "id": "058",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual dos seguintes serviços de bancos de dados gerenciados pela AWS fornece poder de processamento até 5 vezes mais rápido que um banco de dados MySQL tradicional?",
+    "options": [
+      "MariaDB",
+      "Amazon Aurora",
+      "DynamoDB",
+      "PostgreSQL"
+    ],
+    "correct": [
+      "Amazon Aurora"
+    ]
+  },
+  {
+    "id": "059",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Quais dos atributos a seguir são considerados na cobrança do Amazon Simple Storage Service (S3)? Escolha 2",
+    "options": [
+      "O tamanho total em gigabytes de todos os objetos armazenados",
+      "A classe de armazenamento usada para os objetos armazenados",
+      "A utilização de criptografia no S3",
+      "O números de buckets do S3"
+    ],
+    "correct": [
+      "O tamanho total em gigabytes de todos os objetos armazenados",
+      "A classe de armazenamento usada para os objetos armazenados"
+    ]
+  },
+  {
+    "id": "060",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Você está executando uma aplicação web e quer melhorar os tempos de resposta para dados que são solicitados com frequência.",
+    "options": [
+      "Amazon Redshift",
+      "DynamoDB",
+      "Amazon S3",
+      "Amazon ElastiCache",
+      "Amazon Aurora"
+    ],
+    "correct": [
+      "Amazon ElastiCache"
+    ],
+    "body": "Qual serviço ou ferramenta da AWS você pode usar para melhorar o desempenho de dados acessados com frequência?"
+  },
+  {
+    "id": "061",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Uma empresa quer utilizar o armazenamento AWS. Para eles, o baixo custo de armazenamento é primordial, os dados são raramente acessados e algumas horas para recuperar os dados é um tempo aceitável para eles.",
+    "options": [
+      "AWS CloudFront",
+      "Amazon EBS Storage",
+      "Amazon S3",
+      "Amazon Glacier",
+      "Amazon Aurora"
+    ],
+    "correct": [
+      "Amazon Glacier"
+    ],
+    "body": "Qual é a melhor opção de armazenamento para essa empresa?"
+  },
+  {
+    "id": "062",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Você tem um aplicativo distribuído que processa regularmente grandes quantidades de dados em várias instâncias do Amazon EC2, pode se recuperar de interrupções sem muita dificuldade e não requer capacidade de computação dedicada e contínua.",
+    "options": [
+      "Instâncias reservadas",
+      "Instâncias sob-demanda",
+      "Instâncias spot",
+      "Instâncias dedicadas"
+    ],
+    "correct": [
+      "Instâncias spot"
+    ],
+    "body": "Qual é a maneira mais econômica de hospedar esse aplicativo na nuvem AWS?"
+  },
+  {
+    "id": "063",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Das alternativas a seguir, selecione as características do Amazon S3",
+    "options": [
+      "O S3 deve ser usado para armazenar um banco de dados relacional",
+      "O S3 permite que você armazene uma quantidade virtualmente ilimitada de dados",
+      "Os objetos são diretamente acessíveis por meio de uma URL",
+      "O S3 permite que você armazene objetos de tamanho praticamente ilimitado"
+    ],
+    "correct": [
+      "O S3 permite que você armazene uma quantidade virtualmente ilimitada de dados",
+      "Os objetos são diretamente acessíveis por meio de uma URL"
+    ]
+  },
+  {
+    "id": "064",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Você quer tirar um snapshot de uma instância EC2 e criar uma nova instância a partir dela. Na AWS, a que esse snapshot é equivalente?",
+    "options": [
+      "Amazon EBS Volumes",
+      "Amazon Machine Image (AMI)",
+      "Amazon EBS Snapshots",
+      "Amazon EC2 Snapshots"
+    ],
+    "correct": [
+      "Amazon Machine Image (AMI)"
+    ]
+  },
+  {
+    "id": "065",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Uma empresa quer padronizar a implantação de sua infraestrutura usando modelos predefinidos.",
+    "options": [
+      "AWS CloudFormation",
+      "Amazon SWF",
+      "Amazon EMR",
+      "AWS Elastic Beanstalk"
+    ],
+    "correct": [
+      "AWS CloudFormation"
+    ],
+    "body": "Qual serviço ou ferramenta da AWS é mais adequado para esse propósito?"
+  },
+  {
+    "id": "066",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Você quer monitorar a utilização da CPU de um recurso EC2 na AWS. Quais dos serviços abaixo podem ajudar nesse objetivo?",
+    "options": [
+      "Amazon CloudWatch",
+      "Amazon CloudTrail",
+      "AWS Trusted Advisor",
+      "Amazon Inspector"
+    ],
+    "correct": [
+      "Amazon CloudWatch"
+    ]
+  },
+  {
+    "id": "067",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Segurança e conformidade",
+    "header": "Na AWS, quais aspectos de segurança são de responsabilidade do cliente?",
+    "options": [
+      "Gerenciamento do ciclo de vida das credenciais do IAM",
+      "Criptografia de volumes do Amazon EBS",
+      "Segurança física dos recursos de computação",
+      "Configuração dos grupos de segurança e listas de controle de acesso",
+      "Descomissionamento de dispositivos de armazenamento",
+      "Nenhum",
+      "Gerenciamento de patches no sistema operacional da instância EC2"
+    ],
+    "correct": [
+      "Gerenciamento do ciclo de vida das credenciais do IAM",
+      "Criptografia de volumes do Amazon EBS",
+      "Configuração dos grupos de segurança e listas de controle de acesso",
+      "Gerenciamento de patches no sistema operacional da instância EC2"
+    ]
+  },
+  {
+    "id": "068",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual serviço ou ferramenta da AWS permite que você crie uma seção privada e isolada da nuvem onde você pode configurar seu próprio intervalo de endereços IP, sub-redes, tabelas de rodas e gateways de rede para seus recursos da AWS?",
+    "options": [
+      "Sub-redes da AWS",
+      "AWS VPC",
+      "Zonas de disponibilidade da AWS",
+      "Regiões da AWS"
+    ],
+    "correct": [
+      "AWS VPC"
+    ]
+  },
+  {
+    "id": "069",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Quais são os quatro níveis de suporte premium da AWS?",
+    "options": [
+      "Básico, Starter, Business, Empresarial",
+      "Desenvolvedor, Business, Enterprise On-Ramp, Enterprise",
+      "Desenvolvedor, Business, Free, Básico",
+      "Todos os níveis de suporte são gratuitos"
+    ],
+    "correct": [
+      "Desenvolvedor, Business, Enterprise On-Ramp, Enterprise"
+    ]
+  },
+  {
+    "id": "070",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Quais das opções abaixo correspondem aos benefícios do Amazon Relational Database Service (RDS)?",
+    "options": [
+      "Você pode dimensionar a capacidade de acordo com suas necessidades",
+      "Patches e backups automatizados",
+      "Recursos integrados de aprendizado de máquina",
+      "Permite o armazenamento de dados NoSQL"
+    ],
+    "correct": [
+      "Você pode dimensionar a capacidade de acordo com suas necessidades",
+      "Patches e backups automatizados"
+    ]
+  },
+  {
+    "id": "071",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual serviço da AWS usa Localizações de borda para armazenamento de cache de conteúdo?",
+    "options": [
+      "AWS CloudFront",
+      "Amazon Inspector",
+      "Amazon SQS",
+      "AWS CloudFormation",
+      "Amazon ElastiCache"
+    ],
+    "correct": [
+      "AWS CloudFront"
+    ]
+  },
+  {
+    "id": "072",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Qual das opções a seguir é uma prática recomendada ao trabalhar com permissões na AWS?",
+    "options": [
+      "Usar as credenciais da conta root",
+      "Garantir que o acesso com menor privilégio seja usado",
+      "Garantir que o acesso com privilégios mais altos seja usado",
+      "Não usar usuários e grupos do IAM"
+    ],
+    "correct": [
+      "Garantir que o acesso com menor privilégio seja usado"
+    ]
+  },
+  {
+    "id": "073",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual dos seguintes serviços da AWS aumenta ou diminui automaticamente o número de recursos (como EC2 ou ECS) em execução em um grupo com base na demanda?",
+    "options": [
+      "Amazon EC2",
+      "Amazon Inspector",
+      "Dimensionamento automático da AWS",
+      "AWS Elastic Load Balancer"
+    ],
+    "correct": [
+      "Dimensionamento automático da AWS"
+    ]
+  },
+  {
+    "id": "074",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "O que atua como um firewall que controla o tráfego de entrada e saída a nível de um recurso?",
+    "options": [
+      "Grupos de segurança",
+      "Listas de controle de acesso (NACL)",
+      "AWS Elastic Load Balancer",
+      "IAM"
+    ],
+    "correct": [
+      "Grupos de segurança"
+    ]
+  },
+  {
+    "id": "075",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual serviço ou ferramenta da AWS fornece um banco de dados NoSQL totalmente gerenciado que proporciona desempenho rápido, previsível e escalável?",
+    "options": [
+      "Amazon RDS",
+      "Oracle RDS",
+      "DynamoDB",
+      "Amazon Aurora",
+      "Elastic Map Reduce"
+    ],
+    "correct": [
+      "DynamoDB"
+    ]
   }
 ]
