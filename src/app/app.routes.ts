@@ -6,6 +6,5 @@ export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'simulados', loadChildren: () => import('./simulados/simulados.module').then(m => m.SimuladosModule) },
-    { path: 'playground', loadChildren: () => import('./playground/playground.module').then(m => m.PlaygroundModule) },
     { path: '**', component: NotFoundPageComponent}
    ];
