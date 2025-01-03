@@ -1251,5 +1251,263 @@
     "correct": [
       "DynamoDB"
     ]
+  },
+  {
+    "id": "076",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Uma empresa tem um servidor Linux on-premise com um banco de dados Oracle. A empresa quer migrar o servidor de banco de dados para rodar em uma instância do Amazon EC2 na AWS.",
+    "options": [
+      "Serviço de migração de banco de dados AWS (AWS DMS)",
+      "Serviço de migração de aplicativos da AWS (AWS MGN)",
+      "Hub de migração da AWS",
+      "Serviço de descoberta de aplicativos da AWS"
+    ],
+    "correct": [
+      "Serviço de migração de aplicativos da AWS (AWS MGN)"
+    ],
+    "body": "Qual serviço ou ferramenta da AWS a empresa deve usar para concluir a migração?"
+  },
+  {
+    "id": "077",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Uma empresa está movendo todas as suas atividades de desenvolvimento para a AWS. A empresa quer uma solução para armazenar e gerenciar o código-fonte de seus desenvolvedores",
+    "options": [
+      "AWS CodeArtifact",
+      "AWS CodeBuild",
+      "AWS CodeCommit",
+      "AWS CodePipeline"
+    ],
+    "correct": [
+      "AWS CodeCommit"
+    ],
+    "body": "Qual serviço de codificação da AWS atenderá a esse requisito?"
+  },
+  {
+    "id": "078",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Quais são as vantagens de implantar um aplicativo com instâncias do Amazon EC2 em várias Zonas de Disponibilidade?",
+    "options": [
+      "Prevenção de um único ponto de falha",
+      "Redução de custos operacionais da aplicação",
+      "Permitir que o aplicativo atenda usuários de várias regiões com baixa latência",
+      "Aumento da disponibilidade do aplicativo",
+      "Aumento da carga da aplicação"
+    ],
+    "correct": [
+      "Prevenção de um único ponto de falha",
+      "Aumento da disponibilidade do aplicativo"
+    ]
+  },
+  {
+    "id": "079",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Uma empresa requer uma conexão criptografada entre os servidores locais da empresa e a AWS. A conexão deve usar a conexão de internet existente da empresa.",
+    "options": [
+      "AWS Direct Connect",
+      "Amazon Connect",
+      "AWS CloudFront",
+      "AWS VPN Site-to-Site"
+    ],
+    "correct": [
+      "AWS VPN Site-to-Site"
+    ],
+    "body": "Qual solução atenderá a esses requisitos?"
+  },
+  {
+    "id": "080",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Um usuário precisa descobrir, classificar e proteger automaticamente dados confidenciais armazenados no Amazon S3",
+    "options": [
+      "Amazon Inspector",
+      "Amazon Macie",
+      "Amazon GuardDuty",
+      "Gerenciador de segredos da AWS"
+    ],
+    "correct": [
+      "Amazon Macie"
+    ],
+    "body": "Qual serviço ou ferramenta da AWS pode atender a esses requisitos?"
+  },
+  {
+    "id": "081",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Quais das funcionalidades são características do Amazon S3?",
+    "options": [
+      "Sistema de arquivos global",
+      "Armazenamento de objetos",
+      "Armazenamento de arquivos local",
+      "Sistema de arquivos de rede",
+      "Sistema de armazenamento durável"
+    ],
+    "correct": [
+      "Armazenamento de objetos",
+      "Sistema de armazenamento durável"
+    ]
+  },
+  {
+    "id": "082",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Segurança e conformidade",
+    "header": "Quais componentes de credenciais são necessários para obter acesso programático a uma conta da AWS?",
+    "options": [
+      "Um ID de chave de acesso",
+      "Uma chave primaria",
+      "Uma chave de acesso secreta",
+      "Um ID de usuário",
+      "Uma chave secundária"
+    ],
+    "correct": [
+      "Um ID de chave de acesso",
+      "Uma chave de acesso secreta"
+    ]
+  },
+  {
+    "id": "083",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Preços, cobrança e suporte",
+    "header": "Qual é o plano de suporte MÍNIMO da AWS que fornece suporte técnico através de chamadas telefônicas?",
+    "options": [
+      "Desenvolvedor",
+      "Business",
+      "Enterprise",
+      "Básico"
+    ],
+    "correct": [
+      "Business"
+    ]
+  },
+  {
+    "id": "084",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "O que você deve fazer para aumentar a segurança da conta root na AWS?",
+    "options": [
+      "Remover as permissões da conta root",
+      "Habilitar Autenticação Multifator (MFA)",
+      "Usar a AWS apenas pela interface de linha de comando (CLI)",
+      "Excluir a conta root"
+    ],
+    "correct": [
+      "Habilitar Autenticação Multifator (MFA)"
+    ]
+  },
+  {
+    "id": "085",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Uma empresa planeja usar o dispositivo do Amazon Snowball Edge para transferir arquivos para a nuvem AWS.",
+    "options": [
+      "Uso do aparelho Snowball Edge por um período de 10 dias",
+      "A transferência de dados do Amazon S3 para o dispositivo Snowball Edge",
+      "A transferência de dados do dispositivo Snowball Edge para o Amazon S3",
+      "Uso diário do aparelho Snowball Edge após 10 dias"
+    ],
+    "correct": [
+      "A transferência de dados do dispositivo Snowball Edge para o Amazon S3"
+    ],
+    "body": "Qual atividade relacionada ao dispositivo Snowball Edge são disponível para a empresa sem nenhum custo?"
+  },
+  {
+    "id": "086",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Um usuário precisa de acesso programático aos recursos da AWS por meio da AWS CLI ou da AWS API",
+    "options": [
+      "Amazon Inspector",
+      "Chaves de acesso",
+      "Chaves públicas SSH",
+      "Chaves do AWS Key Management Service"
+    ],
+    "correct": [
+      "Chaves de acesso"
+    ],
+    "body": "Qual opção fornece ao usuário o acesso apropriado?"
+  },
+  {
+    "id": "087",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Conceitos de nuvem",
+    "header": "O que significa o conceito de agilidade na computação em nuvem na AWS? (Escolha duas)",
+    "options": [
+      "A velocidade com que os recursos da AWS são implementados",
+      "A velocidade com que novas regiões são criadas na AWS",
+      "A capacidade de experimentar rapidamente",
+      "A eliminação da capacidade desperdiçada",
+      "O baixo custo de entrada na computação em nuvem"
+    ],
+    "correct": [
+      "A velocidade com que os recursos da AWS são implementados",
+      "A capacidade de experimentar rapidamente"
+    ]
+  },
+  {
+    "id": "088",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Uma empresa precisa bloquear ataques de SQL Injection",
+    "options": [
+      "AWS Shield",
+      "AWS WAF",
+      "Listas de controle de acesso (NACL)",
+      "Grupos de segurança"
+    ],
+    "correct": [
+      "AWS WAF"
+    ],
+    "body": "Qual serviço ou recurso da AWS pode atender esse requisito?"
+  },
+  {
+    "id": "089",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Um profissional de nuvem precisa obter relatórios de conformidade da AWS antes de migrar um ambiente para a Nuvem AWS",
+    "options": [
+      "Entrando em contato com a equipe de conformidade da AWS",
+      "Baixando relatórios do AWS Artifact",
+      "Abrindo um chamado de suporte da AWS",
+      "Gerando os relatórios com o Amazon Macie"
+    ],
+    "correct": [
+      "Baixando relatórios do AWS Artifact"
+    ],
+    "body": "Como esses relatórios podem ser obtidos?"
+  },
+  {
+    "id": "090",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Conceitos de nuvem",
+    "header": "O que significa o conceito de elasticidade na computação em nuvem na AWS? (Escolha duas)",
+    "options": [
+      "O quão rápido uma instância do Amazon EC2 pode ser reiniciada",
+      "A capacidade de dimensionar corretamente os recursos conforme a demanda muda",
+      "A quantidade máxima de RAM que uma instância do Amazon EC2 pode usar",
+      "O modelo de faturamento do tipo 'pague conforme o uso'",
+      "O quão facilmente os recursos podem ser obtidos quando são necessários"
+    ],
+    "correct": [
+      "A capacidade de dimensionar corretamente os recursos conforme a demanda muda",
+      "O quão facilmente os recursos podem ser obtidos quando são necessários"
+    ]
   }
 ]
