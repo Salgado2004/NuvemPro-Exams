@@ -73,4 +73,9 @@ nav .star{
     .simulados{
         padding: 12px;
     }
+
+    nav{
+        justify-content:flex-start;
+        gap: 6px;
+    }
 }
