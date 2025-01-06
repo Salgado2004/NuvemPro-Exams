@@ -1509,5 +1509,93 @@
       "A capacidade de dimensionar corretamente os recursos conforme a demanda muda",
       "O quão facilmente os recursos podem ser obtidos quando são necessários"
     ]
+  },
+  {
+    "id": "091",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Quais dos elementos a seguir estão contidos em uma política do AWS Identity and Access Management (IAM)?",
+    "options": [
+      "Efeito",
+      "Acão",
+      "Objeto",
+      "Causa",
+      "Recurso",
+      "Imagem"
+    ],
+    "correct": [
+      "Efeito",
+      "Acão",
+      "Recurso"
+    ]
+  },
+  {
+    "id": "092",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Usuários em uma empresa são autenticados na rede corporativa e querem usar os serviços da AWS sem fazer login novamente.",
+    "options": [
+      "Usuário root da AWS",
+      "Funções do AWS IAM",
+      "Usuários do AWS IAM",
+      "Grupos do AWS IAM"
+    ],
+    "correct": [
+      "Funções do AWS IAM"
+    ],
+    "body": "Qual opção de autenticação da AWS a empresa deve usar?"
+  },
+  {
+    "id": "093",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Segurança e conformidade",
+    "header": "Qual serviço ou ferramenta da AWS permite aos usuários auditar chamadas de API em suas contas?",
+    "options": [
+      "Amazon Inspector",
+      "Amazon CloudTrail",
+      "AWS Trusted Advisor",
+      "AWS X-Ray"
+    ],
+    "correct": [
+      "Amazon CloudTrail"
+    ]
+  },
+  {
+    "id": "094",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Qual é a responsabilidade do usuário ao usar o AWS Lambda, de acordo com o Modelo de responsabilidade compartilhada da AWS?",
+    "options": [
+      "Gerenciar o código da função Lambda",
+      "Confirmar se o hardware está funcionando no datacenter",
+      "Atualizar o sistema operacional",
+      "Encerrar a função Lambda quando ela não estiver em uso"
+    ],
+    "correct": [
+      "Gerenciar o código da função Lambda"
+    ]
+  },
+  {
+    "id": "095",
+    "exam": "CLF-C02",
+    "type": "multiple",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Uma empresa pretende providenciar desktops virtuais gerenciados do Windows e applicações para seus funcionários remotos através de conexões de rede seguras.",
+    "options": [
+      "Amazon Connect",
+      "Amazon AppStream 2.0",
+      "Amazon WorkSpaces",
+      "AWS VPN Site-to-Site",
+      "Amazon Elastic Container Service (ECS)"
+    ],
+    "correct": [
+      "Amazon AppStream 2.0",
+      "Amazon WorkSpaces"
+    ],
+    "body": "Quais serviços ou ferramentas da AWS podem ser usados para atingir esses objetivos?"
   }
 ]

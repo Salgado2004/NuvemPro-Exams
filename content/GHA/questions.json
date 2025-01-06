@@ -1,0 +1,16 @@
+{
+    "id": "001",
+    "exam": "GHA",
+    "type": "select",
+    "domain": "",
+    "header": "Jobs que executam em runners MacOS hospedados pelo GitHub consomem minutos em uma taxa _____ em relação a runners Linux",
+    "options": [
+      "1x",
+      "2x",
+      "5x",
+      "10x"
+    ],
+    "correct": [
+      "10x"
+    ]
+  }
