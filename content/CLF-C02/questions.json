@@ -1597,5 +1597,38 @@
       "Amazon WorkSpaces"
     ],
     "body": "Quais serviços ou ferramentas da AWS podem ser usados para atingir esses objetivos?"
+  },
+  {
+    "id": "096",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Conceitos de nuvem",
+    "header": "Um administrador de sistemas está revisando um grupo de servidores que foram encontrados durante uma descoberta de portfólio. Todos os servidores estão migrando para a AWS. Atualmente, os servidores não têm um dono e recebem muito pouco tráfego.",
+    "options": [
+      "Rehost",
+      "Replatform",
+      "Retain",
+      "Retire"
+    ],
+    "correct": [
+      "Retire"
+    ],
+    "body": "Qual estratégia de migração o administrador de sistemas deve sugerir para os servidores?"
+  },
+  {
+    "id": "097",
+    "exam": "CLF-C02",
+    "type": "options",
+    "domain": "Tecnologia em Nuvem e Serviços",
+    "header": "Qual aspecto da infraestrutura da AWS fornece implantação global de computação e armazenamento?",
+    "options": [
+      "Múltiplas zonas de disponibilidade em uma região da AWS",
+      "Múltiplas regiões da AWS",
+      "Tags de recursos",
+      "Grupos de recursos"
+    ],
+    "correct": [
+      "Múltiplas regiões da AWS"
+    ]
   }
 ]
