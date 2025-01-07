@@ -2,7 +2,7 @@
     "id": "001",
     "exam": "GHA",
     "type": "select",
-    "domain": "",
+    "domain": "Consumir workflows",
     "header": "Jobs que executam em runners MacOS hospedados pelo GitHub consomem minutos em uma taxa _____ em relação a runners Linux",
     "options": [
       "1x",
