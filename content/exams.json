@@ -197,7 +197,7 @@
     "name": "GHC",
     "fullname": "GitHub Copilot",
     "provider": "GitHub",
-    "questions": 9,
+    "questions": 30,
     "image": "assets/badges/GHC-badge.png",
     "domains": [
       {

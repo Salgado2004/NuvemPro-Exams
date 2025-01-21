@@ -138,13 +138,367 @@
     "domain": "Planos e recursos do GitHub Copilot",
     "header": "Quais são os planos de assinatura disponíveis para o GitHub Copilot?",
     "options": [
-        "GitHub Copilot Free, Pro e Team",
-        "GitHub Copilot Pessoal, Business e Enterprise",
-        "GitHub Copilot Iniciante, Profissional e Enterprise",
-        "GitHub Copilot Individual, Business e Enterprise"
+      "GitHub Copilot Free, Pro e Team",
+      "GitHub Copilot Pessoal, Business e Enterprise",
+      "GitHub Copilot Iniciante, Profissional e Enterprise",
+      "GitHub Copilot Individual, Business e Enterprise"
     ],
     "correct": [
-        "GitHub Copilot Individual, Business e Enterprise"
+      "GitHub Copilot Individual, Business e Enterprise"
     ]
+  },
+  {
+    "id": "010",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "IA responsável",
+    "header": "Qual é uma das limitações do uso de ferramentas de IA generativa, como o GitHub Copilot?",
+    "options": [
+      "Elas sempre produzem código perfeito",
+      "Elas podem replicar vieses presentes nos dados de treinamento",
+      "Elas não precisam de validação humana",
+      "Elas são capazes de entender completamente o contexto do código."
+    ],
+    "correct": [
+      "Elas podem replicar vieses presentes nos dados de treinamento"
+    ]
+  },
+  {
+    "id": "011",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Planos e recursos do GitHub Copilot",
+    "header": "Qual das seguintes opções descreve corretamente o GitHub Copilot Individual?",
+    "options": [
+      "Inclui recursos de gerenciamento de políticas organizacionais",
+      "É indicado para programadores solo ou projetos pessoais",
+      "Oferece logs de auditoria organizacionais",
+      "Permite a integração com GitHub Enterprise"
+    ],
+    "correct": [
+      "É indicado para programadores solo ou projetos pessoais"
+    ]
+  },
+  {
+    "id": "012",
+    "exam": "GHC",
+    "type": "multiple",
+    "domain": "Planos e recursos do GitHub Copilot",
+    "header": "Quais são os principais benefícios do uso de Knowledge Bases no GitHub Copilot Enterprise?",
+    "options": [
+      "Melhorar a qualidade do código",
+      "Eliminar a necessidade de revisar código",
+      "Aumentar a cobertura de código do projeto",
+      "Aumentar a consistência do código",
+      "Melhorar a eficiência do desenvolvimento",
+      "Substituir a necessidade de fornecer contexto"
+    ],
+    "correct": [
+      "Melhorar a qualidade do código",
+      "Aumentar a consistência do código",
+      "Melhorar a eficiência do desenvolvimento"
+    ]
+  },
+  {
+    "id": "013",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Como o GitHub Copilot funciona e lida com os dados",
+    "header": "Como o GitHub Copilot lida com dados de sugestões de código no editor de código?",
+    "options": [
+      "Retém os prompts para treinamento futuro",
+      "Descarta os prompts após a resposta",
+      "Armazena os prompts por 28 dias",
+      "Usa os prompts para melhorar a produtividade do usuário"
+    ],
+    "correct": [
+      "Descarta os prompts após a resposta"
+    ]
+  },
+  {
+    "id": "014",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Fundamentos de privacidade e exclusão de contexto",
+    "header": "Qual é a função do filtro de detecção de duplicação no GitHub Copilot?",
+    "options": [
+      "Melhorar a qualidade do código gerado",
+      "Evitar a geração de código que corresponda a código público disponível no GitHub.com",
+      "Aumentar a velocidade das sugestões de código",
+      "Permitir a coleta de dados para melhorias do produto"
+    ],
+    "correct": [
+      "Evitar a geração de código que corresponda a código público disponível no GitHub.com"
+    ]
+  },
+  {
+    "id": "015",
+    "exam": "GHC",
+    "type": "multiple",
+    "domain": "Criação de prompt e Engenharia de Prompt",
+    "header": "Quais são as práticas recomendadas para a criação de prompts ao usar o GitHub Copilot?",
+    "options": [
+      "Fornecer informações úteis e exemplos claros",
+      "Usar linguagem ambígua para maior flexibilidade",
+      "Iterar diálogos com o Copilot para ajustar os prompts",
+      "Evitar especificações detalhadas"
+    ],
+    "correct": [
+      "Fornecer informações úteis e exemplos claros",
+      "Iterar diálogos com o Copilot para ajustar os prompts"
+    ]
+  },
+  {
+    "id": "016",
+    "exam": "GHC",
+    "type": "multiple",
+    "domain": "Planos e recursos do GitHub Copilot",
+    "header": "Quais são os recursos disponíveis no GitHub Copilot Individual?",
+    "options": [
+      "Conclusão de código em IDEs",
+      "Chat do Copilot em IDEs, GitHub Mobile, GitHub e Windows Terminal",
+      "Copilot no CLI",
+      "Logs de auditoria organizacionais"
+    ],
+    "correct": [
+      "Conclusão de código em IDEs",
+      "Chat do Copilot em IDEs, GitHub Mobile, GitHub e Windows Terminal",
+      "Copilot no CLI"
+    ]
+  },
+  {
+    "id": "017",
+    "exam": "GHC",
+    "type": "multiple",
+    "domain": "Criação de prompt e Engenharia de Prompt",
+    "header": "Quais são alguns dos princípios da Engenharia de Prompt?",
+    "options": [
+      "Focar em uma única tarefa bem definida",
+      "Garantir que as instruções sejam detalhadas e explícitas",
+      "Escrever instruções longas e complexas",
+      "Fornecer contexto rico para a IA"
+    ],
+    "correct": [
+      "Focar em uma única tarefa bem definida",
+      "Garantir que as instruções sejam detalhadas e explícitas",
+      "Fornecer contexto rico para a IA"
+    ]
+  },
+  {
+    "id": "018",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Fundamentos de privacidade e exclusão de contexto",
+    "header": "Como você pode excluir arquivos específicos do GitHub Copilot em um repositório?",
+    "options": [
+      "Editando o arquivo .gitignore",
+      "Configurando as exclusões no arquivo de configuração do Copilot",
+      "Navegando até as configurações do repositório no GitHub e adicionando os caminhos a serem excluídos",
+      "Usando um comando no terminal"
+    ],
+    "correct": [
+      "Navegando até as configurações do repositório no GitHub e adicionando os caminhos a serem excluídos"
+    ]
+  },
+  {
+    "id": "019",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Como o GitHub Copilot funciona e lida com os dados",
+    "header": "Qual a função do serviço proxy no GitHub Copilot?",
+    "options": [
+      "Filtrar linguagem tóxica e perguntas irrelevantes",
+      "Armazenar todos os prompts e respostas",
+      "Melhorar a velocidade das respostas",
+      "Compartilhar dados com terceiros"
+    ],
+    "correct": [
+      "Filtrar linguagem tóxica e perguntas irrelevantes"
+    ]
+  },
+  {
+    "id": "020",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Criação de prompt e Engenharia de Prompt",
+    "header": "Qual das seguintes estratégias de prompt é mais detalhada e fornece exemplos de entrada e saída?",
+    "options": [
+      "Zero-shot",
+      "Few-shot",
+      "Multi-shot",
+      "One-shot"
+    ],
+    "correct": [
+      "Few-shot"
+    ]
+  },
+  {
+    "id": "021",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Casos de uso de IA para desenvolvedores",
+    "header": "Como o GitHub Copilot pode ajudar na fase de testes e garantia de qualidade SDLC?",
+    "options": [
+      "Gerando testes unitários para funções no código",
+      "Escrevendo documentação do projeto",
+      "Acelerando a análise de requisitos",
+      "Melhorando a interface do usuário"
+    ],
+    "correct": [
+      "Gerando testes unitários para funções no código"
+    ]
+  },
+  {
+    "id": "022",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Casos de uso de IA para desenvolvedores",
+    "header": "Qual das seguintes opções é uma limitação do Copilot?",
+    "options": [
+      "Sempre gera código perfeito e sem erros",
+      "Pode gerar código com práticas de segurança desatualizadas",
+      "Não pode ser usado em projetos de código aberto",
+      "Não oferece sugestões de código em tempo real"
+    ],
+    "correct": [
+      "Pode gerar código com práticas de segurança desatualizadas"
+    ]
+  },
+  {
+    "id": "023",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Testes com GitHub Copilot",
+    "header": "Como o GitHub Copilot pode ajudar a melhorar a eficiência dos testes existentes?",
+    "options": [
+      "Analisando os testes e sugerindo melhorias",
+      "Removendo testes desnecessários",
+      "Ignorando os testes existentes",
+      "Substituindo todos os testes por novos"
+    ],
+    "correct": [
+      "Analisando os testes e sugerindo melhorias"
+    ]
+  },
+  {
+    "id": "024",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Planos e recursos do GitHub Copilot",
+    "header": "Como você pode compartilhar feedback sobre o GitHub Copilot Chat?",
+    "options": [
+      "Enviando um e-mail para o suporte do GitHub",
+      "Clicando em 👍 ou 👎 na parte inferior de cada resposta",
+      "Postando em fóruns públicos",
+      "Usando um comando no terminal"
+    ],
+    "correct": [
+      "Clicando em 👍 ou 👎 na parte inferior de cada resposta"
+    ]
+  },
+  {
+    "id": "025",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Planos e recursos do GitHub Copilot",
+    "header": "Qual é a principal diferença entre o GitHub Copilot Individual e o GitHub Copilot Business?",
+    "options": [
+      "O Copilot Business oferece gerenciamento de políticas organizacionais",
+      "O Copilot Individual permite exclusões de arquivos",
+      "O Copilot Business não oferece chat integrado",
+      "O Copilot Individual tem suporte para múltiplos usuários"
+    ],
+    "correct": [
+      "O Copilot Business oferece gerenciamento de políticas organizacionais"
+    ]
+  },
+  {
+    "id": "026",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Planos e recursos do GitHub Copilot",
+    "header": "Qual comando é usado para instalar a extensão do GitHub Copilot no CLI?",
+    "options": [
+      "gh extension install github/gh-copilot",
+      "gh copilot install",
+      "gh copilot setup",
+      "gh extension add copilot"
+    ],
+    "correct": [
+      "gh extension install github/gh-copilot"
+    ]
+  },
+  {
+    "id": "027",
+    "exam": "GHC",
+    "type": "options",
+    "domain": "Planos e recursos do GitHub Copilot",
+    "header": "Qual o propósito dos logs de auditoria na versão Business do GitHub Copilot?",
+    "options": [
+      "Monitorar o uso do Copilot na organização",
+      "Melhorar a qualidade do código gerado",
+      "Excluir arquivos específicos do Copilot",
+      "Configurar modelos personalizados"
+    ],
+    "correct": [
+      "Monitorar o uso do Copilot na organização"
+    ]
+  },
+  {
+    "id": "028",
+    "exam": "GHC",
+    "type": "multiple",
+    "domain": "Planos e recursos do GitHub Copilot",
+    "header": "Quais são os comandos comuns ao usar o GitHub Copilot no CLI",
+    "options": [
+      "gh copilot explain",
+      "gh copilot suggest",
+      "gh copilot config",
+      "gh copilot deploy"
+    ],
+    "correct": [
+      "gh copilot explain",
+      "gh copilot suggest"
+    ]
+  },
+  {
+    "id": "029",
+    "exam": "GHC",
+    "type": "truefalse",
+    "domain": "IA responsável",
+    "header": "Sobre o uso responsável de IA",
+    "options": [
+      "A IA deve ser usada sem considerar suas limitações",
+      "É importante revisar o código gerado pela IA",
+      "A IA pode introduzir vieses no código",
+      "A IA sempre gera código seguro"
+    ],
+    "correct": [
+      "false",
+      "true",
+      "true",
+      "false"
+    ],
+    "body": "Para cada alteranativa, assinale verdadeiro ou falso"
+  },
+  {
+    "id": "030",
+    "exam": "GHC",
+    "type": "truefalse",
+    "domain": "Como o GitHub Copilot funciona e lida com os dados",
+    "header": "Sobre o GitHub Copilot Chat",
+    "options": [
+        "Ele pode usar o código do repositório como contexto",
+        "Ele não pode ser usado para gerar testes",
+        "Ele retém histórico de conversas por 28 dias",
+        "Ele não pode fornecer sugestões de código"
+    ],
+    "correct": [
+        "true",
+        "false",
+        "true",
+        "false"
+    ],
+    "body":"Para cada alteranativa, assinale verdadeiro ou falso"
   }
 ]
