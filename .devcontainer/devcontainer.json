@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "Node.js & TypeScript",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
+
+	"forwardPorts": [
+		3000,
+		4200
+	],
+
+	"postCreateCommand": "npm install",
+	"postStartCommand": "npm run start; npm run mock-server",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"enkia.tokyo-night",
+				"pkief.material-icon-theme",
+                "github.copilot",
+                "github.copilot-chat",
+				"angular.ng-template"
+			]
+		}
+	}
+}

@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "mock-server": "node ./dev-server/index.js"
   },
   "private": true,
   "dependencies": {
