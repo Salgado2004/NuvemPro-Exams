@@ -10,7 +10,6 @@
 	],
 
 	"postCreateCommand": "npm install",
-	"postStartCommand": "npm run start; npm run mock-server",
 
 	"customizations": {
 		"vscode": {
