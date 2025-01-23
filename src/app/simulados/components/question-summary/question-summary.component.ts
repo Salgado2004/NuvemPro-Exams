@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { QuestionSummary } from '../../utils/question-summary';
+import { QuestionSummary } from '../../utils/model/question-summary';
 
 @Component({
   selector: 'app-question-summary',

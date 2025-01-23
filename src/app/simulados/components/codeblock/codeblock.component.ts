@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import { QueryCodeService } from '../../utils/query-code.service';
+import { QueryCodeService } from '../../utils/service/query-code.service';
 
 @Component({
   selector: 'codeblock',

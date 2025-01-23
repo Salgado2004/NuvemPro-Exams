@@ -1,10 +1,10 @@
 import { ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { QuestionStructure } from '../questoes/question-structure'
-import { QuestionInterface } from '../../utils/question-interface';
+import { QuestionInterface } from '../../utils/model/question-interface';
 import { Component, Input, ViewChild, inject } from '@angular/core';
-import { SimuladoEventsService } from '../../utils/simulado-events.service';
-import { DinamicLoaderDirective } from '../../utils/dinamic-loader.directive';
+import { SimuladoEventsService } from '../../utils/service/simulado-events.service';
+import { DinamicLoaderDirective } from '../../utils/directive/dinamic-loader.directive';
 import { SelectQuestionComponent } from '../questoes/select-question/select-question.component';
 import { OptionsQuestionComponent } from '../questoes/options-question/options-question.component';
 import { MultipleQuestionComponent } from '../questoes/multiple-question/multiple-question.component';

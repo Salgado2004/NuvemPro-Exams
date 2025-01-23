@@ -30,12 +30,12 @@ import { DragDropQuestionComponent } from './components/questoes/drag-drop-quest
 import { TrueFalseQuestionComponent } from './components/questoes/true-false-question/true-false-question.component';
 
 /* Utils */
-import { SummaryPipe } from './utils/summary.pipe';
-import { FilterLabelPipe } from './utils/filter-label.pipe';
-import { QueryCodeService } from './utils/query-code.service';
-import { QueryExamsService } from './utils/query-exams.service';
-import { QueryQuestionsService } from './utils/query-questions.service';
-import { DinamicLoaderDirective } from './utils/dinamic-loader.directive';
+import { SummaryPipe } from './utils/pipe/summary.pipe';
+import { FilterLabelPipe } from './utils/pipe/filter-label.pipe';
+import { QueryCodeService } from './utils/service/query-code.service';
+import { QueryExamsService } from './utils/service/query-exams.service';
+import { QueryQuestionsService } from './utils/service/query-questions.service';
+import { DinamicLoaderDirective } from './utils/directive/dinamic-loader.directive';
 
 @NgModule({
   declarations: [

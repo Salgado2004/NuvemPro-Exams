@@ -1,7 +1,7 @@
 
-import { QuestionSummary } from "../../utils/question-summary";
-import { QuestionInterface } from "../../utils/question-interface";
-import { SimuladoEventsService } from '../../utils/simulado-events.service';
+import { QuestionSummary } from "../../utils/model/question-summary";
+import { QuestionInterface } from "../../utils/model/question-interface";
+import { SimuladoEventsService } from '../../utils/service/simulado-events.service';
 
 export abstract class QuestionStructure {
     id: string;

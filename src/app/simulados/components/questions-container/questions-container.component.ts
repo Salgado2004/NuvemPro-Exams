@@ -1,10 +1,10 @@
 import { Component, Input, ViewChild } from '@angular/core';
-import { QueryQuestionsService } from '../../utils/query-questions.service';
-import { SimuladoEventsService } from '../../utils/simulado-events.service';
+import { QueryQuestionsService } from '../../utils/service/query-questions.service';
+import { SimuladoEventsService } from '../../utils/service/simulado-events.service';
 import { QuestionCardComponent } from '../question-card/question-card.component';
-import { Simulado } from '../../utils/simulado';
-import { QuestionInterface } from '../../utils/question-interface';
-import { QuestionSummary } from '../../utils/question-summary';
+import { Simulado } from '../../utils/model/simulado';
+import { QuestionInterface } from '../../utils/model/question-interface';
+import { QuestionSummary } from '../../utils/model/question-summary';
 
 @Component({
   selector: 'app-questions-container',

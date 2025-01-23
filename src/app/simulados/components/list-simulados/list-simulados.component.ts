@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Simulado } from '../../utils/simulado';
-import { QueryExamsService } from '../../utils/query-exams.service';
+import { Simulado } from '../../utils/model/simulado';
+import { QueryExamsService } from '../../utils/service/query-exams.service';
 
 @Component({
   selector: 'app-list-simulados',
