@@ -1,4 +1,4 @@
-import { QuestionStructure } from "../components/questoes/question-structure";
+import { QuestionStructure } from "../../components/questions/question-structure";
 
 export class QuestionSummary {
     header: string;

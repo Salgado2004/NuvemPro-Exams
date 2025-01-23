@@ -1,8 +1,8 @@
 import { lastValueFrom } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { QuestionInterface } from './question-interface';
-import { environment } from '../../../environments/environment';
+import { QuestionInterface } from '../model/question-interface';
+import { environment } from '../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'

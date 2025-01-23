@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { QuestionSummary } from '../../utils/question-summary';
-import { Simulado } from '../../utils/simulado';
+import { QuestionSummary } from '../../utils/model/question-summary';
+import { Simulado } from '../../utils/model/simulado';
 
 @Component({
   selector: 'app-exam-summary',
