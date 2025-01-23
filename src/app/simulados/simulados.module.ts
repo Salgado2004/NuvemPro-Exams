@@ -23,11 +23,13 @@ import { QuestionSummaryComponent } from './components/question-summary/question
 import { QuestionsContainerComponent } from './components/questions-container/questions-container.component';
 
 /* Questões */
-import { SelectQuestionComponent } from './components/questoes/select-question/select-question.component';
-import { OptionsQuestionComponent } from './components/questoes/options-question/options-question.component';
-import { MultipleQuestionComponent } from './components/questoes/multiple-question/multiple-question.component';
-import { DragDropQuestionComponent } from './components/questoes/drag-drop-question/drag-drop-question.component';
-import { TrueFalseQuestionComponent } from './components/questoes/true-false-question/true-false-question.component';
+import { 
+  DragDropQuestionComponent, 
+  MultipleQuestionComponent, 
+  OptionsQuestionComponent, 
+  SelectQuestionComponent, 
+  TrueFalseQuestionComponent 
+} from './components/questions';
 
 /* Utils */
 import { SummaryPipe } from './utils/pipe/summary.pipe';
