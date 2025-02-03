@@ -150,6 +150,50 @@
     ]
   },
   {
+    "name": "GHF",
+    "fullname": "GitHub Foundations",
+    "provider": "GitHub",
+    "questions": 87,
+    "image": "assets/badges/GHF-badge.png",
+    "domains": [
+      {
+        "name": "Introdução ao Git e ao GitHub",
+        "min": 22,
+        "max": 22
+      },
+      {
+        "name": "Trabalhando com repositórios no GitHub",
+        "max": 8,
+        "min": 8
+      },
+      {
+        "name": "Recursos de colaboração",
+        "min": 30,
+        "max": 30
+      },
+      {
+        "name": "Desenvolvimento moderno",
+        "min": 13,
+        "max": 13
+      },
+      {
+        "name": "Gerenciamento de projetos",
+        "min": 7,
+        "max": 7
+      },
+      {
+        "name": "Privacidade, segurança e administração",
+        "min": 10,
+        "max": 10
+      },
+      {
+        "name": "Benefícios da Comunidade GitHub",
+        "min": 10,
+        "max": 10
+      }
+    ]
+  },
+  {
     "name": "GHAS",
     "fullname": "GitHub Advanced Security",
     "provider": "GitHub",

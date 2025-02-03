@@ -1,0 +1,1449 @@
+[
+   {
+      "id": "001",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Quais são os tipos de conta existentes no GitHub? (Selecione três)",
+      "options": [
+         "Contas pessoais",
+         "Contas de organização",
+         "Contas compartilhadas",
+         "Contas Enterprise",
+         "Contas de marketing"
+      ],
+      "correct": [
+         "Contas pessoais",
+         "Contas de organização",
+         "Contas Enterprise"
+      ]
+   },
+   {
+      "id": "002",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "Qual desses recursos do GitHub serve como uma planilha adaptável, quadro de tarefas e um roadmap que se integra com issues e pull requests no GitHub para planejar e acompanhar seu trabalho de forma eficaz?",
+      "options": [
+         "GitHub Projects",
+         "GitHub Copilot",
+         "GitHub Actions",
+         "GitHub Marketplace"
+      ],
+      "correct": [
+         "GitHub Projects"
+      ]
+   },
+   {
+      "id": "003",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "Como funciona a sincronização entre projetos, issues e pull requests do GitHub?",
+      "options": [
+         "As atualizações nos issues e pull requests serão refletidas automaticamente nos Projetos do GitHub. Essa integração funciona nos dois sentidos, de modo que, quando você altera informações sobre um pull request ou issue em seu projeto, o pull request ou issue reflete essas informações.",
+         "As atualizações nos issues e pull requests não serão refletidas automaticamente nos Projetos do GitHub, isso deve ser acionado manualmente pelo usuário.",
+         "A sincronização de informações funciona apenas em uma direção - do projeto para issues e pull requests. As atualizações nos issues e pull requests não serão automaticamente espelhadas nos itens do Projeto do GitHub.",
+         "A sincronização de informações funciona apenas em uma direção - de issues e pull requests para projetos. As atualizações nos itens do Projeto não serão automaticamente espelhadas nos issues e pull requests."
+      ],
+      "correct": [
+         "As atualizações nos issues e pull requests serão refletidas automaticamente nos Projetos do GitHub. Essa integração funciona nos dois sentidos, de modo que, quando você altera informações sobre um pull request ou issue em seu projeto, o pull request ou issue reflete essas informações."
+      ]
+   },
+   {
+      "id": "004",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "Qual dessas afirmações é verdadeira em relação aos campos personalizados para itens nos Projetos do GitHub?",
+      "options": [
+         "Os campos personalizados permitem a adição de metadados além das opções integradas, como datas estimadas e campos de iteração.",
+         "Os campos personalizados são limitados a informações textuais e não podem incluir metadados numéricos ou relacionados a datas.",
+         "Os campos personalizados são exclusivamente para modificações estéticas e não adicionam metadados significativos.",
+         "Os campos personalizados são limitados a opções predefinidas e não podem incluir metadados definidos pelo usuário."
+      ],
+      "correct": [
+         "Os campos personalizados permitem a adição de metadados além das opções integradas, como datas estimadas e campos de iteração."
+      ]
+   },
+   {
+      "id": "005",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "Quais são as diferentes opções disponíveis para adicionar issues e pull requests a um quadro de Projeto do GitHub?",
+      "options": [
+         "Apenas manualmente, um de cada vez.",
+         "Apenas individualmente ou em massa",
+         "Individualmente, automaticamente ou em massa.",
+         "Apenas automaticamente usando fluxos de trabalho do projeto"
+      ],
+      "correct": [
+         "Individualmente, automaticamente ou em massa."
+      ]
+   },
+   {
+      "id": "006",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Gerenciamento de projetos",
+      "header": "Quais desses layouts estão disponíveis nos Projetos do GitHub? (Escolha três)",
+      "options": [
+         "Layout de Scrum",
+         "Layout de tabela",
+         "Layout de quadro",
+         "Layout de Agile",
+         "Layout de roadmap",
+         "Layout de projeto"
+      ],
+      "correct": [
+         "Layout de tabela",
+         "Layout de quadro",
+         "Layout de roadmap"
+      ]
+   },
+   {
+      "id": "007",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "Qual layout de Projeto do GitHub seria mais adequado como um quadro Kanban?",
+      "options": [
+         "Layout de quadro",
+         "Layout de tabela",
+         "Layout de roadmap",
+         "Layout de Agile"
+      ],
+      "correct": [
+         "Layout de quadro"
+      ]
+   },
+   {
+      "id": "008",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Gerenciamento de projetos",
+      "header": "Quais desses fluxos de trabalho são automações integradas nos Projetos do GitHub? (Escolha dois)",
+      "options": [
+         "Quando issues ou pull requests em seu projeto são fechados, seu status é definido como Concluído",
+         "Quando pull requests em seu projeto são mesclados, seu status é definido como Concluído.",
+         "Quando issues ou pull requests são abertos em seu projeto, seu status é definido como Concluído.",
+         "Quando um novo colaborador é adicionado a um repositório, os issues sem responsável são atribuídos a ele.",
+         "Quando uma Ação do GitHub é acionada, crie um novo item em seu Projeto do GitHub."
+      ],
+      "correct": [
+         "Quando issues ou pull requests em seu projeto são fechados, seu status é definido como Concluído",
+         "Quando pull requests em seu projeto são mesclados, seu status é definido como Concluído."
+      ]
+   },
+   {
+      "id": "009",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Gerenciamento de projetos",
+      "header": "Quais são as diferentes opções que permitem automatizar operações em seu Projeto do GitHub? (Escolha três.)",
+      "options": [
+         "Fluxos de trabalho do projeto",
+         "GitHub GraphQL API",
+         "GitHub Actions",
+         "GitHub Copilot",
+         "GitHub Charts",
+         "GitHub Dependabot",
+         "Itens do projeto"
+      ],
+      "correct": [
+         "Fluxos de trabalho do projeto",
+         "GitHub GraphQL API",
+         "GitHub Actions"
+      ]
+   },
+   {
+      "id": "010",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "Qual é a diferença entre GitHub Projects e GitHub Projects Clássico?",
+      "options": [
+         "GitHub Projects é a nova experiência do GitHub que oferece muitos novos recursos e melhorias em relação ao antigo GitHub Projects clássico.",
+         "GitHub Projects clássico é a nova experiência do GitHub que oferece muitos novos recursos e melhorias em relação ao GitHub Projects Clássico.",
+         "GitHub Projects clássico é uma maneira mais simples de gerenciar seus Projetos do GitHub e é recomendado para iniciantes.",
+         "GitHub Projects clássico é a versão aprimorada que, além dos Projetos do GitHub, oferece alguns modelos pré-definidos, como roadmaps e sprints."
+      ],
+      "correct": [
+         "GitHub Projects é a nova experiência do GitHub que oferece muitos novos recursos e melhorias em relação ao antigo GitHub Projects clássico."
+      ]
+   },
+   {
+      "id": "011",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "Qual é um caso de uso para Labels?",
+      "options": [
+         "Categorizar issues e pull requests",
+         "Categorizar arquivos no repositório",
+         "Associar labels com Releases para serem incluídos nas release notes",
+         "Atribuir labels aos colaboradores do repositório para indicar sua função e permissões no projeto"
+      ],
+      "correct": [
+         "Categorizar issues e pull requests"
+      ]
+   },
+   {
+      "id": "012",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Gerenciamento de projetos",
+      "header": "Por que um dono de repositório gostaria de usar Milestones? (Escolha dois)",
+      "options": [
+         "Para associar issues e pull requests a fases específicas do projeto",
+         "Para rastrear as dependências do repositório",
+         "Para trazer automação ao repositório",
+         "Para comunicar que o repositório está em um estado estável",
+         "Para ter uma visão geral de quanto trabalho resta para concluir uma fase do projeto",
+         "Para listar os colaboradores do repositório"
+      ],
+      "correct": [
+         "Para associar issues e pull requests a fases específicas do projeto",
+         "Para ter uma visão geral de quanto trabalho resta para concluir uma fase do projeto"
+      ]
+   },
+   {
+      "id": "013",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "Como você pode atribuir um usuário a um issue ou pull request?",
+      "options": [
+         "Usando o campo Assignees na barra lateral",
+         "Adicionando uma label com o nome de usuário do GitHub a esse issue ou pull request",
+         "Mencionando-os na descrição do issue ou pull request",
+         "Não é possível atribuir uma pessoa a um issue ou pull request."
+      ],
+      "correct": [
+         "Usando o campo Assignees na barra lateral"
+      ]
+   },
+   {
+      "id": "014",
+      "exam": "GHF",
+      "type": "select",
+      "domain": "Gerenciamento de projetos",
+      "header": "Se você se vê frequentemente escrevendo o mesmo conjunto de comentários em issues ou pull requests, qual recurso do GitHub você usaria para economizar tempo?",
+      "options": [
+         "Respostas salvas",
+         "Modelos de comentários",
+         "Modelos de repositório",
+         "Labels"
+      ],
+      "correct": [
+         "Respostas salvas"
+      ]
+   },
+   {
+      "id": "015",
+      "exam": "GHF",
+      "type": "truefalse",
+      "domain": "Gerenciamento de projetos",
+      "header": "Sobre as Respostas salvas do GitHub",
+      "options": [
+         "Respostas salvas são comentários que você pode reutilizar em issues e pull requests.",
+         "Quando alguém comenta em seu issue ou pull request, você pode salvar a resposta e definir uma notificação para lembrar-se de respondê-la mais tarde.",
+         "Você pode criar, editar e excluir respostas salvas nas configurações da sua conta do GitHub na seção `Respostas salvas`.",
+         "Respostas salvas estão disponíveis apenas para proprietários de repositórios, que podem configurar respostas automáticas para problemas e pull requests."
+      ],
+      "correct": [
+         "true",
+         "false",
+         "true",
+         "false"
+      ],
+      "body": "Para cada alternativa, assinale verdadeiro ou falso"
+   },
+   {
+      "id": "016",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Gerenciamento de projetos",
+      "header": "Quais são algumas ações que você pode realizar em relação aos Templates de Repositório? (Escolha duas)",
+      "options": [
+         "Criar um template de repositório a partir de um repositório existente",
+         "Criar um novo repositório a partir de um template de repositório",
+         "Criar uma organização a partir de um template de repositório",
+         "Excluir todos os repositórios criados a partir de um template de repositório",
+         "Excluir todos os repositórios que não usam um template de repositório fornecido pela sua organização"
+      ],
+      "correct": [
+         "Criar um template de repositório a partir de um repositório existente",
+         "Criar um novo repositório a partir de um template de repositório"
+      ]
+   },
+   {
+      "id": "017",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "Qual recurso nos Projetos do GitHub permite gerar gráficos e diagramas para visualizar o status atual e a progressão histórica do seu projeto?",
+      "options": [
+         "Project Insights",
+         "GitHub Actions",
+         "Milestones",
+         "Copilot Charts"
+      ],
+      "correct": [
+         "Project Insights"
+      ]
+   },
+   {
+      "id": "018",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Qual é o nome da plataforma de integração contínua e entrega contínua (CI/CD) do GitHub?",
+      "options": [
+         "GitHub Actions",
+         "GitHub Workflows",
+         "GitHub Pipelines",
+         "GitHub Projects"
+      ],
+      "correct": [
+         "GitHub Actions"
+      ]
+   },
+   {
+      "id": "019",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Qual desses é um caso de uso comum para GitHub Actions?",
+      "options": [
+         "Executar testes automatizados antes de mesclar um pull request",
+         "Adicionar botão de patrocínio ao seu projeto",
+         "Processamento e análise de grandes volumes de dados",
+         "Treinamento de modelos de aprendizado de máquina"
+      ],
+      "correct": [
+         "Executar testes automatizados antes de mesclar um pull request"
+      ]
+   },
+   {
+      "id": "020",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Desenvolvimento moderno",
+      "header": "Os fluxos de trabalho do GitHub Action são acionados por eventos. Quais desses são eventos válidos que o GitHub Actions suporta? (Escolha dois)",
+      "options": [
+         "Um commit é enviado para um branch",
+         "Um pull request é aberto",
+         "Uma alteração é feita nas configurações do repositório",
+         "Uma nova vulnerabilidade foi detectada em uma dependência",
+         "Um novo membro foi adicionado ao repositório"
+      ],
+      "correct": [
+         "Um commit é enviado para um branch",
+         "Um pull request é aberto"
+      ]
+   },
+   {
+      "id": "021",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Onde você pode encontrar actions do GitHub disponíveis publicamente?",
+      "options": [
+         "GitHub Marketplace",
+         "GitHub Public Action Storage",
+         "Repositórios privados do GitHub",
+         "Quadros de Projetos do GitHub Actions"
+      ],
+      "correct": [
+         "GitHub Marketplace"
+      ]
+   },
+   {
+      "id": "022",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Qual dessas ferramentas serve como um programador parceiro de IA que oferece sugestões de preenchimento automático enquanto você codifica?",
+      "options": [
+         "GitHub Copilot",
+         "GitHub AI Aid",
+         "GitHub Partner",
+         "GitHub Assistant"
+      ],
+      "correct": [
+         "GitHub Copilot"
+      ]
+   },
+   {
+      "id": "023",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "O GitHub Copilot é gratuito para usar sem limitações?",
+      "options": [
+         "Não",
+         "Sim",
+         "Sim, se você for estudante, professor ou mantenedor de um projeto open source popular",
+         "Sim, mas apenas para indivíduos que trabalham em repositórios públicos"
+      ],
+      "correct": [
+         "Sim, se você for estudante, professor ou mantenedor de um projeto open source popular"
+      ]
+   },
+   {
+      "id": "024",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Quais são as diferenças entre GitHub Copilot Individual e GitHub Copilot Business?",
+      "options": [
+         "GitHub Copilot Individual só pode ser usado por contas pessoais e GitHub Copilot Business é usado por organizações e empresas",
+         "GitHub Copilot Individual usa um modelo de IA treinado em código-fonte público e GitHub Copilot Business usa um modelo de IA treinado em código-fonte privado",
+         "GitHub Copilot Individual é gratuito e GitHub Copilot Business é um recurso pago",
+         "GitHub Copilot Individual só pode ser usado ao trabalhar em repositórios públicos e GitHub Copilot Business pode ser usado ao trabalhar em repositórios públicos e privados dentro de uma organização"
+      ],
+      "correct": [
+         "GitHub Copilot Individual só pode ser usado por contas pessoais e GitHub Copilot Business é usado por organizações e empresas"
+      ]
+   },
+   {
+      "id": "025",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Como você pode começar a usar o GitHub Copilot após ativar a assinatura do GitHub Copilot?",
+      "options": [
+         "Configurar o GitHub Copilot em um dos IDEs suportados, como Visual Studio Code ou JetBrains, e começar a codificar",
+         "O GitHub Copilot começará automaticamente a fornecer sugestões em pull requests e problemas no seu repositório",
+         "Você precisa configurar uma Ação do GitHub que configurará o GitHub Copilot no seu repositório",
+         "Você precisa editar as configurações do repositório e habilitar o GitHub Copilot para o repositório"
+      ],
+      "correct": [
+         "Configurar o GitHub Copilot em um dos IDEs suportados, como Visual Studio Code ou JetBrains, e começar a codificar"
+      ]
+   },
+   {
+      "id": "026",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "O que é um GitHub Codespace?",
+      "options": [
+         "É um ambiente de desenvolvimento pré-configurado especificamente configurado para um repositório. Ele permite que você comece a escrever código para um projeto imediatamente, sem precisar configurar um ambiente de desenvolvimento local.",
+         "Um GitHub Codespace é um ambiente de codificação holográfico interativo que requer hardware especial para ser usado.",
+         "GitHub Codespace é uma ferramenta de codificação alimentada por IA que gera automaticamente código quase perfeito",
+         "GitHub Codespace é um evento anual hospedado pelo GitHub onde os desenvolvedores podem se encontrar e discutir tópicos de codificação."
+      ],
+      "correct": [
+         "É um ambiente de desenvolvimento pré-configurado especificamente configurado para um repositório. Ele permite que você comece a escrever código para um projeto imediatamente, sem precisar configurar um ambiente de desenvolvimento local."
+      ]
+   },
+   {
+      "id": "027",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Qual recurso do GitHub permite a criação de ambientes de desenvolvimento pré-configurados onde todas as ferramentas e dependências necessárias para contribuir para um repositório estão instaladas?",
+      "options": [
+         "GitHub Codespaces",
+         "GitHub Docker",
+         "GitHub Copilot",
+         "github.dev editor"
+      ],
+      "correct": [
+         "GitHub Codespaces"
+      ]
+   },
+   {
+      "id": "028",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Desenvolvimento moderno",
+      "header": "Quais recursos do GitHub permitem que os colaboradores do repositório trabalhem em alterações simples de código diretamente pelo navegador da web? (Escolha dois)",
+      "options": [
+         "GitHub Codespaces",
+         "github.dev editor",
+         "GitHub Projects",
+         "GitHub Dependabot",
+         "GitHub Remote",
+         "GitHub Online"
+      ],
+      "correct": [
+         "GitHub Codespaces",
+         "github.dev editor"
+      ]
+   },
+   {
+      "id": "029",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Quais são as diferentes fases possíveis do ciclo de vida de um GitHub Codespace?",
+      "options": [
+         "Criar, Reconstruir, Parar, Excluir",
+         "Criar, Excluir",
+         "Criar, Parar, Excluir",
+         "Criar, Reconstruir, Excluir"
+      ],
+      "correct": [
+         "Criar, Reconstruir, Parar, Excluir"
+      ]
+   },
+   {
+      "id": "030",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Se você parar seu ambiente GitHub Codespace, poderá voltar às alterações mais tarde se não as tiver commitado?",
+      "options": [
+         "Sim, esse é o comportamento padrão ao parar e reiniciar um GitHub Codespace",
+         "Não, essas alterações serão perdidas. Você precisa commitá-las antes de parar o Codespace."
+      ],
+      "correct": [
+         "Sim, esse é o comportamento padrão ao parar e reiniciar um GitHub Codespace"
+      ]
+   },
+   {
+      "id": "031",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Desenvolvimento moderno",
+      "header": "Sobre o ciclo de vida do GitHub Codespaces",
+      "options": [
+         "O ciclo de vida de um Codespace começa quando você cria um Codespace e termina quando você o exclui.",
+         "Você pode desconectar e reconectar a um Codespace ativo sem afetar seus processos em execução.",
+         "Você pode parar e reiniciar um Codespace sem afetar seus processos em execução.",
+         "Se você criar outro Codespace em um branch que já tinha um Codespace em execução, o Codespace original será excluído",
+         "Você pode parar e reiniciar um Codespace sem perder as alterações que você faz no seu projeto.",
+         "Se você fechar a guia do navegador em que seu Codespace estava em execução, o Codespace será automaticamente interrompido"
+      ],
+      "correct": [
+         "true",
+         "true",
+         "false",
+         "false",
+         "true",
+         "false"
+      ],
+      "body": "Para cada alternativa, assinale verdadeiro ou falso"
+   },
+   {
+      "id": "032",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Seu projeto requer hardware apropriado para ser executado. Você pode personalizar a quantidade de núcleos de CPU que serão alocados para o ambiente GitHub Codespace?",
+      "options": [
+         "Sim, você pode escolher um tipo de máquina alternativa ao criar um codespace ou a qualquer momento após a criação de um codespace.",
+         "Não, os GitHub Codespaces são hospedados no Microsoft Azure e não há controle sobre o hardware em que estão sendo executados"
+      ],
+      "correct": [
+         "Sim, você pode escolher um tipo de máquina alternativa ao criar um codespace ou a qualquer momento após a criação de um codespace."
+      ]
+   },
+   {
+      "id": "033",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Como você pode personalizar o ambiente que é executado nos GitHub Codespaces?",
+      "options": [
+         "Criando um arquivo de configuração `.devcontainer/devcontainer.json`",
+         "Criando um Dockerfile personalizado na raiz do seu repositório",
+         "Criando um arquivo de configuração `.github/codespaces.yml`",
+         "Criando imagens de máquina personalizadas com o repositório instalado"
+      ],
+      "correct": [
+         "Criando um arquivo de configuração `.devcontainer/devcontainer.json`"
+      ]
+   },
+   {
+      "id": "034",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "O que é um deep link do GitHub Codespace?",
+      "options": [
+         "É um link que aponta para uma página específica do GitHub.com que permite criar um novo GitHub Codespace e selecionar uma configuração específica",
+         "É um link entre o GitHub Codespace e o repositório que mantém o Codespace sincronizado com as alterações no repositório",
+         "É um link para o GitHub Codespace mais recente que foi criado para o repositório",
+         "É um link para o GitHub Codespace mais recente que você usou em qualquer repositório"
+      ],
+      "correct": [
+         "É um link que aponta para uma página específica do GitHub.com que permite criar um novo GitHub Codespace e selecionar uma configuração específica"
+      ]
+   },
+   {
+      "id": "035",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Quem deve ter a autenticação de dois fatores habilitada no GitHub?",
+      "options": [
+         "Todos os usuários do GitHub",
+         "Não é recomendado usar 2FA no GitHub para ninguém",
+         "Proprietários de organizações do GitHub",
+         "Usuários do GitHub Enterprise Server"
+      ],
+      "correct": [
+         "Todos os usuários do GitHub"
+      ]
+   },
+   {
+      "id": "036",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "O que são Enterprise Managed Users (EMU)?",
+      "options": [
+         "É um recurso do GitHub Enterprise que permite gerenciar o acesso de usuários a partir de um provedor de identidade externo, como Azure AD ou Okta",
+         "É um usuário de suporte do GitHub Enterprise que pode ser usado para gerenciar sua Empresa pelo Suporte do GitHub mediante solicitação",
+         "É uma conta de usuário compartilhada que pode ser usada por vários usuários em sua Empresa",
+         "É uma conta de usuário sem acesso à interface web do GitHub, mas que é usada apenas para tarefas de automação no seu GitHub Enterprise"
+      ],
+      "correct": [
+         "É um recurso do GitHub Enterprise que permite gerenciar o acesso de usuários a partir de um provedor de identidade externo, como Azure AD ou Okta"
+      ]
+   },
+   {
+      "id": "037",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Quais são os diferentes níveis de permissão para um repositório de propriedade de uma conta pessoal? (Escolha dois)",
+      "options": [
+         "proprietário do repositório",
+         "colaborador",
+         "gerente de cobrança",
+         "gerente de segurança",
+         "proprietário do projeto"
+      ],
+      "correct": [
+         "proprietário do repositório",
+         "colaborador"
+      ]
+   },
+   {
+      "id": "038",
+      "exam": "GHF",
+      "type": "select",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Qual dessas NÃO é uma função em uma Organização do GitHub?",
+      "options": [
+         "Proprietário da organização",
+         "Membro da organização",
+         "Moderador da organização",
+         "Gerente de cobrança",
+         "Gerente de segurança",
+         "Arquiteto da organização",
+         "Gerente de aplicativo do GitHub",
+         "Colaborador externo"
+      ],
+      "correct": [
+         "Arquiteto da organização"
+      ]
+   },
+   {
+      "id": "039",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Você pode desativar a aba de issues em um repositório?",
+      "options": [
+         "Sim",
+         "Não"
+      ],
+      "correct": [
+         "Sim"
+      ]
+   },
+   {
+      "id": "040",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Onde você pode desativar recursos do repositório, como issues, wikis ou projetos, em um repositório que você possui?",
+      "options": [
+         "Nas configurações do repositório",
+         "No arquivo de configuração `.github/settings.yml`",
+         "Esses recursos não podem ser desativados",
+         "Nas configurações da sua conta"
+      ],
+      "correct": [
+         "Nas configurações do repositório"
+      ]
+   },
+   {
+      "id": "041",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Quais são as diferentes opções de visibilidade do repositório?",
+      "options": [
+         "Privado, Público e Interno (apenas para empresas)",
+         "Pessoal, Público e Interno (apenas para empresas)",
+         "Privado e Público",
+         "Pessoal e Público"
+      ],
+      "correct": [
+         "Privado, Público e Interno (apenas para empresas)"
+      ]
+   },
+   {
+      "id": "042",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Qual é o propósito de um arquivo `CODEOWNERS`?",
+      "options": [
+         "O arquivo `CODEOWNERS` permite definir indivíduos ou equipes responsáveis por áreas específicas do código ou por sua totalidade.",
+         "O arquivo `CODEOWNERS` contém informações sobre as taxas de licenciamento de software e as condições sob as quais o código pode ser usado.",
+         "O arquivo `CODEOWNERS` inclui informações sobre a qualidade do código e a manutenibilidade do código.",
+         "O arquivo `CODEOWNERS` contém detalhes de contato dos proprietários do repositório."
+      ],
+      "correct": [
+         "O arquivo `CODEOWNERS` permite definir indivíduos ou equipes responsáveis por áreas específicas do código ou por sua totalidade."
+      ]
+   },
+   {
+      "id": "043",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Como você pode impor a passagem de verificações de status antes de mesclar um pull request para o branch `main`?",
+      "options": [
+         "Criando uma regra de proteção de branch",
+         "Usando GitHub Actions",
+         "Executando testes localmente antes de enviar para o repositório remoto",
+         "Tornando o repositório privado"
+      ],
+      "correct": [
+         "Criando uma regra de proteção de branch"
+      ]
+   },
+   {
+      "id": "044",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Quais dessas ações garantirão que, antes de qualquer envio para o branch `main`, as alterações tenham sido aprovadas por pelo menos duas pessoas? (Escolha três)",
+      "options": [
+         "Configurar um arquivo CODEOWNERS no repositório",
+         "Na regra de proteção de branch, exigir um pull request antes de mesclar",
+         "Na regra de proteção de branch, exigir pelo menos 2 aprovações antes de mesclar um pull request",
+         "Criar uma regra de proteção de implantação para o branch `main`",
+         "Na regra de proteção de implantação, exigir pelo menos 2 aprovações antes de mesclar um pull request",
+         "Criar uma regra de proteção de branch para o branch `main`",
+         "Impor que as verificações de status estejam passando antes de mesclar um pull request para o branch `main`"
+      ],
+      "correct": [
+         "Criar uma regra de proteção de branch para o branch `main`",
+         "Na regra de proteção de branch, exigir um pull request antes de mesclar",
+         "Na regra de proteção de branch, exigir pelo menos 2 aprovações antes de mesclar um pull request"
+      ]
+   },
+   {
+      "id": "045",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "O que você pode encontrar na aba de segurança de um repositório?",
+      "options": [
+         "Uma visão geral da segurança desse repositório, como vulnerabilidades em dependências, resultados de varredura de código e alertas de varredura de segredos",
+         "Uma lista de todos os issues do GitHub que foram abertos no repositório por motivos de segurança",
+         "Uma lista de todas as melhores práticas que o GitHub recomenda para proteger seu software",
+         "Informações de contato da equipe de segurança do GitHub"
+      ],
+      "correct": [
+         "Uma visão geral da segurança desse repositório, como vulnerabilidades em dependências, resultados de varredura de código e alertas de varredura de segredos"
+      ]
+   },
+   {
+      "id": "046",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "O que é CodeQL?",
+      "options": [
+         "Uma ferramenta de análise de código",
+         "Uma linguagem de programação",
+         "Um editor de texto",
+         "Um sistema de controle de versão"
+      ],
+      "correct": [
+         "Uma ferramenta de análise de código"
+      ]
+   },
+   {
+      "id": "047",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Qual ferramenta ajuda a manter as dependências do repositório atualizadas?",
+      "options": [
+         "Dependabot",
+         "GitHub Copilot",
+         "CodeQL",
+         "GitHub Actions"
+      ],
+      "correct": [
+         "Dependabot"
+      ]
+   },
+   {
+      "id": "048",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "O que são os Insights do repositório?",
+      "options": [
+         "É uma lista de melhores práticas a seguir ao administrar um repositório.",
+         "É um lugar onde você pode ver dados sobre o repositório, como frequência de código, lista dos colaboradores mais ativos e mais.",
+         "Insights do repositório é um recurso que permite ver os alertas de varredura de segredos e código do repositório.",
+         "É um recurso que permite ver a visão geral da segurança do repositório."
+      ],
+      "correct": [
+         "É um lugar onde você pode ver dados sobre o repositório, como frequência de código, lista dos colaboradores mais ativos e mais."
+      ]
+   },
+   {
+      "id": "049",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Quem são os colaboradores do repositório?",
+      "options": [
+         "Colaboradores são pessoas que fizeram contribuições de código para um repositório.",
+         "Colaboradores são pessoas que financiaram um repositório.",
+         "Colaboradores são pessoas que receberam acesso de escrita a um repositório.",
+         "Colaboradores são pessoas que abriram problemas ou pull requests em um repositório."
+      ],
+      "correct": [
+         "Colaboradores são pessoas que receberam acesso de escrita a um repositório."
+      ]
+   },
+   {
+      "id": "050",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Como você pode trabalhar junto com um amigo em um repositório que você criou na sua conta pessoal do GitHub?",
+      "options": [
+         "Vá para as configurações do repositório e convide-o como colaborador",
+         "Adicione-o ao arquivo `CODEOWNERS`",
+         "Não é possível trabalhar junto em repositórios pessoais. Você só pode fazer isso para repositórios de organizações.",
+         "Forneça suas credenciais do GitHub ao seu amigo"
+      ],
+      "correct": [
+         "Vá para as configurações do repositório e convide-o como colaborador"
+      ]
+   },
+   {
+      "id": "051",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "O que são os teams do GitHub?",
+      "options": [
+         "É um grupo de usuários do GitHub da mesma organização.",
+         "É uma versão do Microsoft Teams para o GitHub.",
+         "É uma forma de gerenciar o acesso a repositórios pessoais do GitHub para muitos usuários de uma vez."
+      ],
+      "correct": [
+         "É um grupo de usuários do GitHub da mesma organização."
+      ]
+   },
+   {
+      "id": "052",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Qual é o papel de um moderador de organização?",
+      "options": [
+         "Moderadores são membros da organização que, além de suas permissões como membros, podem bloquear e desbloquear colaboradores não membros, definir limites de interação e ocultar comentários em repositórios públicos de propriedade da organização.",
+         "Moderadores são membros da organização que têm acesso completo à organização.",
+         "Moderadores são membros da organização que podem gerenciar as configurações de cobrança da sua organização, como informações de pagamento.",
+         "Moderadores são membros da organização que podem visualizar alertas de segurança e gerenciar configurações de segurança de código em toda a sua organização, além de permissões de leitura para todos os repositórios da organização."
+      ],
+      "correct": [
+         "Moderadores são membros da organização que, além de suas permissões como membros, podem bloquear e desbloquear colaboradores não membros, definir limites de interação e ocultar comentários em repositórios públicos de propriedade da organização."
+      ]
+   },
+   {
+      "id": "053",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Qual é a função de um gerente de segurança da organização?",
+      "options": [
+         "Gerentes de segurança são membros da organização que podem visualizar alertas de segurança e gerenciar configurações de segurança de código em toda a sua organização, além de permissões de leitura para todos os repositórios da organização.",
+         "Gerentes de segurança são membros da organização que, além de suas permissões como membros, podem bloquear e desbloquear colaboradores não membros, definir limites de interação e ocultar comentários em repositórios públicos de propriedade da organização.",
+         "Gerentes de segurança são membros da organização que têm acesso completo à organização.",
+         "Gerentes de segurança são membros da organização que podem gerenciar as configurações de cobrança da sua organização, como informações de pagamento."
+      ],
+      "correct": [
+         "Gerentes de segurança são membros da organização que podem visualizar alertas de segurança e gerenciar configurações de segurança de código em toda a sua organização, além de permissões de leitura para todos os repositórios da organização."
+      ]
+   },
+   {
+      "id": "054",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "Qual dessas definições descreve melhor o software open-source?",
+      "options": [
+         "É um software com código-fonte que qualquer pessoa pode inspecionar, modificar e aprimorar.",
+         "É gratuito para uso em qualquer finalidade, desde que você assine a licença de código aberto.",
+         "É gratuito para uso em qualquer finalidade pessoal, desde que você não obtenha lucro com isso.",
+         "É um software com código-fonte que qualquer pessoa pode confiar."
+      ],
+      "correct": [
+         "É um software com código-fonte que qualquer pessoa pode inspecionar, modificar e aprimorar."
+      ]
+   },
+   {
+      "id": "055",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "O que é o programa GitHub Sponsors?",
+      "options": [
+         "É uma forma de apoiar financeiramente os desenvolvedores dos projetos de código aberto",
+         "É um grupo de empresas que financiam o GitHub",
+         "É um programa que ajuda as pessoas a encontrar um emprego na indústria de tecnologia",
+         "É um programa onde desenvolvedores altamente qualificados se voluntariam para ajudar estudantes a aprender a usar o GitHub"
+      ],
+      "correct": [
+         "É uma forma de apoiar financeiramente os desenvolvedores dos projetos de código aberto"
+      ]
+   },
+   {
+      "id": "056",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "No seu painel pessoal do GitHub, você recebeu uma notificação de que o usuário `octocat` criou um novo repositório `octocat/my-repo`. Por que você recebeu essa notificação?",
+      "options": [
+         "Porque você visitou recentemente o perfil do usuário `octocat`",
+         "Porque você contribuiu para o repositório `octocat/my-repo`",
+         "Porque você está seguindo o usuário `octocat`",
+         "Porque você marcou o repositório `octocat/my-repo` com uma estrela"
+      ],
+      "correct": [
+         "Porque você está seguindo o usuário `octocat`"
+      ]
+   },
+   {
+      "id": "057",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "Quais são os efeitos de seguir um usuário no GitHub?",
+      "options": [
+         "Você receberá notificações no seu painel pessoal sobre a atividade pública deles.",
+         "Você terá acesso aos repositórios privados deles assim que a solicitação de acompanhamento for aceita.",
+         "Esse usuário receberá notificações no painel pessoal deles sobre sua atividade pública.",
+         "Você pode se envolver em conversas privadas com eles usando o GitHub Chat."
+      ],
+      "correct": [
+         "Você receberá notificações no seu painel pessoal sobre a atividade pública deles."
+      ]
+   },
+   {
+      "id": "058",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "O que é o GitHub Marketplace?",
+      "options": [
+         "O GitHub Marketplace é um lugar onde os desenvolvedores podem encontrar ferramentas que ajudam a construir software junto com seu código.",
+         "O GitHub Marketplace é um lugar onde as empresas podem encontrar desenvolvedores para contratar.",
+         "O GitHub Marketplace é um lugar onde os desenvolvedores oferecem para vender a propriedade de seus repositórios.",
+         "O GitHub Marketplace é um lugar onde você pode patrocinar desenvolvedores de código aberto em uma base de assinatura."
+      ],
+      "correct": [
+         "O GitHub Marketplace é um lugar onde os desenvolvedores podem encontrar ferramentas que ajudam a construir software junto com seu código."
+      ]
+   },
+   {
+      "id": "059",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "O que é InnerSource?",
+      "options": [
+         "InnerSource refere-se à prática de aplicar princípios de código aberto dentro de uma organização",
+         "InnerSource refere-se à prática de aplicar princípios de código aberto em projetos pessoais",
+         "InnerSource refere-se à base de conhecimento interna de uma organização sobre o projeto em que estão trabalhando.",
+         "InnerSource é uma ferramenta que permite às organizações ver quais projetos de código aberto estão usando em seu código."
+      ],
+      "correct": [
+         "InnerSource refere-se à prática de aplicar princípios de código aberto dentro de uma organização"
+      ]
+   },
+   {
+      "id": "060",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "Qual dessas é uma prática que incentiva a colaboração, visibilidade e compartilhamento de código entre diferentes equipes dentro de uma organização?",
+      "options": [
+         "InnerSource",
+         "OpenSource",
+         "Integração Contínua",
+         "Git Flow"
+      ],
+      "correct": [
+         "InnerSource"
+      ]
+   },
+   {
+      "id": "061",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "O que é um fork no GitHub?",
+      "options": [
+         "Um fork é o lugar onde um branch se divide em pelo menos dois outros branches.",
+         "Um fork é o estado de um repositório quando não está atualizado com o repositório remoto.",
+         "Um fork é um branch que não está atualizado com o branch padrão do repositório.",
+         "Um fork é uma cópia pessoal do repositório de outro usuário que fica na sua conta."
+      ],
+      "correct": [
+         "Um fork é uma cópia pessoal do repositório de outro usuário que fica na sua conta."
+      ]
+   },
+   {
+      "id": "062",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "Quais das alternativas a seguir podem tornar um repositório mais descoberto? (Escolha três)",
+      "options": [
+         "Uma coleção bem elaborada de documentos markdown, como `README.md`, `CONTRIBUTING.md` e outros.",
+         "Dar ao repositório um nome descritivo",
+         "Configurar tópicos para o repositório",
+         "Definir pipelines de CI/CD adequados",
+         "Cobrir o software do repositório com testes",
+         "Usar uma ampla gama de aplicativos e ações do GitHub"
+      ],
+      "correct": [
+         "Uma coleção bem elaborada de documentos markdown, como `README.md`, `CONTRIBUTING.md` e outros.",
+         "Dar ao repositório um nome descritivo",
+         "Configurar tópicos para o repositório"
+      ]
+   },
+   {
+      "id": "063",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "Como você pode definir protocolos orientadores para usuários que pretendem enviar relatórios de bugs ou propor novos recursos em seu repositório para que saibam quais informações preencher?",
+      "options": [
+         "Criar issue templates",
+         "Adicionar etiquetas aos issues que eles criam",
+         "Configurar Projetos do GitHub",
+         "Ter um issue de exemplo no repositório que seja fácil de copiar e nunca seja fechado"
+      ],
+      "correct": [
+         "Criar issue templates"
+      ]
+   },
+   {
+      "id": "064",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "O que é um pull request template?",
+      "options": [
+         "O pull request template é um arquivo que define a estrutura padrão do pull request que os colaboradores do projeto verão automaticamente ao abrir um pull request.",
+         "O pull request template é um pull request que é gerado automaticamente quando um novo branch é criado.",
+         "O pull request template é um pull request escolhido pelo proprietário do repositório como referência ao criar novos pull requests.",
+         "O pull request template é um exemplo de como as alterações de código devem ser em um pull request em um determinado repositório."
+      ],
+      "correct": [
+         "O pull request template é um arquivo que define a estrutura padrão do pull request que os colaboradores do projeto verão automaticamente ao abrir um pull request."
+      ]
+   },
+   {
+      "id": "065",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual dessas afirmações descreve melhor um sistema de controle de versão?",
+      "options": [
+         "É um sistema que rastreia o histórico de alterações feitas em uma coleção de arquivos.",
+         "É um sistema que utiliza a ferramenta de linha de comando git.",
+         "É um sistema que permite criar uma cópia local do código-fonte de um projeto.",
+         "É um sistema que permite rastrear o que as pessoas instalam em seus computadores."
+      ],
+      "correct": [
+         "É um sistema que rastreia o histórico de alterações feitas em uma coleção de arquivos."
+      ]
+   },
+   {
+      "id": "066",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual é o significado da palavra `distribuído` em sistema de controle de versão distribuído?",
+      "options": [
+         "O termo refere-se ao compartilhamento ponto a ponto de arquivos de código entre os usuários.",
+         "Significa que as tarefas entre os membros da equipe que usam o sistema são facilmente distribuídas.",
+         "Significa que os desenvolvedores podem ter uma cópia completa do repositório e seu histórico em sua máquina local.",
+         "Significa que o código-fonte é distribuído em vários servidores para balanceamento de carga."
+      ],
+      "correct": [
+         "Significa que os desenvolvedores podem ter uma cópia completa do repositório e seu histórico em sua máquina local."
+      ]
+   },
+   {
+      "id": "067",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual dessas descreve melhor o git?",
+      "options": [
+         "Git é um sistema de controle de versão centralizado.",
+         "Git é um sistema de controle de versão distribuído.",
+         "Git é o produto do GitHub que permite o controle de versão.",
+         "Git é um sistema de compartilhamento de arquivos."
+      ],
+      "correct": [
+         "Git é um sistema de controle de versão distribuído."
+      ]
+   },
+   {
+      "id": "068",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual dessas afirmações descreve melhor o que é o GitHub?",
+      "options": [
+         "O GitHub é uma plataforma que usa o Git como sua tecnologia principal e adiciona recursos que facilitam a colaboração e o gerenciamento de código.",
+         "O GitHub é um sistema de controle de versão distribuído com recursos que facilitam a colaboração em projetos.",
+         "O GitHub é uma plataforma de compartilhamento de arquivos com recursos que facilitam a colaboração em projetos usando controle de versão centralizado.",
+         "O GitHub é uma plataforma moderna de CI/CD com recursos que ajudam a impulsionar o desenvolvimento rápido de produtos."
+      ],
+      "correct": [
+         "O GitHub é uma plataforma que usa o Git como sua tecnologia principal e adiciona recursos que facilitam a colaboração e o gerenciamento de código."
+      ]
+   },
+   {
+      "id": "069",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual é a relação entre Git e GitHub?",
+      "options": [
+         "Git é um sistema de controle de versão distribuído e GitHub é uma plataforma que usa Git como sua tecnologia principal.",
+         "GitHub é um sistema de controle de versão distribuído e Git é uma plataforma que usa GitHub como sua tecnologia principal.",
+         "Git é um sistema de compartilhamento de arquivos e GitHub é uma plataforma que usa Git como sua tecnologia principal.",
+         "GitHub é um sistema de compartilhamento de arquivos e Git é uma plataforma que usa GitHub como sua tecnologia principal."
+      ],
+      "correct": [
+         "Git é um sistema de controle de versão distribuído e GitHub é uma plataforma que usa Git como sua tecnologia principal."
+      ]
+   },
+   {
+      "id": "070",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "O que é um repositório no GitHub?",
+      "options": [
+         "É um lugar onde você pode armazenar seu código, seus arquivos e o histórico de revisões de cada arquivo.",
+         "É um lugar onde você pode armazenar suas imagens Docker ou pacotes NPM.",
+         "É um editor de código visual que permite editar seu código-fonte no navegador.",
+         "Um repositório no GitHub é uma sala de chat onde os desenvolvedores podem discutir questões relacionadas ao código."
+      ],
+      "correct": [
+         "É um lugar onde você pode armazenar seu código, seus arquivos e o histórico de revisões de cada arquivo."
+      ]
+   },
+   {
+      "id": "071",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "O que é um commit no git?",
+      "options": [
+         "Um commit é um snapshot de um repositório em um momento específico.",
+         "Um commit refere-se a um novo arquivo ou arquivo atualizado em um repositório.",
+         "Um commit refere-se às alterações de código feitas em um repositório em um pull request.",
+         "Um commit é um texto legível por humanos que descreve as alterações feitas em um repositório."
+      ],
+      "correct": [
+         "Um commit é um snapshot de um repositório em um momento específico."
+      ]
+   },
+   {
+      "id": "072",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual recurso do git permite que os desenvolvedores trabalhem simultaneamente no mesmo código-fonte sem causar conflitos entre si?",
+      "options": [
+         "branch",
+         "commit",
+         "remote",
+         "working tree"
+      ],
+      "correct": [
+         "branch"
+      ]
+   },
+   {
+      "id": "073",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "O que é o GitHub Flow?",
+      "options": [
+         "Refere-se a um fluxo de trabalho baseado em branch, onde os desenvolvedores criam um branch para cada nova alteração em que estão trabalhando e, em seguida, abrem pull requests para que seu código seja revisado, testado e mesclado no branch principal.",
+         "É uma prática em que, toda vez que um commit é enviado para o branch principal, um novo lançamento é criado e implantado automaticamente.",
+         "É uma prática em que, toda vez que um commit é enviado para o branch principal, um conjunto de pipelines de CI/CD é acionado para executar testes e validar as alterações de código.",
+         "Refere-se a um fluxo de trabalho de um branch, onde os desenvolvedores trabalham em seus recursos no branch `master` e, em seguida, têm seu código de recurso revisado, testado e confirmado."
+      ],
+      "correct": [
+         "Refere-se a um fluxo de trabalho baseado em branch, onde os desenvolvedores criam um branch para cada nova alteração em que estão trabalhando e, em seguida, abrem pull requests para que seu código seja revisado, testado e mesclado no branch principal."
+      ]
+   },
+   {
+      "id": "074",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "O que é um plano GitHub Pro?",
+      "options": [
+         "GitHub Pro é um plano pago para contas pessoais que oferece recursos adicionais além do plano gratuito.",
+         "GitHub Pro é um plano pago para organizações que oferece recursos adicionais além do plano gratuito para organizações.",
+         "GitHub Pro é um caminho de certificação no final do qual você se torna um GitHub Pro.",
+         "GitHub Pro é um plano pago para empresas que permite hospedar o GitHub em seus próprios servidores."
+      ],
+      "correct": [
+         "GitHub Pro é um plano pago para contas pessoais que oferece recursos adicionais além do plano gratuito."
+      ]
+   },
+   {
+      "id": "075",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Existe uma versão gratuita do GitHub para organizações?",
+      "options": [
+         "Sim",
+         "Não"
+      ],
+      "correct": [
+         "Sim"
+      ]
+   },
+   {
+      "id": "076",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Quais são os diferentes planos de preços do GitHub para contas de organização? (Escolha três.)",
+      "options": [
+         "Pro",
+         "Gratuito",
+         "Equipe",
+         "Pessoal",
+         "Negócios",
+         "Enterprise",
+         "Avançado"
+      ],
+      "correct": [
+         "Gratuito",
+         "Equipe",
+         "Enterprise"
+      ]
+   },
+   {
+      "id": "077",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual plano de preços do GitHub oferece implantação auto-hospedada do GitHub?",
+      "options": [
+         "Enterprise",
+         "Pro",
+         "Equipe",
+         "Gratuito",
+         "Todos eles",
+         "Nenhum deles"
+      ],
+      "correct": [
+         "Enterprise"
+      ]
+   },
+   {
+      "id": "078",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Sob qual plano de preços do GitHub você pode criar um número ilimitado de repositórios públicos?",
+      "options": [
+         "Todos eles",
+         "Enterprise",
+         "Pro",
+         "Equipe",
+         "Equipe e Enterprise",
+         "Gratuito"
+      ],
+      "correct": [
+         "Todos eles"
+      ]
+   },
+   {
+      "id": "079",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Quais são as diferentes opções de implantação do GitHub Enterprise? (Escolha duas)",
+      "options": [
+         "GitHub Enterprise Pro",
+         "GitHub Enterprise Cloud",
+         "GitHub Enterprise Team",
+         "GitHub Enterprise Free",
+         "GitHub Enterprise Server",
+         "GitHub Enterprise Advanced"
+      ],
+      "correct": [
+         "GitHub Enterprise Cloud",
+         "GitHub Enterprise Server"
+      ]
+   },
+   {
+      "id": "080",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Quais dessas afirmações sobre as opções de implantação do GitHub Enterprise são verdadeiras? (Escolha duas)",
+      "options": [
+         "GitHub Enterprise Cloud é um conjunto de funcionalidades avançadas no GitHub.com",
+         "GitHub Enterprise Server é uma plataforma auto-hospedada que roda na infraestrutura da empresa",
+         "GitHub Enterprise Server é um conjunto de funcionalidades avançadas no GitHub.com",
+         "GitHub Enterprise Cloud é uma plataforma hospedada na nuvem que roda na infraestrutura da empresa",
+         "GitHub Enterprise Cloud é uma plataforma auto-hospedada que roda na infraestrutura da empresa"
+      ],
+      "correct": [
+         "GitHub Enterprise Cloud é um conjunto de funcionalidades avançadas no GitHub.com",
+         "GitHub Enterprise Server é uma plataforma auto-hospedada que roda na infraestrutura da empresa"
+      ]
+   },
+   {
+      "id": "081",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "O que são repositórios fixados no GitHub?",
+      "options": [
+         "Repositórios fixados são repositórios que você fixou no topo do seu perfil do GitHub.",
+         "Repositórios fixados são repositórios que o GitHub promove. Há novos repositórios fixados a cada mês.",
+         "Repositórios fixados são repositórios que foram temporária ou indefinidamente suspensos pelo GitHub.",
+         "Repositórios fixados são repositórios que foram marcados como favoritos pelos usuários do GitHub."
+      ],
+      "correct": [
+         "Repositórios fixados são repositórios que você fixou no topo do seu perfil do GitHub."
+      ]
+   },
+   {
+      "id": "082",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Trabalhando com repositórios no GitHub",
+      "header": "Qual desses arquivos pode personalizar seu perfil do GitHub?",
+      "options": [
+         "um arquivo `README.md` de perfil",
+         "um arquivo `CONTRIBUTING.md` de perfil",
+         "o perfil não é personalizável através de arquivos, mas através das configurações da conta"
+      ],
+      "correct": [
+         "um arquivo `README.md` de perfil"
+      ]
+   },
+   {
+      "id": "083",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual linguagem é usada para escrever comentários em issues e pull requests do GitHub?",
+      "options": [
+         "Markdown",
+         "HTML",
+         "AsciiDoc",
+         "reStructuredText"
+      ],
+      "correct": [
+         "Markdown"
+      ]
+   },
+   {
+      "id": "084",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "O que são os comandos de barra do GitHub?",
+      "options": [
+         "É uma maneira rápida de inserir Markdown complexo em seus comentários e descrições de pull requests ou issues.",
+         "É uma maneira de automatizar GitHub Actions.",
+         "É outro nome para a CLI do GitHub.",
+         "É uma maneira rápida de corrigir problemas de formatação de código nas alterações de código do seu pull request."
+      ],
+      "correct": [
+         "É uma maneira rápida de inserir Markdown complexo em seus comentários e descrições de pull requests ou issues."
+      ]
+   },
+   {
+      "id": "085",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Como o GitHub ajuda as pessoas que desejam escrever comentários adequados em issues e pull requests, mas não conhecem a sintaxe do Markdown?",
+      "options": [
+         "Há uma barra de formatação de texto nos formulários de comentários de issues e pull requests que gera Markdown para você.",
+         "Fornecendo uma folha de dicas de Markdown.",
+         "O GitHub converte automaticamente HTML em Markdown em comentários de issues e pull requests.",
+         "Os pull requests e issues do GitHub não suportam Markdown."
+      ],
+      "correct": [
+         "Há uma barra de formatação de texto nos formulários de comentários de issues e pull requests que gera Markdown para você."
+      ]
+   },
+   {
+      "id": "086",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "O que é o GitHub Desktop?",
+      "options": [
+         "É um aplicativo GUI para trabalhar com Git e GitHub no seu computador.",
+         "É uma versão auto-hospedada do GitHub que você pode instalar em seus próprios servidores ou computador pessoal.",
+         "É um plano de preços do GitHub para contas pessoais que oferece recursos adicionais além do plano gratuito.",
+         "É um editor online que permite trabalhar no seu repositório no navegador."
+      ],
+      "correct": [
+         "É um aplicativo GUI para trabalhar com Git e GitHub no seu computador."
+      ]
+   },
+   {
+      "id": "087",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "O que é o GitHub Mobile?",
+      "options": [
+         "É um aplicativo móvel para iOS e Android que permite trabalhar com o GitHub a partir do seu telefone.",
+         "É um serviço que permite testar seus aplicativos móveis em dispositivos reais.",
+         "É um serviço de transferência de dados do GitHub para petabytes de dados, onde um carro do GitHub irá até sua localização e transferirá os dados para sua rede local.",
+         "É um serviço de telemetria do GitHub que permite rastrear a atividade dos seus usuários no seu site ou aplicativo móvel."
+      ],
+      "correct": [
+         "É um aplicativo móvel para iOS e Android que permite trabalhar com o GitHub a partir do seu telefone."
+      ]
+   }
+]
