@@ -1,3 +1,2 @@
 <app-loader *ngIf="loading"></app-loader>
-<app-question-card  *ngIf="!finish && !loading"  [questionData]="questionData" [questionIndex]="current+1" [totalQuestions]="questionNumber"></app-question-card>
-<app-exam-summary *ngIf="finish" [summary]="summary" [exam]="exam"></app-exam-summary>
+<app-question-card  *ngIf="!loading"  [questionData]="questionData" [questionIndex]="current+1" [totalQuestions]="questionNumber"></app-question-card>

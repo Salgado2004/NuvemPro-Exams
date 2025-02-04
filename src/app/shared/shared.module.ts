@@ -21,6 +21,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
@@ -43,7 +45,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatSelectModule,
     MatDialogModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatSnackBarModule,
+    MatPaginatorModule
   ],
   exports: [
     HeaderComponent,
@@ -56,7 +60,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatSelectModule,
     MatDialogModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatPaginatorModule
   ]
 })
 export class SharedModule { }
