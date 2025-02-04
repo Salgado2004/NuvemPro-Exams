@@ -612,7 +612,7 @@
       "exam": "GHF",
       "type": "multiple",
       "domain": "Privacidade, segurança e administração",
-      "header": "Quais são os diferentes níveis de permissão para um repositório de propriedade de uma conta pessoal? (Escolha dois)",
+      "header": "Quais são os diferentes níveis de permissão para um repositório de uma conta pessoal? (Escolha dois)",
       "options": [
          "proprietário do repositório",
          "colaborador",
@@ -1444,6 +1444,701 @@
       ],
       "correct": [
          "É um aplicativo móvel para iOS e Android que permite trabalhar com o GitHub a partir do seu telefone."
+      ]
+   },
+   {
+      "id": "088",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Recursos de colaboração",
+      "header": "Como você pode associar um pull request a uma issue? (Escolha dois)",
+      "options": [
+         "Manualmente tanto pela visão de pull request quanto pela de issue",
+         "Usando uma palavra-chave na descrição dopull request e referenciando o título da issue.",
+         "Usando uma palavra-chave na descrição do pull request e referenciando o número da issue.",
+         "Incluindo o número da issue nas mudanças do código.",
+         "Incluindo o número da issue na mensagem de commit."
+      ],
+      "correct": [
+         "Manualmente tanto pela visão de pull request quanto pela de issue",
+         "Usando uma palavra-chave na descrição do pull request e referenciando o número da issue."
+      ]
+   },
+   {
+      "id": "089",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Recursos de colaboração",
+      "header": "Qual melhoria os issue forms trazem em relação aos issue templates?",
+      "options": [
+         "Issue forms permitem solicitar a informação aos usuários ao criar a issue, e então ter a informação adicionada automaticamente na issue.",
+         "Não existem issue forms no GitHub",
+         "Issue form é um recurso que automaticamente fecha issues depois de certo período de tempo, fornecendo um gerenciamento mais eficaz das issues comparado aos issue templates.",
+         "Issue form é uma ferramenta para criar issues que contém apenas título e descrição, simplificando o processo mas não necessariamente melhorando a qualidade da informação comparado aos issue templates."
+      ],
+      "correct": [
+         "Issue forms permitem solicitar a informação aos usuários ao criar a issue, e então ter a informação adicionada automaticamente na issue."
+      ]
+   },
+   {
+      "id": "090",
+      "exam": "GHF",
+      "type": "select",
+      "domain": "Recursos de colaboração",
+      "header": "_____________ são um recurso dos repositórios que são usados como um fórum de comunidade para ter conversas, fazer perguntas, postar anúncios e compartilhar ideias",
+      "options": [
+         "Discussions",
+         "Wikis",
+         "Gists",
+         "Pull requests"
+      ],
+      "correct": [
+         "Discussions"
+      ],
+      "body": "Selecione a alternativa que completa corretamente a frase acima"
+   },
+   {
+      "id": "091",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Recursos de colaboração",
+      "header": "Qual é o efeito de adicionar a linha `Closes #11` à descrição de um pull request?",
+      "options": [
+         "Assim que o pull request é mesclado, o pull request #11 será deletado automaticamente.",
+         "Assim que o pull request é mesclado, a 11ª branch será deletada automaticamente.",
+         "Assim que o pull request é mesclado, o issue #11 será fechado automaticamente.",
+         "Aquele pull request será automaticamente mesclado assim que o issue #11 for fechado.",
+         "Aquele pull request será automaticamente mesclado no dia 11 daquele mês."
+      ],
+      "correct": [
+         "Assim que o pull request é mesclado, o issue #11 será fechado automaticamente."
+      ]
+   },
+   {
+      "id": "092",
+      "exam": "GHF",
+      "type": "select",
+      "domain": "Recursos de colaboração",
+      "header": "No GitHub, uma proposta para mesclar um conjunto de commits de uma branch em outra branch é chamado de _________________ ",
+      "options": [
+         "Pull Request",
+         "Gist",
+         "Issue",
+         "Commit",
+         "A merge branch"
+      ],
+      "correct": [
+         "Pull Request"
+      ],
+      "body": "Selecione a alternativa que completa corretamente a frase acima"
+   },
+   {
+      "id": "093",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Recursos de colaboração",
+      "header": "Você deseja mesclar as mudanças da branch `feature-a` na branch `main` e está criando um pull request. Qual branch deve ser a `base` branch e qual deve ser a `compare` branch?",
+      "options": [
+         "`main` é a base branch e `feature-a` é a compare branch.",
+         "`feature-a` é a base branch e `main` é a compare branch."
+      ],
+      "correct": [
+         "`main` é a base branch e `feature-a` é a compare branch."
+      ]
+   },
+   {
+      "id": "094",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Recursos de colaboração",
+      "header": "O que são draft pull requests?",
+      "options": [
+         "Draft pull requests são pull requests que não estão pronto para serem revisados ainda.",
+         "Draft pull requests são pull requests que já foram revisados mas não mesclados.",
+         "Draft pull requests são pull requests que já foram revisados mas não aprovados.",
+         "Draft pull requests são templates para criar novos pull requests."
+      ],
+      "correct": [
+         "Draft pull requests são pull requests que não estão pronto para serem revisados ainda."
+      ]
+   },
+   {
+      "id": "095",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Recursos de colaboração",
+      "header": "Quais são os status possíveis para uma review de um pull request? (Escolha três)",
+      "options": [
+         "Fechar",
+         "Comentar",
+         "Solicitar mudanças",
+         "Negar",
+         "Aprovar",
+         "Aplaudir"
+      ],
+      "correct": [
+         "Comentar",
+         "Aprovar",
+         "Solicitar mudanças"
+      ]
+   },
+   {
+      "id": "096",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "",
+      "header": "Which of these statements about the differences of issues and discussions is true?",
+      "options": [
+         "GitHub Discussions are for conversations that need to be transparent and accessible but do not need to be tracked on a project board and are not related to code, unlike GitHub Issues.",
+         "GitHub Issues are for conversations that need to be transparent and accessible but do not need to be tracked on a project board and are not related to code, unlike GitHub Discussions."
+      ],
+      "correct": [
+         "GitHub Discussions are for conversations that need to be transparent and accessible but do not need to be tracked on a project board and are not related to code, unlike GitHub Issues."
+      ]
+   },
+   {
+      "id": "097",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Recursos de colaboração",
+      "header": "Qual dos seguintes recursos do GitHub funciona como uma forma simples para compartilhar trechos de código com outros?",
+      "options": [
+         "Gists",
+         "Wikis",
+         "Issues",
+         "Projects"
+      ],
+      "correct": [
+         "Gists"
+      ]
+   },
+   {
+      "id": "098",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Recursos de colaboração",
+      "header": "O que são GitHub Wikis?",
+      "options": [
+         "Wikis são um recurso do repositório para hospedar documentação.",
+         "Wikis são a documentação oficial do GitHub.",
+         "Wikis são um recurso para hospedar trechos de código.",
+         "Wikis são um lugar para guardar os arquivos `README.md` do projeto."
+      ],
+      "correct": [
+         "Wikis são um recurso do repositório para hospedar documentação."
+      ]
+   },
+   {
+      "id": "099",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "Quais são as duas opções disponíveis quando você já não precisa mais usar um Projeto?",
+      "options": [
+         "Excluir e arquivar",
+         "Fechar e excluir",
+         "Arquivar e fechar",
+         "Desativar e arquivar"
+      ],
+      "correct": [
+         "Fechar e excluir"
+      ]
+   },
+   {
+      "id": "100",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Recursos de colaboração",
+      "header": "Você pode mudar uma gist de pública para secreta depois de criá-la?",
+      "options": [
+         "Sim",
+         "Não"
+      ],
+      "correct": [
+         "Não"
+      ]
+   },
+   {
+      "id": "101",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Gerenciamento de projetos",
+      "header": "O que acontece quando você escolhe fechar um Projeto?",
+      "options": [
+         "O projeto é permanentemente removido da plataforma",
+         "O conteúdo é mantido e você pode reabrí-lo posteriormente.",
+         "Valores associados e dados de insights são deletados",
+         "O Projeto é movido para um pasta separada"
+      ],
+      "correct": [
+         "O conteúdo é mantido e você pode reabrí-lo posteriormente."
+      ]
+   },
+   {
+      "id": "102",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Trabalhando com repositórios no GitHub",
+      "header": "Se houverem múltiplos arquivos Readme.md em um repositório do GitHub, qual é a ordem prioridade em que eles serão renderizados?",
+      "options": [
+         "Diretório raiz, pasta `.docs`, pasta `.github`",
+         "pasta `.docs`, diretório raiz, pasta `.github`",
+         "pasta `.github`, diretório raiz, pasta `.docs`",
+         "pasta `.docs`, pasta `.github`, diretório raiz"
+      ],
+      "correct": [
+         "pasta `.github`, diretório raiz, pasta `.docs`"
+      ]
+   },
+   {
+      "id": "103",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Quais dos seguintes comandos Git permite que você crie uma nova branch e começe a trabalhar nela em uma linha? (Escolha dois)",
+      "options": [
+         "git checkout -b `<new_branch_name>`",
+         "git branch -c `<new_branch_name>`",
+         "git switch -c `<new_branch_name>`",
+         "git merge -m `<new_branch_name>`",
+         "git switch -m `<new_branch_name>`",
+         "git checkout -m `<new_branch_name>`"
+      ],
+      "correct": [
+         "git checkout -b `<new_branch_name>`",
+         "git switch -c `<new_branch_name>`"
+      ]
+   },
+   {
+      "id": "104",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Recursos de colaboração",
+      "header": "Se uma GitHub Discussion é convertida em um Issue e o issue é fechado ou referênciado usando seu número # correspondente, a discussão será modificada?",
+      "options": [
+         "Não",
+         "Sim"
+      ],
+      "correct": [
+         "Não"
+      ]
+   },
+   {
+      "id": "105",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Trabalhando com repositórios no GitHub",
+      "header": "Quais informações podem ser encontradas na seção Pulse da aba Insights de um repositório? (Escolha quatro)",
+      "options": [
+         "Razão de Pull requests abertos/mesclados",
+         "Resumo das atividades do repositório",
+         "Quantidade de linhas de código adicionadas e removidas",
+         "Lista de issues",
+         "Lista de conversas não resolvidas",
+         "Quantidade de forks do repositório"
+      ],
+      "correct": [
+         "Razão de Pull requests abertos/mesclados",
+         "Resumo das atividades do repositório",
+         "Quantidade de linhas de código adicionadas e removidas",
+         "Lista de conversas não resolvidas"
+      ]
+   },
+   {
+      "id": "106",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Quais são os diferentes níveis da hierarquia organizacional do GitHub? (Escolha três)",
+      "options": [
+         "Team",
+         "Organization",
+         "Personal",
+         "Pro",
+         "Enterprise"
+      ],
+      "correct": [
+         "Team",
+         "Organization",
+         "Enterprise"
+      ]
+   },
+   {
+      "id": "107",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Quem podem configurar a cobrança ou apontar gerentes de cobrança para uma organização? (Selecione três)",
+      "options": [
+         "O dono do repositório",
+         "Gerentes do time",
+         "Administradores do time",
+         "Gerentes de cobrança na organização",
+         "Os donos da organização",
+         "Os donos da enterprise"
+      ],
+      "correct": [
+         "Gerentes de cobrança na organização",
+         "Os donos da organização",
+         "Os donos da enterprise"
+      ]
+   },
+   {
+      "id": "108",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Qual é um dos principais benefícios de usar um Personal Access Token (PAT) no lugar do usuário e senha para autenticação no GitHub?",
+      "options": [
+         "PATs podem ser gerenciados pela organização e enterprise.",
+         "PAT é uma camada extra de segurança usada para fazer login em websites ou apps. Com o PAT, usuários precisam entrar com seu usuário e senha e também fornecer outra forma de autenticação que apenas eles tem acesso.",
+         "PAT pode ser usado para autenticação no GitHub com a API do GitHub ou a linha de comando. Usuários podem gerar um token pelas configurações do GitHub, e associar as permissões do token a repositórios ou organizações específicos. ",
+         "PAT permite que você autentique no GitHub Enterprise Server usando sua conta existente e centralizar o gerenciamento de acesso aos repositórios. "
+      ],
+      "correct": [
+         "PAT pode ser usado para autenticação no GitHub com a API do GitHub ou a linha de comando. Usuários podem gerar um token pelas configurações do GitHub, e associar as permissões do token a repositórios ou organizações específicos. "
+      ]
+   },
+   {
+      "id": "109",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Quais são as diferentes formas de autenticação multi-fator suportadas pelo GitHub? (Escolha cinco)",
+      "options": [
+         "Passkey",
+         "Mensagem de texto",
+         "Chamada por telefone",
+         "Email",
+         "Chave de segurança",
+         "GitHub mobile",
+         "Senha única baseada em tempo (TOTP)"
+      ],
+      "correct": [
+         "Passkey",
+         "Mensagem de texto",
+         "Chave de segurança",
+         "GitHub mobile",
+         "Senha única baseada em tempo (TOTP)"
+      ]
+   },
+   {
+      "id": "110",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Quais são os diferentes planos de preço do GitHub para contas pessoais? (Selecione dois)",
+      "options": [
+         "Free",
+         "Team",
+         "Enterprise",
+         "Pro",
+         "Personal",
+         "Business",
+         "Advanced"
+      ],
+      "correct": [
+         "Free",
+         "Pro"
+      ]
+   },
+   {
+      "id": "111",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual é um plano de preço do GitHub comum para contas pessoais e de organização?",
+      "options": [
+         "Free",
+         "Team",
+         "Enterprise",
+         "Pro",
+         "Personal",
+         "Business",
+         "Advanced"
+      ],
+      "correct": [
+         "Free"
+      ]
+   },
+   {
+      "id": "112",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual sintaxe é usada no Markdown do GitHub para criar uma lista de tarefas?",
+      "options": [
+         "`- [ ] and - [x]`",
+         "`# TODO: and # DONE:`",
+         "`// TODO: and // DONE:`",
+         "`<task> and <done>`"
+      ],
+      "correct": [
+         "`- [ ] and - [x]`"
+      ]
+   },
+   {
+      "id": "113",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual elemento de Markdown não está corretamente alinhado com sua sintaxe?",
+      "options": [
+         "Título - # Heading",
+         "Texto negrito - **bold**",
+         "Código inline - '''code'''",
+         "Hyperlink - [title](https://)"
+      ],
+      "correct": [
+         "Código inline - '''code'''"
+      ]
+   },
+   {
+      "id": "114",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual recurso é único do GitHub Desktop comparado ao github.com?",
+      "options": [
+         "Clonar repositórios para a máquina local",
+         "Criar novos repositórios",
+         "Ver insights do repositório",
+         "Visualizar o histórico de branch em uma interface gráfica"
+      ],
+      "correct": [
+         "Visualizar o histórico de branch em uma interface gráfica"
+      ]
+   },
+   {
+      "id": "115",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Qual das seguintes ações não pode ser realizada diretamente pelo GitHub Desktop?",
+      "options": [
+         "Aplicar 'git stash' em mudanças",
+         "Gerenciar GitHub Actions",
+         "Trocar branches",
+         "Commitar mudanças"
+      ],
+      "correct": [
+         "Gerenciar GitHub Actions"
+      ]
+   },
+   {
+      "id": "116",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Gerenciamento de projetos",
+      "header": "Quais são algumas ações que você pode realizar em relação a Templates de Projeto em sua organização? (Escolha três)",
+      "options": [
+         "Com permissão de escrita, tornar um projeto existente um template",
+         "Configurar templates recomendados para os membros da sua organização",
+         "Criar um novo template para ser usado como base para novos projetos",
+         "Com permissões de admin ou escrita, copiar um projeto existente como um template",
+         "Publicar seus templates no GitHub Marketplace para qualquer um usar"
+      ],
+      "correct": [
+         "Configurar templates recomendados para os membros da sua organização",
+         "Criar um novo template para ser usado como base para novos projetos",
+         "Com permissões de admin ou escrita, copiar um projeto existente como um template"
+      ]
+   },
+   {
+      "id": "117",
+      "exam": "GHF",
+      "type": "truefalse",
+      "domain": "Recursos de colaboração",
+      "header": "Sobre as GitHub wikis",
+      "options": [
+         "Wikis em repositórios privados são acessíveis para qualquer um com uma conta do GitHub.",
+         "Você pode editar wikis apenas no GitHub; edição local não é suportada.",
+         "Wikis em repositórios públicos são acessíveis para qualquer um, enquanto em repositórios privados são apenas acessíveis para colaboradores do repositório.",
+         "Markdown não pode ser usado para adicionar expressões matemáticas renderizadas, diagramas, mapas, e modelos 3D em uma wiki."
+      ],
+      "correct": [
+         "false",
+         "false",
+         "true",
+         "false"
+      ],
+      "body": "Para cada alternativa, assinale verdadeiro ou falso"
+   },
+   {
+      "id": "118",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Quais das seguintes funções estão disponíveis para um repositório no nível de organização no GitHub?",
+      "options": [
+         "Leitura",
+         "Triagem",
+         "Exclusão",
+         "Admin",
+         "Escrita",
+         "Manutenção"
+      ],
+      "correct": [
+         "Leitura",
+         "Triagem",
+         "Admin",
+         "Escrita",
+         "Manutenção"
+      ]
+   },
+   {
+      "id": "119",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Privacidade, segurança e administração",
+      "header": "Qual das opções a seguir é uma capacidade do Gerente de Segurança a respeito do GitHub Actions em uma organização?",
+      "options": [
+         "Eles podem configurar quais actions são permitidas ou bloqueadas dentro da organização.",
+         "Eles podem deletar todas as execuções de workflow de repositórios privados que foram há mais de 90 dias.",
+         "Eles podem desativar code reviews de repositórios na organization.",
+         "Eles podem remover a regra de proteção de branch `Exigir que os status checks passem antes do merge`."
+      ],
+      "correct": [
+         "Eles podem configurar quais actions são permitidas ou bloqueadas dentro da organização."
+      ]
+   },
+   {
+      "id": "120",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Trabalhando com repositórios no GitHub",
+      "header": "Qual recurso fornece gráficos ou visualizações pré-definidos para a atividade e saúde de um repositório?",
+      "options": [
+         "Aba de Insights",
+         "GitHub Actions",
+         "GitHub Projects",
+         "GitHub Discussions"
+      ],
+      "correct": [
+         "Aba de Insights"
+      ]
+   },
+   {
+      "id": "121",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Desenvolvimento moderno",
+      "header": "Qual desses recursos é fornecido pelo GitHub Copilot Business e não pelo GitHub Copilot Individual?",
+      "options": [
+         "Gerenciamento de políticas na organização, incluindo restringir funcionalidades",
+         "Isenção de todas as tarifas de uso",
+         "Suporte 24/7 pelo time do GitHub Copilot",
+         "Hospedagem local do modelo de IA por trás do GitHub Copilot"
+      ],
+      "correct": [
+         "Gerenciamento de políticas na organização, incluindo restringir funcionalidades"
+      ]
+   },
+   {
+      "id": "122",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Recursos de colaboração",
+      "header": "Quais das ações a seguir você pode realizar em uma GitHub Discussion? (Escolha três)",
+      "options": [
+         "Fixar no topo das discussions",
+         "Transferir para as discussions de outro repositório (se você tiver permissões de admin)",
+         "Converter em um gist secreto",
+         "Converter em um issue",
+         "Mesclar com um pull request existente"
+      ],
+      "correct": [
+         "Fixar no topo das discussions",
+         "Transferir para as discussions de outro repositório (se você tiver permissões de admin)",
+         "Converter em um issue"
+      ]
+   },
+   {
+      "id": "123",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Recursos de colaboração",
+      "header": "Qual query de pesquisa encontra todos os issues abertos com a label `test` e que mencionam 'fix' no seu corpo?",
+      "options": [
+         "`is:pr is:open label:test \"fix\"`  ",
+         "`is:issue in:comments label:test \"fix\"`  ",
+         "`is:issue is:open label:test \"fix\"`  ",
+         "`type:issue label:test is:open body:\"fix\"`"
+      ],
+      "correct": [
+         "`is:issue is:open label:test \"fix\"`  "
+      ]
+   },
+   {
+      "id": "124",
+      "exam": "GHF",
+      "type": "multiple",
+      "domain": "Desenvolvimento moderno",
+      "header": "Quais das opções a seguir você pode personar em um Codespace com o arquivo de configuração `.devcontainer/devcontainer.json`? (Escolha três)",
+      "options": [
+         "Sistema operacional ou imagem base",
+         "Configuração do shell",
+         "Cobrança pelo uso de GitHub Actions",
+         "Nome do codespace",
+         "Regras de proteção de branch do repositório",
+         "Políticas no nível da organização"
+      ],
+      "correct": [
+         "Sistema operacional ou imagem base",
+         "Configuração do shell",
+         "Nome do codespace"
+      ]
+   },
+   {
+      "id": "125",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Benefícios da Comunidade GitHub",
+      "header": "Qual das alternativas descreve melhor a diferença entre clonar um repositório e criar um fork de um repositório?",
+      "options": [
+         "Quando você clona um repositório, as mudanças que você faz vão diretamente para o repositório original. Um fork exige uma cópia local separada.",
+         "Um forking cria uma cópia do repositório na sua conta do GitHub, enquanto clonar cria uma cópia local no seu computador.",
+         "Clonar sempre transfere a propriedade do repositório, enquanto um fork não.",
+         "Apenas repositórios privados podem ter forks, enquanto apenas repositórios públicos podem ser clonados."
+      ],
+      "correct": [
+         "Um forking cria uma cópia do repositório na sua conta do GitHub, enquanto clonar cria uma cópia local no seu computador."
+      ]
+   },
+   {
+      "id": "126",
+      "exam": "GHF",
+      "type": "truefalse",
+      "domain": "Introdução ao Git e ao GitHub",
+      "header": "Sobre items fixados no seu perfil do GitHub",
+      "options": [
+         "Você pode fixar até 10 repositórios no seu perfil.",
+         "Você pode fixar até seis repositórios ou gists no seu perfil.",
+         "Você pode fixar repositórios públicos ou privados.",
+         "Fixar um item o deleta da sua lista de repositórios."
+      ],
+      "correct": [
+         "false",
+         "true",
+         "true",
+         "false"
+      ],
+      "body": "Para cada alternativa, assinale verdadeiro ou falso"
+   },
+   {
+      "id": "127",
+      "exam": "GHF",
+      "type": "options",
+      "domain": "Recursos de colaboração",
+      "header": "Qual combinação avançada de operadores de pesquisa você usaria para encontrar repositórios públicos com mais de 100 estrelas que mencionam 'docker' em seu nome?",
+      "options": [
+         "`in:name docker stars:>100 is:public`",
+         "`docker in:description stars:<100 is:public`",
+         "`is:public name:docker stars:100`",
+         "`topic:docker stars:>100 in:readme`"
+      ],
+      "correct": [
+         "`in:name docker stars:>100 is:public`"
       ]
    }
 ]

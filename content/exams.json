@@ -153,7 +153,7 @@
     "name": "GHF",
     "fullname": "GitHub Foundations",
     "provider": "GitHub",
-    "questions": 87,
+    "questions": 127,
     "image": "assets/badges/GHF-badge.png",
     "domains": [
       {
