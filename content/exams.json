@@ -4,7 +4,7 @@
     "fullname": "Azure Fundamentals",
     "provider": "Microsoft",
     "level": "Iniciante",
-    "questions": 5,
+    "questions": 33,
     "image": "assets/badges/AZ900-badge.png",
     "domains": [
       {
