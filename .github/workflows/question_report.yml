@@ -1,0 +1,18 @@
+name: Open new question report
+
+on:
+  repository_dispatch:
+    types: [question_report]
+
+jobs:
+  report_question:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create report issue
+        run: |
+          gh issue create --title "$TITLE" --body "$BODY" --template "Question Report"
+        env:
+          TITLE: Report ${{ github.event.client_payload.reference }}
+          BODY: reference=${{ github.event.client_payload.reference }}&reason=${{ github.event.client_payload.reason }}&explain=${{ github.event.client_payload.explain }}
