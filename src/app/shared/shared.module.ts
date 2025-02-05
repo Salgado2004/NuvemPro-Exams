@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 /* Componentes */
 import { LoaderComponent } from './components/loader/loader.component';
@@ -15,6 +16,7 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 
 /* Angular material */
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input'
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
@@ -24,6 +26,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatExpansionModule } from '@angular/material/expansion';
+
+/* Utils */
+import { OctokitService } from './utils/octokit.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +52,10 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatButtonModule,
     MatIconModule,
     MatSnackBarModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatInputModule,
+    FormsModule, 
+    ReactiveFormsModule
   ],
   exports: [
     HeaderComponent,
@@ -62,6 +70,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatButtonModule,
     MatIconModule,
     MatPaginatorModule
+  ],
+  providers: [
+    OctokitService
   ]
 })
 export class SharedModule { }

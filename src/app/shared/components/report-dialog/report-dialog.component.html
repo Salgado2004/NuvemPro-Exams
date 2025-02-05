@@ -1,12 +1,24 @@
 <h2 mat-dialog-title>Reportar questão</h2>
 <mat-dialog-content>
-  <div class="questionReference">
-    <p>{{ data }}</p>
-    <button mat-icon-button (click)="copyReference()"><mat-icon fontSet="material-icons-outlined">content_copy</mat-icon></button>
-  </div>
-  <p>Para reportar a questão, copie o texto acima e preencha o formulário no <a href="https://github.com/Salgado2004/NuvemPro-Exams/issues/new?assignees=&labels=question%2Cgood+first+issue&projects=&template=question_report.yml&title=Report+-+'Short+description'" target="_blank">GitHub</a></p>
-  <span>Atenção! É necessário uma conta no GitHub</span>
+  <form [formGroup]="formGroup">
+    <mat-form-field class="form-section">
+      <mat-label>Referência da questão</mat-label>
+      <input matInput disabled [value]="data">
+    </mat-form-field>
+    <mat-label>Por que você está reportando a questão?</mat-label>
+    <mat-radio-group formControlName="reason" class="form-section">
+      <p><mat-radio-button value="A questão está incorreta">A questão está incorreta</mat-radio-button></p>
+      <p><mat-radio-button value="A questão está desatualizada">A questão está desatualizada</mat-radio-button></p>
+      <p><mat-radio-button value="A questão não faz parte do conteúdo do exame">A questão não faz parte do conteúdo do exame</mat-radio-button></p>
+      <p><mat-radio-button value="Outro">Outro</mat-radio-button></p>
+    </mat-radio-group>
+    <mat-label>Por favor, forneça uma breve explicação da opção marcada acima: </mat-label>
+    <mat-form-field class="form-section">
+      <textarea formControlName="explain" matInput placeholder="Ex. Reportei essa questão porque..."></textarea>
+    </mat-form-field>
+  </form>
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button mat-dialog-close>Fechar</button>
+  <button mat-button class="send" (click)="sendReport()">Enviar</button>
 </mat-dialog-actions>

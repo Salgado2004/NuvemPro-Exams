@@ -1,18 +1,7 @@
-.questionReference {
-    display: flex;
-    align-items: center;
+.form-section {
+    width: 100%;
 }
 
-a {
-    color: #319bf5;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-span{
-    color: #e35b59;
+.send{
+    background-color: #e35b59;
 }
