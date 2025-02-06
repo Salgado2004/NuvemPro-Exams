@@ -20,6 +20,7 @@ import { QuestionCardComponent } from './components/question-card/question-card.
 import { DomainSummaryComponent } from './components/domain-summary/domain-summary.component';
 import { ListSimuladosComponent } from './components/list-simulados/list-simulados.component';
 import { QuestionSummaryComponent } from './components/question-summary/question-summary.component';
+import { SummaryOnboardingComponent } from './components/summary-onboarding/summary-onboarding.component';
 import { QuestionsContainerComponent } from './components/questions-container/questions-container.component';
 
 /* Questões */
@@ -56,7 +57,8 @@ import { DinamicLoaderDirective } from './utils/directive/dinamic-loader.directi
     TrueFalseQuestionComponent,
     DragDropQuestionComponent,
     DinamicLoaderDirective,
-    CodeblockComponent
+    CodeblockComponent,
+    SummaryOnboardingComponent
   ],
   imports: [
     CommonModule,

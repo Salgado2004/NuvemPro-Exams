@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Simulado } from '../../utils/model/simulado';
+import { PageEvent } from '@angular/material/paginator';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExamHistory, ExamSummary } from '../../utils/model/history';
-import { PageEvent } from '@angular/material/paginator';
+import { SummaryOnboardingComponent } from '../../components/summary-onboarding/summary-onboarding.component';
 
 @Component({
   selector: 'app-summary',
@@ -14,12 +16,15 @@ export class SummaryComponent {
   summary: ExamSummary;
   exam: Simulado;
   attempt: number;
+  onboarding: boolean;
   totalAttempts: number;
   generalScore: number;
   summaryByDomain: any[] = [];
   scoreByDomain: number[] = [];
+  readonly dialog = inject(MatDialog);
   
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {
+    this.onboarding = window.localStorage.getItem("summary-onboarding") !== null;
     this.history = JSON.parse(window.localStorage.getItem("examHistory"));
     if (Object.keys(this.history).length === 0) {
       this.router.navigate(['/simulados']);
@@ -39,6 +44,9 @@ export class SummaryComponent {
   
   ngOnInit() {
     this.loadSummary();
+    if (!this.onboarding){
+      this.dialog.open(SummaryOnboardingComponent);
+    }
   }
   
   loadSummary(): void {
