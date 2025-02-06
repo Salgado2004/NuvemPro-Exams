@@ -41,9 +41,8 @@ export class QuestionsContainerComponent {
     SimuladoEventsService.get('endExam').subscribe( (summary:QuestionSummary) => {
       this.summary.push(summary);
       
-      this.history = JSON.parse(window.localStorage.getItem("examHistory"))
       const date = new Date();
-      if (Object.keys(this.history).length === 0){
+      if (window.localStorage.getItem("examHistory") === null){
         this.history = new Map();
         
         let examHistory  = { attempts: [] };
@@ -53,7 +52,7 @@ export class QuestionsContainerComponent {
         window.localStorage.setItem("examHistory", JSON.stringify(Array.from(this.history.entries())));
         
       } else {
-        this.history = new Map(this.history);
+        this.history = new Map(JSON.parse(window.localStorage.getItem("examHistory")));
         let examHistory = this.history.get(this.exam.name);
         if (examHistory === undefined){
           examHistory = { attempts: [] };
