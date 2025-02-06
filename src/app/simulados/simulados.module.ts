@@ -11,15 +11,16 @@ import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 /* Páginas */
 import { HomeComponent } from './pages/home/home.component';
 import { ExamComponent } from './pages/exam/exam.component';
+import { SummaryComponent } from './pages/summary/summary.component';
 
 /* Componentes */
 import { ExamCardComponent } from './components/exam-card/exam-card.component';
 import { CodeblockComponent } from './components/codeblock/codeblock.component';
-import { ExamSummaryComponent } from './components/exam-summary/exam-summary.component';
 import { QuestionCardComponent } from './components/question-card/question-card.component';
 import { DomainSummaryComponent } from './components/domain-summary/domain-summary.component';
 import { ListSimuladosComponent } from './components/list-simulados/list-simulados.component';
 import { QuestionSummaryComponent } from './components/question-summary/question-summary.component';
+import { SummaryOnboardingComponent } from './components/summary-onboarding/summary-onboarding.component';
 import { QuestionsContainerComponent } from './components/questions-container/questions-container.component';
 
 /* Questões */
@@ -44,7 +45,7 @@ import { DinamicLoaderDirective } from './utils/directive/dinamic-loader.directi
     HomeComponent,
     ExamComponent,
     ExamCardComponent,
-    ExamSummaryComponent,
+    SummaryComponent,
     DomainSummaryComponent,
     ListSimuladosComponent,
     QuestionCardComponent,
@@ -56,7 +57,8 @@ import { DinamicLoaderDirective } from './utils/directive/dinamic-loader.directi
     TrueFalseQuestionComponent,
     DragDropQuestionComponent,
     DinamicLoaderDirective,
-    CodeblockComponent
+    CodeblockComponent,
+    SummaryOnboardingComponent
   ],
   imports: [
     CommonModule,

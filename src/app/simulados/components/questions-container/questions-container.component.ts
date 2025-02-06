@@ -1,10 +1,12 @@
-import { Component, Input, ViewChild } from '@angular/core';
-import { QueryQuestionsService } from '../../utils/service/query-questions.service';
-import { SimuladoEventsService } from '../../utils/service/simulado-events.service';
-import { QuestionCardComponent } from '../question-card/question-card.component';
+import { Router } from '@angular/router';
 import { Simulado } from '../../utils/model/simulado';
-import { QuestionInterface } from '../../utils/model/question-interface';
+import { ExamHistory } from '../../utils/model/history';
+import { Component, Input, ViewChild } from '@angular/core';
 import { QuestionSummary } from '../../utils/model/question-summary';
+import { QuestionInterface } from '../../utils/model/question-interface';
+import { QuestionCardComponent } from '../question-card/question-card.component';
+import { SimuladoEventsService } from '../../utils/service/simulado-events.service';
+import { QueryQuestionsService } from '../../utils/service/query-questions.service';
 
 @Component({
   selector: 'app-questions-container',
@@ -19,28 +21,57 @@ export class QuestionsContainerComponent {
   questions: QuestionInterface[];
   summary: QuestionSummary[] = [];
   questionData: QuestionInterface;
+  history: Map<String, ExamHistory>;
   current = 0;
-  finish:boolean = false;
 
-  constructor(private query: QueryQuestionsService) { }
+  constructor(private query: QueryQuestionsService, private router: Router) {}
+
   ngOnInit() {
     this.generateQuestions().then(() => {
-        this.loading = false;
-        this.getQuestion();
+      this.loading = false;
+      this.getQuestion();
     });
-
+    
     SimuladoEventsService.get('nextQuestion').subscribe( (summary:QuestionSummary) => {
       this.summary.push(summary);
       this.current += 1;
       this.getQuestion();
     });
-
+    
     SimuladoEventsService.get('endExam').subscribe( (summary:QuestionSummary) => {
       this.summary.push(summary);
-      this.finish = true;
+      
+      this.history = JSON.parse(window.localStorage.getItem("examHistory"))
+      const date = new Date();
+      if (Object.keys(this.history).length === 0){
+        this.history = new Map();
+        
+        let examHistory  = { attempts: [] };
+        examHistory.attempts.unshift({exam: this.exam, summary: this.summary, date: date.toLocaleString()});
+        
+        this.history.set(this.exam.name, examHistory);
+        window.localStorage.setItem("examHistory", JSON.stringify(Array.from(this.history.entries())));
+        
+      } else {
+        this.history = new Map(this.history);
+        let examHistory = this.history.get(this.exam.name);
+        if (examHistory === undefined){
+          examHistory = { attempts: [] };
+        }
+        examHistory.attempts.unshift({exam: this.exam, summary: this.summary, date: date.toLocaleString()});
+        if (examHistory.attempts.length > 5) {
+          examHistory.attempts.pop();
+        }
+
+        this.history.set(this.exam.name, examHistory);
+        window.localStorage.setItem("examHistory", JSON.stringify(Array.from(this.history.entries())));
+      }
+
+      this.router.navigate([`/simulados/summary/${this.exam.name}`]);
     });
   }
 
+  /* Method to query the exam questions from the JSON data and sort them by domain */
   async generateQuestions(){
     this.questions = [];
     try{
@@ -52,6 +83,7 @@ export class QuestionsContainerComponent {
     }
   }
 
+  /* Specialized method to sort questions by domain, considering each domains weight in the exam */
   questionsByDomain(questions: QuestionInterface[]){
     const questionsByDomain = [];
     const domainWeights = [];
@@ -80,6 +112,7 @@ export class QuestionsContainerComponent {
     }
   }
 
+  /* Method used to change for the next question */
   private getQuestion(){
     this.questionData = this.questions[this.current];
     this.questionCard.questionIndex = this.current+1;

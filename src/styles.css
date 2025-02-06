@@ -28,6 +28,7 @@
     --mdc-checkbox-selected-focus-state-layer-color: #319bf5;
     --mdc-checkbox-selected-hover-state-layer-color: #319bf5;
     --mdc-checkbox-selected-pressed-state-layer-color: #319bf5;
+    --mat-snack-bar-button-color: #319bf5;
 }
 
 body{

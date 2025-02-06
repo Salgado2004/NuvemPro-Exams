@@ -3,7 +3,7 @@
     "id": "001",
     "exam": "AZ900",
     "type": "options",
-    "domain":"Descrever os conceitos da nuvem",
+    "domain": "Descrever os conceitos da nuvem",
     "header": "Qual é a vantagem da computação em nuvem em comparação com implantações locais?",
     "options": [
       "Você pode dimensionar mais rapidamente",
@@ -19,7 +19,7 @@
     "id": "002",
     "exam": "AZ900",
     "type": "multiple",
-    "domain":"Descrever a arquitetura e os serviços do Azure",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
     "header": "Quais dois recursos do Azure podem usar as zonas de disponibilidade? Cada resposta correta apresenta uma solução completa.",
     "options": [
       "Bancos de Dados SQL do Azure",
@@ -68,19 +68,509 @@
     ]
   },
   {
-      "id": "005",
-      "exam": "AZ900",
-      "domain": "Descrever os conceitos da nuvem",
-      "type": "dragdrop",
-      "header": "Qual solução de implantação em nuvem é usada para máquinas virtuais do Azure e bancos de dados SQL do Azure? Para responder, arraste e solte as opções apropriadas na área de resposta.",
-      "body": "NOTA: Cada correspondência correta vale um ponto.",
-      "options": [
-          "Máquinas Virtuais do Azure",
-          "Bancos de Dados SQL do Azure"
-      ],
-      "correct": [
-          "Infraestrutura como Serviço (IaaS)",
-          "Plataforma como Serviço (PaaS)"
-      ]
+    "id": "005",
+    "exam": "AZ900",
+    "domain": "Descrever os conceitos da nuvem",
+    "type": "dragdrop",
+    "header": "Qual solução de implantação em nuvem é usada para máquinas virtuais do Azure e bancos de dados SQL do Azure? Para responder, arraste e solte as opções apropriadas na área de resposta.",
+    "body": "NOTA: Cada correspondência correta vale um ponto.",
+    "options": [
+      "Máquinas Virtuais do Azure",
+      "Bancos de Dados SQL do Azure"
+    ],
+    "correct": [
+      "Infraestrutura como Serviço (IaaS)",
+      "Plataforma como Serviço (PaaS)"
+    ]
+  },
+  {
+    "id": "006",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Sua empresa tem datacenters em São Paulo e Nova York e uma assinatura do Microsoft Azure. Você está configurando os datacenters como sites geo-clusterizados para resiliência do site. Você precisa recomendar uma opção de redundância de armazenamento do Azure, e tem os seguintes requisitos: ",
+    "options": [
+      "Redundância geográfica",
+      "Redundância geográfica somente leitura",
+      "Redundância de zona",
+      "Redundância local"
+    ],
+    "correct": [
+      "Redundância geográfica somente leitura"
+    ],
+    "body": "Qual das seguintes opções de redundância de armazenamento do Azure você deve recomendar",
+    "requirements": [
+      "Os dados devem ser armazenados em vários nós",
+      "Os dados devem ser armazenados em nós em localizações geográficas separadas",
+      "Os dados podem ser lidos do local secundário, assim como do local primário"
+    ]
+  },
+  {
+    "id": "007",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Você recebeu a tarefa de implantar máquinas virtuais para sua empresa. Você precisa fazer uso da solução de nuvem adequada.",
+    "options": [
+      "Você deve fazer uso de Software como Serviço (SaaS)",
+      "Você deve fazer uso de Plataforma como Serviço (PaaS)",
+      "Você deve fazer uso de Infraestrutura como Serviço (IaaS)"
+    ],
+    "correct": [
+      "Você deve fazer uso de Infraestrutura como Serviço (IaaS)"
+    ],
+    "body": "Assinale a alterativa que atende seu objetivo."
+  },
+  {
+    "id": "008",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Seus desenvolvedores criaram 10 aplicações web que precisam ser hospedadas no Azure. Você precisa determinar em qual camada de preço hospedar as aplicações. A camada deve atender aos seguintes requisitos: ",
+    "options": [
+      "Standard",
+      "Básico",
+      "Gratuito",
+      "Compartilhado",
+      "Premium"
+    ],
+    "correct": [
+      "Standard"
+    ],
+    "body": "Qual camada de preços você deve usar?",
+    "requirements": [
+      "Os aplicativos web devem ter domínios personalizados",
+      "Cada aplicativo web necessita 10 GB de armazenamento",
+      "Cada aplicativo web deve executar em uma instância de computação dedicada",
+      "Balanceamento de carga entre as instâncias deve estar incluído",
+      "Os custos devem ser minimizados"
+    ]
+  },
+  {
+    "id": "009",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Seu grupo de TCC criou um portal web para os alunos de TADS na UFPR. O aplicativo web vai estar acessível publicamente e usado por alunos de TADS para consultar informações de nota e presença. Atualmente, o aplicativo está executando em um ambiente on-premise de testes, mas você deseja hospedá-lo no Azure. Considerando os seguintes requisitos: ",
+    "options": [
+      "Standard",
+      "Básico",
+      "Premium",
+      "Gratuito",
+      "Compartilhado"
+    ],
+    "correct": [
+      "Standard"
+    ],
+    "body": "Qual camada de preços você deve usar?",
+    "requirements": [
+      "O website vai usar a URL portaldoaluno.tads.ufpr.br",
+      "O website será implantado em duas instâncias",
+      "Suporte SSL deve estar incluído",
+      "O website necessita 12 GB de armazenamento",
+      "Os custos devem ser minimizados"
+    ]
+  },
+  {
+    "id": "010",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Sua empresa está planejando migrar todas as suas máquinas virtuais para uma assinatura do Azure paga conforme o uso. Atualmente, as máquinas virtuais estão hospedadas em hosts Hyper-V em um datacenter. ",
+    "options": [
+      "Modelo de despesa elástico",
+      "Modelo de despesa operacional",
+      "Modelo de despesa escalável",
+      "Modelo de despesa capital"
+    ],
+    "correct": [
+      "Modelo de despesa operacional"
+    ],
+    "body": "Assinale a alternativa que corresponde ao modelo de despesa que esse caso representa"
+  },
+  {
+    "id": "011",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Você precisa implantar uma solução de Inteligência Artificial no Azure, e quer ter certeza que será capaz de buildar, testar, e implantar análises preditivas para a solução.",
+    "options": [
+      "Azure Machine Learning Studio",
+      "Azure Cosmos DB"
+    ],
+    "correct": [
+      "Azure Machine Learning Studio"
+    ],
+    "body": "Qual serviço do Azure você deve usar?"
+  },
+  {
+    "id": "012",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "A infraestrutura da sua empresa inclui um número de Unidades de Negócio, em que cada necessita diversos recursos idênticos do Azure para suas operações no dia-a-dia.",
+    "options": [
+      "Gerenciamento de API do Azure",
+      "Templates do Azure Resource Manager (ARM)",
+      "Grupos de gerenciamento do Azure"
+    ],
+    "correct": [
+      "Templates do Azure Resource Manager (ARM)"
+    ],
+    "body": "Você precisa de uma estratégia para criar os recursos do Azure automaticamente. Qual serviço você deve utilizar?"
+  },
+  {
+    "id": "013",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Você recebeu a tarefa de implantar uma aplicação de negócios (LOB) crítica, que será instalada em uma máquina virtual do Azure. Você foi informado que a estratégia de implantação deve garantir uma disponibilidade de 99.99%.",
+    "options": [
+      "Duas máquinas virtuais em uma zona de disponibilidade",
+      "Duas máquinas virtuais em duas zonas de disponibilidade",
+      "Uma máquina virtual em duas zonas de disponibilidade"
+    ],
+    "correct": [
+      "Duas máquinas virtuais em duas zonas de disponibilidade"
+    ],
+    "body": "Você deve garantir que a solução atenda aos requisitos utilizando o mínimo de instâncias e zonas de disponibilidade possível. O que você deve sugerir?"
+  },
+  {
+    "id": "014",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Sua empresa está planejando implantar um grande número de máquinas virtuais personalizadas semanalmente. As máquinas virtuais também serão removidas no fim da mesma semana que foram implantadas. 60% das máquinas virtuais tem Windows Server 2016 instalado, e os outros 40% tem Linux Ubuntu instalado.",
+    "options": [
+      "Azure DevTest Labs",
+      "Desktop gerenciado do Azure",
+      "Instâncias reservadas de máquina virtual do Azure"
+    ],
+    "correct": [
+      "Azure DevTest Labs"
+    ],
+    "body": "Você recebeu a tarefa de garantir que o esforço administrativo necessário nesse processo seja reduzido utilizando um serviço do Azure. Qual serviço você deve recomendar?"
+  },
+  {
+    "id": "015",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Sua empresa tem máquinas virtuais implantadas no Azure. As VMs estão localizadas em uma única rede virtual do Azure chamada VNet1. Os usuários da empresa trabalham remotamente e precisam acessar as VMs na VNet1.",
+    "options": [
+      "Configurar uma VPN Site-to-Site (S2S)",
+      "Configurar uma VPN VNet-to-VNet",
+      "Configurar uma VPN Point-to-Site (P2S)",
+      "Configurar DirectAccess em uma VM do servidor Windows Server 2012",
+      "Configurar uma VPN multi-site"
+    ],
+    "correct": [
+      "Configurar uma VPN Point-to-Site (P2S)"
+    ],
+    "body": "Como você pode providenciar acesso aos usuários?"
+  },
+  {
+    "id": "016",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Você foi informado pelos seus superiores que a empresa deseja automatizar o processo de implantação no servidor do Azure. No entanto, existem preocupações sobre o risco de exposição de credenciais administrativas.",
+    "options": [
+      "Autenticação Multifator (MFA) do Azure",
+      "Proteção de Informação do Azure",
+      "Azure Key Vault"
+    ],
+    "correct": [
+      "Azure Key Vault"
+    ],
+    "body": "Você deve garantir que, durante a implantação, as credenciais estejam criptografadas por um serviço do Azure. Qual serviço você deve usar?"
+  },
+  {
+    "id": "017",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever os conceitos da nuvem",
+    "header": "Qual das opções a seguir define alvos de performance, como disponibilidade, para um produto ou serviço do Azure?",
+    "options": [
+      "Métricas de uso",
+      "Acordos de Nível de Serviço (SLA)",
+      "Planos de suporte"
+    ],
+    "correct": [
+      "Acordos de Nível de Serviço (SLA)"
+    ]
+  },
+  {
+    "id": "018",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever o gerenciamento e a governança do Azure",
+    "header": "Qual das opções a seguir é uma unidade lógica para gerenciar recursos, orçamentos e cobranças do Azure que é associada a uma conta?",
+    "options": [
+      "Assinaturas do Azure",
+      "Grupos de gerenciamento do Azure",
+      "Grupos de Recursos do Azure",
+      "Organizações do Azure"
+    ],
+    "correct": [
+      "Assinaturas do Azure"
+    ]
+  },
+  {
+    "id": "019",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever o gerenciamento e a governança do Azure",
+    "header": "Qual plano de suporte do Azure support é o melhor para cargas de trabalho críticas?",
+    "options": [
+      "Azure Developer",
+      "Azure Professional Direct",
+      "Azure Standard",
+      "Azure Basic"
+    ],
+    "correct": [
+      "Azure Professional Direct"
+    ]
+  },
+  {
+    "id": "020",
+    "exam": "AZ900",
+    "type": "select",
+    "domain": "Descrever o gerenciamento e a governança do Azure",
+    "header": "As Reservas do Azure oferecem descontos nos preços se você _______________",
+    "options": [
+      "Provisionar uma certa quantidade de recursos",
+      "Pagar adiantado",
+      "Usar limites de gastos",
+      "Se comprometer com um uso constante"
+    ],
+    "correct": [
+      "Pagar adiantado"
+    ],
+    "body": "Complete a afirmação acima com a alternativa correta"
+  },
+  {
+    "id": "021",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever os conceitos da nuvem",
+    "header": "Você tem dois serviços com dois SLAs diferentes. Como é determinado o SLA composto de ambos?",
+    "options": [
+      "Multiplicando as porcentagens dos SLAs",
+      "Somando as porcentagens SLAs",
+      "Usando o SLA com menor porcentagem",
+      "Usando o SLA com maior porcentagem"
+    ],
+    "correct": [
+      "Multiplicando as porcentagens dos SLAs"
+    ]
+  },
+  {
+    "id": "022",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever o gerenciamento e a governança do Azure",
+    "header": "Qual serviço pode ser usado para estimar as economias de custo ao migrar para o Azure?",
+    "options": [
+      "Métricas de uso",
+      "Calculadora de Custo Total de Propriedade (TCO)",
+      "Calculadora de Preços",
+      "Azure Advisor"
+    ],
+    "correct": [
+      "Calculadora de Custo Total de Propriedade (TCO)"
+    ]
+  },
+  {
+    "id": "023",
+    "exam": "AZ900",
+    "type": "multiple",
+    "domain": "Descrever o gerenciamento e a governança do Azure",
+    "header": "O Azure Advisor fornece recomendações para:",
+    "options": [
+      "Segurança", 
+      "Performance", 
+      "Design e arquitetura", 
+      "Excelência operacional",
+      "Novas funcionalidades",
+      "Custo"
+    ],
+    "correct": [
+      "Segurança", 
+      "Performance", 
+      "Excelência operacional",
+      "Custo"  
+    ]
+  },
+  {
+    "id": "024",
+    "exam": "AZ900",
+    "type": "select",
+    "domain": "Descrever os conceitos da nuvem",
+    "header": "Para usar datacenters do Azure datacenters que possuem capacidades de computatação, resfriamento, e rede independentes de outros datacenters na mesma região, você deve escolher uma região que dê suporte a ______________",
+    "options": [
+      "Zonas de disponibilidade",
+      "Distribuição geográfica",
+      "Acordos de Nível de Serviço (SLA)",
+      "Pares de regiões"
+    ],
+    "correct": [
+      "Zonas de disponibilidade"
+    ],
+    "body": "Complete a afirmação acima com a alternativa correta"
+  },
+  {
+    "id": "025",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever os conceitos da nuvem",
+    "header": "Ao que se refere o conceito de Disponibilidade em uma aplicação?",
+    "options": [
+      "O tempo total em que a aplicação está operacional.",
+      "A quantidade de usuários que a aplicação consegue atender em um período de tempo",
+      "O acordo de nível de serviço associado ao recurso.",
+      "O suporte da aplicação em uma zona de disponibilidade."
+    ],
+    "correct": [
+      "O tempo total em que a aplicação está operacional."
+    ]
+  },
+  {
+    "id": "026",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever o gerenciamento e a governança do Azure",
+    "header": "Quais planos de suporte do Azure oferecem a abertura de chamados com severidade \"A\" e \"B\"?",
+    "options": [
+      "Developer",
+      "Standard",
+      "Premium",
+      "Professional Direct",
+      "Básico"
+    ],
+    "correct": [
+      "Professional Direct",
+      "Premium",
+      "Standard"
+    ]
+  },
+  {
+    "id": "027",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Qual das opções corresponde ao propósito de um Gateway de VPN do Azure?",
+    "options": [
+      "Garantir que a conexão da Rede virtual com a Internet seja segura.",
+      "Balancear os dados recebidos no seus serviços do Azure services a partir de redes externas privadas.",
+      "Enviar tráfego criptografado entre uma Rede Virtual do Azure Virtual e uma localização on-premises através da Internet pública.",
+      "Lidar com qualquer atividade suspeita tentando acessar sua assinatura do Azure.",
+      "Gerenciar os endereços IP de uma assinatura do Azure e garantir que apenas tráfego seguro seja permitido."
+    ],
+    "correct": [
+      "Enviar tráfego criptografado entre uma Rede Virtual do Azure Virtual e uma localização on-premises através da Internet pública."
+    ]
+  },
+  {
+    "id": "028",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Como os serviços do Azure usam uma rede virtual?",
+    "options": [
+      "Redes virtuais do Azure permitem que os recursos do Azure se comuniquem de maneira segura uns com os outros, com a internet, e com redes on-premise.",
+      "Qualquer recurso que se comunica com a Internet pública precisa estar em uma Rede Virtual.",
+      "Todos os recursos devem estar conectados a uma Rede Virtual para usar a plataforma do Azure.",
+      "Recursos em contas gratuitas não precisam estar em uma Rede Virtual para usar o Azure."
+    ],
+    "correct": [
+      "Redes virtuais do Azure permitem que os recursos do Azure se comuniquem de maneira segura uns com os outros, com a internet, e com redes on-premise."
+    ]
+  },
+  {
+    "id": "029",
+    "exam": "AZ900",
+    "type": "multiple",
+    "domain": "Descrever os conceitos da nuvem",
+    "header": "Quais benefícios um balanceador de carga pode fornecer? (Escolha três)",
+    "options": [
+      "Quando um Disco Virtual está ficando sem espaço em uma Máquina Virtual, os dados recebidos podem ser direcionados para outra Máquina Virtual para balancear a carga.",
+      "Garantia de que apenas servidores saudáveis irão processar requisições.",
+      "Um balanceador de carga garante que a carga será distribuída igualmente entre 2-5 Máquinas virtuais.",
+      "Quando há muito tráfego de rede para uma única VM lidar, um balanceador de carga pode distribuir o tráfego entre várias VMs.",
+      "Um balanceador de carga pode registrar logs do tráfego que passa por ele."
+    ],
+    "correct": [
+      "Garantia de que apenas servidores saudáveis irão processar requisições.",
+      "Quando há muito tráfego de rede para uma única VM lidar, um balanceador de carga pode distribuir o tráfego entre várias VMs.",
+      "Um balanceador de carga pode registrar logs do tráfego que passa por ele."
+    ]
+  },
+  {
+    "id": "030",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever os conceitos da nuvem",
+    "header": "O que é um espaço de endereçamento em uma Rede Virtual?",
+    "options": [
+      "A definição de quais tipos de recursos podem se conectar a redes públicas ou privadas hospedadas no Azure.",
+      "Um espaço de endereçamento é um intervalo de endereços IP que podem ser associados a recursos conectados na rede virtual.",
+      "Uma porção do espaço de endereçamento completo pertencente a uma assinatura do Azure que pode ser destinado a uma rede virtual.",
+      "Um número reservado de endereços de IP públicos que você pode usar para conectar uma Rede virtual a Internet."
+    ],
+    "correct": [
+      "Um espaço de endereçamento é um intervalo de endereços IP que podem ser associados a recursos conectados na rede virtual."
+    ]
+  },
+  {
+    "id": "031",
+    "exam": "AZ900",
+    "type": "multiple",
+    "domain": "Descrever os conceitos da nuvem",
+    "header": "Quais são cenários adequados para usar um Gateway de Aplicação?",
+    "options": [
+      "Se algum tráfego com propriedades específicas precisa ser processado por uma VM particular.",
+      "Para garantir que a conexão de uma Rede Virtual com a Internet é segura.",
+      "Para filtrar o tráfego de entrada, tomando decisões de roteamento baseado em atributos adicionais de uma requisição HTTP, como caminho URI ou headers.",
+      "Para enviar tráfego criptografado entre uma Rede Virtual do Azure e localizações on-premises através da Internet pública.",
+      "Gerenciar os endereços IP de uma assinatura do Azure e garantir que apenas tráfego seguro seja permitido."
+    ],
+    "correct": [
+      "Para filtrar o tráfego de entrada, tomando decisões de roteamento baseado em atributos adicionais de uma requisição HTTP, como caminho URI ou headers.",
+      "Se algum tráfego com propriedades específicas precisa ser processado por uma VM particular."
+    ]
+  },
+  {
+    "id": "032",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Qual é o melhor cenário para usar o Azure ExpressRoute?",
+    "options": [
+      "Conectar sua infraestrutura multi-cloud entre provedores para aumentar velocidade e segurança.",
+      "Conectar seus datacenters on-premises com o Azure, onde a conexão precisa ser segura e econômica.",
+      "Conectar seus datacenters on-premises com o Azure, onde a conexão precisa ser segura e rápida.",
+      "ExpressRoute só pode ser usado com o Azure, e não com outros provedores de cloud."
+    ],
+    "correct": [
+      "Conectar seus datacenters on-premises com o Azure, onde a conexão precisa ser segura e rápida."
+    ]
+  },
+  {
+    "id": "033",
+    "exam": "AZ900",
+    "type": "options",
+    "domain": "Descrever a arquitetura e os serviços do Azure",
+    "header": "Sua empresa planeja migrar vários servidores para o Azure. As políticas de conformidade da empresa exigem que um servidor chamado XServer esteja em um segmento de rede separado. Você está avaliando quais serviços do Azure você pode utilizar para cumprir com esse requisito.",
+    "options": [
+      "Uma VPN para o XServer e um gateway de rede virtual para cada um dos outros servidores",
+      "Um grupo de recursos para o XServer e outro grupo de recursos para todos os demais servidores",
+      "Uma rede virtual para o XServer e outra rede virtual para todos os demais servidores",
+      "Um grupo de recursos para todos os servidores e um bloqueio de recurso para o XServer"
+    ],
+    "correct": [
+      "Uma rede virtual para o XServer e outra rede virtual para todos os demais servidores"
+    ],
+    "body": "Qual serviço do Azure você deve usar?"
   }
 ]

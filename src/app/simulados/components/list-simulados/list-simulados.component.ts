@@ -8,7 +8,7 @@ import { QueryExamsService } from '../../utils/service/query-exams.service';
   styleUrl: './list-simulados.component.css'
 })
 export class ListSimuladosComponent {
-  private filterSimulado = ["provider"];
+  private filterSimulado = ["provider", "level"];
   public simulados: Simulado[];
   public activeList: Simulado[];
   public activeFilters: { name: string, value: string }[] = [];

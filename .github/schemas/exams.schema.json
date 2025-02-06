@@ -13,6 +13,9 @@
             "provider": {
                 "type": "string"
             },
+            "level": {
+                "type": "string"
+            },
             "questions": {
                 "type": "integer"
             },
@@ -47,6 +50,7 @@
             "name",
             "fullname",
             "provider",
+            "level",
             "questions",
             "image",
             "domains"
