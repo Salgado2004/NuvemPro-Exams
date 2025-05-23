@@ -2,13 +2,20 @@
 > O jeito mais fácil de contribuir é [criando uma issue](https://github.com/Salgado2004/NuvemPro-Exams/issues/new/choose). Nenhuma contribuição é pequena demais - Incentivamos você a reportar erros ou bugs, questões incorretas, solicitar melhorias, etc.
 
 - [Configurando o projeto](#configurando-o-projeto)
+  - [Codespace](#codespace)
   - [Configuração local](#configuração-local)
 - [Mudanças de conteúdo](#mudanças-de-conteúdo)
   - [Adicionando uma nova questão](#adicionando-uma-nova-questão)
 
 ## Configurando o projeto
 
+### Codespace
+
+[![Abrir com GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Salgado2004/NuvemPro-Exams?quickstart=1)
+
 ### Configuração local
+
+Se você não desejar utilizar o codespace, também é possível configurar o projeto localmente
 
 - Faça um [fork](https://github.com/Salgado2004/NuvemPro-Exams/fork) do repositório
 - Instale as dependências do projeto `npm install`
@@ -38,4 +45,5 @@ Ele irá criar um template de pergunta no caminho correto, conforme a seguir:
 }
 ```
 Preencha os dados da questão e abra seu pull request
-> **Atenção**: Por favor, evite copiar perguntas de outras plataformas, tente criar suas próprias questões
+> [!warning]
+> Por favor, evite copiar perguntas de outras plataformas, tente criar suas próprias questões
